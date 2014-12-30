@@ -1,0 +1,3 @@
+copy content.jar content.backup
+copy artifacts.jar artifacts.backup
+C:\Users\rhowles\Desktop\eclipse\eclipse -console -consolelog -application org.eclipse.equinox.p2.publisher.CategoryPublisher -metadataRepository file:/ds_sdk/sdkinstall/releases/composite_site -artifactRepository file:/ds_sdk/sdkinstall/releases/composite_site -categoryDefinition  file:/ds_sdk/sdkinstall/releases/composite_site/categories/category.xml -compress 
