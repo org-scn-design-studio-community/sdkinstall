@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='Design Studio SCN Composite Update Site'
+    type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='20141229'/>
+  </properties>
+  <children size='3'>
+  	<child location='/sdkinstall/releases/preview'/>
+  	<child location='/sdkgeovis/releases/preview'/>
+  	<child location='categories'/>
+  </children>
+</repository>

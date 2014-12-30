@@ -1,0 +1,1 @@
+This content JAR is needed to restore potentially different category definitions depending on Git Repos that various developers may have not pulled in.
