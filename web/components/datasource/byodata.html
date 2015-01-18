@@ -1,0 +1,143 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../doc.css">
+<link rel="stylesheet" type="text/css" href="../../tables.css">
+</head>
+<body class="comp-body">
+<div class="comp-main">
+
+	<div class="component-name">
+	BYOData [datasource]
+	</div>
+	<div class="component-title">
+	Bring Your Own Data
+	</div>
+
+	
+
+	<br/>
+	<div class="component-properties">VISIBLE PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>data<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Data</B><br/>
+
+</td>
+<td width="60px" class="property-group"></td>
+<td width="100px" class="property-default">Region,Year,Sales,Quantity|East,2011,100,5|West,2011,75,7</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>mutators<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Mutators</B><br/>
+
+</td>
+<td width="60px" class="property-group"></td>
+<td width="100px" class="property-default">[1,1,1]</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>kfIndex<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Number of Dimensions</B><br/>
+
+</td>
+<td width="60px" class="property-group"></td>
+<td width="100px" class="property-default">2</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>swap<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Measures in Rows</B><br/>
+
+</td>
+<td width="60px" class="property-group"></td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">VISIBLE EVENTS</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS LIST</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMutator [<a href="#FUNCTION_setMutator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">index, factor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">HIDDEN (TECHNICAL) PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS IN DETAIL</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="">
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_setMutator">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMutator</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;a&nbsp;mutator&nbsp;for&nbsp;a&nbsp;measure&nbsp;by&nbsp;index&nbsp;(starting&nbsp;at&nbsp;0)<br/><div class='html-example'">Set&nbsp;a&nbsp;mutator&nbsp;to&nbsp;increase&nbsp;the&nbsp;second&nbsp;measures's&nbsp;value&nbsp;by&nbsp;25%<br/><div class='html-code'>DS_1.setMutator(1,&nbsp;1.25);<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>index</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>factor</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;m&nbsp;=&nbsp;eval(this.mutators);<br/>&nbsp;&nbsp;&nbsp;&nbsp;while(m.length&lt;index){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.push(1.0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;m[index]&nbsp;=&nbsp;factor;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.mutators&nbsp;=&nbsp;JSON.stringify(m);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
+	</TABLE>
+
+</div>
+</body>
+</html>
