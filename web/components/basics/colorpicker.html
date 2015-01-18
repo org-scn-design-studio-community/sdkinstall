@@ -1,0 +1,185 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../doc.css">
+<link rel="stylesheet" type="text/css" href="../../tables.css">
+</head>
+<body class="comp-body">
+<div class="comp-main">
+
+	<div class="component-name">
+	ColorPicker [ScnCommunityBasics]
+	</div>
+	<div class="component-title">
+	Color Picker
+	</div>
+
+	
+
+	<br/>
+	<div class="component-properties">VISIBLE PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>colorString<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Color</B><br/>This is the import-parameter of the ColorPicker. As input-parameter, it can be a Hexadecimal string (#FFFFFF), a RGB-string rgb(255,255,255), a HSV-string hsv(360,100,100), or a CSS-colorname 'red'. As output-parameter it is a RGB-string containing the current color.
+
+</td>
+<td width="60px" class="property-group"></td>
+<td width="100px" class="property-default">red</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">VISIBLE EVENTS</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>onColorChange<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On Color Change</B><br/>
+
+</td>
+<td width="60px" class="property-group"></td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS LIST</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColor [<a href="#FUNCTION_setColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">colorString</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getColor [<a href="#FUNCTION_getColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getColorAsHex [<a href="#FUNCTION_getColorAsHex">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">HIDDEN (TECHNICAL) PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>colorStringHex<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Hex Color</B><br/>This is an export-parameter of the ColorPicker. It is a Hexadecimal string (#FFFFFF) containing the current color.
+
+</td>
+<td width="60px" class="property-group"></td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS IN DETAIL</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="">
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_setColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;color&nbsp;top&nbsp;be&nbsp;shown<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>colorString</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Color value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.colorString&nbsp;=&nbsp;colorString;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getColor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getColor</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;picked&nbsp;color&nbsp;as&nbsp;RGB&nbsp;like:&nbsp;rgb(255,255,255)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.colorString;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getColorAsHex">
+<td valign="top" width="220px" class="function-return-name">String<br/>getColorAsHex</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;picked&nbsp;color&nbsp;as&nbsp;Hexadecimal&nbsp;string&nbsp;like:&nbsp;#FFFFFF<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.colorStringHex;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
+	</TABLE>
+
+</div>
+</body>
+</html>
