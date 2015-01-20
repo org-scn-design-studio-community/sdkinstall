@@ -13,7 +13,13 @@
 	Client Information
 	</div>
 
-	
+	<p>
+Sends client infromation available via browser API to the BIAL scriptis
+</p>
+<p>
+Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Client Information Component</a>
+</p>
+
 
 	<br/>
 	<div class="component-properties">VISIBLE PROPERTIES</div>
@@ -22,7 +28,16 @@
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>readLocation<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Read the Location from Browser</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -33,12 +48,30 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>onChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Changed</B><br/>
+<td width="120px" class="property-name-type"><B>onSizeChanged<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Size Changed</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default"></td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onInformationAvailable<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Information Available</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onGeoAvailable<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Geo Available</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -75,6 +108,114 @@
 <td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAppCodeName [<a href="#FUNCTION_getAppCodeName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAppName [<a href="#FUNCTION_getAppName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAppVersion [<a href="#FUNCTION_getAppVersion">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLanguage [<a href="#FUNCTION_getLanguage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getPlatform [<a href="#FUNCTION_getPlatform">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getProduct [<a href="#FUNCTION_getProduct">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getUserAgent [<a href="#FUNCTION_getUserAgent">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getVerndor [<a href="#FUNCTION_getVerndor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getScreenWidth [<a href="#FUNCTION_getScreenWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getScreenHeight [<a href="#FUNCTION_getScreenHeight">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getScreenColorsDepth [<a href="#FUNCTION_getScreenColorsDepth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getBrowser [<a href="#FUNCTION_getBrowser">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_BrowserEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isMobileBrowser [<a href="#FUNCTION_isMobileBrowser">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getBrowserVersion [<a href="#FUNCTION_getBrowserVersion">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getBrowserFullVersion [<a href="#FUNCTION_getBrowserFullVersion">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getGeoLatitude [<a href="#FUNCTION_getGeoLatitude">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getGeoLongitude [<a href="#FUNCTION_getGeoLongitude">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getGeoAccuracy [<a href="#FUNCTION_getGeoAccuracy">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
 
 	</TABLE>
 
@@ -87,7 +228,7 @@
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>windowHeight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Height of the Window</B><br/>
+<td width="*" class="property-title-tooltip"><B>Height of the Window</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -96,7 +237,7 @@
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>windowWidth<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Width of the Window</B><br/>
+<td width="*" class="property-title-tooltip"><B>Width of the Window</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -105,7 +246,7 @@
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>ownHeight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Height of the Component</B><br/>
+<td width="*" class="property-title-tooltip"><B>Height of the Component</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -114,11 +255,29 @@
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>ownWidth<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Width of the Component</B><br/>
+<td width="*" class="property-title-tooltip"><B>Width of the Component</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>information<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical Component for Client Information</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>geoLocation<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical Component for Client Geo Location</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -212,6 +371,402 @@ return&nbsp;this.ownWidth;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.ownHeight;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getAppCodeName">
+<td valign="top" width="220px" class="function-return-name">String<br/>getAppCodeName</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;appCodeName<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).appCodeName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getAppName">
+<td valign="top" width="220px" class="function-return-name">String<br/>getAppName</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;appName<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).appName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getAppVersion">
+<td valign="top" width="220px" class="function-return-name">String<br/>getAppVersion</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;appVersion<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).appVersion;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getLanguage">
+<td valign="top" width="220px" class="function-return-name">String<br/>getLanguage</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;language<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).language;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getPlatform">
+<td valign="top" width="220px" class="function-return-name">String<br/>getPlatform</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;platform<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).platform;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getProduct">
+<td valign="top" width="220px" class="function-return-name">String<br/>getProduct</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;product<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).product;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getUserAgent">
+<td valign="top" width="220px" class="function-return-name">String<br/>getUserAgent</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;userAgent<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).userAgent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getVerndor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getVerndor</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;verndor<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).verndor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getScreenWidth">
+<td valign="top" width="220px" class="function-return-name">int<br/>getScreenWidth</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;Screen&nbsp;Width<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).width;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getScreenHeight">
+<td valign="top" width="220px" class="function-return-name">int<br/>getScreenHeight</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;Screen&nbsp;Height<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).height;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getScreenColorsDepth">
+<td valign="top" width="220px" class="function-return-name">int<br/>getScreenColorsDepth</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;Screen&nbsp;Colors&nbsp;Depth<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;JSON.parse(this.information).colors;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getBrowser">
+<td valign="top" width="220px" class="function-return-name">org_scn_community_shared_BrowserEnumfield<br/>getBrowser</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;browser&nbsp;type&nbsp;(CHROME&nbsp;|&nbsp;SAFARI&nbsp;|&nbsp;MOZILLA&nbsp;|&nbsp;IE)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;info&nbsp;=&nbsp;JSON.parse(this.information);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;browserInfo&nbsp;=&nbsp;info.browserInfo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;browserInfo.browser;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_isMobileBrowser">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>isMobileBrowser</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;browser&nbsp;is&nbsp;a&nbsp;mobile&nbsp;browser<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;info&nbsp;=&nbsp;JSON.parse(this.information);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;browserInfo&nbsp;=&nbsp;info.browserInfo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;browserInfo.mobile;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getBrowserVersion">
+<td valign="top" width="220px" class="function-return-name">String<br/>getBrowserVersion</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;browser&nbsp;version<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;info&nbsp;=&nbsp;JSON.parse(this.information);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;browserInfo&nbsp;=&nbsp;info.browserInfo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;browserInfo.version;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getBrowserFullVersion">
+<td valign="top" width="220px" class="function-return-name">String<br/>getBrowserFullVersion</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;full&nbsp;browser&nbsp;version<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;info&nbsp;=&nbsp;JSON.parse(this.information);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;browserInfo&nbsp;=&nbsp;info.browserInfo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;browserInfo.fVersion;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getGeoLatitude">
+<td valign="top" width="220px" class="function-return-name">float<br/>getGeoLatitude</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;geo&nbsp;latitude<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;geo&nbsp;=&nbsp;JSON.parse(this.geoLocation);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(geo.ok)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;geo.latitude;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;-999;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getGeoLongitude">
+<td valign="top" width="220px" class="function-return-name">float<br/>getGeoLongitude</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;geo&nbsp;longitude<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;geo&nbsp;=&nbsp;JSON.parse(this.geoLocation);<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(geo.ok)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;geo.longitude;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;-999;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getGeoAccuracy">
+<td valign="top" width="220px" class="function-return-name">int<br/>getGeoAccuracy</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;information&nbsp;about&nbsp;geo&nbsp;accuracy<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;geo&nbsp;=&nbsp;JSON.parse(this.geoLocation);<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(geo.ok)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;geo.accuracy;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;-999;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
