@@ -403,6 +403,12 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnjpd3hier [<a href="#FUNCTION_returnAsScnjpd3hier">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.jpd3hier</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">returnAsScnTable [<a href="#FUNCTION_returnAsScnTable">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">org.scn.community.databound.Table</td>
@@ -838,7 +844,7 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 <tr class="function-table-tr">
 <A NAME="FUNCTION_internal_assureGlobalAccess">
 <td valign="top" width="220px" class="function-return-name">void<br/>internal_assureGlobalAccess</td>
-<td valign="top" width="*" class="function-help">Internal&nbsp;function&nbsp;to&nbsp;read&nbsp;return&nbsp;global&nbsp;scope<br/><br/>
+<td valign="top" width="*" class="function-help">Internal&nbsp;function&nbsp;to&nbsp;read&nbsp;return&nbsp;global&nbsp;scope<br/>http://stackoverflow.com/questions/1162998/how-can-i-add-an-object-property-to-the-global-object-in-rhino-javascript<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -2157,6 +2163,33 @@ return&nbsp;inputComponent;
 <A NAME="FUNCTION_returnAsScnValiInput">
 <td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ValiInput<br/>returnAsScnValiInput</td>
 <td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Validated&nbsp;Input&nbsp;Field&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnjpd3hier">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.jpd3hier<br/>returnAsScnjpd3hier</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;D3&nbsp;Hierarchy&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
