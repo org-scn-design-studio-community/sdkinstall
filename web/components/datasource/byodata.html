@@ -59,12 +59,27 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>simulateHierarchy<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Simulate a Hierarchy</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>sortMethod<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Sort Method</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">NONE</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Alphanumeric Ascending</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Alphanumeric Descending</td>
+<td class="value-td">&nbsp;</td>
+</tr>
 
+</table>
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">Alphanumeric Ascending</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -90,6 +105,48 @@
 	<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMutator [<a href="#FUNCTION_setMutator">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">index, factor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setHeaders [<a href="#FUNCTION_setHeaders">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">s</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDimensionCount [<a href="#FUNCTION_setDimensionCount">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">i</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDimensionCount [<a href="#FUNCTION_getDimensionCount">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">clear [<a href="#FUNCTION_clear">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">deleteRow [<a href="#FUNCTION_deleteRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimensions</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">balanceDimension [<a href="#FUNCTION_balanceDimension">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimensions</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addRow [<a href="#FUNCTION_addRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimensions, measures, (overwrite)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -138,6 +195,195 @@
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;m&nbsp;=&nbsp;eval(this.mutators);<br/>&nbsp;&nbsp;&nbsp;&nbsp;while(m.length&lt;index){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.push(1.0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;m[index]&nbsp;=&nbsp;factor;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.mutators&nbsp;=&nbsp;JSON.stringify(m);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setHeaders">
+<td valign="top" width="220px" class="function-return-name">void<br/>setHeaders</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;title&nbsp;of&nbsp;Headers.<br/><div class='html-example'">Set&nbsp;Headers&nbsp;'Department','Product','Sales','Quantity'.<br/><div class='html-code'>DS_1.setHeaders("Department,Product,Sales,Quantity");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>s</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;d&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;d[0]&nbsp;=&nbsp;s;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;d.join(&quot;\n&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setDimensionCount">
+<td valign="top" width="220px" class="function-return-name">void<br/>setDimensionCount</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;number&nbsp;of&nbsp;columns&nbsp;that&nbsp;should&nbsp;be&nbsp;treated&nbsp;as&nbsp;dimensional.&nbsp;&nbsp;Remaining&nbsp;columns&nbsp;are&nbsp;treated&nbsp;as&nbsp;Measures.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>i</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.kfIndex&nbsp;=&nbsp;i;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDimensionCount">
+<td valign="top" width="220px" class="function-return-name">int<br/>getDimensionCount</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;number&nbsp;of&nbsp;columns&nbsp;that&nbsp;are&nbsp;Dimensions.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.kfIndex;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_clear">
+<td valign="top" width="220px" class="function-return-name">void<br/>clear</td>
+<td valign="top" width="*" class="function-help">Delete&nbsp;all&nbsp;data<br/><div class='html-example'"><div class='html-code'>DS_1.clear();<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;d&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;d.splice(1,d.length-1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;d.join(&quot;\n&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_deleteRow">
+<td valign="top" width="220px" class="function-return-name">void<br/>deleteRow</td>
+<td valign="top" width="*" class="function-help">Delete&nbsp;a&nbsp;Row&nbsp;by&nbsp;a&nbsp;given&nbsp;Dimension&nbsp;Key.<br/><div class='html-example'">Delete&nbsp;a&nbsp;row&nbsp;with&nbsp;2&nbsp;Dimensions&nbsp;Values&nbsp;of&nbsp;'Grocery'&nbsp;and&nbsp;'Juice'<br/><div class='html-code'>DS_1.deleteRow("Grocery,Juice");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimensions</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;dims&nbsp;=&nbsp;balanceDimension(dimensions);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;match&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;rows&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;while(match&gt;-1){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;rows.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;row&nbsp;=&nbsp;rows[i].split(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;key&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;j=0;j&lt;this.kfIndex;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key.push(row[j]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;hash&nbsp;=&nbsp;key.join(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(hash==dims)&nbsp;match&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(match&gt;-1)&nbsp;rows.splice(match,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;rows.join(&quot;\n&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_balanceDimension">
+<td valign="top" width="220px" class="function-return-name">String<br/>balanceDimension</td>
+<td valign="top" width="*" class="function-help">Balance&nbsp;a&nbsp;Dimension&nbsp;Selection<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimensions</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;dims&nbsp;=&nbsp;dimensions.split(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;while(dims.length&gt;this.kfIndex){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dims.splice(dims.length-1,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;while(dims.length&lt;kfIndex){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dims.push(&quot;#&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;dims.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(dims[i]==&quot;&quot;)&nbsp;dims[i]==&quot;#&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;dims.join(&quot;,&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_addRow">
+<td valign="top" width="220px" class="function-return-name">void<br/>addRow</td>
+<td valign="top" width="*" class="function-help">Add&nbsp;or&nbsp;Replace&nbsp;a&nbsp;Row&nbsp;by&nbsp;a&nbsp;given&nbsp;Dimension&nbsp;Key<br/><div class='html-example'">Add&nbsp;a&nbsp;row&nbsp;with&nbsp;2&nbsp;Dimensions&nbsp;and&nbsp;2&nbsp;Measures<br/><div class='html-code'>DS_1.addRow("Grocery,Juice",&nbsp;"100,1.25");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimensions</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>measures</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>overwrite</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(overwrite)&nbsp;deleteRow(dimensions);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dims&nbsp;=&nbsp;balanceDimension(dimensions).split(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;kfs&nbsp;=&nbsp;measures.split(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;rows&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;columnCount&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newRow&nbsp;=&nbsp;dims.join(&quot;,&quot;)&nbsp;+&nbsp;&quot;,&quot;&nbsp;+&nbsp;kfs.join(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;rows.push(newRow);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newRows&nbsp;=&nbsp;rows.join(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;newRows;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
