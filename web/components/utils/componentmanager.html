@@ -1,0 +1,2782 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../doc.css">
+<link rel="stylesheet" type="text/css" href="../../tables.css">
+</head>
+<body class="comp-body">
+<div class="comp-main">
+
+	<div class="component-name">
+	ComponentManager [ScnCommunityUtils]
+	</div>
+	<div class="component-title">
+	Component Manager
+	</div>
+
+	<p>
+Sends client infromation available via browser API to the BIAL scriptis
+</p>
+<p>
+Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Client Information Component</a>
+</p>
+
+
+	<br/>
+	<div class="component-properties">VISIBLE PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">VISIBLE EVENTS</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS LIST</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addDataSOurceToGroup [<a href="#FUNCTION_addDataSOurceToGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, dataSourceName</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addComponentToGroup [<a href="#FUNCTION_addComponentToGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, componentName</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDataSourcesFromGroup [<a href="#FUNCTION_getDataSourcesFromGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.DataSourceArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getComponentsFromGroup [<a href="#FUNCTION_getComponentsFromGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ComponentArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getComponentByName [<a href="#FUNCTION_getComponentByName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">name</td>
+<td valign="top" width="160px" class="function-short-return">Component</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDataSourceByName [<a href="#FUNCTION_getDataSourceByName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">name</td>
+<td valign="top" width="160px" class="function-short-return">DataSourceAlias</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">listAllComponents [<a href="#FUNCTION_listAllComponents">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(prefix), (suffix)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ComponentArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">listAllDataSources [<a href="#FUNCTION_listAllDataSources">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(prefix), (suffix)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.DataSourceArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">listAllComponentsWithType [<a href="#FUNCTION_listAllComponentsWithType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">componentType, (prefix), (suffix)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ComponentArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">internal_assureGlobalAccess [<a href="#FUNCTION_internal_assureGlobalAccess">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsButton [<a href="#FUNCTION_returnAsButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Button</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsChart [<a href="#FUNCTION_returnAsChart">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Chart</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsCheckbox [<a href="#FUNCTION_returnAsCheckbox">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Checkbox</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsCheckboxgroup [<a href="#FUNCTION_returnAsCheckboxgroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Checkboxgroup</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsCrosstab [<a href="#FUNCTION_returnAsCrosstab">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Crosstab</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsDatefield [<a href="#FUNCTION_returnAsDatefield">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Datefield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsDimensionfilter [<a href="#FUNCTION_returnAsDimensionfilter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Dimensionfilter</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsFilterpanel [<a href="#FUNCTION_returnAsFilterpanel">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Filterpanel</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsImage [<a href="#FUNCTION_returnAsImage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Image</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsInputfield [<a href="#FUNCTION_returnAsInputfield">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Inputfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsText [<a href="#FUNCTION_returnAsText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Text</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsRadiobuttongroup [<a href="#FUNCTION_returnAsRadiobuttongroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Radiobuttongroup</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnAccordion [<a href="#FUNCTION_returnAsScnAccordion">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Accordion</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnActionSheetButton [<a href="#FUNCTION_returnAsScnActionSheetButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ActionSheetButton</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnApplicationHeader [<a href="#FUNCTION_returnAsScnApplicationHeader">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ApplicationHeader</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnBase64Image [<a href="#FUNCTION_returnAsScnBase64Image">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Base64Image</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnBasicBusinessCard [<a href="#FUNCTION_returnAsScnBasicBusinessCard">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.BasicBusinessCard</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnCheckBoxGroup [<a href="#FUNCTION_returnAsScnCheckBoxGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.CheckBoxGroup</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnColorPicker [<a href="#FUNCTION_returnAsScnColorPicker">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ColorPicker</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnDragDropArea [<a href="#FUNCTION_returnAsScnDragDropArea">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.DragDropArea</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnEmbeddedFrame [<a href="#FUNCTION_returnAsScnEmbeddedFrame">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.EmbeddedFrame</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnEmbeddedMedia [<a href="#FUNCTION_returnAsScnEmbeddedMedia">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.EmbeddedMedia</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFallbackPicture [<a href="#FUNCTION_returnAsScnFallbackPicture">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FallbackPicture</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriAppHeader [<a href="#FUNCTION_returnAsScnFioriAppHeader">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriAppHeader</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriButton [<a href="#FUNCTION_returnAsScnFioriButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriButton</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriToolbar [<a href="#FUNCTION_returnAsScnFioriToolbar">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriToolbar</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFishEye [<a href="#FUNCTION_returnAsScnFishEye">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FishEye</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnImageCarousel [<a href="#FUNCTION_returnAsScnImageCarousel">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ImageCarousel</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnKpiView [<a href="#FUNCTION_returnAsScnKpiView">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.KpiView</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnLaunchPad [<a href="#FUNCTION_returnAsScnLaunchPad">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.LaunchPad</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnLeaderBoard [<a href="#FUNCTION_returnAsScnLeaderBoard">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.LeaderBoard</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnLink [<a href="#FUNCTION_returnAsScnLink">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Link</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnListSelector [<a href="#FUNCTION_returnAsScnListSelector">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ListSelector</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnMenuBar [<a href="#FUNCTION_returnAsScnMenuBar">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.MenuBar</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnMenuButton [<a href="#FUNCTION_returnAsScnMenuButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.MenuButton</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnModalBrowser [<a href="#FUNCTION_returnAsScnModalBrowser">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ModalBrowser</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnNotificationBar [<a href="#FUNCTION_returnAsScnNotificationBar">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.NotificationBar</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnNotify [<a href="#FUNCTION_returnAsScnNotify">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Notify</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnMap [<a href="#FUNCTION_returnAsScnMap">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Map</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnPaginator [<a href="#FUNCTION_returnAsScnPaginator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Paginator</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnProgressIndicator [<a href="#FUNCTION_returnAsScnProgressIndicator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ProgressIndicator</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnQRCode [<a href="#FUNCTION_returnAsScnQRCode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.QRCode</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnRangeSlider [<a href="#FUNCTION_returnAsScnRangeSlider">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.RangeSlider</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnRatingIndicator [<a href="#FUNCTION_returnAsScnRatingIndicator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.RatingIndicator</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnSlider [<a href="#FUNCTION_returnAsScnSlider">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Slider</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnTextArea [<a href="#FUNCTION_returnAsScnTextArea">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.TextArea</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnToggleButton [<a href="#FUNCTION_returnAsScnToggleButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ToggleButton</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnTree [<a href="#FUNCTION_returnAsScnTree">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Tree</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnValiInput [<a href="#FUNCTION_returnAsScnValiInput">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.ValiInput</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnTable [<a href="#FUNCTION_returnAsScnTable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.Table</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnDropDown [<a href="#FUNCTION_returnAsScnDropDown">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.DropDown</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnLeaderBoard [<a href="#FUNCTION_returnAsScnLeaderBoard">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.LeaderBoard</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnMultiLevelDropDown [<a href="#FUNCTION_returnAsScnMultiLevelDropDown">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.MultiLevelDropDown</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnRangeSlider [<a href="#FUNCTION_returnAsScnRangeSlider">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.RangeSlider</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnSlider [<a href="#FUNCTION_returnAsScnSlider">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.Slider</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnTable2D [<a href="#FUNCTION_returnAsScnTable2D">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.Table2D</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnTopFlop [<a href="#FUNCTION_returnAsScnTopFlop">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.TopFlop</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnTopFlopChart [<a href="#FUNCTION_returnAsScnTopFlopChart">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.TopFlopChart</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnBYOData [<a href="#FUNCTION_returnAsScnBYOData">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.datasource.BYOData</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnDynCsvDataSource [<a href="#FUNCTION_returnAsScnDynCsvDataSource">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.datasource.DynCsvDataSource</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnMaps [<a href="#FUNCTION_returnAsScnMaps">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.geovis.Maps</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnProgressSet [<a href="#FUNCTION_returnAsScnProgressSet">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.prototypes.ProgressSet</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnRapidPrototype [<a href="#FUNCTION_returnAsScnRapidPrototype">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.prototypes.RapidPrototype</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnArray [<a href="#FUNCTION_returnAsScnArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.Array</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnClientInformation [<a href="#FUNCTION_returnAsScnClientInformation">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.ClientInformation</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnCollection [<a href="#FUNCTION_returnAsScnCollection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.Collection</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnComponentManager [<a href="#FUNCTION_returnAsScnComponentManager">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.ComponentManager</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnCustomCssCollector [<a href="#FUNCTION_returnAsScnCustomCssCollector">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.CustomCssCollector</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFlowLayouter [<a href="#FUNCTION_returnAsScnFlowLayouter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.FlowLayouter</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnOpenWindowPost [<a href="#FUNCTION_returnAsScnOpenWindowPost">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.OpenWindowPost</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnSimpleDate [<a href="#FUNCTION_returnAsScnSimpleDate">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.utils.SimpleDate</td>
+</tr>
+
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">HIDDEN (TECHNICAL) PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>components<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical property for list of nodes</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">{}</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS IN DETAIL</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="">
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_addDataSOurceToGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>addDataSOurceToGroup</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;data&nbsp;source&nbsp;to&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;data&nbsp;sources<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;2&nbsp;data&nbsp;sources&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;"DS_SALE_1");<br/>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;"DS_SALE_PRE");<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getDataSourcesFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dataSourceName</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.addComponentToGroup(group,&nbsp;dataSourceName);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_addComponentToGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>addComponentToGroup</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;component&nbsp;to&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;components<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;3&nbsp;components&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"SALES_BUTTON_ACCEPT");<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"REVENUE_BUTTON_ACCEPT");<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"ANOTHER_BUTTON_ACCEPT");<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getComponentsFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>componentName</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(componentsJson[group]&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentsJson[group]&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;componentsJson[group].push(componentName);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.components&nbsp;=&nbsp;JSON.stringify(componentsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDataSourcesFromGroup">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.DataSourceArray<br/>getDataSourcesFromGroup</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;array&nbsp;of&nbsp;data&nbsp;sources&nbsp;from&nbsp;the&nbsp;group<br/>Allows&nbsp;work&nbsp;on&nbsp;grouped&nbsp;data&nbsp;sources&nbsp;in&nbsp;dynamic&nbsp;way<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;copy&nbsp;filters&nbsp;from&nbsp;DS_1&nbsp;to&nbsp;all&nbsp;data&nbsp;sources&nbsp;in&nbsp;the&nbsp;group<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourcesFromGroup("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;ds&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourceByName(name);<br/>ds.copyFilters(DS_1);<br/>});<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;have&nbsp;replicated&nbsp;the&nbsp;filters&nbsp;in&nbsp;dynamic&nbsp;way<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;getComponentsFromGroup(group);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getComponentsFromGroup">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>getComponentsFromGroup</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;array&nbsp;of&nbsp;components&nbsp;from&nbsp;the&nbsp;group<br/>Allows&nbsp;work&nbsp;on&nbsp;grouped&nbsp;components&nbsp;in&nbsp;dynamic&nbsp;way<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;change&nbsp;the&nbsp;text&nbsp;of&nbsp;all&nbsp;components&nbsp;in&nbsp;group<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentsFromGroup("ACCEPT_BUTTONS");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;comp&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentByName(name);<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(comp);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>});<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;have&nbsp;changed&nbsp;the&nbsp;text&nbsp;of&nbsp;all&nbsp;components&nbsp;in&nbsp;this&nbsp;group&nbsp;in&nbsp;dynamic&nbsp;way<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(componentsJson[group]&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;componentsJson[group].length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;componentsJson[group][i]&nbsp;&nbsp;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;&quot;-N/A-&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;undefined;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getComponentByName">
+<td valign="top" width="220px" class="function-return-name">Component<br/>getComponentByName</td>
+<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;know&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;component,&nbsp;you&nbsp;can&nbsp;request&nbsp;the&nbsp;object<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pick&nbsp;up&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"BUTTON_43"<br/><div class='html-code'>var&nbsp;component&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentByName("BUTTON_43");<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>//&nbsp;now&nbsp;you&nbsp;can&nbsp;change&nbsp;some&nbsp;properties<br/>button.setText("Accept&nbsp;Now");<br/><div class='html-code'></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>name</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;component&nbsp;=&nbsp;eval(name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;component;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDataSourceByName">
+<td valign="top" width="220px" class="function-return-name">DataSourceAlias<br/>getDataSourceByName</td>
+<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;know&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;data&nbsp;source,&nbsp;you&nbsp;can&nbsp;request&nbsp;the&nbsp;object<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pick&nbsp;up&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"DS_53"<br/><div class='html-code'>var&nbsp;ds&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourceByName("DS_53");<br/>//&nbsp;now&nbsp;you&nbsp;can&nbsp;change&nbsp;some&nbsp;properties<br/>ds.setFilter(...);<br/><div class='html-code'></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>name</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;component&nbsp;=&nbsp;eval(name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;component;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_listAllComponents">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>listAllComponents</td>
+<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;components&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;components&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllComponents("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;component&nbsp;=&nbsp;element.component;<br/>*<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>if(name.indexOf("BUTTON")&nbsp;>&nbsp;-1)&nbsp;{<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>}<br/>if(name.indexOf("CROSSTAB")&nbsp;>&nbsp;-1)&nbsp;{<br/>var&nbsp;crosstab&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsCrosstab(component);<br/>*<br/>crosstab.setWidth(600);<br/>}<br/>});<br/><div class='html-code'></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>prefix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>suffix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;key&nbsp;in&nbsp;this.getGlobal())&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;something&nbsp;=&nbsp;eval(key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;typeof&nbsp;something&nbsp;==&nbsp;&quot;object&quot;&nbsp;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;fitsIntoName&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(prefix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;prefix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;key.indexOf(prefix)&nbsp;!=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(suffix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;suffix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(key.indexOf(suffix)&nbsp;!=&nbsp;(key.length&nbsp;-&nbsp;suffix.length))&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!fitsIntoName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;&quot;-N/A-&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;something;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something.getWidth&nbsp;!=&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_listAllDataSources">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.DataSourceArray<br/>listAllDataSources</td>
+<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;data&nbsp;sources&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;data&nbsp;sources&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllDataSources("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;datasource&nbsp;=&nbsp;element.datasource;<br/>*<br/>datasource.setFilter(...);<br/>});<br/><div class='html-code'></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>prefix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>suffix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;key&nbsp;in&nbsp;this.getGlobal())&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;something&nbsp;=&nbsp;eval(key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;typeof&nbsp;something&nbsp;==&nbsp;&quot;object&quot;&nbsp;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;fitsIntoName&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(prefix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;prefix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;key.indexOf(prefix)&nbsp;!=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(suffix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;suffix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(key.indexOf(suffix)&nbsp;!=&nbsp;(key.length&nbsp;-&nbsp;suffix.length))&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!fitsIntoName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;&quot;-N/A-&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;something;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something.assignDataSource&nbsp;!=&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_listAllComponentsWithType">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>listAllComponentsWithType</td>
+<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;components&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;type&nbsp;and&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/>Type&nbsp;is&nbsp;a&nbsp;primitive&nbsp;string&nbsp;which&nbsp;must&nbsp;be&nbsp;contained&nbsp;in&nbsp;the&nbsp;component&nbsp;name&nbsp;,&nbsp;eg.&nbsp;for&nbsp;button&nbsp;you&nbsp;have&nbsp;to&nbsp;name&nbsp;the&nbsp;buttons&nbsp;"BLABLA_BUTTON_SOMETHING"<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;buttons&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllComponents("BUTTON",&nbsp;"SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;component&nbsp;=&nbsp;element.component;<br/>*<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>});<br/><div class='html-code'></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>componentType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>prefix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>suffix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internal_assureGlobalAccess();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;key&nbsp;in&nbsp;this.getGlobal())&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;something&nbsp;=&nbsp;eval(key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;typeof&nbsp;something&nbsp;==&nbsp;&quot;object&quot;&nbsp;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;fitsIntoName&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(prefix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;prefix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;key.indexOf(prefix)&nbsp;!=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(suffix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;suffix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(key.indexOf(suffix)&nbsp;!=&nbsp;(key.length&nbsp;-&nbsp;suffix.length))&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!fitsIntoName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;currently&nbsp;only&nbsp;type&nbsp;in&nbsp;the&nbsp;name&nbsp;can&nbsp;be&nbsp;supported,&nbsp;eg.&nbsp;KAR_BUTTON_32&nbsp;as&nbsp;BUTTON&nbsp;(logical&nbsp;assignment)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(key.indexOf(componentType)&nbsp;&gt;&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;componentType;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;something;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;check&nbsp;if&nbsp;the&nbsp;object&nbsp;contains&nbsp;getWidth&nbsp;method&nbsp;-&gt;&nbsp;seems&nbsp;to&nbsp;be&nbsp;component<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something.getWidth&nbsp;!=&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{}&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_internal_assureGlobalAccess">
+<td valign="top" width="220px" class="function-return-name">void<br/>internal_assureGlobalAccess</td>
+<td valign="top" width="*" class="function-help">Internal&nbsp;function&nbsp;to&nbsp;read&nbsp;return&nbsp;global&nbsp;scope<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(this.getGlobal&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getGlobal&nbsp;=&nbsp;function&nbsp;()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}).call(null);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsButton">
+<td valign="top" width="220px" class="function-return-name">Button<br/>returnAsButton</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsChart">
+<td valign="top" width="220px" class="function-return-name">Chart<br/>returnAsChart</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsCheckbox">
+<td valign="top" width="220px" class="function-return-name">Checkbox<br/>returnAsCheckbox</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsCheckboxgroup">
+<td valign="top" width="220px" class="function-return-name">Checkboxgroup<br/>returnAsCheckboxgroup</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsCrosstab">
+<td valign="top" width="220px" class="function-return-name">Crosstab<br/>returnAsCrosstab</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsDatefield">
+<td valign="top" width="220px" class="function-return-name">Datefield<br/>returnAsDatefield</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsDimensionfilter">
+<td valign="top" width="220px" class="function-return-name">Dimensionfilter<br/>returnAsDimensionfilter</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsFilterpanel">
+<td valign="top" width="220px" class="function-return-name">Filterpanel<br/>returnAsFilterpanel</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsImage">
+<td valign="top" width="220px" class="function-return-name">Image<br/>returnAsImage</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsInputfield">
+<td valign="top" width="220px" class="function-return-name">Inputfield<br/>returnAsInputfield</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsText">
+<td valign="top" width="220px" class="function-return-name">Text<br/>returnAsText</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsRadiobuttongroup">
+<td valign="top" width="220px" class="function-return-name">Radiobuttongroup<br/>returnAsRadiobuttongroup</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnAccordion">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Accordion<br/>returnAsScnAccordion</td>
+<td valign="top" width="*" class="function-help">/copy&nbsp;of&nbsp;the&nbsp;content&nbsp;from&nbsp;cast.ztl_part<br/>Cast&nbsp;to&nbsp;Accordion&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnActionSheetButton">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ActionSheetButton<br/>returnAsScnActionSheetButton</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Action&nbsp;Sheet&nbsp;Button&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnApplicationHeader">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ApplicationHeader<br/>returnAsScnApplicationHeader</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Application&nbsp;Header&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnBase64Image">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Base64Image<br/>returnAsScnBase64Image</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Base64&nbsp;Image&nbsp;Encoder&nbsp;component<br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnBasicBusinessCard">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.BasicBusinessCard<br/>returnAsScnBasicBusinessCard</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Basic&nbsp;Business&nbsp;Card&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnCheckBoxGroup">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.CheckBoxGroup<br/>returnAsScnCheckBoxGroup</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Check&nbsp;Box&nbsp;Group&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnColorPicker">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ColorPicker<br/>returnAsScnColorPicker</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Color&nbsp;Picker&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnDragDropArea">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.DragDropArea<br/>returnAsScnDragDropArea</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Drag&nbsp;Drop&nbsp;Area&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnEmbeddedFrame">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.EmbeddedFrame<br/>returnAsScnEmbeddedFrame</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Embedded&nbsp;Frame&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnEmbeddedMedia">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.EmbeddedMedia<br/>returnAsScnEmbeddedMedia</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Embedded&nbsp;Media&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnFallbackPicture">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.FallbackPicture<br/>returnAsScnFallbackPicture</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fallback&nbsp;Picture&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnFioriAppHeader">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.FioriAppHeader<br/>returnAsScnFioriAppHeader</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;App&nbsp;Header&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnFioriButton">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.FioriButton<br/>returnAsScnFioriButton</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Button&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnFioriToolbar">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.FioriToolbar<br/>returnAsScnFioriToolbar</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Toolbar&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnFishEye">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.FishEye<br/>returnAsScnFishEye</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fish&nbsp;Eye&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnImageCarousel">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ImageCarousel<br/>returnAsScnImageCarousel</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Image&nbsp;Carousel&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnKpiView">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.KpiView<br/>returnAsScnKpiView</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Kpi&nbsp;View&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnLaunchPad">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.LaunchPad<br/>returnAsScnLaunchPad</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Launch&nbsp;Pad&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnLeaderBoard">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.LeaderBoard<br/>returnAsScnLeaderBoard</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Leader&nbsp;Board&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnLink">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Link<br/>returnAsScnLink</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Link&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnListSelector">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ListSelector<br/>returnAsScnListSelector</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;List&nbsp;Selector&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnMenuBar">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.MenuBar<br/>returnAsScnMenuBar</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Menu&nbsp;Bar&nbsp;(>=&nbsp;1.4)&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnMenuButton">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.MenuButton<br/>returnAsScnMenuButton</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Menu&nbsp;Button&nbsp;(>=&nbsp;1.4)&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnModalBrowser">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ModalBrowser<br/>returnAsScnModalBrowser</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Modal&nbsp;Browser&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnNotificationBar">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.NotificationBar<br/>returnAsScnNotificationBar</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Notification&nbsp;Bar&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnNotify">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Notify<br/>returnAsScnNotify</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Notify&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnMap">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Map<br/>returnAsScnMap</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Open&nbsp;Street&nbsp;Map&nbsp;(Basic)&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnPaginator">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Paginator<br/>returnAsScnPaginator</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Paginator&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnProgressIndicator">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ProgressIndicator<br/>returnAsScnProgressIndicator</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Progress&nbsp;Indicator&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnQRCode">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.QRCode<br/>returnAsScnQRCode</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;QRCode&nbsp;Generator&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnRangeSlider">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.RangeSlider<br/>returnAsScnRangeSlider</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Range&nbsp;Slider&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnRatingIndicator">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.RatingIndicator<br/>returnAsScnRatingIndicator</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Rating&nbsp;Indicator&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnSlider">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Slider<br/>returnAsScnSlider</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Slider&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnTextArea">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.TextArea<br/>returnAsScnTextArea</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Text&nbsp;Area&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnToggleButton">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ToggleButton<br/>returnAsScnToggleButton</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Toggle&nbsp;Button&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnTree">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.Tree<br/>returnAsScnTree</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Tree&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnValiInput">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.basics.ValiInput<br/>returnAsScnValiInput</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Validated&nbsp;Input&nbsp;Field&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnTable">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.Table<br/>returnAsScnTable</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Table&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnDropDown">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.DropDown<br/>returnAsScnDropDown</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Drop&nbsp;Down&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnLeaderBoard">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.LeaderBoard<br/>returnAsScnLeaderBoard</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Leader&nbsp;Board&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnMultiLevelDropDown">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.MultiLevelDropDown<br/>returnAsScnMultiLevelDropDown</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Multi&nbsp;Level&nbsp;DropDown&nbsp;Menu&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnRangeSlider">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.RangeSlider<br/>returnAsScnRangeSlider</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Range&nbsp;Slider&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnSlider">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.Slider<br/>returnAsScnSlider</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Slider&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnTable2D">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.Table2D<br/>returnAsScnTable2D</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;2D&nbsp;Crosstab&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnTopFlop">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.TopFlop<br/>returnAsScnTopFlop</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Top&nbsp;Flop&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnTopFlopChart">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.databound.TopFlopChart<br/>returnAsScnTopFlopChart</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Top&nbsp;FLop&nbsp;Chart&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnBYOData">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.datasource.BYOData<br/>returnAsScnBYOData</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Bring&nbsp;Your&nbsp;Own&nbsp;Data&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnDynCsvDataSource">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.datasource.DynCsvDataSource<br/>returnAsScnDynCsvDataSource</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Dynamic&nbsp;Csv&nbsp;Data&nbsp;Source&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnMaps">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.geovis.Maps<br/>returnAsScnMaps</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Maps&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnProgressSet">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.prototypes.ProgressSet<br/>returnAsScnProgressSet</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Progress&nbsp;Bar&nbsp;Set&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnRapidPrototype">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.prototypes.RapidPrototype<br/>returnAsScnRapidPrototype</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Rapid&nbsp;Prototyping&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnArray">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.Array<br/>returnAsScnArray</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Array&nbsp;Utility&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnClientInformation">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.ClientInformation<br/>returnAsScnClientInformation</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Client&nbsp;Information&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnCollection">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.Collection<br/>returnAsScnCollection</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Collection&nbsp;Utility&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnComponentManager">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.ComponentManager<br/>returnAsScnComponentManager</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Component&nbsp;Manager&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnCustomCssCollector">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.CustomCssCollector<br/>returnAsScnCustomCssCollector</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Custom&nbsp;Css&nbsp;Collector&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnFlowLayouter">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.FlowLayouter<br/>returnAsScnFlowLayouter</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Flow&nbsp;Layouter&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnOpenWindowPost">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.OpenWindowPost<br/>returnAsScnOpenWindowPost</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Open&nbsp;Window&nbsp;by&nbsp;Post&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsScnSimpleDate">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.utils.SimpleDate<br/>returnAsScnSimpleDate</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Simple&nbsp;Date&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
+	</TABLE>
+
+</div>
+</body>
+</html>
