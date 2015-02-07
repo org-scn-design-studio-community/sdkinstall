@@ -29,7 +29,7 @@
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">Region,Year,Sales,Quantity|East,2011,100,5|West,2011,75,7</td>
+<td width="100px" class="property-default">Region,Year,Sales,Quantity~|~East,2011,100,5~|~West,2011,75,7</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -104,6 +104,18 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDataString [<a href="#FUNCTION_setDataString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dataString</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDataString [<a href="#FUNCTION_getDataString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMutator [<a href="#FUNCTION_setMutator">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">index, factor</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -171,6 +183,55 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<A NAME="FUNCTION_setDataString">
+<td valign="top" width="220px" class="function-return-name">void<br/>setDataString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;data&nbsp;in&nbsp;serialized&nbsp;string&nbsp;form.&nbsp;&nbsp;Meant&nbsp;to&nbsp;be&nbsp;used&nbsp;in&nbsp;conjunction&nbsp;with<br/>SCN&nbsp;Community&nbsp;Projection&nbsp;data&nbsp;component&nbsp;or&nbsp;another&nbsp;BYO&nbsp;Data&nbsp;component.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dataString</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.data&nbsp;=&nbsp;dataString;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDataString">
+<td valign="top" width="220px" class="function-return-name">String<br/>getDataString</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;serialized&nbsp;string&nbsp;representing&nbsp;data.&nbsp;&nbsp;Meant&nbsp;to&nbsp;be&nbsp;used&nbsp;with&nbsp;another<br/>SCN&nbsp;Community&nbsp;BYO&nbsp;Data&nbsp;component.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.data;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_setMutator">
 <td valign="top" width="220px" class="function-return-name">void<br/>setMutator</td>
 <td valign="top" width="*" class="function-help">Set&nbsp;a&nbsp;mutator&nbsp;for&nbsp;a&nbsp;measure&nbsp;by&nbsp;index&nbsp;(starting&nbsp;at&nbsp;0)<br/><div class='html-example'">Set&nbsp;a&nbsp;mutator&nbsp;to&nbsp;increase&nbsp;the&nbsp;second&nbsp;measures's&nbsp;value&nbsp;by&nbsp;25%<br/><div class='html-code'>DS_1.setMutator(1,&nbsp;1.25);<br></div></div><br/>
