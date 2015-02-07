@@ -50,7 +50,7 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addDataSOurceToGroup [<a href="#FUNCTION_addDataSOurceToGroup">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">addDataSourceToGroup [<a href="#FUNCTION_addDataSourceToGroup">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">group, dataSourceName</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -110,14 +110,26 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">listAllComponentsWithSameType [<a href="#FUNCTION_listAllComponentsWithSameType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">componentAsType, (prefix), (suffix)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ComponentArray</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">listAllComponentsWithType [<a href="#FUNCTION_listAllComponentsWithType">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">componentType, (prefix), (suffix)</td>
 <td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ComponentArray</td>
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">internal_listAllComponentsWithType [<a href="#FUNCTION_internal_listAllComponentsWithType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">componentType, (prefix), (suffix), (typeIsExact)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ComponentArray</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">identifyType [<a href="#FUNCTION_identifyType">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="*" class="function-short-name">inputComponent, (keepFullType)</td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
@@ -588,9 +600,9 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_addDataSOurceToGroup">
-<td valign="top" width="220px" class="function-return-name">void<br/>addDataSOurceToGroup</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;data&nbsp;source&nbsp;to&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;data&nbsp;sources<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;2&nbsp;data&nbsp;sources&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;"DS_SALE_1");<br/>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;"DS_SALE_PRE");<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getDataSourcesFromGroup"<br/><br/>
+<A NAME="FUNCTION_addDataSourceToGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>addDataSourceToGroup</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;data&nbsp;source&nbsp;to&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;data&nbsp;sources<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;2&nbsp;data&nbsp;sources&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;"DS_SALE_1");<br/>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;"DS_SALE_PRE");<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getDataSourcesFromGroup"<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -622,7 +634,7 @@ this.addComponentToGroup(group,&nbsp;dataSourceName);
 <tr class="function-table-tr">
 <A NAME="FUNCTION_addComponentToGroup">
 <td valign="top" width="220px" class="function-return-name">void<br/>addComponentToGroup</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;component&nbsp;to&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;components<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;3&nbsp;components&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"SALES_BUTTON_ACCEPT");<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"REVENUE_BUTTON_ACCEPT");<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"ANOTHER_BUTTON_ACCEPT");<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getComponentsFromGroup"<br/><br/>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;component&nbsp;to&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;components<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;3&nbsp;components&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"SALES_BUTTON_ACCEPT");<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"REVENUE_BUTTON_ACCEPT");<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;"ANOTHER_BUTTON_ACCEPT");<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getComponentsFromGroup"<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -654,7 +666,7 @@ var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getDataSourcesFromGroup">
 <td valign="top" width="220px" class="function-return-name">org.scn.community.shared.DataSourceArray<br/>getDataSourcesFromGroup</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;array&nbsp;of&nbsp;data&nbsp;sources&nbsp;from&nbsp;the&nbsp;group<br/>Allows&nbsp;work&nbsp;on&nbsp;grouped&nbsp;data&nbsp;sources&nbsp;in&nbsp;dynamic&nbsp;way<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;copy&nbsp;filters&nbsp;from&nbsp;DS_1&nbsp;to&nbsp;all&nbsp;data&nbsp;sources&nbsp;in&nbsp;the&nbsp;group<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourcesFromGroup("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;ds&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourceByName(name);<br/>ds.copyFilters(DS_1);<br/>});<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;have&nbsp;replicated&nbsp;the&nbsp;filters&nbsp;in&nbsp;dynamic&nbsp;way<br/><br/>
+<td valign="top" width="*" class="function-help">Returns&nbsp;array&nbsp;of&nbsp;data&nbsp;sources&nbsp;from&nbsp;the&nbsp;group<br/>Allows&nbsp;work&nbsp;on&nbsp;grouped&nbsp;data&nbsp;sources&nbsp;in&nbsp;dynamic&nbsp;way<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;copy&nbsp;filters&nbsp;from&nbsp;DS_1&nbsp;to&nbsp;all&nbsp;data&nbsp;sources&nbsp;in&nbsp;the&nbsp;group<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourcesFromGroup("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;ds&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourceByName(name);<br/>ds.copyFilters(DS_1);<br/>});<br/></div></div>Now,&nbsp;you&nbsp;have&nbsp;replicated&nbsp;the&nbsp;filters&nbsp;in&nbsp;dynamic&nbsp;way<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -681,7 +693,7 @@ return&nbsp;getComponentsFromGroup(group);
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getComponentsFromGroup">
 <td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>getComponentsFromGroup</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;array&nbsp;of&nbsp;components&nbsp;from&nbsp;the&nbsp;group<br/>Allows&nbsp;work&nbsp;on&nbsp;grouped&nbsp;components&nbsp;in&nbsp;dynamic&nbsp;way<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;change&nbsp;the&nbsp;text&nbsp;of&nbsp;all&nbsp;components&nbsp;in&nbsp;group<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentsFromGroup("ACCEPT_BUTTONS");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;comp&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentByName(name);<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(comp);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>});<br/><div class='html-code'></div>Now,&nbsp;you&nbsp;have&nbsp;changed&nbsp;the&nbsp;text&nbsp;of&nbsp;all&nbsp;components&nbsp;in&nbsp;this&nbsp;group&nbsp;in&nbsp;dynamic&nbsp;way<br/><br/>
+<td valign="top" width="*" class="function-help">Returns&nbsp;array&nbsp;of&nbsp;components&nbsp;from&nbsp;the&nbsp;group<br/>Allows&nbsp;work&nbsp;on&nbsp;grouped&nbsp;components&nbsp;in&nbsp;dynamic&nbsp;way<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;change&nbsp;the&nbsp;text&nbsp;of&nbsp;all&nbsp;components&nbsp;in&nbsp;group<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentsFromGroup("ACCEPT_BUTTONS");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;comp&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentByName(name);<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(comp);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>});<br/></div></div>Now,&nbsp;you&nbsp;have&nbsp;changed&nbsp;the&nbsp;text&nbsp;of&nbsp;all&nbsp;components&nbsp;in&nbsp;this&nbsp;group&nbsp;in&nbsp;dynamic&nbsp;way<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -698,7 +710,7 @@ return&nbsp;getComponentsFromGroup(group);
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(componentsJson[group]&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;componentsJson[group].length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;componentsJson[group][i]&nbsp;&nbsp;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;component&nbsp;=&nbsp;this.getComponentByName(componentHolder.name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;this.identifyType(something);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;component;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
+var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(componentsJson[group]&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;componentsJson[group].length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;componentsJson[group][i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;component&nbsp;=&nbsp;this.getComponentByName(componentHolder.name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;this.identifyType(component);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;component;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -708,7 +720,7 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;comp
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getComponentByName">
 <td valign="top" width="220px" class="function-return-name">Component<br/>getComponentByName</td>
-<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;know&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;component,&nbsp;you&nbsp;can&nbsp;request&nbsp;the&nbsp;object<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pick&nbsp;up&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"BUTTON_43"<br/><div class='html-code'>var&nbsp;component&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentByName("BUTTON_43");<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>//&nbsp;now&nbsp;you&nbsp;can&nbsp;change&nbsp;some&nbsp;properties<br/>button.setText("Accept&nbsp;Now");<br/><div class='html-code'></div><br/>
+<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;know&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;component,&nbsp;you&nbsp;can&nbsp;request&nbsp;the&nbsp;object<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pick&nbsp;up&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"BUTTON_43"<br/><div class='html-code'>var&nbsp;component&nbsp;=&nbsp;COMPONENTMANAGER_1.getComponentByName("BUTTON_43");<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>//&nbsp;now&nbsp;you&nbsp;can&nbsp;change&nbsp;some&nbsp;properties<br/>button.setText("Accept&nbsp;Now");<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -735,7 +747,7 @@ var&nbsp;component&nbsp;=&nbsp;eval(name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nb
 <tr class="function-table-tr">
 <A NAME="FUNCTION_existsComponentByName">
 <td valign="top" width="220px" class="function-return-name">boolean<br/>existsComponentByName</td>
-<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;want&nbsp;to&nbsp;check&nbsp;if&nbsp;the&nbsp;component&nbsp;with&nbsp;name&nbsp;exists<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;check&nbsp;existance&nbsp;of&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"BUTTON_43"<br/><div class='html-code'>var&nbsp;exists&nbsp;=&nbsp;COMPONENTMANAGER_1.existsComponentByName("BUTTON_43");<br/>if&nbsp;(exists)&nbsp;{<br/>...<br/>}<br/><div class='html-code'></div><br/>
+<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;want&nbsp;to&nbsp;check&nbsp;if&nbsp;the&nbsp;component&nbsp;with&nbsp;name&nbsp;exists<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;check&nbsp;existance&nbsp;of&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"BUTTON_43"<br/><div class='html-code'>var&nbsp;exists&nbsp;=&nbsp;COMPONENTMANAGER_1.existsComponentByName("BUTTON_43");<br/>if&nbsp;(exists)&nbsp;{<br/>...<br/>}<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -762,7 +774,7 @@ this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getDataSourceByName">
 <td valign="top" width="220px" class="function-return-name">DataSourceAlias<br/>getDataSourceByName</td>
-<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;know&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;data&nbsp;source,&nbsp;you&nbsp;can&nbsp;request&nbsp;the&nbsp;object<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pick&nbsp;up&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"DS_53"<br/><div class='html-code'>var&nbsp;ds&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourceByName("DS_53");<br/>//&nbsp;now&nbsp;you&nbsp;can&nbsp;change&nbsp;some&nbsp;properties<br/>ds.setFilter(...);<br/><div class='html-code'></div><br/>
+<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;know&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;data&nbsp;source,&nbsp;you&nbsp;can&nbsp;request&nbsp;the&nbsp;object<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pick&nbsp;up&nbsp;a&nbsp;component&nbsp;with&nbsp;name&nbsp;"DS_53"<br/><div class='html-code'>var&nbsp;ds&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourceByName("DS_53");<br/>//&nbsp;now&nbsp;you&nbsp;can&nbsp;change&nbsp;some&nbsp;properties<br/>ds.setFilter(...);<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -789,7 +801,7 @@ var&nbsp;component&nbsp;=&nbsp;eval(name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nb
 <tr class="function-table-tr">
 <A NAME="FUNCTION_existsDataSourceByName">
 <td valign="top" width="220px" class="function-return-name">boolean<br/>existsDataSourceByName</td>
-<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;want&nbsp;to&nbsp;check&nbsp;if&nbsp;the&nbsp;data&nbsp;source&nbsp;with&nbsp;name&nbsp;exists<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;check&nbsp;existence&nbsp;of&nbsp;a&nbsp;data&nbsp;source&nbsp;with&nbsp;name&nbsp;"DS_1"<br/><div class='html-code'>var&nbsp;exists&nbsp;=&nbsp;COMPONENTMANAGER_1.existsDataSourceByName("DS_1");<br/>if&nbsp;(exists)&nbsp;{<br/>...<br/>}<br/><div class='html-code'></div><br/>
+<td valign="top" width="*" class="function-help">If&nbsp;you&nbsp;want&nbsp;to&nbsp;check&nbsp;if&nbsp;the&nbsp;data&nbsp;source&nbsp;with&nbsp;name&nbsp;exists<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;check&nbsp;existence&nbsp;of&nbsp;a&nbsp;data&nbsp;source&nbsp;with&nbsp;name&nbsp;"DS_1"<br/><div class='html-code'>var&nbsp;exists&nbsp;=&nbsp;COMPONENTMANAGER_1.existsDataSourceByName("DS_1");<br/>if&nbsp;(exists)&nbsp;{<br/>...<br/>}<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -816,7 +828,7 @@ this.internal_assureGlobalAccess();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(v
 <tr class="function-table-tr">
 <A NAME="FUNCTION_listAllComponents">
 <td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>listAllComponents</td>
-<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;components&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;components&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllComponents("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;component&nbsp;=&nbsp;element.component;<br/>*<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>if(name.indexOf("BUTTON")&nbsp;>&nbsp;-1)&nbsp;{<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>}<br/>if(name.indexOf("CROSSTAB")&nbsp;>&nbsp;-1)&nbsp;{<br/>var&nbsp;crosstab&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsCrosstab(component);<br/>*<br/>crosstab.setWidth(600);<br/>}<br/>});<br/><div class='html-code'></div><br/>
+<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;components&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;components&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllComponents("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;component&nbsp;=&nbsp;element.component;<br/>*<br/>//&nbsp;you&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;type...<br/>if(name.indexOf("BUTTON")&nbsp;>&nbsp;-1)&nbsp;{<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>}<br/>if(name.indexOf("CROSSTAB")&nbsp;>&nbsp;-1)&nbsp;{<br/>var&nbsp;crosstab&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsCrosstab(component);<br/>*<br/>crosstab.setWidth(600);<br/>}<br/>});<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -848,7 +860,7 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 <tr class="function-table-tr">
 <A NAME="FUNCTION_listAllDataSources">
 <td valign="top" width="220px" class="function-return-name">org.scn.community.shared.DataSourceArray<br/>listAllDataSources</td>
-<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;data&nbsp;sources&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;data&nbsp;sources&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllDataSources("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;datasource&nbsp;=&nbsp;element.datasource;<br/>*<br/>datasource.setFilter(...);<br/>});<br/><div class='html-code'></div><br/>
+<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;data&nbsp;sources&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;data&nbsp;sources&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllDataSources("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;datasource&nbsp;=&nbsp;element.datasource;<br/>*<br/>datasource.setFilter(...);<br/>});<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -878,9 +890,46 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_listAllComponentsWithSameType">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>listAllComponentsWithSameType</td>
+<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;components&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;type&nbsp;(given&nbsp;as&nbsp;component&nbsp;object)&nbsp;and&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;buttons&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES",&nbsp;BUTTON_1&nbsp;is&nbsp;a&nbsp;button&nbsp;component.<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllComponentsWithSameType(BUTTON_1,&nbsp;"SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;component&nbsp;=&nbsp;element.component;<br/>*<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>});<br/></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>componentAsType</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>prefix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>suffix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;componentType&nbsp;=&nbsp;this.identifyType(componentAsType,&nbsp;true);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.internal_listAllComponentsWithType(componentType,&nbsp;prefix,&nbsp;suffix,&nbsp;true);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_listAllComponentsWithType">
 <td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>listAllComponentsWithType</td>
-<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;components&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;type&nbsp;and&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/>Type&nbsp;is&nbsp;a&nbsp;primitive&nbsp;string&nbsp;which&nbsp;must&nbsp;be&nbsp;contained&nbsp;in&nbsp;the&nbsp;component&nbsp;name&nbsp;,&nbsp;eg.&nbsp;for&nbsp;button&nbsp;you&nbsp;have&nbsp;to&nbsp;name&nbsp;the&nbsp;buttons&nbsp;"BLABLA_BUTTON_SOMETHING"<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;buttons&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllComponents("BUTTON",&nbsp;"SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;component&nbsp;=&nbsp;element.component;<br/>*<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>});<br/><div class='html-code'></div><br/>
+<td valign="top" width="*" class="function-help">can&nbsp;list&nbsp;all&nbsp;components&nbsp;in&nbsp;the&nbsp;application&nbsp;by&nbsp;type&nbsp;and&nbsp;optional&nbsp;prefix&nbsp;and&nbsp;suffix<br/>Type&nbsp;is&nbsp;a&nbsp;primitive&nbsp;string&nbsp;which&nbsp;must&nbsp;be&nbsp;contained&nbsp;in&nbsp;the&nbsp;component&nbsp;name&nbsp;,&nbsp;eg.&nbsp;for&nbsp;button&nbsp;you&nbsp;have&nbsp;to&nbsp;name&nbsp;the&nbsp;buttons&nbsp;"BLABLA_BUTTON_SOMETHING"<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;list&nbsp;all&nbsp;buttons&nbsp;which&nbsp;are&nbsp;starting&nbsp;with&nbsp;"SALES"<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.listAllComponentsWithType("BUTTON",&nbsp;"SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;component&nbsp;=&nbsp;element.component;<br/>*<br/>var&nbsp;button&nbsp;=&nbsp;COMPONENTMANAGER_1.returnAsButton(component);<br/>*<br/>button.setText("Accept&nbsp;Now");<br/>});<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -907,7 +956,49 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internal_assureGlobalAccess();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;key&nbsp;in&nbsp;this.getGlobal())&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;something&nbsp;=&nbsp;eval(key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;typeof&nbsp;something&nbsp;==&nbsp;&quot;object&quot;&nbsp;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;fitsIntoName&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(prefix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;prefix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;key.indexOf(prefix)&nbsp;!=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(suffix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;suffix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(key.indexOf(suffix)&nbsp;!=&nbsp;(key.length&nbsp;-&nbsp;suffix.length))&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!fitsIntoName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;currently&nbsp;only&nbsp;type&nbsp;in&nbsp;the&nbsp;name&nbsp;can&nbsp;be&nbsp;supported,&nbsp;eg.&nbsp;KAR_BUTTON_32&nbsp;as&nbsp;BUTTON&nbsp;(logical&nbsp;assignment)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(key.indexOf(componentType)&nbsp;&gt;&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;this.identifyType(something);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;something;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;check&nbsp;if&nbsp;the&nbsp;object&nbsp;contains&nbsp;getWidth&nbsp;method&nbsp;-&gt;&nbsp;seems&nbsp;to&nbsp;be&nbsp;component<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something.getWidth&nbsp;!=&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{}&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
+return&nbsp;this.internal_listAllComponentsWithType(componentType,&nbsp;prefix,&nbsp;suffix,&nbsp;false);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_internal_listAllComponentsWithType">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ComponentArray<br/>internal_listAllComponentsWithType</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>componentType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>prefix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>suffix</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>typeIsExact</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internal_assureGlobalAccess();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;key&nbsp;in&nbsp;this.getGlobal())&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;something&nbsp;=&nbsp;eval(key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;typeof&nbsp;something&nbsp;==&nbsp;&quot;object&quot;&nbsp;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;fitsIntoName&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(prefix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;prefix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;key.indexOf(prefix)&nbsp;!=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(suffix&nbsp;!=&nbsp;undefined&nbsp;&amp;&amp;&nbsp;suffix.length&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(key.indexOf(suffix)&nbsp;!=&nbsp;(key.length&nbsp;-&nbsp;suffix.length))&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fitsIntoName&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!fitsIntoName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;currently&nbsp;only&nbsp;type&nbsp;in&nbsp;the&nbsp;name&nbsp;can&nbsp;be&nbsp;supported,&nbsp;eg.&nbsp;KAR_BUTTON_32&nbsp;as&nbsp;BUTTON&nbsp;(logical&nbsp;assignment)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!typeIsExact&nbsp;&amp;&amp;&nbsp;key.indexOf(componentType)&nbsp;&gt;&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;this.identifyType(something);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;something;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;check&nbsp;if&nbsp;the&nbsp;object&nbsp;contains&nbsp;getWidth&nbsp;method&nbsp;-&gt;&nbsp;seems&nbsp;to&nbsp;be&nbsp;component<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something.getWidth&nbsp;!=&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if&nbsp;(typeIsExact)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;currentType&nbsp;=&nbsp;this.identifyType(something,&nbsp;true);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(currentType&nbsp;==&nbsp;componentType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;currentType;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;something;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;check&nbsp;if&nbsp;the&nbsp;object&nbsp;contains&nbsp;getWidth&nbsp;method&nbsp;-&gt;&nbsp;seems&nbsp;to&nbsp;be&nbsp;component<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(something.getWidth&nbsp;!=&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{}&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -926,6 +1017,11 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 <td width="120px" class="parameter-type"><B>Component</B></td>
 <td width="*" class="parameter-help"></td>
 </tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keepFullType</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -934,7 +1030,7 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;type&nbsp;=&nbsp;&quot;UNKNOWN&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(inputComponent.getOwner){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;owner&nbsp;=&nbsp;inputComponent.getOwner();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(owner.getItemType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;owner.getItemType();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APPLICATION.createInfoMessage(&quot;Comp:&nbsp;&quot;&nbsp;+&nbsp;type);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type.indexOf(&quot;_COMPONENT&quot;)&nbsp;&gt;&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;type.substring(0,&nbsp;type.indexOf(&quot;_COMPONENT&quot;));<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;type;
+this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;type&nbsp;=&nbsp;&quot;UNKNOWN&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(inputComponent.getOwner){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;owner&nbsp;=&nbsp;inputComponent.getOwner();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(owner.getItemType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;owner.getItemType();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;APPLICATION.createInfoMessage(&quot;Comp:&nbsp;&quot;&nbsp;+&nbsp;type);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!keepFullType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(type.indexOf(&quot;_COMPONENT&quot;)&nbsp;&gt;&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;type.substring(0,&nbsp;type.indexOf(&quot;_COMPONENT&quot;));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;type;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
