@@ -80,6 +80,18 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61417">Design Studio SDK: Flo
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">unregisterComponent [<a href="#FUNCTION_unregisterComponent">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">component</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeAllComponents [<a href="#FUNCTION_removeAllComponents">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">reLayout [<a href="#FUNCTION_reLayout">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -158,6 +170,55 @@ this.parentComponent&nbsp;=&nbsp;component;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if(this.registeredComponents&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.registeredComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.registeredComponents.push(component);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_unregisterComponent">
+<td valign="top" width="220px" class="function-return-name">void<br/>unregisterComponent</td>
+<td valign="top" width="*" class="function-help">Unregister&nbsp;component&nbsp;which&nbsp;will&nbsp;be&nbsp;repositioned&nbsp;by&nbsp;this&nbsp;layouter.<br/>The&nbsp;components&nbsp;will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;registration&nbsp;list.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>component</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+for(var&nbsp;i=0;i&lt;this.registeredComponents.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(registeredComponents[i]&nbsp;===&nbsp;component)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.registeredComponents.splice(i,&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_removeAllComponents">
+<td valign="top" width="220px" class="function-return-name">void<br/>removeAllComponents</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;all&nbsp;components&nbsp;from&nbsp;the&nbsp;layouter.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.registeredComponents&nbsp;=&nbsp;[];
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
