@@ -1,0 +1,298 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../doc.css">
+<link rel="stylesheet" type="text/css" href="../../tables.css">
+<title>(PROTOTYPE!) Application Header (with Event) - SCN Design Studio Community</title>
+</head>
+<body class="comp-body">
+<div class="comp-main">
+
+	<div class="component-name">
+	ApplicationHeaderE [ScnCommunityPrototypes]
+	</div>
+	<div class="component-title">
+	(PROTOTYPE!) Application Header (with Event)
+	</div>
+
+	<p>
+Basic wrapper on SAP UI5 Application Header
+</p>
+<p>
+Link to blog: <a href="http://scn.sap.com/docs/DOC-58002">Design Studio SDK: Application Header Component</a>
+</p>
+
+
+	<br/>
+	<div class="component-properties">VISIBLE PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>displayLogoff<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Display Logoff</B><br/>If set to true, the logoff area will be displayed at the right hand side of the application header.
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>displayWelcome<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Display Welcome</B><br/>By default, set to true and dislpays the welcome text.
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>logoSrc<br/>[Url]</B></td>
+<td width="*" class="property-title-tooltip"><B>Logo Source</B><br/>Path (src) to the logo icon to be displayed in the application header.
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>logoText<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Logo Text</B><br/>The text that will be displayed beside the logo in the application header. This property is optional.
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>userName<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>User Name</B><br/>User name that will be displayed beside the welcome text.
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">VISIBLE EVENTS</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>onLogoff<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On Logoff</B><br/>Fires an event to log off the user from the application.
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS LIST</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setUserName [<a href="#FUNCTION_setUserName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">userName</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getUserName [<a href="#FUNCTION_getUserName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setLogoText [<a href="#FUNCTION_setLogoText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">logoText</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLogoText [<a href="#FUNCTION_getLogoText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">private_setAppInfoName [<a href="#FUNCTION_private_setAppInfoName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">HIDDEN (TECHNICAL) PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>onSetAppName<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Set Application Name</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">this.private_setAppInfoName();</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>appName<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Application Name</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS IN DETAIL</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="">
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_setUserName">
+<td valign="top" width="220px" class="function-return-name">void<br/>setUserName</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;user&nbsp;name&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;welcome&nbsp;text.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>userName</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> User name </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.userName&nbsp;=&nbsp;userName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getUserName">
+<td valign="top" width="220px" class="function-return-name">String<br/>getUserName</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;user&nbsp;name&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;welcome&nbsp;text.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.userName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setLogoText">
+<td valign="top" width="220px" class="function-return-name">void<br/>setLogoText</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;text&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;logo&nbsp;in&nbsp;the&nbsp;application&nbsp;header.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>logoText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Logo text </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.logoText&nbsp;=&nbsp;logoText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getLogoText">
+<td valign="top" width="220px" class="function-return-name">String<br/>getLogoText</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;text&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;logo&nbsp;in&nbsp;the&nbsp;application&nbsp;header.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.logoText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_private_setAppInfoName">
+<td valign="top" width="220px" class="function-return-name">void<br/>private_setAppInfoName</td>
+<td valign="top" width="*" class="function-help">/Sets&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;invisible&nbsp;property&nbsp;appName&nbsp;to&nbsp;the&nbsp;application&nbsp;name<br/>//&nbsp;@Visibility(private)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+//&nbsp;APPLICATION.createInfoMessage(&quot;Name:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.appName&nbsp;=&nbsp;&quot;Event:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
+	</TABLE>
+
+</div>
+</body>
+</html>
