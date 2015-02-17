@@ -14,7 +14,13 @@
 	Facet Filter
 	</div>
 
-	
+	<p>
+Sends client infromation available via browser API to the BIAL scriptis
+</p>
+<p>
+Link to blog: <a href="http://scn.sap.com/docs/DOC-62064">Design Studio SDK: Facet Filter Component</a>
+</p>
+
 
 	<br/>
 	<div class="component-properties">VISIBLE PROPERTIES</div>
@@ -24,12 +30,107 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>DSortingType<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Member Sorting Type</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">Default</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Selected</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Available</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Alphabetical</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Available</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DSortingDirection<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Member Sorting Direction</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">Ascending</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Descending</td>
+<td class="value-td">X</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Descending</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DMaxMembers<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Maximum Number of Members</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">1000</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DMarkAvailable<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Mark Available Members</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DMarkNotAvailable<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Mark Not Available Members</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DClearOthers<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Clear Selection of other dimensions when member is aot available</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DContentMode<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Content Mode (how much should be visualized)</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">All Dimensions</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Only from Result Set</td>
+<td class="value-td">X</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Only from Result Set</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -53,6 +154,66 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMaxMembers [<a href="#FUNCTION_getMaxMembers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxMembers [<a href="#FUNCTION_setMaxMembers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMarkAvailable [<a href="#FUNCTION_getMarkAvailable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMarkAvailable [<a href="#FUNCTION_setMarkAvailable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMarkNotAvailable [<a href="#FUNCTION_getMarkNotAvailable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMarkNotAvailable [<a href="#FUNCTION_setMarkNotAvailable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getResetSelectionOnNotAvailable [<a href="#FUNCTION_getResetSelectionOnNotAvailable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setResetSelectionOnNotAvailable [<a href="#FUNCTION_setResetSelectionOnNotAvailable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getClearOthers [<a href="#FUNCTION_getClearOthers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setClearOthers [<a href="#FUNCTION_setClearOthers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">private_onSelectionChanged [<a href="#FUNCTION_private_onSelectionChanged">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -66,7 +227,25 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">reloadDataSource [<a href="#FUNCTION_reloadDataSource">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="*" class="function-short-name">(memberAccessSource)</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">reloadSelection [<a href="#FUNCTION_reloadSelection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(memberAccessSource)</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSortingDirection [<a href="#FUNCTION_setSortingDirection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">direction</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSortingType [<a href="#FUNCTION_setSortingType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">type</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -108,7 +287,7 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>onDSelectionChanged<br/>[ScriptText]</B></td>
+<td width="120px" class="property-name-type"><B>onInternalSelectionChanged<br/>[ScriptText]</B></td>
 <td width="*" class="property-title-tooltip"><B>On User List Selection</B><br/>&nbsp;
 
 </td>
@@ -135,9 +314,9 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_private_onSelectionChanged">
-<td valign="top" width="220px" class="function-return-name">void<br/>private_onSelectionChanged</td>
-<td valign="top" width="*" class="function-help"><br/>
+<A NAME="FUNCTION_getMaxMembers">
+<td valign="top" width="220px" class="function-return-name">int<br/>getMaxMembers</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;max&nbsp;members&nbsp;property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -149,7 +328,252 @@
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;selection&nbsp;=&nbsp;this.DSelection;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;selectionJson&nbsp;=&nbsp;JSON.parse(selection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dimension&nbsp;=&nbsp;selectionJson.dimension;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;keys&nbsp;=&nbsp;selectionJson.keys;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;keysAsArray&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;DS&nbsp;=&nbsp;this.getDataSource();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(keys.length&nbsp;==&nbsp;1&nbsp;&amp;&amp;&nbsp;keys[0]&nbsp;==&nbsp;&quot;-ALL-&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DS.clearFilter(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;iK&nbsp;=&nbsp;0;&nbsp;iK&nbsp;&lt;&nbsp;keys.length;&nbsp;iK++)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;key&nbsp;=&nbsp;keys[iK];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keysAsArray.push(key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;APPLICATION.createInfoMessage(&quot;Filter:&nbsp;&quot;&nbsp;+&nbsp;dimension&nbsp;+&nbsp;&quot;,&nbsp;&quot;&nbsp;+&nbsp;JSON.stringify(keysAsArray));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DS.setFilter(dimension,&nbsp;keysAsArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+return&nbsp;this.DMaxMembers;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMaxMembers">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMaxMembers</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value&nbsp;of&nbsp;max&nbsp;members&nbsp;property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DMaxMembers&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMarkAvailable">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getMarkAvailable</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;mark&nbsp;available<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DMarkAvailable;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMarkAvailable">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMarkAvailable</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value&nbsp;of&nbsp;mark&nbsp;available<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DMarkAvailable&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMarkNotAvailable">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getMarkNotAvailable</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;mark&nbsp;not&nbsp;available<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DMarkNotAvailable;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMarkNotAvailable">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMarkNotAvailable</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value&nbsp;of&nbsp;mark&nbsp;not&nbsp;available<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DMarkNotAvailable&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getResetSelectionOnNotAvailable">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getResetSelectionOnNotAvailable</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;reset&nbsp;selection&nbsp;on&nbsp;not&nbsp;available<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DResetSelectionOnNotAvailable;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setResetSelectionOnNotAvailable">
+<td valign="top" width="220px" class="function-return-name">void<br/>setResetSelectionOnNotAvailable</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value&nbsp;of&nbsp;reset&nbsp;selection&nbsp;on&nbsp;not&nbsp;available<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DResetSelectionOnNotAvailable&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getClearOthers">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getClearOthers</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;clear&nbsp;others<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DClearOthers;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setClearOthers">
+<td valign="top" width="220px" class="function-return-name">void<br/>setClearOthers</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value&nbsp;of&nbsp;clear&nbsp;others<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DClearOthers&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_private_onSelectionChanged">
+<td valign="top" width="220px" class="function-return-name">void<br/>private_onSelectionChanged</td>
+<td valign="top" width="*" class="function-help">DO&nbsp;NOT&nbsp;USE&nbsp;PRIVATE&nbsp;METHODS<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;try{<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.openZtl(this)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.selection&nbsp;=&nbsp;this.DSelection;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.selectionJson&nbsp;=&nbsp;JSON.parse(l.selection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionName&nbsp;=&nbsp;l.selectionJson.dimension;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.keys&nbsp;=&nbsp;l.selectionJson.keys;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.keysAsArray&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;l.DS&nbsp;=&nbsp;this.getDataSource();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(l.DS)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(l.selectionJson.clearOthers&nbsp;&amp;&amp;&nbsp;that.getClearOthers())&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;undefined;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.DContentMode&nbsp;==&nbsp;&quot;Only&nbsp;from&nbsp;Result&nbsp;Set&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsRows&nbsp;=&nbsp;DS.getDimensions(Axis.ROWS);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsColumns&nbsp;=&nbsp;DS.getDimensions(Axis.COLUMNS);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsRows.forEach(function(dimension,&nbsp;indexD)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.push(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsColumns.forEach(function(dimension,&nbsp;indexD)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.push(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;DS.getDimensions();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(this,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.forEach(function(dimension,&nbsp;index)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!dimension.isMeasuresDimension)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.currentDimensionName&nbsp;=&nbsp;dimension.name<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(l.currentDimensionName&nbsp;!=&nbsp;l.dimensionName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.DS.clearFilter(l.currentDimensionName);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(l.keys.length&nbsp;==&nbsp;1&nbsp;&amp;&amp;&nbsp;l.keys[0]&nbsp;==&nbsp;&quot;-ALL-&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.DS.clearFilter(l.dimensionName);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;iK&nbsp;=&nbsp;0;&nbsp;iK&nbsp;&lt;&nbsp;l.keys.length;&nbsp;iK++)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.key&nbsp;=&nbsp;l.keys[iK];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.keysAsArray.push(l.key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.DS.setFilter(l.dimensionName,&nbsp;l.keysAsArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.exitZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.processZtlException(that,&nbsp;l,&nbsp;e)};throw&nbsp;e;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -159,7 +583,7 @@ var&nbsp;selection&nbsp;=&nbsp;this.DSelection;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp
 <tr class="function-table-tr">
 <A NAME="FUNCTION_private_onBeforeRender">
 <td valign="top" width="220px" class="function-return-name">void<br/>private_onBeforeRender</td>
-<td valign="top" width="*" class="function-help"><br/>
+<td valign="top" width="*" class="function-help">DO&nbsp;NOT&nbsp;USE&nbsp;PRIVATE&nbsp;METHODS<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -181,10 +605,15 @@ var&nbsp;selection&nbsp;=&nbsp;this.DSelection;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp
 <tr class="function-table-tr">
 <A NAME="FUNCTION_reloadDataSource">
 <td valign="top" width="220px" class="function-return-name">void<br/>reloadDataSource</td>
-<td valign="top" width="*" class="function-help"><br/>
+<td valign="top" width="*" class="function-help">This&nbsp;function&nbsp;must&nbsp;be&nbsp;used&nbsp;for&nbsp;initialization&nbsp;and&nbsp;in&nbsp;case&nbsp;the&nbsp;drilldown&nbsp;structure&nbsp;has&nbsp;been&nbsp;changed.<br/>You&nbsp;should&nbsp;trigger&nbsp;it&nbsp;once&nbsp;and&nbsp;ideally&nbsp;when&nbsp;filters&nbsp;are&nbsp;NOT&nbsp;set&nbsp;on&nbsp;dimensions,&nbsp;other&nbsp;case&nbsp;you&nbsp;will&nbsp;see&nbsp;only&nbsp;members&nbsp;which&nbsp;are&nbsp;available&nbsp;in&nbsp;resultset&nbsp;(depends&nbsp;on&nbsp;your&nbsp;setting&nbsp;"member&nbsp;selection"&nbsp;on&nbsp;dimension&nbsp;level).<br/>When&nbsp;to&nbsp;use&nbsp;this&nbsp;method?<br/>-&nbsp;As&nbsp;soon&nbsp;the&nbsp;Data&nbsp;Source&nbsp;is&nbsp;initialized,&nbsp;either&nbsp;in&nbsp;"onStartup()"&nbsp;script&nbsp;or&nbsp;after&nbsp;loading&nbsp;in&nbsp;script.<br/><div class='html-example'">You&nbsp;have&nbsp;loaded&nbsp;the&nbsp;data&nbsp;source&nbsp;and&nbsp;want&nbsp;to&nbsp;initialize.<br/>The&nbsp;code&nbsp;should&nbsp;be&nbsp;placed&nbsp;in&nbsp;"onStartup()"&nbsp;method.<div class='html-code'>FACETFILTER_1.reloadDataSource();<br/>FACETFILTER_1.reloadSelection();<br/></div></div><div class='html-example'">Especially&nbsp;when&nbsp;you&nbsp;are&nbsp;using&nbsp;option&nbsp;of&nbsp;"Only&nbsp;From&nbsp;Result&nbsp;Set",&nbsp;you&nbsp;can&nbsp;bind&nbsp;a&nbsp;different&nbsp;data&nbsp;source&nbsp;(on&nbsp;the&nbsp;same&nbsp;query)&nbsp;to&nbsp;assure&nbsp;that&nbsp;it&nbsp;stays&nbsp;unfiltered&nbsp;for&nbsp;member&nbsp;selection.&nbsp;This&nbsp;Data&nbsp;Source&nbsp;should&nbsp;be&nbsp;not&nbsp;filtered&nbsp;on&nbsp;any&nbsp;dimension.<br/>The&nbsp;code&nbsp;should&nbsp;be&nbsp;placed&nbsp;in&nbsp;"onStartup()"&nbsp;method.<div class='html-code'>FACETFILTER_1.reloadDataSource(DS_FULL);<br/>FACETFILTER_1.reloadSelection(DS_FULL);<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>memberAccessSource</B></td>
+<td width="120px" class="parameter-type"><B>DataSourceAlias [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -193,7 +622,88 @@ var&nbsp;selection&nbsp;=&nbsp;this.DSelection;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;elementsJson&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;DS&nbsp;=&nbsp;this.getDataSource();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DS)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dimensions&nbsp;=&nbsp;DS.getDimensions();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dimensions.forEach(function(dimension,&nbsp;index)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;members&nbsp;=&nbsp;DS.getMembers(dimension,&nbsp;1000);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dimensionJson&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dimensionJson.name&nbsp;=&nbsp;dimension.name;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dimensionJson.text&nbsp;=&nbsp;dimension.text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dimensionJson.isMeasuresDimension&nbsp;=&nbsp;dimension.isMeasuresDimension;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dimensionJson.hierarchyActive&nbsp;=&nbsp;DS.isHierarchyActive(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dimensionJson.members&nbsp;=&nbsp;members;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(dimensionJson);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElements&nbsp;=&nbsp;JSON.stringify(elementsJson);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+/*&nbsp;entering&nbsp;general&nbsp;block*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;try{<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.openZtl(that)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;entering&nbsp;general&nbsp;block*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.elementsJson&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;l.DS&nbsp;=&nbsp;this.getDataSource();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!memberAccessSource)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memberAccessSource&nbsp;=&nbsp;l.DS;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(l.DS)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;undefined;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.DContentMode&nbsp;==&nbsp;&quot;Only&nbsp;from&nbsp;Result&nbsp;Set&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsRows&nbsp;=&nbsp;DS.getDimensions(Axis.ROWS);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsColumns&nbsp;=&nbsp;DS.getDimensions(Axis.COLUMNS);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsRows.forEach(function(dimension,&nbsp;indexD)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.push(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsColumns.forEach(function(dimension,&nbsp;indexD)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.push(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;DS.getDimensions();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionKeys&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.forEach(function(dimension,&nbsp;index)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionKeys&nbsp;=&nbsp;l.dimensionKeys&nbsp;+&nbsp;dimension.name;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.oldDimensionKeys&nbsp;!=&nbsp;l.dimensionKeys)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.forEach(function(dimension,&nbsp;index)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.members&nbsp;=&nbsp;memberAccessSource.getMembers(dimension,&nbsp;that.getMaxMembers());<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.name&nbsp;=&nbsp;dimension.name;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.text&nbsp;=&nbsp;dimension.text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.isMeasuresDimension&nbsp;=&nbsp;dimension.isMeasuresDimension;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.hierarchyActive&nbsp;=&nbsp;DS.isHierarchyActive(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.filterExt&nbsp;=&nbsp;&quot;;&quot;&nbsp;+&nbsp;DS.getFilterExt(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.members&nbsp;=&nbsp;l.members;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.elementsJson.push(l.dimensionJson);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElements&nbsp;=&nbsp;JSON.stringify(l.elementsJson);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.oldDimensionKeys&nbsp;=&nbsp;l.dimensionKeys;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;exiting&nbsp;general&nbsp;block*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.exitZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.processZtlException(that,&nbsp;l,&nbsp;e)};throw&nbsp;e;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;exiting&nbsp;general&nbsp;block*/
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_reloadSelection">
+<td valign="top" width="220px" class="function-return-name">void<br/>reloadSelection</td>
+<td valign="top" width="*" class="function-help">This&nbsp;function&nbsp;can&nbsp;be&nbsp;used&nbsp;after&nbsp;the&nbsp;filter&nbsp;in&nbsp;data&nbsp;source&nbsp;was&nbsp;changed&nbsp;to&nbsp;update&nbsp;the&nbsp;component.<br/>You&nbsp;should&nbsp;be&nbsp;trigered&nbsp;every&nbsp;time&nbsp;the&nbsp;filter&nbsp;change&nbsp;occurs,&nbsp;therefore&nbsp;the&nbsp;event&nbsp;in&nbsp;Data&nbsp;Source&nbsp;->&nbsp;onResultSetChanged()&nbsp;is&nbsp;a&nbsp;good&nbsp;place.<br/>When&nbsp;to&nbsp;use&nbsp;this&nbsp;method?<br/>-&nbsp;Always&nbsp;the&nbsp;filter&nbsp;is&nbsp;changed,&nbsp;also&nbsp;the&nbsp;"onResultSetChanged()"&nbsp;event&nbsp;is&nbsp;good&nbsp;for&nbsp;this.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;keep&nbsp;the&nbsp;selections&nbsp;with&nbsp;data&nbsp;source.<br/>The&nbsp;code&nbsp;should&nbsp;be&nbsp;placed&nbsp;in&nbsp;"onResultSetChanged()"&nbsp;method.<div class='html-code'>//&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;update&nbsp;also&nbsp;dimensions&nbsp;when&nbsp;drilldown&nbsp;is&nbsp;changed<br/>FACETFILTER_1.reloadDataSource();<br/>//&nbsp;every&nbsp;time<br/>FACETFILTER_1.reloadSelection();<br/></div></div><div class='html-example'">Especially&nbsp;when&nbsp;you&nbsp;are&nbsp;using&nbsp;option&nbsp;of&nbsp;"Only&nbsp;From&nbsp;Result&nbsp;Set",&nbsp;you&nbsp;can&nbsp;bind&nbsp;a&nbsp;different&nbsp;data&nbsp;source&nbsp;(on&nbsp;the&nbsp;same&nbsp;query)&nbsp;to&nbsp;assure&nbsp;that&nbsp;it&nbsp;stays&nbsp;unfiltered&nbsp;for&nbsp;member&nbsp;selection.&nbsp;This&nbsp;Data&nbsp;Source&nbsp;should&nbsp;be&nbsp;not&nbsp;filtered&nbsp;on&nbsp;any&nbsp;dimension.<br/>The&nbsp;code&nbsp;should&nbsp;be&nbsp;placed&nbsp;in&nbsp;"onStartup()"&nbsp;method.<div class='html-code'>FACETFILTER_1.reloadDataSource(DS_FULL);<br/>FACETFILTER_1.reloadSelection(DS_FULL);<br/></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>memberAccessSource</B></td>
+<td width="120px" class="parameter-type"><B>DataSourceAlias [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+/*&nbsp;entering&nbsp;general&nbsp;block*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;try{<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.openZtl(that)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;entering&nbsp;general&nbsp;block*/<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.elementsJson&nbsp;=&nbsp;{};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;l.DS&nbsp;=&nbsp;this.getDataSource();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!memberAccessSource)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memberAccessSource&nbsp;=&nbsp;l.DS;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(l.DS)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;undefined;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.DContentMode&nbsp;==&nbsp;&quot;Only&nbsp;from&nbsp;Result&nbsp;Set&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsRows&nbsp;=&nbsp;l.DS.getDimensions(Axis.ROWS);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsColumns&nbsp;=&nbsp;l.DS.getDimensions(Axis.COLUMNS);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsRows.forEach(function(dimension,&nbsp;indexD)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.push(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionsColumns.forEach(function(dimension,&nbsp;indexD)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.push(dimension);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;DS.getDimensions();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.forEach(function(dimension,&nbsp;indexD)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.members&nbsp;=&nbsp;memberAccessSource.getMembers(dimension,&nbsp;that.getMaxMembers());<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.name&nbsp;=&nbsp;dimension.name;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.members&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionJson.filterExt&nbsp;=&nbsp;&quot;;&nbsp;&quot;&nbsp;+&nbsp;l.DS.getFilterExt(dimension)&nbsp;+&nbsp;&quot;;&quot;;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.elementsJson[dimension.name]&nbsp;=&nbsp;l.dimensionJson;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSelection&nbsp;=&nbsp;JSON.stringify(l.elementsJson);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;exiting&nbsp;general&nbsp;block*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.exitZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(DEBUG)&nbsp;{&nbsp;&nbsp;DEBUG.processZtlException(that,&nbsp;l,&nbsp;e)};throw&nbsp;e;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;exiting&nbsp;general&nbsp;block*/
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setSortingDirection">
+<td valign="top" width="220px" class="function-return-name">void<br/>setSortingDirection</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;sorting&nbsp;direction&nbsp;-&nbsp;ASCENDING&nbsp;|&nbsp;DESCENDING<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>direction</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_SortDirectionEnumfield</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(direction&nbsp;==&nbsp;org_scn_community_shared_SortDirection.ASCENDING)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Ascending&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(direction&nbsp;==&nbsp;org_scn_community_shared_SortDirection.DESCENDING)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Descending&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Ascending&quot;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setSortingType">
+<td valign="top" width="220px" class="function-return-name">void<br/>setSortingType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;sorting&nbsp;type&nbsp;-&nbsp;DEFAULT&nbsp;|&nbsp;ALPHABETICAL&nbsp;|&nbsp;SELECTED&nbsp;|&nbsp;AVAILABLE<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>type</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_SortTypeEnumfield</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.DEAFULT)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Default&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.ALPHABETICAL)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Alphabetical&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.SELECTED)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Selected&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.AVAILABLE)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Available&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Default&quot;;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

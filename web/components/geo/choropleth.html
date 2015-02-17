@@ -24,75 +24,12 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>featureProperty<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Feature Property</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">NAME_1</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>labelProperty<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Label Property</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">NAME_1</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>measureMember<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Measure to Colour</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Measure to Colour (Blank will take whatever is in first column)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>ms<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Transition Time (ms)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">750</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>colorOn<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Enable Color</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>tooltipOn<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Enable Tooltips</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>colorReverse<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Color Reverse</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>labelsOn<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Enable Labels</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -102,24 +39,6 @@
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>legendOn<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Enable Legend</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>makeRoomX<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Avoid Legend</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -155,7 +74,7 @@
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">0</td>
+<td width="100px" class="property-default">15</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -164,7 +83,43 @@
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">0</td>
+<td width="100px" class="property-default">15</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientLeft<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Left</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">30</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientRight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Right</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">30</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientBottom<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Bottom</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">15</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientHeight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Height</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">10</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -173,7 +128,7 @@
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">0</td>
+<td width="100px" class="property-default">10</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -182,7 +137,7 @@
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">0</td>
+<td width="100px" class="property-default">10</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -191,7 +146,7 @@
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">0</td>
+<td width="100px" class="property-default">10</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -200,25 +155,7 @@
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">0</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>graticuleOn<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Enable Graticule Grid</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>canvasDragOn<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Enable Drag</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">10</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -259,10 +196,6 @@
 </tr>
 <tr class="list-tr">
 <td class="value-td">quantize</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">linear</td>
 <td class="value-td">&nbsp;</td>
 </tr>
 
@@ -420,12 +353,57 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>styleClasses<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>CSS Classes</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>featureProperty<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Feature Property</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">NAME_1</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>labelProperty<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Label Property</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">NAME_1</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>backgroundColor<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Background Colour</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedColor<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Feature Colour</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#009966</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>hoverColor<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Hover Feature Colour</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#999900</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -438,12 +416,57 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>ms<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Transition Time (ms)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">750</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>tooltipOn<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Enable Tooltips</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>graticuleOn<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Graticule Grid</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>globeOn<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Globe</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>legendOn<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Enable Legend</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>colorPalette<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Colour Palette</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">#EFF3FF,#BDD7E7,#6BAED6,#3182BD,#08519C</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -453,6 +476,15 @@
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>makeRoomX<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Avoid Legend</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
