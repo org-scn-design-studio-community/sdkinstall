@@ -1,0 +1,10 @@
+/**
+ SHORT HELP
+
+ #type|short description
+ some long text if required
+ type = FIX | ENH | NEW
+*/
+
+#NEW|3 components: Password Field, Value Help Feild, Tri State Check Box
+#ENH|new function for explicit reload of client information sizes

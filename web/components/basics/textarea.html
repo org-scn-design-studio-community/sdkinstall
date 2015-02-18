@@ -39,8 +39,17 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58302">Design Studio SDK: Tex
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>enabled<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Enabled</B><br/>Enabled
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>editable<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Editable flag</B><br/>Editable flag
+<td width="*" class="property-title-tooltip"><B>Editable</B><br/>Editable
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -86,6 +95,18 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58302">Design Studio SDK: Tex
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEnabled [<a href="#FUNCTION_setEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">enabled</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isEnabled [<a href="#FUNCTION_isEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setEditable [<a href="#FUNCTION_setEditable">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">editable</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -129,6 +150,55 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58302">Design Studio SDK: Tex
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<A NAME="FUNCTION_setEnabled">
+<td valign="top" width="220px" class="function-return-name">void<br/>setEnabled</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>enabled</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Editable value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.enabled&nbsp;=&nbsp;enabled;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_isEnabled">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>isEnabled</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.enabled;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_setEditable">
 <td valign="top" width="220px" class="function-return-name">void<br/>setEditable</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
