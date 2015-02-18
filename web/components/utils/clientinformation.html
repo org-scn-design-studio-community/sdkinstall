@@ -86,6 +86,12 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">reload [<a href="#FUNCTION_reload">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getWindowWidth [<a href="#FUNCTION_getWindowWidth">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
@@ -228,6 +234,15 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>reloadRequest<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Reload Request Technical Flag</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">X</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>windowHeight<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Height of the Window</B><br/>&nbsp;
 
@@ -291,6 +306,28 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<A NAME="FUNCTION_reload">
+<td valign="top" width="220px" class="function-return-name">void<br/>reload</td>
+<td valign="top" width="*" class="function-help">Reload&nbsp;Explicit&nbsp;Position&nbsp;Data<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(this.reloadRequest&nbsp;!=&nbsp;&quot;+&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.reloadRequest&nbsp;=&nbsp;&quot;+&quot;;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.reloadRequest&nbsp;=&nbsp;&quot;-&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_getWindowWidth">
 <td valign="top" width="220px" class="function-return-name">int<br/>getWindowWidth</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;browser&nbsp;window<br/><br/>
