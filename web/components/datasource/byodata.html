@@ -128,6 +128,18 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRotateAxis [<a href="#FUNCTION_setRotateAxis">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">b</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRotateAxis [<a href="#FUNCTION_getRotateAxis">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setDimensionCount [<a href="#FUNCTION_setDimensionCount">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">i</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -284,6 +296,55 @@ var&nbsp;m&nbsp;=&nbsp;eval(this.mutators);<br/>&nbsp;&nbsp;&nbsp;&nbsp;while(m.
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;d&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;d[0]&nbsp;=&nbsp;s;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;d.join(&quot;\n&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setRotateAxis">
+<td valign="top" width="220px" class="function-return-name">void<br/>setRotateAxis</td>
+<td valign="top" width="*" class="function-help">Whether&nbsp;to&nbsp;swap&nbsp;axis<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>b</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.swap&nbsp;=&nbsp;b;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getRotateAxis">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getRotateAxis</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;if&nbsp;axis&nbsp;is&nbsp;rotated<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.swap;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
