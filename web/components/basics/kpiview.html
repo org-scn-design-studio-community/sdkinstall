@@ -102,6 +102,15 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58152">Design Studio SDK: Kpi
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>valueFloat<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Value as Float</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>valueHAlign<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Value Horizontal Alignment</B><br/>&nbsp;
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
@@ -425,6 +434,18 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58152">Design Studio SDK: Kpi
 <td valign="top" width="240px" class="function-short-name">getValueText [<a href="#FUNCTION_getValueText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setValueFloat [<a href="#FUNCTION_setValueFloat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">number</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getValueFloat [<a href="#FUNCTION_getValueFloat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">float</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -922,6 +943,55 @@ this.valueText&nbsp;=&nbsp;text;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.valueText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setValueFloat">
+<td valign="top" width="220px" class="function-return-name">void<br/>setValueFloat</td>
+<td valign="top" width="*" class="function-help">/Sets&nbsp;the&nbsp;value&nbsp;number.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>number</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.valueFloat&nbsp;=&nbsp;number;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getValueFloat">
+<td valign="top" width="220px" class="function-return-name">float<br/>getValueFloat</td>
+<td valign="top" width="*" class="function-help">/Returns&nbsp;the&nbsp;value&nbsp;number.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.valueFloat;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
