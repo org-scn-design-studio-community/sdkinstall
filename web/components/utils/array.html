@@ -109,6 +109,12 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58082">Design Studio SDK: Arr
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">fillIntoSelectionComponent [<a href="#FUNCTION_fillIntoSelectionComponent">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectionComponent, (maxMembers)</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
 
 	</TABLE>
 
@@ -406,6 +412,38 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;JSON.parse(s);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;r&nbsp;=&nbsp;&quot;N/A&quot;;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(a.length&gt;index){&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r&nbsp;=&nbsp;a[index].value;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;r;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_fillIntoSelectionComponent">
+<td valign="top" width="220px" class="function-return-name">void<br/>fillIntoSelectionComponent</td>
+<td valign="top" width="*" class="function-help">Fills&nbsp;the&nbsp;content&nbsp;of&nbsp;this&nbsp;array&nbsp;into&nbsp;given&nbsp;selection&nbsp;component<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;fill&nbsp;the&nbsp;dropdown&nbsp;with&nbsp;the&nbsp;content<br/><div class='html-code'>ARRAY.fillIntoSelectionComponent(DROPDOWN,&nbsp;30);<br/></div>Now&nbsp;the&nbsp;dropdown&nbsp;is&nbsp;filled&nbsp;in&nbsp;with&nbsp;given&nbsp;values<br/></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectionComponent</B></td>
+<td width="120px" class="parameter-type"><B>SelectionComponent</B></td>
+<td width="*" class="parameter-help">Component which should be filled</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxMembers</B></td>
+<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
+<td width="*" class="parameter-help">max members</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+selectionComponent.removeAllItems();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.list&nbsp;=&nbsp;this.getValuesAsValueTextArray(maxMembers);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;l.list.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectionComponent.addItem(l.list[i].value,&nbsp;l.list[i].text);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
