@@ -134,12 +134,6 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">internal_assureGlobalAccess [<a href="#FUNCTION_internal_assureGlobalAccess">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">returnAsButton [<a href="#FUNCTION_returnAsButton">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">Button</td>
@@ -182,6 +176,12 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsCheckboxgroup [<a href="#FUNCTION_returnAsCheckboxgroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Dropdown</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">returnAsFilterpanel [<a href="#FUNCTION_returnAsFilterpanel">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">Filterpanel</td>
@@ -197,6 +197,12 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 <td valign="top" width="240px" class="function-short-name">returnAsInputfield [<a href="#FUNCTION_returnAsInputfield">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">Inputfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsInputfield [<a href="#FUNCTION_returnAsInputfield">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">Listbox</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -1128,28 +1134,6 @@ this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_assureGlobalAccess">
-<td valign="top" width="220px" class="function-return-name">void<br/>internal_assureGlobalAccess</td>
-<td valign="top" width="*" class="function-help">Internal&nbsp;function&nbsp;to&nbsp;read&nbsp;return&nbsp;global&nbsp;scope<br/>http://stackoverflow.com/questions/1162998/how-can-i-add-an-object-property-to-the-global-object-in-rhino-javascript<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if(this.getGlobal&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getGlobal&nbsp;=&nbsp;function&nbsp;()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}).call(null);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <A NAME="FUNCTION_returnAsButton">
 <td valign="top" width="220px" class="function-return-name">Button<br/>returnAsButton</td>
 <td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
@@ -1339,6 +1323,33 @@ return&nbsp;inputComponent;
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsCheckboxgroup">
+<td valign="top" width="220px" class="function-return-name">Dropdown<br/>returnAsCheckboxgroup</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_returnAsFilterpanel">
 <td valign="top" width="220px" class="function-return-name">Filterpanel<br/>returnAsFilterpanel</td>
 <td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
@@ -1395,6 +1406,33 @@ return&nbsp;inputComponent;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_returnAsInputfield">
 <td valign="top" width="220px" class="function-return-name">Inputfield<br/>returnAsInputfield</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_returnAsInputfield">
+<td valign="top" width="220px" class="function-return-name">Listbox<br/>returnAsInputfield</td>
 <td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;specific&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">

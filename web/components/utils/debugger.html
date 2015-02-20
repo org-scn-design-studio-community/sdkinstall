@@ -190,12 +190,6 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62081">Design Studio SDK: BIA
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">internal_assureGlobalAccess [<a href="#FUNCTION_internal_assureGlobalAccess">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
 
 	</TABLE>
 
@@ -697,28 +691,6 @@ this.DConsole&nbsp;=&nbsp;&quot;&quot;;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.clearConsole();<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DStack&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DVariables&nbsp;=&nbsp;&quot;[]&quot;;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_internal_assureGlobalAccess">
-<td valign="top" width="220px" class="function-return-name">void<br/>internal_assureGlobalAccess</td>
-<td valign="top" width="*" class="function-help">Internal&nbsp;function&nbsp;to&nbsp;read&nbsp;return&nbsp;global&nbsp;scope<br/>http://stackoverflow.com/questions/1162998/how-can-i-add-an-object-property-to-the-global-object-in-rhino-javascript<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if(this.getGlobal&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getGlobal&nbsp;=&nbsp;function&nbsp;()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}).call(null);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

@@ -133,6 +133,24 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58002">Design Studio SDK: App
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setValues [<a href="#FUNCTION_setValues">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">list</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getValueTextList [<a href="#FUNCTION_getValueTextList">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ValueTextArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">fillIntoSelectionComponent [<a href="#FUNCTION_fillIntoSelectionComponent">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectionComponent, list</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
 
 	</TABLE>
 
@@ -284,6 +302,87 @@ return&nbsp;this.logoText;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 //&nbsp;APPLICATION.createInfoMessage(&quot;Name:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.appName&nbsp;=&nbsp;&quot;Event:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setValues">
+<td valign="top" width="220px" class="function-return-name">void<br/>setValues</td>
+<td valign="top" width="*" class="function-help">Just&nbsp;a&nbsp;show&nbsp;case,&nbsp;but&nbsp;this&nbsp;will&nbsp;never&nbsp;work&nbsp;-<br/>ValueTextList&nbsp;is&nbsp;just&nbsp;a&nbsp;representation&nbsp;for&nbsp;Java&nbsp;object&nbsp;which&nbsp;needs&nbsp;implementation&nbsp;of&nbsp;some&nbsp;interface<br/>and&nbsp;will&nbsp;be&nbsp;passed&nbsp;directly&nbsp;through&nbsp;ZTL&nbsp;-&nbsp;cannot&nbsp;be&nbsp;coded&nbsp;via&nbsp;JSON.<br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>list</B></td>
+<td width="120px" class="parameter-type"><B>ValueTextList</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.value&nbsp;=&nbsp;list;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;string&nbsp;=&nbsp;list.toString();<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.string&nbsp;=&nbsp;string;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getValueTextList">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ValueTextArray<br/>getValueTextList</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;myArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;myArray.push({&quot;value&quot;:&nbsp;&quot;A&quot;,&nbsp;&quot;text&quot;:&nbsp;&quot;A-T&quot;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;myArray.push({&quot;value&quot;:&nbsp;&quot;B&quot;,&nbsp;&quot;text&quot;:&nbsp;&quot;C-T&quot;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;myArray.push({&quot;value&quot;:&nbsp;&quot;C&quot;,&nbsp;&quot;text&quot;:&nbsp;&quot;B-T&quot;});<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;myArray;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_fillIntoSelectionComponent">
+<td valign="top" width="220px" class="function-return-name">void<br/>fillIntoSelectionComponent</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectionComponent</B></td>
+<td width="120px" class="parameter-type"><B>SelectionComponent</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>list</B></td>
+<td width="120px" class="parameter-type"><B>org.scn.community.shared.ValueTextArray</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+selectionComponent.removeAllItems();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.value&nbsp;=&nbsp;list;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;list.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;l[list[i].value]&nbsp;=&nbsp;list[i].value&nbsp;+&nbsp;&quot;:&nbsp;&quot;&nbsp;+&nbsp;list[i].text;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectionComponent.addItem(list[i].value,&nbsp;list[i].text);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
