@@ -78,12 +78,49 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>tolerance<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Tolerance</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>threshold<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Threshold</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Manual Threshold</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">20</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>thresholdMethod<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Threshold Method</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">Max</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Median</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Mean</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Manual</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">Median</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -143,21 +180,9 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectedRow [<a href="#FUNCTION_getSelectedRow">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectedColumn [<a href="#FUNCTION_getSelectedColumn">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectedValue [<a href="#FUNCTION_getSelectedValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">float</td>
+<td valign="top" width="240px" class="function-short-name">setThresholdMethod [<a href="#FUNCTION_setThresholdMethod">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">method</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -172,6 +197,66 @@
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRadius [<a href="#FUNCTION_setRadius">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">radius</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRadius [<a href="#FUNCTION_getRadius">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setThreshold [<a href="#FUNCTION_setThreshold">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">threshold</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getThreshold [<a href="#FUNCTION_getThreshold">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTolerance [<a href="#FUNCTION_setTolerance">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">tolerance</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTolerance [<a href="#FUNCTION_getTolerance">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMeasureX [<a href="#FUNCTION_setMeasureX">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">measure</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMeasureX [<a href="#FUNCTION_getMeasureX">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMeasureY [<a href="#FUNCTION_setMeasureY">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">measure</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMeasureY [<a href="#FUNCTION_getMeasureY">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
 
 	</TABLE>
 
@@ -183,15 +268,6 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>stringData<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Data Stringified</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">BLANK</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>selectedRow<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Selected Row</B><br/>&nbsp;
 
@@ -291,12 +367,17 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedRow">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSelectedRow</td>
-<td valign="top" width="*" class="function-help">Get&nbsp;selected&nbsp;row<br/><br/>
+<A NAME="FUNCTION_setThresholdMethod">
+<td valign="top" width="220px" class="function-return-name">void<br/>setThresholdMethod</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Threshold&nbsp;Method<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>method</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -305,51 +386,7 @@
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.selectedRow;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedColumn">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSelectedColumn</td>
-<td valign="top" width="*" class="function-help">Get&nbsp;selected&nbsp;column<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.selectedColumn;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedValue">
-<td valign="top" width="220px" class="function-return-name">float<br/>getSelectedValue</td>
-<td valign="top" width="*" class="function-help">Get&nbsp;selected&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.selectedValue;
+this.thresholdMethod&nbsp;=&nbsp;method;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -376,7 +413,7 @@ return&nbsp;this.selectedValue;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.legendOn&nbsp;=&nbsp;visible;
+this.legendOn&nbsp;=&nbsp;visible;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -404,6 +441,251 @@ return&nbsp;this.legendOn&nbsp;=&nbsp;visible;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.colorPalette&nbsp;=&nbsp;palette;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setRadius">
+<td valign="top" width="220px" class="function-return-name">void<br/>setRadius</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Hexagon&nbsp;Radius<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>radius</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.radius&nbsp;=&nbsp;radius;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getRadius">
+<td valign="top" width="220px" class="function-return-name">int<br/>getRadius</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;Hexagon&nbsp;Radius<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.radius;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setThreshold">
+<td valign="top" width="220px" class="function-return-name">void<br/>setThreshold</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Max&nbsp;Threshold<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>threshold</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.threshold&nbsp;=&nbsp;threshold;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getThreshold">
+<td valign="top" width="220px" class="function-return-name">int<br/>getThreshold</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;Max&nbsp;Threshold<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.threshold;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setTolerance">
+<td valign="top" width="220px" class="function-return-name">void<br/>setTolerance</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Min&nbsp;Threshold&nbsp;(Tolerance)<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tolerance</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.tolerance&nbsp;=&nbsp;tolerance;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getTolerance">
+<td valign="top" width="220px" class="function-return-name">int<br/>getTolerance</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;Min&nbsp;Threshold&nbsp;(Tolerance)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.tolerance;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMeasureX">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMeasureX</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;X-Axis&nbsp;Measure&nbsp;by&nbsp;text<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>measure</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.measureX&nbsp;=&nbsp;measure;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMeasureX">
+<td valign="top" width="220px" class="function-return-name">String<br/>getMeasureX</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;X-Axis&nbsp;Measure&nbsp;text<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.measureX;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMeasureY">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMeasureY</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Y-Axis&nbsp;Measure&nbsp;by&nbsp;text<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>measure</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.measureY&nbsp;=&nbsp;measure;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMeasureY">
+<td valign="top" width="220px" class="function-return-name">String<br/>getMeasureY</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;Y-Axis&nbsp;Measure&nbsp;text<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.measureY;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

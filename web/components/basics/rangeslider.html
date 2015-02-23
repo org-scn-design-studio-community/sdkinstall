@@ -173,9 +173,21 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-57897">Design Studio SDK: Ran
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setValueAsInt [<a href="#FUNCTION_setValueAsInt">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getValue [<a href="#FUNCTION_getValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getValueAsInt [<a href="#FUNCTION_getValueAsInt">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -185,9 +197,21 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-57897">Design Studio SDK: Ran
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setValue2AsInt [<a href="#FUNCTION_setValue2AsInt">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getValue2 [<a href="#FUNCTION_getValue2">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getValue2AsInt [<a href="#FUNCTION_getValue2AsInt">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -432,6 +456,33 @@ this.value&nbsp;=&nbsp;value;
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_setValueAsInt">
+<td valign="top" width="220px" class="function-return-name">void<br/>setValueAsInt</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value&nbsp;from&nbsp;integer.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> Value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.value&nbsp;=&nbsp;parseFloat(value);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_getValue">
 <td valign="top" width="220px" class="function-return-name">float<br/>getValue</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;value.<br/><br/>
@@ -447,6 +498,28 @@ this.value&nbsp;=&nbsp;value;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getValueAsInt">
+<td valign="top" width="220px" class="function-return-name">int<br/>getValueAsInt</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;value&nbsp;as&nbsp;integer.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;parseInt(Math.floor(this.value));
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -481,6 +554,33 @@ this.value2&nbsp;=&nbsp;value2;
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_setValue2AsInt">
+<td valign="top" width="220px" class="function-return-name">void<br/>setValue2AsInt</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;second&nbsp;value&nbsp;from&nbsp;integer.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> Value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.value2&nbsp;=&nbsp;parseFloat(value);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_getValue2">
 <td valign="top" width="220px" class="function-return-name">float<br/>getValue2</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;second&nbsp;value.<br/><br/>
@@ -496,6 +596,28 @@ this.value2&nbsp;=&nbsp;value2;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.value2;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getValue2AsInt">
+<td valign="top" width="220px" class="function-return-name">int<br/>getValue2AsInt</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;second&nbsp;value&nbsp;as&nbsp;integer.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;parseInt(Math.floor(this.value2));
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
