@@ -62,6 +62,42 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-61450">Design Studio SDK: Cli
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeDataSourceFormGroup [<a href="#FUNCTION_removeDataSourceFormGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, dataSourceName</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeComponentFromGroup [<a href="#FUNCTION_removeComponentFromGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, componentName</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addDataSourceReferenceToGroup [<a href="#FUNCTION_addDataSourceReferenceToGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, dataSource</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addComponentReferenceToGroup [<a href="#FUNCTION_addComponentReferenceToGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, component</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeDataSourceReferenceFromGroup [<a href="#FUNCTION_removeDataSourceReferenceFromGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, dataSource</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeComponentReferenceFromGroup [<a href="#FUNCTION_removeComponentReferenceFromGroup">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">group, component</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getDataSourcesFromGroup [<a href="#FUNCTION_getDataSourcesFromGroup">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">group</td>
 <td valign="top" width="160px" class="function-short-return">org.scn.community.shared.DataSourceArray</td>
@@ -760,6 +796,198 @@ var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_removeDataSourceFormGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>removeDataSourceFormGroup</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;data&nbsp;source&nbsp;from&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;data&nbsp;sources<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;data&nbsp;source&nbsp;from&nbsp;dynamic&nbsp;access<br/><div class='html-code'>COMPONENTMANAGER_1.removeDataSourceFromGroup("SALES",&nbsp;"DS_SALE_1");<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getDataSourcesFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dataSourceName</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.removeComponentFromGroup(group,&nbsp;dataSourceName);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_removeComponentFromGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>removeComponentFromGroup</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;component&nbsp;to&nbsp;group&nbsp;by&nbsp;name<br/>Allows&nbsp;grouping&nbsp;of&nbsp;components<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;component&nbsp;from&nbsp;dynamic&nbsp;access<br/><div class='html-code'>COMPONENTMANAGER_1.removeComponentFromGroup("ACCEPT_BUTTONS",&nbsp;"SALES_BUTTON_ACCEPT");<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getComponentsFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>componentName</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(componentsJson[group]&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentsJson[group]&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;componentsJson[group].length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;componentsJson[group][i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(componentHolder.name&nbsp;==&nbsp;componentName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentsJson[group].splice(i,&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.components&nbsp;=&nbsp;JSON.stringify(componentsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_addDataSourceReferenceToGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>addDataSourceReferenceToGroup</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;data&nbsp;source&nbsp;to&nbsp;group&nbsp;by&nbsp;object&nbsp;reference<br/>Allows&nbsp;grouping&nbsp;of&nbsp;data&nbsp;sources<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;2&nbsp;data&nbsp;sources&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;DS_SALE_1);<br/>COMPONENTMANAGER_1.addDataSourceToGroup("SALES",&nbsp;DS_SALE_PRE);<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getDataSourcesFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dataSource</B></td>
+<td width="120px" class="parameter-type"><B>DataSourceAlias</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.addComponentToGroup(group,&nbsp;dataSource.getOwner().getName());
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_addComponentReferenceToGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>addComponentReferenceToGroup</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;component&nbsp;to&nbsp;group&nbsp;by&nbsp;object&nbsp;reference<br/>Allows&nbsp;grouping&nbsp;of&nbsp;components<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;3&nbsp;components&nbsp;for&nbsp;dynamic&nbsp;access,&nbsp;so&nbsp;first&nbsp;add&nbsp;both&nbsp;to&nbsp;a&nbsp;common&nbsp;group<br/><div class='html-code'>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;SALES_BUTTON_ACCEPT);<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;REVENUE_BUTTON_ACCEPT);<br/>COMPONENTMANAGER_1.addComponentToGroup("ACCEPT_BUTTONS",&nbsp;ANOTHER_BUTTON_ACCEPT);<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getComponentsFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>component</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.addComponentToGroup(group,&nbsp;component.getOwner().getName());
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_removeDataSourceReferenceFromGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>removeDataSourceReferenceFromGroup</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;data&nbsp;source&nbsp;to&nbsp;group&nbsp;by&nbsp;object&nbsp;reference<br/>Allows&nbsp;grouping&nbsp;of&nbsp;data&nbsp;sources<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;data&nbsp;sources&nbsp;from&nbsp;dynamic&nbsp;access<br/><div class='html-code'>COMPONENTMANAGER_1.removeDataSourceReferenceFromGroup("SALES",&nbsp;DS_SALE_1);<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getDataSourcesFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dataSource</B></td>
+<td width="120px" class="parameter-type"><B>DataSourceAlias</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.removeComponentFromGroup(group,&nbsp;dataSource.getOwner().getName());
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_removeComponentReferenceFromGroup">
+<td valign="top" width="220px" class="function-return-name">void<br/>removeComponentReferenceFromGroup</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;component&nbsp;to&nbsp;group&nbsp;by&nbsp;object&nbsp;reference<br/>Allows&nbsp;grouping&nbsp;of&nbsp;components<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;component&nbsp;from&nbsp;dynamic&nbsp;access<br/><div class='html-code'>COMPONENTMANAGER_1.removeComponentReferenceFromGroup("ACCEPT_BUTTONS",&nbsp;SALES_BUTTON_ACCEPT);<br/></div></div>Now,&nbsp;you&nbsp;can&nbsp;process&nbsp;with&nbsp;the&nbsp;method&nbsp;"getComponentsFromGroup"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>group</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>component</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.removeComponentFromGroup(group,&nbsp;component.getOwner().getName());
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_getDataSourcesFromGroup">
 <td valign="top" width="220px" class="function-return-name">org.scn.community.shared.DataSourceArray<br/>getDataSourcesFromGroup</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;array&nbsp;of&nbsp;data&nbsp;sources&nbsp;from&nbsp;the&nbsp;group<br/>Allows&nbsp;work&nbsp;on&nbsp;grouped&nbsp;data&nbsp;sources&nbsp;in&nbsp;dynamic&nbsp;way<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;group&nbsp;copy&nbsp;filters&nbsp;from&nbsp;DS_1&nbsp;to&nbsp;all&nbsp;data&nbsp;sources&nbsp;in&nbsp;the&nbsp;group<br/><div class='html-code'>var&nbsp;components&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourcesFromGroup("SALES");<br/>components.forEach(function(element,&nbsp;index)&nbsp;{<br/>var&nbsp;name&nbsp;=&nbsp;element.name;<br/>var&nbsp;ds&nbsp;=&nbsp;COMPONENTMANAGER_1.getDataSourceByName(name);<br/>ds.copyFilters(DS_1);<br/>});<br/></div></div>Now,&nbsp;you&nbsp;have&nbsp;replicated&nbsp;the&nbsp;filters&nbsp;in&nbsp;dynamic&nbsp;way<br/><br/>
@@ -806,7 +1034,7 @@ return&nbsp;getComponentsFromGroup(group);
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(componentsJson[group]&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;componentsJson[group].length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;componentsJson[group][i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;component&nbsp;=&nbsp;this.getComponentByName(componentHolder.name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;this.identifyType(component);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;component;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
+var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentsJson&nbsp;=&nbsp;JSON.parse(this.components);<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.group&nbsp;=&nbsp;group;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(componentsJson[group]&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;componentsJson[group].length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;componentHolder&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.name&nbsp;=&nbsp;componentsJson[group][i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.name&nbsp;=&nbsp;componentHolder.name;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;component&nbsp;=&nbsp;this.getComponentByName(componentHolder.name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.type&nbsp;=&nbsp;this.identifyType(component);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.component&nbsp;=&nbsp;component;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;componentHolder.datasource&nbsp;=&nbsp;component;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.componentExists&nbsp;=&nbsp;(component&nbsp;!=&nbsp;undefined);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.type&nbsp;=&nbsp;componentHolder.type;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;DEBUG.inspectZtl(this,&nbsp;l,&nbsp;undefined,&nbsp;true);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allComponents.push(componentHolder);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;allComponents;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1126,7 +1354,7 @@ var&nbsp;allComponents&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;type&nbsp;=&nbsp;&quot;UNKNOWN&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(inputComponent.getOwner){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;owner&nbsp;=&nbsp;inputComponent.getOwner();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(owner.getItemType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;owner.getItemType();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;APPLICATION.createInfoMessage(&quot;Comp:&nbsp;&quot;&nbsp;+&nbsp;type);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!keepFullType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(type.indexOf(&quot;_COMPONENT&quot;)&nbsp;&gt;&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;type.substring(0,&nbsp;type.indexOf(&quot;_COMPONENT&quot;));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;type;
+this.internal_assureGlobalAccess();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;type&nbsp;=&nbsp;&quot;UNKNOWN&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;DEBUG.inspectZtl(this,&nbsp;inputComponent,&nbsp;undefined,&nbsp;true);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(inputComponent.getOwner){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;owner&nbsp;=&nbsp;inputComponent.getOwner();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(owner.getItemType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;owner.getItemType();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!keepFullType)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(type.indexOf(&quot;_COMPONENT&quot;)&nbsp;&gt;&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;=&nbsp;type.substring(0,&nbsp;type.indexOf(&quot;_COMPONENT&quot;));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;type;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

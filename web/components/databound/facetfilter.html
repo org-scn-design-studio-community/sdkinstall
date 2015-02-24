@@ -49,13 +49,13 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62064">Design Studio SDK: Fac
 </tr>
 <tr class="list-tr">
 <td class="value-td">Text (Value)</td>
-<td class="value-td">&nbsp;</td>
+<td class="value-td">X</td>
 </tr>
 
 </table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">Text (Value)</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -246,6 +246,24 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62064">Design Studio SDK: Fac
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setSortingType [<a href="#FUNCTION_setSortingType">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">type</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setContentMode [<a href="#FUNCTION_setContentMode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">mode</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCustomDimensions [<a href="#FUNCTION_setCustomDimensions">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimensions</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSimpleSelection [<a href="#FUNCTION_setSimpleSelection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimension, member</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -602,6 +620,92 @@ if(direction&nbsp;==&nbsp;org_scn_community_shared_SortDirection.ASCENDING)&nbsp
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.DEAFULT)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Default&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.VALUE)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Value&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.ALPHABETICAL)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Alphabetical&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SortType.SELECTED)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Selected&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DSortingType&nbsp;=&nbsp;&quot;Default&quot;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setContentMode">
+<td valign="top" width="220px" class="function-return-name">void<br/>setContentMode</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;sorting&nbsp;type&nbsp;-&nbsp;ALL&nbsp;|&nbsp;RESULTSET&nbsp;|&nbsp;CUSTOM<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>mode</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_ContentModeEnumfield</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(mode&nbsp;==&nbsp;org_scn_community_shared_ContentMode.ALL)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DContentMode&nbsp;=&nbsp;&quot;All&nbsp;Dimensions&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(mode&nbsp;==&nbsp;org_scn_community_shared_ContentMode.RESULTSET)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DContentMode&nbsp;=&nbsp;&quot;Only&nbsp;from&nbsp;Result&nbsp;Set&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(mode&nbsp;==&nbsp;org_scn_community_shared_ContentMode.CUSTOM)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DContentMode&nbsp;=&nbsp;&quot;Custom&nbsp;Dimension&nbsp;Set&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DContentMode&nbsp;=&nbsp;&quot;Only&nbsp;from&nbsp;Result&nbsp;Set&quot;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setCustomDimensions">
+<td valign="top" width="220px" class="function-return-name">void<br/>setCustomDimensions</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimensions</B></td>
+<td width="120px" class="parameter-type"><B>StringArray</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DCustomDimensions&nbsp;=&nbsp;JSON.stringify(dimensions);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setSimpleSelection">
+<td valign="top" width="220px" class="function-return-name">void<br/>setSimpleSelection</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;simple&nbsp;selection&nbsp;for&nbsp;dynamic&nbsp;use,&nbsp;you&nbsp;can&nbsp;place&nbsp;here&nbsp;some&nbsp;measure&nbsp;(member&nbsp;of&nbsp;measure&nbsp;dimension)<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimension</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>member</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.data&nbsp;=&nbsp;&quot;{\&quot;&quot;+dimension+&quot;\&quot;:&nbsp;\&quot;&quot;+member+&quot;\&quot;}&quot;;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
