@@ -111,6 +111,15 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58007">Design Studio SDK: Sli
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onLiveChange<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On Live Change</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
 
 	</TABLE>
 
@@ -182,6 +191,18 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58007">Design Studio SDK: Sli
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLiveValue [<a href="#FUNCTION_getLiveValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLiveValueAsInt [<a href="#FUNCTION_getLiveValueAsInt">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setTotalUnits [<a href="#FUNCTION_setTotalUnits">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">totalUnits</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -239,7 +260,16 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-58007">Design Studio SDK: Sli
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>liveValue<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>First Value (Live)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -487,6 +517,50 @@ return&nbsp;this.value;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;parseInt(Math.floor(this.value));
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getLiveValue">
+<td valign="top" width="220px" class="function-return-name">float<br/>getLiveValue</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;live&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.liveValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getLiveValueAsInt">
+<td valign="top" width="220px" class="function-return-name">int<br/>getLiveValueAsInt</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;live&nbsp;value&nbsp;as&nbsp;integer.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;parseInt(Math.floor(this.liveValue));
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
