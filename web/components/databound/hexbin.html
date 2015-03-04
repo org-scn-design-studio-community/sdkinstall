@@ -69,21 +69,97 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>maxX<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Max X</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>minX<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Min X</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">-1</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>minY<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Min Y</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>maxX<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Max X</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">0</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>maxY<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Max Y</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Manual Max Y</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">-1</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>xAxisTicks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Number of X-Axis Ticks</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">5</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>yAxisTicks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Number of Y-Axis Ticks</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">5</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>xAxisOrientation<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>X-Axis Orientation</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">top</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">bottom</td>
+<td class="value-td">X</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">bottom</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>yAxisOrientation<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Y-Axis Orientation</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">left</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">right</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">left</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -273,6 +349,54 @@
 <td valign="top" width="240px" class="function-short-name">getMeasureY [<a href="#FUNCTION_getMeasureY">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMinY [<a href="#FUNCTION_setMinY">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">min</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMinY [<a href="#FUNCTION_getMinY">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxY [<a href="#FUNCTION_setMaxY">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">max</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMaxY [<a href="#FUNCTION_getMaxY">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMinX [<a href="#FUNCTION_setMinX">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">min</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMinX [<a href="#FUNCTION_getMinX">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxX [<a href="#FUNCTION_setMaxX">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">max</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMaxX [<a href="#FUNCTION_getMaxX">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 
@@ -704,6 +828,202 @@ this.measureY&nbsp;=&nbsp;measure;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.measureY;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMinY">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMinY</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Y-Axis&nbsp;Min<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>min</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.minY&nbsp;=&nbsp;min;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMinY">
+<td valign="top" width="220px" class="function-return-name">int<br/>getMinY</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;Y-Axis&nbsp;Min<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.minY;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMaxY">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMaxY</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Y-Axis&nbsp;Max<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>max</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.maxY&nbsp;=&nbsp;max;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMaxY">
+<td valign="top" width="220px" class="function-return-name">int<br/>getMaxY</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;Y-Axis&nbsp;Max<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.maxY;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMinX">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMinX</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;X-Axis&nbsp;Min<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>min</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.minX&nbsp;=&nbsp;min;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMinX">
+<td valign="top" width="220px" class="function-return-name">int<br/>getMinX</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;X-Axis&nbsp;Min<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.minX;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMaxX">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMaxX</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;X-Axis&nbsp;Max<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>max</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.maxX&nbsp;=&nbsp;max;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMaxX">
+<td valign="top" width="220px" class="function-return-name">int<br/>getMaxX</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;X-Axis&nbsp;Max<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.maxX;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
