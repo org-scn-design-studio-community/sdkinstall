@@ -137,6 +137,15 @@ __n__circle ... truncated</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>plotAlpha<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Alpha</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">95</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>xAxisTicks<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Manual Number of X-Axis Ticks</B><br/>&nbsp;
 
@@ -402,6 +411,24 @@ __n__circle ... truncated</td>
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>showTitle<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Title</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>chartTitle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Chart Title</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">Scatterplot Chart</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>selectedValue<br/>[float]</B></td>
 <td width="*" class="property-title-tooltip"><B>Selected Value</B><br/>&nbsp;
 
@@ -483,7 +510,7 @@ __n__circle ... truncated</td>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>visible</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Visible</td>
 </tr>
 
 </TABLE>
@@ -510,7 +537,7 @@ this.legendOn&nbsp;=&nbsp;visible;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>palette</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Color Palette</td>
 </tr>
 
 </TABLE>
@@ -537,7 +564,7 @@ this.colorPalette&nbsp;=&nbsp;palette;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>radius</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Radius (px)</td>
 </tr>
 
 </TABLE>
@@ -586,7 +613,7 @@ return&nbsp;this.radius;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>measure</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Measure</td>
 </tr>
 
 </TABLE>
@@ -635,7 +662,7 @@ return&nbsp;this.measureX;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>measure</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Measure</td>
 </tr>
 
 </TABLE>
@@ -684,7 +711,7 @@ return&nbsp;this.measureY;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>min</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Minimume</td>
 </tr>
 
 </TABLE>
@@ -733,7 +760,7 @@ return&nbsp;this.minY;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>max</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Minimume</td>
 </tr>
 
 </TABLE>
@@ -782,7 +809,7 @@ return&nbsp;this.maxY;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>min</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Minimume</td>
 </tr>
 
 </TABLE>
@@ -831,7 +858,7 @@ return&nbsp;this.minX;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>max</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Minimume</td>
 </tr>
 
 </TABLE>

@@ -24,6 +24,20 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>styleCSS<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Style CSS</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">/*Default CSS*/
+__n__.plot {
+__n__  stroke: #303030;
+__n__  stroke-width: .75px;
+__n__  fill: none;
+ ... truncated</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>legendTitle<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Legend Title</B><br/>&nbsp;
 
@@ -66,6 +80,73 @@
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotAlpha<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Alpha</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">95</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>xAxisTicks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Number of X-Axis Ticks</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">5</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>yAxisTicks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Number of Y-Axis Ticks</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">5</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>xAxisOrientation<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>X-Axis Orientation</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">top</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">bottom</td>
+<td class="value-td">X</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">bottom</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>yAxisOrientation<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Y-Axis Orientation</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">left</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">right</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">left</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -147,6 +228,24 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>showTitle<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Title</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>chartTitle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Chart Title</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">Marimekko Chart</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>stringData<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Data Stringified</B><br/>&nbsp;
 
@@ -330,7 +429,7 @@ return&nbsp;this.selectedValue;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>visible</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Visible</td>
 </tr>
 
 </TABLE>
@@ -357,7 +456,7 @@ return&nbsp;this.legendOn&nbsp;=&nbsp;visible;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>palette</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Color Palette</td>
 </tr>
 
 </TABLE>
