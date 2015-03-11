@@ -31,7 +31,7 @@ Link to blog: <a href="http://scn.sap.com/docs/">Design Studio SDK: Post Responc
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>DUrl<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Url To Open by Post</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Url To Send the Request</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -40,7 +40,25 @@ Link to blog: <a href="http://scn.sap.com/docs/">Design Studio SDK: Post Responc
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DBasicAuthorisation<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>basic Authorization Content</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Basic Authorization Content [Basic: GUID]</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DExpectedResponseStatus<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Response Status for Good Response</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DContentType<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Content Type</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -87,6 +105,30 @@ Link to blog: <a href="http://scn.sap.com/docs/">Design Studio SDK: Post Responc
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getBasicAuthorisation [<a href="#FUNCTION_getBasicAuthorisation">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setExpectedResponseStatus [<a href="#FUNCTION_setExpectedResponseStatus">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">expectedResponseStatus</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getExpectedResponseStatus [<a href="#FUNCTION_getExpectedResponseStatus">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setContentType [<a href="#FUNCTION_setContentType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">contentType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getContentType [<a href="#FUNCTION_getContentType">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -169,7 +211,7 @@ Link to blog: <a href="http://scn.sap.com/docs/">Design Studio SDK: Post Responc
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DParameters<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for list of parameters (name/value)</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>List of Parameters (key/value)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -197,7 +239,7 @@ Link to blog: <a href="http://scn.sap.com/docs/">Design Studio SDK: Post Responc
 	<tr class="function-table-tr">
 <A NAME="FUNCTION_setUrl">
 <td valign="top" width="220px" class="function-return-name">void<br/>setUrl</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;To&nbsp;Open&nbsp;by&nbsp;Post&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;To&nbsp;Send&nbsp;the&nbsp;Request&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -224,7 +266,7 @@ this.DUrl&nbsp;=&nbsp;url;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getUrl">
 <td valign="top" width="220px" class="function-return-name">String<br/>getUrl</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;To&nbsp;Open&nbsp;by&nbsp;Post&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;To&nbsp;Send&nbsp;the&nbsp;Request&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -246,7 +288,7 @@ return&nbsp;this.DUrl;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_setBasicAuthorisation">
 <td valign="top" width="220px" class="function-return-name">void<br/>setBasicAuthorisation</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;basic&nbsp;Authorization&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Basic&nbsp;Authorization&nbsp;Content&nbsp;[Basic:&nbsp;GUID]&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -273,7 +315,7 @@ this.DBasicAuthorisation&nbsp;=&nbsp;basicAuthorisation;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getBasicAuthorisation">
 <td valign="top" width="220px" class="function-return-name">String<br/>getBasicAuthorisation</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;basic&nbsp;Authorization&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Basic&nbsp;Authorization&nbsp;Content&nbsp;[Basic:&nbsp;GUID]&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -286,6 +328,104 @@ this.DBasicAuthorisation&nbsp;=&nbsp;basicAuthorisation;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DBasicAuthorisation;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setExpectedResponseStatus">
+<td valign="top" width="220px" class="function-return-name">void<br/>setExpectedResponseStatus</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Response&nbsp;Status&nbsp;for&nbsp;Good&nbsp;Response&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>expectedResponseStatus</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DExpectedResponseStatus&nbsp;=&nbsp;expectedResponseStatus;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getExpectedResponseStatus">
+<td valign="top" width="220px" class="function-return-name">int<br/>getExpectedResponseStatus</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Response&nbsp;Status&nbsp;for&nbsp;Good&nbsp;Response&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DExpectedResponseStatus;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setContentType">
+<td valign="top" width="220px" class="function-return-name">void<br/>setContentType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>contentType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DContentType&nbsp;=&nbsp;contentType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getContentType">
+<td valign="top" width="220px" class="function-return-name">String<br/>getContentType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DContentType;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
