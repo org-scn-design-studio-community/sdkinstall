@@ -24,6 +24,24 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
+<td width="*" class="property-title-tooltip"><B>Data Selection</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">DataBinding</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>ignoreTotals<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Ignore Totals</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>styleCSS<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Style CSS</B><br/>&nbsp;
 
@@ -38,26 +56,17 @@ __n__circle ... truncated</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>ignoreTotals<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Ignore Totals</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>legendTitle<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Legend Title</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">Frequency</td>
+<td width="100px" class="property-default">Legend Title</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>colorDimension<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Dimension for Series</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>legendTitleStyle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Legend Title Style</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
@@ -70,7 +79,7 @@ __n__circle ... truncated</td>
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">150</td>
+<td width="100px" class="property-default">125</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -94,6 +103,60 @@ __n__circle ... truncated</td>
 <tr>
 <td width="120px" class="property-name-type"><B>legendY<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Legend Offset Y</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotAlpha<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Alpha</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">95</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedColor<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selection Colour</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#009966</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotLeft<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Left</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotRight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Right</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotTop<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Top</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotBottom<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Bottom</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
@@ -134,15 +197,6 @@ __n__circle ... truncated</td>
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">0</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>plotAlpha<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Plot Alpha</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">95</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -204,6 +258,33 @@ __n__circle ... truncated</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>measureX<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>X-Axis Measure (Blank will take whatever is in first column)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>measureY<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Y-Axis Measure (Blank will take whatever is in second column)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>colorDimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Dimension for Series</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>radius<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Plot Radius</B><br/>&nbsp;
 
@@ -231,47 +312,11 @@ __n__circle ... truncated</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>selectedColor<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selection Colour</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">#009966</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>measureX<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>X-Axis Measure (Blank will take whatever is in first column)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>measureY<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Y-Axis Measure (Blank will take whatever is in second column)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>measureZ<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Z-Axis Measure (Blank will disable)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
-<td width="*" class="property-title-tooltip"><B>Data Selection</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">DataBinding</td>
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
@@ -426,6 +471,24 @@ __n__circle ... truncated</td>
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">Scatterplot Chart</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>chartTitleStyle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Chart Title Style</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>chartValueStyle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Chart Value Style</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
