@@ -48,18 +48,38 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62537">Design Studio SDK: Pos
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DContentType<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Content Type</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">application/x-www-form-urlencoded; charset=UTF-8</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DExpectedResponseStatus<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Response Status for Good Response</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">200</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DContentType<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Content Type</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DExpectedContentType<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Expected Content Type</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">JSON</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">String</td>
+<td class="value-td">&nbsp;</td>
+</tr>
 
+</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
@@ -75,7 +95,16 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62537">Design Studio SDK: Pos
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>onResponse<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Response</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -110,6 +139,18 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62537">Design Studio SDK: Pos
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setContentType [<a href="#FUNCTION_setContentType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">contentType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getContentType [<a href="#FUNCTION_getContentType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setExpectedResponseStatus [<a href="#FUNCTION_setExpectedResponseStatus">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">expectedResponseStatus</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -122,15 +163,21 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62537">Design Studio SDK: Pos
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setContentType [<a href="#FUNCTION_setContentType">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">contentType</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getReturnParametersAsNameValueArray [<a href="#FUNCTION_getReturnParametersAsNameValueArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.NameValueArray</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getContentType [<a href="#FUNCTION_getContentType">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getReturnResponse [<a href="#FUNCTION_getReturnResponse">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getReturnStatus [<a href="#FUNCTION_getReturnStatus">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -192,6 +239,33 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62537">Design Studio SDK: Pos
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>DReturnParameters<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Return Parameters</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DReturnResponse<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Return Response as String</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DReturnStatus<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Return Status</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DTrigger<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Just as Simple Triger</B><br/>&nbsp;
 
@@ -220,7 +294,7 @@ Link to blog: <a href="http://scn.sap.com/docs/DOC-62537">Design Studio SDK: Pos
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DRawParameters<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for raw parameters</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Raw Parameters as String Content</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -335,6 +409,55 @@ return&nbsp;this.DBasicAuthorisation;
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_setContentType">
+<td valign="top" width="220px" class="function-return-name">void<br/>setContentType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>contentType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DContentType&nbsp;=&nbsp;contentType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getContentType">
+<td valign="top" width="220px" class="function-return-name">String<br/>getContentType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DContentType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_setExpectedResponseStatus">
 <td valign="top" width="220px" class="function-return-name">void<br/>setExpectedResponseStatus</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Response&nbsp;Status&nbsp;for&nbsp;Good&nbsp;Response&nbsp;Property<br/><br/>
@@ -384,16 +507,16 @@ return&nbsp;this.DExpectedResponseStatus;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setContentType">
-<td valign="top" width="220px" class="function-return-name">void<br/>setContentType</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+<A NAME="FUNCTION_getReturnParametersAsNameValueArray">
+<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.NameValueArray<br/>getReturnParametersAsNameValueArray</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;content&nbsp;of&nbsp;property&nbsp;Return&nbsp;Parameters&nbsp;as&nbsp;loopable&nbsp;name/value&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;values:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;POSTRESPONSEPARSER.getReturnParametersAsNameValueArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;entries<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(element.name,&nbsp;element.value);<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;k1;&nbsp;value:&nbsp;v1</li><li>key:&nbsp;k2;&nbsp;value:&nbsp;v2</li><li>key:&nbsp;k3;&nbsp;value:&nbsp;v3</li></ul></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>contentType</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> &nbsp; </td>
+<td width="120px" class="parameter-name"><B>maxMembers</B></td>
+<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
+<td width="*" class="parameter-help">max members</td>
 </tr>
 
 </TABLE>
@@ -403,7 +526,7 @@ return&nbsp;this.DExpectedResponseStatus;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DContentType&nbsp;=&nbsp;contentType;
+var&nbsp;s&nbsp;=&nbsp;this.DReturnParameters;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s!=&quot;&quot;)&nbsp;a&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;tempA&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0&nbsp;||&nbsp;maxMembers&nbsp;&gt;&nbsp;a.length)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;a.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;a[i].name,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;:&nbsp;a[i].value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempA.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;tempA;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -411,9 +534,9 @@ this.DContentType&nbsp;=&nbsp;contentType;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getContentType">
-<td valign="top" width="220px" class="function-return-name">String<br/>getContentType</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+<A NAME="FUNCTION_getReturnResponse">
+<td valign="top" width="220px" class="function-return-name">String<br/>getReturnResponse</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Return&nbsp;Response&nbsp;as&nbsp;String&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -425,7 +548,29 @@ this.DContentType&nbsp;=&nbsp;contentType;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DContentType;
+return&nbsp;this.DReturnResponse;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getReturnStatus">
+<td valign="top" width="220px" class="function-return-name">int<br/>getReturnStatus</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Return&nbsp;Status&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DReturnStatus;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -580,7 +725,7 @@ this.removeSubParameter(key);
 <tr class="function-table-tr">
 <A NAME="FUNCTION_setRawParameters">
 <td valign="top" width="220px" class="function-return-name">void<br/>setRawParameters</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Technical&nbsp;proprty&nbsp;for&nbsp;raw&nbsp;parameters&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Raw&nbsp;Parameters&nbsp;as&nbsp;String&nbsp;Content&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -607,7 +752,7 @@ this.DRawParameters&nbsp;=&nbsp;rawParameters;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getRawParameters">
 <td valign="top" width="220px" class="function-return-name">String<br/>getRawParameters</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;proprty&nbsp;for&nbsp;raw&nbsp;parameters&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Raw&nbsp;Parameters&nbsp;as&nbsp;String&nbsp;Content&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
