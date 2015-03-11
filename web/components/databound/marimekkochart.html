@@ -24,6 +24,24 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
+<td width="*" class="property-title-tooltip"><B>Data Selection</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">DataBinding</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>ignoreTotals<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Ignore Totals</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>styleCSS<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Style CSS</B><br/>&nbsp;
 
@@ -43,7 +61,16 @@ __n__  fill: none;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">Legend</td>
+<td width="100px" class="property-default">Legend Title</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>legendTitleStyle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Legend Title Style</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -52,7 +79,7 @@ __n__  fill: none;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">150</td>
+<td width="100px" class="property-default">125</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -89,6 +116,51 @@ __n__  fill: none;
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">95</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedColor<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selection Colour</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#009966</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotLeft<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Left</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotRight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Right</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotTop<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Top</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>plotBottom<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Plot Offset Bottom</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -147,15 +219,6 @@ __n__  fill: none;
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">left</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
-<td width="*" class="property-title-tooltip"><B>Data Selection</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">DataBinding</td>
-<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -246,17 +309,8 @@ __n__  fill: none;
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>stringData<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Data Stringified</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">BLANK</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>selectedRow<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Row</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>chartTitleStyle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Chart Title Style</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
@@ -264,8 +318,8 @@ __n__  fill: none;
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>selectedColumn<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Column</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>chartValueStyle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Chart Value Style</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
@@ -333,15 +387,6 @@ __n__  fill: none;
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">#748CB2,#9CC677,#EACF5E,#F9AD79,#D16A7C,#8873A2,#3A95B3,#B6D949</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>selectedColor<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selection Colour</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">#009966</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
