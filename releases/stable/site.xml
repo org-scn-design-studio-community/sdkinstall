@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.scn.community.sdk.feature.datasource_1.0.0.201503250729.jar" id="org.scn.community.sdk.feature.datasource" version="1.0.0.201503250729">
+   <feature url="features/org.scn.community.sdk.feature.datasource_1.0.0.201503251850.jar" id="org.scn.community.sdk.feature.datasource" version="1.0.0.201503251850">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature>
-   <feature url="features/org.scn.community.sdk.feature.geovis_1.0.0.201503250729.jar" id="org.scn.community.sdk.feature.geovis" version="1.0.0.201503250729">
+   <feature url="features/org.scn.community.sdk.feature.geovis_1.0.0.201503251850.jar" id="org.scn.community.sdk.feature.geovis" version="1.0.0.201503251850">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature>
-   <feature url="features/org.scn.community.sdk.feature.main_1.0.0.201503250729.jar" id="org.scn.community.sdk.feature.main" version="1.0.0.201503250729">
+   <feature url="features/org.scn.community.sdk.feature.main_1.0.0.201503251850.jar" id="org.scn.community.sdk.feature.main" version="1.0.0.201503251850">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature>
    <archive path="features/org.scn.community.sdk.feature.geovispack.standard_1.0.0.0.jar" url="http://org-scn-design-studio-community.github.io/sdkgeovis/site/org.scn.community.geovispack.standard_1.0.0.0/features/org.scn.community.sdk.feature.geovispack.standard_1.0.0.0.jar"/>
