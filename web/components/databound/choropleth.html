@@ -74,6 +74,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setBubbleMeasure [<a href="#FUNCTION_setBubbleMeasure">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">measure</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setProjection [<a href="#FUNCTION_setProjection">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">projection</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -88,6 +94,24 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setColorPalette [<a href="#FUNCTION_setColorPalette">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">palette</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setBubbleColor [<a href="#FUNCTION_setBubbleColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">color</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFeatureProperty [<a href="#FUNCTION_setFeatureProperty">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">attribute</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setLabelProperty [<a href="#FUNCTION_setLabelProperty">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">attribute</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -444,57 +468,12 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>selectedFeature<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Feature</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>styleClasses<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>CSS Classes</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>featureProperty<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Feature Property</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">NAME_1</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>labelProperty<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Label Property</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">NAME_1</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>measureMember<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Measure to Colour (Blank will take whatever is in first column)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>backgroundColor<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Background Colour</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -570,53 +549,17 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>floor<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Minimum Scale Value</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>graticuleThickness<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Graticule Thickness</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">0.0</td>
+<td width="100px" class="property-default">.5</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>labelSize<br/>[float]</B></td>
 <td width="*" class="property-title-tooltip"><B>Label Size (px)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">10</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>gradientLeft<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Horizontal Scale Left</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">30</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>gradientRight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Horizontal Scale Right</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">30</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>gradientBottom<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Horizontal Scale Bottom</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">15</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>gradientHeight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Horizontal Scale Height</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
@@ -648,26 +591,6 @@
 </td>
 <td width="60px" class="property-group">&nbsp;</td>
 <td width="100px" class="property-default">0.0</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>colorScale<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Color Scale</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">quantile</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">quantize</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">quantile</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -870,6 +793,161 @@
 <td width="100px" class="property-default">equirectangular</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedFeature<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Feature</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>styleClasses<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>CSS Classes</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>featureProperty<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Feature Property</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">NAME_1</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>measureMember<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Measure to Colour (Blank will take whatever is in first column)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>bubbleMember<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Measure to use as Bubble (Blank hide bubble)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>bubbleMin<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bubble Min Radius</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">3</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>bubbleMax<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bubble Max Radius</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">50</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>bubbleAlpha<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bubble Alpha (0-100)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">50</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>bubbleColor<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bubble Colour</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#006699</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>backgroundColor<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Background Colour</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>floor<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Minimum Scale Value</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">0.0</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientLeft<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Left</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">30</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientRight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Right</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">30</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientBottom<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Bottom</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">15</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientHeight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Horizontal Scale Height</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">10</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>colorScale<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Color Scale</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">quantile</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">quantize</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">quantile</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
 
 	</TABLE>
 
@@ -922,6 +1000,33 @@ return&nbsp;this.selectedFeature;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.measureMember&nbsp;=&nbsp;measure;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setBubbleMeasure">
+<td valign="top" width="220px" class="function-return-name">void<br/>setBubbleMeasure</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Bubble&nbsp;Measure&nbsp;to&nbsp;use&nbsp;for&nbsp;coloring<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>measure</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Measure</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.bubbleMember&nbsp;=&nbsp;measure;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1003,6 +1108,87 @@ return&nbsp;this.legendOn&nbsp;=&nbsp;visible;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.colorPalette&nbsp;=&nbsp;palette;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setBubbleColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setBubbleColor</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Bubble&nbsp;Color<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>color</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Color</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.bubbleColor&nbsp;=&nbsp;color;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setFeatureProperty">
+<td valign="top" width="220px" class="function-return-name">void<br/>setFeatureProperty</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Feature&nbsp;Attribute&nbsp;from&nbsp;GeoJSON&nbsp;that&nbsp;matches&nbsp;values&nbsp;in&nbsp;rows<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>attribute</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Attribute</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.featureProperty&nbsp;=&nbsp;attribute;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setLabelProperty">
+<td valign="top" width="220px" class="function-return-name">void<br/>setLabelProperty</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;Label&nbsp;Attribute&nbsp;from&nbsp;GeoJSON&nbsp;that&nbsp;should&nbsp;be&nbsp;used&nbsp;for&nbsp;labeling<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>attribute</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Attribute</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.labelProperty&nbsp;=&nbsp;attribute;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

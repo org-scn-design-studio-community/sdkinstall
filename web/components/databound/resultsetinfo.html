@@ -2,7 +2,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../../doc.css">
 <link rel="stylesheet" type="text/css" href="../../tables.css">
-<title>ResultSet Info - SCN Design Studio Community</title>
+<title>Result Set Information (Test Phase) - SCN Design Studio Community</title>
 </head>
 <body class="comp-body">
 <div class="comp-main">
@@ -11,7 +11,7 @@
 	ResultSetInfo [ScnCommunityDataBound]
 	</div>
 	<div class="component-title">
-	ResultSet Info
+	Result Set Information (Test Phase)
 	</div>
 
 	<p>
@@ -29,7 +29,16 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>DCentralProvisioning<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Central Data Provisioning</B><br/>Provision Data Centrally for Component Access
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -49,7 +58,19 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
-	
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCentralProvisioning [<a href="#FUNCTION_setCentralProvisioning">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">centralProvisioning</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCentralProvisioning [<a href="#FUNCTION_getCentralProvisioning">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+
 	</TABLE>
 
 	<br/>
@@ -77,7 +98,56 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<br/>
 	
 	<TABLE width="100%" class="">
-	
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_setCentralProvisioning">
+<td valign="top" width="220px" class="function-return-name">void<br/>setCentralProvisioning</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Central&nbsp;Data&nbsp;Provisioning&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>centralProvisioning</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Provision Data Centrally for Component Access </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DCentralProvisioning&nbsp;=&nbsp;centralProvisioning;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getCentralProvisioning">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getCentralProvisioning</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Central&nbsp;Data&nbsp;Provisioning&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DCentralProvisioning;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
 	</TABLE>
 
 </div>
