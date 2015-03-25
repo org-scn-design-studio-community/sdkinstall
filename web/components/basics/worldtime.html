@@ -1,0 +1,132 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../doc.css">
+<link rel="stylesheet" type="text/css" href="../../tables.css">
+<title>WorldTime - SCN Design Studio Community</title>
+</head>
+<body class="comp-body">
+<div class="comp-main">
+
+	<div class="component-name">
+	WorldTime [ScnCommunityBasics]
+	</div>
+	<div class="component-title">
+	WorldTime
+	</div>
+
+	<p>
+This component visualizes current time according to given UTC offset and locale settings with a String.<br>
+</p>
+
+	<br/>
+	<div class="component-properties">VISIBLE PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>utcoffset<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>UTC Offset</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showtimeonly<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show time only</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>interval<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Update Interval (in ms)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">5000</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">VISIBLE EVENTS</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS LIST</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setOffset [<a href="#FUNCTION_setOffset">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">utc_offset</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">HIDDEN (TECHNICAL) PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS IN DETAIL</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="">
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_setOffset">
+<td valign="top" width="220px" class="function-return-name">void<br/>setOffset</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;base&nbsp;timezone&nbsp;with&nbsp;given&nbsp;utc&nbsp;offset.<br/><div class='html-example'"><div class='html-code'>TIME_1.setOffset("-2").<br/></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>utc_offset</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.utcoffset&nbsp;=&nbsp;utc_offset;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
+	</TABLE>
+
+</div>
+</body>
+</html>

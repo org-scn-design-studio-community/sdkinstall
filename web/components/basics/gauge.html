@@ -1,0 +1,1338 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../doc.css">
+<link rel="stylesheet" type="text/css" href="../../tables.css">
+<title>Gauge (Speedometer) - SCN Design Studio Community</title>
+</head>
+<body class="comp-body">
+<div class="comp-main">
+
+	<div class="component-name">
+	Gauge [ScnCommunityBasics]
+	</div>
+	<div class="component-title">
+	Gauge (Speedometer)
+	</div>
+
+	<p>
+This is a Gauge Control (Speedometer), described by Nicholas Stein and coded by Antonino Cacace.
+</p>
+<p>
+Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62779">Design Studio SDK: Gauge Component</a><br/>
+Link to initial component description: <a target="_blank" href="http://scn.sap.com/community/businessobjects-design-studio/blog/2014/06/19/design-studio-13-sdk--creating-a-custom-gauge-component">Design Studio SDK - Creating a custom gauge component</a><br/>
+
+</p>
+
+
+	<br/>
+	<div class="component-properties">VISIBLE PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>haveNumbers<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Number</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>numOfBigTicks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Number of Big Ticks</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">5</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>numOfSmallTicks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Number of Small Ticks</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">2</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>indicatorValue<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Indicator Value</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">25</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showValue<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Value</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showedValue<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Showed Value</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">25 %</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>needleColor<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Needle Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#D80000</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>title<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Title</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">Insert Title Here</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>startValue<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Start Value</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>endValue<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>End Value</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">100</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientColor<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Gradient Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>firstColor<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>First Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#FA1E1E</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>secondColor<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Second Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#FCFA4E</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>thirdColor<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Third Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#2BFC23</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>startSecondColor<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Start of Second Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">20</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>startThirdColor<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Start of Third Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">80</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>mainColor<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Main Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#EDEDED</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>ttColor<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Text and Ticks Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">#000000</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">VISIBLE EVENTS</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS LIST</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setHaveNumbers [<a href="#FUNCTION_setHaveNumbers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">haveNumbers</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getHaveNumbers [<a href="#FUNCTION_getHaveNumbers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setNumOfBigTicks [<a href="#FUNCTION_setNumOfBigTicks">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">numOfBigTicks</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getNumOfBigTicks [<a href="#FUNCTION_getNumOfBigTicks">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setNumOfSmallTicks [<a href="#FUNCTION_setNumOfSmallTicks">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">numOfSmallTicks</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getNumOfSmallTicks [<a href="#FUNCTION_getNumOfSmallTicks">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setIndicatorValue [<a href="#FUNCTION_setIndicatorValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">indicatorValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getIndicatorValue [<a href="#FUNCTION_getIndicatorValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setShowValue [<a href="#FUNCTION_setShowValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">showValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getShowValue [<a href="#FUNCTION_getShowValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setShowedValue [<a href="#FUNCTION_setShowedValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">showedValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getShowedValue [<a href="#FUNCTION_getShowedValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setNeedleColor [<a href="#FUNCTION_setNeedleColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">needleColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getNeedleColor [<a href="#FUNCTION_getNeedleColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTitle [<a href="#FUNCTION_setTitle">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">title</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTitle [<a href="#FUNCTION_getTitle">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStartValue [<a href="#FUNCTION_setStartValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">startValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getStartValue [<a href="#FUNCTION_getStartValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEndValue [<a href="#FUNCTION_setEndValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">endValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getEndValue [<a href="#FUNCTION_getEndValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setGradientColor [<a href="#FUNCTION_setGradientColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">gradientColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getGradientColor [<a href="#FUNCTION_getGradientColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFirstColor [<a href="#FUNCTION_setFirstColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">firstColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getFirstColor [<a href="#FUNCTION_getFirstColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSecondColor [<a href="#FUNCTION_setSecondColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">secondColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSecondColor [<a href="#FUNCTION_getSecondColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setThirdColor [<a href="#FUNCTION_setThirdColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">thirdColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getThirdColor [<a href="#FUNCTION_getThirdColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStartSecondColor [<a href="#FUNCTION_setStartSecondColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">startSecondColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getStartSecondColor [<a href="#FUNCTION_getStartSecondColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStartThirdColor [<a href="#FUNCTION_setStartThirdColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">startThirdColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getStartThirdColor [<a href="#FUNCTION_getStartThirdColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMainColor [<a href="#FUNCTION_setMainColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">mainColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMainColor [<a href="#FUNCTION_getMainColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTtColor [<a href="#FUNCTION_setTtColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">ttColor</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTtColor [<a href="#FUNCTION_getTtColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">HIDDEN (TECHNICAL) PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS IN DETAIL</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="">
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_setHaveNumbers">
+<td valign="top" width="220px" class="function-return-name">void<br/>setHaveNumbers</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Number&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>haveNumbers</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.haveNumbers&nbsp;=&nbsp;haveNumbers;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getHaveNumbers">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getHaveNumbers</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Number&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.haveNumbers;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setNumOfBigTicks">
+<td valign="top" width="220px" class="function-return-name">void<br/>setNumOfBigTicks</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Number&nbsp;of&nbsp;Big&nbsp;Ticks&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>numOfBigTicks</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.numOfBigTicks&nbsp;=&nbsp;numOfBigTicks;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getNumOfBigTicks">
+<td valign="top" width="220px" class="function-return-name">int<br/>getNumOfBigTicks</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Number&nbsp;of&nbsp;Big&nbsp;Ticks&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.numOfBigTicks;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setNumOfSmallTicks">
+<td valign="top" width="220px" class="function-return-name">void<br/>setNumOfSmallTicks</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Number&nbsp;of&nbsp;Small&nbsp;Ticks&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>numOfSmallTicks</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.numOfSmallTicks&nbsp;=&nbsp;numOfSmallTicks;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getNumOfSmallTicks">
+<td valign="top" width="220px" class="function-return-name">int<br/>getNumOfSmallTicks</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Number&nbsp;of&nbsp;Small&nbsp;Ticks&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.numOfSmallTicks;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setIndicatorValue">
+<td valign="top" width="220px" class="function-return-name">void<br/>setIndicatorValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Indicator&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>indicatorValue</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.indicatorValue&nbsp;=&nbsp;indicatorValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getIndicatorValue">
+<td valign="top" width="220px" class="function-return-name">float<br/>getIndicatorValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Indicator&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.indicatorValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setShowValue">
+<td valign="top" width="220px" class="function-return-name">void<br/>setShowValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>showValue</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.showValue&nbsp;=&nbsp;showValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getShowValue">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getShowValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.showValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setShowedValue">
+<td valign="top" width="220px" class="function-return-name">void<br/>setShowedValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Showed&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>showedValue</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.showedValue&nbsp;=&nbsp;showedValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getShowedValue">
+<td valign="top" width="220px" class="function-return-name">String<br/>getShowedValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Showed&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.showedValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setNeedleColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setNeedleColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Needle&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>needleColor</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.needleColor&nbsp;=&nbsp;needleColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getNeedleColor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getNeedleColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Needle&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.needleColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setTitle">
+<td valign="top" width="220px" class="function-return-name">void<br/>setTitle</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Title&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>title</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.title&nbsp;=&nbsp;title;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getTitle">
+<td valign="top" width="220px" class="function-return-name">String<br/>getTitle</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Title&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.title;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setStartValue">
+<td valign="top" width="220px" class="function-return-name">void<br/>setStartValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Start&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>startValue</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.startValue&nbsp;=&nbsp;startValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getStartValue">
+<td valign="top" width="220px" class="function-return-name">int<br/>getStartValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Start&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.startValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setEndValue">
+<td valign="top" width="220px" class="function-return-name">void<br/>setEndValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;End&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>endValue</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.endValue&nbsp;=&nbsp;endValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getEndValue">
+<td valign="top" width="220px" class="function-return-name">int<br/>getEndValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;End&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.endValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setGradientColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setGradientColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Gradient&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>gradientColor</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.gradientColor&nbsp;=&nbsp;gradientColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getGradientColor">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getGradientColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Gradient&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.gradientColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setFirstColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setFirstColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;First&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>firstColor</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.firstColor&nbsp;=&nbsp;firstColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getFirstColor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getFirstColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;First&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.firstColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setSecondColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setSecondColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Second&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>secondColor</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.secondColor&nbsp;=&nbsp;secondColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getSecondColor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getSecondColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Second&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.secondColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setThirdColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setThirdColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Third&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>thirdColor</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.thirdColor&nbsp;=&nbsp;thirdColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getThirdColor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getThirdColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Third&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.thirdColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setStartSecondColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setStartSecondColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Start&nbsp;of&nbsp;Second&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>startSecondColor</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.startSecondColor&nbsp;=&nbsp;startSecondColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getStartSecondColor">
+<td valign="top" width="220px" class="function-return-name">int<br/>getStartSecondColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Start&nbsp;of&nbsp;Second&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.startSecondColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setStartThirdColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setStartThirdColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Start&nbsp;of&nbsp;Third&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>startThirdColor</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.startThirdColor&nbsp;=&nbsp;startThirdColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getStartThirdColor">
+<td valign="top" width="220px" class="function-return-name">int<br/>getStartThirdColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Start&nbsp;of&nbsp;Third&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.startThirdColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setMainColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setMainColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Main&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>mainColor</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.mainColor&nbsp;=&nbsp;mainColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMainColor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getMainColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Main&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.mainColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setTtColor">
+<td valign="top" width="220px" class="function-return-name">void<br/>setTtColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Text&nbsp;and&nbsp;Ticks&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>ttColor</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.ttColor&nbsp;=&nbsp;ttColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getTtColor">
+<td valign="top" width="220px" class="function-return-name">String<br/>getTtColor</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Text&nbsp;and&nbsp;Ticks&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.ttColor;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
+	</TABLE>
+
+</div>
+</body>
+</html>
