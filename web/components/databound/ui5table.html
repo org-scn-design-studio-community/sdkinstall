@@ -57,6 +57,42 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DAllowSort<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Allow Sort in Columns</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DAllowColumnReorder<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Allow Reorder of Columns</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DAllowSelection<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Allow Selection in the Table</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DFixedHeader<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Fiexd Header Rows</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DHeaderColWidth<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Header Column Width in px</B><br/>&nbsp;
 
@@ -104,7 +140,25 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>onCellSelected<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Cell Selected</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onRowSelected<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Row Selected</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -151,6 +205,54 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAllowSort [<a href="#FUNCTION_setAllowSort">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">allowSort</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAllowSort [<a href="#FUNCTION_getAllowSort">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAllowColumnReorder [<a href="#FUNCTION_setAllowColumnReorder">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">allowColumnReorder</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAllowColumnReorder [<a href="#FUNCTION_getAllowColumnReorder">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAllowSelection [<a href="#FUNCTION_setAllowSelection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">allowSelection</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAllowSelection [<a href="#FUNCTION_getAllowSelection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFixedHeader [<a href="#FUNCTION_setFixedHeader">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">fixedHeader</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getFixedHeader [<a href="#FUNCTION_getFixedHeader">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setHeaderColWidth [<a href="#FUNCTION_setHeaderColWidth">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">headerColWidth</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -186,6 +288,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td valign="top" width="160px" class="function-short-return">choice</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCellSelectionAsJSON [<a href="#FUNCTION_getCellSelectionAsJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRowSelectionAsJSON [<a href="#FUNCTION_getRowSelectionAsJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
 
 	</TABLE>
 
@@ -202,6 +316,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 
 </td>
 <td width="60px" class="property-group">DataBinding</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DCellSelection<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selection Content for Cell</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DRowSelection<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selection Content for Row</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
@@ -362,6 +494,202 @@ return&nbsp;this.DRowHeight;
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_setAllowSort">
+<td valign="top" width="220px" class="function-return-name">void<br/>setAllowSort</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>allowSort</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DAllowSort&nbsp;=&nbsp;allowSort;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getAllowSort">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getAllowSort</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DAllowSort;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setAllowColumnReorder">
+<td valign="top" width="220px" class="function-return-name">void<br/>setAllowColumnReorder</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Reorder&nbsp;of&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>allowColumnReorder</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DAllowColumnReorder&nbsp;=&nbsp;allowColumnReorder;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getAllowColumnReorder">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getAllowColumnReorder</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Reorder&nbsp;of&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DAllowColumnReorder;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setAllowSelection">
+<td valign="top" width="220px" class="function-return-name">void<br/>setAllowSelection</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Selection&nbsp;in&nbsp;the&nbsp;Table&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>allowSelection</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DAllowSelection&nbsp;=&nbsp;allowSelection;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getAllowSelection">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getAllowSelection</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Selection&nbsp;in&nbsp;the&nbsp;Table&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DAllowSelection;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setFixedHeader">
+<td valign="top" width="220px" class="function-return-name">void<br/>setFixedHeader</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Fiexd&nbsp;Header&nbsp;Rows&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>fixedHeader</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DFixedHeader&nbsp;=&nbsp;fixedHeader;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getFixedHeader">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getFixedHeader</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Fiexd&nbsp;Header&nbsp;Rows&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DFixedHeader;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_setHeaderColWidth">
 <td valign="top" width="220px" class="function-return-name">void<br/>setHeaderColWidth</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Header&nbsp;Column&nbsp;Width&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
@@ -502,6 +830,50 @@ this.DNavigationMode&nbsp;=&nbsp;navigationMode;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DNavigationMode;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getCellSelectionAsJSON">
+<td valign="top" width="220px" class="function-return-name">String<br/>getCellSelectionAsJSON</td>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Gets&nbsp;Cell&nbsp;Selection&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DCellSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getRowSelectionAsJSON">
+<td valign="top" width="220px" class="function-return-name">String<br/>getRowSelectionAsJSON</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Row&nbsp;Selection&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DRowSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
