@@ -31,7 +31,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>DMasterProvisioner<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Central Data Provisioner for Master</B><br/>Result Set with Master 
+<td width="*" class="property-title-tooltip"><B>Master Central Data Provisioner</B><br/>Result Set with Master Data
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -60,7 +60,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveProvisioner<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Central Data Provisioner for Slave Row Based Result Set 1</B><br/>Result Set with First Slave Rows for Selection
+<td width="*" class="property-title-tooltip"><B>Slave Central Data Provisioner</B><br/>Result Set with Slave Data for Selection
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -69,7 +69,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveColumnIndex<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Column Index of the Slave Comlumn Result Set</B><br/>Which column should be loaded from the slave result set
+<td width="*" class="property-title-tooltip"><B>Column Index for the Selection from Slave Result Set</B><br/>Which column should be selected from the slave result set
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -261,14 +261,14 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<tr class="function-table-tr">
 <A NAME="FUNCTION_setMasterProvisioner">
 <td valign="top" width="220px" class="function-return-name">void<br/>setMasterProvisioner</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;for&nbsp;Master&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Master&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>masterProvisioner</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Result Set with Master  </td>
+<td width="*" class="parameter-help"> Result Set with Master Data </td>
 </tr>
 
 </TABLE>
@@ -288,7 +288,7 @@ this.DMasterProvisioner&nbsp;=&nbsp;masterProvisioner;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getMasterProvisioner">
 <td valign="top" width="220px" class="function-return-name">String<br/>getMasterProvisioner</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;for&nbsp;Master&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Master&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -359,14 +359,14 @@ return&nbsp;this.DMasterGeometry;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_setSlaveProvisioner">
 <td valign="top" width="220px" class="function-return-name">void<br/>setSlaveProvisioner</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;for&nbsp;Slave&nbsp;Row&nbsp;Based&nbsp;Result&nbsp;Set&nbsp;1&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Slave&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveProvisioner</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Result Set with First Slave Rows for Selection </td>
+<td width="*" class="parameter-help"> Result Set with Slave Data for Selection </td>
 </tr>
 
 </TABLE>
@@ -386,7 +386,7 @@ this.DSlaveProvisioner&nbsp;=&nbsp;slaveProvisioner;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getSlaveProvisioner">
 <td valign="top" width="220px" class="function-return-name">String<br/>getSlaveProvisioner</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;for&nbsp;Slave&nbsp;Row&nbsp;Based&nbsp;Result&nbsp;Set&nbsp;1&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Slave&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -408,14 +408,14 @@ return&nbsp;this.DSlaveProvisioner;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_setSlaveColumnIndex">
 <td valign="top" width="220px" class="function-return-name">void<br/>setSlaveColumnIndex</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Index&nbsp;of&nbsp;the&nbsp;Slave&nbsp;Comlumn&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Index&nbsp;for&nbsp;the&nbsp;Selection&nbsp;from&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveColumnIndex</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Which column should be loaded from the slave result set </td>
+<td width="*" class="parameter-help"> Which column should be selected from the slave result set </td>
 </tr>
 
 </TABLE>
@@ -435,7 +435,7 @@ this.DSlaveColumnIndex&nbsp;=&nbsp;slaveColumnIndex;
 <tr class="function-table-tr">
 <A NAME="FUNCTION_getSlaveColumnIndex">
 <td valign="top" width="220px" class="function-return-name">int<br/>getSlaveColumnIndex</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Index&nbsp;of&nbsp;the&nbsp;Slave&nbsp;Comlumn&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Index&nbsp;for&nbsp;the&nbsp;Selection&nbsp;from&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
