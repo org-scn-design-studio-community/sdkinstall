@@ -7,6 +7,9 @@
 <body class="comp-body">
 <div class="comp-main">
 
+	<div class="component-back">
+		<a href="../index.html" target="_top">show list of all components</a>
+	</div>
 	<div class="component-name">
 	PostResponseParser [ScnCommunityUtils]
 	</div>
@@ -39,6 +42,59 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DRequestType<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Request Type (JQuery | HTTP)</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">JQuery</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">HTTPRequest</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">JQuery</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DRequestMethod<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Request Method (POST | GET | PUT)</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">POST</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">GET</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">PUT</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">POST</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DCrossDomain<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Is this Request Cross-Domain</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DBasicAuthorisation<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Basic Authorization Content [Basic: GUID]</B><br/>&nbsp;
 
@@ -53,7 +109,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">application/x-www-form-urlencoded; charset=UTF-8</td>
+<td width="100px" class="property-default">application/x-www-form-urlencoded</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -71,11 +127,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
 <tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
 <tr class="list-tr">
-<td class="value-td">JSON</td>
+<td class="value-td">text</td>
 <td class="value-td">&nbsp;</td>
 </tr>
 <tr class="list-tr">
-<td class="value-td">String</td>
+<td class="value-td">json</td>
 <td class="value-td">&nbsp;</td>
 </tr>
 
@@ -127,6 +183,42 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRequestType [<a href="#FUNCTION_setRequestType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">requestType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRequestType [<a href="#FUNCTION_getRequestType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">choice</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRequestMethod [<a href="#FUNCTION_setRequestMethod">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">requestMethod</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRequestMethod [<a href="#FUNCTION_getRequestMethod">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">choice</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCrossDomain [<a href="#FUNCTION_setCrossDomain">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">crossDomain</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCrossDomain [<a href="#FUNCTION_getCrossDomain">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setBasicAuthorisation [<a href="#FUNCTION_setBasicAuthorisation">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">basicAuthorisation</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -160,6 +252,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <td valign="top" width="240px" class="function-short-name">getExpectedResponseStatus [<a href="#FUNCTION_getExpectedResponseStatus">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setExpectedContentType [<a href="#FUNCTION_setExpectedContentType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">expectedContentType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getExpectedContentType [<a href="#FUNCTION_getExpectedContentType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">choice</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -369,6 +473,153 @@ return&nbsp;this.DUrl;
 </td></tr>
 
 <tr class="function-table-tr">
+<A NAME="FUNCTION_setRequestType">
+<td valign="top" width="220px" class="function-return-name">void<br/>setRequestType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>requestType</B></td>
+<td width="120px" class="parameter-type"><B>choice</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DRequestType&nbsp;=&nbsp;requestType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getRequestType">
+<td valign="top" width="220px" class="function-return-name">choice<br/>getRequestType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DRequestType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setRequestMethod">
+<td valign="top" width="220px" class="function-return-name">void<br/>setRequestMethod</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>requestMethod</B></td>
+<td width="120px" class="parameter-type"><B>choice</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DRequestMethod&nbsp;=&nbsp;requestMethod;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getRequestMethod">
+<td valign="top" width="220px" class="function-return-name">choice<br/>getRequestMethod</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DRequestMethod;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setCrossDomain">
+<td valign="top" width="220px" class="function-return-name">void<br/>setCrossDomain</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Is&nbsp;this&nbsp;Request&nbsp;Cross-Domain&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>crossDomain</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DCrossDomain&nbsp;=&nbsp;crossDomain;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getCrossDomain">
+<td valign="top" width="220px" class="function-return-name">boolean<br/>getCrossDomain</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Is&nbsp;this&nbsp;Request&nbsp;Cross-Domain&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DCrossDomain;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <A NAME="FUNCTION_setBasicAuthorisation">
 <td valign="top" width="220px" class="function-return-name">void<br/>setBasicAuthorisation</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Basic&nbsp;Authorization&nbsp;Content&nbsp;[Basic:&nbsp;GUID]&nbsp;Property<br/><br/>
@@ -509,6 +760,55 @@ this.DExpectedResponseStatus&nbsp;=&nbsp;expectedResponseStatus;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DExpectedResponseStatus;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_setExpectedContentType">
+<td valign="top" width="220px" class="function-return-name">void<br/>setExpectedContentType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>expectedContentType</B></td>
+<td width="120px" class="parameter-type"><B>choice</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DExpectedContentType&nbsp;=&nbsp;expectedContentType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getExpectedContentType">
+<td valign="top" width="220px" class="function-return-name">choice<br/>getExpectedContentType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DExpectedContentType;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
