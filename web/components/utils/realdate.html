@@ -1,0 +1,741 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../doc.css">
+<link rel="stylesheet" type="text/css" href="../../tables.css">
+<title>Real Date - SCN Design Studio Community</title>
+</head>
+<body class="comp-body">
+<div class="comp-main">
+
+	<div class="component-back">
+		<a href="../index.html" target="_top">show list of all components</a>
+	</div>
+	<div class="component-name">
+	RealDate [ScnCommunityUtils]
+	</div>
+	<div class="component-title">
+	Real Date
+	</div>
+
+	<p>
+Date-based navigation (roll days, months) in BIAL script directly, format days to own formats.
+</p>
+<p>
+Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57391">Design Studio SDK: Simple Date Object Component</a>
+</p>
+
+
+	<br/>
+	<div class="component-properties">VISIBLE PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">VISIBLE EVENTS</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS LIST</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">initializeWithInternalDate [<a href="#FUNCTION_initializeWithInternalDate">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">internalDate</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">initialize [<a href="#FUNCTION_initialize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">year, month, day</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">rollDays [<a href="#FUNCTION_rollDays">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">days</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">rollWeeks [<a href="#FUNCTION_rollWeeks">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">weeks</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">rollMonths [<a href="#FUNCTION_rollMonths">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">months</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">rollYears [<a href="#FUNCTION_rollYears">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">years</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">toLocaleString [<a href="#FUNCTION_toLocaleString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">toUTCString [<a href="#FUNCTION_toUTCString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDay [<a href="#FUNCTION_getDay">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDayName [<a href="#FUNCTION_getDayName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDayOfWeek [<a href="#FUNCTION_getDayOfWeek">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDayOfYear [<a href="#FUNCTION_getDayOfYear">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCalendarWeek [<a href="#FUNCTION_getCalendarWeek">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMonth [<a href="#FUNCTION_getMonth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMonthName [<a href="#FUNCTION_getMonthName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getQuarter [<a href="#FUNCTION_getQuarter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getYear [<a href="#FUNCTION_getYear">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTimezoneOffset [<a href="#FUNCTION_getTimezoneOffset">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">format [<a href="#FUNCTION_format">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">formatPattern</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">internal_toString [<a href="#FUNCTION_internal_toString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">internal_initializeNow [<a href="#FUNCTION_internal_initializeNow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+
+	</TABLE>
+
+	<br/>
+	<div class="component-properties">HIDDEN (TECHNICAL) PROPERTIES</div>
+
+	<br/>
+		
+	<TABLE width="100%" class="table1">
+	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
+	<tr>
+<td width="120px" class="property-name-type"><B>days<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Days</B><br/>
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>oneDay<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>One Day</B><br/>
+
+</td>
+<td width="60px" class="property-group">&nbsp;</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
+	</TABLE>
+
+	<br/>
+	<div class="component-functions">FUNCTIONS IN DETAIL</div>
+
+	<br/>
+	
+	<TABLE width="100%" class="">
+	<tr class="function-table-tr">
+<A NAME="FUNCTION_initializeWithInternalDate">
+<td valign="top" width="220px" class="function-return-name">void<br/>initializeWithInternalDate</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>internalDate</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internalDate&nbsp;=&nbsp;internalDate;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;the&nbsp;most&nbsp;primitive&nbsp;way&nbsp;to&nbsp;get&nbsp;integers&nbsp;from&nbsp;the&nbsp;internal&nbsp;date&nbsp;string<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;year&nbsp;=&nbsp;parseInt(internalDate.substring(0,4));<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;monthString&nbsp;=&nbsp;internalDate.substring(4,6);<br/>&nbsp;&nbsp;&nbsp;&nbsp;monthString&nbsp;=&nbsp;monthString.replace(&quot;0&quot;,&nbsp;&quot;&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;month&nbsp;=&nbsp;parseInt(monthString);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dayString&nbsp;=&nbsp;internalDate.substring(6,8);<br/>&nbsp;&nbsp;&nbsp;&nbsp;dayString&nbsp;=&nbsp;dayString.replace(&quot;0&quot;,&nbsp;&quot;&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;day&nbsp;=&nbsp;parseInt(dayString);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.initialize(year,&nbsp;month,&nbsp;day);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_initialize">
+<td valign="top" width="220px" class="function-return-name">void<br/>initialize</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>year</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>month</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>day</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.year&nbsp;=&nbsp;year;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.month&nbsp;=&nbsp;month&nbsp;-&nbsp;1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.day&nbsp;=&nbsp;day;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;create&nbsp;a&nbsp;special&nbsp;initialization&nbsp;function&nbsp;for&nbsp;UTC&nbsp;time&nbsp;zone&nbsp;to&nbsp;avoid&nbsp;calculation&nbsp;inconsistences<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date.prototype.createUtc&nbsp;=&nbsp;function&nbsp;(year,&nbsp;month0,&nbsp;day)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCFullYear(year);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCMonth(month0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCDate(day);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCHours(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCMinutes(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCSeconds(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCMilliseconds(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;create&nbsp;a&nbsp;recalculate&nbsp;function&nbsp;which&nbsp;calculates&nbsp;information&nbsp;not&nbsp;available&nbsp;in&nbsp;JS&nbsp;date<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date.prototype.recalculate&nbsp;=&nbsp;function&nbsp;()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;exit&nbsp;if&nbsp;date&nbsp;did&nbsp;not&nbsp;changed<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;currentDate&nbsp;=&nbsp;that.date.toUTCString();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(currentDate&nbsp;==&nbsp;that.currentCalculatedDate)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.currentCalculatedDate&nbsp;=&nbsp;currentDate;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!that.days)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.days&nbsp;=&nbsp;['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!that.months){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.months&nbsp;=&nbsp;['January','February','March','April','May','June','July','August','September','October','November','December'];&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.firstJanuaryDate&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;unfortunately&nbsp;SDK&nbsp;(or&nbsp;Rhino)&nbsp;has&nbsp;problems&nbsp;with&nbsp;dynamic&nbsp;creation&nbsp;of&nbsp;methods,&nbsp;need&nbsp;to&nbsp;check&nbsp;here&nbsp;again&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date.prototype.createUtc&nbsp;=&nbsp;function&nbsp;(year,&nbsp;month0,&nbsp;day)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCFullYear(year);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCMonth(month0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCDate(day);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCHours(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCMinutes(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCSeconds(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setUTCMilliseconds(0);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;create&nbsp;first&nbsp;january<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.firstJanuaryDate.createUtc(that.getYear(),&nbsp;0,&nbsp;1);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;what&nbsp;week&nbsp;day&nbsp;is&nbsp;first&nbsp;january?&nbsp;-&nbsp;need&nbsp;for&nbsp;ISO&nbsp;week&nbsp;calculation<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.dayOfWeekFirstJanuary&nbsp;=&nbsp;that.firstJanuaryDate.getDay();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;days&nbsp;are&nbsp;0-based,&nbsp;starting&nbsp;Sunday&nbsp;//&nbsp;0&nbsp;Sun&nbsp;//&nbsp;1&nbsp;Mon&nbsp;//&nbsp;2&nbsp;Tue&nbsp;//&nbsp;3&nbsp;Wed&nbsp;//&nbsp;4&nbsp;Thu&nbsp;//&nbsp;5&nbsp;Fri&nbsp;//&nbsp;6&nbsp;Sat<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;what&nbsp;week&nbsp;day&nbsp;is&nbsp;today?<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.dayOfWeekToday&nbsp;=&nbsp;that.getDayOfWeek();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;substract&nbsp;until&nbsp;last&nbsp;monday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.lastMondayDate&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.lastMondayDate.createUtc(that.getYear(),&nbsp;that.getMonth()&nbsp;-&nbsp;1,&nbsp;that.getDay());<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(that.dayOfWeekToday&nbsp;&gt;&nbsp;1)&nbsp;{&nbsp;//&nbsp;Tue&nbsp;-&nbsp;Sat<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.lastMondayDate.setDate(that.date.getDate()&nbsp;-&nbsp;(that.dayOfWeekToday&nbsp;-&nbsp;1));&nbsp;//&nbsp;substract&nbsp;day&nbsp;to&nbsp;catch&nbsp;Monday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(that.dayOfWeekToday&nbsp;&lt;&nbsp;1)&nbsp;{&nbsp;//&nbsp;Sun<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.lastMondayDate.setDate(that.date.getDate()&nbsp;-&nbsp;6);&nbsp;//&nbsp;substract&nbsp;day&nbsp;to&nbsp;catch&nbsp;Monday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;what&nbsp;week&nbsp;day&nbsp;is&nbsp;last&nbsp;Monday?&nbsp;-&nbsp;must&nbsp;be&nbsp;1,&nbsp;just&nbsp;for&nbsp;debug<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.dayOfWeekLastMonday&nbsp;=&nbsp;that.lastMondayDate.getDay();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;calculate&nbsp;mondays&nbsp;before&nbsp;and&nbsp;after&nbsp;first&nbsp;january<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.createUtc(that.firstJanuaryDate.getYear(),&nbsp;that.firstJanuaryDate.getMonth(),&nbsp;that.firstJanuaryDate.getDate());<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.createUtc(that.firstJanuaryDate.getYear(),&nbsp;that.firstJanuaryDate.getMonth(),&nbsp;that.firstJanuaryDate.getDate());<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;==&nbsp;0)&nbsp;{&nbsp;//&nbsp;Sunday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;-&nbsp;6);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;+&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;==&nbsp;1)&nbsp;{&nbsp;//&nbsp;Monday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;==&nbsp;2)&nbsp;{&nbsp;//&nbsp;Tuesday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;-&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;+&nbsp;6);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;==&nbsp;3)&nbsp;{&nbsp;//&nbsp;Wednesday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;-&nbsp;2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;+&nbsp;5);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;==&nbsp;4)&nbsp;{&nbsp;//&nbsp;Thursday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;-&nbsp;3);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;+&nbsp;4);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;==&nbsp;5)&nbsp;{&nbsp;//&nbsp;Friday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;-&nbsp;4);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;+&nbsp;3);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;==&nbsp;6)&nbsp;{&nbsp;//&nbsp;Saturday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayBeforeFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;-&nbsp;5);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.mondayAfterFirstJanuaryDate.setDate(that.firstJanuaryDate.getDate()&nbsp;+&nbsp;2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;now&nbsp;we&nbsp;can&nbsp;count&nbsp;also&nbsp;day&nbsp;number&nbsp;in&nbsp;this&nbsp;year<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;milisecondsInADay&nbsp;=&nbsp;60*60*24*1000;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.daysFromFirstJanuary&nbsp;=&nbsp;((that.date&nbsp;-&nbsp;that.firstJanuaryDate)&nbsp;/&nbsp;milisecondsInADay)&nbsp;+&nbsp;1;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;count&nbsp;days&nbsp;between&nbsp;last&nbsp;monday&nbsp;and&nbsp;the&nbsp;mondays&nbsp;around&nbsp;first&nbsp;january<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.daysFromLastMondayToMondayBeforeFirstJanuary&nbsp;=&nbsp;((that.lastMondayDate&nbsp;-&nbsp;that.mondayBeforeFirstJanuaryDate)&nbsp;/&nbsp;milisecondsInADay);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.daysFromLastMondayToMondayAfterFirstJanuary&nbsp;=&nbsp;((that.lastMondayDate&nbsp;-&nbsp;that.mondayAfterFirstJanuaryDate)&nbsp;/&nbsp;milisecondsInADay);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;ISO&nbsp;8601:&nbsp;First&nbsp;Week&nbsp;is&nbsp;the&nbsp;week&nbsp;with&nbsp;Thurdsay<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;count&nbsp;number&nbsp;of&nbsp;weeks,&nbsp;by&nbsp;substracting&nbsp;the&nbsp;mondays&nbsp;and&nbsp;dividing&nbsp;by&nbsp;7<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(that.dayOfWeekFirstJanuary&nbsp;&gt;&nbsp;4&nbsp;||&nbsp;that.dayOfWeekFirstJanuary&nbsp;==&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.calendarWeek&nbsp;=&nbsp;(that.daysFromLastMondayToMondayAfterFirstJanuary&nbsp;/&nbsp;7)&nbsp;+&nbsp;1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.calendarWeek&nbsp;=&nbsp;(that.daysFromLastMondayToMondayBeforeFirstJanuary&nbsp;/&nbsp;7)&nbsp;+&nbsp;1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;for&nbsp;now&nbsp;simplification,&nbsp;actually&nbsp;last&nbsp;year&nbsp;could&nbsp;have&nbsp;53&nbsp;calendar&nbsp;weeks&nbsp;by&nbsp;ISO&nbsp;8601<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(that.calendarWeek&nbsp;==&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;lastYear&nbsp;=&nbsp;that.getYear()&nbsp;-&nbsp;1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;exceptions&nbsp;are&nbsp;manually&nbsp;maintained&nbsp;for&nbsp;1970&nbsp;-&nbsp;2054<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(lastYear&nbsp;==&nbsp;1970&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;1981&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;1987&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;1998<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2009&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2015&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2026&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2037&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2043&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2054)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;http://en.wikipedia.org/wiki/Common_year_starting_on_Thursday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.calendarWeek&nbsp;=&nbsp;53;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(lastYear&nbsp;==&nbsp;1920&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;1948&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;1976&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;&nbsp;2004&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2060&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2088)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;http://en.wikipedia.org/wiki/Leap_year_starting_on_Thursday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.calendarWeek&nbsp;=&nbsp;53;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(lastYear&nbsp;==&nbsp;1992<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2020&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2048&nbsp;||&nbsp;lastYear&nbsp;==&nbsp;2076)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;http://en.wikipedia.org/wiki/Leap_year_starting_on_Wednesday<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.calendarWeek&nbsp;=&nbsp;53;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.calendarWeek&nbsp;=&nbsp;52;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;for&nbsp;now&nbsp;names&nbsp;only&nbsp;in&nbsp;EN<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.dayOfWeekName&nbsp;=&nbsp;that.days&nbsp;[that.getDayOfWeek()];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.monthName&nbsp;=&nbsp;that.months&nbsp;[that.getMonth()];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;quarter<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.quarter&nbsp;=&nbsp;Math.ceil(that.getMonth()&nbsp;/&nbsp;3);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.createUtc(this.year,&nbsp;this.month,&nbsp;this.day);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_rollDays">
+<td valign="top" width="220px" class="function-return-name">void<br/>rollDays</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>days</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.setUTCDate(this.date.getUTCDate()&nbsp;+&nbsp;days);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_rollWeeks">
+<td valign="top" width="220px" class="function-return-name">void<br/>rollWeeks</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>weeks</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.setUTCDate(this.date.getUTCDate()&nbsp;+&nbsp;(weeks*7));
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_rollMonths">
+<td valign="top" width="220px" class="function-return-name">void<br/>rollMonths</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>months</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.setUTCMonth(this.date.getUTCMonth()&nbsp;+&nbsp;months);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_rollYears">
+<td valign="top" width="220px" class="function-return-name">void<br/>rollYears</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>years</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.setUTCFullYear(this.date.getUTCFullYear()&nbsp;+&nbsp;years);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_toLocaleString">
+<td valign="top" width="220px" class="function-return-name">String<br/>toLocaleString</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.date.toLocaleString()&nbsp;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_toUTCString">
+<td valign="top" width="220px" class="function-return-name">String<br/>toUTCString</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.date.toUTCString()&nbsp;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDay">
+<td valign="top" width="220px" class="function-return-name">int<br/>getDay</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.date.getUTCDate();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDayName">
+<td valign="top" width="220px" class="function-return-name">int<br/>getDayName</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.dayOfWeekName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDayOfWeek">
+<td valign="top" width="220px" class="function-return-name">int<br/>getDayOfWeek</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.date.getUTCDay();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getDayOfYear">
+<td valign="top" width="220px" class="function-return-name">int<br/>getDayOfYear</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.daysFromFirstJanuary;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getCalendarWeek">
+<td valign="top" width="220px" class="function-return-name">int<br/>getCalendarWeek</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.calendarWeek;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMonth">
+<td valign="top" width="220px" class="function-return-name">int<br/>getMonth</td>
+<td valign="top" width="*" class="function-help">Month,&nbsp;1-index&nbsp;based&nbsp;(1-12)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.date.getUTCMonth()&nbsp;+&nbsp;1;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getMonthName">
+<td valign="top" width="220px" class="function-return-name">int<br/>getMonthName</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.monthName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getQuarter">
+<td valign="top" width="220px" class="function-return-name">int<br/>getQuarter</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.quarter;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getYear">
+<td valign="top" width="220px" class="function-return-name">int<br/>getYear</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.date.getUTCFullYear();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_getTimezoneOffset">
+<td valign="top" width="220px" class="function-return-name">String<br/>getTimezoneOffset</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.date.getTimezoneOffset();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_format">
+<td valign="top" width="220px" class="function-return-name">String<br/>format</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>formatPattern</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;resultString&nbsp;=&nbsp;formatPattern;<br/>&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;YYYY&quot;,&nbsp;this.getYear());<br/>&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;YY&quot;,&nbsp;this.getYear()&nbsp;%&nbsp;100);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.getMonth()&nbsp;&lt;&nbsp;10)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;MM&quot;,&nbsp;&quot;0&quot;&nbsp;+&nbsp;this.getMonth());&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;M&quot;,&nbsp;this.getMonth());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;MM&quot;,&nbsp;this.getMonth());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.getDay()&nbsp;&lt;&nbsp;10)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;DD&quot;,&nbsp;&quot;0&quot;&nbsp;+&nbsp;this.getDay());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;D&quot;,&nbsp;this.getDay());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;DD&quot;,&nbsp;this.getDay());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.getCalendarWeek()&nbsp;&lt;&nbsp;10)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;WW&quot;,&nbsp;&quot;0&quot;&nbsp;+&nbsp;this.getCalendarWeek());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;W&quot;,&nbsp;this.getCalendarWeek());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;WW&quot;,&nbsp;this.getCalendarWeek());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;QQQ&quot;,&nbsp;&quot;00&quot;&nbsp;+&nbsp;this.getQuarter());<br/>&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;QQ&quot;,&nbsp;&quot;0&quot;&nbsp;+&nbsp;this.getQuarter());<br/>&nbsp;&nbsp;&nbsp;&nbsp;resultString&nbsp;=&nbsp;resultString.replace(&quot;Q&quot;,&nbsp;this.getQuarter());<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;resultString;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_internal_toString">
+<td valign="top" width="220px" class="function-return-name">String<br/>internal_toString</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;&quot;Todays&nbsp;Date:&nbsp;&quot;&nbsp;+&nbsp;this.date.toUTCString()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Last&nbsp;Monday&nbsp;Date:&nbsp;&quot;&nbsp;+&nbsp;this.lastMondayDate.toUTCString()&nbsp;+&nbsp;&quot;\n\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;First&nbsp;January&nbsp;Date:&nbsp;&quot;&nbsp;+&nbsp;this.firstJanuaryDate.toUTCString()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Monday&nbsp;Before&nbsp;First&nbsp;January&nbsp;Date:&nbsp;&quot;&nbsp;+&nbsp;this.mondayBeforeFirstJanuaryDate.toUTCString()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Monday&nbsp;After&nbsp;First&nbsp;January&nbsp;Date:&nbsp;&quot;&nbsp;+&nbsp;this.mondayAfterFirstJanuaryDate.toUTCString()&nbsp;+&nbsp;&quot;\n\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Today&nbsp;Day:&nbsp;&quot;&nbsp;+&nbsp;this.dayOfWeekToday&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;First&nbsp;January&nbsp;Day:&nbsp;&quot;&nbsp;+&nbsp;this.dayOfWeekFirstJanuary&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Last&nbsp;Monday&nbsp;Day:&nbsp;&quot;&nbsp;+&nbsp;this.lastMondayDate.getDay()&nbsp;+&nbsp;&quot;\n\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Date&nbsp;Serialization:&nbsp;&quot;&nbsp;+&nbsp;this.date&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Monday&nbsp;Before&nbsp;First&nbsp;January&nbsp;Serialization:&nbsp;&quot;&nbsp;+&nbsp;this.mondayBeforeFirstJanuaryDate&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Monday&nbsp;After&nbsp;First&nbsp;January&nbsp;Serialization:&nbsp;&quot;&nbsp;+&nbsp;this.mondayAfterFirstJanuaryDate&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;daysFromLastMondayToMondayBeforeFirstJanuary:&nbsp;&quot;&nbsp;+&nbsp;this.daysFromLastMondayToMondayBeforeFirstJanuary&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;daysFromLastMondayToMondayAfterFirstJanuary:&nbsp;&quot;&nbsp;+&nbsp;this.daysFromLastMondayToMondayAfterFirstJanuary&nbsp;+&nbsp;&quot;\n\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Day&nbsp;of&nbsp;Year:&nbsp;&quot;&nbsp;+&nbsp;this.getDayOfYear()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Day&nbsp;of&nbsp;Month:&nbsp;&quot;&nbsp;+&nbsp;this.getDay()&nbsp;+&nbsp;&quot;\n\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Day&nbsp;of&nbsp;Week:&nbsp;&quot;&nbsp;+&nbsp;this.getDayOfWeek()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Calendar&nbsp;Week:&nbsp;&quot;&nbsp;+&nbsp;this.getCalendarWeek()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Month:&nbsp;&quot;&nbsp;+&nbsp;this.getMonth()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Quarter:&nbsp;&quot;&nbsp;+&nbsp;this.getQuarter()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Year:&nbsp;&quot;&nbsp;+&nbsp;this.getYear()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;TimeZoneOffset:&nbsp;&quot;&nbsp;+&nbsp;this.getTimezoneOffset()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Day&nbsp;Name:&nbsp;&quot;&nbsp;+&nbsp;this.getDayName()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Month&nbsp;Name:&nbsp;&quot;&nbsp;+&nbsp;this.getMonthName()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Formatted:&nbsp;&quot;&nbsp;+&nbsp;this.getDay()&nbsp;+&nbsp;&quot;.&quot;&nbsp;+&nbsp;this.getMonth()&nbsp;+&nbsp;&quot;.&quot;&nbsp;+&nbsp;this.getYear()&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Formatted&nbsp;[DD.MM.YYYY&nbsp;WW]:&nbsp;&quot;&nbsp;+&nbsp;this.format(&quot;DD.MM.YYYY&nbsp;WW&quot;)&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Formatted&nbsp;[MM/DD/YYYY&nbsp;WW]:&nbsp;&quot;&nbsp;+&nbsp;this.format(&quot;MM/DD/YYYY&nbsp;WW&quot;)&nbsp;+&nbsp;&quot;\n\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Internal&nbsp;Year:&nbsp;&quot;&nbsp;+&nbsp;this.year&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Internal&nbsp;Month:&nbsp;&quot;&nbsp;+&nbsp;this.month&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Internal&nbsp;Day:&nbsp;&quot;&nbsp;+&nbsp;this.day&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;Internal&nbsp;Date:&nbsp;&quot;&nbsp;+&nbsp;this.internalDate&nbsp;+&nbsp;&quot;\n&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&quot;&quot;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<A NAME="FUNCTION_internal_initializeNow">
+<td valign="top" width="220px" class="function-return-name">void<br/>internal_initializeNow</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(!this.date)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APPLICATION.createWarningMessage(&quot;Date&nbsp;Object&nbsp;Not&nbsp;Initialized.&nbsp;Initializing&nbsp;with&nbsp;some&nbsp;date.&nbsp;Use&nbsp;'initialize'&nbsp;call&nbsp;next&nbsp;time.&quot;);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.date&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.initialize(this.date.getUTCFullYear(),&nbsp;&nbsp;this.date.getUTCMonth()&nbsp;+&nbsp;1,&nbsp;this.date.getUTCDay());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
+	</TABLE>
+
+</div>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61231710-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
