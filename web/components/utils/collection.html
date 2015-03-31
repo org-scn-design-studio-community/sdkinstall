@@ -231,8 +231,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58081">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_getAsKeyLabelValueArray">
-<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.KeyLabelValueArray<br/>getAsKeyLabelValueArray</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAsKeyLabelValueArray">org.scn.community.shared.KeyLabelValueArray<br/>getAsKeyLabelValueArray</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;collection&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3",&nbsp;"l1;l2;l3",&nbsp;"12.4;25.1;94.2"&nbsp;collection:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;COLLECTION_1.getAsKeyLabelValueArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;entries<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(element.key,&nbsp;element.label&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;element.value&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;k1;&nbsp;value:&nbsp;l1&nbsp;(&nbsp;12.4&nbsp;)</li><li>key:&nbsp;k2;&nbsp;value:&nbsp;l2&nbsp;(&nbsp;25.1&nbsp;)</li><li>key:&nbsp;k3;&nbsp;value:&nbsp;l3&nbsp;(&nbsp;94.2&nbsp;)</li></ul></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -258,8 +257,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getAsKeyLabelValuePropertyArray">
-<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.KeyLabelValuePropertyArray<br/>getAsKeyLabelValuePropertyArray</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAsKeyLabelValuePropertyArray">org.scn.community.shared.KeyLabelValuePropertyArray<br/>getAsKeyLabelValuePropertyArray</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;collection&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3",&nbsp;"l1;l2;l3",&nbsp;"12.4;25.1;94.2"&nbsp;collection:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;COLLECTION_1.getAsKeyLabelValueArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;entries<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(element.key,&nbsp;element.label&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;element.value&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;k1;&nbsp;value:&nbsp;l1&nbsp;(&nbsp;12.4&nbsp;)</li><li>key:&nbsp;k2;&nbsp;value:&nbsp;l2&nbsp;(&nbsp;25.1&nbsp;)</li><li>key:&nbsp;k3;&nbsp;value:&nbsp;l3&nbsp;(&nbsp;94.2&nbsp;)</li></ul></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -285,8 +283,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_removeAllItems">
-<td valign="top" width="220px" class="function-return-name">void<br/>removeAllItems</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllItems">void<br/>removeAllItems</td>
 <td valign="top" width="*" class="function-help">Removes&nbsp;all&nbsp;Items&nbsp;(clears&nbsp;the&nbsp;collection)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -307,8 +304,7 @@ var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JS
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setItems">
-<td valign="top" width="220px" class="function-return-name">void<br/>setItems</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setItems">void<br/>setItems</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;items&nbsp;of&nbsp;the&nbsp;array&nbsp;by&nbsp;2&nbsp;strings:&nbsp;for&nbsp;keys,&nbsp;labels,&nbsp;values.&nbsp;Optionally&nbsp;a&nbsp;given&nbsp;separator&nbsp;can&nbsp;be&nbsp;specified.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;collection&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/>Values&nbsp;must&nbsp;be&nbsp;float&nbsp;numbers.&nbsp;The&nbsp;content&nbsp;length&nbsp;is&nbsp;equal&nbsp;with&nbsp;number&nbsp;of&nbsp;keys.&nbsp;in&nbsp;case&nbsp;labels&nbsp;or&nbsp;values&nbsp;are&nbsp;shorter,&nbsp;correspondingly&nbsp;an&nbsp;empty&nbsp;label&nbsp;or&nbsp;0.0&nbsp;will&nbsp;be&nbsp;inserted.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;set&nbsp;the&nbsp;string&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>COLLECTION_1.setItems("k1;k2;k3",&nbsp;"l1;l2;l3",&nbsp;"12.4;25.1;94.2",&nbsp;";");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k1,k2,k3<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -364,8 +360,7 @@ var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(separ
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_addItem">
-<td valign="top" width="220px" class="function-return-name">void<br/>addItem</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addItem">void<br/>addItem</td>
 <td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;value&nbsp;to&nbsp;new&nbsp;or&nbsp;existing&nbsp;array.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;collection&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;create&nbsp;an&nbsp;"k1,k2,k3"&nbsp;array:<br/><div class='html-code'>COLLECTION_1.addItem("k1",&nbsp;"l1",&nbsp;45.75);<br>COLLECTION_1.addItem("k2",&nbsp;"l2",&nbsp;11.21);<br>COLLECTION_1.addItem("k3",&nbsp;"l3",&nbsp;85.439);<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;elements&nbsp;with&nbsp;keys:&nbsp;k1,k2,k3<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -416,8 +411,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getKeys">
-<td valign="top" width="220px" class="function-return-name">String<br/>getKeys</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getKeys">String<br/>getKeys</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;all&nbsp;keys&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;given&nbsp;optional&nbsp;separator.&nbsp;default&nbsp;separator&nbsp;is&nbsp;comma&nbsp;,<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;array&nbsp;with&nbsp;3&nbsp;elements&nbsp;with&nbsp;keys&nbsp;["K1",&nbsp;"K2",&nbsp;"K3"]:<br/><div class='html-code'>var&nbsp;keysAsString&nbsp;=&nbsp;COLLECTION_1.getKeys&nbsp;("|");<br></div>The&nbsp;"keysAsString"&nbsp;has&nbsp;now&nbsp;"K1|K2|K3"&nbsp;as&nbsp;content.<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -443,8 +437,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getLabels">
-<td valign="top" width="220px" class="function-return-name">String<br/>getLabels</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLabels">String<br/>getLabels</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;all&nbsp;labels&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;given&nbsp;optional&nbsp;separator.&nbsp;default&nbsp;separator&nbsp;is&nbsp;comma&nbsp;,<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;array&nbsp;with&nbsp;3&nbsp;elements&nbsp;with&nbsp;labels&nbsp;["L1",&nbsp;"L2",&nbsp;"L3"]:<br/><div class='html-code'>var&nbsp;labelsAsString&nbsp;=&nbsp;COLLECTION_1.getLabels&nbsp;("|");<br></div>The&nbsp;"labelsAsString"&nbsp;has&nbsp;now&nbsp;"L1|L2|L3"&nbsp;as&nbsp;content.<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -470,8 +463,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValues">
-<td valign="top" width="220px" class="function-return-name">String<br/>getValues</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValues">String<br/>getValues</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;all&nbsp;values&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;given&nbsp;optional&nbsp;separator.&nbsp;default&nbsp;separator&nbsp;is&nbsp;comma&nbsp;,<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;array&nbsp;with&nbsp;3&nbsp;elements&nbsp;with&nbsp;values&nbsp;["11.4",&nbsp;"87.66",&nbsp;"147.41"]:<br/><div class='html-code'>var&nbsp;valuesAsString&nbsp;=&nbsp;COLLECTION_1.getValues&nbsp;("|");<br></div>The&nbsp;"valuesAsString"&nbsp;has&nbsp;now&nbsp;"11.4|87.66|147.41"&nbsp;as&nbsp;content.<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -497,8 +489,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_sortByKey">
-<td valign="top" width="220px" class="function-return-name">void<br/>sortByKey</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_sortByKey">void<br/>sortByKey</td>
 <td valign="top" width="*" class="function-help">Sorts&nbsp;the&nbsp;collection&nbsp;by&nbsp;values&nbsp;with&nbsp;optional&nbsp;parameter&nbsp;for&nbsp;direction&nbsp;(ascending&nbsp;is&nbsp;default)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -524,8 +515,7 @@ if(direction&nbsp;==&nbsp;org_scn_community_shared_SortDirection.DESCENDING)&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_sortByKeyDescending">
-<td valign="top" width="220px" class="function-return-name">void<br/>sortByKeyDescending</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_sortByKeyDescending">void<br/>sortByKeyDescending</td>
 <td valign="top" width="*" class="function-help">Sorts&nbsp;the&nbsp;collection&nbsp;by&nbsp;key&nbsp;(descending)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -546,8 +536,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_sortByLabel">
-<td valign="top" width="220px" class="function-return-name">void<br/>sortByLabel</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_sortByLabel">void<br/>sortByLabel</td>
 <td valign="top" width="*" class="function-help">Sorts&nbsp;the&nbsp;collection&nbsp;by&nbsp;values&nbsp;with&nbsp;optional&nbsp;parameter&nbsp;for&nbsp;direction&nbsp;(ascending&nbsp;is&nbsp;default)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -573,8 +562,7 @@ if(direction&nbsp;==&nbsp;org_scn_community_shared_SortDirection.DESCENDING)&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_sortByLabelDescending">
-<td valign="top" width="220px" class="function-return-name">void<br/>sortByLabelDescending</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_sortByLabelDescending">void<br/>sortByLabelDescending</td>
 <td valign="top" width="*" class="function-help">Sorts&nbsp;the&nbsp;collection&nbsp;by&nbsp;labels&nbsp;(descending)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -595,8 +583,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_sortByValue">
-<td valign="top" width="220px" class="function-return-name">void<br/>sortByValue</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_sortByValue">void<br/>sortByValue</td>
 <td valign="top" width="*" class="function-help">Sorts&nbsp;the&nbsp;collection&nbsp;by&nbsp;values&nbsp;with&nbsp;optional&nbsp;parameter&nbsp;for&nbsp;direction&nbsp;(ascending&nbsp;is&nbsp;default)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -622,8 +609,7 @@ if(direction&nbsp;==&nbsp;org_scn_community_shared_SortDirection.DESCENDING)&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_sortByValueDescending">
-<td valign="top" width="220px" class="function-return-name">void<br/>sortByValueDescending</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_sortByValueDescending">void<br/>sortByValueDescending</td>
 <td valign="top" width="*" class="function-help">Sorts&nbsp;the&nbsp;collection&nbsp;by&nbsp;values&nbsp;(descending)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -644,8 +630,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getLength">
-<td valign="top" width="220px" class="function-return-name">int<br/>getLength</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLength">int<br/>getLength</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;length&nbsp;of&nbsp;current&nbsp;collection<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -666,8 +651,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getKeyByIndex">
-<td valign="top" width="220px" class="function-return-name">String<br/>getKeyByIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getKeyByIndex">String<br/>getKeyByIndex</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;key&nbsp;by&nbsp;given&nbsp;index.&nbsp;Indices&nbsp;are&nbsp;0-based.&nbsp;In&nbsp;case&nbsp;the&nbsp;index&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"N/A"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;label&nbsp;"Value&nbsp;for&nbsp;Key&nbsp;2"&nbsp;at&nbsp;index&nbsp;1&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;index&nbsp;1:<br/><div class='html-code'>var&nbsp;key1&nbsp;=&nbsp;COLLECTION_1.getKeyByIndex(1);<br></div>Now&nbsp;"key1"&nbsp;is&nbsp;set&nbsp;to&nbsp;String&nbsp;"Value&nbsp;for&nbsp;Key&nbsp;2".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -693,8 +677,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getIndexByKey">
-<td valign="top" width="220px" class="function-return-name">int<br/>getIndexByKey</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getIndexByKey">int<br/>getIndexByKey</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;index&nbsp;by&nbsp;given&nbsp;key.&nbsp;In&nbsp;case&nbsp;the&nbsp;key&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"N/A"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;value&nbsp;"Value&nbsp;for&nbsp;Key&nbsp;2"&nbsp;at&nbsp;index&nbsp;1&nbsp;(key&nbsp;==&nbsp;"k2")&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;index&nbsp;at&nbsp;key&nbsp;"k2":<br/><div class='html-code'>var&nbsp;index1&nbsp;=&nbsp;COLLECTION_1.getIndexByKey("k2");<br></div>Now&nbsp;"index1"&nbsp;is&nbsp;set&nbsp;to&nbsp;float&nbsp;"1".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -720,8 +703,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getLabelByIndex">
-<td valign="top" width="220px" class="function-return-name">String<br/>getLabelByIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLabelByIndex">String<br/>getLabelByIndex</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;label&nbsp;by&nbsp;given&nbsp;index.&nbsp;Indices&nbsp;are&nbsp;0-based.&nbsp;In&nbsp;case&nbsp;the&nbsp;index&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"N/A"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;label&nbsp;"Value&nbsp;for&nbsp;Key&nbsp;2"&nbsp;at&nbsp;index&nbsp;1&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;index&nbsp;1:<br/><div class='html-code'>var&nbsp;label1&nbsp;=&nbsp;COLLECTION_1.getLabelByIndex(1);<br></div>Now&nbsp;"label1"&nbsp;is&nbsp;set&nbsp;to&nbsp;String&nbsp;"Value&nbsp;for&nbsp;Key&nbsp;2".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -747,8 +729,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getLabelByKey">
-<td valign="top" width="220px" class="function-return-name">String<br/>getLabelByKey</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLabelByKey">String<br/>getLabelByKey</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;label&nbsp;by&nbsp;given&nbsp;key.&nbsp;In&nbsp;case&nbsp;the&nbsp;key&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"N/A"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;value&nbsp;"Value&nbsp;for&nbsp;Key&nbsp;2"&nbsp;at&nbsp;index&nbsp;1&nbsp;(key&nbsp;==&nbsp;"k2")&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;key&nbsp;"k2":<br/><div class='html-code'>var&nbsp;label1&nbsp;=&nbsp;COLLECTION_1.getLabelByKey("k2");<br></div>Now&nbsp;"label1"&nbsp;is&nbsp;set&nbsp;to&nbsp;float&nbsp;"Value&nbsp;for&nbsp;Key&nbsp;2".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -774,8 +755,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValueByIndexAsString">
-<td valign="top" width="220px" class="function-return-name">String<br/>getValueByIndexAsString</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValueByIndexAsString">String<br/>getValueByIndexAsString</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;by&nbsp;given&nbsp;index.&nbsp;Indices&nbsp;are&nbsp;0-based.&nbsp;In&nbsp;case&nbsp;the&nbsp;index&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"NaN"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;value&nbsp;"54.48"&nbsp;at&nbsp;index&nbsp;1&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;index&nbsp;1:<br/><div class='html-code'>var&nbsp;value1&nbsp;=&nbsp;COLLECTION_1.getValueByIndexAsString(1);<br></div>Now&nbsp;"value1"&nbsp;is&nbsp;set&nbsp;to&nbsp;String&nbsp;"54.48".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -801,8 +781,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValueByIndex">
-<td valign="top" width="220px" class="function-return-name">float<br/>getValueByIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValueByIndex">float<br/>getValueByIndex</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;by&nbsp;given&nbsp;index.&nbsp;Indices&nbsp;are&nbsp;0-based.&nbsp;In&nbsp;case&nbsp;the&nbsp;index&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"0.0"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;value&nbsp;"54.48"&nbsp;at&nbsp;index&nbsp;1&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;index&nbsp;1:<br/><div class='html-code'>var&nbsp;value1&nbsp;=&nbsp;COLLECTION_1.getValueByIndex(1);<br></div>Now&nbsp;"value1"&nbsp;is&nbsp;set&nbsp;to&nbsp;float&nbsp;"54.48".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -828,8 +807,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValueByKeyAsString">
-<td valign="top" width="220px" class="function-return-name">String<br/>getValueByKeyAsString</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValueByKeyAsString">String<br/>getValueByKeyAsString</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;by&nbsp;given&nbsp;key.&nbsp;In&nbsp;case&nbsp;the&nbsp;index&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"NaN"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;value&nbsp;"54.48"&nbsp;at&nbsp;index&nbsp;1&nbsp;(key&nbsp;==&nbsp;"k2")&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;key&nbsp;"k2":<br/><div class='html-code'>var&nbsp;value1&nbsp;=&nbsp;COLLECTION_1.getValueByKeyAsString("k2");<br></div>Now&nbsp;"value1"&nbsp;is&nbsp;set&nbsp;to&nbsp;String&nbsp;"54.48".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -855,8 +833,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValueByKey">
-<td valign="top" width="220px" class="function-return-name">float<br/>getValueByKey</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValueByKey">float<br/>getValueByKey</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;by&nbsp;given&nbsp;key.&nbsp;In&nbsp;case&nbsp;the&nbsp;index&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"0.0"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;value&nbsp;"54.48"&nbsp;at&nbsp;index&nbsp;1&nbsp;(key&nbsp;==&nbsp;"k2")&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;key&nbsp;"k2":<br/><div class='html-code'>var&nbsp;value1&nbsp;=&nbsp;COLLECTION_1.getValueByKey("k2");<br></div>Now&nbsp;"value1"&nbsp;is&nbsp;set&nbsp;to&nbsp;float&nbsp;"54.48".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -882,8 +859,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_size">
-<td valign="top" width="220px" class="function-return-name">int<br/>size</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_size">int<br/>size</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;current&nbsp;size.<br/><div class='html-example'">You&nbsp;have&nbsp;a&nbsp;"k1,k2,k3"&nbsp;collection&nbsp;with&nbsp;value&nbsp;"54.48"&nbsp;at&nbsp;index&nbsp;1&nbsp;(key&nbsp;==&nbsp;"k2")&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;the&nbsp;size:<br/><div class='html-code'>var&nbsp;size&nbsp;=&nbsp;COLLECTION_1.size();<br></div>Now&nbsp;"size"&nbsp;is&nbsp;set&nbsp;to&nbsp;integer&nbsp;"3".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -904,8 +880,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_fillIntoSelectionComponent">
-<td valign="top" width="220px" class="function-return-name">void<br/>fillIntoSelectionComponent</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_fillIntoSelectionComponent">void<br/>fillIntoSelectionComponent</td>
 <td valign="top" width="*" class="function-help">Fills&nbsp;the&nbsp;content&nbsp;of&nbsp;this&nbsp;array&nbsp;into&nbsp;given&nbsp;selection&nbsp;component<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;fill&nbsp;the&nbsp;dropdown&nbsp;with&nbsp;the&nbsp;content<br/><div class='html-code'>COLLECTION.fillIntoSelectionComponent(DROPDOWN,&nbsp;30);<br/></div>Now&nbsp;the&nbsp;dropdown&nbsp;is&nbsp;filled&nbsp;in&nbsp;with&nbsp;given&nbsp;values<br/></div><br/>
 
 <TABLE width="100%" class="table1">

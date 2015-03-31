@@ -147,8 +147,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58082">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_getValuesAsValueTextArray">
-<td valign="top" width="220px" class="function-return-name">org.scn.community.shared.ValueTextArray<br/>getValuesAsValueTextArray</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValuesAsValueTextArray">org.scn.community.shared.ValueTextArray<br/>getValuesAsValueTextArray</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;array&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;ARRAY_1.getValuesAsValueTextArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;values<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(""+&nbsp;index,&nbsp;element.value&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;index&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;0;&nbsp;value:&nbsp;k1&nbsp;(&nbsp;0&nbsp;)</li><li>key:&nbsp;1;&nbsp;value:&nbsp;k2&nbsp;(&nbsp;1&nbsp;)</li><li>key:&nbsp;2;&nbsp;value:&nbsp;k3&nbsp;(&nbsp;2&nbsp;)</li></ul></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -174,8 +173,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValuesAsSimpleStringArray">
-<td valign="top" width="220px" class="function-return-name">StringArray<br/>getValuesAsSimpleStringArray</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValuesAsSimpleStringArray">StringArray<br/>getValuesAsSimpleStringArray</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;array&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.&nbsp;The&nbsp;element&nbsp;is&nbsp;directly&nbsp;containing&nbsp;the&nbsp;string&nbsp;value.<br/>Pro:&nbsp;compatible&nbsp;to&nbsp;the&nbsp;API&nbsp;in&nbsp;other&nbsp;scripts&nbsp;where&nbsp;object&nbsp;"ValueTextArray"&nbsp;is&nbsp;expected.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;ARRAY_1.getValuesAsSimpleValueTextArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;values<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(""+&nbsp;index,&nbsp;element&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;index&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;0;&nbsp;value:&nbsp;k1&nbsp;(&nbsp;0&nbsp;)</li><li>key:&nbsp;1;&nbsp;value:&nbsp;k2&nbsp;(&nbsp;1&nbsp;)</li><li>key:&nbsp;2;&nbsp;value:&nbsp;k3&nbsp;(&nbsp;2&nbsp;)</li></ul></div><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pass&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;array&nbsp;directly&nbsp;to&nbsp;chart&nbsp;selection.<br/><div class='html-code'>var&nbsp;valuesAsArray&nbsp;=&nbsp;ARRAY_1.getValuesAsSimpleValueTextArray();<br>CHART_1.setDataSelection(&nbsp;{<br>"<your&nbsp;dimension>":&nbsp;valuesAsArray<br>});<br></div>This&nbsp;CHART&nbsp;will&nbsp;get&nbsp;the&nbsp;corresponding&nbsp;selection<br></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -201,8 +199,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_eaches">
-<td valign="top" width="220px" class="function-return-name">Array<br/>eaches</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_eaches">Array<br/>eaches</td>
 <td valign="top" width="*" class="function-help">Generates&nbsp;an&nbsp;array&nbsp;of&nbsp;integers&nbsp;for&nbsp;use&nbsp;in&nbsp;BIAL&nbsp;forEach&nbsp;statement&nbsp;in&nbsp;order&nbsp;to&nbsp;emulate&nbsp;a&nbsp;traditional&nbsp;for&nbsp;loop.<br/><div class='html-example'">Fill&nbsp;a&nbsp;list&nbsp;box&nbsp;with&nbsp;10&nbsp;values:<br/><div class='html-code'>ARRAY_1.eaches(0,&nbsp;9,&nbsp;1).forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(element,&nbsp;"Item&nbsp;"&nbsp;+&nbsp;(element&nbsp;+&nbsp;"")&nbsp;);<br>});</div>This&nbsp;would&nbsp;be&nbsp;equivalent&nbsp;to&nbsp;a&nbsp;loop&nbsp;in&nbsp;JavaScript:<br/><div class='html-code'>for(var&nbsp;element&nbsp;=&nbsp;0;element<=9;element++){<br>Your&nbsp;code&nbsp;here.<br>}<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -238,8 +235,7 @@ var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=start;i&lt
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValues">
-<td valign="top" width="220px" class="function-return-name">String<br/>getValues</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValues">String<br/>getValues</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;all&nbsp;values&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;given&nbsp;optional&nbsp;separator.&nbsp;default&nbsp;separator&nbsp;is&nbsp;comma&nbsp;,<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;array&nbsp;with&nbsp;3&nbsp;values&nbsp;["v1",&nbsp;"v2",&nbsp;"v3"]:<br/><div class='html-code'>var&nbsp;valuesAsString&nbsp;=&nbsp;ARRAY_1.getValues&nbsp;("|");<br></div>The&nbsp;"valuesAsString"&nbsp;has&nbsp;now&nbsp;"v1|v2|v3"&nbsp;as&nbsp;content.<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -265,8 +261,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_createArray">
-<td valign="top" width="220px" class="function-return-name">void<br/>createArray</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_createArray">void<br/>createArray</td>
 <td valign="top" width="*" class="function-help">Creates&nbsp;an&nbsp;array&nbsp;of&nbsp;requested&nbsp;length&nbsp;with&nbsp;integers&nbsp;as&nbsp;values&nbsp;(starting&nbsp;at&nbsp;0).<br/><div class='html-example'">You&nbsp;want&nbsp;an&nbsp;array&nbsp;with&nbsp;length&nbsp;7:<br/><div class='html-code'>ARRAY_1.createArray(7);<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;0,1,2,3,4,5,6,7<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -292,8 +287,7 @@ var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_removeAllValues">
-<td valign="top" width="220px" class="function-return-name">void<br/>removeAllValues</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllValues">void<br/>removeAllValues</td>
 <td valign="top" width="*" class="function-help">Removes&nbsp;all&nbsp;Values&nbsp;(clears&nbsp;the&nbsp;array)<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -314,8 +308,7 @@ var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setValues">
-<td valign="top" width="220px" class="function-return-name">void<br/>setValues</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValues">void<br/>setValues</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;values&nbsp;of&nbsp;the&nbsp;array&nbsp;by&nbsp;string.&nbsp;Optionally&nbsp;a&nbsp;given&nbsp;separator&nbsp;can&nbsp;be&nbsp;specified.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;array&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;set&nbsp;the&nbsp;string&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>ARRAY_1.setValues("k1;k2;k3",&nbsp;";");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k1,k2,k3<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -346,8 +339,7 @@ var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_addValue">
-<td valign="top" width="220px" class="function-return-name">void<br/>addValue</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addValue">void<br/>addValue</td>
 <td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;value&nbsp;to&nbsp;new&nbsp;or&nbsp;existing&nbsp;array.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;array&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;create&nbsp;an&nbsp;"k1,k2,k3"&nbsp;array:<br/><div class='html-code'>ARRAY_1.addValue("k1");<br>ARRAY_1.addValue("k2");<br>ARRAY_1.addValue("k3");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k1,k2,k3<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -373,8 +365,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getLength">
-<td valign="top" width="220px" class="function-return-name">int<br/>getLength</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLength">int<br/>getLength</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;length&nbsp;of&nbsp;current&nbsp;array<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -395,8 +386,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getValueByIndex">
-<td valign="top" width="220px" class="function-return-name">String<br/>getValueByIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValueByIndex">String<br/>getValueByIndex</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;by&nbsp;given&nbsp;index.&nbsp;Indices&nbsp;are&nbsp;0-based.&nbsp;In&nbsp;case&nbsp;the&nbsp;index&nbsp;does&nbsp;not&nbsp;exist,&nbsp;"N/A"&nbsp;is&nbsp;given&nbsp;back.<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;"k1,k2,k3"&nbsp;array&nbsp;and&nbsp;want&nbsp;to&nbsp;get&nbsp;value&nbsp;at&nbsp;index&nbsp;1:<br/><div class='html-code'>var&nbsp;value1&nbsp;=&nbsp;ARRAY_1.getValueByIndex(1);<br></div>Now&nbsp;"value1"&nbsp;is&nbsp;set&nbsp;to&nbsp;"k2".<br/></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -422,8 +412,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_fillIntoSelectionComponent">
-<td valign="top" width="220px" class="function-return-name">void<br/>fillIntoSelectionComponent</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_fillIntoSelectionComponent">void<br/>fillIntoSelectionComponent</td>
 <td valign="top" width="*" class="function-help">Fills&nbsp;the&nbsp;content&nbsp;of&nbsp;this&nbsp;array&nbsp;into&nbsp;given&nbsp;selection&nbsp;component<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;fill&nbsp;the&nbsp;dropdown&nbsp;with&nbsp;the&nbsp;content<br/><div class='html-code'>ARRAY.fillIntoSelectionComponent(DROPDOWN,&nbsp;30);<br/></div>Now&nbsp;the&nbsp;dropdown&nbsp;is&nbsp;filled&nbsp;in&nbsp;with&nbsp;given&nbsp;values<br/></div><br/>
 
 <TABLE width="100%" class="table1">

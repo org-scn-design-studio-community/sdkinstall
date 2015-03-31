@@ -228,8 +228,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57391">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_initialize">
-<td valign="top" width="220px" class="function-return-name">void<br/>initialize</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_initialize">void<br/>initialize</td>
 <td valign="top" width="*" class="function-help">Initialization&nbsp;method&nbsp;with&nbsp;year,&nbsp;month&nbsp;and&nbsp;day<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -265,8 +264,7 @@ this.initializeWithDate(year,&nbsp;month,&nbsp;day);
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_initializeWithDate">
-<td valign="top" width="220px" class="function-return-name">void<br/>initializeWithDate</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_initializeWithDate">void<br/>initializeWithDate</td>
 <td valign="top" width="*" class="function-help">Initialization&nbsp;method&nbsp;with&nbsp;year,&nbsp;month&nbsp;and&nbsp;day<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -302,8 +300,7 @@ var&nbsp;monthString&nbsp;=&nbsp;&quot;&quot;&nbsp;+&nbsp;month;<br/>&nbsp;&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_initializeWithInternalDate">
-<td valign="top" width="220px" class="function-return-name">void<br/>initializeWithInternalDate</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_initializeWithInternalDate">void<br/>initializeWithInternalDate</td>
 <td valign="top" width="*" class="function-help">Initialization&nbsp;method&nbsp;with&nbsp;internal&nbsp;date&nbsp;format&nbsp;(YYYYMMDD)<br/>You&nbsp;can&nbsp;use&nbsp;the&nbsp;APPLICATION.getInfo().dateNowInternalFormat&nbsp;to&nbsp;get&nbsp;the&nbsp;current&nbsp;date<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -329,8 +326,7 @@ this.internal_setup();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;day
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_rollDays">
-<td valign="top" width="220px" class="function-return-name">void<br/>rollDays</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_rollDays">void<br/>rollDays</td>
 <td valign="top" width="*" class="function-help">Roll&nbsp;days&nbsp;up&nbsp;and&nbsp;down,&nbsp;negative&nbsp;numbers&nbsp;are&nbsp;rolling&nbsp;down<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -356,8 +352,7 @@ var&nbsp;index&nbsp;=&nbsp;this.internal_getIndex();<br/>&nbsp;&nbsp;<br/>&nbsp;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_rollWeeks">
-<td valign="top" width="220px" class="function-return-name">void<br/>rollWeeks</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_rollWeeks">void<br/>rollWeeks</td>
 <td valign="top" width="*" class="function-help">Roll&nbsp;days&nbsp;up&nbsp;and&nbsp;down,&nbsp;negative&nbsp;numbers&nbsp;are&nbsp;rolling&nbsp;down.<br/>Same&nbsp;effect&nbsp;as&nbsp;rollDays(weeks&nbsp;7);<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -383,8 +378,7 @@ var&nbsp;index&nbsp;=&nbsp;this.internal_getIndex();<br/>&nbsp;&nbsp;<br/>&nbsp;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_rollMonths">
-<td valign="top" width="220px" class="function-return-name">void<br/>rollMonths</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_rollMonths">void<br/>rollMonths</td>
 <td valign="top" width="*" class="function-help">Roll&nbsp;months&nbsp;up&nbsp;and&nbsp;down,&nbsp;negative&nbsp;numbers&nbsp;are&nbsp;rolling&nbsp;down.<br/>This&nbsp;roll&nbsp;is&nbsp;keeping&nbsp;the&nbsp;day,&nbsp;as&nbsp;far&nbsp;it&nbsp;is&nbsp;possible.&nbsp;If&nbsp;the&nbsp;target&nbsp;month&nbsp;does&nbsp;not&nbsp;have&nbsp;this&nbsp;day,&nbsp;it&nbsp;will&nbsp;take&nbsp;the&nbsp;last&nbsp;day.&nbsp;Eg.&nbsp;31.&nbsp;March&nbsp;2014&nbsp;->&nbsp;rollMonth(-1)&nbsp;will&nbsp;lead&nbsp;to&nbsp;28.&nbsp;February&nbsp;2014.<br/>Same&nbsp;effect&nbsp;as&nbsp;rollDays(weeks&nbsp;7);<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -410,8 +404,7 @@ this.internal_setup();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;internal_rollMonths(mont
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_rollYears">
-<td valign="top" width="220px" class="function-return-name">void<br/>rollYears</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_rollYears">void<br/>rollYears</td>
 <td valign="top" width="*" class="function-help">Roll&nbsp;years&nbsp;up&nbsp;and&nbsp;down,&nbsp;negative&nbsp;numbers&nbsp;are&nbsp;rolling&nbsp;down.<br/>This&nbsp;roll&nbsp;is&nbsp;keeping&nbsp;the&nbsp;day,&nbsp;as&nbsp;far&nbsp;it&nbsp;is&nbsp;possible.&nbsp;If&nbsp;the&nbsp;target&nbsp;month&nbsp;does&nbsp;not&nbsp;have&nbsp;this&nbsp;day,&nbsp;it&nbsp;will&nbsp;take&nbsp;the&nbsp;last&nbsp;day.&nbsp;Eg.&nbsp;29.&nbsp;March&nbsp;2012&nbsp;->&nbsp;rollYear(-1)&nbsp;will&nbsp;lead&nbsp;to&nbsp;28.&nbsp;February&nbsp;2011.<br/>Same&nbsp;effect&nbsp;as&nbsp;rollMonths(years&nbsp;12);<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -437,8 +430,7 @@ this.internal_setup();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;internal_rollMonths(year
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getYear">
-<td valign="top" width="220px" class="function-return-name">int<br/>getYear</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getYear">int<br/>getYear</td>
 <td valign="top" width="*" class="function-help">Simple&nbsp;getter&nbsp;for&nbsp;Year&nbsp;of&nbsp;current&nbsp;date<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -459,8 +451,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getQuarter">
-<td valign="top" width="220px" class="function-return-name">int<br/>getQuarter</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getQuarter">int<br/>getQuarter</td>
 <td valign="top" width="*" class="function-help">Simple&nbsp;getter&nbsp;for&nbsp;Quarter&nbsp;of&nbsp;current&nbsp;date<br/>Months&nbsp;1-3&nbsp;are&nbsp;Quarter&nbsp;1,&nbsp;Months&nbsp;4-6&nbsp;are&nbsp;Quarter&nbsp;2,&nbsp;Months&nbsp;7-9&nbsp;are&nbsp;Quarter&nbsp;3,&nbsp;Months&nbsp;10-12&nbsp;are&nbsp;Quarter&nbsp;4<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -481,8 +472,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;<br/>&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getMonth">
-<td valign="top" width="220px" class="function-return-name">int<br/>getMonth</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMonth">int<br/>getMonth</td>
 <td valign="top" width="*" class="function-help">Simple&nbsp;getter&nbsp;for&nbsp;Month&nbsp;of&nbsp;current&nbsp;date<br/>1&nbsp;is&nbsp;January,&nbsp;12&nbsp;is&nbsp;December<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -503,8 +493,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getDay">
-<td valign="top" width="220px" class="function-return-name">int<br/>getDay</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDay">int<br/>getDay</td>
 <td valign="top" width="*" class="function-help">Simple&nbsp;getter&nbsp;for&nbsp;Day&nbsp;of&nbsp;Month&nbsp;of&nbsp;current&nbsp;date<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -525,8 +514,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getCalendarWeek">
-<td valign="top" width="220px" class="function-return-name">int<br/>getCalendarWeek</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCalendarWeek">int<br/>getCalendarWeek</td>
 <td valign="top" width="*" class="function-help">Simple&nbsp;getter&nbsp;for&nbsp;Calendar&nbsp;Week&nbsp;of&nbsp;current&nbsp;date<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -547,8 +535,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getDayOfWeek">
-<td valign="top" width="220px" class="function-return-name">int<br/>getDayOfWeek</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDayOfWeek">int<br/>getDayOfWeek</td>
 <td valign="top" width="*" class="function-help">Simple&nbsp;getter&nbsp;for&nbsp;Day&nbsp;of&nbsp;Week&nbsp;of&nbsp;current&nbsp;date<br/>0-Sunday,&nbsp;1-Monday,&nbsp;2-Tuesday,&nbsp;3-Wednesday,&nbsp;4-Thursday,&nbsp;5-Friday,&nbsp;6-Saturday,&nbsp;7-Sunday<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -569,8 +556,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getDayOfYear">
-<td valign="top" width="220px" class="function-return-name">int<br/>getDayOfYear</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDayOfYear">int<br/>getDayOfYear</td>
 <td valign="top" width="*" class="function-help">Simple&nbsp;getter&nbsp;for&nbsp;Day&nbsp;Year&nbsp;of&nbsp;current&nbsp;date<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -591,8 +577,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_format">
-<td valign="top" width="220px" class="function-return-name">String<br/>format</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_format">String<br/>format</td>
 <td valign="top" width="*" class="function-help">Method&nbsp;for&nbsp;custom&nbsp;format&nbsp;by&nbsp;string&nbsp;pattern,&nbsp;supports:<br/>YYYY:&nbsp;year<br/>YY:&nbsp;2-digit&nbsp;year<br/>MM:&nbsp;2-digit<br/>M:&nbsp;month<br/>DD:&nbsp;2-digit&nbsp;day<br/>D:&nbsp;day<br/>WW:&nbsp;2-digit&nbsp;calendar&nbsp;week<br/>W:&nbsp;calendar&nbsp;week<br/>Q:&nbsp;quarter<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -618,8 +603,7 @@ var&nbsp;resultString&nbsp;=&nbsp;formatPattern;<br/>&nbsp;&nbsp;&nbsp;&nbsp;res
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_toLocaleString">
-<td valign="top" width="220px" class="function-return-name">String<br/>toLocaleString</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_toLocaleString">String<br/>toLocaleString</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;currently&nbsp;only&nbsp;internal&nbsp;format&nbsp;as&nbsp;locale&nbsp;handling&nbsp;is&nbsp;not&nbsp;available&nbsp;yet<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -640,8 +624,7 @@ return&nbsp;format(&quot;YYYYMMDD&quot;);
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_setup">
-<td valign="top" width="220px" class="function-return-name">void<br/>internal_setup</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_internal_setup">void<br/>internal_setup</td>
 <td valign="top" width="*" class="function-help">Internal&nbsp;Method,&nbsp;do&nbsp;not&nbsp;use&nbsp;in&nbsp;Scripts<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -662,8 +645,7 @@ if(this.days&nbsp;==&nbsp;undefined&nbsp;||&nbsp;this.days&nbsp;==&nbsp;&quot;&q
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_getDays">
-<td valign="top" width="220px" class="function-return-name">String<br/>internal_getDays</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_internal_getDays">String<br/>internal_getDays</td>
 <td valign="top" width="*" class="function-help">Internal&nbsp;Method,&nbsp;do&nbsp;not&nbsp;use&nbsp;in&nbsp;Scripts<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -684,8 +666,7 @@ return&nbsp;this.days;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_getOneDay">
-<td valign="top" width="220px" class="function-return-name">String<br/>internal_getOneDay</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_internal_getOneDay">String<br/>internal_getOneDay</td>
 <td valign="top" width="*" class="function-help">Internal&nbsp;Method,&nbsp;do&nbsp;not&nbsp;use&nbsp;in&nbsp;Scripts<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -706,8 +687,7 @@ return&nbsp;this.oneDay;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_getIndex">
-<td valign="top" width="220px" class="function-return-name">int<br/>internal_getIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_internal_getIndex">int<br/>internal_getIndex</td>
 <td valign="top" width="*" class="function-help">Internal&nbsp;Method,&nbsp;do&nbsp;not&nbsp;use&nbsp;in&nbsp;Scripts<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -728,8 +708,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_setDateByIndex">
-<td valign="top" width="220px" class="function-return-name">void<br/>internal_setDateByIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_internal_setDateByIndex">void<br/>internal_setDateByIndex</td>
 <td valign="top" width="*" class="function-help">Internal&nbsp;Method,&nbsp;do&nbsp;not&nbsp;use&nbsp;in&nbsp;Scripts<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -755,8 +734,7 @@ this.internal_setup();<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;daysJson&nbsp;=&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_rollMonths">
-<td valign="top" width="220px" class="function-return-name">void<br/>internal_rollMonths</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_internal_rollMonths">void<br/>internal_rollMonths</td>
 <td valign="top" width="*" class="function-help">Internal&nbsp;Method,&nbsp;do&nbsp;not&nbsp;use&nbsp;in&nbsp;Scripts<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -782,8 +760,7 @@ var&nbsp;index&nbsp;=&nbsp;this.internal_getIndex();<br/>&nbsp;&nbsp;<br/>&nbsp;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_internal_toString">
-<td valign="top" width="220px" class="function-return-name">String<br/>internal_toString</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_internal_toString">String<br/>internal_toString</td>
 <td valign="top" width="*" class="function-help">Internal&nbsp;Method,&nbsp;do&nbsp;not&nbsp;use&nbsp;in&nbsp;Scripts<br/><br/>
 
 <TABLE width="100%" class="table1">
