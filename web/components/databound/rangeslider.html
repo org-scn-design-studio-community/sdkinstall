@@ -269,8 +269,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedKey">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSelectedKey</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;get&nbsp;first&nbsp;and&nbsp;second&nbsp;selected&nbsp;key&nbsp;in&nbsp;the&nbsp;range<br/><div class='html-code'>var&nbsp;selection1&nbsp;=&nbsp;DATARANGESLIDER_1.getSelectedKey();<br/>var&nbsp;selection2&nbsp;=&nbsp;DATARANGESLIDER_1.getSelectedKey2();<br/>APPLICATION.createInfoMessage("Selected&nbsp;Range:&nbsp;"&nbsp;+&nbsp;selection1&nbsp;+&nbsp;"&nbsp;-&nbsp;"&nbsp;+&nbsp;selection2);<br/>APPLICATION.createInfoMessage("Selected&nbsp;Range&nbsp;Keys:&nbsp;"&nbsp;+&nbsp;DATARANGESLIDER_1.getSelectedKeys());<br/>if(selection1.indexOf("-N/A-")&nbsp;>&nbsp;-1&nbsp;||&nbsp;selection2.indexOf("-N/A-")&nbsp;>&nbsp;-1)&nbsp;{<br/>//&nbsp;do&nbsp;nothing<br/>}&nbsp;else&nbsp;{<br/>DS_1.setFilterExt("0BC_PERS1",&nbsp;""&nbsp;+&nbsp;DATARANGESLIDER_1.getSelectedKey()&nbsp;&nbsp;+&nbsp;"&nbsp;-&nbsp;"&nbsp;+&nbsp;DATARANGESLIDER_1.getSelectedKey2());<br/>}<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -291,8 +290,7 @@ return&nbsp;this.selectedKey;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setSelectedKey">
-<td valign="top" width="220px" class="function-return-name">void<br/>setSelectedKey</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedKey">void<br/>setSelectedKey</td>
 <td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;key<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -318,8 +316,7 @@ this.selectedKey&nbsp;=&nbsp;key;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedKey2">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSelectedKey2</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey2">String<br/>getSelectedKey2</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key&nbsp;2<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -340,8 +337,7 @@ return&nbsp;this.selectedKey2;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setSelectedKey2">
-<td valign="top" width="220px" class="function-return-name">void<br/>setSelectedKey2</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedKey2">void<br/>setSelectedKey2</td>
 <td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;key&nbsp;2<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -367,8 +363,7 @@ this.selectedKey2&nbsp;=&nbsp;key2;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedKeys">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSelectedKeys</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKeys">String<br/>getSelectedKeys</td>
 <td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;keys&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;;<br/>This&nbsp;is&nbsp;compatible&nbsp;with&nbsp;setFilterExt&nbsp;function<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;get&nbsp;all&nbsp;selected&nbsp;keys&nbsp;in&nbsp;the&nbsp;range<br/><div class='html-code'>var&nbsp;selectedKeys&nbsp;=&nbsp;DATARANGESLIDER_2.getSelectedKeys();<br>//&nbsp;remove&nbsp;the&nbsp;NAs,&nbsp;in&nbsp;this&nbsp;scenarios&nbsp;I&nbsp;do&nbsp;not&nbsp;care<br/>selectedKeys&nbsp;=&nbsp;Convert.replaceAll(selectedKeys,&nbsp;"-N/A-1;",&nbsp;"");<br>selectedKeys&nbsp;=&nbsp;Convert.replaceAll(selectedKeys,&nbsp;";-N/A-2",&nbsp;"");<br>APPLICATION.createInfoMessage("Selected&nbsp;Range&nbsp;Keys:&nbsp;"&nbsp;+&nbsp;selectedKeys);<br>DS_1.setFilterExt("0BC_PERS1",&nbsp;selectedKeys);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -389,8 +384,7 @@ return&nbsp;this.selectedKeys;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedText">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSelectedText</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedText">String<br/>getSelectedText</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;text<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -411,8 +405,7 @@ return&nbsp;this.selectedText;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSelectedText2">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSelectedText2</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedText2">String<br/>getSelectedText2</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;text&nbsp;2<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -433,8 +426,7 @@ return&nbsp;this.selectedText2;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_pauseRefresh">
-<td valign="top" width="220px" class="function-return-name">void<br/>pauseRefresh</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_pauseRefresh">void<br/>pauseRefresh</td>
 <td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -455,8 +447,7 @@ this.doRefresh&nbsp;=&nbsp;false;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_allowRefresh">
-<td valign="top" width="220px" class="function-return-name">void<br/>allowRefresh</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_allowRefresh">void<br/>allowRefresh</td>
 <td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
 
 <TABLE width="100%" class="table1">

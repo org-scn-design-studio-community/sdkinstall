@@ -101,7 +101,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveContentCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Condition to Read Slave Result Set based on Content</B><br/>Under which condition should be the slave result set read (based on content)
+<td width="*" class="property-title-tooltip"><B>Content Condition to Read Slave Result Set</B><br/>Under which condition should be the slave result set read (based on content or value)
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -110,7 +110,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveRowCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Condition to Read Slave Result Set based on header Row Content</B><br/>Under which condition should be the slave result set read (based on contnet of header row)
+<td width="*" class="property-title-tooltip"><B>Row Condition to Read Slave Result Set</B><br/>Under which condition should be the slave result set read (based on contnet of header row key)
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -119,7 +119,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveColumnCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Condition to Read Slave Result Set based on header Column Content</B><br/>Under which condition should be the slave result set read (based on contnet of header column)
+<td width="*" class="property-title-tooltip"><B>Column Condition to Read Slave Result Set</B><br/>Under which condition should be the slave result set read (based on contnet of header column key)
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -147,6 +147,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">reload [<a href="#FUNCTION_reload">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMasterProvisioner [<a href="#FUNCTION_setMasterProvisioner">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">masterProvisioner</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -252,7 +258,16 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>DReloadTrigger<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Internal Property to Trigger the reload</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">0.0</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -262,8 +277,28 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_setMasterProvisioner">
-<td valign="top" width="220px" class="function-return-name">void<br/>setMasterProvisioner</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_reload">void<br/>reload</td>
+<td valign="top" width="*" class="function-help">Reloads&nbsp;the&nbsp;Component&nbsp;(with&nbsp;re-rendering)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DReloadTrigger&nbsp;=&nbsp;this.DReloadTrigger&nbsp;+&nbsp;0.0001;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMasterProvisioner">void<br/>setMasterProvisioner</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Master&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -289,8 +324,7 @@ this.DMasterProvisioner&nbsp;=&nbsp;masterProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getMasterProvisioner">
-<td valign="top" width="220px" class="function-return-name">String<br/>getMasterProvisioner</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMasterProvisioner">String<br/>getMasterProvisioner</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Master&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -311,8 +345,7 @@ return&nbsp;this.DMasterProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setMasterGeometry">
-<td valign="top" width="220px" class="function-return-name">void<br/>setMasterGeometry</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMasterGeometry">void<br/>setMasterGeometry</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Geometry&nbsp;of&nbsp;the&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -338,8 +371,7 @@ this.DMasterGeometry&nbsp;=&nbsp;masterGeometry;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getMasterGeometry">
-<td valign="top" width="220px" class="function-return-name">choice<br/>getMasterGeometry</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMasterGeometry">choice<br/>getMasterGeometry</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Geometry&nbsp;of&nbsp;the&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -360,8 +392,7 @@ return&nbsp;this.DMasterGeometry;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setSlaveProvisioner">
-<td valign="top" width="220px" class="function-return-name">void<br/>setSlaveProvisioner</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveProvisioner">void<br/>setSlaveProvisioner</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Slave&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -387,8 +418,7 @@ this.DSlaveProvisioner&nbsp;=&nbsp;slaveProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSlaveProvisioner">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSlaveProvisioner</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveProvisioner">String<br/>getSlaveProvisioner</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Slave&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -409,8 +439,7 @@ return&nbsp;this.DSlaveProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setSlaveColumnIndex">
-<td valign="top" width="220px" class="function-return-name">void<br/>setSlaveColumnIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveColumnIndex">void<br/>setSlaveColumnIndex</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Index&nbsp;for&nbsp;the&nbsp;Selection&nbsp;from&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -436,8 +465,7 @@ this.DSlaveColumnIndex&nbsp;=&nbsp;slaveColumnIndex;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSlaveColumnIndex">
-<td valign="top" width="220px" class="function-return-name">int<br/>getSlaveColumnIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveColumnIndex">int<br/>getSlaveColumnIndex</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Index&nbsp;for&nbsp;the&nbsp;Selection&nbsp;from&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -458,8 +486,7 @@ return&nbsp;this.DSlaveColumnIndex;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setCollectMultipleMatches">
-<td valign="top" width="220px" class="function-return-name">void<br/>setCollectMultipleMatches</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCollectMultipleMatches">void<br/>setCollectMultipleMatches</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -485,8 +512,7 @@ this.DCollectMultipleMatches&nbsp;=&nbsp;collectMultipleMatches;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getCollectMultipleMatches">
-<td valign="top" width="220px" class="function-return-name">choice<br/>getCollectMultipleMatches</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCollectMultipleMatches">choice<br/>getCollectMultipleMatches</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -507,16 +533,15 @@ return&nbsp;this.DCollectMultipleMatches;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setSlaveContentCondition">
-<td valign="top" width="220px" class="function-return-name">void<br/>setSlaveContentCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;based&nbsp;on&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveContentCondition">void<br/>setSlaveContentCondition</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Content&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveContentCondition</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on content) </td>
+<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on content or value) </td>
 </tr>
 
 </TABLE>
@@ -534,9 +559,8 @@ this.DSlaveContentCondition&nbsp;=&nbsp;slaveContentCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSlaveContentCondition">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSlaveContentCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;based&nbsp;on&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveContentCondition">String<br/>getSlaveContentCondition</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Content&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -556,16 +580,15 @@ return&nbsp;this.DSlaveContentCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setSlaveRowCondition">
-<td valign="top" width="220px" class="function-return-name">void<br/>setSlaveRowCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;based&nbsp;on&nbsp;header&nbsp;Row&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveRowCondition">void<br/>setSlaveRowCondition</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Row&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveRowCondition</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on contnet of header row) </td>
+<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on contnet of header row key) </td>
 </tr>
 
 </TABLE>
@@ -583,9 +606,8 @@ this.DSlaveRowCondition&nbsp;=&nbsp;slaveRowCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSlaveRowCondition">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSlaveRowCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;based&nbsp;on&nbsp;header&nbsp;Row&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveRowCondition">String<br/>getSlaveRowCondition</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Row&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -605,16 +627,15 @@ return&nbsp;this.DSlaveRowCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setSlaveColumnCondition">
-<td valign="top" width="220px" class="function-return-name">void<br/>setSlaveColumnCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;based&nbsp;on&nbsp;header&nbsp;Column&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveColumnCondition">void<br/>setSlaveColumnCondition</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveColumnCondition</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on contnet of header column) </td>
+<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on contnet of header column key) </td>
 </tr>
 
 </TABLE>
@@ -632,9 +653,8 @@ this.DSlaveColumnCondition&nbsp;=&nbsp;slaveColumnCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getSlaveColumnCondition">
-<td valign="top" width="220px" class="function-return-name">String<br/>getSlaveColumnCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;based&nbsp;on&nbsp;header&nbsp;Column&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveColumnCondition">String<br/>getSlaveColumnCondition</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 

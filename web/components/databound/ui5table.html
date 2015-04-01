@@ -69,6 +69,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DAllowFilter<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Allow Sort in Columns</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DAllowColumnReorder<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Allow Reorder of Columns</B><br/>&nbsp;
 
@@ -105,8 +114,59 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DFormatingCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Formating Condition</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DFormattingOperator<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>(non-stable) Formatting Operator</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">UseFirst</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">UseLast</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Collect</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">UseFirst</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DFormattingCondition<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>(non-stable) Formatting Condition</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DColumnFormattingCondition<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>(non-stable) Column Based Formatting Condition</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DEmptyHeaderValue<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Empty Value For Header Cell</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DEmptyDataValue<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Empty Value For Data Cell</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -220,6 +280,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAllowFilter [<a href="#FUNCTION_setAllowFilter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">allowFilter</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAllowFilter [<a href="#FUNCTION_getAllowFilter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setAllowColumnReorder [<a href="#FUNCTION_setAllowColumnReorder">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">allowColumnReorder</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -268,13 +340,73 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setFormatingCondition [<a href="#FUNCTION_setFormatingCondition">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">formatingCondition</td>
+<td valign="top" width="240px" class="function-short-name">addParameter [<a href="#FUNCTION_addParameter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, width</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getFormatingCondition [<a href="#FUNCTION_getFormatingCondition">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">removeParameter [<a href="#FUNCTION_removeParameter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFormattingOperator [<a href="#FUNCTION_setFormattingOperator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">formattingOperator</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getFormattingOperator [<a href="#FUNCTION_getFormattingOperator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">choice</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFormattingCondition [<a href="#FUNCTION_setFormattingCondition">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">formattingCondition</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getFormattingCondition [<a href="#FUNCTION_getFormattingCondition">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColumnFormattingCondition [<a href="#FUNCTION_setColumnFormattingCondition">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">columnFormattingCondition</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getColumnFormattingCondition [<a href="#FUNCTION_getColumnFormattingCondition">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEmptyHeaderValue [<a href="#FUNCTION_setEmptyHeaderValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">emptyHeaderValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getEmptyHeaderValue [<a href="#FUNCTION_getEmptyHeaderValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEmptyDataValue [<a href="#FUNCTION_setEmptyDataValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">emptyDataValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getEmptyDataValue [<a href="#FUNCTION_getEmptyDataValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -292,15 +424,57 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getCellSelectionAsJSON [<a href="#FUNCTION_getCellSelectionAsJSON">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getSelectionAsJSON [<a href="#FUNCTION_getSelectionAsJSON">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getRowSelectionAsJSON [<a href="#FUNCTION_getRowSelectionAsJSON">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getSelectedRow [<a href="#FUNCTION_getSelectedRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedColumn [<a href="#FUNCTION_getSelectedColumn">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedVisualRow [<a href="#FUNCTION_getSelectedVisualRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedVisualColumn [<a href="#FUNCTION_getSelectedVisualColumn">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedValue [<a href="#FUNCTION_getSelectedValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectionSpace [<a href="#FUNCTION_getSelectionSpace">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectionDimensionMembers [<a href="#FUNCTION_getSelectionDimensionMembers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.DimensionMemberArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectionRowValues [<a href="#FUNCTION_getSelectionRowValues">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">StringArray</td>
 </tr>
 
 
@@ -323,17 +497,17 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DCellSelection<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selection Content for Cell</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DDataColWidths<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Data Column Widths</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">[]</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DRowSelection<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selection Content for Row</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DSelection<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selection Content for Cell</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -350,8 +524,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_setDataProvisioner">
-<td valign="top" width="220px" class="function-return-name">void<br/>setDataProvisioner</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDataProvisioner">void<br/>setDataProvisioner</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;for&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -377,8 +550,7 @@ this.DDataProvisioner&nbsp;=&nbsp;dataProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getDataProvisioner">
-<td valign="top" width="220px" class="function-return-name">String<br/>getDataProvisioner</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDataProvisioner">String<br/>getDataProvisioner</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;for&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -399,8 +571,7 @@ return&nbsp;this.DDataProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setVisibleRowCount">
-<td valign="top" width="220px" class="function-return-name">void<br/>setVisibleRowCount</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVisibleRowCount">void<br/>setVisibleRowCount</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Visible&nbsp;Row&nbsp;Count&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -426,8 +597,7 @@ this.DVisibleRowCount&nbsp;=&nbsp;visibleRowCount;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getVisibleRowCount">
-<td valign="top" width="220px" class="function-return-name">int<br/>getVisibleRowCount</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getVisibleRowCount">int<br/>getVisibleRowCount</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Visible&nbsp;Row&nbsp;Count&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -448,8 +618,7 @@ return&nbsp;this.DVisibleRowCount;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setRowHeight">
-<td valign="top" width="220px" class="function-return-name">void<br/>setRowHeight</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRowHeight">void<br/>setRowHeight</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Row&nbsp;Height&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -475,8 +644,7 @@ this.DRowHeight&nbsp;=&nbsp;rowHeight;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getRowHeight">
-<td valign="top" width="220px" class="function-return-name">int<br/>getRowHeight</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRowHeight">int<br/>getRowHeight</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Row&nbsp;Height&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -497,8 +665,7 @@ return&nbsp;this.DRowHeight;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setAllowSort">
-<td valign="top" width="220px" class="function-return-name">void<br/>setAllowSort</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAllowSort">void<br/>setAllowSort</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -524,8 +691,7 @@ this.DAllowSort&nbsp;=&nbsp;allowSort;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getAllowSort">
-<td valign="top" width="220px" class="function-return-name">boolean<br/>getAllowSort</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAllowSort">boolean<br/>getAllowSort</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -546,8 +712,54 @@ return&nbsp;this.DAllowSort;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setAllowColumnReorder">
-<td valign="top" width="220px" class="function-return-name">void<br/>setAllowColumnReorder</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAllowFilter">void<br/>setAllowFilter</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>allowFilter</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DAllowFilter&nbsp;=&nbsp;allowFilter;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAllowFilter">boolean<br/>getAllowFilter</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DAllowFilter;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAllowColumnReorder">void<br/>setAllowColumnReorder</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Reorder&nbsp;of&nbsp;Columns&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -573,8 +785,7 @@ this.DAllowColumnReorder&nbsp;=&nbsp;allowColumnReorder;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getAllowColumnReorder">
-<td valign="top" width="220px" class="function-return-name">boolean<br/>getAllowColumnReorder</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAllowColumnReorder">boolean<br/>getAllowColumnReorder</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Reorder&nbsp;of&nbsp;Columns&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -595,8 +806,7 @@ return&nbsp;this.DAllowColumnReorder;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setAllowSelection">
-<td valign="top" width="220px" class="function-return-name">void<br/>setAllowSelection</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAllowSelection">void<br/>setAllowSelection</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Selection&nbsp;in&nbsp;the&nbsp;Table&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -622,8 +832,7 @@ this.DAllowSelection&nbsp;=&nbsp;allowSelection;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getAllowSelection">
-<td valign="top" width="220px" class="function-return-name">boolean<br/>getAllowSelection</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAllowSelection">boolean<br/>getAllowSelection</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Selection&nbsp;in&nbsp;the&nbsp;Table&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -644,8 +853,7 @@ return&nbsp;this.DAllowSelection;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setFixedHeader">
-<td valign="top" width="220px" class="function-return-name">void<br/>setFixedHeader</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFixedHeader">void<br/>setFixedHeader</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Fiexd&nbsp;Header&nbsp;Rows&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -671,8 +879,7 @@ this.DFixedHeader&nbsp;=&nbsp;fixedHeader;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getFixedHeader">
-<td valign="top" width="220px" class="function-return-name">boolean<br/>getFixedHeader</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFixedHeader">boolean<br/>getFixedHeader</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Fiexd&nbsp;Header&nbsp;Rows&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -693,8 +900,7 @@ return&nbsp;this.DFixedHeader;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setHeaderColWidth">
-<td valign="top" width="220px" class="function-return-name">void<br/>setHeaderColWidth</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setHeaderColWidth">void<br/>setHeaderColWidth</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Header&nbsp;Column&nbsp;Width&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -720,8 +926,7 @@ this.DHeaderColWidth&nbsp;=&nbsp;headerColWidth;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getHeaderColWidth">
-<td valign="top" width="220px" class="function-return-name">int<br/>getHeaderColWidth</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHeaderColWidth">int<br/>getHeaderColWidth</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Header&nbsp;Column&nbsp;Width&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -742,14 +947,117 @@ return&nbsp;this.DHeaderColWidth;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setFormatingCondition">
-<td valign="top" width="220px" class="function-return-name">void<br/>setFormatingCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Formating&nbsp;Condition&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addParameter">void<br/>addParameter</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;width&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>UI5TABLE.addParameter(key&nbsp;[String],&nbsp;width&nbsp;[String]);<br>UI5TABLE.addParameter(key&nbsp;[String],&nbsp;width&nbsp;[String]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>formatingCondition</B></td>
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Column index (0-based)</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>width</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Width with unit (e.g. 200px | 30%)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:width<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.DDataColWidths&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DDataColWidths);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeParameter">void<br/>removeParameter</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>UI5TABLE.removeParameter(String&nbsp;key);<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DDataColWidths&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DDataColWidths);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;remove&nbsp;all&nbsp;items&nbsp;with&nbsp;this&nbsp;parent<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;elementsJson.length&nbsp;-&nbsp;1;&nbsp;i&nbsp;&gt;=&nbsp;0;&nbsp;i--){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].parentKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFormattingOperator">void<br/>setFormattingOperator</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>formattingOperator</B></td>
+<td width="120px" class="parameter-type"><B>choice</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DFormattingOperator&nbsp;=&nbsp;formattingOperator;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFormattingOperator">choice<br/>getFormattingOperator</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DFormattingOperator;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFormattingCondition">void<br/>setFormattingCondition</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>formattingCondition</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help"> &nbsp; </td>
 </tr>
@@ -761,7 +1069,7 @@ return&nbsp;this.DHeaderColWidth;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DFormatingCondition&nbsp;=&nbsp;formatingCondition;
+this.DFormattingCondition&nbsp;=&nbsp;formattingCondition;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -769,9 +1077,8 @@ this.DFormatingCondition&nbsp;=&nbsp;formatingCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getFormatingCondition">
-<td valign="top" width="220px" class="function-return-name">String<br/>getFormatingCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Formating&nbsp;Condition&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFormattingCondition">String<br/>getFormattingCondition</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -783,7 +1090,7 @@ this.DFormatingCondition&nbsp;=&nbsp;formatingCondition;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DFormatingCondition;
+return&nbsp;this.DFormattingCondition;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -791,8 +1098,148 @@ return&nbsp;this.DFormatingCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_setNavigationMode">
-<td valign="top" width="220px" class="function-return-name">void<br/>setNavigationMode</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumnFormattingCondition">void<br/>setColumnFormattingCondition</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Column&nbsp;Based&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>columnFormattingCondition</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DColumnFormattingCondition&nbsp;=&nbsp;columnFormattingCondition;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColumnFormattingCondition">String<br/>getColumnFormattingCondition</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Column&nbsp;Based&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DColumnFormattingCondition;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEmptyHeaderValue">void<br/>setEmptyHeaderValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Empty&nbsp;Value&nbsp;For&nbsp;Header&nbsp;Cell&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>emptyHeaderValue</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DEmptyHeaderValue&nbsp;=&nbsp;emptyHeaderValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEmptyHeaderValue">String<br/>getEmptyHeaderValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Empty&nbsp;Value&nbsp;For&nbsp;Header&nbsp;Cell&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DEmptyHeaderValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEmptyDataValue">void<br/>setEmptyDataValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Empty&nbsp;Value&nbsp;For&nbsp;Data&nbsp;Cell&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>emptyDataValue</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DEmptyDataValue&nbsp;=&nbsp;emptyDataValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEmptyDataValue">String<br/>getEmptyDataValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Empty&nbsp;Value&nbsp;For&nbsp;Data&nbsp;Cell&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DEmptyDataValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNavigationMode">void<br/>setNavigationMode</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Navigation&nbsp;Mode&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -818,8 +1265,7 @@ this.DNavigationMode&nbsp;=&nbsp;navigationMode;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getNavigationMode">
-<td valign="top" width="220px" class="function-return-name">choice<br/>getNavigationMode</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getNavigationMode">choice<br/>getNavigationMode</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Navigation&nbsp;Mode&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -840,9 +1286,8 @@ return&nbsp;this.DNavigationMode;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getCellSelectionAsJSON">
-<td valign="top" width="220px" class="function-return-name">String<br/>getCellSelectionAsJSON</td>
-<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Gets&nbsp;Cell&nbsp;Selection&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionAsJSON">String<br/>getSelectionAsJSON</td>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Gets&nbsp;Selection&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -854,7 +1299,7 @@ return&nbsp;this.DNavigationMode;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DCellSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -862,9 +1307,8 @@ var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DCellSelection);<br/>&nbsp;&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getRowSelectionAsJSON">
-<td valign="top" width="220px" class="function-return-name">String<br/>getRowSelectionAsJSON</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Row&nbsp;Selection&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedRow">int<br/>getSelectedRow</td>
+<td valign="top" width="*" class="function-help">Selected&nbsp;Row&nbsp;Index&nbsp;(0&nbsp;-&nbsp;based)<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -876,7 +1320,154 @@ var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DCellSelection);<br/>&nbsp;&nbsp
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DRowSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.row;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedColumn">int<br/>getSelectedColumn</td>
+<td valign="top" width="*" class="function-help">Selected&nbsp;Column&nbsp;Index&nbsp;(0&nbsp;-&nbsp;based)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.column;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedVisualRow">int<br/>getSelectedVisualRow</td>
+<td valign="top" width="*" class="function-help">Selected&nbsp;Visual&nbsp;Row&nbsp;Index&nbsp;(0&nbsp;-&nbsp;based)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.visualRow;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedVisualColumn">int<br/>getSelectedVisualColumn</td>
+<td valign="top" width="*" class="function-help">Selected&nbsp;Visual&nbsp;Column&nbsp;Index&nbsp;(0&nbsp;-&nbsp;based)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.visualColumn;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedValue">int<br/>getSelectedValue</td>
+<td valign="top" width="*" class="function-help">Selected&nbsp;Value&nbsp;Content<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionSpace">String<br/>getSelectionSpace</td>
+<td valign="top" width="*" class="function-help">Selection&nbsp;Space&nbsp;(Header,&nbsp;Data)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionDimensionMembers">org.scn.community.shared.DimensionMemberArray<br/>getSelectionDimensionMembers</td>
+<td valign="top" width="*" class="function-help">Return&nbsp;dimensions&nbsp;and&nbsp;corresponding&nbsp;members&nbsp;for&nbsp;the&nbsp;selection&nbsp;as&nbsp;array<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;tempA&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;jsonObject.rowDimensions.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dimension&quot;:&nbsp;jsonObject.rowDimensions[i].key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;member&quot;:&nbsp;jsonObject.rowKeys[i]<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempA.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(jsonObject.columnDimensions)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;jsonObject.columnDimensions.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dimension&quot;:&nbsp;jsonObject.columnDimensions[i].key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;member&quot;:&nbsp;jsonObject.columnKeys[i]<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempA.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;tempA;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionRowValues">StringArray<br/>getSelectionRowValues</td>
+<td valign="top" width="*" class="function-help">Values&nbsp;of&nbsp;the&nbsp;Row<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;tempA&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;jsonObject.rowValues.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;jsonObject.rowValues[i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempA.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;tempA;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
