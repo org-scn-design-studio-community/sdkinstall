@@ -66,10 +66,6 @@ sap.m.Button.extend("org.scn.community.basics.ModalBrowser", {
 	getClickTrigger : function(){
 		return Math.random();
 	},
-	setType : function(s){
-		if(s=="sdkui5") return; // Fix 1.3 SP0 bug '"sdkui5" is not a valid entry of the enumeration for property "type" of Element'
-		this.setType(sap.m.ButtonType[s]);
-	},
 	setBrowserWidth : function(s){
 		this._browserWidth = s; 
 	},

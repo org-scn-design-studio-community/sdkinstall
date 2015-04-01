@@ -69,6 +69,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DAllowFilter<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Allow Sort in Columns</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DAllowColumnReorder<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Allow Reorder of Columns</B><br/>&nbsp;
 
@@ -106,7 +115,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DFormattingOperator<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Formatting Operator</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>(non-stable) Formatting Operator</B><br/>&nbsp;
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
 <tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
 <tr class="list-tr">
@@ -130,7 +139,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DFormattingCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Formatting Condition</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>(non-stable) Formatting Condition</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -139,7 +148,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DColumnFormattingCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Column Based Formatting Condition</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>(non-stable) Column Based Formatting Condition</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -271,6 +280,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAllowFilter [<a href="#FUNCTION_setAllowFilter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">allowFilter</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAllowFilter [<a href="#FUNCTION_getAllowFilter">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setAllowColumnReorder [<a href="#FUNCTION_setAllowColumnReorder">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">allowColumnReorder</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -320,13 +341,13 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addParameter [<a href="#FUNCTION_addParameter">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">index, width</td>
+<td valign="top" width="*" class="function-short-name">key, width</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">removeParameter [<a href="#FUNCTION_removeParameter">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="*" class="function-short-name">key</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -421,6 +442,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedVisualRow [<a href="#FUNCTION_getSelectedVisualRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedVisualColumn [<a href="#FUNCTION_getSelectedVisualColumn">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getSelectedValue [<a href="#FUNCTION_getSelectedValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
@@ -465,11 +498,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DDataColWidths<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Data Column Widths (JSON: [{'index':'index-0-based | *','width':'width in px'}])</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Data Column Widths</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">[{"index":"*","width":""}]</td>
+<td width="100px" class="property-default">[]</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -679,6 +712,53 @@ return&nbsp;this.DAllowSort;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAllowFilter">void<br/>setAllowFilter</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>allowFilter</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DAllowFilter&nbsp;=&nbsp;allowFilter;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAllowFilter">boolean<br/>getAllowFilter</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Sort&nbsp;in&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DAllowFilter;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAllowColumnReorder">void<br/>setAllowColumnReorder</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Reorder&nbsp;of&nbsp;Columns&nbsp;Property<br/><br/>
 
@@ -868,19 +948,19 @@ return&nbsp;this.DHeaderColWidth;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addParameter">void<br/>addParameter</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;index&nbsp;[String],&nbsp;width&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>UI5TABLE.addParameter(index&nbsp;[String],&nbsp;width&nbsp;[String]);<br>UI5TABLE.addParameter(index&nbsp;[String],&nbsp;width&nbsp;[String]);<br></div></div><br/>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;width&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>UI5TABLE.addParameter(key&nbsp;[String],&nbsp;width&nbsp;[String]);<br>UI5TABLE.addParameter(key&nbsp;[String],&nbsp;width&nbsp;[String]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>index</B></td>
+<td width="120px" class="parameter-name"><B>key</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Data Column Index</td>
+<td width="*" class="parameter-help">Column index (0-based)</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>width</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Width</td>
+<td width="*" class="parameter-help">Width with unit (e.g. 200px | 30%)</td>
 </tr>
 
 </TABLE>
@@ -890,7 +970,7 @@ return&nbsp;this.DHeaderColWidth;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index:index,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:width<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.DDataColWidths&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DDataColWidths);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;JSON.stringify(elementsJson);
+var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:width<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.DDataColWidths&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DDataColWidths&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DDataColWidths);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DDataColWidths&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -899,10 +979,15 @@ var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeParameter">void<br/>removeParameter</td>
-<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>UI5TABLE.removeParameter();<br></div></div><br/>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>UI5TABLE.removeParameter(String&nbsp;key);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -920,7 +1005,7 @@ if&nbsp;(this.DDataColWidths&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DDataColW
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFormattingOperator">void<br/>setFormattingOperator</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Formatting&nbsp;Operator&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -946,7 +1031,7 @@ this.DFormattingOperator&nbsp;=&nbsp;formattingOperator;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFormattingOperator">choice<br/>getFormattingOperator</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Formatting&nbsp;Operator&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -967,7 +1052,7 @@ return&nbsp;this.DFormattingOperator;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFormattingCondition">void<br/>setFormattingCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -993,7 +1078,7 @@ this.DFormattingCondition&nbsp;=&nbsp;formattingCondition;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFormattingCondition">String<br/>getFormattingCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -1014,7 +1099,7 @@ return&nbsp;this.DFormattingCondition;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumnFormattingCondition">void<br/>setColumnFormattingCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Based&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Column&nbsp;Based&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -1040,7 +1125,7 @@ this.DColumnFormattingCondition&nbsp;=&nbsp;columnFormattingCondition;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColumnFormattingCondition">String<br/>getColumnFormattingCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Based&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Column&nbsp;Based&nbsp;Formatting&nbsp;Condition&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -1257,6 +1342,48 @@ var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nb
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.column;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedVisualRow">int<br/>getSelectedVisualRow</td>
+<td valign="top" width="*" class="function-help">Selected&nbsp;Visual&nbsp;Row&nbsp;Index&nbsp;(0&nbsp;-&nbsp;based)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.visualRow;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedVisualColumn">int<br/>getSelectedVisualColumn</td>
+<td valign="top" width="*" class="function-help">Selected&nbsp;Visual&nbsp;Column&nbsp;Index&nbsp;(0&nbsp;-&nbsp;based)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.visualColumn;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

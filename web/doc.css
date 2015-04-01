@@ -3,6 +3,31 @@ body {
 	font-family: arial, helvetica, sans-serif;
 }
 
+.border-bottom {
+	border-bottom: solid 2px #3C3535;
+	text-align:center;
+	vertical-align: middle;
+}
+
+.download-content {
+	padding-left: 15px;
+	font-size: 16px;
+}
+	
+.download-options {
+	height:160px;
+	width:160px;
+	background: #B6BDEF;
+	padding: 15px;
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.download-options:hover {
+	background: #475AE2;
+	color: #FFFFFF;
+}
 .main-body {
 	background: #E58739 !important;
 }

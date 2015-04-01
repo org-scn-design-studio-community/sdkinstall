@@ -147,6 +147,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">reload [<a href="#FUNCTION_reload">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMasterProvisioner [<a href="#FUNCTION_setMasterProvisioner">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">masterProvisioner</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -252,7 +258,16 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>DReloadTrigger<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Internal Property to Trigger the reload</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">0.0</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -262,6 +277,27 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_reload">void<br/>reload</td>
+<td valign="top" width="*" class="function-help">Reloads&nbsp;the&nbsp;Component&nbsp;(with&nbsp;re-rendering)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DReloadTrigger&nbsp;=&nbsp;this.DReloadTrigger&nbsp;+&nbsp;0.0001;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMasterProvisioner">void<br/>setMasterProvisioner</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Master&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;Property<br/><br/>
 
