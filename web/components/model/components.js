@@ -501,15 +501,6 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
-       id: "databound/nicechart",
-       title: "Nice Chart",
-       info: "NiceChart",
-       icon: "databound/nicechart.png",
-       activeIcon: "databound/nicechart.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
        id: "databound/projector",
        title: "Data Projector",
        info: "Projector",
@@ -555,6 +546,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/table2d",
+       title: "2D Crosstab",
+       info: "Table2D",
+       icon: "databound/table2d.png",
+       activeIcon: "databound/table2d.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/topflop",
        title: "Data Top Flop",
        info: "TopFlop",
@@ -580,6 +580,63 @@ sdkComponentModel["databound"] = [
        activeIcon: "databound/ui5table.png",
        number: " ",
        numberUnit: "databound"
+   },
+
+                  ];
+sdkComponentModel["chartmaps"] = [
+   {
+       id: "chartmaps/choropleth",
+       title: "Choropleth Map",
+       info: "Choropleth",
+       icon: "chartmaps/choropleth.png",
+       activeIcon: "chartmaps/choropleth.png",
+       number: " ",
+       numberUnit: "chartmaps"
+   },
+    {
+       id: "chartmaps/hexbin",
+       title: "Hexbin Chart",
+       info: "HexBin",
+       icon: "chartmaps/hexbin.png",
+       activeIcon: "chartmaps/hexbin.png",
+       number: " ",
+       numberUnit: "chartmaps"
+   },
+    {
+       id: "chartmaps/locationintel",
+       title: "Location Intelligence",
+       info: "LocationIntel",
+       icon: "chartmaps/locationintel.png",
+       activeIcon: "chartmaps/locationintel.png",
+       number: " ",
+       numberUnit: "chartmaps"
+   },
+    {
+       id: "chartmaps/marimekkochart",
+       title: "Marimekko Chart",
+       info: "MarimekkoChart",
+       icon: "chartmaps/marimekkochart.png",
+       activeIcon: "chartmaps/marimekkochart.png",
+       number: " ",
+       numberUnit: "chartmaps"
+   },
+    {
+       id: "chartmaps/nicechart",
+       title: "Nice Chart",
+       info: "NiceChart",
+       icon: "chartmaps/nicechart.png",
+       activeIcon: "chartmaps/nicechart.png",
+       number: " ",
+       numberUnit: "chartmaps"
+   },
+    {
+       id: "chartmaps/scatterplot",
+       title: "Scatter Plot Chart",
+       info: "ScatterPlot",
+       icon: "chartmaps/scatterplot.png",
+       activeIcon: "chartmaps/scatterplot.png",
+       number: " ",
+       numberUnit: "chartmaps"
    },
 
                   ];

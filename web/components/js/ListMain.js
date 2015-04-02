@@ -125,10 +125,13 @@
        title: "Component Groups",
        nodes: [{
            key: "basics",
-           title: "Basic Components"
+           title: "Basics"
        }, {
            key: "databound",
-           title: "Data Bound Components"
+           title: "Data Bound"
+       }, {
+           key: "chartmaps",
+           title: "Charts & Maps"
        }, {
            key: "datasource",
            title: "Data Sources"
