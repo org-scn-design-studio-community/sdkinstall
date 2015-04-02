@@ -3,6 +3,10 @@ body {
 	font-family: arial, helvetica, sans-serif;
 }
 
+.noscroll {
+	overflow: hidden;
+}
+
 .border-bottom {
 	border-bottom: solid 2px #3C3535;
 	text-align:center;
@@ -22,6 +26,10 @@ body {
 	color: #000000;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.groupLabel {
+	font-size: 18px!important;
 }
 
 .download-options:hover {
