@@ -3,7 +3,7 @@ var oButtonPreview = new sap.ui.commons.Button({
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Emph,
-	press : function() {tC('http://org-scn-design-studio-community.github.io/sdkpackage/releases/preview'); return false;}
+	press : function() {tC('http://org-scn-design-studio-community.github.io/sdkpackage/releases/preview', 'Preview Repo'); return false;}
 });
 
 var oButtonStable = new sap.ui.commons.Button({
@@ -11,7 +11,7 @@ var oButtonStable = new sap.ui.commons.Button({
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Accept,
-	press : function() {tC('http://org-scn-design-studio-community.github.io/sdkpackage/releases/stable'); return false;}
+	press : function() {tC('http://org-scn-design-studio-community.github.io/sdkpackage/releases/stable', 'Stable Repo'); return false;}
 });
 
 var oPanelOn = new sap.ui.commons.Panel({width: "25px", showCollapseIcon: false});
@@ -28,7 +28,7 @@ var oButtonPreviewOffline = new sap.ui.commons.Button({
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Emph,
-	press : function() {tOL('http://raw.githubusercontent.com/org-scn-design-studio-community/sdkinstall/master/releases/preview/org.scn.community.sdk.package_preview.zip'); return false;}
+	press : function() {tOL('http://raw.githubusercontent.com/org-scn-design-studio-community/sdkinstall/master/releases/preview/org.scn.community.sdk.package_preview.zip', 'Preview ZIP'); return false;}
 });
 
 var oButtonStableOffline = new sap.ui.commons.Button({
@@ -36,7 +36,7 @@ var oButtonStableOffline = new sap.ui.commons.Button({
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Accept,
-	press : function() {tOL('http://raw.githubusercontent.com/org-scn-design-studio-community/sdkinstall/master/releases/stable/org.scn.community.sdk.package_stable.zip'); return false;}
+	press : function() {tOL('http://raw.githubusercontent.com/org-scn-design-studio-community/sdkinstall/master/releases/stable/org.scn.community.sdk.package_stable.zip', 'Stable ZIP'); return false;}
 });
 
 var oPanelOff = new sap.ui.commons.Panel({width: "25px", showCollapseIcon: false});
