@@ -17,6 +17,9 @@ tree = {
         key: "examples",
         title: "Examples"
     }, {
+        key: "changelog",
+        title: "Change Log"
+    }, {
         key: "about",
         title: "About"
     }],
