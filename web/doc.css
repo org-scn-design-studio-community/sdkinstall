@@ -202,3 +202,19 @@ body {
 	background: #fff !important;
 	text-align:left !important;
 }
+
+.resizeTimelineItem {
+	height:160px!important;
+}
+
+div#changelog table>tbody>tr>td>div,
+div#changelog table>tbody>tr>td>div>div,
+div#changelog table>tbody>tr>td>div>div>div	{
+	vertical-align:top!important;
+	height:100%!important;
+}
+
+.sapSuiteUiCommonsTimelineContents{
+	vertical-align:top!important;
+	height:100%!important;
+}
