@@ -58,15 +58,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62281">Design
 <td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
-<tr>
-<td width="120px" class="property-name-type"><B>numberOfVisibleSteps<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Number of Visible Steps</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
 
 	</TABLE>
 
@@ -132,6 +123,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62281">Design
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedItemText [<a href="#FUNCTION_getSelectedItemText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
 
 	</TABLE>
 
@@ -143,6 +140,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62281">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>DSelectedText<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Text</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>numberOfVisibleSteps<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Number of Visible Steps</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DCleanAll<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Technical property for Clean All Nodes</B><br/>&nbsp;
 
@@ -334,6 +349,27 @@ return&nbsp;this.DSelectedKey;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DSelectedKey&nbsp;=&nbsp;key;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedItemText">String<br/>getSelectedItemText</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;item<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSelectedText;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
