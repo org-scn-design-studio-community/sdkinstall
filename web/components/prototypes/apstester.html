@@ -62,6 +62,15 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>singlearray<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Simple Array</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
 <td width="*" class="property-title-tooltip"><B>Data</B><br/>&nbsp;
 
@@ -89,6 +98,15 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>doublearray<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Complex Array</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>paletteExample<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Color Palette</B><br/>&nbsp;
 
@@ -109,6 +127,15 @@
 <tr>
 <td width="120px" class="property-name-type"><B>spinnerExample<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Some numbers</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>stringarray<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Simple String Array</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -160,6 +187,18 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSinglearray [<a href="#FUNCTION_setSinglearray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">singlearray</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSinglearray [<a href="#FUNCTION_getSinglearray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setCheckboxExample [<a href="#FUNCTION_setCheckboxExample">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">checkboxExample</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -175,6 +214,18 @@
 <td valign="top" width="240px" class="function-short-name">isCheckboxOnlyGetterExample [<a href="#FUNCTION_isCheckboxOnlyGetterExample">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDoublearray [<a href="#FUNCTION_setDoublearray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">doublearray</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDoublearray [<a href="#FUNCTION_getDoublearray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -211,6 +262,18 @@
 <td valign="top" width="240px" class="function-short-name">getSpinnerExample [<a href="#FUNCTION_getSpinnerExample">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStringarray [<a href="#FUNCTION_setStringarray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">stringarray</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getStringarray [<a href="#FUNCTION_getStringarray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 
@@ -327,6 +390,53 @@ return&nbsp;this.colorExample;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSinglearray">void<br/>setSinglearray</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;Array&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>singlearray</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Simple Array</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.singlearray&nbsp;=&nbsp;singlearray;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSinglearray">String<br/>getSinglearray</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;Array&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.singlearray;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCheckboxExample">void<br/>setCheckboxExample</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Ignore&nbsp;Totals&nbsp;Property<br/><br/>
 
@@ -388,6 +498,53 @@ return&nbsp;this.checkboxExample;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.checkboxOnlyGetterExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDoublearray">void<br/>setDoublearray</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Complex&nbsp;Array&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>doublearray</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Complex Array</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.doublearray&nbsp;=&nbsp;doublearray;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDoublearray">String<br/>getDoublearray</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Complex&nbsp;Array&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.doublearray;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -529,6 +686,53 @@ this.spinnerExample&nbsp;=&nbsp;spinnerExample;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.spinnerExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStringarray">void<br/>setStringarray</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;String&nbsp;Array&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>stringarray</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Simple String Array</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.stringarray&nbsp;=&nbsp;stringarray;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getStringarray">String<br/>getStringarray</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;String&nbsp;Array&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.stringarray;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
