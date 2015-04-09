@@ -206,15 +206,51 @@ body {
 .resizeTimelineItem {
 	height:160px!important;
 }
+.resizeTimelineItemSmall {
+	height:100px!important;
+}
 
+.greenTimelineItem .sapSuiteUiCommonsTimelineItemBox {
+	background-color: lightgreen;
+	border-color: green;
+}
+.yellowTimelineItem .sapSuiteUiCommonsTimelineItemBox {
+	background-color: lightyellow;
+	border-color: yellow;
+}
+.redTimelineItem .sapSuiteUiCommonsTimelineItemBox {
+	background-color: lightred;
+	border-color: red;
+}
+
+.blueTimelineItem .sapSuiteUiCommonsTimelineItemBox {
+	background-color: lightblue;
+	border-color: blue;
+}
+
+div#blogs table>tbody>tr>td>div,
+div#blogs table>tbody>tr>td>div>div,
+div#blogs table>tbody>tr>td>div>div>div,
+div#examples table>tbody>tr>td>div,
+div#examples table>tbody>tr>td>div>div,
+div#examples table>tbody>tr>td>div>div>div,
 div#changelog table>tbody>tr>td>div,
 div#changelog table>tbody>tr>td>div>div,
-div#changelog table>tbody>tr>td>div>div>div	{
+div#changelog table>tbody>tr>td>div>div>div
+{
 	vertical-align:top!important;
 	height:100%!important;
 }
 
-.sapSuiteUiCommonsTimelineContents{
+div#blogs .sapSuiteUiCommonsTimelineContents,
+div#examples .sapSuiteUiCommonsTimelineContents,
+div#changelog .sapSuiteUiCommonsTimelineContents
+{
 	vertical-align:top!important;
 	height:100%!important;
+}
+
+div#introStatus {
+	vertical-align:top!important;
+	height:200px!important;
 }
