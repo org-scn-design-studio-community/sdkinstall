@@ -564,15 +564,6 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
-       id: "databound/topflopchart",
-       title: "Data Top FLop Chart",
-       info: "TopFlopChart",
-       icon: "databound/topflopchart.png",
-       activeIcon: "databound/topflopchart.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
        id: "databound/ui5table",
        title: "UI5 Table",
        info: "UI5Table",
@@ -635,6 +626,15 @@ sdkComponentModel["chartmaps"] = [
        info: "ScatterPlot",
        icon: "chartmaps/scatterplot.png",
        activeIcon: "chartmaps/scatterplot.png",
+       number: " ",
+       numberUnit: "chartmaps"
+   },
+    {
+       id: "chartmaps/topflopchart",
+       title: "Data Top FLop Chart",
+       info: "TopFlopChart",
+       icon: "chartmaps/topflopchart.png",
+       activeIcon: "chartmaps/topflopchart.png",
        number: " ",
        numberUnit: "chartmaps"
    },
