@@ -21,6 +21,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/activityviewer",
+       title: "ActivityViewer",
+       info: "ActivityViewer",
+       icon: "basics/activityviewer.png",
+       activeIcon: "basics/activityviewer.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/applicationheader",
        title: "Application Header",
        info: "ApplicationHeader",
@@ -440,6 +449,15 @@ sdkComponentModel["basics"] = [
        info: "WorldTime",
        icon: "basics/worldtime.png",
        activeIcon: "basics/worldtime.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/activityviewer",
+       title: "ActivityViewer",
+       info: "ActivityViewer",
+       icon: "basics/activityviewer.png",
+       activeIcon: "basics/activityviewer.png",
        number: " ",
        numberUnit: "basics"
    },

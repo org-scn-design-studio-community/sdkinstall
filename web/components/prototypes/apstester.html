@@ -62,13 +62,13 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>singlearray<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Simple Array</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>%PROPERTY_NAME%<br/>[%PROPERTY_TYPE%]</B></td>
+<td width="*" class="property-title-tooltip"><B>%PROPERTY_TITLE%</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
+<td width="60px" class="property-visible">%PROPERTY_VISIBLE%</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
@@ -98,13 +98,13 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>doublearray<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Complex Array</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>%PROPERTY_NAME%<br/>[%PROPERTY_TYPE%]</B></td>
+<td width="*" class="property-title-tooltip"><B>%PROPERTY_TITLE%</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
+<td width="60px" class="property-visible">%PROPERTY_VISIBLE%</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>paletteExample<br/>[String]</B></td>
@@ -134,7 +134,7 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>stringarray<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>stringarray<br/>[StringArray]</B></td>
 <td width="*" class="property-title-tooltip"><B>Simple String Array</B><br/>&nbsp;
 
 </td>
@@ -187,15 +187,15 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSinglearray [<a href="#FUNCTION_setSinglearray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">singlearray</td>
+<td valign="top" width="240px" class="function-short-name">addButton [<a href="#FUNCTION_addButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, text, (image), (selected)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSinglearray [<a href="#FUNCTION_getSinglearray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="240px" class="function-short-name">removeButton [<a href="#FUNCTION_removeButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -217,15 +217,27 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setDoublearray [<a href="#FUNCTION_setDoublearray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">doublearray</td>
+<td valign="top" width="240px" class="function-short-name">addItem [<a href="#FUNCTION_addItem">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">parentKey, key, text, (image), (selected)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getDoublearray [<a href="#FUNCTION_getDoublearray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="240px" class="function-short-name">addButton [<a href="#FUNCTION_addButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, text, (image), (selected)</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeItem [<a href="#FUNCTION_removeItem">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeButton [<a href="#FUNCTION_removeButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -273,7 +285,7 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getStringarray [<a href="#FUNCTION_getStringarray">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="160px" class="function-short-return">StringArray</td>
 </tr>
 
 
@@ -390,15 +402,30 @@ return&nbsp;this.colorExample;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSinglearray">void<br/>setSinglearray</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;Array&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addButton">void<br/>addButton</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>APSTESTER.addButton(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean]);<br>APSTESTER.addButton(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>singlearray</B></td>
+<td width="120px" class="parameter-name"><B>key</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Simple Array</td>
+<td width="*" class="parameter-help">Unique key of this button</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Text for the button</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>image</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Given image for the button</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selected</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help">Selection state of the button</td>
 </tr>
 
 </TABLE>
@@ -408,7 +435,7 @@ return&nbsp;this.colorExample;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.singlearray&nbsp;=&nbsp;singlearray;
+if(image&nbsp;==&nbsp;undefined)&nbsp;{&nbsp;image&nbsp;=&nbsp;&quot;&quot;;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(selected&nbsp;==&nbsp;undefined)&nbsp;{&nbsp;selected&nbsp;=&nbsp;false;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:text,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:image,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selected:selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.singlearray&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.singlearray&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.singlearray&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.singlearray&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.singlearray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.singlearray&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -416,11 +443,16 @@ this.singlearray&nbsp;=&nbsp;singlearray;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSinglearray">String<br/>getSinglearray</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;Array&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeButton">void<br/>removeButton</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>APSTESTER.removeButton(String&nbsp;key);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -429,7 +461,7 @@ this.singlearray&nbsp;=&nbsp;singlearray;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.singlearray;
+if&nbsp;(this.singlearray&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.singlearray&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.singlearray&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.singlearray&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.singlearray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;remove&nbsp;all&nbsp;items&nbsp;with&nbsp;this&nbsp;parent<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;elementsJson.length&nbsp;-&nbsp;1;&nbsp;i&nbsp;&gt;=&nbsp;0;&nbsp;i--){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].parentKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.singlearray&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -505,15 +537,35 @@ return&nbsp;this.checkboxOnlyGetterExample;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDoublearray">void<br/>setDoublearray</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Complex&nbsp;Array&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addItem">void<br/>addItem</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;an&nbsp;element&nbsp;containing&nbsp;parentKey&nbsp;[String],&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean]&nbsp;properties.<br/>You&nbsp;need&nbsp;to&nbsp;specify&nbsp;a&nbsp;unique&nbsp;and&nbsp;existing&nbsp;parent&nbsp;element.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;elements<br/><div class='html-code'>APSTESTER.addItem(parentKey&nbsp;[String],&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean]);<br>APSTESTER.addItem(parentKey&nbsp;[String],&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean]);<br/></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>doublearray</B></td>
+<td width="120px" class="parameter-name"><B>parentKey</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Complex Array</td>
+<td width="*" class="parameter-help">The key of the parent button</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Unique key of this item</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Text for the item</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>image</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Given image for the item</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selected</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help">Selection state of the item</td>
 </tr>
 
 </TABLE>
@@ -523,7 +575,7 @@ return&nbsp;this.checkboxOnlyGetterExample;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.doublearray&nbsp;=&nbsp;doublearray;
+var&nbsp;leaf&nbsp;=&nbsp;(parentKey&nbsp;!=&nbsp;&quot;ROOT&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(image&nbsp;==&nbsp;undefined)&nbsp;{&nbsp;image&nbsp;=&nbsp;&quot;&quot;;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(selected&nbsp;==&nbsp;undefined)&nbsp;{&nbsp;selected&nbsp;=&nbsp;false;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:leaf,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parentKey:parentKey,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:text,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:image,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selected:selected&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.doublearray&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.doublearray&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.doublearray&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.doublearray&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.doublearray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.doublearray&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -531,11 +583,31 @@ this.doublearray&nbsp;=&nbsp;doublearray;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDoublearray">String<br/>getDoublearray</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Complex&nbsp;Array&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addButton">void<br/>addButton</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>APSTESTER.addButton(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean]);<br>APSTESTER.addButton(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;image&nbsp;[String],&nbsp;selected&nbsp;[boolean]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Unique key of this button</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Text for the button</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>image</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Given image for the button</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selected</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help">Selection state of the button</td>
+</tr>
 
 </TABLE>
 
@@ -544,7 +616,59 @@ this.doublearray&nbsp;=&nbsp;doublearray;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.doublearray;
+this.addItem(&quot;ROOT&quot;,&nbsp;key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selected);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeItem">void<br/>removeItem</td>
+<td valign="top" width="*" class="function-help">removes&nbsp;an&nbsp;element&nbsp;by&nbsp;String&nbsp;key&nbsp;properties.<br/>You&nbsp;need&nbsp;to&nbsp;specify&nbsp;a&nbsp;unique&nbsp;and&nbsp;existing&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;element<br/><div class='html-code'>APSTESTER.removeItem(String&nbsp;key);<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.doublearray&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.doublearray&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.doublearray&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.doublearray&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.doublearray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;remove&nbsp;all&nbsp;items&nbsp;with&nbsp;this&nbsp;parent<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;elementsJson.length&nbsp;-&nbsp;1;&nbsp;i&nbsp;&gt;=&nbsp;0;&nbsp;i--){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].parentKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.doublearray&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeButton">void<br/>removeButton</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>APSTESTER.removeButton(String&nbsp;key);<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.removeItem(key);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -694,13 +818,13 @@ return&nbsp;this.spinnerExample;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStringarray">void<br/>setStringarray</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;String&nbsp;Array&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;String&nbsp;Array&nbsp;Property&nbsp;as&nbsp;StringArray<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>stringarray</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="120px" class="parameter-type"><B>StringArray</B></td>
 <td width="*" class="parameter-help">Simple String Array</td>
 </tr>
 
@@ -719,8 +843,8 @@ this.stringarray&nbsp;=&nbsp;stringarray;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getStringarray">String<br/>getStringarray</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;String&nbsp;Array&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getStringarray">StringArray<br/>getStringarray</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;String&nbsp;Array&nbsp;Property&nbsp;as&nbsp;StringArray<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;ask&nbsp;for&nbsp;the&nbsp;current&nbsp;property&nbsp;value<br/><div class='html-code'>APSTESTER.getStringarray();<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -732,7 +856,7 @@ this.stringarray&nbsp;=&nbsp;stringarray;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.stringarray;
+var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.stringarray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;elementsJson;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
