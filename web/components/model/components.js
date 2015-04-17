@@ -22,7 +22,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/activityviewer",
-       title: "ActivityViewer",
+       title: "Activity Viewer (Prototype)",
        info: "ActivityViewer",
        icon: "basics/activityviewer.png",
        activeIcon: "basics/activityviewer.png",
@@ -454,7 +454,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/activityviewer",
-       title: "ActivityViewer",
+       title: "Activity Viewer (Prototype)",
        info: "ActivityViewer",
        icon: "basics/activityviewer.png",
        activeIcon: "basics/activityviewer.png",
