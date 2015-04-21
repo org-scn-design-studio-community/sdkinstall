@@ -214,15 +214,24 @@ body {
 	background-color: lightgreen;
 	border-color: green;
 }
+
+.tileGreen {
+	background-color: lightgreen !important;
+	border-color: green !important;
+}
+
+div#componentTile .sapMTileContent .yellow,
 .yellowTimelineItem .sapSuiteUiCommonsTimelineItemBox {
 	background-color: lightyellow;
 	border-color: yellow;
 }
+div#componentTile .sapMTileContent .red,
 .redTimelineItem .sapSuiteUiCommonsTimelineItemBox {
 	background-color: lightred;
 	border-color: red;
 }
 
+div#componentTile .sapMTileContent .blue,
 .blueTimelineItem .sapSuiteUiCommonsTimelineItemBox {
 	background-color: lightblue;
 	border-color: blue;
