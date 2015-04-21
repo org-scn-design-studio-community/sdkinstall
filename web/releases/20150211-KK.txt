@@ -1,2 +1,0 @@
-#ENH|unification for the data bound components into central methods, adding better options properties
-#FIX|drop down fixed to new common methods
