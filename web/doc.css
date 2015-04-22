@@ -209,6 +209,9 @@ body {
 .resizeTimelineItemSmall {
 	height:100px!important;
 }
+.resizeTimelineItem200 {
+	height:200px!important;
+}
 
 .greenTimelineItem .sapSuiteUiCommonsTimelineItemBox {
 	background-color: lightgreen;
