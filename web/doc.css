@@ -248,7 +248,10 @@ div#examples table>tbody>tr>td>div>div,
 div#examples table>tbody>tr>td>div>div>div,
 div#changelog table>tbody>tr>td>div,
 div#changelog table>tbody>tr>td>div>div,
-div#changelog table>tbody>tr>td>div>div>div
+div#changelog table>tbody>tr>td>div>div>div,
+div#globalchangelog table>tbody>tr>td>div,
+div#globalchangelog table>tbody>tr>td>div>div,
+div#globalchangelog table>tbody>tr>td>div>div>div
 {
 	vertical-align:top!important;
 	height:100%!important;
@@ -256,13 +259,16 @@ div#changelog table>tbody>tr>td>div>div>div
 
 div#blogs .sapSuiteUiCommonsTimelineContents,
 div#examples .sapSuiteUiCommonsTimelineContents,
-div#changelog .sapSuiteUiCommonsTimelineContents
+div#changelog .sapSuiteUiCommonsTimelineContents,
+div#globalchangelog .sapSuiteUiCommonsTimelineContents
 {
 	vertical-align:top!important;
 	height:100%!important;
 }
 
-div#introStatus {
+div#introStatus,
+div#globalstatus
+{
 	vertical-align:top!important;
 	height:200px!important;
 }
