@@ -249,9 +249,9 @@ div#examples table>tbody>tr>td>div>div>div,
 div#changelog table>tbody>tr>td>div,
 div#changelog table>tbody>tr>td>div>div,
 div#changelog table>tbody>tr>td>div>div>div,
-div#globalchangelog table>tbody>tr>td>div,
-div#globalchangelog table>tbody>tr>td>div>div,
-div#globalchangelog table>tbody>tr>td>div>div>div
+div#changelogcontent table>tbody>tr>td>div,
+div#changelogcontent table>tbody>tr>td>div>div,
+div#changelogcontent table>tbody>tr>td>div>div>div
 {
 	vertical-align:top!important;
 	height:100%!important;
@@ -266,9 +266,14 @@ div#globalchangelog .sapSuiteUiCommonsTimelineContents
 	height:100%!important;
 }
 
-div#introStatus,
-div#globalstatus
+div#introStatus
 {
 	vertical-align:top!important;
 	height:200px!important;
+}
+
+div#globalstatus
+{
+	vertical-align:top!important;
+	height:140px!important;
 }
