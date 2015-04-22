@@ -29,6 +29,12 @@
                writeToDom: true
            }));
 
+	var ajaxcheckstatus = new org.scn.community.utils.PostResponseParser();
+	var callback = function () {
+		//oTile.addStyleClass("tileGreen");
+	}
+	requestAjaxJson("url", callback, ajaxcheckstatus);
+	
        //Provide URI for icons
        var iconSrc = oContext.oModel.getProperty(oContext.sPath + "/icon");
        if (iconSrc) {
