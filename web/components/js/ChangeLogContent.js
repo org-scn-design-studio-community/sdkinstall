@@ -25,9 +25,6 @@ var counter = 0;
 var againCounter = 0;
 
 requestChangeLogModel = function(url, id, name, model) {
-    url = url.replace("../../../", "http://aaw:1080/web/coverage/");
-    url = url.replace(".json", ".txt");
-
     var ajaxCallChangeLog = new org.scn.community.utils.PostResponseParser();
 
     var callback = function(eventName) {
