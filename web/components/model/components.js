@@ -756,6 +756,15 @@ sdkComponentModel["utils"] = [
        numberUnit: "utils"
    },
     {
+       id: "utils/jsonobject",
+       title: "Json Object",
+       info: "JsonObject",
+       icon: "utils/jsonobject.png",
+       activeIcon: "utils/jsonobject.png",
+       number: " ",
+       numberUnit: "utils"
+   },
+    {
        id: "utils/math",
        title: "Math Utility",
        info: "Math",
@@ -815,6 +824,15 @@ sdkComponentModel["utils"] = [
        info: "SimpleDate",
        icon: "utils/simpledate.png",
        activeIcon: "utils/simpledate.png",
+       number: " ",
+       numberUnit: "utils"
+   },
+    {
+       id: "utils/jsonobject",
+       title: "Json Object",
+       info: "JsonObject",
+       icon: "utils/jsonobject.png",
+       activeIcon: "utils/jsonobject.png",
        number: " ",
        numberUnit: "utils"
    },

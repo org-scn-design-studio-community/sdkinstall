@@ -52,14 +52,16 @@ requestChangeLogModel = function(url, id, name, model) {
             change.component = name;
             if (change.filterValue != "creation") {
                 change.filterValue = change["test-status"] + "/" + change.filterValue;
-		change.author = name + ": (" + change.author + ")";
+                change.author = name + ": (" + change.author + ")";
                 globalChangeLog.push(change);
             }
         }
-	
-	 if (counter == againCounter) {
-		setTimeout(function(){updateGlobal()}, 1000);
-	}
+
+        if (counter == againCounter) {
+            setTimeout(function() {
+                updateGlobal()
+            }, 1000);
+        }
     };
 
     requestAjaxJson(url, callback, ajaxCallChangeLog);
@@ -89,9 +91,32 @@ itemFactory = function(sId, sModel) {
     var sDate = sItem.date;
 
     var sDateToParse = sDate.split("-");
-    var realDate = new Date(sDateToParse[0], sDateToParse[1], sDateToParse[2])
+    var realDate = new Date(sDateToParse[0], sDateToParse[1] - 1, sDateToParse[2])
 
     if (dateAll == undefined) dateAll = realDate;
+
+    var link = "https://github.com/org-scn-design-studio-community/sdkhelp/tree/master/web/components/" + sItem.compId.replace("_", "/");
+    var linkToRepo = new sap.ui.commons.Link({
+        text: " -> open change log in sdhhelp repository",
+        press: function() {
+            window.open(link + "/changes/changelog.json", '_blank');
+        }
+    });
+
+    var horLayout = new sap.ui.layout.HorizontalLayout({
+	    content: [
+		new sap.ui.commons.Label({
+                    text: "Change Details & Test Status ",
+                    design: sap.ui.commons.LabelDesign.Bold,
+                }),
+		new sap.ui.commons.Label({
+                    text: " ",
+			width: "20px",
+                    design: sap.ui.commons.LabelDesign.Bold,
+                }),
+		linkToRepo
+	    ]
+    });
     var tlItem = new sap.suite.ui.commons.TimelineItem({
         dateTime: realDate,
         userNameClickable: false,
@@ -102,10 +127,7 @@ itemFactory = function(sId, sModel) {
         icon: "{icon}",
         embeddedControl: new sap.ui.layout.VerticalLayout({
             content: [
-                new sap.ui.commons.Label({
-                    text: "Change Details & Test Status",
-                    design: sap.ui.commons.LabelDesign.Bold,
-                }),
+		horLayout,
                 new sap.ui.commons.Label({
                     text: "{text}",
                     icon: "{icon}",
@@ -113,12 +135,12 @@ itemFactory = function(sId, sModel) {
                 new sap.ui.commons.Label({
                     text: "{test-comment}",
                     icon: "{test-icon}",
-                }),
+                })
             ]
         })
     });
 
-    tlItem.addStyleClass("resizeTimelineItem");
+    tlItem.addStyleClass("resizeTimelineItemMed");
 
     if (sItem["test-status"] == "ok" || sItem["test-status"] == "good" || sItem["test-status"] == "passed") {
         tlItem.addStyleClass("greenTimelineItem");
@@ -141,11 +163,15 @@ itemFactory = function(sId, sModel) {
 }
 
 var timeline = new sap.suite.ui.commons.Timeline();
-
 timeline.setSortOldestFirst(false);
 timeline.setWidth("100%");
+timeline.setGrowingThreshold(3);
+timeline.setGrowing(true);
 
 var timelineStatus = new sap.suite.ui.commons.Timeline();
+timelineStatus.removeAllFilterList();
+timelineStatus.setEnableScroll(false);
+timelineStatus.setShowHeaderBar(false);
 
 updateGlobal = function() {
     var oModel = new sap.ui.model.json.JSONModel({
@@ -165,7 +191,7 @@ updateGlobal = function() {
         userName: "Status Generator, ",
     });
 
-    statusItem.addStyleClass("resizeTimelineItem200");
+    statusItem.addStyleClass("resizeTimelineItemMed");
     if (statusAll == "ok") {
         statusItem.addStyleClass("greenTimelineItem");
         statusItem.setTitle("SCN Repository Status is Green, all changes have been validated");
@@ -199,20 +225,8 @@ var timelineUI = new sap.ui.commons.layout.MatrixLayout({
 });
 
 timelineUI.createRow({
-    height: "100%"
+    height: "620px"
 }, timeline);
-
-var cellEmpty = new sap.ui.commons.layout.MatrixLayoutCell({
-    id: "changeMatrixEmptyCell",
-    colSpan: 2,
-    height: "55px",
-});
-cellEmpty.addContent(new sap.ui.commons.Label({
-    text: " "
-}));
-timelineUI.createRow({
-    height: "55px"
-}, cellEmpty);
 
 timelineUI.placeAt("changelogcontent");
 timelineStatus.placeAt("globalstatus");

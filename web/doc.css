@@ -209,8 +209,8 @@ body {
 .resizeTimelineItemSmall {
 	height:100px!important;
 }
-.resizeTimelineItem200 {
-	height:200px!important;
+.resizeTimelineItemMed {
+	height:130px!important;
 }
 
 .greenTimelineItem .sapSuiteUiCommonsTimelineItemBox {
@@ -275,5 +275,5 @@ div#introStatus
 div#globalstatus
 {
 	vertical-align:top!important;
-	height:140px!important;
+	height:105px!important;
 }

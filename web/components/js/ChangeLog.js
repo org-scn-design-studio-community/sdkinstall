@@ -3,7 +3,7 @@ var browser = new org.scn.community.basics.ModalBrowser({
 	title:'Status & Change Log',
 	url:'changelog.html',
 	browserWidth:'1200px',
-	browserHeight:'800px',
+	browserHeight:'780px',
 	openMethod:'Modal Browser Dialog',
     });
     browser.initDesignStudio();

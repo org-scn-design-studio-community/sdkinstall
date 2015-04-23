@@ -35,7 +35,7 @@ requestContent = function(what, url) {
             var sDate = sItem.date;
 
             var sDateToParse = sDate.split("-");
-            var realDate = new Date(sDateToParse[0], sDateToParse[1], sDateToParse[2])
+            var realDate = new Date(sDateToParse[0], sDateToParse[1]-1, sDateToParse[2])
 
             var urlLink = new sap.ui.commons.Link({
                 text: "Open "+what+" in New Window",
