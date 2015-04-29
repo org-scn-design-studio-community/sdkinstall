@@ -538,7 +538,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/resultsetinfo",
-       title: "Result Set Information (Test Phase)",
+       title: "Result Set Information",
        info: "ResultSetInfo",
        icon: "databound/resultsetinfo.png",
        activeIcon: "databound/resultsetinfo.png",
@@ -547,7 +547,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/resultsetmixer",
-       title: "Result Set Mixer (Test Phase)",
+       title: "Result Set Mixer",
        info: "ResultSetMixer",
        icon: "databound/resultsetmixer.png",
        activeIcon: "databound/resultsetmixer.png",
