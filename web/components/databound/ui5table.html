@@ -50,6 +50,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>DIgnoreResults<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Ignore Results Rows and Columns</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DDataProvisioner<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Central Data Provisioner for Result Set</B><br/>Central Result Set with Data
 
@@ -249,6 +258,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setIgnoreResults [<a href="#FUNCTION_setIgnoreResults">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">ignoreResults</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getIgnoreResults [<a href="#FUNCTION_getIgnoreResults">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setDataProvisioner [<a href="#FUNCTION_setDataProvisioner">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">dataProvisioner</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -547,6 +568,53 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setIgnoreResults">void<br/>setIgnoreResults</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Ignore&nbsp;Results&nbsp;Rows&nbsp;and&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>ignoreResults</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DIgnoreResults&nbsp;=&nbsp;ignoreResults;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getIgnoreResults">boolean<br/>getIgnoreResults</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Ignore&nbsp;Results&nbsp;Rows&nbsp;and&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DIgnoreResults;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDataProvisioner">void<br/>setDataProvisioner</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Central&nbsp;Data&nbsp;Provisioner&nbsp;for&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
