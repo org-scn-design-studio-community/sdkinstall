@@ -150,6 +150,9 @@
        }, {
            key: "prototypes",
            title: "Prototypes"
+       }, {
+           key: "framework",
+           title: "Framework"
        }],
        leafs: []
    };
