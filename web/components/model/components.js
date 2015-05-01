@@ -922,7 +922,55 @@ sdkComponentModel["prototypes"] = [
    },
 
 	];
+sdkComponentModel["framework"] = [
+   {
+       id: "framework/changelog_basics_aps",
+       title: "Basics - Aps",
+       info: "ChangeLog_basics_aps",
+       icon: "framework/changelog_basics_aps.png",
+       activeIcon: "framework/changelog_basics_aps.png",
+       number: " ",
+       numberUnit: "framework"
+   },
+    {
+       id: "framework/changelog_basics_res_common",
+       title: "Basics - Common (Res)",
+       info: "ChangeLog_basics_res_common",
+       icon: "framework/changelog_basics_res_common.png",
+       activeIcon: "framework/changelog_basics_res_common.png",
+       number: " ",
+       numberUnit: "framework"
+   },
+    {
+       id: "framework/changelog_basics_res_require",
+       title: "Basics - Require",
+       info: "ChangeLog_basics_res_require",
+       icon: "framework/changelog_basics_res_require.png",
+       activeIcon: "framework/changelog_basics_res_require.png",
+       number: " ",
+       numberUnit: "framework"
+   },
+    {
+       id: "framework/changelog_databound_res",
+       title: "Databound - Community Common",
+       info: "ChangeLog_databound_res",
+       icon: "framework/changelog_databound_res.png",
+       activeIcon: "framework/changelog_databound_res.png",
+       number: " ",
+       numberUnit: "framework"
+   },
+    {
+       id: "framework/changelog_databound_common",
+       title: "Databound - Common (Res)",
+       info: "ChangeLog_databound_common",
+       icon: "framework/changelog_databound_common.png",
+       activeIcon: "framework/changelog_databound_common.png",
+       number: " ",
+       numberUnit: "framework"
+   },
 
+	];
+	
 /* example
 sdkComponentModel["basics"] = [
 {
