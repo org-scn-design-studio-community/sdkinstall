@@ -912,6 +912,15 @@ sdkComponentModel["prototypes"] = [
        numberUnit: "prototypes"
    },
     {
+       id: "prototypes/tagcloud",
+       title: "Tag Cloud",
+       info: "Tagcloud",
+       icon: "prototypes/tagcloud.png",
+       activeIcon: "prototypes/tagcloud.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
        id: "prototypes/apstester",
        title: "Aps Tester",
        info: "ApsTester",
