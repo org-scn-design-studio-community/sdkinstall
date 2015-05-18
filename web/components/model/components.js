@@ -465,15 +465,6 @@ sdkComponentModel["basics"] = [
 	];
 sdkComponentModel["databound"] = [
    {
-       id: "databound/jpd3hier",
-       title: "D3 Hierarchy",
-       info: "jpd3hier",
-       icon: "databound/jpd3hier.png",
-       activeIcon: "databound/jpd3hier.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
        id: "databound/table",
        title: "Data Table",
        info: "Table",
@@ -501,6 +492,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/jpd3hier",
+       title: "D3 Hierarchy",
+       info: "jpd3hier",
+       icon: "databound/jpd3hier.png",
+       activeIcon: "databound/jpd3hier.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/leaderboard",
        title: "Data Leader Board",
        info: "LeaderBoard",
@@ -511,7 +511,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/multileveldropdown",
-       title: "Multi Level DropDown Menu",
+       title: "Hierarchical Menu",
        info: "MultiLevelDropDown",
        icon: "databound/multileveldropdown.png",
        activeIcon: "databound/multileveldropdown.png",
@@ -876,6 +876,15 @@ sdkComponentModel["prototypes"] = [
        numberUnit: "prototypes"
    },
     {
+       id: "prototypes/bulletchart",
+       title: "Bullet Chart",
+       info: "BulletChart",
+       icon: "prototypes/bulletchart.png",
+       activeIcon: "prototypes/bulletchart.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
        id: "prototypes/progressset",
        title: "Progress Bar Set",
        info: "ProgressSet",
@@ -899,6 +908,15 @@ sdkComponentModel["prototypes"] = [
        info: "SapMList",
        icon: "prototypes/sapmlist.png",
        activeIcon: "prototypes/sapmlist.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
+       id: "prototypes/tagcloud",
+       title: "Tag Cloud",
+       info: "Tagcloud",
+       icon: "prototypes/tagcloud.png",
+       activeIcon: "prototypes/tagcloud.png",
        number: " ",
        numberUnit: "prototypes"
    },
