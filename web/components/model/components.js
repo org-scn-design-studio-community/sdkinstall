@@ -885,6 +885,15 @@ sdkComponentModel["prototypes"] = [
        numberUnit: "prototypes"
    },
     {
+       id: "prototypes/bulletchartgen",
+       title: "Bullet Chart (Gen Prototype)",
+       info: "BulletChartGen",
+       icon: "prototypes/bulletchartgen.png",
+       activeIcon: "prototypes/bulletchartgen.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
        id: "prototypes/progressset",
        title: "Progress Bar Set",
        info: "ProgressSet",
@@ -935,6 +944,15 @@ sdkComponentModel["prototypes"] = [
        info: "ApsTesterUI5",
        icon: "prototypes/apstesterui5.png",
        activeIcon: "prototypes/apstesterui5.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
+       id: "prototypes/bulletchartgen",
+       title: "Bullet Chart (Gen Prototype)",
+       info: "BulletChartGen",
+       icon: "prototypes/bulletchartgen.png",
+       activeIcon: "prototypes/bulletchartgen.png",
        number: " ",
        numberUnit: "prototypes"
    },

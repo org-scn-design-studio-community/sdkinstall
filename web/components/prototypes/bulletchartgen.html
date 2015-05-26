@@ -13,21 +13,21 @@
 <script type="text/javascript" src="../js/ga.js"></script>
 
 <script> 
-	requestChangeLog("../../../../sdkhelp/web/components/datasource/dyncsvdatasource/changes/changelog.json");
-	requestContent("Blog", "../../../../sdkhelp/web/components/datasource/dyncsvdatasource/blogs.json");
-	requestContent("Example", "../../../../sdkhelp/web/components/datasource/dyncsvdatasource/examples.json");
+	requestChangeLog("../../../../sdkhelp/web/components/prototypes/bulletchartgen/changes/changelog.json");
+	requestContent("Blog", "../../../../sdkhelp/web/components/prototypes/bulletchartgen/blogs.json");
+	requestContent("Example", "../../../../sdkhelp/web/components/prototypes/bulletchartgen/examples.json");
 </script>
 
-<title>Dynamic Csv Data Source - SCN Design Studio Community</title>
+<title>Bullet Chart (Gen Prototype) - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
 
  	<div class="component-name">
-	DynCsvDataSource [datasource]
+	BulletChartGen [ScnCommunityPrototypes]
 	</div>
 	<div class="component-title">
-	Dynamic Csv Data Source
+	Bullet Chart (Gen Prototype)
 	</div>
 
 <div id="componentnav"></div>
@@ -45,30 +45,12 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>csvfile<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>CSV File</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>graphTitle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Graph Title</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>hasHeaderRow<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Has Header Row</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>hasHeaderColumn<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Has Header Column</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -91,7 +73,19 @@
 	
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
-	
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setGraphTitle [<a href="#FUNCTION_setGraphTitle">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">graphTitle</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getGraphTitle [<a href="#FUNCTION_getGraphTitle">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+
 	</TABLE>
 
 	<br/>
@@ -110,7 +104,54 @@
 	<br/>
 	
 	<TABLE width="100%" class="">
-	
+	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setGraphTitle">void<br/>setGraphTitle</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Graph&nbsp;Title&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>graphTitle</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Graph Title</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.graphTitle&nbsp;=&nbsp;graphTitle;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getGraphTitle">String<br/>getGraphTitle</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Graph&nbsp;Title&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.graphTitle;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
 	</TABLE>
 	<div style="height:20px!important"> THE END </div>
 	</div>
