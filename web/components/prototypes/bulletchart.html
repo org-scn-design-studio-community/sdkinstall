@@ -60,7 +60,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>exprapolation<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>extrapolation<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>expected realization outcome end of period column</B><br/>&nbsp;
 
 </td>
@@ -114,12 +114,57 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>labeldimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Row Dimension holding main label</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>sublabeldimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Row Dimension holding sub label</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>keydimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Row Dimension holding unique key for clicking through</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>comparison<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>comparison column</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showaxis<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show X axis numbers</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>tooltip<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show tooltip</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -190,12 +235,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>graphtitle<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Graph Title</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>numberofticks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>number of ticks in the graph</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">4</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -227,7 +272,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>charttopmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Top Margin</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Bullet Top Margin</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -236,7 +281,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>chartbottommargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bottom Margin</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Bullet Bottom Margin</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -245,7 +290,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>chartleftmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Left Margin</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Bullet Left Margin</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -254,7 +299,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>chartrightmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Right Margin</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Bullet Right Margin</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -299,7 +344,13 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
-	
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getClickedGraphKey [<a href="#FUNCTION_getClickedGraphKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+
 	</TABLE>
 
 	<br/>
@@ -310,6 +361,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>clickedgraphkey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>clickedgraphkey</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
 <td width="*" class="property-title-tooltip"><B>Dataset</B><br/>&nbsp;
 
@@ -327,7 +387,28 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<br/>
 	
 	<TABLE width="100%" class="">
-	
+	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getClickedGraphKey">String<br/>getClickedGraphKey</td>
+<td valign="top" width="*" class="function-help">/get&nbsp;the&nbsp;unique&nbsp;key&nbsp;for&nbsp;the&nbsp;clicked&nbsp;bullet&nbsp;chart<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.clickedgraphkey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
 	</TABLE>
 	<div style="height:20px!important"> THE END </div>
 	</div>
