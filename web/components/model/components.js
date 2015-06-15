@@ -573,6 +573,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/tagcloud",
+       title: "Tag Cloud",
+       info: "tagCloud",
+       icon: "databound/tagcloud.png",
+       activeIcon: "databound/tagcloud.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/topflop",
        title: "Data Top Flop",
        info: "TopFlop",
@@ -594,6 +603,15 @@ sdkComponentModel["databound"] = [
                   ];
 sdkComponentModel["chartmaps"] = [
    {
+       id: "chartmaps/bulletchart",
+       title: "Bullet Chart",
+       info: "BulletChart",
+       icon: "chartmaps/bulletchart.png",
+       activeIcon: "chartmaps/bulletchart.png",
+       number: " ",
+       numberUnit: "chartmaps"
+   },
+    {
        id: "chartmaps/choropleth",
        title: "Choropleth Map",
        info: "Choropleth",
@@ -876,15 +894,6 @@ sdkComponentModel["prototypes"] = [
        numberUnit: "prototypes"
    },
     {
-       id: "prototypes/bulletchart",
-       title: "Bullet Chart",
-       info: "BulletChart",
-       icon: "prototypes/bulletchart.png",
-       activeIcon: "prototypes/bulletchart.png",
-       number: " ",
-       numberUnit: "prototypes"
-   },
-    {
        id: "prototypes/bulletchartgen",
        title: "Bullet Chart (Gen Prototype)",
        info: "BulletChartGen",
@@ -917,15 +926,6 @@ sdkComponentModel["prototypes"] = [
        info: "SapMList",
        icon: "prototypes/sapmlist.png",
        activeIcon: "prototypes/sapmlist.png",
-       number: " ",
-       numberUnit: "prototypes"
-   },
-    {
-       id: "prototypes/tagcloud",
-       title: "Tag Cloud",
-       info: "Tagcloud",
-       icon: "prototypes/tagcloud.png",
-       activeIcon: "prototypes/tagcloud.png",
        number: " ",
        numberUnit: "prototypes"
    },
