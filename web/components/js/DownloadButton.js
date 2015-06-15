@@ -1,5 +1,5 @@
 var browser = new org.scn.community.basics.ModalBrowser({
-        text:'Free Download',
+        text:'Free Download 2.0',
 	title:'Free Download of Community Components',
 	url:'download.html',
 	browserWidth:'730px',

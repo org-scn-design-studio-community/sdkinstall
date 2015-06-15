@@ -1,5 +1,5 @@
 var oButtonPreview = new sap.ui.commons.Button({
-	text : "Preview Version",
+	text : "Preview Version 2.0",
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Emph,
@@ -7,7 +7,7 @@ var oButtonPreview = new sap.ui.commons.Button({
 });
 
 var oButtonStable = new sap.ui.commons.Button({
-	text : "Stable Version",
+	text : "Stable Version 2.0",
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Accept,
@@ -24,7 +24,7 @@ var oLayout = new sap.ui.layout.HorizontalLayout("LayoutOnline", {
 
 
 var oButtonPreviewOffline = new sap.ui.commons.Button({
-	text : "Preview Version",
+	text : "Preview Version 2.0",
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Emph,
@@ -32,7 +32,7 @@ var oButtonPreviewOffline = new sap.ui.commons.Button({
 });
 
 var oButtonStableOffline = new sap.ui.commons.Button({
-	text : "Stable Version",
+	text : "Stable Version 2.0",
 	height: "40px",
 	width: "120px",
 	style: sap.ui.commons.ButtonStyle.Accept,

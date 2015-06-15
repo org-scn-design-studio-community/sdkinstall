@@ -1,5 +1,5 @@
 var browser = new org.scn.community.basics.ModalBrowser({
-        text:'Change Log',
+        text:'Change Log 2.0',
 	title:'Status & Change Log',
 	url:'changelog.html',
 	browserWidth:'1200px',
