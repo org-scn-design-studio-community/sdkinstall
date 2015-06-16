@@ -78,7 +78,7 @@ for (group in sdkComponentModel) {
     for (compI in components) {
         var comp = components[compI];
 
-        requestChangeLogModel("../../../sdkhelp/web/10/components/" + comp.id + "/changes/changelog.json", comp.id.replace("/", "_"), comp.title, model);
+        requestChangeLogModel("../../../../sdkhelp/web/10/components/" + comp.id + "/changes/changelog.json", comp.id.replace("/", "_"), comp.title, model);
     }
 }
 
