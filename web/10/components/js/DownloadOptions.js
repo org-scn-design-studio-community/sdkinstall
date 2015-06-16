@@ -1,7 +1,7 @@
 var oButtonPreview = new sap.ui.commons.Button({
 	text : "Preview Version 1.0",
 	height: "40px",
-	width: "120px",
+	width: "140px",
 	style: sap.ui.commons.ButtonStyle.Emph,
 	press : function() {tC('http://org-scn-design-studio-community.github.io/sdkinstall/10/releases/preview', 'Preview Repo 1.0'); return false;}
 });
@@ -9,7 +9,7 @@ var oButtonPreview = new sap.ui.commons.Button({
 var oButtonStable = new sap.ui.commons.Button({
 	text : "Stable Version 1.0",
 	height: "40px",
-	width: "120px",
+	width: "140px",
 	style: sap.ui.commons.ButtonStyle.Accept,
 	press : function() {tC('http://org-scn-design-studio-community.github.io/sdkinstall/10/releases/stable', 'Stable Repo 1.0'); return false;}
 });
@@ -26,7 +26,7 @@ var oLayout = new sap.ui.layout.HorizontalLayout("LayoutOnline", {
 var oButtonPreviewOffline = new sap.ui.commons.Button({
 	text : "Preview Version 1.0",
 	height: "40px",
-	width: "120px",
+	width: "140px",
 	style: sap.ui.commons.ButtonStyle.Emph,
 	press : function() {tOL('http://raw.githubusercontent.com/org-scn-design-studio-community/sdkinstall/master/10/releases/preview/org.scn.community.sdk.package_preview.zip', 'Preview ZIP 1.0'); return false;}
 });
@@ -34,7 +34,7 @@ var oButtonPreviewOffline = new sap.ui.commons.Button({
 var oButtonStableOffline = new sap.ui.commons.Button({
 	text : "Stable Version 1.0",
 	height: "40px",
-	width: "120px",
+	width: "140px",
 	style: sap.ui.commons.ButtonStyle.Accept,
 	press : function() {tOL('http://raw.githubusercontent.com/org-scn-design-studio-community/sdkinstall/master/10/releases/stable/org.scn.community.sdk.package_stable.zip', 'Stable ZIP 1.0'); return false;}
 });
