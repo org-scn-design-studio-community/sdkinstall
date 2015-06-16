@@ -13,9 +13,9 @@
 <script type="text/javascript" src="../js/ga.js"></script>
 
 <script> 
-	requestChangeLog("../../../../sdkhelp/web/10/components/utils/postresponseparser/changes/changelog.json");
-	requestContent("Blog", "../../../../sdkhelp/web/10/components/utils/postresponseparser/blogs.json");
-	requestContent("Example", "../../../../sdkhelp/web/10/components/utils/postresponseparser/examples.json");
+	requestChangeLog("../../../../sdkhelp/web/components/utils/postresponseparser/changes/changelog.json");
+	requestContent("Blog", "../../../../sdkhelp/web/components/utils/postresponseparser/blogs.json");
+	requestContent("Example", "../../../../sdkhelp/web/components/utils/postresponseparser/examples.json");
 </script>
 
 <title>Post Response Parser - SCN Design Studio Community</title>
@@ -303,6 +303,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getReturnHeadersAsNameValueArray [<a href="#FUNCTION_getReturnHeadersAsNameValueArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.NameValueArray</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">cleanAllElements [<a href="#FUNCTION_cleanAllElements">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -381,6 +387,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <tr>
 <td width="120px" class="property-name-type"><B>DReturnStatus<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Return Status</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DReturnHeaders<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Return Headers</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -879,6 +894,32 @@ return&nbsp;this.DReturnResponse;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DReturnStatus;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getReturnHeadersAsNameValueArray">org.scn.community.shared.NameValueArray<br/>getReturnHeadersAsNameValueArray</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;content&nbsp;of&nbsp;property&nbsp;Return&nbsp;Headers&nbsp;as&nbsp;loopable&nbsp;name/value&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;values:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;POSTRESPONSEPARSER.getReturnHeadersAsNameValueArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;entries<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(element.name,&nbsp;element.value);<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;k1;&nbsp;value:&nbsp;v1</li><li>key:&nbsp;k2;&nbsp;value:&nbsp;v2</li><li>key:&nbsp;k3;&nbsp;value:&nbsp;v3</li></ul></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxMembers</B></td>
+<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
+<td width="*" class="parameter-help">max members</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;s&nbsp;=&nbsp;this.DReturnHeaders;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s!=&quot;&quot;)&nbsp;a&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;tempA&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0&nbsp;||&nbsp;maxMembers&nbsp;&gt;&nbsp;a.length)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;a.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;a[i].name,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;:&nbsp;a[i].value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempA.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;tempA;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
