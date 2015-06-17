@@ -4,7 +4,7 @@ sdkComponentModel = {};
 sdkComponentModel["basics"] = [
    {
        id: "basics/accordion",
-       title: "Accordion",
+       title: "Accordion 2.0",
        info: "Accordion",
        icon: "basics/accordion.png",
        activeIcon: "basics/accordion.png",
@@ -22,7 +22,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/activityviewer",
-       title: "Activity Viewer (Prototype)",
+       title: "Activity Viewer",
        info: "ActivityViewer",
        icon: "basics/activityviewer.png",
        activeIcon: "basics/activityviewer.png",
@@ -112,7 +112,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/embeddedframe",
-       title: "Embedded Frame",
+       title: "Embedded Frame 2.0",
        info: "EmbeddedFrame",
        icon: "basics/embeddedframe.png",
        activeIcon: "basics/embeddedframe.png",
@@ -121,7 +121,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/embeddedmedia",
-       title: "Embedded Media",
+       title: "Embedded Media 2.0",
        info: "EmbeddedMedia",
        icon: "basics/embeddedmedia.png",
        activeIcon: "basics/embeddedmedia.png",
@@ -453,11 +453,38 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/accordion",
+       title: "Accordion 2.0",
+       info: "Accordion",
+       icon: "basics/accordion.png",
+       activeIcon: "basics/accordion.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/activityviewer",
-       title: "Activity Viewer (Prototype)",
+       title: "Activity Viewer",
        info: "ActivityViewer",
        icon: "basics/activityviewer.png",
        activeIcon: "basics/activityviewer.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/embeddedframe",
+       title: "Embedded Frame 2.0",
+       info: "EmbeddedFrame",
+       icon: "basics/embeddedframe.png",
+       activeIcon: "basics/embeddedframe.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/embeddedmedia",
+       title: "Embedded Media 2.0",
+       info: "EmbeddedMedia",
+       icon: "basics/embeddedmedia.png",
+       activeIcon: "basics/embeddedmedia.png",
        number: " ",
        numberUnit: "basics"
    },
@@ -756,6 +783,15 @@ sdkComponentModel["utils"] = [
        numberUnit: "utils"
    },
     {
+       id: "utils/datasourcehelper",
+       title: "Data Source Helper 2.0",
+       info: "DataSourceHelper",
+       icon: "utils/datasourcehelper.png",
+       activeIcon: "utils/datasourcehelper.png",
+       number: " ",
+       numberUnit: "utils"
+   },
+    {
        id: "utils/debugger",
        title: "Debugger Code Inspector",
        info: "Debugger",
@@ -842,6 +878,15 @@ sdkComponentModel["utils"] = [
        info: "SimpleDate",
        icon: "utils/simpledate.png",
        activeIcon: "utils/simpledate.png",
+       number: " ",
+       numberUnit: "utils"
+   },
+    {
+       id: "utils/datasourcehelper",
+       title: "Data Source Helper 2.0",
+       info: "DataSourceHelper",
+       icon: "utils/datasourcehelper.png",
+       activeIcon: "utils/datasourcehelper.png",
        number: " ",
        numberUnit: "utils"
    },

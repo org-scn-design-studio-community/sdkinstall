@@ -125,9 +125,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58002">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setUserName [<a href="#FUNCTION_setUserName">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">userName</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getLogoText [<a href="#FUNCTION_getLogoText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -137,20 +137,20 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58002">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">private_beforeRender [<a href="#FUNCTION_private_beforeRender">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setLogoText [<a href="#FUNCTION_setLogoText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">logoText</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getLogoText [<a href="#FUNCTION_getLogoText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">private_beforeRender [<a href="#FUNCTION_private_beforeRender">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="240px" class="function-short-name">setUserName [<a href="#FUNCTION_setUserName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">userName</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -165,21 +165,21 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58002">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>onBeforeRender<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Set Application Name</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">this.private_beforeRender();</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>appName<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Application Name</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onBeforeRender<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Set Application Name</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">this.private_beforeRender();</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -192,16 +192,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58002">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setUserName">void<br/>setUserName</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;user&nbsp;name&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;welcome&nbsp;text.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLogoText">String<br/>getLogoText</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;text&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;logo&nbsp;in&nbsp;the&nbsp;application&nbsp;header.<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>userName</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> User name </td>
-</tr>
+
 
 </TABLE>
 
@@ -210,7 +205,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58002">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.userName&nbsp;=&nbsp;userName;
+return&nbsp;this.logoText;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -232,6 +227,27 @@ this.userName&nbsp;=&nbsp;userName;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.userName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_private_beforeRender">void<br/>private_beforeRender</td>
+<td valign="top" width="*" class="function-help">//&nbsp;@Visibility(private)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+//&nbsp;APPLICATION.createInfoMessage(&quot;Name:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.appName&nbsp;=&nbsp;&quot;OnBeforeRender:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -265,11 +281,16 @@ this.logoText&nbsp;=&nbsp;logoText;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLogoText">String<br/>getLogoText</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;text&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;logo&nbsp;in&nbsp;the&nbsp;application&nbsp;header.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setUserName">void<br/>setUserName</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;user&nbsp;name&nbsp;that&nbsp;is&nbsp;displayed&nbsp;beside&nbsp;the&nbsp;welcome&nbsp;text.<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>userName</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> User name </td>
+</tr>
 
 </TABLE>
 
@@ -278,28 +299,7 @@ this.logoText&nbsp;=&nbsp;logoText;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.logoText;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_private_beforeRender">void<br/>private_beforeRender</td>
-<td valign="top" width="*" class="function-help">//&nbsp;@Visibility(private)<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-//&nbsp;APPLICATION.createInfoMessage(&quot;Name:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.appName&nbsp;=&nbsp;&quot;OnBeforeRender:&nbsp;&quot;&nbsp;+&nbsp;APPLICATION.getInfo().name;
+this.userName&nbsp;=&nbsp;userName;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

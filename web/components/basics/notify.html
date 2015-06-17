@@ -156,19 +156,13 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">information [<a href="#FUNCTION_information">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">text</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">error [<a href="#FUNCTION_error">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">text</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">warning [<a href="#FUNCTION_warning">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">information [<a href="#FUNCTION_information">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">text</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -181,6 +175,12 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">success [<a href="#FUNCTION_success">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">text</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">warning [<a href="#FUNCTION_warning">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">text</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -205,8 +205,8 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>shownote<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>shownote</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>msgtype<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>msgtype</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -214,8 +214,8 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>msgtype<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>msgtype</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>shownote<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>shownote</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -258,32 +258,6 @@ this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;alert&quot;;<br/>&nbsp;&nbsp;&nbsp;&
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_information">void<br/>information</td>
-<td valign="top" width="*" class="function-help"><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>text</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Text to be shown </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;information&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;msgtext&quot;]&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;shownote&quot;]&nbsp;=&nbsp;&quot;Y&quot;;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_error">void<br/>error</td>
 <td valign="top" width="*" class="function-help"><br/>
 
@@ -310,7 +284,7 @@ this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;error&quot;;<br/>&nbsp;&nbsp;&nbsp;&
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_warning">void<br/>warning</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_information">void<br/>information</td>
 <td valign="top" width="*" class="function-help"><br/>
 
 <TABLE width="100%" class="table1">
@@ -328,7 +302,7 @@ this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;error&quot;;<br/>&nbsp;&nbsp;&nbsp;&
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;warning&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;msgtext&quot;]&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;shownote&quot;]&nbsp;=&nbsp;&quot;Y&quot;;
+this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;information&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;msgtext&quot;]&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;shownote&quot;]&nbsp;=&nbsp;&quot;Y&quot;;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -381,6 +355,32 @@ this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;notification&quot;;<br/>&nbsp;&nbsp;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;success&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;msgtext&quot;]&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;shownote&quot;]&nbsp;=&nbsp;&quot;Y&quot;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_warning">void<br/>warning</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Text to be shown </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this[&quot;msgtype&quot;]&nbsp;=&nbsp;&quot;warning&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;msgtext&quot;]&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this[&quot;shownote&quot;]&nbsp;=&nbsp;&quot;Y&quot;;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

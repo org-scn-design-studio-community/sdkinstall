@@ -70,8 +70,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>onSelectionChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Selection Changed</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>onFirstExpand<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On First Expand</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Events</td>
@@ -79,8 +79,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>onFirstExpand<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On First Expand</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>onSelectionChanged<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Selection Changed</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Events</td>
@@ -98,26 +98,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeAllNodes [<a href="#FUNCTION_removeAllNodes">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addNode [<a href="#FUNCTION_addNode">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">nodeKey, nodeText, imageUrl, parentNodeKey, (isLeaf)</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSelectedKey [<a href="#FUNCTION_setSelectedKey">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -128,8 +110,26 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">noNodeUpdate [<a href="#FUNCTION_noNodeUpdate">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeAllNodes [<a href="#FUNCTION_removeAllNodes">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedKey [<a href="#FUNCTION_setSelectedKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -144,12 +144,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>cleanAll<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical proprty for Clean All Nodes</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -159,15 +159,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>cleanAll<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Clean All Nodes</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -188,6 +179,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
 
 	</TABLE>
 
@@ -198,27 +198,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllNodes">void<br/>removeAllNodes</td>
-<td valign="top" width="*" class="function-help">remove&nbsp;all&nbsp;nodes<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;nodesArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.nodesContent&nbsp;=&nbsp;JSON.stringify(nodesArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.cleanAll&nbsp;=&nbsp;true;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addNode">void<br/>addNode</td>
 <td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;tree&nbsp;node&nbsp;containing&nbsp;Key,&nbsp;Text,&nbsp;Image&nbsp;Url,&nbsp;Parent&nbsp;Node&nbsp;and&nbsp;is&nbsp;Leaf&nbsp;information.<br/>You&nbsp;need&nbsp;to&nbsp;specify&nbsp;a&nbsp;unique&nbsp;and&nbsp;existing&nbsp;parent&nbsp;node.<br/>if&nbsp;Parent&nbsp;is&nbsp;set&nbsp;to&nbsp;"ROOT"&nbsp;then&nbsp;the&nbsp;node&nbsp;will&nbsp;be&nbsp;inserted&nbsp;into&nbsp;"ROOT".<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;nodes,&nbsp;second&nbsp;one&nbsp;is&nbsp;a&nbsp;child&nbsp;of&nbsp;fist&nbsp;one<br/><div class='html-code'>TREE_1.addNode("KEY1",&nbsp;"First&nbsp;Node",&nbsp;"",&nbsp;"ROOT",&nbsp;true);<br>TREE_1.addNode("KEY2",&nbsp;"First&nbsp;Node",&nbsp;"",&nbsp;"KEY1",&nbsp;true);<br></div></div><br/>
 
@@ -265,6 +244,27 @@ if(isLeaf&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getExpandedKey">String<br/>getExpandedKey</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;expanded&nbsp;key&nbsp;-&nbsp;can&nbsp;be&nbsp;used&nbsp;in&nbsp;onFirstExpand()&nbsp;event<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.expandedKey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key<br/><br/>
 
@@ -279,6 +279,48 @@ if(isLeaf&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.selectedKey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_noNodeUpdate">void<br/>noNodeUpdate</td>
+<td valign="top" width="*" class="function-help">informs&nbsp;the&nbsp;UI&nbsp;that&nbsp;there&nbsp;is&nbsp;no&nbsp;note&nbsp;update&nbsp;(no&nbsp;children&nbsp;under&nbsp;given&nbsp;expanded&nbsp;key)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.roundtrip&nbsp;=&nbsp;&quot;-&quot;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllNodes">void<br/>removeAllNodes</td>
+<td valign="top" width="*" class="function-help">remove&nbsp;all&nbsp;nodes<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;nodesArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.nodesContent&nbsp;=&nbsp;JSON.stringify(nodesArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.cleanAll&nbsp;=&nbsp;true;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -305,48 +347,6 @@ return&nbsp;this.selectedKey;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.selectedKey&nbsp;=&nbsp;key;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getExpandedKey">String<br/>getExpandedKey</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;expanded&nbsp;key&nbsp;-&nbsp;can&nbsp;be&nbsp;used&nbsp;in&nbsp;onFirstExpand()&nbsp;event<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.expandedKey;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_noNodeUpdate">void<br/>noNodeUpdate</td>
-<td valign="top" width="*" class="function-help">informs&nbsp;the&nbsp;UI&nbsp;that&nbsp;there&nbsp;is&nbsp;no&nbsp;note&nbsp;update&nbsp;(no&nbsp;children&nbsp;under&nbsp;given&nbsp;expanded&nbsp;key)<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.roundtrip&nbsp;=&nbsp;&quot;-&quot;;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

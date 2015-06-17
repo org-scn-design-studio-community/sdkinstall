@@ -45,32 +45,30 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>orientation<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Orientation</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">horizontal</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">vertical</td>
-<td class="value-td">&nbsp;</td>
-</tr>
+<td width="120px" class="property-name-type"><B>barFillOpacity<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bar Fill Opacity (0.00 - 1.00)</B><br/>&nbsp;
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">horizontal</td>
+<td width="100px" class="property-default">1</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>inlineLabels<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>In-Line Labels</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>barHeight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bar Height (-1 = auto height)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">false</td>
+<td width="100px" class="property-default">-1</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>barRoundness<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bar Roundness</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">5</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -92,21 +90,21 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>gradientStartOpacity<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Gradient Start Opacity (0.00 - 1.00)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">.35</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>gradientStartColor<br/>[Color]</B></td>
 <td width="*" class="property-title-tooltip"><B>Gradient Start Color</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">#FFFFFF</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>gradientStartOpacity<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Gradient Start Opacity (0.00 - 1.00)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">.35</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -119,15 +117,6 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>gradientStopOpacity<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Gradient Stop Opacity (0.00 - 1.00)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">.05</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>gradientStopColor<br/>[Color]</B></td>
 <td width="*" class="property-title-tooltip"><B>Gradient Stop Color</B><br/>&nbsp;
 
@@ -137,30 +126,21 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>barFillOpacity<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bar Fill Opacity (0.00 - 1.00)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>gradientStopOpacity<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Gradient Stop Opacity (0.00 - 1.00)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">1</td>
+<td width="100px" class="property-default">.05</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>barRoundness<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bar Roundness</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>inlineLabels<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>In-Line Labels</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">5</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>barHeight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bar Height (-1 = auto height)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">-1</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -170,6 +150,26 @@
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">150</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>orientation<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Orientation</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">horizontal</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">vertical</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">horizontal</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -202,9 +202,21 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setBarThickness [<a href="#FUNCTION_setBarThickness">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">thickness</td>
+<td valign="top" width="240px" class="function-short-name">addBar [<a href="#FUNCTION_addBar">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">title, (number), (numberUnit), (fillColor)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getBarClicked [<a href="#FUNCTION_getBarClicked">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getBarProperty [<a href="#FUNCTION_getBarProperty">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">title</td>
+<td valign="top" width="160px" class="function-short-return">com.sample.utilities.BarProperty</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -214,21 +226,9 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setInlineLabels [<a href="#FUNCTION_setInlineLabels">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">isInline</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getInlineLabels [<a href="#FUNCTION_getInlineLabels">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getBarClicked [<a href="#FUNCTION_getBarClicked">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -244,14 +244,14 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getBarProperty [<a href="#FUNCTION_getBarProperty">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">title</td>
-<td valign="top" width="160px" class="function-short-return">com.sample.utilities.BarProperty</td>
+<td valign="top" width="240px" class="function-short-name">setBarThickness [<a href="#FUNCTION_setBarThickness">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">thickness</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addBar [<a href="#FUNCTION_addBar">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">title, (number), (numberUnit), (fillColor)</td>
+<td valign="top" width="240px" class="function-short-name">setInlineLabels [<a href="#FUNCTION_setInlineLabels">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">isInline</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -293,15 +293,30 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setBarThickness">void<br/>setBarThickness</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;bar&nbsp;thickness&nbsp;(-1&nbsp;=&nbsp;auto)<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addBar">void<br/>addBar</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;or&nbsp;Updates&nbsp;a&nbsp;Bar&nbsp;(if&nbsp;title&nbsp;already&nbsp;exists)<br/><div class='html-example'">Add/Update&nbsp;a&nbsp;bar&nbsp;called&nbsp;"Sales"<br/><div class='html-code'>PROGRESSET_1.addBar("Sales",&nbsp;"#FF0000",&nbsp;"1234",&nbsp;"USD");<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>thickness</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Thickness </td>
+<td width="120px" class="parameter-name"><B>title</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Title</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>number</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Number</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>numberUnit</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Number Unit</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>fillColor</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Fill Color</td>
 </tr>
 
 </TABLE>
@@ -311,7 +326,54 @@
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.barHeight&nbsp;=&nbsp;thickness;
+var&nbsp;o&nbsp;=&nbsp;eval(this.barConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!o)&nbsp;o&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;bar&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;title,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:&nbsp;fillColor&nbsp;||&nbsp;&quot;auto&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number:&nbsp;number,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberUnit:&nbsp;numberUnit<br/>&nbsp;&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].title&nbsp;==&nbsp;title)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex==-1){&nbsp;&nbsp;//&nbsp;New&nbsp;Bar<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o.push(bar);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}else{&nbsp;&nbsp;//&nbsp;Update&nbsp;Bar<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o[matchIndex]&nbsp;=&nbsp;bar;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;barConfig&nbsp;=&nbsp;JSON.stringify(o);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getBarClicked">String<br/>getBarClicked</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Bar&nbsp;Selected<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selectedBar;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getBarProperty">com.sample.utilities.BarProperty<br/>getBarProperty</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>title</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Title</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;r&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;:&nbsp;&quot;&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor&nbsp;:&nbsp;&quot;&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;:&nbsp;&quot;&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberUnit&nbsp;:&nbsp;&quot;&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;o&nbsp;=&nbsp;eval(this.barConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].title&nbsp;==&nbsp;title)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;barConf&nbsp;=&nbsp;o[matchIndex];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.title&nbsp;=&nbsp;barConf.title;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.fillColor&nbsp;=&nbsp;barConf.fillColor;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.number&nbsp;=&nbsp;tileConf.number;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.numberUnit&nbsp;=&nbsp;tileConf.numberUnit;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;r;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -340,32 +402,6 @@ return&nbsp;this.barHeight;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setInlineLabels">void<br/>setInlineLabels</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;inline&nbsp;labels&nbsp;to&nbsp;true/false<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>isInline</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> true/false </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.inlineLabels&nbsp;=&nbsp;isInline;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getInlineLabels">boolean<br/>getInlineLabels</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;whether&nbsp;labels&nbsp;are&nbsp;inline&nbsp;are&nbsp;not<br/><br/>
 
@@ -380,27 +416,6 @@ this.inlineLabels&nbsp;=&nbsp;isInline;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.inlineLabels;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getBarClicked">String<br/>getBarClicked</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Bar&nbsp;Selected<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.selectedBar;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -455,15 +470,15 @@ var&nbsp;o&nbsp;=&nbsp;eval(this.barConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!o)&
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getBarProperty">com.sample.utilities.BarProperty<br/>getBarProperty</td>
-<td valign="top" width="*" class="function-help"><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setBarThickness">void<br/>setBarThickness</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;bar&nbsp;thickness&nbsp;(-1&nbsp;=&nbsp;auto)<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>title</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Title</td>
+<td width="120px" class="parameter-name"><B>thickness</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> Thickness </td>
 </tr>
 
 </TABLE>
@@ -473,7 +488,7 @@ var&nbsp;o&nbsp;=&nbsp;eval(this.barConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!o)&
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;r&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;:&nbsp;&quot;&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor&nbsp;:&nbsp;&quot;&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;:&nbsp;&quot;&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberUnit&nbsp;:&nbsp;&quot;&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;o&nbsp;=&nbsp;eval(this.barConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].title&nbsp;==&nbsp;title)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;barConf&nbsp;=&nbsp;o[matchIndex];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.title&nbsp;=&nbsp;barConf.title;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.fillColor&nbsp;=&nbsp;barConf.fillColor;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.number&nbsp;=&nbsp;tileConf.number;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.numberUnit&nbsp;=&nbsp;tileConf.numberUnit;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;r;
+this.barHeight&nbsp;=&nbsp;thickness;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -481,30 +496,15 @@ var&nbsp;r&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;:&nb
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addBar">void<br/>addBar</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;or&nbsp;Updates&nbsp;a&nbsp;Bar&nbsp;(if&nbsp;title&nbsp;already&nbsp;exists)<br/><div class='html-example'">Add/Update&nbsp;a&nbsp;bar&nbsp;called&nbsp;"Sales"<br/><div class='html-code'>PROGRESSET_1.addBar("Sales",&nbsp;"#FF0000",&nbsp;"1234",&nbsp;"USD");<br></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setInlineLabels">void<br/>setInlineLabels</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;inline&nbsp;labels&nbsp;to&nbsp;true/false<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>title</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Title</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>number</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">Number</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>numberUnit</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">Number Unit</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>fillColor</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">Fill Color</td>
+<td width="120px" class="parameter-name"><B>isInline</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> true/false </td>
 </tr>
 
 </TABLE>
@@ -514,7 +514,7 @@ var&nbsp;r&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;:&nb
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;o&nbsp;=&nbsp;eval(this.barConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!o)&nbsp;o&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;bar&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;title,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:&nbsp;fillColor&nbsp;||&nbsp;&quot;auto&quot;,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number:&nbsp;number,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberUnit:&nbsp;numberUnit<br/>&nbsp;&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].title&nbsp;==&nbsp;title)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex==-1){&nbsp;&nbsp;//&nbsp;New&nbsp;Bar<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o.push(bar);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}else{&nbsp;&nbsp;//&nbsp;Update&nbsp;Bar<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o[matchIndex]&nbsp;=&nbsp;bar;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;barConfig&nbsp;=&nbsp;JSON.stringify(o);
+this.inlineLabels&nbsp;=&nbsp;isInline;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

@@ -47,12 +47,53 @@ This component visualizes current time according to given UTC offset and locale 
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>utcoffset<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>UTC Offset</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>dateformat<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Date Format</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">dd.mm.yy</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">dd.mm</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">mm.yy</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">hide</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">default</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">dd.mm.yy</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>daylightsaving<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Consider Daylight Saving</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">0</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>interval<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Update Interval (in ms)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">5000</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -89,47 +130,6 @@ This component visualizes current time according to given UTC offset and locale 
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>daylightsaving<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Consider Daylight Saving</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>dateformat<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Date Format</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">dd.mm.yy</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">dd.mm</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">mm.yy</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">hide</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">default</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">dd.mm.yy</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>timeformat<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Time Format</B><br/>&nbsp;
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
@@ -158,12 +158,12 @@ This component visualizes current time according to given UTC offset and locale 
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>interval<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Update Interval (in ms)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>utcoffset<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>UTC Offset</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">5000</td>
+<td width="100px" class="property-default">0</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 

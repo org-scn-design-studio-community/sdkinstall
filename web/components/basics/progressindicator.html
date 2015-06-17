@@ -135,9 +135,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58005">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setPercentValue [<a href="#FUNCTION_setPercentValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">percentValue</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getDisplayValue [<a href="#FUNCTION_getDisplayValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -153,9 +153,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58005">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getDisplayValue [<a href="#FUNCTION_getDisplayValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="240px" class="function-short-name">setPercentValue [<a href="#FUNCTION_setPercentValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">percentValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -178,16 +178,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58005">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPercentValue">void<br/>setPercentValue</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;percentage&nbsp;value&nbsp;of&nbsp;the&nbsp;progress&nbsp;bar<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDisplayValue">String<br/>getDisplayValue</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;text&nbsp;value&nbsp;displayed&nbsp;in&nbsp;the&nbsp;bar<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>percentValue</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Percent value </td>
-</tr>
+
 
 </TABLE>
 
@@ -196,7 +191,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58005">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.percentValue&nbsp;=&nbsp;percentValue;
+return&nbsp;this.displayValue;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -251,11 +246,16 @@ this.displayValue&nbsp;=&nbsp;displayValue;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDisplayValue">String<br/>getDisplayValue</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;text&nbsp;value&nbsp;displayed&nbsp;in&nbsp;the&nbsp;bar<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPercentValue">void<br/>setPercentValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;percentage&nbsp;value&nbsp;of&nbsp;the&nbsp;progress&nbsp;bar<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>percentValue</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> Percent value </td>
+</tr>
 
 </TABLE>
 
@@ -264,7 +264,7 @@ this.displayValue&nbsp;=&nbsp;displayValue;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.displayValue;
+this.percentValue&nbsp;=&nbsp;percentValue;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

@@ -45,33 +45,6 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>titles<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Titles</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">Facebook,YouTube,Twitter,SAP</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>spriteIDs<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Sprite IDs (Optional)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>visibilities<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Visibilities (Optional)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>fixedWidth<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Fixed Width (-1 for auto)</B><br/>&nbsp;
 
@@ -81,8 +54,17 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>spriteSheet<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icon Sprite Sheet (Optional)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>iconHeight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Icon Height (px)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>iconWidth<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Icon Width (px)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -96,6 +78,26 @@
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>labelOrientation<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Label Orientation</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">horizontal</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">vertical</td>
+<td class="value-td">X</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">vertical</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -119,23 +121,30 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>labelOrientation<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Label Orientation</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">horizontal</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">vertical</td>
-<td class="value-td">X</td>
-</tr>
+<td width="120px" class="property-name-type"><B>spriteIDs<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Sprite IDs (Optional)</B><br/>&nbsp;
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">vertical</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>spriteSheet<br/>[Url]</B></td>
+<td width="*" class="property-title-tooltip"><B>Icon Sprite Sheet (Optional)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>spriteSheetPerRow<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Icons Sprites Per Row</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -163,6 +172,15 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>titles<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Titles</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Facebook,YouTube,Twitter,SAP</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>verticalAlign<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Vertical Alignment</B><br/>&nbsp;
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
@@ -187,26 +205,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>spriteSheetPerRow<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icons Sprites Per Row</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>iconWidth<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icon Width (px)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>iconHeight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icon Height (px)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>visibilities<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Visibilities (Optional)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -249,12 +249,6 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setTitles [<a href="#FUNCTION_setTitles">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">titles</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getTitles [<a href="#FUNCTION_getTitles">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -263,6 +257,12 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">resetSelection [<a href="#FUNCTION_resetSelection">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTitles [<a href="#FUNCTION_setTitles">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">titles</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -316,32 +316,6 @@ return&nbsp;this.labelClicked;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTitles">void<br/>setTitles</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;titles&nbsp;of&nbsp;your&nbsp;menu&nbsp;elements.<br/><div class='html-example'"><div class='html-code'>LISTSELECTOR_1.setTitles("Google,Bing,Ask.com");</div></div><note>Seperate&nbsp;each&nbsp;entry&nbsp;by&nbsp;a&nbsp;comma.</note><br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>titles</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Titles </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.titles&nbsp;=&nbsp;titles;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTitles">String<br/>getTitles</td>
 <td valign="top" width="*" class="function-help">Get&nbsp;list&nbsp;of&nbsp;menu&nbsp;element&nbsp;titles.<br/><div class='html-example'"><div class='html-code'>var&nbsp;titles&nbsp;=&nbsp;LISTSELECTOR_1.getTitles();</div></div><returns>Comma-seperated&nbsp;list&nbsp;of&nbsp;menu&nbsp;element&nbsp;titles</returns><br/><br/>
 
@@ -377,6 +351,32 @@ return&nbsp;this.titles;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.labelUnselect&nbsp;=&nbsp;true;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTitles">void<br/>setTitles</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;titles&nbsp;of&nbsp;your&nbsp;menu&nbsp;elements.<br/><div class='html-example'"><div class='html-code'>LISTSELECTOR_1.setTitles("Google,Bing,Ask.com");</div></div><note>Seperate&nbsp;each&nbsp;entry&nbsp;by&nbsp;a&nbsp;comma.</note><br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>titles</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Titles </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.titles&nbsp;=&nbsp;titles;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

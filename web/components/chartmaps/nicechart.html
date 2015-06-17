@@ -91,12 +91,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DSwapAxes<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Swap Axes</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DColorDistance<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Starting Color Distance</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">false</td>
+<td width="100px" class="property-default">0.2</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -106,15 +106,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">120</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DColorDistance<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Starting Color Distance</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">0.2</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -151,15 +142,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">triade</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DShowLegend<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Show Legend</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -200,6 +182,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 <td width="100px" class="property-default">100</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DShowLegend<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Legend</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DSwapAxes<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Swap Axes</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
 
 	</TABLE>
 
@@ -221,45 +221,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setChartType [<a href="#FUNCTION_setChartType">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">chartType</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getChartType [<a href="#FUNCTION_getChartType">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">choice</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSwapAxes [<a href="#FUNCTION_setSwapAxes">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">swapAxes</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSwapAxes [<a href="#FUNCTION_getSwapAxes">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColorHue [<a href="#FUNCTION_setColorHue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">colorHue</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getColorHue [<a href="#FUNCTION_getColorHue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColorDistance [<a href="#FUNCTION_setColorDistance">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">colorDistance</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -269,9 +233,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColorPalette [<a href="#FUNCTION_setColorPalette">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">colorPalette</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getColorHue [<a href="#FUNCTION_getColorHue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -281,33 +245,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setShowLegend [<a href="#FUNCTION_setShowLegend">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">showLegend</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getShowLegend [<a href="#FUNCTION_getShowLegend">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setLegendPosition [<a href="#FUNCTION_setLegendPosition">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">legendPosition</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getLegendPosition [<a href="#FUNCTION_getLegendPosition">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">choice</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setLegendWidth [<a href="#FUNCTION_setLegendWidth">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">legendWidth</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -317,15 +257,75 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMaxDataPoints [<a href="#FUNCTION_getMaxDataPoints">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getShowLegend [<a href="#FUNCTION_getShowLegend">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSwapAxes [<a href="#FUNCTION_getSwapAxes">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setChartType [<a href="#FUNCTION_setChartType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">chartType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColorDistance [<a href="#FUNCTION_setColorDistance">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">colorDistance</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColorHue [<a href="#FUNCTION_setColorHue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">colorHue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColorPalette [<a href="#FUNCTION_setColorPalette">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">colorPalette</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setLegendPosition [<a href="#FUNCTION_setLegendPosition">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">legendPosition</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setLegendWidth [<a href="#FUNCTION_setLegendWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">legendWidth</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMaxDataPoints [<a href="#FUNCTION_setMaxDataPoints">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">maxDataPoints</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getMaxDataPoints [<a href="#FUNCTION_getMaxDataPoints">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
+<td valign="top" width="240px" class="function-short-name">setShowLegend [<a href="#FUNCTION_setShowLegend">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">showLegend</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSwapAxes [<a href="#FUNCTION_setSwapAxes">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">swapAxes</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -357,32 +357,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62604">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setChartType">void<br/>setChartType</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Chart&nbsp;Type&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>chartType</B></td>
-<td width="120px" class="parameter-type"><B>choice</B></td>
-<td width="*" class="parameter-help"> &nbsp; </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DChartType&nbsp;=&nbsp;chartType;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getChartType">choice<br/>getChartType</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Chart&nbsp;Type&nbsp;Property<br/><br/>
 
@@ -404,16 +378,11 @@ return&nbsp;this.DChartType;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSwapAxes">void<br/>setSwapAxes</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Swap&nbsp;Axes&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorDistance">float<br/>getColorDistance</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Starting&nbsp;Color&nbsp;Distance&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>swapAxes</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> &nbsp; </td>
-</tr>
+
 
 </TABLE>
 
@@ -422,7 +391,133 @@ return&nbsp;this.DChartType;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DSwapAxes&nbsp;=&nbsp;swapAxes;
+return&nbsp;this.DColorDistance;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorHue">int<br/>getColorHue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Starting&nbsp;Color&nbsp;Hue&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DColorHue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorPalette">choice<br/>getColorPalette</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Starting&nbsp;Color&nbsp;Palette&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DColorPalette;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLegendPosition">choice<br/>getLegendPosition</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Legend&nbsp;Position&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DLegendPosition;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLegendWidth">int<br/>getLegendWidth</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Width&nbsp;of&nbsp;Legend&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DLegendWidth;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMaxDataPoints">int<br/>getMaxDataPoints</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Maximum&nbsp;Number&nbsp;of&nbsp;Data&nbsp;Points&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DMaxDataPoints;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getShowLegend">boolean<br/>getShowLegend</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Legend&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DShowLegend;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -451,14 +546,14 @@ return&nbsp;this.DSwapAxes;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColorHue">void<br/>setColorHue</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Starting&nbsp;Color&nbsp;Hue&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setChartType">void<br/>setChartType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Chart&nbsp;Type&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>colorHue</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="120px" class="parameter-name"><B>chartType</B></td>
+<td width="120px" class="parameter-type"><B>choice</B></td>
 <td width="*" class="parameter-help"> &nbsp; </td>
 </tr>
 
@@ -469,28 +564,7 @@ return&nbsp;this.DSwapAxes;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DColorHue&nbsp;=&nbsp;colorHue;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorHue">int<br/>getColorHue</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Starting&nbsp;Color&nbsp;Hue&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DColorHue;
+this.DChartType&nbsp;=&nbsp;chartType;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -524,11 +598,16 @@ this.DColorDistance&nbsp;=&nbsp;colorDistance;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorDistance">float<br/>getColorDistance</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Starting&nbsp;Color&nbsp;Distance&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColorHue">void<br/>setColorHue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Starting&nbsp;Color&nbsp;Hue&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>colorHue</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
 
 </TABLE>
 
@@ -537,7 +616,7 @@ this.DColorDistance&nbsp;=&nbsp;colorDistance;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DColorDistance;
+this.DColorHue&nbsp;=&nbsp;colorHue;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -571,74 +650,6 @@ this.DColorPalette&nbsp;=&nbsp;colorPalette;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorPalette">choice<br/>getColorPalette</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Starting&nbsp;Color&nbsp;Palette&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DColorPalette;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setShowLegend">void<br/>setShowLegend</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Legend&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>showLegend</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> &nbsp; </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DShowLegend&nbsp;=&nbsp;showLegend;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getShowLegend">boolean<br/>getShowLegend</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Legend&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DShowLegend;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setLegendPosition">void<br/>setLegendPosition</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Legend&nbsp;Position&nbsp;Property<br/><br/>
 
@@ -658,27 +669,6 @@ return&nbsp;this.DShowLegend;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DLegendPosition&nbsp;=&nbsp;legendPosition;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLegendPosition">choice<br/>getLegendPosition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Legend&nbsp;Position&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DLegendPosition;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -712,27 +702,6 @@ this.DLegendWidth&nbsp;=&nbsp;legendWidth;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLegendWidth">int<br/>getLegendWidth</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Width&nbsp;of&nbsp;Legend&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DLegendWidth;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaxDataPoints">void<br/>setMaxDataPoints</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Maximum&nbsp;Number&nbsp;of&nbsp;Data&nbsp;Points&nbsp;Property<br/><br/>
 
@@ -759,11 +728,16 @@ this.DMaxDataPoints&nbsp;=&nbsp;maxDataPoints;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMaxDataPoints">int<br/>getMaxDataPoints</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Maximum&nbsp;Number&nbsp;of&nbsp;Data&nbsp;Points&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setShowLegend">void<br/>setShowLegend</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Legend&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>showLegend</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
 
 </TABLE>
 
@@ -772,7 +746,33 @@ this.DMaxDataPoints&nbsp;=&nbsp;maxDataPoints;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DMaxDataPoints;
+this.DShowLegend&nbsp;=&nbsp;showLegend;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSwapAxes">void<br/>setSwapAxes</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Swap&nbsp;Axes&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>swapAxes</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DSwapAxes&nbsp;=&nbsp;swapAxes;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

@@ -45,41 +45,8 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>QR Code Text</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">QRCode Text</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>render<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Render Mode</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">canvas</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">div</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">image</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">canvas</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>printOnly<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Only show on printouts</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>background<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Background Color</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -115,12 +82,12 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>minVersion<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Min Version (1-40)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>fill<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Fill Color</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">1</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -133,8 +100,17 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>fill<br/>[Color]</B></td>
-<td width="*" class="property-title-tooltip"><B>Fill Color</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>minVersion<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Min Version (1-40)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">1</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>printOnly<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Only show on printouts</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -142,12 +118,12 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>background<br/>[Color]</B></td>
-<td width="*" class="property-title-tooltip"><B>Background Color</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>quiet<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Quiet Zone</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">0</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -160,12 +136,36 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>quiet<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Quiet Zone</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>render<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Render Mode</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">canvas</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">div</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">image</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">canvas</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>QR Code Text</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">0</td>
+<td width="100px" class="property-default">QRCode Text</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -198,25 +198,37 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setText [<a href="#FUNCTION_setText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">text</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getText [<a href="#FUNCTION_getText">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getBackground [<a href="#FUNCTION_getBackground">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setFill [<a href="#FUNCTION_setFill">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">color</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getFill [<a href="#FUNCTION_getFill">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getFill [<a href="#FUNCTION_getFill">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getPrintOnly [<a href="#FUNCTION_getPrintOnly">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getQuiet [<a href="#FUNCTION_getQuiet">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRadius [<a href="#FUNCTION_getRadius">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getText [<a href="#FUNCTION_getText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -228,33 +240,9 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getBackground [<a href="#FUNCTION_getBackground">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setRadius [<a href="#FUNCTION_setRadius">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">radius</td>
+<td valign="top" width="240px" class="function-short-name">setFill [<a href="#FUNCTION_setFill">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">color</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getRadius [<a href="#FUNCTION_getRadius">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">float</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setQuiet [<a href="#FUNCTION_setQuiet">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">amount</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getQuiet [<a href="#FUNCTION_getQuiet">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -264,9 +252,21 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getPrintOnly [<a href="#FUNCTION_getPrintOnly">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="240px" class="function-short-name">setQuiet [<a href="#FUNCTION_setQuiet">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">amount</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRadius [<a href="#FUNCTION_setRadius">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">radius</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setText [<a href="#FUNCTION_setText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">text</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -289,34 +289,8 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setText">void<br/>setText</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;QRCode&nbsp;Text<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>text</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Text </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.text&nbsp;=&nbsp;text;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getText">String<br/>getText</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;QRCode&nbsp;Text<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getBackground">String<br/>getBackground</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Background&nbsp;Color<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -328,33 +302,7 @@ this.text&nbsp;=&nbsp;text;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.text;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFill">void<br/>setFill</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Fill&nbsp;Color<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>color</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Color </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.fill&nbsp;=&nbsp;color;
+return&nbsp;this.background;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -376,6 +324,90 @@ this.fill&nbsp;=&nbsp;color;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.fill;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPrintOnly">String<br/>getPrintOnly</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Print-Only<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.printOnly;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getQuiet">int<br/>getQuiet</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Quiet&nbsp;Amount<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.quiet;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRadius">float<br/>getRadius</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Radius<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.fill;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getText">String<br/>getText</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;QRCode&nbsp;Text<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.text;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -409,36 +441,15 @@ this.background&nbsp;=&nbsp;color;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getBackground">String<br/>getBackground</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Background&nbsp;Color<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.background;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRadius">void<br/>setRadius</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Radius<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFill">void<br/>setFill</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Fill&nbsp;Color<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>radius</B></td>
-<td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help"> Radius (0.0 - 0.5) </td>
+<td width="120px" class="parameter-name"><B>color</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Color </td>
 </tr>
 
 </TABLE>
@@ -448,75 +459,7 @@ return&nbsp;this.background;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.radius&nbsp;=&nbsp;radius;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRadius">float<br/>getRadius</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Radius<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.fill;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setQuiet">void<br/>setQuiet</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Quiet&nbsp;Amount<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>amount</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Amount </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.quiet&nbsp;=&nbsp;amount;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getQuiet">int<br/>getQuiet</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Quiet&nbsp;Amount<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.quiet;
+this.fill&nbsp;=&nbsp;color;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -550,11 +493,16 @@ this.printOnly&nbsp;=&nbsp;printOnly;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPrintOnly">String<br/>getPrintOnly</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Print-Only<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setQuiet">void<br/>setQuiet</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Quiet&nbsp;Amount<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>amount</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> Amount </td>
+</tr>
 
 </TABLE>
 
@@ -563,7 +511,59 @@ this.printOnly&nbsp;=&nbsp;printOnly;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.printOnly;
+this.quiet&nbsp;=&nbsp;amount;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRadius">void<br/>setRadius</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Radius<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>radius</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help"> Radius (0.0 - 0.5) </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.radius&nbsp;=&nbsp;radius;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setText">void<br/>setText</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;QRCode&nbsp;Text<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Text </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.text&nbsp;=&nbsp;text;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

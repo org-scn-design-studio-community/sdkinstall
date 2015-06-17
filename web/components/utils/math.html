@@ -95,6 +95,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61861">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">average [<a href="#FUNCTION_average">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">elements</td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">averageV [<a href="#FUNCTION_averageV">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">elements</td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">ceil [<a href="#FUNCTION_ceil">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">value</td>
 <td valign="top" width="160px" class="function-short-return">float</td>
@@ -131,8 +143,26 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61861">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">median [<a href="#FUNCTION_median">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">elements</td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">medianV [<a href="#FUNCTION_medianV">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">elements</td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">min [<a href="#FUNCTION_min">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">value, value2, (value3), (value4)</td>
+<td valign="top" width="160px" class="function-short-return">float</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">percent [<a href="#FUNCTION_percent">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">number, sum</td>
 <td valign="top" width="160px" class="function-short-return">float</td>
 </tr>
 
@@ -167,12 +197,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61861">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">tan [<a href="#FUNCTION_tan">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">float</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">sum [<a href="#FUNCTION_sum">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">elements</td>
 <td valign="top" width="160px" class="function-short-return">float</td>
@@ -185,32 +209,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61861">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">average [<a href="#FUNCTION_average">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">elements</td>
-<td valign="top" width="160px" class="function-short-return">float</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">averageV [<a href="#FUNCTION_averageV">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">elements</td>
-<td valign="top" width="160px" class="function-short-return">float</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">percent [<a href="#FUNCTION_percent">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">number, sum</td>
-<td valign="top" width="160px" class="function-short-return">float</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">median [<a href="#FUNCTION_median">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">elements</td>
-<td valign="top" width="160px" class="function-short-return">float</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">medianV [<a href="#FUNCTION_medianV">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">elements</td>
+<td valign="top" width="240px" class="function-short-name">tan [<a href="#FUNCTION_tan">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
 <td valign="top" width="160px" class="function-short-return">float</td>
 </tr>
 
@@ -331,6 +331,58 @@ return&nbsp;Math.asin(value);
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;Math.atan(value);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_average">float<br/>average</td>
+<td valign="top" width="*" class="function-help">Calculates&nbsp;average&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;StringArray<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elements</B></td>
+<td width="120px" class="parameter-type"><B>StringArray</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;sum&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(&nbsp;var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elements.length;&nbsp;i++&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum&nbsp;+=&nbsp;parseFloat(&nbsp;elements[i]&nbsp;);&nbsp;//don't&nbsp;forget&nbsp;to&nbsp;add&nbsp;the&nbsp;base<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;avg&nbsp;=&nbsp;sum/elements.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;avg;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_averageV">float<br/>averageV</td>
+<td valign="top" width="*" class="function-help">Calculates&nbsp;average&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;org.scn.community.shared.KeyLabelValueArray<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elements</B></td>
+<td width="120px" class="parameter-type"><B>org.scn.community.shared.KeyLabelValueArray</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;sum&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(&nbsp;var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elements.length;&nbsp;i++&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum&nbsp;+=&nbsp;parseFloat(&nbsp;elements[i].value&nbsp;);&nbsp;//don't&nbsp;forget&nbsp;to&nbsp;add&nbsp;the&nbsp;base<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;avg&nbsp;=&nbsp;sum/elements.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;avg;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -509,6 +561,58 @@ if(value4&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_median">float<br/>median</td>
+<td valign="top" width="*" class="function-help">Calculates&nbsp;median&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;StringArray<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elements</B></td>
+<td width="120px" class="parameter-type"><B>StringArray</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+elements.sort(&nbsp;function(a,b)&nbsp;{return&nbsp;parseFloat(a)&nbsp;-&nbsp;parseFloat(b);}&nbsp;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;half&nbsp;=&nbsp;Math.floor(elements.length/2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elements.length&nbsp;%&nbsp;2&nbsp;==&nbsp;1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;parseFloat(elements[half]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(parseFloat(elements[half-1])&nbsp;+&nbsp;parseFloat(elements[half]))&nbsp;/&nbsp;2.0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_medianV">float<br/>medianV</td>
+<td valign="top" width="*" class="function-help">Calculates&nbsp;median&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;org.scn.community.shared.KeyLabelValueArray<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elements</B></td>
+<td width="120px" class="parameter-type"><B>org.scn.community.shared.KeyLabelValueArray</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+elements.sort(&nbsp;function(a,b)&nbsp;{return&nbsp;a.value&nbsp;-&nbsp;b.value;}&nbsp;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;half&nbsp;=&nbsp;Math.floor(elements.length/2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elements.length&nbsp;%&nbsp;2&nbsp;==&nbsp;1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;elements[half].value;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(elements[half-1].value&nbsp;+&nbsp;elements[half].value)&nbsp;/&nbsp;2.0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_min">float<br/>min</td>
 <td valign="top" width="*" class="function-help">Math.min()&nbsp;and&nbsp;Math.max()&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;find&nbsp;the&nbsp;lowest&nbsp;or&nbsp;highest&nbsp;value&nbsp;in&nbsp;a&nbsp;list&nbsp;of&nbsp;arguments&nbsp;(min&nbsp;2,&nbsp;max&nbsp;4)<br/><br/>
 
@@ -543,6 +647,37 @@ if(value4&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if(value4&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Math.min(value,&nbsp;value2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(value3&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Math.min(value,&nbsp;value2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Math.min(value,&nbsp;value2,&nbsp;value3);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Math.min(value,&nbsp;value2,&nbsp;value3,&nbsp;value4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_percent">float<br/>percent</td>
+<td valign="top" width="*" class="function-help">Calculates&nbsp;percentage&nbsp;of&nbsp;the&nbsp;number&nbsp;to&nbsp;the&nbsp;sum<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>number</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>sum</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;perc&nbsp;=&nbsp;(number/sum)&nbsp;*&nbsp;100;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;perc&nbsp;;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -680,32 +815,6 @@ return&nbsp;Math.sqrt(value);
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_tan">float<br/>tan</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;tangent&nbsp;of&nbsp;an&nbsp;angle<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;Math.tan(value);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_sum">float<br/>sum</td>
 <td valign="top" width="*" class="function-help">Calculates&nbsp;sum&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;StringArray<br/><br/>
 
@@ -758,70 +867,13 @@ var&nbsp;sum&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(&nbsp;var&nbsp;i&nbs
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_average">float<br/>average</td>
-<td valign="top" width="*" class="function-help">Calculates&nbsp;average&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;StringArray<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_tan">float<br/>tan</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;tangent&nbsp;of&nbsp;an&nbsp;angle<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elements</B></td>
-<td width="120px" class="parameter-type"><B>StringArray</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;sum&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(&nbsp;var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elements.length;&nbsp;i++&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum&nbsp;+=&nbsp;parseFloat(&nbsp;elements[i]&nbsp;);&nbsp;//don't&nbsp;forget&nbsp;to&nbsp;add&nbsp;the&nbsp;base<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;avg&nbsp;=&nbsp;sum/elements.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;avg;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_averageV">float<br/>averageV</td>
-<td valign="top" width="*" class="function-help">Calculates&nbsp;average&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;org.scn.community.shared.KeyLabelValueArray<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elements</B></td>
-<td width="120px" class="parameter-type"><B>org.scn.community.shared.KeyLabelValueArray</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;sum&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(&nbsp;var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elements.length;&nbsp;i++&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum&nbsp;+=&nbsp;parseFloat(&nbsp;elements[i].value&nbsp;);&nbsp;//don't&nbsp;forget&nbsp;to&nbsp;add&nbsp;the&nbsp;base<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;avg&nbsp;=&nbsp;sum/elements.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;avg;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_percent">float<br/>percent</td>
-<td valign="top" width="*" class="function-help">Calculates&nbsp;percentage&nbsp;of&nbsp;the&nbsp;number&nbsp;to&nbsp;the&nbsp;sum<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>number</B></td>
-<td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>sum</B></td>
+<td width="120px" class="parameter-name"><B>value</B></td>
 <td width="120px" class="parameter-type"><B>float</B></td>
 <td width="*" class="parameter-help"></td>
 </tr>
@@ -833,59 +885,7 @@ var&nbsp;sum&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(&nbsp;var&nbsp;i&nbs
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;perc&nbsp;=&nbsp;(number/sum)&nbsp;*&nbsp;100;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;perc&nbsp;;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_median">float<br/>median</td>
-<td valign="top" width="*" class="function-help">Calculates&nbsp;median&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;StringArray<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elements</B></td>
-<td width="120px" class="parameter-type"><B>StringArray</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-elements.sort(&nbsp;function(a,b)&nbsp;{return&nbsp;parseFloat(a)&nbsp;-&nbsp;parseFloat(b);}&nbsp;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;half&nbsp;=&nbsp;Math.floor(elements.length/2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elements.length&nbsp;%&nbsp;2&nbsp;==&nbsp;1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;parseFloat(elements[half]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(parseFloat(elements[half-1])&nbsp;+&nbsp;parseFloat(elements[half]))&nbsp;/&nbsp;2.0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_medianV">float<br/>medianV</td>
-<td valign="top" width="*" class="function-help">Calculates&nbsp;median&nbsp;of&nbsp;all&nbsp;given&nbsp;floats&nbsp;as&nbsp;org.scn.community.shared.KeyLabelValueArray<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elements</B></td>
-<td width="120px" class="parameter-type"><B>org.scn.community.shared.KeyLabelValueArray</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-elements.sort(&nbsp;function(a,b)&nbsp;{return&nbsp;a.value&nbsp;-&nbsp;b.value;}&nbsp;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;half&nbsp;=&nbsp;Math.floor(elements.length/2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elements.length&nbsp;%&nbsp;2&nbsp;==&nbsp;1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;elements[half].value;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(elements[half-1].value&nbsp;+&nbsp;elements[half].value)&nbsp;/&nbsp;2.0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+return&nbsp;Math.tan(value);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

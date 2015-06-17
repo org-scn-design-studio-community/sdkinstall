@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/embeddedmedia/examples.json");
 </script>
 
-<title>Embedded Media - SCN Design Studio Community</title>
+<title>Embedded Media 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,17 +27,11 @@
 	EmbeddedMedia [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Embedded Media
+	Embedded Media 2.0
 	</div>
 
 <div id="componentnav"></div>
-	<div id="intro">This page is giving short introduction to the component with summary of the change status (green/yellow/red)<div id="introStatus" height="120px"></div><br><p>
-Basic wrapper on HTML5 media tags (video / audio)
-</p>
-<p>
-Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61420">Design Studio SDK: Embedded Media Component</a>
-</p>
-</div>
+	<div id="intro">This page is giving short introduction to the component with summary of the change status (green/yellow/red)<div id="introStatus" height="120px"></div><br></div>
 	<div id="blogs" hidden="true" height="100%">This page is listing community blogs on this component, follow <a href="http://scn.sap.com/community/businessobjects-design-studio/blog/2015/04/08/introducing-blog-list-for-community-components" target="_blank">this link</a> to learn more.<div id="BlogsList" height="100%"></div></div>
 	<div id="changelog" hidden="true" height="100%">This page is listing all changes which have been done on this component with corresponding test status (green: ok, red: not ok, yellow: untested), follow <a href="http://scn.sap.com/community/businessobjects-design-studio/blog/2015/04/07/introducing-change-log-for-community-components" target="_blank">this link</a> to learn more.<div id="changelogList" height="100%"></div></div>
 	<div id="examples" hidden="true" height="100%">This page is listing all example applications with this component, follow <a href="http://scn.sap.com/community/businessobjects-design-studio/blog/2015/04/08/introducing-blog-list-for-community-components" target="_blank">this link</a> to learn more.<div id="ExamplesList" height="100%"></div></div>
@@ -51,32 +45,21 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61420">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>tag<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Tag</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">embed</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>url<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Content Url</B><br/>Url to be embedded as content
+<td width="*" class="property-title-tooltip"><B>Url</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>tag<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Tag to write</B><br/>HTML Tag to write
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">embed</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">object</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">embed</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -100,15 +83,27 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61420">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setURL [<a href="#FUNCTION_setURL">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">text</td>
+<td valign="top" width="240px" class="function-short-name">getTagAsString [<a href="#FUNCTION_getTagAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getUrl [<a href="#FUNCTION_getUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTagByString [<a href="#FUNCTION_setTagByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">tag</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getURL [<a href="#FUNCTION_getURL">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="240px" class="function-short-name">setUrl [<a href="#FUNCTION_setUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">url</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -131,16 +126,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61420">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setURL">void<br/>setURL</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;content&nbsp;url&nbsp;which&nbsp;will&nbsp;be&nbsp;embedded<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTagAsString">String<br/>getTagAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Tag&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>text</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> text </td>
-</tr>
+
 
 </TABLE>
 
@@ -149,7 +139,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61420">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.url&nbsp;=&nbsp;url;
+return&nbsp;this.tag;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -157,8 +147,8 @@ this.url&nbsp;=&nbsp;url;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getURL">String<br/>getURL</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;content&nbsp;url<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getUrl">String<br/>getUrl</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -171,6 +161,58 @@ this.url&nbsp;=&nbsp;url;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.url;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTagByString">void<br/>setTagByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Tag&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tag</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Tag</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.tag&nbsp;=&nbsp;tag;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setUrl">void<br/>setUrl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>url</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Url</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.url&nbsp;=&nbsp;url;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

@@ -51,24 +51,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59471">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Text Value</B><br/>Button text displayed at runtime
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>tooltip<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Tooltip Value</B><br/>Button tooltip displayed at runtime
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>enabled<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Enabled</B><br/>Switches enabled state of the control. Disabled fields have different colors and can not be focused.
 
@@ -113,6 +95,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59471">Design
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Text Value</B><br/>Button text displayed at runtime
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>tooltip<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Tooltip Value</B><br/>Button tooltip displayed at runtime
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
 
 	</TABLE>
 
@@ -143,15 +143,21 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59471">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getEnabled [<a href="#FUNCTION_getEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getPressed [<a href="#FUNCTION_getPressed">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setPressed [<a href="#FUNCTION_setPressed">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getText [<a href="#FUNCTION_getText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -161,21 +167,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59471">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getEnabled [<a href="#FUNCTION_getEnabled">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="240px" class="function-short-name">setPressed [<a href="#FUNCTION_setPressed">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setText [<a href="#FUNCTION_setText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">text</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getText [<a href="#FUNCTION_getText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 
@@ -198,6 +198,27 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59471">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEnabled">boolean<br/>getEnabled</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;enabled&nbsp;flag<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.enabled;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPressed">boolean<br/>getPressed</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;pressed&nbsp;state<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;get&nbsp;the&nbsp;pressed&nbsp;state&nbsp;to&nbsp;decide&nbsp;what&nbsp;to&nbsp;do<br/><div class='html-code'>var&nbsp;pressed&nbsp;=&nbsp;TOGGLEBUTTON_1.getPressed();<br/>APPLICATION.createInfoMessage("Pressed:&nbsp;"&nbsp;+&nbsp;pressed);<br/>if(pressed)&nbsp;{<br/>//&nbsp;do&nbsp;something<br/>}&nbsp;else&nbsp;{<br/>//&nbsp;do&nbsp;other&nbsp;something<br/>}<br/></div></div><br/>
 
@@ -219,16 +240,11 @@ return&nbsp;this.pressed;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPressed">void<br/>setPressed</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pressed&nbsp;state<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getText">String<br/>getText</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;text<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
+
 
 </TABLE>
 
@@ -237,7 +253,7 @@ return&nbsp;this.pressed;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.pressed&nbsp;=&nbsp;value;
+return&nbsp;this.text;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -271,11 +287,16 @@ this.enabled&nbsp;=&nbsp;value;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEnabled">boolean<br/>getEnabled</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;enabled&nbsp;flag<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPressed">void<br/>setPressed</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pressed&nbsp;state<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -284,7 +305,7 @@ this.enabled&nbsp;=&nbsp;value;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.enabled;
+this.pressed&nbsp;=&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -311,27 +332,6 @@ return&nbsp;this.enabled;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.text&nbsp;=&nbsp;text;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getText">String<br/>getText</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;text<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.text;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

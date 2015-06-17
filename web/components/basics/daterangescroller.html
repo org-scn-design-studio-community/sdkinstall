@@ -60,12 +60,54 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DSpecialDuration<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Duration of Custom Range (Custom*)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DLangFormat<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Language Dependent Format</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">14</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DLangPattern<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Custom Format Pattern</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DLangRelative<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Custom Format Relative</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DLangStyle<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Custom Format Style</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">short</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">medium</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">long</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">short</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -75,6 +117,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DSpecialDuration<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Duration of Custom Range (Custom*)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">14</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -113,57 +164,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 <td width="100px" class="property-default">Week</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DLangFormat<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Language Dependent Format</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">false</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DLangPattern<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Custom Format Pattern</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DLangStyle<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Custom Format Style</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">short</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">medium</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">long</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">short</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DLangRelative<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Custom Format Relative</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">false</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
 
 	</TABLE>
 
@@ -194,15 +194,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setEditable [<a href="#FUNCTION_setEditable">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">editable</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">isEditable [<a href="#FUNCTION_isEditable">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getEndDate [<a href="#FUNCTION_getEndDate">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -212,9 +206,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getEndDate [<a href="#FUNCTION_getEndDate">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">isEditable [<a href="#FUNCTION_isEditable">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEditable [<a href="#FUNCTION_setEditable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">editable</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -228,8 +228,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>DStartDate<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Start Date (yyyymmdd)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DEndDate<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Date (yyyymmdd)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -237,8 +237,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DEndDate<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Date (yyyymmdd)</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DStartDate<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Start Date (yyyymmdd)</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -264,34 +264,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61863">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEditable">void<br/>setEditable</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>editable</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.editable&nbsp;=&nbsp;editable;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEndDate">String<br/>getEndDate</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;end&nbsp;date<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -303,7 +277,7 @@ this.editable&nbsp;=&nbsp;editable;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.editable;
+return&nbsp;this.dEndDate;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -332,8 +306,8 @@ return&nbsp;this.DStartDate;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEndDate">String<br/>getEndDate</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;end&nbsp;date<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -345,7 +319,33 @@ return&nbsp;this.DStartDate;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.dEndDate;
+return&nbsp;this.editable;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEditable">void<br/>setEditable</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>editable</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Editable value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.editable&nbsp;=&nbsp;editable;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

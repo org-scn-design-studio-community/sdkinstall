@@ -51,8 +51,26 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59567">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>DValue<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Value</B><br/>Value
+<td width="120px" class="property-name-type"><B>DDefault<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Default Value</B><br/>Default Value (required for default validation)
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DLength<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Length</B><br/>Length (required for length validation)
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DNumber<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Number</B><br/>Number (required for than validation)
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -185,26 +203,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59567">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DLength<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Length</B><br/>Length (required for length validation)
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DNumber<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Number</B><br/>Number (required for than validation)
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DDefault<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Default Value</B><br/>Default Value (required for default validation)
+<td width="120px" class="property-name-type"><B>DValue<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Value</B><br/>Value
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -241,19 +241,19 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59567">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getValue [<a href="#FUNCTION_getValue">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getTooltip [<a href="#FUNCTION_getTooltip">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setValue [<a href="#FUNCTION_setValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getValidState [<a href="#FUNCTION_getValidState">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getTooltip [<a href="#FUNCTION_getTooltip">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getValue [<a href="#FUNCTION_getValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -271,9 +271,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59567">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getValidState [<a href="#FUNCTION_getValidState">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="240px" class="function-short-name">setValue [<a href="#FUNCTION_setValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -296,53 +296,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59567">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValue">String<br/>getValue</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DValue;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValue">void<br/>setValue</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DValue&nbsp;=&nbsp;value;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTooltip">String<br/>getTooltip</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;tooltip<br/><br/>
 
@@ -357,6 +310,48 @@ this.DValue&nbsp;=&nbsp;value;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DTooltip;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValidState">String<br/>getValidState</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;valid&nbsp;flag<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DValidState;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValue">String<br/>getValue</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;value<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DValue;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -416,11 +411,16 @@ if(value&nbsp;==&nbsp;&quot;None&quot;&nbsp;||&nbsp;value&nbsp;==&nbsp;&quot;Err
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValidState">String<br/>getValidState</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;valid&nbsp;flag<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValue">void<br/>setValue</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;value<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -429,7 +429,7 @@ if(value&nbsp;==&nbsp;&quot;None&quot;&nbsp;||&nbsp;value&nbsp;==&nbsp;&quot;Err
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DValidState;
+this.DValue&nbsp;=&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

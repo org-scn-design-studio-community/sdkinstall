@@ -89,12 +89,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58003">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColor [<a href="#FUNCTION_setColor">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">colorString</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getColor [<a href="#FUNCTION_getColor">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -104,6 +98,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58003">Design
 <td valign="top" width="240px" class="function-short-name">getColorAsHex [<a href="#FUNCTION_getColorAsHex">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColor [<a href="#FUNCTION_setColor">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">colorString</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -135,32 +135,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58003">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColor">void<br/>setColor</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;color&nbsp;top&nbsp;be&nbsp;shown<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>colorString</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Color value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.colorString&nbsp;=&nbsp;colorString;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColor">String<br/>getColor</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;picked&nbsp;color&nbsp;as&nbsp;RGB&nbsp;like:&nbsp;rgb(255,255,255)<br/><br/>
 
@@ -196,6 +170,32 @@ return&nbsp;this.colorString;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.colorStringHex;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColor">void<br/>setColor</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;color&nbsp;top&nbsp;be&nbsp;shown<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>colorString</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Color value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.colorString&nbsp;=&nbsp;colorString;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

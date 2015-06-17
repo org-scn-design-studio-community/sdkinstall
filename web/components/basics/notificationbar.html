@@ -51,15 +51,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>defaultImage<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Default Image - Needed for Calculation of the Url Prefix for Repository</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>connectToCommonMessages<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Connect To Common Messages</B><br/>Setting this to TRUE also the common Messages from messages popup will be handover to this notification bar
 
@@ -69,21 +60,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>splitNotificationsByPriority<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Split Notifications by Priority</B><br/>Setting this to TRUE the Notifications will be displayed in categories by priority
+<td width="120px" class="property-name-type"><B>defaultImage<br/>[Url]</B></td>
+<td width="*" class="property-title-tooltip"><B>Default Image - Needed for Calculation of the Url Prefix for Repository</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>showOnNewNotifications<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Show Notification Bar when New Notifications are Available</B><br/>Setting this to TRUE shows always Notification Bar when new Notifications are Available
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -102,6 +84,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showOnNewNotifications<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Notification Bar when New Notifications are Available</B><br/>Setting this to TRUE shows always Notification Bar when new Notifications are Available
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>splitNotificationsByPriority<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Split Notifications by Priority</B><br/>Setting this to TRUE the Notifications will be displayed in categories by priority
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -137,14 +137,14 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addWarningNotification [<a href="#FUNCTION_addWarningNotification">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">addInfoNotification [<a href="#FUNCTION_addInfoNotification">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">notificationText, (categoryKey)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addInfoNotification [<a href="#FUNCTION_addInfoNotification">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">notificationText, (categoryKey)</td>
+<td valign="top" width="240px" class="function-short-name">addNotification [<a href="#FUNCTION_addNotification">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">notificationText, notificationLevel, (categoryKey), (notificationKey)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -155,8 +155,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addNotification [<a href="#FUNCTION_addNotification">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">notificationText, notificationLevel, (categoryKey), (notificationKey)</td>
+<td valign="top" width="240px" class="function-short-name">addWarningNotification [<a href="#FUNCTION_addWarningNotification">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">notificationText, (categoryKey)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -171,8 +171,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>notifications<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Notifications</B><br/>The Notifications Pushed to Client
+<td width="120px" class="property-name-type"><B>categories<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Categories</B><br/>The Notifications Pushed to Client
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -180,8 +180,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>categories<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Categories</B><br/>The Notifications Pushed to Client
+<td width="120px" class="property-name-type"><B>notifications<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Notifications</B><br/>The Notifications Pushed to Client
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -265,37 +265,6 @@ this.addNotification(notificationText,&nbsp;&quot;ERROR&quot;,&nbsp;categoryKey,
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addWarningNotification">void<br/>addWarningNotification</td>
-<td valign="top" width="*" class="function-help">Add&nbsp;a&nbsp;Warning&nbsp;Notification<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>notificationText</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Notification Text </td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>categoryKey</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">Optional: Category Key as defined in addCategory</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.addNotification(notificationText,&nbsp;&quot;WARNING&quot;,&nbsp;categoryKey,&nbsp;&quot;&quot;);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addInfoNotification">void<br/>addInfoNotification</td>
 <td valign="top" width="*" class="function-help">Add&nbsp;an&nbsp;Info&nbsp;Notification<br/><br/>
 
@@ -320,37 +289,6 @@ this.addNotification(notificationText,&nbsp;&quot;WARNING&quot;,&nbsp;categoryKe
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.addNotification(notificationText,&nbsp;&quot;INFO&quot;,&nbsp;categoryKey,&nbsp;&quot;&quot;);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addSuccessNotification">void<br/>addSuccessNotification</td>
-<td valign="top" width="*" class="function-help">Add&nbsp;a&nbsp;Success&nbsp;Notification<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>notificationText</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Notification Text </td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>categoryKey</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">Optional: Category Key as defined in addCategory</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.addNotification(notificationText,&nbsp;&quot;SUCCESS&quot;,&nbsp;categoryKey,&nbsp;&quot;&quot;);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -392,6 +330,68 @@ this.addNotification(notificationText,&nbsp;&quot;SUCCESS&quot;,&nbsp;categoryKe
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;category&quot;:&nbsp;categoryKey,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;key&quot;:&nbsp;notificationKey,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;:&nbsp;notificationText,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;level&quot;:&nbsp;notificationLevel<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.notifications&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.notifications&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.notifications&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.notifications&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;notificationsJson&nbsp;=&nbsp;JSON.parse(this.notifications);<br/>&nbsp;&nbsp;&nbsp;&nbsp;notificationsJson.push(itemDef);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.notifications&nbsp;=&nbsp;JSON.stringify(notificationsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addSuccessNotification">void<br/>addSuccessNotification</td>
+<td valign="top" width="*" class="function-help">Add&nbsp;a&nbsp;Success&nbsp;Notification<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>notificationText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Notification Text </td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>categoryKey</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Optional: Category Key as defined in addCategory</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.addNotification(notificationText,&nbsp;&quot;SUCCESS&quot;,&nbsp;categoryKey,&nbsp;&quot;&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addWarningNotification">void<br/>addWarningNotification</td>
+<td valign="top" width="*" class="function-help">Add&nbsp;a&nbsp;Warning&nbsp;Notification<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>notificationText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Notification Text </td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>categoryKey</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">Optional: Category Key as defined in addCategory</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.addNotification(notificationText,&nbsp;&quot;WARNING&quot;,&nbsp;categoryKey,&nbsp;&quot;&quot;);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

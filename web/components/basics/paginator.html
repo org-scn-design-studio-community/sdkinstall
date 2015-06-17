@@ -98,27 +98,27 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58004">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setCurrentPage [<a href="#FUNCTION_setCurrentPage">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">currentPage</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getCurrentPage [<a href="#FUNCTION_getCurrentPage">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setNumberOfPages [<a href="#FUNCTION_setNumberOfPages">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">numberOfPages</td>
+<td valign="top" width="240px" class="function-short-name">getNumberOfPages [<a href="#FUNCTION_getNumberOfPages">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCurrentPage [<a href="#FUNCTION_setCurrentPage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">currentPage</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getNumberOfPages [<a href="#FUNCTION_getNumberOfPages">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
+<td valign="top" width="240px" class="function-short-name">setNumberOfPages [<a href="#FUNCTION_setNumberOfPages">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">numberOfPages</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -141,6 +141,48 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58004">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentPage">int<br/>getCurrentPage</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;current&nbsp;page&nbsp;number<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.currentPage;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getNumberOfPages">int<br/>getNumberOfPages</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;overall&nbsp;number&nbsp;of&nbsp;pages&nbsp;that&nbsp;are&nbsp;embedded&nbsp;into&nbsp;the&nbsp;parent&nbsp;control<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.numberOfPages;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCurrentPage">void<br/>setCurrentPage</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;current&nbsp;page&nbsp;number<br/><br/>
 
@@ -167,27 +209,6 @@ this.currentPage&nbsp;=&nbsp;currentPage;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentPage">int<br/>getCurrentPage</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;current&nbsp;page&nbsp;number<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.currentPage;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNumberOfPages">void<br/>setNumberOfPages</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;overall&nbsp;number&nbsp;of&nbsp;pages&nbsp;that&nbsp;are&nbsp;embedded&nbsp;into&nbsp;the&nbsp;parent&nbsp;control<br/><br/>
 
@@ -207,27 +228,6 @@ return&nbsp;this.currentPage;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.numberOfPages&nbsp;=&nbsp;numberOfPages;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getNumberOfPages">int<br/>getNumberOfPages</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;overall&nbsp;number&nbsp;of&nbsp;pages&nbsp;that&nbsp;are&nbsp;embedded&nbsp;into&nbsp;the&nbsp;parent&nbsp;control<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.numberOfPages;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

@@ -71,27 +71,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58082">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getValuesAsValueTextArray [<a href="#FUNCTION_getValuesAsValueTextArray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
-<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ValueTextArray</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getValuesAsSimpleStringArray [<a href="#FUNCTION_getValuesAsSimpleStringArray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
-<td valign="top" width="160px" class="function-short-return">StringArray</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">eaches [<a href="#FUNCTION_eaches">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">start, finish, interval</td>
-<td valign="top" width="160px" class="function-short-return">Array</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getValues [<a href="#FUNCTION_getValues">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">(separator)</td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="240px" class="function-short-name">addValue [<a href="#FUNCTION_addValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -101,20 +83,14 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58082">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeAllValues [<a href="#FUNCTION_removeAllValues">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">eaches [<a href="#FUNCTION_eaches">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">start, finish, interval</td>
+<td valign="top" width="160px" class="function-short-return">Array</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setValues [<a href="#FUNCTION_setValues">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">values, (separator)</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addValue [<a href="#FUNCTION_addValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="240px" class="function-short-name">fillIntoSelectionComponent [<a href="#FUNCTION_fillIntoSelectionComponent">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectionComponent, (maxMembers)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -131,8 +107,32 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58082">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">fillIntoSelectionComponent [<a href="#FUNCTION_fillIntoSelectionComponent">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">selectionComponent, (maxMembers)</td>
+<td valign="top" width="240px" class="function-short-name">getValues [<a href="#FUNCTION_getValues">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(separator)</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getValuesAsSimpleStringArray [<a href="#FUNCTION_getValuesAsSimpleStringArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
+<td valign="top" width="160px" class="function-short-return">StringArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getValuesAsValueTextArray [<a href="#FUNCTION_getValuesAsValueTextArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.ValueTextArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeAllValues [<a href="#FUNCTION_removeAllValues">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setValues [<a href="#FUNCTION_setValues">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">values, (separator)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -165,15 +165,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58082">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValuesAsValueTextArray">org.scn.community.shared.ValueTextArray<br/>getValuesAsValueTextArray</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;array&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;ARRAY_1.getValuesAsValueTextArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;values<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(""+&nbsp;index,&nbsp;element.value&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;index&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;0;&nbsp;value:&nbsp;k1&nbsp;(&nbsp;0&nbsp;)</li><li>key:&nbsp;1;&nbsp;value:&nbsp;k2&nbsp;(&nbsp;1&nbsp;)</li><li>key:&nbsp;2;&nbsp;value:&nbsp;k3&nbsp;(&nbsp;2&nbsp;)</li></ul></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addValue">void<br/>addValue</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;value&nbsp;to&nbsp;new&nbsp;or&nbsp;existing&nbsp;array.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;array&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;create&nbsp;an&nbsp;"k1,k2,k3"&nbsp;array:<br/><div class='html-code'>ARRAY_1.addValue("k1");<br>ARRAY_1.addValue("k2");<br>ARRAY_1.addValue("k3");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k1,k2,k3<br/></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>maxMembers</B></td>
-<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
-<td width="*" class="parameter-help">max members</td>
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">value</td>
 </tr>
 
 </TABLE>
@@ -183,7 +183,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58082">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;APPLICATION.createInfoMessage(&quot;Max:&nbsp;&quot;&nbsp;+&nbsp;maxMembers);&nbsp;//&nbsp;debug<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;items.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;:&nbsp;items[i].value,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;:&nbsp;items[i].value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;a;
+var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s!=&quot;&quot;)&nbsp;a&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;&nbsp;:&nbsp;value,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;&nbsp;:&nbsp;value<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;a.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(a);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -191,15 +191,15 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValuesAsSimpleStringArray">StringArray<br/>getValuesAsSimpleStringArray</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;array&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.&nbsp;The&nbsp;element&nbsp;is&nbsp;directly&nbsp;containing&nbsp;the&nbsp;string&nbsp;value.<br/>Pro:&nbsp;compatible&nbsp;to&nbsp;the&nbsp;API&nbsp;in&nbsp;other&nbsp;scripts&nbsp;where&nbsp;object&nbsp;"ValueTextArray"&nbsp;is&nbsp;expected.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;ARRAY_1.getValuesAsSimpleValueTextArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;values<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(""+&nbsp;index,&nbsp;element&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;index&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;0;&nbsp;value:&nbsp;k1&nbsp;(&nbsp;0&nbsp;)</li><li>key:&nbsp;1;&nbsp;value:&nbsp;k2&nbsp;(&nbsp;1&nbsp;)</li><li>key:&nbsp;2;&nbsp;value:&nbsp;k3&nbsp;(&nbsp;2&nbsp;)</li></ul></div><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pass&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;array&nbsp;directly&nbsp;to&nbsp;chart&nbsp;selection.<br/><div class='html-code'>var&nbsp;valuesAsArray&nbsp;=&nbsp;ARRAY_1.getValuesAsSimpleValueTextArray();<br>CHART_1.setDataSelection(&nbsp;{<br>"<your&nbsp;dimension>":&nbsp;valuesAsArray<br>});<br></div>This&nbsp;CHART&nbsp;will&nbsp;get&nbsp;the&nbsp;corresponding&nbsp;selection<br></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_createArray">void<br/>createArray</td>
+<td valign="top" width="*" class="function-help">Creates&nbsp;an&nbsp;array&nbsp;of&nbsp;requested&nbsp;length&nbsp;with&nbsp;integers&nbsp;as&nbsp;values&nbsp;(starting&nbsp;at&nbsp;0).<br/><div class='html-example'">You&nbsp;want&nbsp;an&nbsp;array&nbsp;with&nbsp;length&nbsp;7:<br/><div class='html-code'>ARRAY_1.createArray(7);<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;0,1,2,3,4,5,6,7<br/></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>maxMembers</B></td>
-<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
-<td width="*" class="parameter-help">max members</td>
+<td width="120px" class="parameter-name"><B>lenght</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">length</td>
 </tr>
 
 </TABLE>
@@ -209,7 +209,7 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;APPLICATION.createInfoMessage(&quot;Max:&nbsp;&quot;&nbsp;+&nbsp;maxMembers);&nbsp;//&nbsp;debug<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;items.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;items[i].value;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;a;
+var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;&nbsp;i&lt;lenght;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;&nbsp;:&nbsp;&quot;&quot;&nbsp;+&nbsp;i,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;&nbsp;:&nbsp;&quot;&quot;&nbsp;+&nbsp;i<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(items);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -253,15 +253,20 @@ var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=start;i&lt
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValues">String<br/>getValues</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;all&nbsp;values&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;given&nbsp;optional&nbsp;separator.&nbsp;default&nbsp;separator&nbsp;is&nbsp;comma&nbsp;,<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;array&nbsp;with&nbsp;3&nbsp;values&nbsp;["v1",&nbsp;"v2",&nbsp;"v3"]:<br/><div class='html-code'>var&nbsp;valuesAsString&nbsp;=&nbsp;ARRAY_1.getValues&nbsp;("|");<br></div>The&nbsp;"valuesAsString"&nbsp;has&nbsp;now&nbsp;"v1|v2|v3"&nbsp;as&nbsp;content.<br/></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_fillIntoSelectionComponent">void<br/>fillIntoSelectionComponent</td>
+<td valign="top" width="*" class="function-help">Fills&nbsp;the&nbsp;content&nbsp;of&nbsp;this&nbsp;array&nbsp;into&nbsp;given&nbsp;selection&nbsp;component<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;fill&nbsp;the&nbsp;dropdown&nbsp;with&nbsp;the&nbsp;content<br/><div class='html-code'>ARRAY.fillIntoSelectionComponent(DROPDOWN,&nbsp;30);<br/></div>Now&nbsp;the&nbsp;dropdown&nbsp;is&nbsp;filled&nbsp;in&nbsp;with&nbsp;given&nbsp;values<br/></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>separator</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">separator</td>
+<td width="120px" class="parameter-name"><B>selectionComponent</B></td>
+<td width="120px" class="parameter-type"><B>SelectionComponent</B></td>
+<td width="*" class="parameter-help">Component which should be filled</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxMembers</B></td>
+<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
+<td width="*" class="parameter-help">max members</td>
 </tr>
 
 </TABLE>
@@ -271,111 +276,7 @@ var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=start;i&lt
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;JSON.parse(s);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;items.length;i++){&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.push(items[i].value);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(separator&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;separator&nbsp;=&nbsp;&quot;,&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;a.join(separator);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_createArray">void<br/>createArray</td>
-<td valign="top" width="*" class="function-help">Creates&nbsp;an&nbsp;array&nbsp;of&nbsp;requested&nbsp;length&nbsp;with&nbsp;integers&nbsp;as&nbsp;values&nbsp;(starting&nbsp;at&nbsp;0).<br/><div class='html-example'">You&nbsp;want&nbsp;an&nbsp;array&nbsp;with&nbsp;length&nbsp;7:<br/><div class='html-code'>ARRAY_1.createArray(7);<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;0,1,2,3,4,5,6,7<br/></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>lenght</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help">length</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;&nbsp;i&lt;lenght;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;&nbsp;:&nbsp;&quot;&quot;&nbsp;+&nbsp;i,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;&nbsp;:&nbsp;&quot;&quot;&nbsp;+&nbsp;i<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(items);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllValues">void<br/>removeAllValues</td>
-<td valign="top" width="*" class="function-help">Removes&nbsp;all&nbsp;Values&nbsp;(clears&nbsp;the&nbsp;array)<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(items);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValues">void<br/>setValues</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;values&nbsp;of&nbsp;the&nbsp;array&nbsp;by&nbsp;string.&nbsp;Optionally&nbsp;a&nbsp;given&nbsp;separator&nbsp;can&nbsp;be&nbsp;specified.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;array&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;set&nbsp;the&nbsp;string&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>ARRAY_1.setValues("k1;k2;k3",&nbsp;";");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k1,k2,k3<br/></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>values</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">values</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>separator</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">separator</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(separator&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;separator&nbsp;=&nbsp;&quot;,&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;v&nbsp;=&nbsp;values.split(separator);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;&nbsp;i&lt;v.length;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;&nbsp;:&nbsp;v[i],<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;&nbsp;:&nbsp;v[i]<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(items);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addValue">void<br/>addValue</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;value&nbsp;to&nbsp;new&nbsp;or&nbsp;existing&nbsp;array.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;array&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;create&nbsp;an&nbsp;"k1,k2,k3"&nbsp;array:<br/><div class='html-code'>ARRAY_1.addValue("k1");<br>ARRAY_1.addValue("k2");<br>ARRAY_1.addValue("k3");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k1,k2,k3<br/></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">value</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s!=&quot;&quot;)&nbsp;a&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;&nbsp;:&nbsp;value,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;&nbsp;:&nbsp;value<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;a.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(a);
+selectionComponent.removeAllItems();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.list&nbsp;=&nbsp;this.getValuesAsValueTextArray(maxMembers);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;l.list.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectionComponent.addItem(l.list[i].value,&nbsp;l.list[i].text);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -430,16 +331,37 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_fillIntoSelectionComponent">void<br/>fillIntoSelectionComponent</td>
-<td valign="top" width="*" class="function-help">Fills&nbsp;the&nbsp;content&nbsp;of&nbsp;this&nbsp;array&nbsp;into&nbsp;given&nbsp;selection&nbsp;component<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;fill&nbsp;the&nbsp;dropdown&nbsp;with&nbsp;the&nbsp;content<br/><div class='html-code'>ARRAY.fillIntoSelectionComponent(DROPDOWN,&nbsp;30);<br/></div>Now&nbsp;the&nbsp;dropdown&nbsp;is&nbsp;filled&nbsp;in&nbsp;with&nbsp;given&nbsp;values<br/></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValues">String<br/>getValues</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;all&nbsp;values&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;given&nbsp;optional&nbsp;separator.&nbsp;default&nbsp;separator&nbsp;is&nbsp;comma&nbsp;,<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;array&nbsp;with&nbsp;3&nbsp;values&nbsp;["v1",&nbsp;"v2",&nbsp;"v3"]:<br/><div class='html-code'>var&nbsp;valuesAsString&nbsp;=&nbsp;ARRAY_1.getValues&nbsp;("|");<br></div>The&nbsp;"valuesAsString"&nbsp;has&nbsp;now&nbsp;"v1|v2|v3"&nbsp;as&nbsp;content.<br/></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>selectionComponent</B></td>
-<td width="120px" class="parameter-type"><B>SelectionComponent</B></td>
-<td width="*" class="parameter-help">Component which should be filled</td>
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">separator</td>
 </tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;JSON.parse(s);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;items.length;i++){&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.push(items[i].value);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(separator&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;separator&nbsp;=&nbsp;&quot;,&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;a.join(separator);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValuesAsSimpleStringArray">StringArray<br/>getValuesAsSimpleStringArray</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;array&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.&nbsp;The&nbsp;element&nbsp;is&nbsp;directly&nbsp;containing&nbsp;the&nbsp;string&nbsp;value.<br/>Pro:&nbsp;compatible&nbsp;to&nbsp;the&nbsp;API&nbsp;in&nbsp;other&nbsp;scripts&nbsp;where&nbsp;object&nbsp;"ValueTextArray"&nbsp;is&nbsp;expected.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;ARRAY_1.getValuesAsSimpleValueTextArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;values<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(""+&nbsp;index,&nbsp;element&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;index&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;0;&nbsp;value:&nbsp;k1&nbsp;(&nbsp;0&nbsp;)</li><li>key:&nbsp;1;&nbsp;value:&nbsp;k2&nbsp;(&nbsp;1&nbsp;)</li><li>key:&nbsp;2;&nbsp;value:&nbsp;k3&nbsp;(&nbsp;2&nbsp;)</li></ul></div><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;pass&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;array&nbsp;directly&nbsp;to&nbsp;chart&nbsp;selection.<br/><div class='html-code'>var&nbsp;valuesAsArray&nbsp;=&nbsp;ARRAY_1.getValuesAsSimpleValueTextArray();<br>CHART_1.setDataSelection(&nbsp;{<br>"<your&nbsp;dimension>":&nbsp;valuesAsArray<br>});<br></div>This&nbsp;CHART&nbsp;will&nbsp;get&nbsp;the&nbsp;corresponding&nbsp;selection<br></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>maxMembers</B></td>
 <td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
@@ -453,7 +375,85 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-selectionComponent.removeAllItems();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.list&nbsp;=&nbsp;this.getValuesAsValueTextArray(maxMembers);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;l.list.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectionComponent.addItem(l.list[i].value,&nbsp;l.list[i].text);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};
+var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;APPLICATION.createInfoMessage(&quot;Max:&nbsp;&quot;&nbsp;+&nbsp;maxMembers);&nbsp;//&nbsp;debug<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;items.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;items[i].value;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;a;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValuesAsValueTextArray">org.scn.community.shared.ValueTextArray<br/>getValuesAsValueTextArray</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;array&nbsp;content&nbsp;as&nbsp;loopable&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;the&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;ARRAY_1.getValuesAsValueTextArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;values<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(""+&nbsp;index,&nbsp;element.value&nbsp;+&nbsp;"(&nbsp;"&nbsp;+&nbsp;index&nbsp;+&nbsp;"&nbsp;)");<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;0;&nbsp;value:&nbsp;k1&nbsp;(&nbsp;0&nbsp;)</li><li>key:&nbsp;1;&nbsp;value:&nbsp;k2&nbsp;(&nbsp;1&nbsp;)</li><li>key:&nbsp;2;&nbsp;value:&nbsp;k3&nbsp;(&nbsp;2&nbsp;)</li></ul></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxMembers</B></td>
+<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
+<td width="*" class="parameter-help">max members</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;APPLICATION.createInfoMessage(&quot;Max:&nbsp;&quot;&nbsp;+&nbsp;maxMembers);&nbsp;//&nbsp;debug<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;items.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;:&nbsp;items[i].value,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;:&nbsp;items[i].value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;a;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllValues">void<br/>removeAllValues</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;all&nbsp;Values&nbsp;(clears&nbsp;the&nbsp;array)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(items);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValues">void<br/>setValues</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;values&nbsp;of&nbsp;the&nbsp;array&nbsp;by&nbsp;string.&nbsp;Optionally&nbsp;a&nbsp;given&nbsp;separator&nbsp;can&nbsp;be&nbsp;specified.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;array&nbsp;allows&nbsp;duplicate&nbsp;keys.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;set&nbsp;the&nbsp;string&nbsp;"k1;k2;k3"&nbsp;array:<br/><div class='html-code'>ARRAY_1.setValues("k1;k2;k3",&nbsp;";");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k1,k2,k3<br/></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>values</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">values</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help">separator</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(separator&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;separator&nbsp;=&nbsp;&quot;,&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;v&nbsp;=&nbsp;values.split(separator);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;&nbsp;i&lt;v.length;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;&nbsp;:&nbsp;v[i],<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;&nbsp;:&nbsp;v[i]<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(items);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
