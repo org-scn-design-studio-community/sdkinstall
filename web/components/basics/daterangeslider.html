@@ -51,84 +51,23 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61862">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>DMin<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Minimum Date Value (yyyymmdd)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
+<td width="120px" class="property-name-type"><B>DGranulatiry<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Granularity</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">Day</td>
+<td class="value-td">X</td>
 </tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DMax<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Maximum Date Value (yyyymmdd)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
+<tr class="list-tr">
+<td class="value-td">Month</td>
+<td class="value-td">&nbsp;</td>
 </tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DValue<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>First Date Value (yyyymmdd)</B><br/>&nbsp;
 
+</table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DValue2<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Second Date Value (yyyymmdd)</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>totalUnits<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Total Units</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">0</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>stepLabels<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Step Labels</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>vertical<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Change to Vertical Orientation</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">false</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>smallStepWidth<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Small Step Width</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">1</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>showBubbles<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Show Bubbles</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
+<td width="100px" class="property-default">Day</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -147,6 +86,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61862">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DLangRelative<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Custom Format Relative</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -174,32 +122,84 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61862">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DLangRelative<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Custom Format Relative</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DMax<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Maximum Date Value (yyyymmdd)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DMin<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Minimum Date Value (yyyymmdd)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DValue<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>First Date Value (yyyymmdd)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DValue2<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Second Date Value (yyyymmdd)</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showBubbles<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Bubbles</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>smallStepWidth<br/>[float]</B></td>
+<td width="*" class="property-title-tooltip"><B>Small Step Width</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">1</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>stepLabels<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Step Labels</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>totalUnits<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Total Units</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>vertical<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Change to Vertical Orientation</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">false</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DGranulatiry<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Granularity</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">Day</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Month</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">Day</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -232,33 +232,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61862">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setEditable [<a href="#FUNCTION_setEditable">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">editable</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">isEditable [<a href="#FUNCTION_isEditable">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setMinimumDate [<a href="#FUNCTION_setMinimumDate">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">min</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getMinimumDate [<a href="#FUNCTION_getMinimumDate">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getEndDate [<a href="#FUNCTION_getEndDate">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setMaximumDate [<a href="#FUNCTION_setMaximumDate">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">max</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -268,69 +244,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61862">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setStartDate [<a href="#FUNCTION_setStartDate">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getStartDate [<a href="#FUNCTION_getStartDate">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getMinimumDate [<a href="#FUNCTION_getMinimumDate">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setEndDate [<a href="#FUNCTION_setEndDate">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value2</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getEndDate [<a href="#FUNCTION_getEndDate">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setTotalUnits [<a href="#FUNCTION_setTotalUnits">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">totalUnits</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getTotalUnits [<a href="#FUNCTION_getTotalUnits">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setStepLabels [<a href="#FUNCTION_setStepLabels">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">stepLabels</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">isStepLabels [<a href="#FUNCTION_isStepLabels">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getShowBubbles [<a href="#FUNCTION_getShowBubbles">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setVertical [<a href="#FUNCTION_setVertical">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">vertical</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">isVertical [<a href="#FUNCTION_isVertical">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSmallStepWidth [<a href="#FUNCTION_setSmallStepWidth">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">smallStepWidth</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -340,15 +262,93 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61862">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getStartDate [<a href="#FUNCTION_getStartDate">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTotalUnits [<a href="#FUNCTION_getTotalUnits">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isEditable [<a href="#FUNCTION_isEditable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isStepLabels [<a href="#FUNCTION_isStepLabels">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isVertical [<a href="#FUNCTION_isVertical">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEditable [<a href="#FUNCTION_setEditable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">editable</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEndDate [<a href="#FUNCTION_setEndDate">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value2</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaximumDate [<a href="#FUNCTION_setMaximumDate">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">max</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMinimumDate [<a href="#FUNCTION_setMinimumDate">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">min</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setShowBubbles [<a href="#FUNCTION_setShowBubbles">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">showBubbles</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getShowBubbles [<a href="#FUNCTION_getShowBubbles">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="240px" class="function-short-name">setSmallStepWidth [<a href="#FUNCTION_setSmallStepWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">smallStepWidth</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStartDate [<a href="#FUNCTION_setStartDate">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStepLabels [<a href="#FUNCTION_setStepLabels">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">stepLabels</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTotalUnits [<a href="#FUNCTION_setTotalUnits">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">totalUnits</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setVertical [<a href="#FUNCTION_setVertical">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">vertical</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -371,34 +371,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61862">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEditable">void<br/>setEditable</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>editable</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.editable&nbsp;=&nbsp;editable;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEndDate">String<br/>getEndDate</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;second&nbsp;value.<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -410,80 +384,7 @@ this.editable&nbsp;=&nbsp;editable;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.editable;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMinimumDate">void<br/>setMinimumDate</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;minimum&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>min</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Minimum value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DMin&nbsp;=&nbsp;min;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMinimumDate">String<br/>getMinimumDate</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;minimum&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DMin;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaximumDate">void<br/>setMaximumDate</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;maximum&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>max</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Maximum value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DMax&nbsp;=&nbsp;max;
+return&nbsp;this.DValue2;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -512,16 +413,11 @@ return&nbsp;this.DMax;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStartDate">void<br/>setStartDate</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMinimumDate">String<br/>getMinimumDate</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;minimum&nbsp;value.<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Value </td>
-</tr>
+
 
 </TABLE>
 
@@ -530,7 +426,49 @@ return&nbsp;this.DMax;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DValue&nbsp;=&nbsp;value;
+return&nbsp;this.DMin;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getShowBubbles">boolean<br/>getShowBubbles</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;small&nbsp;step&nbsp;width&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.showBubbles;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSmallStepWidth">float<br/>getSmallStepWidth</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;small&nbsp;step&nbsp;width&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.smallStepWidth;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -552,6 +490,116 @@ this.DValue&nbsp;=&nbsp;value;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTotalUnits">int<br/>getTotalUnits</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;total&nbsp;units&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.totalUnits;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.editable;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isStepLabels">boolean<br/>isStepLabels</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;step&nbsp;labels&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.stepLabels;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isVertical">boolean<br/>isVertical</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;vertical&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.vertical;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEditable">void<br/>setEditable</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>editable</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Editable value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.editable&nbsp;=&nbsp;editable;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -585,36 +633,15 @@ this.DValue2&nbsp;=&nbsp;value2;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEndDate">String<br/>getEndDate</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;second&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DValue2;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTotalUnits">void<br/>setTotalUnits</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;total&nbsp;units&nbsp;value.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaximumDate">void<br/>setMaximumDate</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;maximum&nbsp;value.<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>totalUnits</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Total units value </td>
+<td width="120px" class="parameter-name"><B>max</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Maximum value </td>
 </tr>
 
 </TABLE>
@@ -624,7 +651,7 @@ return&nbsp;this.DValue2;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.totalUnits&nbsp;=&nbsp;totalUnits;
+this.DMax&nbsp;=&nbsp;max;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -632,36 +659,15 @@ this.totalUnits&nbsp;=&nbsp;totalUnits;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTotalUnits">int<br/>getTotalUnits</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;total&nbsp;units&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.totalUnits;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStepLabels">void<br/>setStepLabels</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;step&nbsp;labels&nbsp;value.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMinimumDate">void<br/>setMinimumDate</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;minimum&nbsp;value.<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>stepLabels</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Step labels value </td>
+<td width="120px" class="parameter-name"><B>min</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Minimum value </td>
 </tr>
 
 </TABLE>
@@ -671,122 +677,7 @@ return&nbsp;this.totalUnits;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.stepLabels&nbsp;=&nbsp;stepLabels;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isStepLabels">boolean<br/>isStepLabels</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;step&nbsp;labels&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.stepLabels;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVertical">void<br/>setVertical</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;vertical&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>vertical</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Vertical value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.vertical&nbsp;=&nbsp;vertical;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isVertical">boolean<br/>isVertical</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;vertical&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.vertical;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSmallStepWidth">void<br/>setSmallStepWidth</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;small&nbsp;step&nbsp;width&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>smallStepWidth</B></td>
-<td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help"> Small step width value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.smallStepWidth&nbsp;=&nbsp;smallStepWidth;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSmallStepWidth">float<br/>getSmallStepWidth</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;small&nbsp;step&nbsp;width&nbsp;value.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.smallStepWidth;
+this.DMin&nbsp;=&nbsp;min;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -820,11 +711,16 @@ this.showBubbles&nbsp;=&nbsp;showBubbles;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getShowBubbles">boolean<br/>getShowBubbles</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;small&nbsp;step&nbsp;width&nbsp;value.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSmallStepWidth">void<br/>setSmallStepWidth</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;small&nbsp;step&nbsp;width&nbsp;value.<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>smallStepWidth</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help"> Small step width value </td>
+</tr>
 
 </TABLE>
 
@@ -833,7 +729,111 @@ this.showBubbles&nbsp;=&nbsp;showBubbles;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.showBubbles;
+this.smallStepWidth&nbsp;=&nbsp;smallStepWidth;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStartDate">void<br/>setStartDate</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DValue&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStepLabels">void<br/>setStepLabels</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;step&nbsp;labels&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>stepLabels</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Step labels value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.stepLabels&nbsp;=&nbsp;stepLabels;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTotalUnits">void<br/>setTotalUnits</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;total&nbsp;units&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>totalUnits</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> Total units value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.totalUnits&nbsp;=&nbsp;totalUnits;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVertical">void<br/>setVertical</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;vertical&nbsp;value.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>vertical</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Vertical value </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.vertical&nbsp;=&nbsp;vertical;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

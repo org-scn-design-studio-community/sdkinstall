@@ -89,13 +89,25 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">zoomIn [<a href="#FUNCTION_zoomIn">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="240px" class="function-short-name">addLocation [<a href="#FUNCTION_addLocation">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">elementKey, elementText, imageUrl, latitude, longitude</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">zoomOut [<a href="#FUNCTION_zoomOut">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">moveTo [<a href="#FUNCTION_moveTo">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">panDown [<a href="#FUNCTION_panDown">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -119,27 +131,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">panDown [<a href="#FUNCTION_panDown">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">zoomIn [<a href="#FUNCTION_zoomIn">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addLocation [<a href="#FUNCTION_addLocation">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">elementKey, elementText, imageUrl, latitude, longitude</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">moveTo [<a href="#FUNCTION_moveTo">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">zoomOut [<a href="#FUNCTION_zoomOut">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -153,6 +153,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>elementsContent<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical property for list of nodes</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>moveAction<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical property for move action</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>moveTo<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Technical property for move to</B><br/>&nbsp;
 
@@ -180,8 +198,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>moveAction<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical property for move action</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -191,24 +209,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <tr>
 <td width="120px" class="property-name-type"><B>zoom<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Technical property for zoom</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>elementsContent<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical property for list of nodes</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -225,11 +225,36 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_zoomIn">void<br/>zoomIn</td>
-<td valign="top" width="*" class="function-help">Zooms&nbsp;in&nbsp;the&nbsp;map<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addLocation">void<br/>addLocation</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;new&nbsp;location.&nbsp;Keep&nbsp;in&nbsp;mind&nbsp;key&nbsp;should&nbsp;be&nbsp;unique.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;locations<br/><div class='html-code'>OSMAP_1.addLocation("MADRIT",&nbsp;"Madrit",&nbsp;"",&nbsp;40.4,&nbsp;-3.7);&nbsp;&nbsp;<br>OSMAP_1.addLocation("WALLDORF",&nbsp;"SAP&nbsp;SE&nbsp;Headquaters",&nbsp;"SAP.jpg",&nbsp;49.293417,&nbsp;8.642384);&nbsp;&nbsp;<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elementKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Element Key (must be unique)</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elementText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Element text</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>imageUrl</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Image URL if not set no image</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>latitude</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help">Latitude (horizontal)</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>longitude</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help">Longitide (vertical)</td>
+</tr>
 
 </TABLE>
 
@@ -238,7 +263,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.zoom&nbsp;=&nbsp;this.zoom&nbsp;+&nbsp;1;
+var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;key&quot;:&nbsp;elementKey,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;:&nbsp;elementText,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;url&quot;:&nbsp;imageUrl,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lat&quot;:&nbsp;latitude,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;long&quot;:&nbsp;longitude<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;elementKey)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -246,8 +271,8 @@ this.zoom&nbsp;=&nbsp;this.zoom&nbsp;+&nbsp;1;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_zoomOut">void<br/>zoomOut</td>
-<td valign="top" width="*" class="function-help">Zooms&nbsp;out&nbsp;the&nbsp;map<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -259,7 +284,54 @@ this.zoom&nbsp;=&nbsp;this.zoom&nbsp;+&nbsp;1;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.zoom&nbsp;=&nbsp;this.zoom&nbsp;-&nbsp;1;
+return&nbsp;this.selectedKey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_moveTo">void<br/>moveTo</td>
+<td valign="top" width="*" class="function-help">Moves&nbsp;the&nbsp;map&nbsp;to&nbsp;the&nbsp;given&nbsp;location&nbsp;by&nbsp;key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">key which schould be moved to</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.moveAction&nbsp;=&nbsp;this.moveAction&nbsp;+&nbsp;1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.moveTo&nbsp;=&nbsp;key
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_panDown">void<br/>panDown</td>
+<td valign="top" width="*" class="function-help">Moves&nbsp;the&nbsp;view&nbsp;on&nbsp;the&nbsp;map&nbsp;in&nbsp;the&nbsp;down&nbsp;direction<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.panAction&nbsp;=&nbsp;this.panAction&nbsp;+&nbsp;1;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.pan&nbsp;=&nbsp;&quot;000D&quot;;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -330,8 +402,8 @@ this.panAction&nbsp;=&nbsp;this.panAction&nbsp;+&nbsp;1;&nbsp;<br/>&nbsp;&nbsp;&
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_panDown">void<br/>panDown</td>
-<td valign="top" width="*" class="function-help">Moves&nbsp;the&nbsp;view&nbsp;on&nbsp;the&nbsp;map&nbsp;in&nbsp;the&nbsp;down&nbsp;direction<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_zoomIn">void<br/>zoomIn</td>
+<td valign="top" width="*" class="function-help">Zooms&nbsp;in&nbsp;the&nbsp;map<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -343,7 +415,7 @@ this.panAction&nbsp;=&nbsp;this.panAction&nbsp;+&nbsp;1;&nbsp;<br/>&nbsp;&nbsp;&
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.panAction&nbsp;=&nbsp;this.panAction&nbsp;+&nbsp;1;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.pan&nbsp;=&nbsp;&quot;000D&quot;;
+this.zoom&nbsp;=&nbsp;this.zoom&nbsp;+&nbsp;1;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -351,80 +423,8 @@ this.panAction&nbsp;=&nbsp;this.panAction&nbsp;+&nbsp;1;&nbsp;<br/>&nbsp;&nbsp;&
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addLocation">void<br/>addLocation</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;new&nbsp;location.&nbsp;Keep&nbsp;in&nbsp;mind&nbsp;key&nbsp;should&nbsp;be&nbsp;unique.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;locations<br/><div class='html-code'>OSMAP_1.addLocation("MADRIT",&nbsp;"Madrit",&nbsp;"",&nbsp;40.4,&nbsp;-3.7);&nbsp;&nbsp;<br>OSMAP_1.addLocation("WALLDORF",&nbsp;"SAP&nbsp;SE&nbsp;Headquaters",&nbsp;"SAP.jpg",&nbsp;49.293417,&nbsp;8.642384);&nbsp;&nbsp;<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elementKey</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Element Key (must be unique)</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elementText</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Element text</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>imageUrl</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Image URL if not set no image</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>latitude</B></td>
-<td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help">Latitude (horizontal)</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>longitude</B></td>
-<td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help">Longitide (vertical)</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;key&quot;:&nbsp;elementKey,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;:&nbsp;elementText,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;url&quot;:&nbsp;imageUrl,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lat&quot;:&nbsp;latitude,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;long&quot;:&nbsp;longitude<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;elementKey)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_moveTo">void<br/>moveTo</td>
-<td valign="top" width="*" class="function-help">Moves&nbsp;the&nbsp;map&nbsp;to&nbsp;the&nbsp;given&nbsp;location&nbsp;by&nbsp;key<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">key which schould be moved to</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.moveAction&nbsp;=&nbsp;this.moveAction&nbsp;+&nbsp;1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.moveTo&nbsp;=&nbsp;key
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_zoomOut">void<br/>zoomOut</td>
+<td valign="top" width="*" class="function-help">Zooms&nbsp;out&nbsp;the&nbsp;map<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -436,7 +436,7 @@ this.moveAction&nbsp;=&nbsp;this.moveAction&nbsp;+&nbsp;1;<br/>&nbsp;&nbsp;&nbsp
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.selectedKey;
+this.zoom&nbsp;=&nbsp;this.zoom&nbsp;-&nbsp;1;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

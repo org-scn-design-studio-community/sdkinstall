@@ -51,8 +51,53 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>realization<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>realization column</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>chartbottommargin<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bullet Bottom Margin</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>chartleftmargin<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bullet Left Margin</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>chartrightmargin<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bullet Right Margin</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>charttopmargin<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Bullet Top Margin</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>columnmargin<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>horizontal margin between graphs</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>comparison<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>comparison column</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -62,6 +107,154 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <tr>
 <td width="120px" class="property-name-type"><B>extrapolation<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>expected realization outcome end of period column</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>higherisbetter<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>realization higher than target is better</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>keydimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Row Dimension holding unique key for clicking through</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>labeldimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Row Dimension holding main label</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>maxgraphheight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>maximum height of single graph</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">70</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>mingraphheight<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>minimum height of single graph</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">50</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>numberofcolumns<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>number of columns</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">1</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>numberofticks<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>number of ticks in the graph</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">4</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>realization<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>realization column</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>rowmargin<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>vertical margin between graphs</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showalert<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>show alert</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">never</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">worse than comparison</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">worse than threshold 5</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">worse than threshold 4</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">worse than threshold 3</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">worse than threshold 2</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">worse than threshold 1</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">worse than comparison</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showaxis<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show X axis numbers</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>showrealization<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>show realization value</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>sublabeldimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Row Dimension holding sub label</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -114,205 +307,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>labeldimension<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Row Dimension holding main label</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>sublabeldimension<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Row Dimension holding sub label</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>keydimension<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Row Dimension holding unique key for clicking through</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>comparison<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>comparison column</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>showaxis<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Show X axis numbers</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>tooltip<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Show tooltip</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">false</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>showalert<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>show alert</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">never</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">worse than comparison</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">worse than threshold 5</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">worse than threshold 4</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">worse than threshold 3</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">worse than threshold 2</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">worse than threshold 1</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">worse than comparison</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>showrealization<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>show realization value</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>maxgraphheight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>maximum height of single graph</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">70</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>mingraphheight<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>minimum height of single graph</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">50</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>numberofticks<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>number of ticks in the graph</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">4</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>columnmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>horizontal margin between graphs</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>numberofcolumns<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>number of columns</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">1</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>rowmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>vertical margin between graphs</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>charttopmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bullet Top Margin</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>chartbottommargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bullet Bottom Margin</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>chartleftmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bullet Left Margin</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>chartrightmargin<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Bullet Right Margin</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>higherisbetter<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>realization higher than target is better</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 

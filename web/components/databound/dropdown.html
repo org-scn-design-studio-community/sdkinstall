@@ -65,8 +65,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>data<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Data List</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DDimension<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Dimension</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">DataBinding</td>
@@ -74,12 +74,32 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DDimension<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Dimension</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>DMaxMembers<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Maximum Numner of Members</B><br/>&nbsp;
 
 </td>
-<td width="60px" class="property-group">DataBinding</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">3</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DSorting<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Sorting By Value | Defalut</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">By Value</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Default</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">By Value</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -107,32 +127,12 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DSorting<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Sorting By Value | Defalut</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">By Value</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Default</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">By Value</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DMaxMembers<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Maximum Numner of Members</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>data<br/>[ResultCellList]</B></td>
+<td width="*" class="property-title-tooltip"><B>Data List</B><br/>&nbsp;
 
 </td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">3</td>
+<td width="60px" class="property-group">DataBinding</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -146,15 +146,6 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>onSelectionChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Selection Changed</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>onClear<br/>[ScriptText]</B></td>
 <td width="*" class="property-title-tooltip"><B>Event for On Clear</B><br/>&nbsp;
 
@@ -172,6 +163,15 @@
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onSelectionChanged<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>Event for On Selection Changed</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
 
 	</TABLE>
 
@@ -183,21 +183,15 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">private_onSelectionChanged [<a href="#FUNCTION_private_onSelectionChanged">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">allowRefresh [<a href="#FUNCTION_allowRefresh">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">private_onBeforeRender [<a href="#FUNCTION_private_onBeforeRender">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getDimension [<a href="#FUNCTION_getDimension">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">reloadDataSource [<a href="#FUNCTION_reloadDataSource">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -213,26 +207,32 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getDimension [<a href="#FUNCTION_getDimension">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setDimension [<a href="#FUNCTION_setDimension">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">dimension</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">pauseRefresh [<a href="#FUNCTION_pauseRefresh">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">allowRefresh [<a href="#FUNCTION_allowRefresh">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">private_onBeforeRender [<a href="#FUNCTION_private_onBeforeRender">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">private_onSelectionChanged [<a href="#FUNCTION_private_onSelectionChanged">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">reloadDataSource [<a href="#FUNCTION_reloadDataSource">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDimension [<a href="#FUNCTION_setDimension">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimension</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -247,11 +247,29 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>DDoRefresh<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical proprty for pause refresh</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DElements<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Master Data Elements</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">DataBinding</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DSelectedKey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
@@ -267,15 +285,6 @@
 <tr>
 <td width="120px" class="property-name-type"><B>DSelectedKeyExtFull<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Technical proprty for Selected External String Full</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DSelectedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -300,15 +309,6 @@
 <td width="100px" class="property-default">this.private_onSelectionChanged();</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DDoRefresh<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for pause refresh</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
 
 	</TABLE>
 
@@ -319,8 +319,8 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_private_onSelectionChanged">void<br/>private_onSelectionChanged</td>
-<td valign="top" width="*" class="function-help"><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_allowRefresh">void<br/>allowRefresh</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -332,7 +332,7 @@
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;key&nbsp;=&nbsp;this.getSelectedKey();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internalWriteLog(&quot;Internal&nbsp;Selection&nbsp;on&nbsp;Dimension:&nbsp;&quot;&nbsp;+&nbsp;this.getDimension()&nbsp;+&nbsp;&quot;&nbsp;|&nbsp;&quot;&nbsp;+&nbsp;key);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(key&nbsp;==&nbsp;&quot;-CLEAR-&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getDataSource().clearFilter(this.getDimension());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getDataSource().setFilter(this.getDimension(),&nbsp;key);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+this.DDoRefresh&nbsp;=&nbsp;true;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -340,8 +340,8 @@ var&nbsp;key&nbsp;=&nbsp;this.getSelectedKey();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_private_onBeforeRender">void<br/>private_onBeforeRender</td>
-<td valign="top" width="*" class="function-help"><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDimension">String<br/>getDimension</td>
+<td valign="top" width="*" class="function-help">gest&nbsp;the&nbsp;dimension<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -353,28 +353,7 @@ var&nbsp;key&nbsp;=&nbsp;this.getSelectedKey();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_reloadDataSource">void<br/>reloadDataSource</td>
-<td valign="top" width="*" class="function-help"><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-//&nbsp;unfortunately&nbsp;this&nbsp;does&nbsp;not&nbsp;work&nbsp;correctly&nbsp;as&nbsp;this&nbsp;method&nbsp;is&nbsp;too&nbsp;late&nbsp;included&nbsp;(as&nbsp;first&nbsp;method&nbsp;on&nbsp;rendering,&nbsp;instead&nbsp;on&nbsp;before&nbsp;rendering)<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;this&nbsp;causes&nbsp;incorrect&nbsp;events&nbsp;in&nbsp;a&nbsp;phase&nbsp;where&nbsp;events&nbsp;are&nbsp;not&nbsp;allowed&nbsp;any&nbsp;more...&nbsp;(error:&nbsp;DS_1&nbsp;cannot&nbsp;be&nbsp;changed&nbsp;in&nbsp;rendering&nbsp;phase)<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;workaround&nbsp;is&nbsp;to&nbsp;call&nbsp;once&nbsp;explicitelly&nbsp;&quot;getMembers&quot;&nbsp;on&nbsp;this&nbsp;dimension<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.DBindingMode&nbsp;==&nbsp;&quot;Master&nbsp;Data&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.internalWriteLog(&quot;Call&nbsp;Members&nbsp;on&nbsp;Dimension:&nbsp;&quot;&nbsp;+&nbsp;this.getDimension()&nbsp;+&nbsp;&quot;&nbsp;|&nbsp;&quot;&nbsp;+&nbsp;this.DMaxMembers);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElements&nbsp;=&nbsp;this.superReadMembers(this.getDimension(),&nbsp;this.DMaxMembers);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;check&nbsp;current&nbsp;selection&nbsp;from&nbsp;data&nbsp;source<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;selectionExt&nbsp;=&nbsp;this.getDataSource().getFilterExt(this.getDimension());<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internalWriteLog(&quot;Selection&nbsp;on&nbsp;Dimension:&nbsp;&quot;&nbsp;+&nbsp;this.getDimension()&nbsp;+&nbsp;&quot;&nbsp;|&nbsp;&quot;&nbsp;+&nbsp;selectionExt);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DSelectedKeyExtFull&nbsp;=&nbsp;selectionExt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;only&nbsp;single&nbsp;member<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(selectionExt.indexOf(&quot;;&quot;)&nbsp;==&nbsp;-1&nbsp;&amp;&amp;&nbsp;selectionExt.indexOf(&quot;&nbsp;-&nbsp;&quot;)&nbsp;==&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSelectedKeyExt&nbsp;=&nbsp;selectionExt;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSelectedKeyExt&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+return&nbsp;this.DDimension;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -424,8 +403,8 @@ return&nbsp;this.DSelectedText;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDimension">String<br/>getDimension</td>
-<td valign="top" width="*" class="function-help">gest&nbsp;the&nbsp;dimension<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_pauseRefresh">void<br/>pauseRefresh</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -437,7 +416,70 @@ return&nbsp;this.DSelectedText;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DDimension;
+this.DDoRefresh&nbsp;=&nbsp;false;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_private_onBeforeRender">void<br/>private_onBeforeRender</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_private_onSelectionChanged">void<br/>private_onSelectionChanged</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;key&nbsp;=&nbsp;this.getSelectedKey();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internalWriteLog(&quot;Internal&nbsp;Selection&nbsp;on&nbsp;Dimension:&nbsp;&quot;&nbsp;+&nbsp;this.getDimension()&nbsp;+&nbsp;&quot;&nbsp;|&nbsp;&quot;&nbsp;+&nbsp;key);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(key&nbsp;==&nbsp;&quot;-CLEAR-&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getDataSource().clearFilter(this.getDimension());<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getDataSource().setFilter(this.getDimension(),&nbsp;key);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_reloadDataSource">void<br/>reloadDataSource</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+//&nbsp;unfortunately&nbsp;this&nbsp;does&nbsp;not&nbsp;work&nbsp;correctly&nbsp;as&nbsp;this&nbsp;method&nbsp;is&nbsp;too&nbsp;late&nbsp;included&nbsp;(as&nbsp;first&nbsp;method&nbsp;on&nbsp;rendering,&nbsp;instead&nbsp;on&nbsp;before&nbsp;rendering)<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;this&nbsp;causes&nbsp;incorrect&nbsp;events&nbsp;in&nbsp;a&nbsp;phase&nbsp;where&nbsp;events&nbsp;are&nbsp;not&nbsp;allowed&nbsp;any&nbsp;more...&nbsp;(error:&nbsp;DS_1&nbsp;cannot&nbsp;be&nbsp;changed&nbsp;in&nbsp;rendering&nbsp;phase)<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;workaround&nbsp;is&nbsp;to&nbsp;call&nbsp;once&nbsp;explicitelly&nbsp;&quot;getMembers&quot;&nbsp;on&nbsp;this&nbsp;dimension<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.DBindingMode&nbsp;==&nbsp;&quot;Master&nbsp;Data&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.internalWriteLog(&quot;Call&nbsp;Members&nbsp;on&nbsp;Dimension:&nbsp;&quot;&nbsp;+&nbsp;this.getDimension()&nbsp;+&nbsp;&quot;&nbsp;|&nbsp;&quot;&nbsp;+&nbsp;this.DMaxMembers);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElements&nbsp;=&nbsp;this.superReadMembers(this.getDimension(),&nbsp;this.DMaxMembers);&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;check&nbsp;current&nbsp;selection&nbsp;from&nbsp;data&nbsp;source<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;selectionExt&nbsp;=&nbsp;this.getDataSource().getFilterExt(this.getDimension());<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.internalWriteLog(&quot;Selection&nbsp;on&nbsp;Dimension:&nbsp;&quot;&nbsp;+&nbsp;this.getDimension()&nbsp;+&nbsp;&quot;&nbsp;|&nbsp;&quot;&nbsp;+&nbsp;selectionExt);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DSelectedKeyExtFull&nbsp;=&nbsp;selectionExt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;only&nbsp;single&nbsp;member<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(selectionExt.indexOf(&quot;;&quot;)&nbsp;==&nbsp;-1&nbsp;&amp;&amp;&nbsp;selectionExt.indexOf(&quot;&nbsp;-&nbsp;&quot;)&nbsp;==&nbsp;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSelectedKeyExt&nbsp;=&nbsp;selectionExt;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DSelectedKeyExt&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -464,48 +506,6 @@ return&nbsp;this.DDimension;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DDimension&nbsp;=&nbsp;dimension;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_pauseRefresh">void<br/>pauseRefresh</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DDoRefresh&nbsp;=&nbsp;false;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_allowRefresh">void<br/>allowRefresh</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DDoRefresh&nbsp;=&nbsp;true;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

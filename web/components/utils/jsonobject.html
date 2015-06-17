@@ -80,8 +80,20 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeProperty [<a href="#FUNCTION_removeProperty">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="240px" class="function-short-name">clear [<a href="#FUNCTION_clear">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">createFromJSON [<a href="#FUNCTION_createFromJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">json</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">createFromValue [<a href="#FUNCTION_createFromValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">jsonValue</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -110,20 +122,8 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">createFromValue [<a href="#FUNCTION_createFromValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">jsonValue</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">createFromJSON [<a href="#FUNCTION_createFromJSON">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">json</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">clear [<a href="#FUNCTION_clear">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="240px" class="function-short-name">removeProperty [<a href="#FUNCTION_removeProperty">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -178,13 +178,60 @@ if&nbsp;(this.content&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.content&nbsp;===
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeProperty">void<br/>removeProperty</td>
-<td valign="top" width="*" class="function-help">Removes&nbsp;an&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>JSONOBJECT.removeProperty(String&nbsp;key);<br></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_clear">void<br/>clear</td>
+<td valign="top" width="*" class="function-help">Clears&nbsp;the&nbsp;Json&nbsp;Object&nbsp;to&nbsp;empty&nbsp;object<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.content&nbsp;=&nbsp;&quot;{}&quot;;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_createFromJSON">void<br/>createFromJSON</td>
+<td valign="top" width="*" class="function-help">Creates&nbsp;from&nbsp;different&nbsp;Json&nbsp;Object<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-name"><B>json</B></td>
+<td width="120px" class="parameter-type"><B>JSON</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.content&nbsp;=&nbsp;JSON.stringify(json);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_createFromValue">void<br/>createFromValue</td>
+<td valign="top" width="*" class="function-help">Creates&nbsp;from&nbsp;a&nbsp;string&nbsp;value&nbsp;in&nbsp;notation&nbsp;"{'key':'value',&nbsp;'key2':'value2'}"<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>jsonValue</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help"></td>
 </tr>
@@ -196,7 +243,7 @@ if&nbsp;(this.content&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.content&nbsp;===
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if&nbsp;(this.content&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.content&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.content&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.content&nbsp;=&nbsp;&quot;{}&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.content);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;existingKey&nbsp;in&nbsp;elementsJson)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(existingKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.delete(existingKey);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.content&nbsp;=&nbsp;JSON.stringify(elementsJson);
+var&nbsp;js&nbsp;=&nbsp;JSON.parse(jsonValue);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.content&nbsp;=&nbsp;JSON.stringify(js);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -288,13 +335,13 @@ return&nbsp;JSON.parse(this.content);
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_createFromValue">void<br/>createFromValue</td>
-<td valign="top" width="*" class="function-help">Creates&nbsp;from&nbsp;a&nbsp;string&nbsp;value&nbsp;in&nbsp;notation&nbsp;"{'key':'value',&nbsp;'key2':'value2'}"<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeProperty">void<br/>removeProperty</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;an&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>JSONOBJECT.removeProperty(String&nbsp;key);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>jsonValue</B></td>
+<td width="120px" class="parameter-name"><B>key</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help"></td>
 </tr>
@@ -306,54 +353,7 @@ return&nbsp;JSON.parse(this.content);
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;js&nbsp;=&nbsp;JSON.parse(jsonValue);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.content&nbsp;=&nbsp;JSON.stringify(js);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_createFromJSON">void<br/>createFromJSON</td>
-<td valign="top" width="*" class="function-help">Creates&nbsp;from&nbsp;different&nbsp;Json&nbsp;Object<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>json</B></td>
-<td width="120px" class="parameter-type"><B>JSON</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.content&nbsp;=&nbsp;JSON.stringify(json);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_clear">void<br/>clear</td>
-<td valign="top" width="*" class="function-help">Clears&nbsp;the&nbsp;Json&nbsp;Object&nbsp;to&nbsp;empty&nbsp;object<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.content&nbsp;=&nbsp;&quot;{}&quot;;
+if&nbsp;(this.content&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.content&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.content&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.content&nbsp;=&nbsp;&quot;{}&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.content);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;existingKey&nbsp;in&nbsp;elementsJson)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(existingKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.delete(existingKey);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.content&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

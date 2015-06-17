@@ -63,21 +63,21 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>projectionMethod<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Projection Method</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">SUM</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>projectedData<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Projected Data</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>projectionMethod<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Projection Method</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">SUM</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -101,19 +101,7 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setDataString [<a href="#FUNCTION_setDataString">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">dataString</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getDataString [<a href="#FUNCTION_getDataString">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getProjectedData [<a href="#FUNCTION_getProjectedData">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -125,14 +113,26 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setProjectDimension [<a href="#FUNCTION_setProjectDimension">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">dimension</td>
+<td valign="top" width="240px" class="function-short-name">getProjectedData [<a href="#FUNCTION_getProjectedData">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getProjectionMethod [<a href="#FUNCTION_getProjectionMethod">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDataString [<a href="#FUNCTION_setDataString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dataString</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setProjectDimension [<a href="#FUNCTION_setProjectDimension">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimension</td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
@@ -162,32 +162,6 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDataString">void<br/>setDataString</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;data&nbsp;in&nbsp;serialized&nbsp;string&nbsp;form.&nbsp;&nbsp;Meant&nbsp;to&nbsp;be&nbsp;used&nbsp;in&nbsp;conjunction&nbsp;with<br/>SCN&nbsp;Community&nbsp;Projection&nbsp;data&nbsp;component&nbsp;or&nbsp;another&nbsp;BYO&nbsp;Data&nbsp;component.<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>dataString</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">String</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.data&nbsp;=&nbsp;dataString;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDataString">String<br/>getDataString</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;serialized&nbsp;string&nbsp;representing&nbsp;data.&nbsp;&nbsp;Meant&nbsp;to&nbsp;be&nbsp;used&nbsp;with&nbsp;another<br/>SCN&nbsp;Community&nbsp;BYO&nbsp;Data&nbsp;component.<br/><br/>
 
@@ -202,27 +176,6 @@ this.data&nbsp;=&nbsp;dataString;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.data;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getProjectedData">String<br/>getProjectedData</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;projected&nbsp;serialized&nbsp;string&nbsp;representing&nbsp;data.&nbsp;&nbsp;Meant&nbsp;to&nbsp;be&nbsp;used&nbsp;with&nbsp;another<br/>SCN&nbsp;Community&nbsp;BYO&nbsp;Data&nbsp;component.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.projectedData;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -251,16 +204,11 @@ return&nbsp;this.projectDimension;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setProjectDimension">String<br/>setProjectDimension</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;dimension&nbsp;to&nbsp;project/aggregate<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getProjectedData">String<br/>getProjectedData</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;projected&nbsp;serialized&nbsp;string&nbsp;representing&nbsp;data.&nbsp;&nbsp;Meant&nbsp;to&nbsp;be&nbsp;used&nbsp;with&nbsp;another<br/>SCN&nbsp;Community&nbsp;BYO&nbsp;Data&nbsp;component.<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>dimension</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">String</td>
-</tr>
+
 
 </TABLE>
 
@@ -269,7 +217,7 @@ return&nbsp;this.projectDimension;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.projectDimension&nbsp;=&nbsp;dimension;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.projectedData;
+return&nbsp;this.projectedData;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -291,6 +239,58 @@ this.projectDimension&nbsp;=&nbsp;dimension;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.projectionMethod;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDataString">void<br/>setDataString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;data&nbsp;in&nbsp;serialized&nbsp;string&nbsp;form.&nbsp;&nbsp;Meant&nbsp;to&nbsp;be&nbsp;used&nbsp;in&nbsp;conjunction&nbsp;with<br/>SCN&nbsp;Community&nbsp;Projection&nbsp;data&nbsp;component&nbsp;or&nbsp;another&nbsp;BYO&nbsp;Data&nbsp;component.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dataString</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">String</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.data&nbsp;=&nbsp;dataString;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setProjectDimension">String<br/>setProjectDimension</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;dimension&nbsp;to&nbsp;project/aggregate<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimension</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">String</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.projectDimension&nbsp;=&nbsp;dimension;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.projectedData;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

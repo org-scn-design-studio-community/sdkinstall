@@ -45,24 +45,6 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Title</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>icon<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icon</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">sap-icon://menu2</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>buttonType<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Type</B><br/>&nbsp;
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
@@ -100,6 +82,15 @@
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Default</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>icon<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Icon</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">sap-icon://menu2</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -142,6 +133,15 @@
 <td width="100px" class="property-default">Auto</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Title</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
 
 	</TABLE>
 
@@ -172,6 +172,12 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addItem [<a href="#FUNCTION_addItem">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, text, icon</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getSelectedItem [<a href="#FUNCTION_getSelectedItem">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -186,12 +192,6 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">removeAllItems [<a href="#FUNCTION_removeAllItems">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addItem [<a href="#FUNCTION_addItem">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key, text, icon</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -248,6 +248,42 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addItem">void<br/>addItem</td>
+<td valign="top" width="*" class="function-help">Add&nbsp;an&nbsp;item<br/><div class='html-example'"><div class='html-code'>ACTIONSHEETBUTTON_1.addItem("delete",&nbsp;"Delete&nbsp;Bookmark",&nbsp;"sap-icon://delete");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Key</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Text</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>icon</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Icon</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;o&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.items&nbsp;!=&nbsp;&quot;&quot;)&nbsp;o&nbsp;=&nbsp;eval(this.items);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newItem&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key&nbsp;:&nbsp;key,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;:&nbsp;text,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;icon&nbsp;:&nbsp;icon<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;item&nbsp;=&nbsp;o[i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(item.key&nbsp;==&nbsp;key)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o[matchIndex]&nbsp;=&nbsp;newItem;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}else{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o.push(newItem);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(o);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedItem">String<br/>getSelectedItem</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Item&nbsp;Selected<br/><br/>
 
@@ -304,42 +340,6 @@ return&nbsp;this.selectedKey;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.items&nbsp;=&nbsp;&quot;[]&quot;;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addItem">void<br/>addItem</td>
-<td valign="top" width="*" class="function-help">Add&nbsp;an&nbsp;item<br/><div class='html-example'"><div class='html-code'>ACTIONSHEETBUTTON_1.addItem("delete",&nbsp;"Delete&nbsp;Bookmark",&nbsp;"sap-icon://delete");<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Key</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>text</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Text</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>icon</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Icon</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;o&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.items&nbsp;!=&nbsp;&quot;&quot;)&nbsp;o&nbsp;=&nbsp;eval(this.items);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newItem&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key&nbsp;:&nbsp;key,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;:&nbsp;text,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;icon&nbsp;:&nbsp;icon<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;item&nbsp;=&nbsp;o[i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(item.key&nbsp;==&nbsp;key)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o[matchIndex]&nbsp;=&nbsp;newItem;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}else{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o.push(newItem);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(o);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

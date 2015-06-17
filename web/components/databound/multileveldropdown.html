@@ -45,30 +45,6 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>valueDisplayType<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Value display type</B><br/>&nbsp;
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">Key</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Key+Text</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Text+Key</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-
-</table>
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">Key+Text</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>addSingleRootNode<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Add a single root node</B><br/>&nbsp;
 
@@ -78,12 +54,12 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>singleRootNodeName<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Single Root Node Name</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>addWeight<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Display a Weight</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">Root</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -111,12 +87,36 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>addWeight<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Display a Weight</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>singleRootNodeName<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Single Root Node Name</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">false</td>
+<td width="100px" class="property-default">Root</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>valueDisplayType<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Value display type</B><br/>&nbsp;
+<table style="width: 100%; border-top: 1px solid #000;" class="table1">
+<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
+<tr class="list-tr">
+<td class="value-td">Key</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Key+Text</td>
+<td class="value-td">X</td>
+</tr>
+<tr class="list-tr">
+<td class="value-td">Text+Key</td>
+<td class="value-td">&nbsp;</td>
+</tr>
+
+</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Key+Text</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -164,105 +164,9 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setAddSingleRootNode [<a href="#FUNCTION_setAddSingleRootNode">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSingleRootNodeName [<a href="#FUNCTION_getSingleRootNodeName">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSingleRootNodeName [<a href="#FUNCTION_setSingleRootNodeName">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">newName</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectedElemKey [<a href="#FUNCTION_getSelectedElemKey">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSelectedElemKey [<a href="#FUNCTION_setSelectedElemKey">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">selectedKey</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getvalueDisplayType [<a href="#FUNCTION_getvalueDisplayType">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setvalueDisplayType [<a href="#FUNCTION_setvalueDisplayType">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectedElemText [<a href="#FUNCTION_getSelectedElemText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSelectedElemText [<a href="#FUNCTION_setSelectedElemText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">selectedText</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getResetButton [<a href="#FUNCTION_getResetButton">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setResetButton [<a href="#FUNCTION_setResetButton">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getDimension [<a href="#FUNCTION_getDimension">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setDimension [<a href="#FUNCTION_setDimension">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getAddWeight [<a href="#FUNCTION_getAddWeight">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setAddWeight [<a href="#FUNCTION_setAddWeight">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelWeight [<a href="#FUNCTION_getSelWeight">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSelWeight [<a href="#FUNCTION_setSelWeight">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -272,7 +176,103 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDimension [<a href="#FUNCTION_getDimension">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getResetButton [<a href="#FUNCTION_getResetButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelWeight [<a href="#FUNCTION_getSelWeight">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedElemKey [<a href="#FUNCTION_getSelectedElemKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedElemText [<a href="#FUNCTION_getSelectedElemText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSingleRootNodeName [<a href="#FUNCTION_getSingleRootNodeName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getvalueDisplayType [<a href="#FUNCTION_getvalueDisplayType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAddSingleRootNode [<a href="#FUNCTION_setAddSingleRootNode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAddWeight [<a href="#FUNCTION_setAddWeight">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setColorClass [<a href="#FUNCTION_setColorClass">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDimension [<a href="#FUNCTION_setDimension">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setResetButton [<a href="#FUNCTION_setResetButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelWeight [<a href="#FUNCTION_setSelWeight">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedElemKey [<a href="#FUNCTION_setSelectedElemKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectedKey</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedElemText [<a href="#FUNCTION_setSelectedElemText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectedText</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSingleRootNodeName [<a href="#FUNCTION_setSingleRootNodeName">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">newName</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setvalueDisplayType [<a href="#FUNCTION_setvalueDisplayType">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">value</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -288,6 +288,24 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>colorClass<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>colorClass</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>colorClassWeight<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Color Coding Weight</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
 <td width="*" class="property-title-tooltip"><B>Data</B><br/>&nbsp;
 
@@ -306,12 +324,12 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>colorClass<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>colorClass</B><br/>&nbsp;
+<td width="120px" class="property-name-type"><B>selWeight<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Display Weight KF</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -330,24 +348,6 @@
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>selWeight<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Display Weight KF</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>colorClassWeight<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Color Coding Weight</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -381,16 +381,11 @@ return&nbsp;this.addSingleRootNode;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAddSingleRootNode">void<br/>setAddSingleRootNode</td>
-<td valign="top" width="*" class="function-help"><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAddWeight">boolean<br/>getAddWeight</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;addWeight&nbsp;------<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>Boolean</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
+
 
 </TABLE>
 
@@ -399,7 +394,7 @@ return&nbsp;this.addSingleRootNode;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.addSingleRootNode&nbsp;=&nbsp;value;
+return&nbsp;this.addWeight;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -407,8 +402,8 @@ this.addSingleRootNode&nbsp;=&nbsp;value;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSingleRootNodeName">String<br/>getSingleRootNodeName</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;singleRootName&nbsp;------<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorClass">String<br/>getColorClass</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;colorClass&nbsp;------<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -420,221 +415,7 @@ this.addSingleRootNode&nbsp;=&nbsp;value;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.singleRootNodeName;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSingleRootNodeName">void<br/>setSingleRootNodeName</td>
-<td valign="top" width="*" class="function-help"><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>newName</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.singleRootNodeName&nbsp;=&nbsp;newName;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedElemKey">String<br/>getSelectedElemKey</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selectedElemKey&nbsp;------<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.SelectedElemKey;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedElemKey">void<br/>setSelectedElemKey</td>
-<td valign="top" width="*" class="function-help"><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>selectedKey</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.SelectedElemKey&nbsp;=&nbsp;selectedKey;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getvalueDisplayType">String<br/>getvalueDisplayType</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selectedElemKey&nbsp;------<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.valueDisplayType;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setvalueDisplayType">void<br/>setvalueDisplayType</td>
-<td valign="top" width="*" class="function-help"><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.valueDisplayType&nbsp;=&nbsp;value;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedElemText">String<br/>getSelectedElemText</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selectedElemKey&nbsp;------<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.SelectedElemText;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedElemText">void<br/>setSelectedElemText</td>
-<td valign="top" width="*" class="function-help"><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>selectedText</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.SelectedElemText&nbsp;=&nbsp;selectedText;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getResetButton">String<br/>getResetButton</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;resetButton&nbsp;------<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.resetButton;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setResetButton">void<br/>setResetButton</td>
-<td valign="top" width="*" class="function-help"><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.resetButton&nbsp;=&nbsp;value;
+return&nbsp;this.colorClass;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -663,14 +444,140 @@ return&nbsp;this.selChar;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDimension">void<br/>setDimension</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getResetButton">String<br/>getResetButton</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;resetButton&nbsp;------<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.resetButton;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelWeight">String<br/>getSelWeight</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selWeight&nbsp;------<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selWeight;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedElemKey">String<br/>getSelectedElemKey</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selectedElemKey&nbsp;------<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.SelectedElemKey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedElemText">String<br/>getSelectedElemText</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selectedElemKey&nbsp;------<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.SelectedElemText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSingleRootNodeName">String<br/>getSingleRootNodeName</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;singleRootName&nbsp;------<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.singleRootNodeName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getvalueDisplayType">String<br/>getvalueDisplayType</td>
+<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selectedElemKey&nbsp;------<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.valueDisplayType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAddSingleRootNode">void<br/>setAddSingleRootNode</td>
 <td valign="top" width="*" class="function-help"><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="120px" class="parameter-type"><B>Boolean</B></td>
 <td width="*" class="parameter-help"></td>
 </tr>
 
@@ -681,28 +588,7 @@ return&nbsp;this.selChar;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.selChar&nbsp;=&nbsp;value;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAddWeight">boolean<br/>getAddWeight</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;addWeight&nbsp;------<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.addWeight;
+this.addSingleRootNode&nbsp;=&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -736,11 +622,16 @@ this.addWeight&nbsp;=&nbsp;value;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelWeight">String<br/>getSelWeight</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;selWeight&nbsp;------<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColorClass">void<br/>setColorClass</td>
+<td valign="top" width="*" class="function-help"><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -749,7 +640,59 @@ this.addWeight&nbsp;=&nbsp;value;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.selWeight;
+this.colorClass&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDimension">void<br/>setDimension</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.selChar&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setResetButton">void<br/>setResetButton</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.resetButton&nbsp;=&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -783,11 +726,16 @@ this.selWeight&nbsp;=&nbsp;value;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorClass">String<br/>getColorClass</td>
-<td valign="top" width="*" class="function-help">-------&nbsp;Getter&nbsp;/&nbsp;Setter&nbsp;for&nbsp;colorClass&nbsp;------<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedElemKey">void<br/>setSelectedElemKey</td>
+<td valign="top" width="*" class="function-help"><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectedKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -796,7 +744,7 @@ this.selWeight&nbsp;=&nbsp;value;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.colorClass;
+this.SelectedElemKey&nbsp;=&nbsp;selectedKey;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -804,7 +752,59 @@ return&nbsp;this.colorClass;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColorClass">void<br/>setColorClass</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedElemText">void<br/>setSelectedElemText</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectedText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.SelectedElemText&nbsp;=&nbsp;selectedText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSingleRootNodeName">void<br/>setSingleRootNodeName</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>newName</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.singleRootNodeName&nbsp;=&nbsp;newName;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setvalueDisplayType">void<br/>setvalueDisplayType</td>
 <td valign="top" width="*" class="function-help"><br/>
 
 <TABLE width="100%" class="table1">
@@ -822,7 +822,7 @@ return&nbsp;this.colorClass;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.colorClass&nbsp;=&nbsp;value;
+this.valueDisplayType&nbsp;=&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

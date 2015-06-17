@@ -89,20 +89,14 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59358">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeAllElements [<a href="#FUNCTION_removeAllElements">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="240px" class="function-short-name">addMenuItem [<a href="#FUNCTION_addMenuItem">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">elementKey, elementText, imageUrl, (isEnabled)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addSubMenuItem [<a href="#FUNCTION_addSubMenuItem">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">elementKey, elementText, imageUrl, parentElementKey, (isLeaf), (isEnabled)</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addMenuItem [<a href="#FUNCTION_addMenuItem">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">elementKey, elementText, imageUrl, (isEnabled)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -118,6 +112,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59358">Design
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeAllElements [<a href="#FUNCTION_removeAllElements">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
 
 	</TABLE>
 
@@ -129,24 +129,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59358">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>selectedText<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Text</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>cleanAll<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Technical proprty for Clean All Nodes</B><br/>&nbsp;
 
@@ -164,6 +146,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59358">Design
 <td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedText<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Text</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
 
 	</TABLE>
 
@@ -174,11 +174,31 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59358">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllElements">void<br/>removeAllElements</td>
-<td valign="top" width="*" class="function-help">remove&nbsp;all&nbsp;elements<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addMenuItem">void<br/>addMenuItem</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;Key,&nbsp;Text,&nbsp;Image&nbsp;Url&nbsp;information.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements,&nbsp;second&nbsp;one&nbsp;is&nbsp;a&nbsp;sibling&nbsp;of&nbsp;first&nbsp;one<br/><div class='html-code'>ACCORDION_1.addSection("ROOT_KEY1",&nbsp;"First&nbsp;Root&nbsp;Element",&nbsp;"");<br>ACCORDION_1.addSection("ROOT_KEY2",&nbsp;"Second&nbsp;Root&nbsp;Element",&nbsp;"");<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elementKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Element Key (must be unique)</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>elementText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Element text</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>imageUrl</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Image URL if not set no image</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>isEnabled</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help">Element enabled status</td>
+</tr>
 
 </TABLE>
 
@@ -187,7 +207,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59358">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.cleanAll&nbsp;=&nbsp;true;
+this.addSubMenuItem(elementKey,&nbsp;elementText,&nbsp;imageUrl,&nbsp;&quot;ROOT&quot;,&nbsp;false,&nbsp;isEnabled);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -246,47 +266,6 @@ if(isLeaf&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addMenuItem">void<br/>addMenuItem</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;Key,&nbsp;Text,&nbsp;Image&nbsp;Url&nbsp;information.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements,&nbsp;second&nbsp;one&nbsp;is&nbsp;a&nbsp;sibling&nbsp;of&nbsp;first&nbsp;one<br/><div class='html-code'>ACCORDION_1.addSection("ROOT_KEY1",&nbsp;"First&nbsp;Root&nbsp;Element",&nbsp;"");<br>ACCORDION_1.addSection("ROOT_KEY2",&nbsp;"Second&nbsp;Root&nbsp;Element",&nbsp;"");<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elementKey</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Element Key (must be unique)</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>elementText</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Element text</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>imageUrl</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Image URL if not set no image</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>isEnabled</B></td>
-<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
-<td width="*" class="parameter-help">Element enabled status</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.addSubMenuItem(elementKey,&nbsp;elementText,&nbsp;imageUrl,&nbsp;&quot;ROOT&quot;,&nbsp;false,&nbsp;isEnabled);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
 <td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key<br/><br/>
 
@@ -322,6 +301,27 @@ return&nbsp;this.selectedKey;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.selectedText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllElements">void<br/>removeAllElements</td>
+<td valign="top" width="*" class="function-help">remove&nbsp;all&nbsp;elements<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.cleanAll&nbsp;=&nbsp;true;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

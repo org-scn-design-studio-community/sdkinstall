@@ -45,33 +45,6 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>comboboxExample<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Simple Choice</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">quantile</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>colorExample<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Simple Color</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
-<td width="*" class="property-title-tooltip"><B>Data</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">null</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>checkboxExample<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Ignore Totals</B><br/>&nbsp;
 
@@ -90,8 +63,44 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>colorExample<br/>[Color]</B></td>
+<td width="*" class="property-title-tooltip"><B>Simple Color</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>comboboxExample<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Simple Choice</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">quantile</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>data<br/>[ResultSet]</B></td>
+<td width="*" class="property-title-tooltip"><B>Data</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">null</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>paletteExample<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Color Palette</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>spinnerExample<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Some numbers</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -105,15 +114,6 @@
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">initial</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>spinnerExample<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Some numbers</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -137,33 +137,33 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setComboboxExample [<a href="#FUNCTION_setComboboxExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">comboboxExample</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getComboboxExample [<a href="#FUNCTION_getComboboxExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColorExample [<a href="#FUNCTION_setColorExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">colorExample</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getColorExample [<a href="#FUNCTION_getColorExample">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">Color</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getComboboxExampleAsString [<a href="#FUNCTION_getComboboxExampleAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setCheckboxExample [<a href="#FUNCTION_setCheckboxExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">checkboxExample</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getPaletteExample [<a href="#FUNCTION_getPaletteExample">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSpinnerExample [<a href="#FUNCTION_getSpinnerExample">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTextExample [<a href="#FUNCTION_getTextExample">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -179,27 +179,27 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCheckboxExample [<a href="#FUNCTION_setCheckboxExample">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">checkboxExample</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColorExample [<a href="#FUNCTION_setColorExample">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">colorExample</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setComboboxExampleByString [<a href="#FUNCTION_setComboboxExampleByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">comboboxExample</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setPaletteExample [<a href="#FUNCTION_setPaletteExample">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">paletteExample</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getPaletteExample [<a href="#FUNCTION_getPaletteExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setTextExample [<a href="#FUNCTION_setTextExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">textExample</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getTextExample [<a href="#FUNCTION_getTextExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -209,9 +209,9 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSpinnerExample [<a href="#FUNCTION_getSpinnerExample">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
+<td valign="top" width="240px" class="function-short-name">setTextExample [<a href="#FUNCTION_setTextExample">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">textExample</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -234,80 +234,7 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setComboboxExample">void<br/>setComboboxExample</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;Choice&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>comboboxExample</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Simple Choice</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.comboboxExample&nbsp;=&nbsp;comboboxExample;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getComboboxExample">String<br/>getComboboxExample</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;Choice&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.comboboxExample;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColorExample">void<br/>setColorExample</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;Color&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>colorExample</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Simple Color</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.colorExample&nbsp;=&nbsp;colorExample;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorExample">String<br/>getColorExample</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColorExample">Color<br/>getColorExample</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;Color&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -328,16 +255,11 @@ return&nbsp;this.colorExample;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCheckboxExample">void<br/>setCheckboxExample</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Ignore&nbsp;Totals&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getComboboxExampleAsString">String<br/>getComboboxExampleAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Simple&nbsp;Choice&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>checkboxExample</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help">Ignore Totals</td>
-</tr>
+
 
 </TABLE>
 
@@ -346,7 +268,70 @@ return&nbsp;this.colorExample;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.checkboxExample&nbsp;=&nbsp;checkboxExample;
+return&nbsp;this.comboboxExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPaletteExample">String<br/>getPaletteExample</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Color&nbsp;Palette&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.paletteExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSpinnerExample">int<br/>getSpinnerExample</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Some&nbsp;numbers&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.spinnerExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTextExample">String<br/>getTextExample</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;A&nbsp;saple&nbsp;text&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.textExample;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -396,6 +381,84 @@ return&nbsp;this.checkboxOnlyGetterExample;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCheckboxExample">void<br/>setCheckboxExample</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Ignore&nbsp;Totals&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>checkboxExample</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Ignore Totals</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.checkboxExample&nbsp;=&nbsp;checkboxExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColorExample">void<br/>setColorExample</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;Color&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>colorExample</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Simple Color</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.colorExample&nbsp;=&nbsp;colorExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setComboboxExampleByString">void<br/>setComboboxExampleByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Simple&nbsp;Choice&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>comboboxExample</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Simple Choice</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.comboboxExample&nbsp;=&nbsp;comboboxExample;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPaletteExample">void<br/>setPaletteExample</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Color&nbsp;Palette&nbsp;Property<br/><br/>
 
@@ -415,74 +478,6 @@ return&nbsp;this.checkboxOnlyGetterExample;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.paletteExample&nbsp;=&nbsp;paletteExample;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPaletteExample">String<br/>getPaletteExample</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Color&nbsp;Palette&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.paletteExample;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTextExample">void<br/>setTextExample</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;A&nbsp;saple&nbsp;text&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>textExample</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">A saple text</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.textExample&nbsp;=&nbsp;textExample;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTextExample">String<br/>getTextExample</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;A&nbsp;saple&nbsp;text&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.textExample;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -516,11 +511,16 @@ this.spinnerExample&nbsp;=&nbsp;spinnerExample;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSpinnerExample">int<br/>getSpinnerExample</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Some&nbsp;numbers&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTextExample">void<br/>setTextExample</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;A&nbsp;saple&nbsp;text&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>textExample</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">A saple text</td>
+</tr>
 
 </TABLE>
 
@@ -529,7 +529,7 @@ this.spinnerExample&nbsp;=&nbsp;spinnerExample;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.spinnerExample;
+this.textExample&nbsp;=&nbsp;textExample;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

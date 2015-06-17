@@ -51,15 +51,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>enabled<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Enabled</B><br/>Enabled
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>editable<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Editable</B><br/>Editable
 
@@ -69,21 +60,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Value</B><br/>Value
+<td width="120px" class="property-name-type"><B>enabled<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Enabled</B><br/>Enabled
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">tri state value</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>tooltip<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Tooltip</B><br/>Tooltip
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -108,6 +90,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Unchecked</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>text<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Value</B><br/>Value
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">tri state value</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>tooltip<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Tooltip</B><br/>Tooltip
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -140,9 +140,27 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setEnabled [<a href="#FUNCTION_setEnabled">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">enabled</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">getSelectionState [<a href="#FUNCTION_getSelectionState">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_SelectionStateEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getText [<a href="#FUNCTION_getText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTooltip [<a href="#FUNCTION_getTooltip">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isEditable [<a href="#FUNCTION_isEditable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -158,32 +176,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">isEditable [<a href="#FUNCTION_isEditable">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getText [<a href="#FUNCTION_getText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setText [<a href="#FUNCTION_setText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getTooltip [<a href="#FUNCTION_getTooltip">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setTooltip [<a href="#FUNCTION_setTooltip">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">tooltip</td>
+<td valign="top" width="240px" class="function-short-name">setEnabled [<a href="#FUNCTION_setEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">enabled</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -194,9 +188,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSelectionState [<a href="#FUNCTION_getSelectionState">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_SelectionStateEnumfield</td>
+<td valign="top" width="240px" class="function-short-name">setText [<a href="#FUNCTION_setText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTooltip [<a href="#FUNCTION_setTooltip">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">tooltip</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -219,16 +219,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEnabled">void<br/>setEnabled</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionState">org_scn_community_shared_SelectionStateEnumfield<br/>getSelectionState</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;selection&nbsp;state&nbsp;-&nbsp;CHECKED&nbsp;|&nbsp;UNCHECKED&nbsp;|&nbsp;MIXED<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>enabled</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
-</tr>
+
 
 </TABLE>
 
@@ -237,7 +232,70 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.enabled&nbsp;=&nbsp;enabled;
+if(this.selectionState&nbsp;==&nbsp;&quot;Checked&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.CHECKED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.selectionState&nbsp;==&nbsp;&quot;Unchecked&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.UNCHECKED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.selectionState&nbsp;==&nbsp;&quot;Mixed&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.MIXED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.UNCHECKED;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getText">String<br/>getText</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;text<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.text;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTooltip">String<br/>getTooltip</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;tooltip<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.tooltip;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.editable;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -292,57 +350,15 @@ this.editable&nbsp;=&nbsp;editable;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.editable;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getText">String<br/>getText</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;text<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.text;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setText">void<br/>setText</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;text<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEnabled">void<br/>setEnabled</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="120px" class="parameter-name"><B>enabled</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Editable value </td>
 </tr>
 
 </TABLE>
@@ -352,54 +368,7 @@ return&nbsp;this.text;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.text&nbsp;=&nbsp;value;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTooltip">String<br/>getTooltip</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;tooltip<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.tooltip;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTooltip">void<br/>setTooltip</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;tooltip<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>tooltip</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.tooltip&nbsp;=&nbsp;tooltip;
+this.enabled&nbsp;=&nbsp;enabled;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -433,11 +402,16 @@ if(type&nbsp;==&nbsp;org_scn_community_shared_SelectionState.CHECKED)&nbsp;{<br/
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionState">org_scn_community_shared_SelectionStateEnumfield<br/>getSelectionState</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;selection&nbsp;state&nbsp;-&nbsp;CHECKED&nbsp;|&nbsp;UNCHECKED&nbsp;|&nbsp;MIXED<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setText">void<br/>setText</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;text<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -446,7 +420,33 @@ if(type&nbsp;==&nbsp;org_scn_community_shared_SelectionState.CHECKED)&nbsp;{<br/
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if(this.selectionState&nbsp;==&nbsp;&quot;Checked&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.CHECKED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.selectionState&nbsp;==&nbsp;&quot;Unchecked&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.UNCHECKED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.selectionState&nbsp;==&nbsp;&quot;Mixed&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.MIXED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.UNCHECKED;
+this.text&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTooltip">void<br/>setTooltip</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;tooltip<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tooltip</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.tooltip&nbsp;=&nbsp;tooltip;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

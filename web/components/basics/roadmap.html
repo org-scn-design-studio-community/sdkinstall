@@ -98,26 +98,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62162">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeAllSteps [<a href="#FUNCTION_removeAllSteps">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addStep [<a href="#FUNCTION_addStep">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">stepKey, stepText, visible, enabled</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setStepVisible [<a href="#FUNCTION_setStepVisible">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">stepKey, visible</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setStepEnabled [<a href="#FUNCTION_setStepEnabled">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">stepKey, enabled</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -128,8 +110,26 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62162">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeAllSteps [<a href="#FUNCTION_removeAllSteps">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setSelectedStep [<a href="#FUNCTION_setSelectedStep">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStepEnabled [<a href="#FUNCTION_setStepEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">stepKey, enabled</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setStepVisible [<a href="#FUNCTION_setStepVisible">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">stepKey, visible</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -171,27 +171,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62162">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllSteps">void<br/>removeAllSteps</td>
-<td valign="top" width="*" class="function-help">remove&nbsp;all&nbsp;steps<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DCleanAll&nbsp;=&nbsp;true;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addStep">void<br/>addStep</td>
 <td valign="top" width="*" class="function-help">Adds&nbsp;an&nbsp;step&nbsp;containing&nbsp;Key,&nbsp;Text,&nbsp;Visible&nbsp;and&nbsp;Enable&nbsp;flags.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;steps<br/><div class='html-code'>ROADMAP.addStep("STEP1",&nbsp;"First&nbsp;Step",&nbsp;true,&nbsp;false);<br>ROADMAP.addStep("STEP2",&nbsp;"Second&nbsp;Step",&nbsp;true,&nbsp;true);<br/></div></div><br/>
 
@@ -233,20 +212,57 @@ var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&qu
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStepVisible">void<br/>setStepVisible</td>
-<td valign="top" width="*" class="function-help"><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;make&nbsp;the&nbsp;step&nbsp;visible<br/><div class='html-code'>ROADMAP.addStepVisible("STEP1",&nbsp;true);<br></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedStep">String<br/>getSelectedStep</td>
+<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;step<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSelectedKey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllSteps">void<br/>removeAllSteps</td>
+<td valign="top" width="*" class="function-help">remove&nbsp;all&nbsp;steps<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DCleanAll&nbsp;=&nbsp;true;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedStep">void<br/>setSelectedStep</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;step<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>stepKey</B></td>
+<td width="120px" class="parameter-name"><B>key</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Step Key (must be unique)</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>visible</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help">Visible</td>
+<td width="*" class="parameter-help"></td>
 </tr>
 
 </TABLE>
@@ -256,7 +272,7 @@ var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&qu
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;stepKey)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].visible&nbsp;=&nbsp;visible;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+this.DSelectedKey&nbsp;=&nbsp;key;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -295,36 +311,20 @@ if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElemen
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedStep">String<br/>getSelectedStep</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;step<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.DSelectedKey;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedStep">void<br/>setSelectedStep</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;step<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStepVisible">void<br/>setStepVisible</td>
+<td valign="top" width="*" class="function-help"><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;make&nbsp;the&nbsp;step&nbsp;visible<br/><div class='html-code'>ROADMAP.addStepVisible("STEP1",&nbsp;true);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-name"><B>stepKey</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Step Key (must be unique)</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>visible</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Visible</td>
 </tr>
 
 </TABLE>
@@ -334,7 +334,7 @@ return&nbsp;this.DSelectedKey;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DSelectedKey&nbsp;=&nbsp;key;
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;stepKey)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].visible&nbsp;=&nbsp;visible;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
