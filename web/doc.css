@@ -3,6 +3,10 @@ body {
 	font-family: arial, helvetica, sans-serif;
 }
 
+table {
+	background: #FFFFFF !important;
+}
+
 .noscroll {
 	overflow: hidden;
 }
@@ -222,6 +226,14 @@ body {
 	background-color: lightgreen !important;
 	border-color: green !important;
 }
+.tileYellow {
+	background-color: lightyellow !important;
+	border-color: yellow !important;
+}
+.tileRed {
+	background-color: red !important;
+	border-color: red !important;
+}
 
 div#componentTile .sapMTileContent .yellow,
 .yellowTimelineItem .sapSuiteUiCommonsTimelineItemBox {
@@ -276,4 +288,9 @@ div#globalstatus
 {
 	vertical-align:top!important;
 	height:105px!important;
+}
+
+.news {
+	color: #000000;
+	background: #99CCFF;
 }

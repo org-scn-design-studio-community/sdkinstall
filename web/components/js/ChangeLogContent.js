@@ -36,7 +36,7 @@ requestChangeLogModel = function(url, id, name, model) {
         try {
             changeLog = JSON.parse(response);
         } catch (e) {
-            alert(e);
+            // alert(e);
         }
 
         model[id] = {};
