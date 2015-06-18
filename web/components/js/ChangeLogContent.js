@@ -70,7 +70,9 @@ requestChangeLogModel = function(url, id, name, model) {
 for (group in sdkComponentModel) {
     var components = sdkComponentModel[group];
 
-    counter = counter + components.length;
+    if(group != "prototypes") {
+	counter = counter + components.length;    
+    }
 }
 for (group in sdkComponentModel) {
     var components = sdkComponentModel[group];
