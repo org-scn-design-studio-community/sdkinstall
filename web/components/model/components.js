@@ -483,6 +483,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/facetselector",
+       title: "Facet Selector 2.0 (In Work)",
+       info: "FacetSelector",
+       icon: "databound/facetselector.png",
+       activeIcon: "databound/facetselector.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/jpd3hier",
        title: "D3 Hierarchy",
        info: "jpd3hier",
@@ -583,7 +592,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/ui5table",
-       title: "UI5 Table",
+       title: "UI5 Table 2.0",
        info: "UI5Table",
        icon: "databound/ui5table.png",
        activeIcon: "databound/ui5table.png",
