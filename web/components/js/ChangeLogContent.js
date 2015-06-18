@@ -78,7 +78,10 @@ for (group in sdkComponentModel) {
     for (compI in components) {
         var comp = components[compI];
 
-        requestChangeLogModel("../../../sdkhelp/web/components/" + comp.id + "/changes/changelog.json", comp.id.replace("/", "_"), comp.title, model);
+	// collect only non-prototypes
+	if(comp.id.indexOf("prototypes") == -1) {
+		requestChangeLogModel("../../../sdkhelp/web/components/" + comp.id + "/changes/changelog.json", comp.id.replace("/", "_"), comp.title, model);
+	}
     }
 }
 
