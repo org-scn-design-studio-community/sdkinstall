@@ -3,6 +3,10 @@ body {
 	font-family: arial, helvetica, sans-serif;
 }
 
+table {
+	background: #FFFFFF !important;
+}
+
 .noscroll {
 	overflow: hidden;
 }
@@ -284,4 +288,9 @@ div#globalstatus
 {
 	vertical-align:top!important;
 	height:105px!important;
+}
+
+.news {
+	color: #000000;
+	background: #99CCFF;
 }
