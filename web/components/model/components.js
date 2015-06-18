@@ -336,6 +336,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/rssfeedreader",
+       title: "RSSFeedReader",
+       info: "RSSFeedReader",
+       icon: "basics/rssfeedreader.png",
+       activeIcon: "basics/rssfeedreader.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/rangeslider",
        title: "Range Slider",
        info: "RangeSlider",
@@ -359,15 +368,6 @@ sdkComponentModel["basics"] = [
        info: "RoadMap",
        icon: "basics/roadmap.png",
        activeIcon: "basics/roadmap.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/rssfeedreader",
-       title: "RSSFeedReader",
-       info: "RSSFeedReader",
-       icon: "basics/rssfeedreader.png",
-       activeIcon: "basics/rssfeedreader.png",
        number: " ",
        numberUnit: "basics"
    },
@@ -449,42 +449,6 @@ sdkComponentModel["basics"] = [
        info: "WorldTime",
        icon: "basics/worldtime.png",
        activeIcon: "basics/worldtime.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/accordion",
-       title: "Accordion 2.0",
-       info: "Accordion",
-       icon: "basics/accordion.png",
-       activeIcon: "basics/accordion.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/activityviewer",
-       title: "Activity Viewer",
-       info: "ActivityViewer",
-       icon: "basics/activityviewer.png",
-       activeIcon: "basics/activityviewer.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/embeddedframe",
-       title: "Embedded Frame 2.0",
-       info: "EmbeddedFrame",
-       icon: "basics/embeddedframe.png",
-       activeIcon: "basics/embeddedframe.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/embeddedmedia",
-       title: "Embedded Media 2.0",
-       info: "EmbeddedMedia",
-       icon: "basics/embeddedmedia.png",
-       activeIcon: "basics/embeddedmedia.png",
        number: " ",
        numberUnit: "basics"
    },
@@ -881,24 +845,6 @@ sdkComponentModel["utils"] = [
        number: " ",
        numberUnit: "utils"
    },
-    {
-       id: "utils/datasourcehelper",
-       title: "Data Source Helper 2.0",
-       info: "DataSourceHelper",
-       icon: "utils/datasourcehelper.png",
-       activeIcon: "utils/datasourcehelper.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/jsonobject",
-       title: "Json Object",
-       info: "JsonObject",
-       icon: "utils/jsonobject.png",
-       activeIcon: "utils/jsonobject.png",
-       number: " ",
-       numberUnit: "utils"
-   },
 
 	];
 sdkComponentModel["prototypes"] = [
@@ -921,20 +867,20 @@ sdkComponentModel["prototypes"] = [
        numberUnit: "prototypes"
    },
     {
-       id: "prototypes/apstester",
-       title: "Aps Tester",
-       info: "ApsTester",
-       icon: "prototypes/apstester.png",
-       activeIcon: "prototypes/apstester.png",
-       number: " ",
-       numberUnit: "prototypes"
-   },
-    {
        id: "prototypes/apstesterui5",
        title: "Aps Tester UI5",
        info: "ApsTesterUI5",
        icon: "prototypes/apstesterui5.png",
        activeIcon: "prototypes/apstesterui5.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
+       id: "prototypes/apstester",
+       title: "Aps Tester",
+       info: "ApsTester",
+       icon: "prototypes/apstester.png",
+       activeIcon: "prototypes/apstester.png",
        number: " ",
        numberUnit: "prototypes"
    },
@@ -971,33 +917,6 @@ sdkComponentModel["prototypes"] = [
        info: "SapMList",
        icon: "prototypes/sapmlist.png",
        activeIcon: "prototypes/sapmlist.png",
-       number: " ",
-       numberUnit: "prototypes"
-   },
-    {
-       id: "prototypes/apstester",
-       title: "Aps Tester",
-       info: "ApsTester",
-       icon: "prototypes/apstester.png",
-       activeIcon: "prototypes/apstester.png",
-       number: " ",
-       numberUnit: "prototypes"
-   },
-    {
-       id: "prototypes/apstesterui5",
-       title: "Aps Tester UI5",
-       info: "ApsTesterUI5",
-       icon: "prototypes/apstesterui5.png",
-       activeIcon: "prototypes/apstesterui5.png",
-       number: " ",
-       numberUnit: "prototypes"
-   },
-    {
-       id: "prototypes/bulletchartgen",
-       title: "Bullet Chart (Gen Prototype)",
-       info: "BulletChartGen",
-       icon: "prototypes/bulletchartgen.png",
-       activeIcon: "prototypes/bulletchartgen.png",
        number: " ",
        numberUnit: "prototypes"
    },

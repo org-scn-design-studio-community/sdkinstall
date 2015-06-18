@@ -29,11 +29,50 @@
                writeToDom: true
            }));
 
+	var id = oContext.oModel.getProperty(oContext.sPath + "/id");
+	   
 	var ajaxcheckstatus = new org.scn.community.utils.PostResponseParser();
 	var callback = function () {
-		//oTile.addStyleClass("tileGreen");
+		var response = ajaxcheckstatus.getDReturnResponse();
+
+		response = response.substring(response.indexOf("=") + 1);
+		var changeLog = [];
+
+		try {
+		    changeLog = JSON.parse(response);
+		} catch (e) {
+		    // alert(e);
+		}
+
+		var statusAll = undefined;
+
+		for (index in changeLog) {
+		    var sItem = changeLog[index];
+
+		    if (sItem["test-status"] == "ok" || sItem["test-status"] == "good" || sItem["test-status"] == "passed") {
+        		if (statusAll == undefined) statusAll = "ok";
+    		}
+
+			if (sItem["test-status"] == "untested") {
+				if (sItem.title != "Start of Change Log") {
+					if (statusAll == undefined || statusAll == "ok") statusAll = "pending";
+				}
+			}
+
+			if (sItem["test-status"] == "bad") {
+				if (statusAll == undefined || statusAll == "ok" || statusAll == "pending") statusAll = "broken";
+			}
+		}
+	    
+	    if(statusAll == "ok") {
+	    	oTile.addStyleClass("tileGreen");	
+	    } else if(statusAll == "pending") {
+	    	oTile.addStyleClass("tileYellow");	
+	    } else {
+	    	oTile.addStyleClass("tileRed");
+	    }
 	}
-	requestAjaxJson("url", callback, ajaxcheckstatus);
+	requestAjaxJson("http://org-scn-design-studio-community.github.io/sdkhelp/web/components/"+id+"/changes/changelog.json", callback, ajaxcheckstatus);
 	
        //Provide URI for icons
        var iconSrc = oContext.oModel.getProperty(oContext.sPath + "/icon");
