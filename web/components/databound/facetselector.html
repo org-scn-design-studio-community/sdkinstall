@@ -81,12 +81,30 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DMaxMembers<br/>[int]</B></td>
+<td width="120px" class="property-name-type"><B>DFacetWidth<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Facet Width in px</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">160</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DMaxDisplayMembers<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Maximum Number of Members</B><br/>&nbsp;
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">5</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DMaxMembers<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Maximum Number of Members</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">1000</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -121,7 +139,7 @@
 <td width="*" class="property-title-tooltip"><B>Data List</B><br/>&nbsp;
 
 </td>
-<td width="60px" class="property-group">Display</td>
+<td width="60px" class="property-group">Data</td>
 <td width="100px" class="property-default">null</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
@@ -135,16 +153,7 @@
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	<tr>
-<td width="120px" class="property-name-type"><B>onInternalSelectionChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On List Selection</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-
+	
 	</TABLE>
 
 	<br/>
@@ -170,6 +179,18 @@
 <td valign="top" width="240px" class="function-short-name">getDisplayTextAsString [<a href="#FUNCTION_getDisplayTextAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getFacetWidth [<a href="#FUNCTION_getFacetWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMaxDisplayMembers [<a href="#FUNCTION_getMaxDisplayMembers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -200,6 +221,12 @@
 <td valign="top" width="240px" class="function-short-name">isClearOthers [<a href="#FUNCTION_isClearOthers">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">private_onSelectionChanged [<a href="#FUNCTION_private_onSelectionChanged">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -247,6 +274,18 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setDisplayTextByString [<a href="#FUNCTION_setDisplayTextByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">displayText</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFacetWidth [<a href="#FUNCTION_setFacetWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">facetWidth</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxDisplayMembers [<a href="#FUNCTION_setMaxDisplayMembers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">maxDisplayMembers</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -309,6 +348,15 @@
 </td>
 <td width="60px" class="property-group">Events</td>
 <td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onInternalSelectionChanged<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On List Selection</B><br/>&nbsp;
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">this.private_onSelectionChanged();</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -377,6 +425,48 @@ var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DCustomDimensions);<br/>&nbsp;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DDisplayText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFacetWidth">int<br/>getFacetWidth</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Facet&nbsp;Width&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DFacetWidth;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMaxDisplayMembers">int<br/>getMaxDisplayMembers</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Maximum&nbsp;Number&nbsp;of&nbsp;Members&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DMaxDisplayMembers;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -482,6 +572,27 @@ return&nbsp;this.DZeroValuesMode;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DClearOthers;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_private_onSelectionChanged">void<br/>private_onSelectionChanged</td>
+<td valign="top" width="*" class="function-help">DO&nbsp;NOT&nbsp;USE&nbsp;PRIVATE&nbsp;METHODS<br/>@Visibility(private)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+/*&nbsp;entering&nbsp;general&nbsp;block*/<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;l&nbsp;=&nbsp;{};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;try{<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.openZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;entering&nbsp;general&nbsp;block*/<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;l.selection&nbsp;=&nbsp;this.DSelection;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.selectionJson&nbsp;=&nbsp;JSON.parse(l.selection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.dimensionName&nbsp;=&nbsp;l.selectionJson.dimension;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.keys&nbsp;=&nbsp;l.selectionJson.keys;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;l.keysAsArray&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;l.DS&nbsp;=&nbsp;this.getDataSource();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(l.DS)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(l.selectionJson.clearOthers&nbsp;&amp;&amp;&nbsp;that.isClearOthers())&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.private_readDimensions(l.DS);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions&nbsp;=&nbsp;this._tempDimensions;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(this,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.dimensions.forEach(function(dimension,&nbsp;index)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!dimension.isMeasuresDimension)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.currentDimensionName&nbsp;=&nbsp;dimension.name<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(l.currentDimensionName&nbsp;!=&nbsp;l.dimensionName)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.DS.clearFilter(l.currentDimensionName);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(l.keys.length&nbsp;==&nbsp;1&nbsp;&amp;&amp;&nbsp;l.keys[0]&nbsp;==&nbsp;&quot;-ALL-&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.DS.clearFilter(l.dimensionName);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;iK&nbsp;=&nbsp;0;&nbsp;iK&nbsp;&lt;&nbsp;l.keys.length;&nbsp;iK++)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.key&nbsp;=&nbsp;l.keys[iK];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.keysAsArray.push(l.key);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.inspectZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.DS.setFilter(l.dimensionName,&nbsp;l.keysAsArray);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.exitZtl(that,&nbsp;l)};<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(e)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(this.isDebug())&nbsp;{&nbsp;&nbsp;DEBUG.processZtlException(that,&nbsp;l,&nbsp;e)};throw&nbsp;e;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -685,6 +796,58 @@ this.DCustomDimensions&nbsp;=&nbsp;customDimensions;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DDisplayText&nbsp;=&nbsp;displayText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFacetWidth">void<br/>setFacetWidth</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Facet&nbsp;Width&nbsp;in&nbsp;px&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>facetWidth</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Facet Width in px</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DFacetWidth&nbsp;=&nbsp;facetWidth;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaxDisplayMembers">void<br/>setMaxDisplayMembers</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Maximum&nbsp;Number&nbsp;of&nbsp;Members&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxDisplayMembers</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Maximum Number of Members</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DMaxDisplayMembers&nbsp;=&nbsp;maxDisplayMembers;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

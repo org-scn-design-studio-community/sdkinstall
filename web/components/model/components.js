@@ -475,7 +475,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/facetfilter",
-       title: "Facet Filter",
+       title: "Facet Filter 2.0 (In Work)",
        info: "FacetFilter",
        icon: "databound/facetfilter.png",
        activeIcon: "databound/facetfilter.png",
