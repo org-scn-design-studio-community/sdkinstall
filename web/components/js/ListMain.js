@@ -287,7 +287,7 @@
        text: " "
    }));
    stageUI.createRow({
-       height: "55px"
+       height: "80px"
    }, cellEmpty);
    // stageUI.addContent(strip);
    // stageUI.addContent(componentTile);
