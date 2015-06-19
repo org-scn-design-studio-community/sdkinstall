@@ -475,7 +475,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/facetfilter",
-       title: "Facet Filter 2.0 (In Work)",
+       title: "Facet Filter 2.0",
        info: "FacetFilter",
        icon: "databound/facetfilter.png",
        activeIcon: "databound/facetfilter.png",
@@ -484,7 +484,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/facetselector",
-       title: "Facet Selector 2.0 (In Work)",
+       title: "Facet Selector 2.0",
        info: "FacetSelector",
        icon: "databound/facetselector.png",
        activeIcon: "databound/facetselector.png",
