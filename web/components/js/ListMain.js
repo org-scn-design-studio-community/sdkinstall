@@ -49,9 +49,9 @@
 		for (index in changeLog) {
 		    var sItem = changeLog[index];
 
-		    if (sItem["test-status"] == "ok" || sItem["test-status"] == "good" || sItem["test-status"] == "passed") {
-        		if (statusAll == undefined) statusAll = "ok";
-    		}
+			if (sItem["test-status"] == "ok" || sItem["test-status"] == "good" || sItem["test-status"] == "passed") {
+				if (statusAll == undefined) statusAll = "ok";
+			}
 
 			if (sItem["test-status"] == "untested") {
 				if (sItem.title != "Start of Change Log") {
@@ -69,7 +69,9 @@
 	    } else if(statusAll == "pending") {
 	    	oTile.addStyleClass("tileYellow");	
 	    } else {
-	    	oTile.addStyleClass("tileRed");
+		    if(changeLog.length > 1) {
+			oTile.addStyleClass("tileRed");
+		    }
 	    }
 	}
 	requestAjaxJson("http://org-scn-design-studio-community.github.io/sdkhelp/web/components/"+id+"/changes/changelog.json", callback, ajaxcheckstatus);
