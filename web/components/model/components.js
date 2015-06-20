@@ -13,7 +13,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/actionsheetbutton",
-       title: "Action Sheet Button",
+       title: "Action Sheet Button 2.0",
        info: "ActionSheetButton",
        icon: "basics/actionsheetbutton.png",
        activeIcon: "basics/actionsheetbutton.png",
