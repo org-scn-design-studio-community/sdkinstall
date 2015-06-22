@@ -125,6 +125,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getButtonType [<a href="#FUNCTION_getButtonType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_ButtonTypeEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getButtonTypeAsString [<a href="#FUNCTION_getButtonTypeAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -134,6 +140,12 @@
 <td valign="top" width="240px" class="function-short-name">getIcon [<a href="#FUNCTION_getIcon">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getPlacement [<a href="#FUNCTION_getPlacement">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_PlacementEnumfield</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -167,6 +179,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setButtonType [<a href="#FUNCTION_setButtonType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">buttonType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setButtonTypeByString [<a href="#FUNCTION_setButtonTypeByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">buttonType</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -175,6 +193,12 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setIcon [<a href="#FUNCTION_setIcon">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">icon</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setPlacement [<a href="#FUNCTION_setPlacement">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">placement</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -264,6 +288,27 @@ var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getButtonType">org_scn_community_shared_ButtonTypeEnumfield<br/>getButtonType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Type&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.buttonType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getButtonTypeAsString">String<br/>getButtonTypeAsString</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Type&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
@@ -299,6 +344,27 @@ return&nbsp;this.buttonType;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.icon;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPlacement">org_scn_community_shared_PlacementEnumfield<br/>getPlacement</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Placement&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.placement;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -416,6 +482,32 @@ if&nbsp;(this.items&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.items&nbsp;===&nbs
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setButtonType">void<br/>setButtonType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Type&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>buttonType</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_ButtonTypeEnumfield</B></td>
+<td width="*" class="parameter-help">Type</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+buttonType&nbsp;=&nbsp;buttonType.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.buttonType&nbsp;=&nbsp;buttonType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setButtonTypeByString">void<br/>setButtonTypeByString</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Type&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
 
@@ -461,6 +553,32 @@ this.buttonType&nbsp;=&nbsp;buttonType;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.icon&nbsp;=&nbsp;icon;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPlacement">void<br/>setPlacement</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Placement&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>placement</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_PlacementEnumfield</B></td>
+<td width="*" class="parameter-help">Placement</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+placement&nbsp;=&nbsp;placement.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.placement&nbsp;=&nbsp;placement;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

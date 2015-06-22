@@ -68,7 +68,7 @@
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">16px</td>
+<td width="100px" class="property-default">Size_16px</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -167,6 +167,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getImageSize [<a href="#FUNCTION_getImageSize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_ImageSizeEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getImageSizeAsString [<a href="#FUNCTION_getImageSizeAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -176,6 +182,12 @@
 <td valign="top" width="240px" class="function-short-name">getMaxSectionHeight [<a href="#FUNCTION_getMaxSectionHeight">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMemberDisplay [<a href="#FUNCTION_getMemberDisplay">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_MemberDisplayEnumfield</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -221,6 +233,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setImageSize [<a href="#FUNCTION_setImageSize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">imageSize</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setImageSizeByString [<a href="#FUNCTION_setImageSizeByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">imageSize</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -229,6 +247,12 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMaxSectionHeight [<a href="#FUNCTION_setMaxSectionHeight">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">maxSectionHeight</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMemberDisplay [<a href="#FUNCTION_setMemberDisplay">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">memberDisplay</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -440,6 +464,27 @@ return&nbsp;this.expandedKey;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getImageSize">org_scn_community_shared_ImageSizeEnumfield<br/>getImageSize</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Size&nbsp;of&nbsp;the&nbsp;Image&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.imageSize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getImageSizeAsString">String<br/>getImageSizeAsString</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Size&nbsp;of&nbsp;the&nbsp;Image&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
@@ -475,6 +520,27 @@ return&nbsp;this.imageSize;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.maxSectionHeight;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMemberDisplay">org_scn_community_shared_MemberDisplayEnumfield<br/>getMemberDisplay</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Member&nbsp;Display&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.memberDisplay;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -644,6 +710,32 @@ this.defaultImage&nbsp;=&nbsp;defaultImage;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setImageSize">void<br/>setImageSize</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Size&nbsp;of&nbsp;the&nbsp;Image&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>imageSize</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_ImageSizeEnumfield</B></td>
+<td width="*" class="parameter-help">Size of the Image</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+imageSize&nbsp;=&nbsp;imageSize.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.imageSize&nbsp;=&nbsp;imageSize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setImageSizeByString">void<br/>setImageSizeByString</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Size&nbsp;of&nbsp;the&nbsp;Image&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
 
@@ -689,6 +781,32 @@ this.imageSize&nbsp;=&nbsp;imageSize;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.maxSectionHeight&nbsp;=&nbsp;maxSectionHeight;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMemberDisplay">void<br/>setMemberDisplay</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Member&nbsp;Display&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>memberDisplay</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_MemberDisplayEnumfield</B></td>
+<td width="*" class="parameter-help">Member Display</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+memberDisplay&nbsp;=&nbsp;memberDisplay.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.memberDisplay&nbsp;=&nbsp;memberDisplay;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

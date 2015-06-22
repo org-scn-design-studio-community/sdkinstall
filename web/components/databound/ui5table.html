@@ -263,6 +263,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getFormattingOperator [<a href="#FUNCTION_getFormattingOperator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_FormattingOperatorEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getFormattingOperatorAsString [<a href="#FUNCTION_getFormattingOperatorAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -272,6 +278,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td valign="top" width="240px" class="function-short-name">getHeaderColWidth [<a href="#FUNCTION_getHeaderColWidth">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getNavigationMode [<a href="#FUNCTION_getNavigationMode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_NavigationModeEnumfield</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -449,6 +461,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFormattingOperator [<a href="#FUNCTION_setFormattingOperator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">formattingOperator</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setFormattingOperatorByString [<a href="#FUNCTION_setFormattingOperatorByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">formattingOperator</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -463,6 +481,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setIgnoreResults [<a href="#FUNCTION_setIgnoreResults">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">ignoreResults</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setNavigationMode [<a href="#FUNCTION_setNavigationMode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">navigationMode</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -637,6 +661,27 @@ return&nbsp;this.DFormattingCondition;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFormattingOperator">org_scn_community_shared_FormattingOperatorEnumfield<br/>getFormattingOperator</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DFormattingOperator;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFormattingOperatorAsString">String<br/>getFormattingOperatorAsString</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
@@ -672,6 +717,27 @@ return&nbsp;this.DFormattingOperator;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DHeaderColWidth;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getNavigationMode">org_scn_community_shared_NavigationModeEnumfield<br/>getNavigationMode</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Navigation&nbsp;Mode&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DNavigationMode;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1338,6 +1404,32 @@ this.DFormattingCondition&nbsp;=&nbsp;formattingCondition;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFormattingOperator">void<br/>setFormattingOperator</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>formattingOperator</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_FormattingOperatorEnumfield</B></td>
+<td width="*" class="parameter-help">(non-stable) Formatting Operator</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+formattingOperator&nbsp;=&nbsp;formattingOperator.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DFormattingOperator&nbsp;=&nbsp;formattingOperator;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFormattingOperatorByString">void<br/>setFormattingOperatorByString</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;(non-stable)&nbsp;Formatting&nbsp;Operator&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
 
@@ -1409,6 +1501,32 @@ this.DHeaderColWidth&nbsp;=&nbsp;headerColWidth;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DIgnoreResults&nbsp;=&nbsp;ignoreResults;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNavigationMode">void<br/>setNavigationMode</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Navigation&nbsp;Mode&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>navigationMode</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_NavigationModeEnumfield</B></td>
+<td width="*" class="parameter-help">Navigation Mode</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+navigationMode&nbsp;=&nbsp;navigationMode.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DNavigationMode&nbsp;=&nbsp;navigationMode;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

@@ -232,7 +232,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62088">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if(this.selectionState&nbsp;==&nbsp;&quot;Checked&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.CHECKED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.selectionState&nbsp;==&nbsp;&quot;Unchecked&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.UNCHECKED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(this.selectionState&nbsp;==&nbsp;&quot;Mixed&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.MIXED;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;org_scn_community_shared_SelectionState.UNCHECKED;
+return&nbsp;this.selectionState;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -394,7 +394,7 @@ this.enabled&nbsp;=&nbsp;enabled;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if(type&nbsp;==&nbsp;org_scn_community_shared_SelectionState.CHECKED)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.selectionState&nbsp;=&nbsp;&quot;Checked&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SelectionState.UNCHECKED)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.selectionState&nbsp;=&nbsp;&quot;Unchecked&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(type&nbsp;==&nbsp;org_scn_community_shared_SelectionState.MIXED)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.selectionState&nbsp;=&nbsp;&quot;Mixed&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.selectionState&nbsp;=&nbsp;&quot;Unchecked&quot;;
+this.selectionState&nbsp;=&nbsp;type;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

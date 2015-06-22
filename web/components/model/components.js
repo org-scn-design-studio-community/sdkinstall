@@ -39,6 +39,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/arrowedline",
+       title: "Arrowed Line",
+       info: "ArrowedLine",
+       icon: "basics/arrowedline.png",
+       activeIcon: "basics/arrowedline.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/base64image",
        title: "Base64 Image Encoder",
        info: "Base64Image",

@@ -263,6 +263,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getShowalert [<a href="#FUNCTION_getShowalert">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getShowalertAsString [<a href="#FUNCTION_getShowalertAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -361,6 +367,12 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setRealization [<a href="#FUNCTION_setRealization">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">realization</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setShowalert [<a href="#FUNCTION_setShowalert">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">showalert</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -632,6 +644,27 @@ return&nbsp;this.mingraphheight;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.realization;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getShowalert">org_scn_community_shared_Enumfield<br/>getShowalert</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;When&nbsp;to&nbsp;show&nbsp;an&nbsp;alert&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.showalert;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1034,6 +1067,32 @@ this.mingraphheight&nbsp;=&nbsp;mingraphheight;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.realization&nbsp;=&nbsp;realization;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setShowalert">void<br/>setShowalert</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;When&nbsp;to&nbsp;show&nbsp;an&nbsp;alert&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>showalert</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">When to show an alert</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+showalert&nbsp;=&nbsp;showalert.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.showalert&nbsp;=&nbsp;showalert;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
