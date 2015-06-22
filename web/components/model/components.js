@@ -13,7 +13,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/actionsheetbutton",
-       title: "Action Sheet Button",
+       title: "Action Sheet Button 2.0",
        info: "ActionSheetButton",
        icon: "basics/actionsheetbutton.png",
        activeIcon: "basics/actionsheetbutton.png",
@@ -35,6 +35,15 @@ sdkComponentModel["basics"] = [
        info: "ApplicationHeader",
        icon: "basics/applicationheader.png",
        activeIcon: "basics/applicationheader.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/arrowedline",
+       title: "Arrowed Line",
+       info: "ArrowedLine",
+       icon: "basics/arrowedline.png",
+       activeIcon: "basics/arrowedline.png",
        number: " ",
        numberUnit: "basics"
    },
