@@ -465,6 +465,15 @@ sdkComponentModel["basics"] = [
 	];
 sdkComponentModel["databound"] = [
    {
+       id: "databound/advanceddatatable",
+       title: "Advanced Data Table",
+       info: "AdvancedDataTable",
+       icon: "databound/advanceddatatable.png",
+       activeIcon: "databound/advanceddatatable.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/table",
        title: "Data Table",
        info: "Table",
@@ -701,6 +710,15 @@ sdkComponentModel["datasource"] = [
        info: "DynCsvDataSource",
        icon: "datasource/dyncsvdatasource.png",
        activeIcon: "datasource/dyncsvdatasource.png",
+       number: " ",
+       numberUnit: "datasource"
+   },
+    {
+       id: "datasource/scalingdatasource",
+       title: "Scaling Data Source 2.0",
+       info: "ScalingDataSource",
+       icon: "datasource/scalingdatasource.png",
+       activeIcon: "datasource/scalingdatasource.png",
        number: " ",
        numberUnit: "datasource"
    },
