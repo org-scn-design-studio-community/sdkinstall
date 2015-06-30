@@ -31,7 +31,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/applicationheader",
-       title: "Application Header",
+       title: "Application Header 2.0",
        info: "ApplicationHeader",
        icon: "basics/applicationheader.png",
        activeIcon: "basics/applicationheader.png",
@@ -58,7 +58,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/basicbusinesscard",
-       title: "Basic Business Card",
+       title: "Basic Business Card 2.0",
        info: "BasicBusinessCard",
        icon: "basics/basicbusinesscard.png",
        activeIcon: "basics/basicbusinesscard.png",
@@ -67,7 +67,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/calendar",
-       title: "Calendar",
+       title: "Calendar 2.0",
        info: "Calendar",
        icon: "basics/calendar.png",
        activeIcon: "basics/calendar.png",
@@ -76,7 +76,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/checkboxgroup",
-       title: "Check Box Group",
+       title: "Check Box Group 2.0",
        info: "CheckBoxGroup",
        icon: "basics/checkboxgroup.png",
        activeIcon: "basics/checkboxgroup.png",
@@ -346,7 +346,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/rssfeedreader",
-       title: "RSSFeedReader",
+       title: "RSSFeedReader 2.0",
        info: "RSSFeedReader",
        icon: "basics/rssfeedreader.png",
        activeIcon: "basics/rssfeedreader.png",

@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/calendar/examples.json");
 </script>
 
-<title>Calendar - SCN Design Studio Community</title>
+<title>Calendar 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	Calendar [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Calendar
+	Calendar 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -62,21 +62,10 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 <tr>
 <td width="120px" class="property-name-type"><B>DSelectionType<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Selection Type</B><br/>Selection Type
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">Single Selection</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Range Selection</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">Single Selection</td>
+<td width="100px" class="property-default">Single</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -108,7 +97,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>firstDayOffset<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>First Day Offset (0 == Sunday)</B><br/>First Day Offset (0 == Sunday, 1 == Monday)
+<td width="*" class="property-title-tooltip"><B>First Day Offset (0 == Sunday)</B><br/>First Day Offset (0 == Sunday)
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -126,7 +115,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>monthsToDisplay<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Months To Display</B><br/>Months  ToDisplay
+<td width="*" class="property-title-tooltip"><B>Months To Display</B><br/>Months To Display
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -163,29 +152,29 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onCurrentChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Current Value Changed</B><br/>Event for On Current Value Changed
+<td width="*" class="property-title-tooltip"><B>Event For On Current Value Changed</B><br/>Event For On Current Value Changed
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>onRangeChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Value Change with Date Range</B><br/>Event for On Value Change with Date Range
+<td width="*" class="property-title-tooltip"><B>Event For On Value Change With Date Range</B><br/>Event For On Value Change With Date Range
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>onSingleChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Value Change with Single Date</B><br/>Event for On Value Change with Single Date
+<td width="*" class="property-title-tooltip"><B>Event For On Value Change With Single Date</B><br/>Event For On Value Change With Single Date
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -199,74 +188,134 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getCurrentDateValue [<a href="#FUNCTION_getCurrentDateValue">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getCurrentValue [<a href="#FUNCTION_getCurrentValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getRangeDateValueFrom [<a href="#FUNCTION_getRangeDateValueFrom">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getFirstDayOffset [<a href="#FUNCTION_getFirstDayOffset">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMonthsPerRow [<a href="#FUNCTION_getMonthsPerRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMonthsToDisplay [<a href="#FUNCTION_getMonthsToDisplay">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectionType [<a href="#FUNCTION_getSelectionType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_SelectionTypeEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectionTypeAsString [<a href="#FUNCTION_getSelectionTypeAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getRangeDateValueTo [<a href="#FUNCTION_getRangeDateValueTo">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getValue [<a href="#FUNCTION_getValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSingleDateValue [<a href="#FUNCTION_getSingleDateValue">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getValueF [<a href="#FUNCTION_getValueF">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">isEditable [<a href="#FUNCTION_isEditable">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getValueT [<a href="#FUNCTION_getValueT">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getWeeksPerRow [<a href="#FUNCTION_getWeeksPerRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isSingleRow [<a href="#FUNCTION_isSingleRow">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">isEnabled [<a href="#FUNCTION_isEnabled">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="240px" class="function-short-name">setCurrentValue [<a href="#FUNCTION_setCurrentValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">currentValue</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setCurrentDateValue [<a href="#FUNCTION_setCurrentDateValue">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setFirstDayOffset [<a href="#FUNCTION_setFirstDayOffset">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">firstDayOffset</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMonthsPerRow [<a href="#FUNCTION_setMonthsPerRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">monthsPerRow</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMonthsToDisplay [<a href="#FUNCTION_setMonthsToDisplay">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">monthsToDisplay</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectionType [<a href="#FUNCTION_setSelectionType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectionType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectionTypeByString [<a href="#FUNCTION_setSelectionTypeByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectionType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSingleRow [<a href="#FUNCTION_setSingleRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">singleRow</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setValue [<a href="#FUNCTION_setValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">value</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setEditable [<a href="#FUNCTION_setEditable">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">editable</td>
+<td valign="top" width="240px" class="function-short-name">setValueF [<a href="#FUNCTION_setValueF">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">valueF</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setEnabled [<a href="#FUNCTION_setEnabled">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">enabled</td>
+<td valign="top" width="240px" class="function-short-name">setValueT [<a href="#FUNCTION_setValueT">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">valueT</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setRangeDateValueFrom [<a href="#FUNCTION_setRangeDateValueFrom">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setRangeDateValueTo [<a href="#FUNCTION_setRangeDateValueTo">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSingleDateValue [<a href="#FUNCTION_setSingleDateValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">value</td>
+<td valign="top" width="240px" class="function-short-name">setWeeksPerRow [<a href="#FUNCTION_setWeeksPerRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">weeksPerRow</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -290,8 +339,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentDateValue">String<br/>getCurrentDateValue</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;current&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentValue">String<br/>getCurrentValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Current&nbsp;Date&nbsp;Value&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -311,8 +360,8 @@ return&nbsp;this.DCurrentValue;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRangeDateValueFrom">String<br/>getRangeDateValueFrom</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;value&nbsp;from<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFirstDayOffset">int<br/>getFirstDayOffset</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;First&nbsp;Day&nbsp;Offset&nbsp;(0&nbsp;==&nbsp;Sunday)&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -324,7 +373,7 @@ return&nbsp;this.DCurrentValue;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DValueF;
+return&nbsp;this.firstDayOffset;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -332,8 +381,8 @@ return&nbsp;this.DValueF;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRangeDateValueTo">String<br/>getRangeDateValueTo</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;value&nbsp;to<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMonthsPerRow">int<br/>getMonthsPerRow</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Months&nbsp;Per&nbsp;Row&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -345,7 +394,7 @@ return&nbsp;this.DValueF;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DValueT;
+return&nbsp;this.monthsPerRow;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -353,8 +402,71 @@ return&nbsp;this.DValueT;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSingleDateValue">String<br/>getSingleDateValue</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;single&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMonthsToDisplay">int<br/>getMonthsToDisplay</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Months&nbsp;To&nbsp;Display&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.monthsToDisplay;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionType">org_scn_community_shared_SelectionTypeEnumfield<br/>getSelectionType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSelectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionTypeAsString">String<br/>getSelectionTypeAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSelectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValue">String<br/>getValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Date&nbsp;Single&nbsp;Value&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -374,8 +486,8 @@ return&nbsp;this.DValue;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValueF">String<br/>getValueF</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Date&nbsp;Value&nbsp;Range&nbsp;From&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -387,7 +499,7 @@ return&nbsp;this.DValue;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.editable;
+return&nbsp;this.DValueF;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -395,8 +507,8 @@ return&nbsp;this.editable;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEnabled">boolean<br/>isEnabled</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValueT">String<br/>getValueT</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Date&nbsp;Value&nbsp;Range&nbsp;To&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -408,7 +520,7 @@ return&nbsp;this.editable;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.enabled;
+return&nbsp;this.DValueT;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -416,15 +528,57 @@ return&nbsp;this.enabled;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCurrentDateValue">void<br/>setCurrentDateValue</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;current&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getWeeksPerRow">int<br/>getWeeksPerRow</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Weeks&nbsp;Per&nbsp;Row&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.weeksPerRow;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isSingleRow">boolean<br/>isSingleRow</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Single&nbsp;Row&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.singleRow;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCurrentValue">void<br/>setCurrentValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Current&nbsp;Date&nbsp;Value&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
+<td width="120px" class="parameter-name"><B>currentValue</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Current Date Value YYYYMMDD</td>
 </tr>
 
 </TABLE>
@@ -434,7 +588,7 @@ return&nbsp;this.enabled;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DCurrentValue&nbsp;=&nbsp;value;
+this.DCurrentValue&nbsp;=&nbsp;currentValue;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -442,15 +596,145 @@ this.DCurrentValue&nbsp;=&nbsp;value;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEditable">void<br/>setEditable</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFirstDayOffset">void<br/>setFirstDayOffset</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;First&nbsp;Day&nbsp;Offset&nbsp;(0&nbsp;==&nbsp;Sunday)&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>editable</B></td>
+<td width="120px" class="parameter-name"><B>firstDayOffset</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">First Day Offset (0 == Sunday)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.firstDayOffset&nbsp;=&nbsp;firstDayOffset;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMonthsPerRow">void<br/>setMonthsPerRow</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Months&nbsp;Per&nbsp;Row&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>monthsPerRow</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Months Per Row</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.monthsPerRow&nbsp;=&nbsp;monthsPerRow;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMonthsToDisplay">void<br/>setMonthsToDisplay</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Months&nbsp;To&nbsp;Display&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>monthsToDisplay</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Months To Display</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.monthsToDisplay&nbsp;=&nbsp;monthsToDisplay;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectionType">void<br/>setSelectionType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectionType</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_SelectionTypeEnumfield</B></td>
+<td width="*" class="parameter-help">Selection Type</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DSelectionType&nbsp;=&nbsp;selectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectionTypeByString">void<br/>setSelectionTypeByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectionType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Selection Type</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DSelectionType&nbsp;=&nbsp;selectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSingleRow">void<br/>setSingleRow</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Single&nbsp;Row&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>singleRow</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
+<td width="*" class="parameter-help">Single Row</td>
 </tr>
 
 </TABLE>
@@ -460,7 +744,7 @@ this.DCurrentValue&nbsp;=&nbsp;value;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.editable&nbsp;=&nbsp;editable;
+this.singleRow&nbsp;=&nbsp;singleRow;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -468,93 +752,15 @@ this.editable&nbsp;=&nbsp;editable;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEnabled">void<br/>setEnabled</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>enabled</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.enabled&nbsp;=&nbsp;enabled;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRangeDateValueFrom">void<br/>setRangeDateValueFrom</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;value&nbsp;from<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValue">void<br/>setValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Date&nbsp;Single&nbsp;Value&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>value</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DValueF&nbsp;=&nbsp;value;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRangeDateValueTo">void<br/>setRangeDateValueTo</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;value&nbsp;to<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DValueT&nbsp;=&nbsp;value;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSingleDateValue">void<br/>setSingleDateValue</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;single&nbsp;value<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Date Single Value YYYYMMDD</td>
 </tr>
 
 </TABLE>
@@ -565,6 +771,84 @@ this.DValueT&nbsp;=&nbsp;value;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DValue&nbsp;=&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValueF">void<br/>setValueF</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Date&nbsp;Value&nbsp;Range&nbsp;From&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>valueF</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Date Value Range From YYYYMMDD</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DValueF&nbsp;=&nbsp;valueF;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValueT">void<br/>setValueT</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Date&nbsp;Value&nbsp;Range&nbsp;To&nbsp;YYYYMMDD&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>valueT</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Date Value Range To YYYYMMDD</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DValueT&nbsp;=&nbsp;valueT;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setWeeksPerRow">void<br/>setWeeksPerRow</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Weeks&nbsp;Per&nbsp;Row&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>weeksPerRow</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Weeks Per Row</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.weeksPerRow&nbsp;=&nbsp;weeksPerRow;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
