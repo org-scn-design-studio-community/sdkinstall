@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/fallbackpicture/examples.json");
 </script>
 
-<title>Fallback Picture - SCN Design Studio Community</title>
+<title>Fallback Picture 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	FallbackPicture [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Fallback Picture
+	Fallback Picture 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -52,7 +52,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57984">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>fallbackPicture<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Url for Fallback Picture</B><br/>Url for Fallback Picture which should be shown
+<td width="*" class="property-title-tooltip"><B>Url For Fallback Picture</B><br/>Url For Fallback Picture
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -61,7 +61,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57984">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>picture<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Url for Picture</B><br/>Url for Picture which should be shown
+<td width="*" class="property-title-tooltip"><B>Url For Picture</B><br/>Url For Picture
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -89,14 +89,26 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57984">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getFallbackPicture [<a href="#FUNCTION_getFallbackPicture">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getPicture [<a href="#FUNCTION_getPicture">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setFallbackPicture [<a href="#FUNCTION_setFallbackPicture">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">pictureForFallbackCase</td>
+<td valign="top" width="*" class="function-short-name">fallbackPicture</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setPicture [<a href="#FUNCTION_setPicture">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">pictureForNormalCase</td>
+<td valign="top" width="*" class="function-short-name">picture</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -120,15 +132,57 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57984">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFallbackPicture">String<br/>getFallbackPicture</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;For&nbsp;Fallback&nbsp;Picture&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.fallbackPicture;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPicture">String<br/>getPicture</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;For&nbsp;Picture&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.picture;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFallbackPicture">void<br/>setFallbackPicture</td>
-<td valign="top" width="*" class="function-help">Setter&nbsp;for&nbsp;"fallback&nbsp;case"&nbsp;picture<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;For&nbsp;Fallback&nbsp;Picture&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>pictureForFallbackCase</B></td>
+<td width="120px" class="parameter-name"><B>fallbackPicture</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> fallback picture </td>
+<td width="*" class="parameter-help">Url For Fallback Picture</td>
 </tr>
 
 </TABLE>
@@ -138,7 +192,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57984">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.fallbackPicture&nbsp;=&nbsp;pictureForFallbackCase;
+this.fallbackPicture&nbsp;=&nbsp;fallbackPicture;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -147,14 +201,14 @@ this.fallbackPicture&nbsp;=&nbsp;pictureForFallbackCase;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPicture">void<br/>setPicture</td>
-<td valign="top" width="*" class="function-help">Setter&nbsp;for&nbsp;"normal&nbsp;case"&nbsp;picture<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;For&nbsp;Picture&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>pictureForNormalCase</B></td>
+<td width="120px" class="parameter-name"><B>picture</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> picture </td>
+<td width="*" class="parameter-help">Url For Picture</td>
 </tr>
 
 </TABLE>
@@ -164,7 +218,7 @@ this.fallbackPicture&nbsp;=&nbsp;pictureForFallbackCase;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.picture&nbsp;=&nbsp;pictureForNormalCase;
+this.picture&nbsp;=&nbsp;picture;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

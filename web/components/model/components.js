@@ -85,7 +85,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/colorpicker",
-       title: "Color Picker",
+       title: "Color Picker 2.0",
        info: "ColorPicker",
        icon: "basics/colorpicker.png",
        activeIcon: "basics/colorpicker.png",
@@ -94,7 +94,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/daterangescroller",
-       title: "Date Range Scroller",
+       title: "Date Range Scroller 2.0",
        info: "DateRangeScroller",
        icon: "basics/daterangescroller.png",
        activeIcon: "basics/daterangescroller.png",
@@ -103,7 +103,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/daterangeslider",
-       title: "Date Range Slider",
+       title: "Date Range Slider 2.0",
        info: "DateRangeSlider",
        icon: "basics/daterangeslider.png",
        activeIcon: "basics/daterangeslider.png",
@@ -139,7 +139,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/fallbackpicture",
-       title: "Fallback Picture",
+       title: "Fallback Picture 2.0",
        info: "FallbackPicture",
        icon: "basics/fallbackpicture.png",
        activeIcon: "basics/fallbackpicture.png",
