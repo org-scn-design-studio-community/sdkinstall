@@ -157,7 +157,7 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getDefaultImage [<a href="#FUNCTION_getDefaultImage">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">Url</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -212,6 +212,12 @@
 <td valign="top" width="240px" class="function-short-name">isWithImage [<a href="#FUNCTION_isWithImage">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeAllElements [<a href="#FUNCTION_removeAllElements">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -402,7 +408,7 @@ this.addElement(&quot;ROOT&quot;,&nbsp;key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllElements">void<br/>cleanAllElements</td>
-<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Elements&nbsp;from&nbsp;the&nbsp;Array.<br/><br/>
+<td valign="top" width="*" class="function-help">Clean&nbsp;All&nbsp;Elements&nbsp;from&nbsp;the&nbsp;Array.<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -422,7 +428,7 @@ this.cleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elemen
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDefaultImage">Url<br/>getDefaultImage</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDefaultImage">String<br/>getDefaultImage</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Default&nbsp;Image&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -632,6 +638,27 @@ return&nbsp;this.withImage;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllElements">void<br/>removeAllElements</td>
+<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Elements&nbsp;from&nbsp;the&nbsp;Array.<br/>You&nbsp;can&nbsp;use&nbsp;also&nbsp;<div class='html-code'>cleanAllElements()</div>@Visibility(deprecated)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.cleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsArray);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeElement">void<br/>removeElement</td>
 <td valign="top" width="*" class="function-help">removes&nbsp;an&nbsp;element&nbsp;by&nbsp;String&nbsp;key&nbsp;properties.<br/>You&nbsp;need&nbsp;to&nbsp;specify&nbsp;a&nbsp;unique&nbsp;and&nbsp;existing&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;element<br/><div class='html-code'>ACCORDION.removeElement(String&nbsp;key);<br></div></div><br/>
 
@@ -728,7 +755,7 @@ this.defaultImage&nbsp;=&nbsp;defaultImage;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-imageSize&nbsp;=&nbsp;imageSize.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.imageSize&nbsp;=&nbsp;imageSize;
+this.imageSize&nbsp;=&nbsp;imageSize;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -806,7 +833,7 @@ this.maxSectionHeight&nbsp;=&nbsp;maxSectionHeight;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-memberDisplay&nbsp;=&nbsp;memberDisplay.toUpperCase();<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.memberDisplay&nbsp;=&nbsp;memberDisplay;
+this.memberDisplay&nbsp;=&nbsp;memberDisplay;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

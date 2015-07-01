@@ -31,7 +31,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/applicationheader",
-       title: "Application Header",
+       title: "Application Header 2.0",
        info: "ApplicationHeader",
        icon: "basics/applicationheader.png",
        activeIcon: "basics/applicationheader.png",
@@ -58,7 +58,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/basicbusinesscard",
-       title: "Basic Business Card",
+       title: "Basic Business Card 2.0",
        info: "BasicBusinessCard",
        icon: "basics/basicbusinesscard.png",
        activeIcon: "basics/basicbusinesscard.png",
@@ -67,7 +67,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/calendar",
-       title: "Calendar",
+       title: "Calendar 2.0",
        info: "Calendar",
        icon: "basics/calendar.png",
        activeIcon: "basics/calendar.png",
@@ -76,7 +76,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/checkboxgroup",
-       title: "Check Box Group",
+       title: "Check Box Group 2.0",
        info: "CheckBoxGroup",
        icon: "basics/checkboxgroup.png",
        activeIcon: "basics/checkboxgroup.png",
@@ -85,7 +85,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/colorpicker",
-       title: "Color Picker",
+       title: "Color Picker 2.0",
        info: "ColorPicker",
        icon: "basics/colorpicker.png",
        activeIcon: "basics/colorpicker.png",
@@ -94,7 +94,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/daterangescroller",
-       title: "Date Range Scroller",
+       title: "Date Range Scroller 2.0",
        info: "DateRangeScroller",
        icon: "basics/daterangescroller.png",
        activeIcon: "basics/daterangescroller.png",
@@ -103,7 +103,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/daterangeslider",
-       title: "Date Range Slider",
+       title: "Date Range Slider 2.0",
        info: "DateRangeSlider",
        icon: "basics/daterangeslider.png",
        activeIcon: "basics/daterangeslider.png",
@@ -139,7 +139,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/fallbackpicture",
-       title: "Fallback Picture",
+       title: "Fallback Picture 2.0",
        info: "FallbackPicture",
        icon: "basics/fallbackpicture.png",
        activeIcon: "basics/fallbackpicture.png",
@@ -346,7 +346,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/rssfeedreader",
-       title: "RSSFeedReader",
+       title: "RSSFeedReader 2.0",
        info: "RSSFeedReader",
        icon: "basics/rssfeedreader.png",
        activeIcon: "basics/rssfeedreader.png",
@@ -465,6 +465,15 @@ sdkComponentModel["basics"] = [
 	];
 sdkComponentModel["databound"] = [
    {
+       id: "databound/advanceddatatable",
+       title: "Advanced Data Table",
+       info: "AdvancedDataTable",
+       icon: "databound/advanceddatatable.png",
+       activeIcon: "databound/advanceddatatable.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/table",
        title: "Data Table",
        info: "Table",
@@ -701,6 +710,15 @@ sdkComponentModel["datasource"] = [
        info: "DynCsvDataSource",
        icon: "datasource/dyncsvdatasource.png",
        activeIcon: "datasource/dyncsvdatasource.png",
+       number: " ",
+       numberUnit: "datasource"
+   },
+    {
+       id: "datasource/scalingdatasource",
+       title: "Scaling Data Source 2.0",
+       info: "ScalingDataSource",
+       icon: "datasource/scalingdatasource.png",
+       activeIcon: "datasource/scalingdatasource.png",
        number: " ",
        numberUnit: "datasource"
    },

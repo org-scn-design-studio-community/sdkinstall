@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/rssfeedreader/examples.json");
 </script>
 
-<title>RSSFeedReader - SCN Design Studio Community</title>
+<title>RSSFeedReader 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	RSSFeedReader [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	RSSFeedReader
+	RSSFeedReader 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -52,25 +52,30 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>feedurldimension<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>feedUrl<br/>[Url]</B></td>
 <td width="*" class="property-title-tooltip"><B>RSS Feed URL</B><br/>RSS Feed URL
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">
-			http://cdn.eex.com/rss/de/market.rss
-		</td>
+<td width="100px" class="property-default">http://cdn.eex.com/rss/de/market.rss</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>xslurldimension<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>useBuildInXsl<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Single Row</B><br/>Single Row
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>xslUrl<br/>[Url]</B></td>
 <td width="*" class="property-title-tooltip"><B>XSL URL</B><br/>XSL URL
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">
-			rss.xsl
-		</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -94,15 +99,39 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setFeedUrl [<a href="#FUNCTION_setFeedUrl">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">url_string</td>
+<td valign="top" width="240px" class="function-short-name">getFeedUrl [<a href="#FUNCTION_getFeedUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setXslUrl [<a href="#FUNCTION_setXslUrl">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">url_string</td>
+<td valign="top" width="240px" class="function-short-name">getXslUrl [<a href="#FUNCTION_getXslUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isUseBuildInXsl [<a href="#FUNCTION_isUseBuildInXsl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setFeedUrl [<a href="#FUNCTION_setFeedUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">feedUrl</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setUseBuildInXsl [<a href="#FUNCTION_setUseBuildInXsl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">useBuildInXsl</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setXslUrl [<a href="#FUNCTION_setXslUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">xslUrl</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 
@@ -125,16 +154,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFeedUrl">String<br/>setFeedUrl</td>
-<td valign="top" width="*" class="function-help">Set&nbsp;url&nbsp;of&nbsp;desired&nbsp;rss&nbsp;feed<br/><div class='html-example'"><div class='html-code'>RSSFeedReader_1.setFeedUrl("http://cdn.eex.com/rss/de/market.rss").<br/></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFeedUrl">String<br/>getFeedUrl</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;RSS&nbsp;Feed&nbsp;URL&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>url_string</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
+
 
 </TABLE>
 
@@ -143,7 +167,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.feedurldimension&nbsp;=&nbsp;url_string;
+return&nbsp;this.feedUrl;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -151,15 +175,57 @@ this.feedurldimension&nbsp;=&nbsp;url_string;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setXslUrl">String<br/>setXslUrl</td>
-<td valign="top" width="*" class="function-help">Set&nbsp;url&nbsp;of&nbsp;custom&nbsp;xsl&nbsp;sheet&nbsp;to&nbsp;parse&nbsp;rss&nbsp;feed.&nbsp;Be&nbsp;aware&nbsp;of&nbsp;cross&nbsp;origin&nbsp;browser&nbsp;policies.<br/><div class='html-example'"><div class='html-code'>RSSFeedReader_1.setXslUrl("http://www.someurl.com/yourxsl.xsl").<br/></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getXslUrl">String<br/>getXslUrl</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;XSL&nbsp;URL&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.xslUrl;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isUseBuildInXsl">boolean<br/>isUseBuildInXsl</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Single&nbsp;Row&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.useBuildInXsl;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFeedUrl">void<br/>setFeedUrl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;RSS&nbsp;Feed&nbsp;URL&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>url_string</B></td>
+<td width="120px" class="parameter-name"><B>feedUrl</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">RSS Feed URL</td>
 </tr>
 
 </TABLE>
@@ -169,7 +235,59 @@ this.feedurldimension&nbsp;=&nbsp;url_string;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.xslurldimension&nbsp;=&nbsp;url_string;
+this.feedUrl&nbsp;=&nbsp;feedUrl;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setUseBuildInXsl">void<br/>setUseBuildInXsl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Single&nbsp;Row&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>useBuildInXsl</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Single Row</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.useBuildInXsl&nbsp;=&nbsp;useBuildInXsl;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setXslUrl">void<br/>setXslUrl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;XSL&nbsp;URL&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>xslUrl</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">XSL URL</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.xslUrl&nbsp;=&nbsp;xslUrl;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
