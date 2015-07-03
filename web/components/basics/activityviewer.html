@@ -119,31 +119,49 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">cleanAllVisibleKeys [<a href="#FUNCTION_cleanAllVisibleKeys">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">cleanAllVisibleCategoryKeys [<a href="#FUNCTION_cleanAllVisibleCategoryKeys">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getKeyAtIndex [<a href="#FUNCTION_getKeyAtIndex">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getActivityAtIndex [<a href="#FUNCTION_getActivityAtIndex">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">index0based</td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getKeyAtIndex [<a href="#FUNCTION_getKeyAtIndex">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getActivitysAsJSON [<a href="#FUNCTION_getActivitysAsJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCategoryAtIndex [<a href="#FUNCTION_getCategoryAtIndex">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">index0based</td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getKeyAtIndex [<a href="#FUNCTION_getKeyAtIndex">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getCategorysAsJSON [<a href="#FUNCTION_getCategorysAsJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getStateAtIndex [<a href="#FUNCTION_getStateAtIndex">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">index0based</td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getVisibleCategoriesArray [<a href="#FUNCTION_getVisibleCategoriesArray">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getStatesAsJSON [<a href="#FUNCTION_getStatesAsJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getVisibleCategoryKeysArray [<a href="#FUNCTION_getVisibleCategoryKeysArray">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">org.scn.pack.KeyArray</td>
 </tr>
@@ -185,13 +203,13 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setVisibleKey [<a href="#FUNCTION_setVisibleKey">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setVisibleCategoryKey [<a href="#FUNCTION_setVisibleCategoryKey">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key, visible</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setVisibleKeys [<a href="#FUNCTION_setVisibleKeys">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setVisibleCategoryKeys [<a href="#FUNCTION_setVisibleCategoryKeys">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">keys, separator</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -352,7 +370,7 @@ var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllVisibleKeys">void<br/>cleanAllVisibleKeys</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllVisibleCategoryKeys">void<br/>cleanAllVisibleCategoryKeys</td>
 <td valign="top" width="*" class="function-help">Clean&nbsp;all&nbsp;Visible&nbsp;keys<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -373,7 +391,7 @@ if&nbsp;(this.categories&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.categories&nb
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getKeyAtIndex">String<br/>getKeyAtIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getActivityAtIndex">String<br/>getActivityAtIndex</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;Key&nbsp;at&nbsp;given&nbsp;Index<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -399,7 +417,28 @@ if&nbsp;(this.activities&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.activities&nb
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getKeyAtIndex">String<br/>getKeyAtIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getActivitysAsJSON">String<br/>getActivitysAsJSON</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Activitys&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.activities);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCategoryAtIndex">String<br/>getCategoryAtIndex</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;Key&nbsp;at&nbsp;given&nbsp;Index<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -425,7 +464,28 @@ if&nbsp;(this.categories&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.categories&nb
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getKeyAtIndex">String<br/>getKeyAtIndex</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCategorysAsJSON">String<br/>getCategorysAsJSON</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Categorys&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.categories);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getStateAtIndex">String<br/>getStateAtIndex</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;Key&nbsp;at&nbsp;given&nbsp;Index<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -451,7 +511,28 @@ if&nbsp;(this.states&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.states&nbsp;===&n
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getVisibleCategoriesArray">org.scn.pack.KeyArray<br/>getVisibleCategoriesArray</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getStatesAsJSON">String<br/>getStatesAsJSON</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;States&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.states);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getVisibleCategoryKeysArray">org.scn.pack.KeyArray<br/>getVisibleCategoryKeysArray</td>
 <td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;Visible&nbsp;keys<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -464,7 +545,7 @@ if&nbsp;(this.states&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.states&nbsp;===&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elements);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newElementsJson&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].selected&nbsp;==&nbsp;true)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(elementsJson[i]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;newElementsJson;
+if&nbsp;(this.categories&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.categories&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.categories&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.categories);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newElementsJson&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].visible&nbsp;==&nbsp;true)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(elementsJson[i]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;newElementsJson;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -683,7 +764,7 @@ if&nbsp;(this.states&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.states&nbsp;===&n
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVisibleKey">void<br/>setVisibleKey</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVisibleCategoryKey">void<br/>setVisibleCategoryKey</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Visible&nbsp;Key<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -714,7 +795,7 @@ if&nbsp;(this.categories&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.categories&nb
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVisibleKeys">void<br/>setVisibleKeys</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVisibleCategoryKeys">void<br/>setVisibleCategoryKeys</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Visible&nbsp;keys<br/><br/>
 
 <TABLE width="100%" class="table1">

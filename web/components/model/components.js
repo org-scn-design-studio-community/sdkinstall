@@ -373,7 +373,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/roadmap",
-       title: "Road Map",
+       title: "Road Map 2.0",
        info: "RoadMap",
        icon: "basics/roadmap.png",
        activeIcon: "basics/roadmap.png",
@@ -382,7 +382,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/segmentedbutton",
-       title: "Segmented Button",
+       title: "Segmented Button 2.0",
        info: "SegmentedButton",
        icon: "basics/segmentedbutton.png",
        activeIcon: "basics/segmentedbutton.png",
@@ -418,7 +418,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/tree",
-       title: "Tree",
+       title: "Tree 2.0",
        info: "Tree",
        icon: "basics/tree.png",
        activeIcon: "basics/tree.png",

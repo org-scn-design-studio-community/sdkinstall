@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/segmentedbutton/examples.json");
 </script>
 
-<title>Segmented Button - SCN Design Studio Community</title>
+<title>Segmented Button 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	SegmentedButton [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Segmented Button
+	Segmented Button 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -52,7 +52,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>DDefaultImage<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Url for Default Image</B><br/>Url for Default Image which should be shown in case no other is specified
+<td width="*" class="property-title-tooltip"><B>Url For Default Image</B><br/>Url For Default Image
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -60,20 +60,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>DImageSize<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Size of the Image</B><br/>Size of the Image
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">16px</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">32px</td>
-<td class="value-td">&nbsp;</td>
-</tr>
+<td width="120px" class="property-name-type"><B>DElementsContent<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Buttons</B><br/>Buttons
 
-</table>
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">[]</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DImageSize<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Size Of The Image</B><br/>Size Of The Image
+
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">16px</td>
@@ -81,19 +79,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSelectionType<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selection Type</B><br/>Selection Type SINGLE | MULTIPLE
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">Single</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Multiple</td>
-<td class="value-td">&nbsp;</td>
-</tr>
+<td width="*" class="property-title-tooltip"><B>Selection Type</B><br/>Selection Type
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Single</td>
@@ -105,7 +92,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -120,29 +107,29 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onButtonPressed<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Button Pressed</B><br/>Event for On Button Pressed
+<td width="*" class="property-title-tooltip"><B>Event For On Button Pressed</B><br/>Event For On Button Pressed
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>onItemPressed<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Item Pressed</B><br/>Event for On Item Pressed
+<td width="*" class="property-title-tooltip"><B>Event For On Item Pressed</B><br/>Event For On Item Pressed
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>onSelected<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Selection Changed</B><br/>Event for On Selection Changed
+<td width="*" class="property-title-tooltip"><B>Event For On Selection Changed</B><br/>Event For On Selection Changed
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -157,13 +144,13 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addButton [<a href="#FUNCTION_addButton">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key, text, (image), (selected)</td>
+<td valign="top" width="*" class="function-short-name">key, text, image, selected</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addItem [<a href="#FUNCTION_addItem">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">parentKey, key, text, (image), (selected)</td>
+<td valign="top" width="*" class="function-short-name">parentKey, key, text, image, selected</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -171,6 +158,42 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 <td valign="top" width="240px" class="function-short-name">cleanAllElements [<a href="#FUNCTION_cleanAllElements">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">cleanAllSelectedButtonKeys [<a href="#FUNCTION_cleanAllSelectedButtonKeys">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">cleanAllSelectedItemKeys [<a href="#FUNCTION_cleanAllSelectedItemKeys">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getButtonsAsJSON [<a href="#FUNCTION_getButtonsAsJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDefaultImage [<a href="#FUNCTION_getDefaultImage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getImageSize [<a href="#FUNCTION_getImageSize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_ImageSizeEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getImageSizeAsString [<a href="#FUNCTION_getImageSizeAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -186,9 +209,45 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedButtonKeysArray [<a href="#FUNCTION_getSelectedButtonKeysArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org.scn.pack.KeyArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedItemKeysArray [<a href="#FUNCTION_getSelectedItemKeysArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org.scn.pack.KeyArray</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getSelectedKeys [<a href="#FUNCTION_getSelectedKeys">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">StringArray</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectionType [<a href="#FUNCTION_getSelectionType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_SelectionTypeEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectionTypeAsString [<a href="#FUNCTION_getSelectionTypeAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isWithImages [<a href="#FUNCTION_isWithImages">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeAllElements [<a href="#FUNCTION_removeAllElements">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -200,6 +259,66 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">removeItem [<a href="#FUNCTION_removeItem">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDefaultImage [<a href="#FUNCTION_setDefaultImage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">defaultImage</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setImageSize [<a href="#FUNCTION_setImageSize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">imageSize</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setImageSizeByString [<a href="#FUNCTION_setImageSizeByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">imageSize</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedButtonKey [<a href="#FUNCTION_setSelectedButtonKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, selected</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedButtonKeys [<a href="#FUNCTION_setSelectedButtonKeys">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedItemKey [<a href="#FUNCTION_setSelectedItemKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, selected</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedItemKeys [<a href="#FUNCTION_setSelectedItemKeys">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectionType [<a href="#FUNCTION_setSelectionType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectionType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectionTypeByString [<a href="#FUNCTION_setSelectionTypeByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selectionType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setWithImages [<a href="#FUNCTION_setWithImages">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">withImages</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -215,25 +334,16 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>DCleanAll<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical property for Clean All Nodes</B><br/>Technical property for Clean All Nodes
+<td width="*" class="property-title-tooltip"><B>Clean All Nodes</B><br/>Clean All Nodes
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>DElementsContent<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>List of Buttons with Sub-Items</B><br/>List of Buttons with Sub-Items
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DPressedButtonKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical property for pressed button key</B><br/>Technical property for pressed button key
+<td width="*" class="property-title-tooltip"><B>Technical Property For Pressed Button Key</B><br/>Technical Property For Pressed Button Key
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -242,7 +352,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DPressedItemKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical property for pressed item key</B><br/>Technical property for pressed item key
+<td width="*" class="property-title-tooltip"><B>Technical Property For Pressed Item Key</B><br/>Technical Property For Pressed Item Key
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -251,7 +361,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSelectedKeys<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical property for selected keys</B><br/>Technical property for selected keys
+<td width="*" class="property-title-tooltip"><B>Technical Property For Selected Keys</B><br/>Technical Property For Selected Keys
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -276,22 +386,22 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62505">Design
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>key</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Unique key of this button</td>
+<td width="*" class="parameter-help">Unique Key</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>text</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Text for the button</td>
+<td width="*" class="parameter-help">Given Text</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>image</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">Given image for the button</td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Image</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>selected</B></td>
-<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
-<td width="*" class="parameter-help">Selection state of the button</td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Selected</td>
 </tr>
 
 </TABLE>
@@ -317,27 +427,27 @@ this.addItem(&quot;ROOT&quot;,&nbsp;key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>parentKey</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">The key of the parent button</td>
+<td width="*" class="parameter-help">Parent Key</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>key</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Unique key of this item</td>
+<td width="*" class="parameter-help">Unique Key</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>text</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Text for the item</td>
+<td width="*" class="parameter-help">Given Text</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>image</B></td>
-<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help">Given image for the item</td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Image</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>selected</B></td>
-<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
-<td width="*" class="parameter-help">Selection state of the item</td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Selected</td>
 </tr>
 
 </TABLE>
@@ -347,7 +457,7 @@ this.addItem(&quot;ROOT&quot;,&nbsp;key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;leaf&nbsp;=&nbsp;(parentKey&nbsp;!=&nbsp;&quot;ROOT&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(image&nbsp;==&nbsp;undefined)&nbsp;{&nbsp;image&nbsp;=&nbsp;&quot;&quot;;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(selected&nbsp;==&nbsp;undefined)&nbsp;{&nbsp;selected&nbsp;=&nbsp;false;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:leaf,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parentKey:parentKey,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:text,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:image,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selected:selected&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+var&nbsp;leaf&nbsp;=&nbsp;(parentKey&nbsp;!=&nbsp;&quot;ROOT&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:leaf,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parentKey:parentKey,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:text,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:image,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selected:selected&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -356,7 +466,7 @@ var&nbsp;leaf&nbsp;=&nbsp;(parentKey&nbsp;!=&nbsp;&quot;ROOT&quot;);<br/>&nbsp;&
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllElements">void<br/>cleanAllElements</td>
-<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Buttons&nbsp;and&nbsp;Items&nbsp;from&nbsp;the&nbsp;Array.<br/><br/>
+<td valign="top" width="*" class="function-help">Clean&nbsp;All&nbsp;Nodes&nbsp;from&nbsp;the&nbsp;Array.<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -376,8 +486,134 @@ this.DCleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;eleme
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllSelectedButtonKeys">void<br/>cleanAllSelectedButtonKeys</td>
+<td valign="top" width="*" class="function-help">Clean&nbsp;all&nbsp;Selected&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;clean&nbsp;all<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllSelectedItemKeys">void<br/>cleanAllSelectedItemKeys</td>
+<td valign="top" width="*" class="function-help">Clean&nbsp;all&nbsp;Selected&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;clean&nbsp;all<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getButtonsAsJSON">String<br/>getButtonsAsJSON</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Buttons&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDefaultImage">String<br/>getDefaultImage</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;For&nbsp;Default&nbsp;Image&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DDefaultImage;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getImageSize">org_scn_community_shared_ImageSizeEnumfield<br/>getImageSize</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Size&nbsp;Of&nbsp;The&nbsp;Image&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DImageSize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getImageSizeAsString">String<br/>getImageSizeAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Size&nbsp;Of&nbsp;The&nbsp;Image&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DImageSize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPressedButtonKey">String<br/>getPressedButtonKey</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;property&nbsp;for&nbsp;pressed&nbsp;button&nbsp;key&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Property&nbsp;For&nbsp;Pressed&nbsp;Button&nbsp;Key&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -398,7 +634,7 @@ return&nbsp;this.DPressedButtonKey;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPressedItemKey">String<br/>getPressedItemKey</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;property&nbsp;for&nbsp;pressed&nbsp;item&nbsp;key&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Property&nbsp;For&nbsp;Pressed&nbsp;Item&nbsp;Key&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -418,8 +654,8 @@ return&nbsp;this.DPressedItemKey;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKeys">StringArray<br/>getSelectedKeys</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;property&nbsp;for&nbsp;selected&nbsp;keys&nbsp;Property&nbsp;as&nbsp;StringArray<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;ask&nbsp;for&nbsp;the&nbsp;current&nbsp;property&nbsp;value<br/><div class='html-code'>SEGMENTEDBUTTON.getSelectedKeys();<br></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedButtonKeysArray">org.scn.pack.KeyArray<br/>getSelectedButtonKeysArray</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;Selected&nbsp;keys<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -431,7 +667,133 @@ return&nbsp;this.DPressedItemKey;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DSelectedKeys);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;elementsJson;
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newElementsJson&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].selected&nbsp;==&nbsp;true)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(elementsJson[i]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;newElementsJson;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedItemKeysArray">org.scn.pack.KeyArray<br/>getSelectedItemKeysArray</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;Selected&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newElementsJson&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].selected&nbsp;==&nbsp;true)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(elementsJson[i]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;newElementsJson;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKeys">String<br/>getSelectedKeys</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Property&nbsp;For&nbsp;Selected&nbsp;Keys&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSelectedKeys;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionType">org_scn_community_shared_SelectionTypeEnumfield<br/>getSelectionType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSelectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectionTypeAsString">String<br/>getSelectionTypeAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSelectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isWithImages">boolean<br/>isWithImages</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Use&nbsp;Images&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DWithImages;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllElements">void<br/>removeAllElements</td>
+<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Nodes&nbsp;from&nbsp;the&nbsp;Array.<br/>You&nbsp;can&nbsp;use&nbsp;also&nbsp;<div class='html-code'>cleanAllElements()</div>@Visibility(deprecated)<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DCleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsArray);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -484,6 +846,286 @@ this.removeItem(key);
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;remove&nbsp;all&nbsp;items&nbsp;with&nbsp;this&nbsp;parent<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;elementsJson.length&nbsp;-&nbsp;1;&nbsp;i&nbsp;&gt;=&nbsp;0;&nbsp;i--){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].parentKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDefaultImage">void<br/>setDefaultImage</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;For&nbsp;Default&nbsp;Image&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>defaultImage</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Url For Default Image</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DDefaultImage&nbsp;=&nbsp;defaultImage;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setImageSize">void<br/>setImageSize</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Size&nbsp;Of&nbsp;The&nbsp;Image&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>imageSize</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_ImageSizeEnumfield</B></td>
+<td width="*" class="parameter-help">Size Of The Image</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DImageSize&nbsp;=&nbsp;imageSize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setImageSizeByString">void<br/>setImageSizeByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Size&nbsp;Of&nbsp;The&nbsp;Image&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>imageSize</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Size Of The Image</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DImageSize&nbsp;=&nbsp;imageSize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedButtonKey">void<br/>setSelectedButtonKey</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Selected&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selected</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;selected;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedButtonKeys">void<br/>setSelectedButtonKeys</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Selected&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;clean&nbsp;all<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedItemKey">void<br/>setSelectedItemKey</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Selected&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selected</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;selected;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedItemKeys">void<br/>setSelectedItemKeys</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Selected&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.DElementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DElementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DElementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;clean&nbsp;all<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].selected&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DElementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectionType">void<br/>setSelectionType</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectionType</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_SelectionTypeEnumfield</B></td>
+<td width="*" class="parameter-help">Selection Type</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DSelectionType&nbsp;=&nbsp;selectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectionTypeByString">void<br/>setSelectionTypeByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Selection&nbsp;Type&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selectionType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Selection Type</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DSelectionType&nbsp;=&nbsp;selectionType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setWithImages">void<br/>setWithImages</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Use&nbsp;Images&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>withImages</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Use Images</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DWithImages&nbsp;=&nbsp;withImages;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
