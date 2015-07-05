@@ -201,8 +201,17 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/kpitile",
+       title: "Kpi Tile 2.0",
+       info: "KpiTile",
+       icon: "basics/kpitile.png",
+       activeIcon: "basics/kpitile.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/kpiview",
-       title: "Kpi View",
+       title: "Kpi View 2.0",
        info: "KpiView",
        icon: "basics/kpiview.png",
        activeIcon: "basics/kpiview.png",

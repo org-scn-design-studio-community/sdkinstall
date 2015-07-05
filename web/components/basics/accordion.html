@@ -86,7 +86,7 @@
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">text</td>
+<td width="100px" class="property-default">Text</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -245,6 +245,30 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setElementText [<a href="#FUNCTION_setElementText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, text</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setElementTexts [<a href="#FUNCTION_setElementTexts">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator, text</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setElementUrl [<a href="#FUNCTION_setElementUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, url</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setElementUrls [<a href="#FUNCTION_setElementUrls">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator, url</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setImageSize [<a href="#FUNCTION_setImageSize">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">imageSize</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -271,6 +295,30 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMemberDisplayByString [<a href="#FUNCTION_setMemberDisplayByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">memberDisplay</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSectionText [<a href="#FUNCTION_setSectionText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, text</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSectionTexts [<a href="#FUNCTION_setSectionTexts">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator, text</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSectionUrl [<a href="#FUNCTION_setSectionUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, url</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSectionUrls [<a href="#FUNCTION_setSectionUrls">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator, url</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -764,6 +812,140 @@ this.defaultImage&nbsp;=&nbsp;defaultImage;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setElementText">void<br/>setElementText</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;Element&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].text&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setElementTexts">void<br/>setElementTexts</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;Element&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Text </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].text&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setElementUrl">void<br/>setElementUrl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;Element&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>url</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].url&nbsp;=&nbsp;url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setElementUrls">void<br/>setElementUrls</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;Element&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>url</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Url </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].url&nbsp;=&nbsp;url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setImageSize">void<br/>setImageSize</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Size&nbsp;of&nbsp;the&nbsp;Image&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
 
@@ -887,6 +1069,140 @@ this.memberDisplay&nbsp;=&nbsp;memberDisplay;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.memberDisplay&nbsp;=&nbsp;memberDisplay;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSectionText">void<br/>setSectionText</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;Section&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].text&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSectionTexts">void<br/>setSectionTexts</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;Section&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>text</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Text </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].text&nbsp;=&nbsp;text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSectionUrl">void<br/>setSectionUrl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;Section&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>url</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].url&nbsp;=&nbsp;url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSectionUrls">void<br/>setSectionUrls</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;Section&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>url</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Url </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].url&nbsp;=&nbsp;url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
