@@ -537,6 +537,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/multicombobox",
+       title: "Multi ComboBox",
+       info: "MultiComboBox",
+       icon: "databound/multicombobox.png",
+       activeIcon: "databound/multicombobox.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/multileveldropdown",
        title: "Hierarchical Menu",
        info: "MultiLevelDropDown",
