@@ -301,7 +301,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/notify",
-       title: "Notify",
+       title: "Notify 2.0",
        info: "Notify",
        icon: "basics/notify.png",
        activeIcon: "basics/notify.png",
