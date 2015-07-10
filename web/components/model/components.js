@@ -483,6 +483,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/bulletmicrochart",
+       title: "Bullet Micro Chart 2.0",
+       info: "BulletMicroChart",
+       icon: "databound/bulletmicrochart.png",
+       activeIcon: "databound/bulletmicrochart.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/table",
        title: "Data Table",
        info: "Table",
@@ -533,15 +542,6 @@ sdkComponentModel["databound"] = [
        info: "LeaderBoard",
        icon: "databound/leaderboard.png",
        activeIcon: "databound/leaderboard.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/microchart",
-       title: "Micro Chart 2.0",
-       info: "MicroChart",
-       icon: "databound/microchart.png",
-       activeIcon: "databound/microchart.png",
        number: " ",
        numberUnit: "databound"
    },
