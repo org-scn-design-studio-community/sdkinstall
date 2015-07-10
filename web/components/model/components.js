@@ -537,6 +537,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/microchart",
+       title: "Micro Chart 2.0",
+       info: "MicroChart",
+       icon: "databound/microchart.png",
+       activeIcon: "databound/microchart.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/multicombobox",
        title: "Multi ComboBox",
        info: "MultiComboBox",
