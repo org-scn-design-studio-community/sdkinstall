@@ -483,6 +483,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/areamicrochart",
+       title: "Area Micro Chart 2.0",
+       info: "AreaMicroChart",
+       icon: "databound/areamicrochart.png",
+       activeIcon: "databound/areamicrochart.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/bulletmicrochart",
        title: "Bullet Micro Chart 2.0",
        info: "BulletMicroChart",

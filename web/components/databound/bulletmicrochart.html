@@ -81,8 +81,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>dataCellListForecast<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Forecast Data List</B><br/>Forecast Data List
+<td width="120px" class="property-name-type"><B>dataCellListForecastValue<br/>[ResultCellList]</B></td>
+<td width="*" class="property-title-tooltip"><B>Forecast Value Data List</B><br/>Forecast Value Data List
 
 </td>
 <td width="60px" class="property-group">Data</td>
@@ -90,8 +90,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>dataCellListTarget<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Target Data List</B><br/>Target Data List
+<td width="120px" class="property-name-type"><B>dataCellListMaxValue<br/>[ResultCellList]</B></td>
+<td width="*" class="property-title-tooltip"><B>Max Value Data List</B><br/>Max Value Data List
 
 </td>
 <td width="60px" class="property-group">Data</td>
@@ -99,8 +99,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>dataCellListThreshold1<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Treshold 2 Data List</B><br/>Treshold 2 Data List
+<td width="120px" class="property-name-type"><B>dataCellListMinValue<br/>[ResultCellList]</B></td>
+<td width="*" class="property-title-tooltip"><B>Min Value Data List</B><br/>Min Value Data List
 
 </td>
 <td width="60px" class="property-group">Data</td>
@@ -108,8 +108,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>dataCellListThreshold2<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Treshold 2 Data List</B><br/>Treshold 2 Data List
+<td width="120px" class="property-name-type"><B>dataCellListTargetValue<br/>[ResultCellList]</B></td>
+<td width="*" class="property-title-tooltip"><B>Target Value Data List</B><br/>Target Value Data List
 
 </td>
 <td width="60px" class="property-group">Data</td>
@@ -117,26 +117,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>dataCellListThreshold3<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Treshold 3 Data List</B><br/>Treshold 3 Data List
-
-</td>
-<td width="60px" class="property-group">Data</td>
-<td width="100px" class="property-default">null</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>dataCellListThreshold4<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Treshold 4 Data List</B><br/>Treshold 4 Data List
-
-</td>
-<td width="60px" class="property-group">Data</td>
-<td width="100px" class="property-default">null</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>dataCellListThreshold5<br/>[ResultCellList]</B></td>
-<td width="*" class="property-title-tooltip"><B>Treshold 5 Data List</B><br/>Treshold 5 Data List
+<td width="120px" class="property-name-type"><B>dataCellListThresholds<br/>[ResultCellList]</B></td>
+<td width="*" class="property-title-tooltip"><B>Thresholds Data List [Multiple]</B><br/>Thresholds Data List [Multiple]
 
 </td>
 <td width="60px" class="property-group">Data</td>
@@ -252,15 +234,6 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>smallTest<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Actual Value Label</B><br/>Actual Value Label
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">Karol</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
 <td width="120px" class="property-name-type"><B>targetValue<br/>[float]</B></td>
 <td width="*" class="property-title-tooltip"><B>Target Value</B><br/>Target Value
 
@@ -279,12 +252,75 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>threshold<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>thresholds<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Thresholds</B><br/>Thresholds
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">[]</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useActual<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Actual'</B><br/>Use Manual 'Actual'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useContentWidth<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Content Width'</B><br/>Use Manual 'Content Width'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useForecastValue<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Forecast Value'</B><br/>Use Manual 'Forecast Value'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useMaxValue<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Max Value'</B><br/>Use Manual 'Max Value'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useMinValue<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Min Value'</B><br/>Use Manual 'Min Value'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useTargetValue<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Target Value'</B><br/>Use Manual 'Target Value'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useThresholds<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Thresholds'</B><br/>Use Manual 'Thresholds'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -307,19 +343,7 @@
 	
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
-	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSmallTest [<a href="#FUNCTION_getSmallTest">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSmallTest [<a href="#FUNCTION_setSmallTest">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">smallTest</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-
+	
 	</TABLE>
 
 	<br/>
@@ -338,54 +362,7 @@
 	<br/>
 	
 	<TABLE width="100%" class="">
-	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSmallTest">String<br/>getSmallTest</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Actual&nbsp;Value&nbsp;Label&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.smallTest;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSmallTest">void<br/>setSmallTest</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Actual&nbsp;Value&nbsp;Label&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>smallTest</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Actual Value Label</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.smallTest&nbsp;=&nbsp;smallTest;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-
+	
 	</TABLE>
 	<div style="height:20px!important"> THE END </div>
 	</div>
