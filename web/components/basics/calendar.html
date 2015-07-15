@@ -255,7 +255,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setCurrentValue [<a href="#FUNCTION_setCurrentValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">CurrentValue</td>
+<td valign="top" width="*" class="function-short-name">currentValue</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -279,13 +279,13 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setSelectionType [<a href="#FUNCTION_setSelectionType">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">SelectionType</td>
+<td valign="top" width="*" class="function-short-name">selectionType</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setSelectionTypeByString [<a href="#FUNCTION_setSelectionTypeByString">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">SelectionType</td>
+<td valign="top" width="*" class="function-short-name">selectionType</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -297,19 +297,19 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62169">Design
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setValue [<a href="#FUNCTION_setValue">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">Value</td>
+<td valign="top" width="*" class="function-short-name">value</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setValueF [<a href="#FUNCTION_setValueF">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">ValueF</td>
+<td valign="top" width="*" class="function-short-name">valueF</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setValueT [<a href="#FUNCTION_setValueT">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">ValueT</td>
+<td valign="top" width="*" class="function-short-name">valueT</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -576,7 +576,7 @@ return&nbsp;this.singleRow;
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>CurrentValue</B></td>
+<td width="120px" class="parameter-name"><B>currentValue</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help">Current Date Value YYYYMMDD</td>
 </tr>
@@ -588,7 +588,7 @@ return&nbsp;this.singleRow;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DCurrentValue&nbsp;=&nbsp;CurrentValue;
+this.DCurrentValue&nbsp;=&nbsp;currentValue;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -680,7 +680,7 @@ this.monthsToDisplay&nbsp;=&nbsp;monthsToDisplay;
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>SelectionType</B></td>
+<td width="120px" class="parameter-name"><B>selectionType</B></td>
 <td width="120px" class="parameter-type"><B>org_scn_community_shared_SelectionTypeEnumfield</B></td>
 <td width="*" class="parameter-help">Selection Type</td>
 </tr>
@@ -692,7 +692,7 @@ this.monthsToDisplay&nbsp;=&nbsp;monthsToDisplay;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DSelectionType&nbsp;=&nbsp;SelectionType;
+this.DSelectionType&nbsp;=&nbsp;selectionType;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -706,7 +706,7 @@ this.DSelectionType&nbsp;=&nbsp;SelectionType;
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>SelectionType</B></td>
+<td width="120px" class="parameter-name"><B>selectionType</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help">Selection Type</td>
 </tr>
@@ -718,7 +718,7 @@ this.DSelectionType&nbsp;=&nbsp;SelectionType;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DSelectionType&nbsp;=&nbsp;SelectionType;
+this.DSelectionType&nbsp;=&nbsp;selectionType;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -758,7 +758,7 @@ this.singleRow&nbsp;=&nbsp;singleRow;
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>Value</B></td>
+<td width="120px" class="parameter-name"><B>value</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help">Date Single Value YYYYMMDD</td>
 </tr>
@@ -770,7 +770,7 @@ this.singleRow&nbsp;=&nbsp;singleRow;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DValue&nbsp;=&nbsp;Value;
+this.DValue&nbsp;=&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -784,7 +784,7 @@ this.DValue&nbsp;=&nbsp;Value;
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>ValueF</B></td>
+<td width="120px" class="parameter-name"><B>valueF</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help">Date Value Range From YYYYMMDD</td>
 </tr>
@@ -796,7 +796,7 @@ this.DValue&nbsp;=&nbsp;Value;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DValueF&nbsp;=&nbsp;ValueF;
+this.DValueF&nbsp;=&nbsp;valueF;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -810,7 +810,7 @@ this.DValueF&nbsp;=&nbsp;ValueF;
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>ValueT</B></td>
+<td width="120px" class="parameter-name"><B>valueT</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help">Date Value Range To YYYYMMDD</td>
 </tr>
@@ -822,7 +822,7 @@ this.DValueF&nbsp;=&nbsp;ValueF;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DValueT&nbsp;=&nbsp;ValueT;
+this.DValueT&nbsp;=&nbsp;valueT;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
