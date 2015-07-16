@@ -180,6 +180,9 @@
            key: "chartmaps",
            title: "Charts & Maps"
        }, {
+           key: "unified",
+           title: "UI5 Unified"
+       }, {
            key: "datasource",
            title: "Data Sources"
        }, {

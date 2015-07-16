@@ -703,6 +703,45 @@ sdkComponentModel["chartmaps"] = [
    },
 
                   ];
+sdkComponentModel["unified"] = [
+   {
+       id: "unified/kpitile",
+       title: "Kpi Tile 2.0",
+       info: "KpiTile",
+       icon: "unified/kpitile.png",
+       activeIcon: "unified/kpitile.png",
+       number: " ",
+       numberUnit: "unified"
+   },
+    {
+       id: "unified/areamicrochart",
+       title: "Area Micro Chart 2.0",
+       info: "AreaMicroChart",
+       icon: "unified/areamicrochart.png",
+       activeIcon: "unified/areamicrochart.png",
+       number: " ",
+       numberUnit: "unified"
+   },
+    {
+       id: "unified/bulletmicrochart",
+       title: "Bullet Micro Chart 2.0",
+       info: "BulletMicroChart",
+       icon: "unified/bulletmicrochart.png",
+       activeIcon: "unified/bulletmicrochart.png",
+       number: " ",
+       numberUnit: "unified"
+   },
+    {
+       id: "unified/harveyballmicrochart",
+       title: "Harvey Ball Micro Chart2.0",
+       info: "HarveyBallMicroChart",
+       icon: "unified/harveyballmicrochart.png",
+       activeIcon: "unified/harveyballmicrochart.png",
+       number: " ",
+       numberUnit: "unified"
+   },
+
+                  ];
 sdkComponentModel["datasource"] = [
    {
        id: "datasource/byodata",
