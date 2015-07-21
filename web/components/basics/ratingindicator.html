@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/ratingindicator/examples.json");
 </script>
 
-<title>Rating Indicator - SCN Design Studio Community</title>
+<title>Rating Indicator 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	RatingIndicator [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Rating Indicator
+	Rating Indicator 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -52,7 +52,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58006">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>editable<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Editable</B><br/>Value 'true' is required for changes on the rating symbols.
+<td width="*" class="property-title-tooltip"><B>Editable</B><br/>Editable
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -61,34 +61,34 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58006">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>iconHovered<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icon Hovered</B><br/>The URI to the image which is displayed when the mouse hovers onto a rating symbol. If used, a requirement is that all custom icons need to have the same size. Note that when this attribute is used also the other icon attributes need to be set.
+<td width="*" class="property-title-tooltip"><B>Icon Hovered</B><br/>Icon Hovered
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>iconSelected<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icon Selected</B><br/>The URI to the image which shall be displayed for all selected rating symbols. Note that when this attribute is used, also the other icon attributes need to be set.
+<td width="*" class="property-title-tooltip"><B>Icon Selected</B><br/>Icon Selected
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>iconUnselected<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Icon Unselected</B><br/>The URI to the image which shall be displayed for all unselected rating symbols. If this attribute is used, a requirement is that all custom icons need to have the same size. Note that when this attribute is used also the other icon attributes need to be set.
+<td width="*" class="property-title-tooltip"><B>Icon Unselected</B><br/>Icon Unselected
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>maxValue<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Maximum Value</B><br/>The number of displayed rating symbols
+<td width="*" class="property-title-tooltip"><B>Maximum Value</B><br/>Maximum Value
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -97,11 +97,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58006">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>value<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Value</B><br/>The number of displayed rating symbols
+<td width="*" class="property-title-tooltip"><B>Value</B><br/>Value
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">3.5</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -116,11 +116,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58006">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onChange<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On Change</B><br/>The event is fired when the user has done a rating.
+<td width="*" class="property-title-tooltip"><B>On Change</B><br/>On Change
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -134,6 +134,30 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58006">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getIconHovered [<a href="#FUNCTION_getIconHovered">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getIconSelected [<a href="#FUNCTION_getIconSelected">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getIconUnselected [<a href="#FUNCTION_getIconUnselected">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMaxValue [<a href="#FUNCTION_getMaxValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getValue [<a href="#FUNCTION_getValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">float</td>
@@ -148,6 +172,30 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58006">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setEditable [<a href="#FUNCTION_setEditable">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">editable</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setIconHovered [<a href="#FUNCTION_setIconHovered">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">iconHovered</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setIconSelected [<a href="#FUNCTION_setIconSelected">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">iconSelected</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setIconUnselected [<a href="#FUNCTION_setIconUnselected">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">iconUnselected</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxValue [<a href="#FUNCTION_setMaxValue">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">maxValue</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -177,8 +225,92 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58006">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getIconHovered">String<br/>getIconHovered</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Icon&nbsp;Hovered&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.iconHovered;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getIconSelected">String<br/>getIconSelected</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Icon&nbsp;Selected&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.iconSelected;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getIconUnselected">String<br/>getIconUnselected</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Icon&nbsp;Unselected&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.iconUnselected;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMaxValue">int<br/>getMaxValue</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Maximum&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.maxValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValue">float<br/>getValue</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;rating&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Value&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -199,7 +331,7 @@ return&nbsp;this.value;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Editable&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -220,14 +352,14 @@ return&nbsp;this.editable;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEditable">void<br/>setEditable</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Editable&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>editable</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
+<td width="*" class="parameter-help">Editable</td>
 </tr>
 
 </TABLE>
@@ -245,15 +377,119 @@ this.editable&nbsp;=&nbsp;editable;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setIconHovered">void<br/>setIconHovered</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Icon&nbsp;Hovered&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>iconHovered</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Icon Hovered</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.iconHovered&nbsp;=&nbsp;iconHovered;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setIconSelected">void<br/>setIconSelected</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Icon&nbsp;Selected&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>iconSelected</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Icon Selected</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.iconSelected&nbsp;=&nbsp;iconSelected;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setIconUnselected">void<br/>setIconUnselected</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Icon&nbsp;Unselected&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>iconUnselected</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Icon Unselected</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.iconUnselected&nbsp;=&nbsp;iconUnselected;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaxValue">void<br/>setMaxValue</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Maximum&nbsp;Value&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxValue</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Maximum Value</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.maxValue&nbsp;=&nbsp;maxValue;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValue">void<br/>setValue</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;rating&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Value&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>value</B></td>
 <td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help"> Rating value </td>
+<td width="*" class="parameter-help">Value</td>
 </tr>
 
 </TABLE>

@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/notificationbar/examples.json");
 </script>
 
-<title>Notification Bar - SCN Design Studio Community</title>
+<title>Notification Bar 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	NotificationBar [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Notification Bar
+	Notification Bar 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -52,7 +52,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>connectToCommonMessages<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Connect To Common Messages</B><br/>Setting this to TRUE also the common Messages from messages popup will be handover to this notification bar
+<td width="*" class="property-title-tooltip"><B>Connect To Common Messages</B><br/>Connect To Common Messages
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -61,7 +61,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>defaultImage<br/>[Url]</B></td>
-<td width="*" class="property-title-tooltip"><B>Default Image - Needed for Calculation of the Url Prefix for Repository</B><br/>Default Image - Needed for Calculation of the Url Prefix for Repository
+<td width="*" class="property-title-tooltip"><B>Url For Default Image</B><br/>Url For Default Image
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -70,7 +70,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>deleteNotificationOnClick<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Delete Notification when Clicked</B><br/>Setting this to TRUE deletes the Notification on click event
+<td width="*" class="property-title-tooltip"><B>Delete Notification When Clicked</B><br/>Delete Notification When Clicked
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -79,7 +79,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>removeAllOnMinimize<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Remove All Notifications when Minimized</B><br/>Setting this to TRUE deletes all Notifications on minimize event
+<td width="*" class="property-title-tooltip"><B>Remove All Notifications When Minimized</B><br/>Remove All Notifications When Minimized
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -88,7 +88,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>showOnNewNotifications<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Show Notification Bar when New Notifications are Available</B><br/>Setting this to TRUE shows always Notification Bar when new Notifications are Available
+<td width="*" class="property-title-tooltip"><B>Show Notification Bar When New Notifications Are Available</B><br/>Show Notification Bar When New Notifications Are Available
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -97,7 +97,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>splitNotificationsByPriority<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Split Notifications by Priority</B><br/>Setting this to TRUE the Notifications will be displayed in categories by priority
+<td width="*" class="property-title-tooltip"><B>Split Notifications By Priority</B><br/>Split Notifications By Priority
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -160,6 +160,78 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDefaultImage [<a href="#FUNCTION_getDefaultImage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isConnectToCommonMessages [<a href="#FUNCTION_isConnectToCommonMessages">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isDeleteNotificationOnClick [<a href="#FUNCTION_isDeleteNotificationOnClick">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isRemoveAllOnMinimize [<a href="#FUNCTION_isRemoveAllOnMinimize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isShowOnNewNotifications [<a href="#FUNCTION_isShowOnNewNotifications">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isSplitNotificationsByPriority [<a href="#FUNCTION_isSplitNotificationsByPriority">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setConnectToCommonMessages [<a href="#FUNCTION_setConnectToCommonMessages">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">connectToCommonMessages</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDefaultImage [<a href="#FUNCTION_setDefaultImage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">defaultImage</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDeleteNotificationOnClick [<a href="#FUNCTION_setDeleteNotificationOnClick">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">deleteNotificationOnClick</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRemoveAllOnMinimize [<a href="#FUNCTION_setRemoveAllOnMinimize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">removeAllOnMinimize</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setShowOnNewNotifications [<a href="#FUNCTION_setShowOnNewNotifications">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">showOnNewNotifications</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSplitNotificationsByPriority [<a href="#FUNCTION_setSplitNotificationsByPriority">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">splitNotificationsByPriority</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
 
 	</TABLE>
 
@@ -172,20 +244,20 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>categories<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Categories</B><br/>The Notifications Pushed to Client
+<td width="*" class="property-title-tooltip"><B>Categories</B><br/>Categories
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>notifications<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Notifications</B><br/>The Notifications Pushed to Client
+<td width="*" class="property-title-tooltip"><B>Notifications</B><br/>Notifications
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -199,7 +271,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addCategory">void<br/>addCategory</td>
-<td valign="top" width="*" class="function-help">Add&nbsp;Category<br/><br/>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Add&nbsp;Category<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -392,6 +464,288 @@ this.addNotification(notificationText,&nbsp;&quot;SUCCESS&quot;,&nbsp;categoryKe
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.addNotification(notificationText,&nbsp;&quot;WARNING&quot;,&nbsp;categoryKey,&nbsp;&quot;&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDefaultImage">String<br/>getDefaultImage</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;For&nbsp;Default&nbsp;Image&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.defaultImage;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isConnectToCommonMessages">boolean<br/>isConnectToCommonMessages</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Connect&nbsp;To&nbsp;Common&nbsp;Messages&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.connectToCommonMessages;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isDeleteNotificationOnClick">boolean<br/>isDeleteNotificationOnClick</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Delete&nbsp;Notification&nbsp;When&nbsp;Clicked&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.deleteNotificationOnClick;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isRemoveAllOnMinimize">boolean<br/>isRemoveAllOnMinimize</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Remove&nbsp;All&nbsp;Notifications&nbsp;When&nbsp;Minimized&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.removeAllOnMinimize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isShowOnNewNotifications">boolean<br/>isShowOnNewNotifications</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Notification&nbsp;Bar&nbsp;When&nbsp;New&nbsp;Notifications&nbsp;Are&nbsp;Available&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.showOnNewNotifications;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isSplitNotificationsByPriority">boolean<br/>isSplitNotificationsByPriority</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Split&nbsp;Notifications&nbsp;By&nbsp;Priority&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.splitNotificationsByPriority;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setConnectToCommonMessages">void<br/>setConnectToCommonMessages</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Connect&nbsp;To&nbsp;Common&nbsp;Messages&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>connectToCommonMessages</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Connect To Common Messages</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.connectToCommonMessages&nbsp;=&nbsp;connectToCommonMessages;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDefaultImage">void<br/>setDefaultImage</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;For&nbsp;Default&nbsp;Image&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>defaultImage</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Url For Default Image</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.defaultImage&nbsp;=&nbsp;defaultImage;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDeleteNotificationOnClick">void<br/>setDeleteNotificationOnClick</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Delete&nbsp;Notification&nbsp;When&nbsp;Clicked&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>deleteNotificationOnClick</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Delete Notification When Clicked</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.deleteNotificationOnClick&nbsp;=&nbsp;deleteNotificationOnClick;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRemoveAllOnMinimize">void<br/>setRemoveAllOnMinimize</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Remove&nbsp;All&nbsp;Notifications&nbsp;When&nbsp;Minimized&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>removeAllOnMinimize</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Remove All Notifications When Minimized</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.removeAllOnMinimize&nbsp;=&nbsp;removeAllOnMinimize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setShowOnNewNotifications">void<br/>setShowOnNewNotifications</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Notification&nbsp;Bar&nbsp;When&nbsp;New&nbsp;Notifications&nbsp;Are&nbsp;Available&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>showOnNewNotifications</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Show Notification Bar When New Notifications Are Available</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.showOnNewNotifications&nbsp;=&nbsp;showOnNewNotifications;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSplitNotificationsByPriority">void<br/>setSplitNotificationsByPriority</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Split&nbsp;Notifications&nbsp;By&nbsp;Priority&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>splitNotificationsByPriority</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Split Notifications By Priority</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.splitNotificationsByPriority&nbsp;=&nbsp;splitNotificationsByPriority;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

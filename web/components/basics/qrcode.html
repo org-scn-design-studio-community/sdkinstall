@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/qrcode/examples.json");
 </script>
 
-<title>QRCode Generator - SCN Design Studio Community</title>
+<title>QRCode Generator 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	QRCode [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	QRCode Generator
+	QRCode Generator 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -45,49 +45,30 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>background<br/>[Color]</B></td>
-<td width="*" class="property-title-tooltip"><B>Background Color</B><br/>Background Color
+<td width="120px" class="property-name-type"><B>background<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Background Colour</B><br/>Background Colour
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>ecLevel<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Error Correction Level</B><br/>Error Correction Level
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">L</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">M</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Q</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">H</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">L</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>fill<br/>[Color]</B></td>
-<td width="*" class="property-title-tooltip"><B>Fill Color</B><br/>Fill Color
+<td width="120px" class="property-name-type"><B>fill<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Fill Colour</B><br/>Fill Colour
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -110,11 +91,11 @@
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>printOnly<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Only show on printouts</B><br/>Only show on printouts
+<td width="*" class="property-title-tooltip"><B>Only Show On Printouts</B><br/>Only Show On Printouts
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -138,22 +119,7 @@
 <tr>
 <td width="120px" class="property-name-type"><B>render<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Render Mode</B><br/>Render Mode
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">canvas</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">div</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">image</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">canvas</td>
@@ -184,7 +150,7 @@
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -204,21 +170,39 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getEcLevel [<a href="#FUNCTION_getEcLevel">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getEcLevelAsString [<a href="#FUNCTION_getEcLevelAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getFill [<a href="#FUNCTION_getFill">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getPrintOnly [<a href="#FUNCTION_getPrintOnly">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getMaxVersion [<a href="#FUNCTION_getMaxVersion">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMinVersion [<a href="#FUNCTION_getMinVersion">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getQuiet [<a href="#FUNCTION_getQuiet">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
+<td valign="top" width="160px" class="function-short-return">float</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -228,20 +212,62 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRender [<a href="#FUNCTION_getRender">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRenderAsString [<a href="#FUNCTION_getRenderAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getText [<a href="#FUNCTION_getText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isPrintOnly [<a href="#FUNCTION_isPrintOnly">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setBackground [<a href="#FUNCTION_setBackground">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">color</td>
+<td valign="top" width="*" class="function-short-name">background</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEcLevel [<a href="#FUNCTION_setEcLevel">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">ecLevel</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEcLevelByString [<a href="#FUNCTION_setEcLevelByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">ecLevel</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setFill [<a href="#FUNCTION_setFill">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">color</td>
+<td valign="top" width="*" class="function-short-name">fill</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxVersion [<a href="#FUNCTION_setMaxVersion">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">maxVersion</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMinVersion [<a href="#FUNCTION_setMinVersion">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">minVersion</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -253,13 +279,25 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setQuiet [<a href="#FUNCTION_setQuiet">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">amount</td>
+<td valign="top" width="*" class="function-short-name">quiet</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setRadius [<a href="#FUNCTION_setRadius">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">radius</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRender [<a href="#FUNCTION_setRender">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">render</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRenderByString [<a href="#FUNCTION_setRenderByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">render</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -290,7 +328,7 @@
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getBackground">String<br/>getBackground</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Background&nbsp;Color<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Background&nbsp;Colour&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -310,8 +348,50 @@ return&nbsp;this.background;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEcLevel">org_scn_community_shared_Enumfield<br/>getEcLevel</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Error&nbsp;Correction&nbsp;Level&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.ecLevel;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEcLevelAsString">String<br/>getEcLevelAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Error&nbsp;Correction&nbsp;Level&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.ecLevel;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFill">String<br/>getFill</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Fill&nbsp;Color<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Fill&nbsp;Colour&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -331,8 +411,8 @@ return&nbsp;this.fill;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPrintOnly">String<br/>getPrintOnly</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Print-Only<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMaxVersion">int<br/>getMaxVersion</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Max&nbsp;Version&nbsp;(1-40)&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -344,7 +424,7 @@ return&nbsp;this.fill;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.printOnly;
+return&nbsp;this.maxVersion;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -352,8 +432,29 @@ return&nbsp;this.printOnly;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getQuiet">int<br/>getQuiet</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Quiet&nbsp;Amount<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMinVersion">int<br/>getMinVersion</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Min&nbsp;Version&nbsp;(1-40)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.minVersion;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getQuiet">float<br/>getQuiet</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Quiet&nbsp;Zone&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -374,7 +475,7 @@ return&nbsp;this.quiet;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRadius">float<br/>getRadius</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Radius<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Corner&nbsp;Radius&nbsp;(0.0&nbsp;-&nbsp;0.5)&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -386,7 +487,49 @@ return&nbsp;this.quiet;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.fill;
+return&nbsp;this.radius;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRender">org_scn_community_shared_Enumfield<br/>getRender</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Render&nbsp;Mode&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.render;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRenderAsString">String<br/>getRenderAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Render&nbsp;Mode&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.render;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -395,7 +538,7 @@ return&nbsp;this.fill;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getText">String<br/>getText</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;QRCode&nbsp;Text<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;QR&nbsp;Code&nbsp;Text&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -415,15 +558,36 @@ return&nbsp;this.text;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isPrintOnly">boolean<br/>isPrintOnly</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Only&nbsp;Show&nbsp;On&nbsp;Printouts&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.printOnly;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setBackground">void<br/>setBackground</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Background&nbsp;Color<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Background&nbsp;Colour&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>color</B></td>
+<td width="120px" class="parameter-name"><B>background</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Color </td>
+<td width="*" class="parameter-help">Background Colour</td>
 </tr>
 
 </TABLE>
@@ -433,7 +597,59 @@ return&nbsp;this.text;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.background&nbsp;=&nbsp;color;
+this.background&nbsp;=&nbsp;background;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEcLevel">void<br/>setEcLevel</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Error&nbsp;Correction&nbsp;Level&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>ecLevel</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Error Correction Level</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.ecLevel&nbsp;=&nbsp;ecLevel;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEcLevelByString">void<br/>setEcLevelByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Error&nbsp;Correction&nbsp;Level&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>ecLevel</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Error Correction Level</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.ecLevel&nbsp;=&nbsp;ecLevel;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -442,14 +658,14 @@ this.background&nbsp;=&nbsp;color;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFill">void<br/>setFill</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Fill&nbsp;Color<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Fill&nbsp;Colour&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>color</B></td>
+<td width="120px" class="parameter-name"><B>fill</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Color </td>
+<td width="*" class="parameter-help">Fill Colour</td>
 </tr>
 
 </TABLE>
@@ -459,7 +675,59 @@ this.background&nbsp;=&nbsp;color;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.fill&nbsp;=&nbsp;color;
+this.fill&nbsp;=&nbsp;fill;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaxVersion">void<br/>setMaxVersion</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Max&nbsp;Version&nbsp;(1-40)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxVersion</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Max Version (1-40)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.maxVersion&nbsp;=&nbsp;maxVersion;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMinVersion">void<br/>setMinVersion</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Min&nbsp;Version&nbsp;(1-40)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>minVersion</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Min Version (1-40)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.minVersion&nbsp;=&nbsp;minVersion;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -468,14 +736,14 @@ this.fill&nbsp;=&nbsp;color;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPrintOnly">void<br/>setPrintOnly</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Print-Only<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Only&nbsp;Show&nbsp;On&nbsp;Printouts&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>printOnly</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Print Only (true/false) </td>
+<td width="*" class="parameter-help">Only Show On Printouts</td>
 </tr>
 
 </TABLE>
@@ -494,14 +762,14 @@ this.printOnly&nbsp;=&nbsp;printOnly;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setQuiet">void<br/>setQuiet</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Quiet&nbsp;Amount<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Quiet&nbsp;Zone&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>amount</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Amount </td>
+<td width="120px" class="parameter-name"><B>quiet</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help">Quiet Zone</td>
 </tr>
 
 </TABLE>
@@ -511,7 +779,7 @@ this.printOnly&nbsp;=&nbsp;printOnly;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.quiet&nbsp;=&nbsp;amount;
+this.quiet&nbsp;=&nbsp;quiet;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -520,14 +788,14 @@ this.quiet&nbsp;=&nbsp;amount;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRadius">void<br/>setRadius</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Radius<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Corner&nbsp;Radius&nbsp;(0.0&nbsp;-&nbsp;0.5)&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>radius</B></td>
 <td width="120px" class="parameter-type"><B>float</B></td>
-<td width="*" class="parameter-help"> Radius (0.0 - 0.5) </td>
+<td width="*" class="parameter-help">Corner Radius (0.0 - 0.5)</td>
 </tr>
 
 </TABLE>
@@ -545,15 +813,67 @@ this.radius&nbsp;=&nbsp;radius;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRender">void<br/>setRender</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Render&nbsp;Mode&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>render</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Render Mode</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.render&nbsp;=&nbsp;render;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRenderByString">void<br/>setRenderByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Render&nbsp;Mode&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>render</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Render Mode</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.render&nbsp;=&nbsp;render;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setText">void<br/>setText</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;QRCode&nbsp;Text<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;QR&nbsp;Code&nbsp;Text&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>text</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Text </td>
+<td width="*" class="parameter-help">QR Code Text</td>
 </tr>
 
 </TABLE>

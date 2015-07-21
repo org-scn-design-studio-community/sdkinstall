@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/worldtime/examples.json");
 </script>
 
-<title>WorldTime - SCN Design Studio Community</title>
+<title>WorldTime 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	WorldTime [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	WorldTime
+	WorldTime 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -49,33 +49,10 @@ This component visualizes current time according to given UTC offset and locale 
 	<tr>
 <td width="120px" class="property-name-type"><B>dateformat<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Date Format</B><br/>Date Format
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">dd.mm.yy</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">dd.mm</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">mm.yy</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">hide</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">default</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">dd.mm.yy</td>
+<td width="100px" class="property-default">ddmmyy</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -89,7 +66,7 @@ This component visualizes current time according to given UTC offset and locale 
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>interval<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Update Interval (in ms)</B><br/>Update Interval (in ms)
+<td width="*" class="property-title-tooltip"><B>Update Interval (in Ms)</B><br/>Update Interval (in Ms)
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -99,30 +76,15 @@ This component visualizes current time according to given UTC offset and locale 
 <tr>
 <td width="120px" class="property-name-type"><B>locale<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Locale</B><br/>Locale
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">en-US</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">de-DE</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">default</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">de-DE</td>
+<td width="100px" class="property-default">deDE</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>showtimezonename<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Show Timezone name</B><br/>Show Timezone name
+<td width="*" class="property-title-tooltip"><B>Show Timezone Name</B><br/>Show Timezone Name
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -132,29 +94,10 @@ This component visualizes current time according to given UTC offset and locale 
 <tr>
 <td width="120px" class="property-name-type"><B>timeformat<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Time Format</B><br/>Time Format
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">hh:mm:ss</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">hh:mm</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">hide</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">default</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">hh:mm:ss</td>
+<td width="100px" class="property-default">hhmmss</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -187,8 +130,122 @@ This component visualizes current time according to given UTC offset and locale 
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setOffset [<a href="#FUNCTION_setOffset">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">utc_offset</td>
+<td valign="top" width="240px" class="function-short-name">getDateformat [<a href="#FUNCTION_getDateformat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getDateformatAsString [<a href="#FUNCTION_getDateformatAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getInterval [<a href="#FUNCTION_getInterval">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLocale [<a href="#FUNCTION_getLocale">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLocaleAsString [<a href="#FUNCTION_getLocaleAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTimeformat [<a href="#FUNCTION_getTimeformat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTimeformatAsString [<a href="#FUNCTION_getTimeformatAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getUtcoffset [<a href="#FUNCTION_getUtcoffset">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isDaylightsaving [<a href="#FUNCTION_isDaylightsaving">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isShowtimezonename [<a href="#FUNCTION_isShowtimezonename">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDateformat [<a href="#FUNCTION_setDateformat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dateformat</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDateformatByString [<a href="#FUNCTION_setDateformatByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dateformat</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDaylightsaving [<a href="#FUNCTION_setDaylightsaving">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">daylightsaving</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setInterval [<a href="#FUNCTION_setInterval">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">interval</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setLocale [<a href="#FUNCTION_setLocale">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">locale</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setLocaleByString [<a href="#FUNCTION_setLocaleByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">locale</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setShowtimezonename [<a href="#FUNCTION_setShowtimezonename">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">showtimezonename</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTimeformat [<a href="#FUNCTION_setTimeformat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">timeformat</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTimeformatByString [<a href="#FUNCTION_setTimeformatByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">timeformat</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setUtcoffset [<a href="#FUNCTION_setUtcoffset">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">utcoffset</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -212,15 +269,225 @@ This component visualizes current time according to given UTC offset and locale 
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setOffset">void<br/>setOffset</td>
-<td valign="top" width="*" class="function-help">Set&nbsp;base&nbsp;timezone&nbsp;with&nbsp;given&nbsp;utc&nbsp;offset.<br/><div class='html-example'"><div class='html-code'>TIME_1.setOffset("-2").<br/></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDateformat">org_scn_community_shared_Enumfield<br/>getDateformat</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Date&nbsp;Format&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.dateformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDateformatAsString">String<br/>getDateformatAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Date&nbsp;Format&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.dateformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getInterval">int<br/>getInterval</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Update&nbsp;Interval&nbsp;(in&nbsp;Ms)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.interval;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLocale">org_scn_community_shared_Enumfield<br/>getLocale</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Locale&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.locale;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLocaleAsString">String<br/>getLocaleAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Locale&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.locale;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTimeformat">org_scn_community_shared_Enumfield<br/>getTimeformat</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Time&nbsp;Format&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.timeformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTimeformatAsString">String<br/>getTimeformatAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Time&nbsp;Format&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.timeformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getUtcoffset">String<br/>getUtcoffset</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;UTC&nbsp;Offset&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.utcoffset;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isDaylightsaving">boolean<br/>isDaylightsaving</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Consider&nbsp;Daylight&nbsp;Saving&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.daylightsaving;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isShowtimezonename">boolean<br/>isShowtimezonename</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Timezone&nbsp;Name&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.showtimezonename;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDateformat">void<br/>setDateformat</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Date&nbsp;Format&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>utc_offset</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="120px" class="parameter-name"><B>dateformat</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Date Format</td>
 </tr>
 
 </TABLE>
@@ -230,7 +497,241 @@ This component visualizes current time according to given UTC offset and locale 
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.utcoffset&nbsp;=&nbsp;utc_offset;
+this.dateformat&nbsp;=&nbsp;dateformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDateformatByString">void<br/>setDateformatByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Date&nbsp;Format&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dateformat</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Date Format</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.dateformat&nbsp;=&nbsp;dateformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDaylightsaving">void<br/>setDaylightsaving</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Consider&nbsp;Daylight&nbsp;Saving&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>daylightsaving</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Consider Daylight Saving</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.daylightsaving&nbsp;=&nbsp;daylightsaving;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setInterval">void<br/>setInterval</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Update&nbsp;Interval&nbsp;(in&nbsp;Ms)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>interval</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Update Interval (in Ms)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.interval&nbsp;=&nbsp;interval;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setLocale">void<br/>setLocale</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Locale&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>locale</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Locale</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.locale&nbsp;=&nbsp;locale;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setLocaleByString">void<br/>setLocaleByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Locale&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>locale</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Locale</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.locale&nbsp;=&nbsp;locale;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setShowtimezonename">void<br/>setShowtimezonename</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Timezone&nbsp;Name&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>showtimezonename</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Show Timezone Name</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.showtimezonename&nbsp;=&nbsp;showtimezonename;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTimeformat">void<br/>setTimeformat</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Time&nbsp;Format&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>timeformat</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Time Format</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.timeformat&nbsp;=&nbsp;timeformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTimeformatByString">void<br/>setTimeformatByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Time&nbsp;Format&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>timeformat</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Time Format</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.timeformat&nbsp;=&nbsp;timeformat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setUtcoffset">void<br/>setUtcoffset</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;UTC&nbsp;Offset&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>utcoffset</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">UTC Offset</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.utcoffset&nbsp;=&nbsp;utcoffset;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
