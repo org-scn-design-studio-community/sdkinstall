@@ -112,7 +112,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/dragdroparea",
-       title: "Drag Drop Area",
+       title: "Drag Drop Area 2.0",
        info: "DragDropArea",
        icon: "basics/dragdroparea.png",
        activeIcon: "basics/dragdroparea.png",
@@ -175,7 +175,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/fisheye",
-       title: "Fish Eye",
+       title: "Fish Eye 2.0",
        info: "FishEye",
        icon: "basics/fisheye.png",
        activeIcon: "basics/fisheye.png",
@@ -193,7 +193,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/imagecarousel",
-       title: "Image Carousel",
+       title: "Image Carousel 2.0",
        info: "ImageCarousel",
        icon: "basics/imagecarousel.png",
        activeIcon: "basics/imagecarousel.png",
@@ -220,7 +220,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/leaderboard",
-       title: "Leader Board",
+       title: "Leader Board 2.0",
        info: "LeaderBoard",
        icon: "basics/leaderboard.png",
        activeIcon: "basics/leaderboard.png",
@@ -229,7 +229,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/link",
-       title: "Link",
+       title: "Link 2.0",
        info: "Link",
        icon: "basics/link.png",
        activeIcon: "basics/link.png",
@@ -238,7 +238,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/listselector",
-       title: "List Selector",
+       title: "List Selector 2.0",
        info: "ListSelector",
        icon: "basics/listselector.png",
        activeIcon: "basics/listselector.png",
@@ -246,8 +246,17 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/map",
+       title: "Open Street Map (Basic) 2.0",
+       info: "Map",
+       icon: "basics/map.png",
+       activeIcon: "basics/map.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/menubar",
-       title: "Menu Bar (>= 1.4)",
+       title: "Menu Bar 2.0",
        info: "MenuBar",
        icon: "basics/menubar.png",
        activeIcon: "basics/menubar.png",
@@ -256,7 +265,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/menubutton",
-       title: "Menu Button (>= 1.4)",
+       title: "Menu Button 2.0",
        info: "MenuButton",
        icon: "basics/menubutton.png",
        activeIcon: "basics/menubutton.png",
@@ -274,7 +283,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/navigationbar",
-       title: "Navigation Bar",
+       title: "Navigation Bar 2.0",
        info: "NavigationBar",
        icon: "basics/navigationbar.png",
        activeIcon: "basics/navigationbar.png",
@@ -283,7 +292,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/notificationbar",
-       title: "Notification Bar",
+       title: "Notification Bar 2.0",
        info: "NotificationBar",
        icon: "basics/notificationbar.png",
        activeIcon: "basics/notificationbar.png",
@@ -300,17 +309,8 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/map",
-       title: "Open Street Map (Basic)",
-       info: "Map",
-       icon: "basics/map.png",
-       activeIcon: "basics/map.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
        id: "basics/paginator",
-       title: "Paginator",
+       title: "Paginator 2.0",
        info: "Paginator",
        icon: "basics/paginator.png",
        activeIcon: "basics/paginator.png",
@@ -319,7 +319,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/passwordfield",
-       title: "Password Field",
+       title: "Password Field 2.0",
        info: "PasswordField",
        icon: "basics/passwordfield.png",
        activeIcon: "basics/passwordfield.png",
@@ -328,7 +328,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/progressindicator",
-       title: "Progress Indicator",
+       title: "Progress Indicator 2.0",
        info: "ProgressIndicator",
        icon: "basics/progressindicator.png",
        activeIcon: "basics/progressindicator.png",
@@ -337,7 +337,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/qrcode",
-       title: "QRCode Generator",
+       title: "QRCode Generator 2.0",
        info: "QRCode",
        icon: "basics/qrcode.png",
        activeIcon: "basics/qrcode.png",
@@ -355,7 +355,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/rangeslider",
-       title: "Range Slider",
+       title: "Range Slider 2.0",
        info: "RangeSlider",
        icon: "basics/rangeslider.png",
        activeIcon: "basics/rangeslider.png",
@@ -364,7 +364,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/ratingindicator",
-       title: "Rating Indicator",
+       title: "Rating Indicator 2.0",
        info: "RatingIndicator",
        icon: "basics/ratingindicator.png",
        activeIcon: "basics/ratingindicator.png",
@@ -391,7 +391,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/slider",
-       title: "Slider",
+       title: "Slider 2.0",
        info: "Slider",
        icon: "basics/slider.png",
        activeIcon: "basics/slider.png",
@@ -400,7 +400,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/textarea",
-       title: "Text Area",
+       title: "Text Area 2.0",
        info: "TextArea",
        icon: "basics/textarea.png",
        activeIcon: "basics/textarea.png",
@@ -409,7 +409,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/togglebutton",
-       title: "Toggle Button",
+       title: "Toggle Button 2.0",
        info: "ToggleButton",
        icon: "basics/togglebutton.png",
        activeIcon: "basics/togglebutton.png",
@@ -427,7 +427,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/tristatecheckbox",
-       title: "Tri State CheckBox",
+       title: "Tri State CheckBox 2.0",
        info: "TriStateCheckBox",
        icon: "basics/tristatecheckbox.png",
        activeIcon: "basics/tristatecheckbox.png",
@@ -436,7 +436,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/valiinput",
-       title: "Validated Input Field",
+       title: "Validated Input Field 2.0",
        info: "ValiInput",
        icon: "basics/valiinput.png",
        activeIcon: "basics/valiinput.png",
@@ -445,7 +445,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/valuehelpfield",
-       title: "Value Help Field",
+       title: "Value Help Field 2.0",
        info: "ValueHelpField",
        icon: "basics/valuehelpfield.png",
        activeIcon: "basics/valuehelpfield.png",
@@ -454,7 +454,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/worldtime",
-       title: "WorldTime",
+       title: "WorldTime 2.0",
        info: "WorldTime",
        icon: "basics/worldtime.png",
        activeIcon: "basics/worldtime.png",

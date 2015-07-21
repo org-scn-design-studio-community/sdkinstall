@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/paginator/examples.json");
 </script>
 
-<title>Paginator - SCN Design Studio Community</title>
+<title>Paginator 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	Paginator [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Paginator
+	Paginator 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -52,16 +52,16 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58004">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>currentPage<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Current Page</B><br/>Represents the current page number.
+<td width="*" class="property-title-tooltip"><B>Current Page</B><br/>Current Page
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">0</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>numberOfPages<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Number of Pages</B><br/>Represents the overall number of pages that are embedded into the parent control.
+<td width="*" class="property-title-tooltip"><B>Number Of Pages</B><br/>Number Of Pages
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -80,11 +80,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58004">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onPageChange<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On Page Change</B><br/>Event is fired when the user navigates to another page by selecting it directly, or by jumping forward or backward.
+<td width="*" class="property-title-tooltip"><B>On Page Change</B><br/>On Page Change
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -142,7 +142,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58004">Design
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentPage">int<br/>getCurrentPage</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;current&nbsp;page&nbsp;number<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Current&nbsp;Page&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -163,7 +163,7 @@ return&nbsp;this.currentPage;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getNumberOfPages">int<br/>getNumberOfPages</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;overall&nbsp;number&nbsp;of&nbsp;pages&nbsp;that&nbsp;are&nbsp;embedded&nbsp;into&nbsp;the&nbsp;parent&nbsp;control<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Number&nbsp;Of&nbsp;Pages&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -184,14 +184,14 @@ return&nbsp;this.numberOfPages;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCurrentPage">void<br/>setCurrentPage</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;current&nbsp;page&nbsp;number<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Current&nbsp;Page&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>currentPage</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Current page number </td>
+<td width="*" class="parameter-help">Current Page</td>
 </tr>
 
 </TABLE>
@@ -210,14 +210,14 @@ this.currentPage&nbsp;=&nbsp;currentPage;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNumberOfPages">void<br/>setNumberOfPages</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;overall&nbsp;number&nbsp;of&nbsp;pages&nbsp;that&nbsp;are&nbsp;embedded&nbsp;into&nbsp;the&nbsp;parent&nbsp;control<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Number&nbsp;Of&nbsp;Pages&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>numberOfPages</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Overall number of pages </td>
+<td width="*" class="parameter-help">Number Of Pages</td>
 </tr>
 
 </TABLE>

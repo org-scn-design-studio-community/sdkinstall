@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/textarea/examples.json");
 </script>
 
-<title>Text Area - SCN Design Studio Community</title>
+<title>Text Area 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	TextArea [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Text Area
+	Text Area 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -70,7 +70,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58302">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>maxLength<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Maximal Length</B><br/>Teh Maximal Length in Characters
+<td width="*" class="property-title-tooltip"><B>Maximal Length</B><br/>Maximal Length
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -79,7 +79,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58302">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>value<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Text Value</B><br/>The text content of this text area
+<td width="*" class="property-title-tooltip"><B>Text Value</B><br/>Text Value
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -98,11 +98,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58302">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onValueChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Value Changed</B><br/>Event for On Value Changed
+<td width="*" class="property-title-tooltip"><B>Event For On Value Changed</B><br/>Event For On Value Changed
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -116,6 +116,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58302">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMaxLength [<a href="#FUNCTION_getMaxLength">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getValue [<a href="#FUNCTION_getValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -146,6 +152,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58302">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxLength [<a href="#FUNCTION_setMaxLength">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">maxLength</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setValue [<a href="#FUNCTION_setValue">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">value</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -171,8 +183,29 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58302">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMaxLength">int<br/>getMaxLength</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Maximal&nbsp;Length&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.maxLength;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getValue">String<br/>getValue</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Text&nbsp;Value&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -193,7 +226,7 @@ return&nbsp;this.value;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEditable">boolean<br/>isEditable</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Editable&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -214,7 +247,7 @@ return&nbsp;this.editable;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEnabled">boolean<br/>isEnabled</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Enabled&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -235,14 +268,14 @@ return&nbsp;this.enabled;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEditable">void<br/>setEditable</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;editable&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Editable&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>editable</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
+<td width="*" class="parameter-help">Editable</td>
 </tr>
 
 </TABLE>
@@ -261,14 +294,14 @@ this.editable&nbsp;=&nbsp;editable;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEnabled">void<br/>setEnabled</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;enabled&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Enabled&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>enabled</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Editable value </td>
+<td width="*" class="parameter-help">Enabled</td>
 </tr>
 
 </TABLE>
@@ -286,15 +319,41 @@ this.enabled&nbsp;=&nbsp;enabled;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaxLength">void<br/>setMaxLength</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Maximal&nbsp;Length&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>maxLength</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Maximal Length</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.maxLength&nbsp;=&nbsp;maxLength;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setValue">void<br/>setValue</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;value<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Text&nbsp;Value&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>value</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Text Value</td>
 </tr>
 
 </TABLE>
