@@ -108,6 +108,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addNode [<a href="#FUNCTION_addNode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">nodeKey, nodeText, imageUrl, parentNodeKey, (isLeaf)</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addRootNode [<a href="#FUNCTION_addRootNode">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key, text, url</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -137,7 +143,19 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getNodesAsJSON [<a href="#FUNCTION_getNodesAsJSON">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getRootNodeText [<a href="#FUNCTION_getRootNodeText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRootNodeUrl [<a href="#FUNCTION_getRootNodeUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRootNodesAsJSON [<a href="#FUNCTION_getRootNodesAsJSON">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -155,27 +173,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">hasNodeText [<a href="#FUNCTION_hasNodeText">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getSubNodeText [<a href="#FUNCTION_getSubNodeText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">hasNodeUrl [<a href="#FUNCTION_hasNodeUrl">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getSubNodeUrl [<a href="#FUNCTION_getSubNodeUrl">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">hasSubNodeText [<a href="#FUNCTION_hasSubNodeText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">hasSubNodeUrl [<a href="#FUNCTION_hasSubNodeUrl">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -197,7 +203,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeNode [<a href="#FUNCTION_removeNode">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">removeRootNode [<a href="#FUNCTION_removeRootNode">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -215,25 +221,25 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setNodeText [<a href="#FUNCTION_setNodeText">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setRootNodeText [<a href="#FUNCTION_setRootNodeText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key, text</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setNodeTexts [<a href="#FUNCTION_setNodeTexts">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setRootNodeTexts [<a href="#FUNCTION_setRootNodeTexts">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">keys, separator, text</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setNodeUrl [<a href="#FUNCTION_setNodeUrl">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setRootNodeUrl [<a href="#FUNCTION_setRootNodeUrl">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key, url</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setNodeUrls [<a href="#FUNCTION_setNodeUrls">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setRootNodeUrls [<a href="#FUNCTION_setRootNodeUrls">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">keys, separator, url</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -319,7 +325,53 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addNode">void<br/>addNode</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>TREE.addNode(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String]);<br>TREE.addNode(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String]);<br></div></div><br/>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;tree&nbsp;node&nbsp;containing&nbsp;Key,&nbsp;Text,&nbsp;Image&nbsp;Url,&nbsp;Parent&nbsp;Node&nbsp;and&nbsp;is&nbsp;Leaf&nbsp;information.<br/>You&nbsp;need&nbsp;to&nbsp;specify&nbsp;a&nbsp;unique&nbsp;and&nbsp;existing&nbsp;parent&nbsp;node.<br/>if&nbsp;Parent&nbsp;is&nbsp;set&nbsp;to&nbsp;"ROOT"&nbsp;then&nbsp;the&nbsp;node&nbsp;will&nbsp;be&nbsp;inserted&nbsp;into&nbsp;"ROOT".<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;nodes,&nbsp;second&nbsp;one&nbsp;is&nbsp;a&nbsp;child&nbsp;of&nbsp;fist&nbsp;one<br/><div class='html-code'>TREE_1.addNode("KEY1",&nbsp;"First&nbsp;Node",&nbsp;"",&nbsp;"ROOT",&nbsp;true);<br>TREE_1.addNode("KEY2",&nbsp;"First&nbsp;Node",&nbsp;"",&nbsp;"KEY1",&nbsp;true);<br></div></div>@Visibility(deprecated)<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>nodeKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Node Key (must be unique)</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>nodeText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Node text</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>imageUrl</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Image URL if not set no image</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>parentNodeKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">The Key of the parent Node</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>isLeaf</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help">Leafs do not have expand option by default</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if(isLeaf&nbsp;==&nbsp;undefined)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isLeaf&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;key&quot;:&nbsp;nodeKey,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;text&quot;:&nbsp;nodeText,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;url&quot;:&nbsp;imageUrl,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;parentKey&quot;:&nbsp;parentNodeKey,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;leaf&quot;:&nbsp;isLeaf<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.nodesContent&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;nodesJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;nodesJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(nodesJson[i].key&nbsp;==&nbsp;nodeKey)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nodesJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.nodesContent&nbsp;=&nbsp;JSON.stringify(nodesJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addRootNode">void<br/>addRootNode</td>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>TREE.addRootNode(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String]);<br>TREE.addRootNode(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -458,8 +510,60 @@ return&nbsp;this.expandedKey;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getNodesAsJSON">String<br/>getNodesAsJSON</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Nodes&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRootNodeText">String<br/>getRootNodeText</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Text&nbsp;for&nbsp;RootNode&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRootNodeUrl">String<br/>getRootNodeUrl</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Url&nbsp;for&nbsp;RootNode&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRootNodesAsJSON">String<br/>getRootNodesAsJSON</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;RootNodes&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -521,8 +625,8 @@ return&nbsp;this.selectedKey;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_hasNodeText">boolean<br/>hasNodeText</td>
-<td valign="top" width="*" class="function-help">Checks&nbsp;Existence&nbsp;of&nbsp;Text&nbsp;for&nbsp;Node&nbsp;Key<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSubNodeText">String<br/>getSubNodeText</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Text&nbsp;for&nbsp;SubNode&nbsp;Key<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -539,7 +643,7 @@ return&nbsp;this.selectedKey;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;exists&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;exists;
+if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -547,8 +651,8 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_hasNodeUrl">boolean<br/>hasNodeUrl</td>
-<td valign="top" width="*" class="function-help">Checks&nbsp;Existence&nbsp;of&nbsp;Url&nbsp;for&nbsp;Node&nbsp;Key<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSubNodeUrl">String<br/>getSubNodeUrl</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Url&nbsp;for&nbsp;SubNode&nbsp;Key<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -565,59 +669,7 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;exists&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;exists;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_hasSubNodeText">boolean<br/>hasSubNodeText</td>
-<td valign="top" width="*" class="function-help">Checks&nbsp;Existence&nbsp;of&nbsp;Text&nbsp;for&nbsp;SubNode&nbsp;Key<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;exists&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;exists;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_hasSubNodeUrl">boolean<br/>hasSubNodeUrl</td>
-<td valign="top" width="*" class="function-help">Checks&nbsp;Existence&nbsp;of&nbsp;Url&nbsp;for&nbsp;SubNode&nbsp;Key<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;exists&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;exists;
+if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.nodesContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -688,8 +740,8 @@ this.cleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elemen
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeNode">void<br/>removeNode</td>
-<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>TREE.removeNode(String&nbsp;key);<br></div></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeRootNode">void<br/>removeRootNode</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>TREE.removeRootNode(String&nbsp;key);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -766,8 +818,8 @@ this.defaultImage&nbsp;=&nbsp;defaultImage;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNodeText">void<br/>setNodeText</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;Node&nbsp;Key<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRootNodeText">void<br/>setRootNodeText</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;RootNode&nbsp;Key<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -797,8 +849,8 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNodeTexts">void<br/>setNodeTexts</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;Node&nbsp;keys<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRootNodeTexts">void<br/>setRootNodeTexts</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Text&nbsp;for&nbsp;RootNode&nbsp;keys<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -833,8 +885,8 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNodeUrl">void<br/>setNodeUrl</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;Node&nbsp;Key<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRootNodeUrl">void<br/>setRootNodeUrl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;RootNode&nbsp;Key<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -864,8 +916,8 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setNodeUrls">void<br/>setNodeUrls</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;Node&nbsp;keys<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRootNodeUrls">void<br/>setRootNodeUrls</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Url&nbsp;for&nbsp;RootNode&nbsp;keys<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>

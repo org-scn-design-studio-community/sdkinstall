@@ -22,7 +22,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/activityviewer",
-       title: "Activity Viewer",
+       title: "Activity Viewer 2.0",
        info: "ActivityViewer",
        icon: "basics/activityviewer.png",
        activeIcon: "basics/activityviewer.png",

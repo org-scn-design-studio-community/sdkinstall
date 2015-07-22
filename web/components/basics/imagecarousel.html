@@ -122,6 +122,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58001">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getElementText [<a href="#FUNCTION_getElementText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getElementUrl [<a href="#FUNCTION_getElementUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getElementsAsJSON [<a href="#FUNCTION_getElementsAsJSON">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -131,18 +143,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58001">Design
 <td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">hasElementText [<a href="#FUNCTION_hasElementText">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">hasElementUrl [<a href="#FUNCTION_hasElementUrl">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -341,6 +341,58 @@ if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;=
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getElementText">String<br/>getElementText</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Text&nbsp;for&nbsp;Element&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elements);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getElementUrl">String<br/>getElementUrl</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Url&nbsp;for&nbsp;Element&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elements);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getElementsAsJSON">String<br/>getElementsAsJSON</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Elements&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
 
@@ -376,58 +428,6 @@ var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.elements);<br/>&nbsp;&nbsp;&nbsp
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.selectedKey;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_hasElementText">boolean<br/>hasElementText</td>
-<td valign="top" width="*" class="function-help">Checks&nbsp;Existence&nbsp;of&nbsp;Text&nbsp;for&nbsp;Element&nbsp;Key<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elements);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;exists&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;exists;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_hasElementUrl">boolean<br/>hasElementUrl</td>
-<td valign="top" width="*" class="function-help">Checks&nbsp;Existence&nbsp;of&nbsp;Url&nbsp;for&nbsp;Element&nbsp;Key<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elements);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;exists&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;exists;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
