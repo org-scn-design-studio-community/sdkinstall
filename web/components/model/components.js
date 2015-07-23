@@ -740,6 +740,15 @@ sdkComponentModel["unified"] = [
        number: " ",
        numberUnit: "unified"
    },
+    {
+       id: "unified/processflow",
+       title: "Process Flow 2.0",
+       info: "ProcessFlow",
+       icon: "unified/processflow.png",
+       activeIcon: "unified/processflow.png",
+       number: " ",
+       numberUnit: "unified"
+   },
 
                   ];
 sdkComponentModel["datasource"] = [
