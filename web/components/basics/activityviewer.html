@@ -50,7 +50,7 @@
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">[]</td>
+<td width="100px" class="property-default">[{"parentKey":"ROOT","key":"ELEMENT","leaf":false,"text":"Distribution","category":"CAT1","state":"F ... truncated</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">[]</td>
+<td width="100px" class="property-default">[{"parentKey":"ROOT","key":"CAT1","leaf":false,"text":"Good Products"},{"parentKey":"ROOT","key":"CA ... truncated</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">[]</td>
+<td width="100px" class="property-default">[{"parentKey":"ROOT","key":"STANDARD","leaf":false,"style":"bar"},{"parentKey":"ROOT","key":"FAILED" ... truncated</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -192,6 +192,12 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getCategorysAsJSON [<a href="#FUNCTION_getCategorysAsJSON">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -374,7 +380,16 @@
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Key</B><br/>Selected Key
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -813,6 +828,27 @@ if&nbsp;(this.categories&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.categories&nb
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.categories);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Selected&nbsp;Key&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selectedKey;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
