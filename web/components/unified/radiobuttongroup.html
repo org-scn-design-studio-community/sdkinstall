@@ -13,21 +13,21 @@
 <script type="text/javascript" src="../js/ga.js"></script>
 
 <script> 
-	requestChangeLog("../../../../sdkhelp/web/components/unified/processflow/changes/changelog.json");
-	requestContent("Blog", "../../../../sdkhelp/web/components/unified/processflow/blogs.json");
-	requestContent("Example", "../../../../sdkhelp/web/components/unified/processflow/examples.json");
+	requestChangeLog("../../../../sdkhelp/web/components/unified/radiobuttongroup/changes/changelog.json");
+	requestContent("Blog", "../../../../sdkhelp/web/components/unified/radiobuttongroup/blogs.json");
+	requestContent("Example", "../../../../sdkhelp/web/components/unified/radiobuttongroup/examples.json");
 </script>
 
-<title>Process Flow 2.0 - SCN Design Studio Community</title>
+<title>Radio Button Group 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
 
  	<div class="component-name">
-	ProcessFlow [ScnCommunityUnified]
+	RadioButtonGroup [ScnCommunityUnified]
 	</div>
 	<div class="component-title">
-	Process Flow 2.0
+	Radio Button Group 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -45,8 +45,8 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>connections<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Connections</B><br/>Connections
+<td width="120px" class="property-name-type"><B>buttons<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Buttons</B><br/>Buttons
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -54,35 +54,26 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>foldedCorners<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Folded Corners</B><br/>Folded Corners
+<td width="120px" class="property-name-type"><B>columns<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Columns</B><br/>Columns
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">false</td>
+<td width="100px" class="property-default">1</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>lanes<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Lanes</B><br/>Lanes
+<td width="120px" class="property-name-type"><B>contentWidth<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Content Width</B><br/>Content Width
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">[{"parentKey":"ROOT","key":"ELEMENT","leaf":false,"laneId":"id0","iconSrc":"sap-icon://order-status" ... truncated</td>
+<td width="100px" class="property-default">0</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>nodes<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Nodes</B><br/>Nodes
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">[{"parentKey":"ROOT","key":"ELEMENT","leaf":false,"children":"[2,3]","nodeId":"1","state":"Neutral", ... truncated</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>scrollable<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Scrollable</B><br/>Scrollable
+<td width="120px" class="property-name-type"><B>editable<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Editable</B><br/>Editable
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -90,8 +81,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>useConnections<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Use Manual 'Connections'</B><br/>Use Manual 'Connections'
+<td width="120px" class="property-name-type"><B>enabled<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Enabled</B><br/>Enabled
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -99,8 +90,26 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>useLanes<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Use Manual 'Lanes'</B><br/>Use Manual 'Lanes'
+<td width="120px" class="property-name-type"><B>selectedIndex<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Index</B><br/>Selected Index
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">0</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>textDirection<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Text Direction</B><br/>Text Direction
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Inherit</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useButtons<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Buttons'</B><br/>Use Manual 'Buttons'
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -108,8 +117,8 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>useNodes<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Use Manual 'Nodes'</B><br/>Use Manual 'Nodes'
+<td width="120px" class="property-name-type"><B>useColumns<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Columns'</B><br/>Use Manual 'Columns'
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -117,12 +126,30 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>wheelZoomable<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Wheel Zoomable</B><br/>Wheel Zoomable
+<td width="120px" class="property-name-type"><B>useContentWidth<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Content Width'</B><br/>Use Manual 'Content Width'
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>useSelectedIndex<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Manual 'Selected Index'</B><br/>Use Manual 'Selected Index'
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>valueState<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Value State</B><br/>Value State
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">None</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -136,26 +163,8 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>onErrored<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On  Errored</B><br/>On  Errored
-
-</td>
-<td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>onHeaderPressed<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On Header Pressed</B><br/>On Header Pressed
-
-</td>
-<td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>onNodePressed<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On Node Pressed</B><br/>On Node Pressed
+<td width="120px" class="property-name-type"><B>onSelected<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On Selected</B><br/>On Selected
 
 </td>
 <td width="60px" class="property-group">Events</td>
@@ -183,26 +192,8 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>headerPressedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Header Pressed Key</B><br/>Header Pressed Key
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>nodePressedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Node Pressed Key</B><br/>Node Pressed Key
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>onErroredKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B> Errored Key</B><br/> Errored Key
+<td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Key</B><br/>Selected Key
 
 </td>
 <td width="60px" class="property-group">Display</td>

@@ -749,6 +749,15 @@ sdkComponentModel["unified"] = [
        number: " ",
        numberUnit: "unified"
    },
+    {
+       id: "unified/radiobuttongroup",
+       title: "Radio Button Group 2.0",
+       info: "RadioButtonGroup",
+       icon: "unified/radiobuttongroup.png",
+       activeIcon: "unified/radiobuttongroup.png",
+       number: " ",
+       numberUnit: "unified"
+   },
 
                   ];
 sdkComponentModel["datasource"] = [
