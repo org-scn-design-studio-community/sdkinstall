@@ -307,7 +307,6 @@ sap.ui.commons.layout.AbsoluteLayout.extend ("org.scn.community.utils.PostRespon
 			that.setDTrigger("");
 
     		var changed = ["DTrigger", "DReturnParameters", "DReturnResponse", "DReturnStatus"];
-			n
 			that.fireDesignStudioPropertiesChanged(changed);
 			that.fireDesignStudioEvent("onResponse");
 		}
