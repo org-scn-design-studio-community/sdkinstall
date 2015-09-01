@@ -156,6 +156,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/fioribar",
+       title: "Fiori Bar",
+       info: "FioriBar",
+       icon: "basics/fioribar.png",
+       activeIcon: "basics/fioribar.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/fioributton",
        title: "Fiori Button",
        info: "FioriButton",
@@ -408,6 +417,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/timeout",
+       title: "TimeOut 2.0",
+       info: "TimeOut",
+       icon: "basics/timeout.png",
+       activeIcon: "basics/timeout.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/togglebutton",
        title: "Toggle Button 2.0",
        info: "ToggleButton",
@@ -542,6 +560,15 @@ sdkComponentModel["databound"] = [
        info: "MultiLevelDropDown",
        icon: "databound/multileveldropdown.png",
        activeIcon: "databound/multileveldropdown.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
+       id: "databound/progressbarset",
+       title: "Progress Bar Set",
+       info: "ProgressBarSet",
+       icon: "databound/progressbarset.png",
+       activeIcon: "databound/progressbarset.png",
        number: " ",
        numberUnit: "databound"
    },

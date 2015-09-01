@@ -356,6 +356,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">resetSelection [<a href="#FUNCTION_resetSelection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setFixedWidth [<a href="#FUNCTION_setFixedWidth">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">fixedWidth</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -1093,6 +1099,27 @@ if&nbsp;(this.titles&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.titles&nbsp;===&n
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_resetSelection">void<br/>resetSelection</td>
+<td valign="top" width="*" class="function-help">Reset&nbsp;selection&nbsp;of&nbsp;menu&nbsp;element&nbsp;titles&nbsp;for&nbsp;complex&nbsp;navigation&nbsp;scenarios<br/><div class='html-example'"><div class='html-code'>LISTSELECTOR_1.resetSelection();</div></div><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.labelUnselect&nbsp;=&nbsp;true;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFixedWidth">void<br/>setFixedWidth</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Fixed&nbsp;Width&nbsp;(-1&nbsp;For&nbsp;Auto)&nbsp;Property<br/><br/>
 
@@ -1495,7 +1522,7 @@ if&nbsp;(this.titles&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.titles&nbsp;===&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if(separator&nbsp;==&nbsp;undefined)&nbsp;separator&nbsp;=&nbsp;&quot;,&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;titlesSplit&nbsp;=&nbsp;titles.split(separator);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;that&nbsp;=&nbsp;this;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;labelI&nbsp;in&nbsp;titlesSplit)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;labelO&nbsp;=&nbsp;titlesSplit[labelI];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that.addTitle(labelO,&nbsp;labelO);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+if(separator&nbsp;==&nbsp;undefined)&nbsp;separator&nbsp;=&nbsp;&quot;,&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;titlesSplit&nbsp;=&nbsp;titles.split(separator);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;labelI&nbsp;in&nbsp;titlesSplit)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;labelO&nbsp;=&nbsp;titlesSplit[labelI];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addTitle(labelO,&nbsp;labelO);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
