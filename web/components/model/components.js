@@ -974,6 +974,15 @@ sdkComponentModel["utils"] = [
        number: " ",
        numberUnit: "utils"
    },
+    {
+       id: "utils/wspusher",
+       title: "WebSocket Implementation",
+       info: "WSPusher",
+       icon: "utils/wspusher.png",
+       activeIcon: "utils/wspusher.png",
+       number: " ",
+       numberUnit: "utils"
+   },
 
 	];
 sdkComponentModel["prototypes"] = [
