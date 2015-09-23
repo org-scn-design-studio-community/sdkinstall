@@ -161,12 +161,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getRoundtrip [<a href="#FUNCTION_getRoundtrip">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -297,12 +291,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>roundtrip<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>roundtrip<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Technical Proprty For Roundtrip</B><br/>Technical Proprty For Roundtrip
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
+<td width="100px" class="property-default">0</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -583,27 +577,6 @@ var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.nodesContent);<br/>&nbsp;&nbsp;&
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRoundtrip">String<br/>getRoundtrip</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Roundtrip&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.roundtrip;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Selected&nbsp;Key&nbsp;Property<br/><br/>
 
@@ -690,7 +663,7 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.roundtrip&nbsp;=&nbsp;&quot;-&quot;;
+this.roundtrip&nbsp;=&nbsp;this.roundtrip&nbsp;+&nbsp;1;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
