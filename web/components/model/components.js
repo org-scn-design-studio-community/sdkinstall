@@ -1032,6 +1032,15 @@ sdkComponentModel["prototypes"] = [
        numberUnit: "prototypes"
    },
     {
+       id: "prototypes/horizonchart",
+       title: "Horizon Chart",
+       info: "horizonChart",
+       icon: "prototypes/horizonchart.png",
+       activeIcon: "prototypes/horizonchart.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
        id: "prototypes/progressset",
        title: "Progress Bar Set",
        info: "ProgressSet",
