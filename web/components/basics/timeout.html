@@ -51,6 +51,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>counterVisible<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Counter</B><br/>Show Counter
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>logoffText<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Logoff Popup Text</B><br/>Logoff Popup Text
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Session timeout - refresh the browser page.</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>periodic<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Is periodic?</B><br/>Is periodic?
 
@@ -104,13 +122,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getStart [<a href="#FUNCTION_getStart">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getStop [<a href="#FUNCTION_getStop">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getLogoffText [<a href="#FUNCTION_getLogoffText">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -122,26 +134,38 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isCounterVisible [<a href="#FUNCTION_isCounterVisible">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">isPeriodic [<a href="#FUNCTION_isPeriodic">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">logoff [<a href="#FUNCTION_logoff">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCounterVisible [<a href="#FUNCTION_setCounterVisible">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">counterVisible</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setLogoffText [<a href="#FUNCTION_setLogoffText">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">logoffText</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setPeriodic [<a href="#FUNCTION_setPeriodic">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">periodic</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setStart [<a href="#FUNCTION_setStart">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">start</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setStop [<a href="#FUNCTION_setStop">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">stop</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -174,6 +198,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>logoff<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Logoff trigger</B><br/>Logoff trigger
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>start<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Start trigger</B><br/>Start trigger
 
@@ -222,8 +255,8 @@ return&nbsp;new&nbsp;Date().valueOf();
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getStart">String<br/>getStart</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Start&nbsp;trigger&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLogoffText">String<br/>getLogoffText</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Logoff&nbsp;Popup&nbsp;Text&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -235,28 +268,7 @@ return&nbsp;new&nbsp;Date().valueOf();
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.start;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getStop">String<br/>getStop</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Stop&nbsp;trigger&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.stop;
+return&nbsp;this.logoffText;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -285,6 +297,27 @@ return&nbsp;this.timer;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isCounterVisible">boolean<br/>isCounterVisible</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Counter&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.counterVisible;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isPeriodic">boolean<br/>isPeriodic</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Is&nbsp;periodic?&nbsp;Property<br/><br/>
 
@@ -299,6 +332,79 @@ return&nbsp;this.timer;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.periodic;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_logoff">void<br/>logoff</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.logoff&nbsp;=&nbsp;calcTimestamp();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCounterVisible">void<br/>setCounterVisible</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Counter&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>counterVisible</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Show Counter</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.counterVisible&nbsp;=&nbsp;counterVisible;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setLogoffText">void<br/>setLogoffText</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Logoff&nbsp;Popup&nbsp;Text&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>logoffText</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Logoff Popup Text</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.logoffText&nbsp;=&nbsp;logoffText;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -325,58 +431,6 @@ return&nbsp;this.periodic;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.periodic&nbsp;=&nbsp;periodic;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStart">void<br/>setStart</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Start&nbsp;trigger&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>start</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Start trigger</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.start&nbsp;=&nbsp;start;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStop">void<br/>setStop</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Stop&nbsp;trigger&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>stop</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Stop trigger</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.stop&nbsp;=&nbsp;stop;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
