@@ -185,6 +185,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58081">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">removeItem [<a href="#FUNCTION_removeItem">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setItems [<a href="#FUNCTION_setItems">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">keys, labels, values, (separator), (prop1s), (prop2s), (prop3s)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -763,6 +769,32 @@ var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&n
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;a&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(a);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeItem">int<br/>removeItem</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;an&nbsp;item&nbsp;from&nbsp;existing&nbsp;collection.&nbsp;This&nbsp;implementation&nbsp;of&nbsp;collection&nbsp;allows&nbsp;duplicate&nbsp;keys&nbsp;-&nbsp;all&nbsp;keys&nbsp;will&nbsp;be&nbsp;removed.<br/><div class='html-example'">You&nbsp;have&nbsp;an&nbsp;array&nbsp;with&nbsp;keys&nbsp;"k1,k2,k3":<br/><div class='html-code'>ARRAY_1.removeItem("k1");<br></div>This&nbsp;array&nbsp;has&nbsp;now&nbsp;following&nbsp;values:&nbsp;k2,k3<br/>Return&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;removed&nbsp;items.&nbsp;0&nbsp;means&nbsp;no&nbsp;removal&nbsp;was&nbsp;done.<br/></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">key</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;s&nbsp;=&nbsp;this.items;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s!=&quot;&quot;)&nbsp;a&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;foundNumber&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;aI&nbsp;in&nbsp;a){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(a[aI].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foundNumber++;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newArray.push(a[aI]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.items&nbsp;=&nbsp;JSON.stringify(newArray);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;foundNumber;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

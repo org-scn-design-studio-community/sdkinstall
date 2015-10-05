@@ -418,7 +418,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/timeout",
-       title: "TimeOut 2.0",
+       title: "TimeOut (Timer) 2.0",
        info: "TimeOut",
        icon: "basics/timeout.png",
        activeIcon: "basics/timeout.png",
@@ -472,7 +472,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/worldtime",
-       title: "WorldTime 2.0",
+       title: "World Time 2.0",
        info: "WorldTime",
        icon: "basics/worldtime.png",
        activeIcon: "basics/worldtime.png",
