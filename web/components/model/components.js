@@ -564,6 +564,15 @@ sdkComponentModel["databound"] = [
        numberUnit: "databound"
    },
     {
+       id: "databound/pictogram",
+       title: "Pictogram",
+       info: "Pictogram",
+       icon: "databound/pictogram.png",
+       activeIcon: "databound/pictogram.png",
+       number: " ",
+       numberUnit: "databound"
+   },
+    {
        id: "databound/progressbarset",
        title: "Progress Bar Set",
        info: "ProgressBarSet",

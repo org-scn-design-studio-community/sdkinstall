@@ -161,6 +161,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">calcTimestamp [<a href="#FUNCTION_calcTimestamp">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getDefaultImage [<a href="#FUNCTION_getDefaultImage">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -194,6 +200,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 <td valign="top" width="240px" class="function-short-name">isSplitNotificationsByPriority [<a href="#FUNCTION_isSplitNotificationsByPriority">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">minimizeBar [<a href="#FUNCTION_minimizeBar">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -245,6 +257,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57305">Design
 	<tr>
 <td width="120px" class="property-name-type"><B>categories<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Categories</B><br/>Categories
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>minimize<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Minimize function trigger</B><br/>Minimize function trigger
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -471,6 +492,27 @@ this.addNotification(notificationText,&nbsp;&quot;WARNING&quot;,&nbsp;categoryKe
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_calcTimestamp">String<br/>calcTimestamp</td>
+<td valign="top" width="*" class="function-help">@Visibility(private)<br/>Workaround&nbsp;for&nbsp;strange&nbsp;DesignStudio&nbsp;lifecycle&nbsp;handling&nbsp;when&nbsp;calling&nbsp;functions&nbsp;via&nbsp;scriptting&nbsp;triggers<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;new&nbsp;Date().valueOf();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDefaultImage">String<br/>getDefaultImage</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;For&nbsp;Default&nbsp;Image&nbsp;Property<br/><br/>
 
@@ -590,6 +632,27 @@ return&nbsp;this.showOnNewNotifications;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.splitNotificationsByPriority;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_minimizeBar">void<br/>minimizeBar</td>
+<td valign="top" width="*" class="function-help">Minimize&nbsp;notification&nbsp;bar&nbsp;(for&nbsp;example&nbsp;on&nbsp;timeout&nbsp;event&nbsp;of&nbsp;TIMEOUT&nbsp;component)<br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.minimize&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
