@@ -168,6 +168,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DHeaderColumnFixed<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Fixed Column Index (-1 means Row Dimensions)</B><br/>Fixed Column Index (-1 means Row Dimensions)
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">-1</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DIgnoreResults<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Ignore Results</B><br/>Ignore Results
 
@@ -183,6 +192,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Paginator</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DOnlyHeaderColumns<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Show Only Header Columns</B><br/>Show Only Header Columns
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -321,6 +339,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getHeaderColWidth [<a href="#FUNCTION_getHeaderColWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getHeaderColumnFixed [<a href="#FUNCTION_getHeaderColumnFixed">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
@@ -494,6 +518,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isOnlyHeaderColumns [<a href="#FUNCTION_isOnlyHeaderColumns">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">removeColumnWidthEntry [<a href="#FUNCTION_removeColumnWidthEntry">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -596,6 +626,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setHeaderColumnFixed [<a href="#FUNCTION_setHeaderColumnFixed">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">headerColumnFixed</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setIgnoreResults [<a href="#FUNCTION_setIgnoreResults">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">ignoreResults</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -610,6 +646,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setNavigationModeByString [<a href="#FUNCTION_setNavigationModeByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">navigationMode</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setOnlyHeaderColumns [<a href="#FUNCTION_setOnlyHeaderColumns">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">onlyHeaderColumns</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -1076,6 +1118,27 @@ return&nbsp;this.DFormattingValueCondition;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DHeaderColWidth;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHeaderColumnFixed">int<br/>getHeaderColumnFixed</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Fixed&nbsp;Column&nbsp;Index&nbsp;(-1&nbsp;means&nbsp;Row&nbsp;Dimensions)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DHeaderColumnFixed;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1711,6 +1774,27 @@ return&nbsp;this.DIgnoreResults;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isOnlyHeaderColumns">boolean<br/>isOnlyHeaderColumns</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Show&nbsp;Only&nbsp;Header&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DOnlyHeaderColumns;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeColumnWidthEntry">void<br/>removeColumnWidthEntry</td>
 <td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>UI5TABLE.removeColumnWidthEntry(String&nbsp;key);<br></div></div><br/>
 
@@ -2168,6 +2252,32 @@ this.DHeaderColWidth&nbsp;=&nbsp;headerColWidth;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setHeaderColumnFixed">void<br/>setHeaderColumnFixed</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Fixed&nbsp;Column&nbsp;Index&nbsp;(-1&nbsp;means&nbsp;Row&nbsp;Dimensions)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>headerColumnFixed</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Fixed Column Index (-1 means Row Dimensions)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DHeaderColumnFixed&nbsp;=&nbsp;headerColumnFixed;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setIgnoreResults">void<br/>setIgnoreResults</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Ignore&nbsp;Results&nbsp;Property<br/><br/>
 
@@ -2239,6 +2349,32 @@ this.DNavigationMode&nbsp;=&nbsp;navigationMode;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DNavigationMode&nbsp;=&nbsp;navigationMode;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setOnlyHeaderColumns">void<br/>setOnlyHeaderColumns</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Show&nbsp;Only&nbsp;Header&nbsp;Columns&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>onlyHeaderColumns</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Show Only Header Columns</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DOnlyHeaderColumns&nbsp;=&nbsp;onlyHeaderColumns;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
