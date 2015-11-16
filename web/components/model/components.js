@@ -193,7 +193,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/gauge",
-       title: "Gauge (Speedometer)",
+       title: "Gauge (Speedometer) 2.0",
        info: "Gauge",
        icon: "basics/gauge.png",
        activeIcon: "basics/gauge.png",
@@ -538,7 +538,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/leaderboard",
-       title: "Data Leader Board",
+       title: "Data Leader Board 2.0",
        info: "LeaderBoard",
        icon: "databound/leaderboard.png",
        activeIcon: "databound/leaderboard.png",
@@ -646,7 +646,7 @@ sdkComponentModel["databound"] = [
    },
     {
        id: "databound/topflop",
-       title: "Data Top Flop",
+       title: "Data Top Flop 2.0",
        info: "TopFlop",
        icon: "databound/topflop.png",
        activeIcon: "databound/topflop.png",

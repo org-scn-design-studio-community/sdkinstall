@@ -107,6 +107,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DJsonp<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Do you want to use JSONP</B><br/>Do you want to use JSONP
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DRequestMethod<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Request Method (POST | GET | PUT)</B><br/>Request Method (POST | GET | PUT)
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
@@ -159,6 +168,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DWithCredentials<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Do you need with credentials</B><br/>Do you need with credentials
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
 
 	</TABLE>
 
@@ -201,6 +219,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addPayloadToHttp [<a href="#FUNCTION_addPayloadToHttp">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">data</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">cleanAllElements [<a href="#FUNCTION_cleanAllElements">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -234,6 +258,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <td valign="top" width="240px" class="function-short-name">getExpectedResponseStatus [<a href="#FUNCTION_getExpectedResponseStatus">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getJsonp [<a href="#FUNCTION_getJsonp">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getPayload [<a href="#FUNCTION_getPayload">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -285,6 +321,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getWithCredentials [<a href="#FUNCTION_getWithCredentials">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">removeHeader [<a href="#FUNCTION_removeHeader">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -327,6 +369,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setJsonp [<a href="#FUNCTION_setJsonp">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">jsonp</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setPayload [<a href="#FUNCTION_setPayload">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">payload</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setRawParameters [<a href="#FUNCTION_setRawParameters">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">rawParameters</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -347,6 +401,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setUrl [<a href="#FUNCTION_setUrl">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">url</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setWithCredentials [<a href="#FUNCTION_setWithCredentials">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">withCredentials</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -391,6 +451,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>DPayload<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>HTTP reuqest payload</B><br/>HTTP reuqest payload
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -519,6 +588,32 @@ var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addPayloadToHttp">void<br/>addPayloadToHttp</td>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Adds&nbsp;payload&nbsp;to&nbsp;HTTP&nbsp;requests.&nbsp;Typically&nbsp;used&nbsp;with&nbsp;POST&nbsp;requests&nbsp;as&nbsp;GET<br/>uses&nbsp;the&nbsp;URL&nbsp;query&nbsp;string.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;JSON&nbsp;data&nbsp;to&nbsp;your&nbsp;POST&nbsp;request&nbsp;to&nbsp;be&nbsp;send&nbsp;to&nbsp;the&nbsp;server<br/><div class='html-code'>addPayloadToHttp("{"key":"value"}");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>data</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DPayload&nbsp;=&nbsp;data;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllElements">void<br/>cleanAllElements</td>
 <td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Parameters&nbsp;from&nbsp;the&nbsp;Array.<br/><br/>
 
@@ -638,6 +733,48 @@ return&nbsp;this.DExpectedContentType;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DExpectedResponseStatus;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getJsonp">boolean<br/>getJsonp</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Do&nbsp;you&nbsp;want&nbsp;to&nbsp;use&nbsp;JSONP&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DJsonp;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPayload">String<br/>getPayload</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;HTTP&nbsp;reuqest&nbsp;payload&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DPayload;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -816,6 +953,27 @@ return&nbsp;this.DReturnStatus;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DUrl;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getWithCredentials">boolean<br/>getWithCredentials</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Do&nbsp;you&nbsp;need&nbsp;with&nbsp;credentials&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DWithCredentials;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1005,6 +1163,58 @@ this.DExpectedResponseStatus&nbsp;=&nbsp;expectedResponseStatus;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setJsonp">void<br/>setJsonp</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Do&nbsp;you&nbsp;want&nbsp;to&nbsp;use&nbsp;JSONP&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>jsonp</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Do you want to use JSONP </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DJsonp&nbsp;=&nbsp;jsonp;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPayload">void<br/>setPayload</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;HTTP&nbsp;reuqest&nbsp;payload&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>payload</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> HTTP reuqest payload </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DPayload&nbsp;=&nbsp;payload;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRawParameters">void<br/>setRawParameters</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Raw&nbsp;Parameters&nbsp;as&nbsp;String&nbsp;Content&nbsp;Property<br/><br/>
 
@@ -1109,8 +1319,34 @@ this.DUrl&nbsp;=&nbsp;url;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setWithCredentials">void<br/>setWithCredentials</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Do&nbsp;you&nbsp;need&nbsp;with&nbsp;credentials&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>withCredentials</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"> Do you need with credentials </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DWithCredentials&nbsp;=&nbsp;withCredentials;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_triggerExecution">void<br/>triggerExecution</td>
-<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Trigger&nbsp;Execution&nbsp;of&nbsp;the&nbsp;given&nbsp;URL&nbsp;and&nbsp;parameter&nbsp;list<br/><br/>
+<td valign="top" width="*" class="function-help">Trigger&nbsp;Execution&nbsp;of&nbsp;the&nbsp;given&nbsp;URL&nbsp;and&nbsp;parameter&nbsp;list<br/><br/>
 
 <TABLE width="100%" class="table1">
 
