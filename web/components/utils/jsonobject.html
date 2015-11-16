@@ -99,7 +99,7 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getAsJSON [<a href="#FUNCTION_getAsJSON">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="*" class="function-short-name">(noLinebreaks)</td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
@@ -273,7 +273,12 @@ var&nbsp;js&nbsp;=&nbsp;JSON.parse(jsonValue);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.
 <td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Returns&nbsp;as&nbsp;Json&nbsp;String&nbsp;(indented)<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>noLinebreaks</B></td>
+<td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
 
 </TABLE>
 
@@ -282,7 +287,7 @@ var&nbsp;js&nbsp;=&nbsp;JSON.parse(jsonValue);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.content);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+if(noLinebreaks&nbsp;==&nbsp;undefined)&nbsp;{noLinebreaks&nbsp;=&nbsp;false;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.content);<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(noLinebreaks)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
