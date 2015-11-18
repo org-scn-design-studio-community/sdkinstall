@@ -17,7 +17,7 @@
  * limitations under the License. 
  */
 
-sap.zen.commons.layout.AbsoluteLayout.extend ("org.scn.community.utils.PostResponseParser", {
+sap.ui.commons.layout.AbsoluteLayout.extend ("org.scn.community.utils.PostResponseParser", {
 
 	metadata: {
         properties: {
