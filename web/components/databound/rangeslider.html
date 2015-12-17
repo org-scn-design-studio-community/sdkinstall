@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/databound/rangeslider/examples.json");
 </script>
 
-<title>Data Range Slider - SCN Design Studio Community</title>
+<title>Data Range Slider 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	RangeSlider [ScnCommunityDataBound]
 	</div>
 	<div class="component-title">
-	Data Range Slider
+	Data Range Slider 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -56,7 +56,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 
 </td>
 <td width="60px" class="property-group">DataBinding</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -71,18 +71,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 <tr>
 <td width="120px" class="property-name-type"><B>sorting<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Sorting By Value | Defalut</B><br/>Sorting By Value | Defalut
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">By Value</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Default</td>
-<td class="value-td">X</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Default</td>
@@ -90,23 +79,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>topBottom<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Top X, Bottom X or Both</B><br/>Top X, Bottom X or Both
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">Top X</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Bottom X</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Both</td>
-<td class="value-td">X</td>
-</tr>
+<td width="*" class="property-title-tooltip"><B>Top X, Bottom X Or Both</B><br/>Top X, Bottom X Or Both
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Both</td>
@@ -114,7 +88,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>vertical<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Change to Vertical Orientation</B><br/>Change to Vertical Orientation
+<td width="*" class="property-title-tooltip"><B>Change To Vertical Orientation</B><br/>Change To Vertical Orientation
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -133,20 +107,20 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onDataChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Data Changed</B><br/>Event for On Data Changed
+<td width="*" class="property-title-tooltip"><B>Event For On Data Changed</B><br/>Event For On Data Changed
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>onSelectionChanged<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Selection Changed</B><br/>Event for On Selection Changed
+<td width="*" class="property-title-tooltip"><B>Event For On Selection Changed</B><br/>Event For On Selection Changed
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -160,9 +134,9 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">allowRefresh [<a href="#FUNCTION_allowRefresh">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getMaxNumber [<a href="#FUNCTION_getMaxNumber">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -196,20 +170,74 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">pauseRefresh [<a href="#FUNCTION_pauseRefresh">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getSorting [<a href="#FUNCTION_getSorting">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSortingAsString [<a href="#FUNCTION_getSortingAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTopBottom [<a href="#FUNCTION_getTopBottom">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_MemberSelectionEnumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTopBottomAsString [<a href="#FUNCTION_getTopBottomAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isDoRefresh [<a href="#FUNCTION_isDoRefresh">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isVertical [<a href="#FUNCTION_isVertical">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMaxNumber [<a href="#FUNCTION_setMaxNumber">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">maxNumber</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSelectedKey [<a href="#FUNCTION_setSelectedKey">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="240px" class="function-short-name">setSorting [<a href="#FUNCTION_setSorting">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">sorting</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSelectedKey2 [<a href="#FUNCTION_setSelectedKey2">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key2</td>
+<td valign="top" width="240px" class="function-short-name">setSortingByString [<a href="#FUNCTION_setSortingByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">sorting</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTopBottom [<a href="#FUNCTION_setTopBottom">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">topBottom</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTopBottomByString [<a href="#FUNCTION_setTopBottomByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">topBottom</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setVertical [<a href="#FUNCTION_setVertical">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">vertical</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -225,7 +253,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>doRefresh<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for pause refresh</B><br/>Technical proprty for pause refresh
+<td width="*" class="property-title-tooltip"><B>Technical Proprty For Pause Refresh</B><br/>Technical Proprty For Pause Refresh
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -234,47 +262,47 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>selectedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key</B><br/>Technical proprty for Selected Key
+<td width="*" class="property-title-tooltip"><B>Technical Proprty For Selected Key</B><br/>Technical Proprty For Selected Key
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>selectedKey2<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Key 2</B><br/>Technical proprty for Selected Key 2
+<td width="*" class="property-title-tooltip"><B>Technical Proprty For Selected Key 2</B><br/>Technical Proprty For Selected Key 2
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>selectedKeys<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Keys</B><br/>Technical proprty for Selected Keys
+<td width="*" class="property-title-tooltip"><B>Technical Proprty For Selected Keys</B><br/>Technical Proprty For Selected Keys
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>selectedText<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Text</B><br/>Technical proprty for Selected Text
+<td width="*" class="property-title-tooltip"><B>Technical Proprty For Selected Text</B><br/>Technical Proprty For Selected Text
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>selectedText2<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Technical proprty for Selected Text 2</B><br/>Technical proprty for Selected Text 2
+<td width="*" class="property-title-tooltip"><B>Technical Proprty For Selected Text 2</B><br/>Technical Proprty For Selected Text 2
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -287,8 +315,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_allowRefresh">void<br/>allowRefresh</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMaxNumber">int<br/>getMaxNumber</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Maximum&nbsp;Number&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -300,7 +328,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-59332">Design
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.doRefresh&nbsp;=&nbsp;true;
+return&nbsp;this.maxNumber;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -309,7 +337,7 @@ this.doRefresh&nbsp;=&nbsp;true;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;get&nbsp;first&nbsp;and&nbsp;second&nbsp;selected&nbsp;key&nbsp;in&nbsp;the&nbsp;range<br/><div class='html-code'>var&nbsp;selection1&nbsp;=&nbsp;DATARANGESLIDER_1.getSelectedKey();<br/>var&nbsp;selection2&nbsp;=&nbsp;DATARANGESLIDER_1.getSelectedKey2();<br/>APPLICATION.createInfoMessage("Selected&nbsp;Range:&nbsp;"&nbsp;+&nbsp;selection1&nbsp;+&nbsp;"&nbsp;-&nbsp;"&nbsp;+&nbsp;selection2);<br/>APPLICATION.createInfoMessage("Selected&nbsp;Range&nbsp;Keys:&nbsp;"&nbsp;+&nbsp;DATARANGESLIDER_1.getSelectedKeys());<br/>if(selection1.indexOf("-N/A-")&nbsp;>&nbsp;-1&nbsp;||&nbsp;selection2.indexOf("-N/A-")&nbsp;>&nbsp;-1)&nbsp;{<br/>//&nbsp;do&nbsp;nothing<br/>}&nbsp;else&nbsp;{<br/>DS_1.setFilterExt("0BC_PERS1",&nbsp;""&nbsp;+&nbsp;DATARANGESLIDER_1.getSelectedKey()&nbsp;&nbsp;+&nbsp;"&nbsp;-&nbsp;"&nbsp;+&nbsp;DATARANGESLIDER_1.getSelectedKey2());<br/>}<br/></div></div><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Selected&nbsp;Key&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -330,7 +358,7 @@ return&nbsp;this.selectedKey;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey2">String<br/>getSelectedKey2</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;key&nbsp;2<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Selected&nbsp;Key&nbsp;2&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -351,7 +379,7 @@ return&nbsp;this.selectedKey2;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKeys">String<br/>getSelectedKeys</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;keys&nbsp;as&nbsp;String&nbsp;separated&nbsp;by&nbsp;;<br/>This&nbsp;is&nbsp;compatible&nbsp;with&nbsp;setFilterExt&nbsp;function<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;get&nbsp;all&nbsp;selected&nbsp;keys&nbsp;in&nbsp;the&nbsp;range<br/><div class='html-code'>var&nbsp;selectedKeys&nbsp;=&nbsp;DATARANGESLIDER_2.getSelectedKeys();<br>//&nbsp;remove&nbsp;the&nbsp;NAs,&nbsp;in&nbsp;this&nbsp;scenarios&nbsp;I&nbsp;do&nbsp;not&nbsp;care<br/>selectedKeys&nbsp;=&nbsp;Convert.replaceAll(selectedKeys,&nbsp;"-N/A-1;",&nbsp;"");<br>selectedKeys&nbsp;=&nbsp;Convert.replaceAll(selectedKeys,&nbsp;";-N/A-2",&nbsp;"");<br>APPLICATION.createInfoMessage("Selected&nbsp;Range&nbsp;Keys:&nbsp;"&nbsp;+&nbsp;selectedKeys);<br>DS_1.setFilterExt("0BC_PERS1",&nbsp;selectedKeys);<br></div></div><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Selected&nbsp;Keys&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -372,7 +400,7 @@ return&nbsp;this.selectedKeys;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedText">String<br/>getSelectedText</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;text<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Selected&nbsp;Text&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -393,7 +421,7 @@ return&nbsp;this.selectedText;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedText2">String<br/>getSelectedText2</td>
-<td valign="top" width="*" class="function-help">returns&nbsp;the&nbsp;selected&nbsp;text&nbsp;2<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Selected&nbsp;Text&nbsp;2&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -413,8 +441,8 @@ return&nbsp;this.selectedText2;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_pauseRefresh">void<br/>pauseRefresh</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;pause&nbsp;refresh&nbsp;flag<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSorting">org_scn_community_shared_Enumfield<br/>getSorting</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Sorting&nbsp;By&nbsp;Value&nbsp;|&nbsp;Defalut&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -426,7 +454,7 @@ return&nbsp;this.selectedText2;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.doRefresh&nbsp;=&nbsp;false;
+return&nbsp;this.sorting;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -434,16 +462,11 @@ this.doRefresh&nbsp;=&nbsp;false;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedKey">void<br/>setSelectedKey</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;key<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSortingAsString">String<br/>getSortingAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Sorting&nbsp;By&nbsp;Value&nbsp;|&nbsp;Defalut&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
+
 
 </TABLE>
 
@@ -452,7 +475,7 @@ this.doRefresh&nbsp;=&nbsp;false;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.selectedKey&nbsp;=&nbsp;key;
+return&nbsp;this.sorting;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -460,15 +483,99 @@ this.selectedKey&nbsp;=&nbsp;key;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedKey2">void<br/>setSelectedKey2</td>
-<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;selected&nbsp;key&nbsp;2<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTopBottom">org_scn_community_shared_MemberSelectionEnumfield<br/>getTopBottom</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Top&nbsp;X,&nbsp;Bottom&nbsp;X&nbsp;Or&nbsp;Both&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.topBottom;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTopBottomAsString">String<br/>getTopBottomAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Top&nbsp;X,&nbsp;Bottom&nbsp;X&nbsp;Or&nbsp;Both&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.topBottom;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isDoRefresh">boolean<br/>isDoRefresh</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Technical&nbsp;Proprty&nbsp;For&nbsp;Pause&nbsp;Refresh&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.doRefresh;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isVertical">boolean<br/>isVertical</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Change&nbsp;To&nbsp;Vertical&nbsp;Orientation&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.vertical;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMaxNumber">void<br/>setMaxNumber</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Maximum&nbsp;Number&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key2</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="120px" class="parameter-name"><B>maxNumber</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Maximum Number</td>
 </tr>
 
 </TABLE>
@@ -478,7 +585,137 @@ this.selectedKey&nbsp;=&nbsp;key;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.selectedKey2&nbsp;=&nbsp;key2;
+this.maxNumber&nbsp;=&nbsp;maxNumber;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSorting">void<br/>setSorting</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Sorting&nbsp;By&nbsp;Value&nbsp;|&nbsp;Defalut&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>sorting</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Sorting By Value | Defalut</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.sorting&nbsp;=&nbsp;sorting;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSortingByString">void<br/>setSortingByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Sorting&nbsp;By&nbsp;Value&nbsp;|&nbsp;Defalut&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>sorting</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Sorting By Value | Defalut</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.sorting&nbsp;=&nbsp;sorting;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTopBottom">void<br/>setTopBottom</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Top&nbsp;X,&nbsp;Bottom&nbsp;X&nbsp;Or&nbsp;Both&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>topBottom</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_MemberSelectionEnumfield</B></td>
+<td width="*" class="parameter-help">Top X Bottom X Or Both</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.topBottom&nbsp;=&nbsp;topBottom;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTopBottomByString">void<br/>setTopBottomByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Top&nbsp;X,&nbsp;Bottom&nbsp;X&nbsp;Or&nbsp;Both&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>topBottom</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Top X Bottom X Or Both</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.topBottom&nbsp;=&nbsp;topBottom;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setVertical">void<br/>setVertical</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Change&nbsp;To&nbsp;Vertical&nbsp;Orientation&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>vertical</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Change To Vertical Orientation</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.vertical&nbsp;=&nbsp;vertical;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

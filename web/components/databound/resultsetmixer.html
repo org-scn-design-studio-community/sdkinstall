@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/databound/resultsetmixer/examples.json");
 </script>
 
-<title>Result Set Mixer - SCN Design Studio Community</title>
+<title>Result Set Mixer 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	ResultSetMixer [ScnCommunityDataBound]
 	</div>
 	<div class="component-title">
-	Result Set Mixer
+	Result Set Mixer 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -52,19 +52,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>DCollectMultipleMatches<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Collect Multiple Matches</B><br/>Procedure what should happen when multiple matches are available
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">Collect</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">UseLast</td>
-<td class="value-td">&nbsp;</td>
-</tr>
+<td width="*" class="property-title-tooltip"><B>Collect Multiple Matches</B><br/>Collect Multiple Matches
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Collect</td>
@@ -72,19 +61,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DMasterGeometry<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Geometry of the Master Result Set</B><br/>Geometry of the Master Result Set
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">Structure</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">Rows</td>
-<td class="value-td">X</td>
-</tr>
+<td width="*" class="property-title-tooltip"><B>Geometry Of The Master Result Set</B><br/>Geometry Of The Master Result Set
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Rows</td>
@@ -92,25 +70,25 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DMasterProvisioner<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Master Central Data Provisioner</B><br/>Result Set with Master Data
+<td width="*" class="property-title-tooltip"><B>Master Central Data Provisioner</B><br/>Master Central Data Provisioner
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveColumnCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Column Condition to Read Slave Result Set</B><br/>Under which condition should be the slave result set read (based on contnet of header column key)
+<td width="*" class="property-title-tooltip"><B>Column Condition To Read Slave Result Set</B><br/>Column Condition To Read Slave Result Set
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveColumnIndex<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Column Index for the Selection from Slave Result Set</B><br/>Which column should be selected from the slave result set
+<td width="*" class="property-title-tooltip"><B>Column Index For The Selection From Slave Result Set</B><br/>Column Index For The Selection From Slave Result Set
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -119,29 +97,29 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveContentCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Content Condition to Read Slave Result Set</B><br/>Under which condition should be the slave result set read (based on content or value)
+<td width="*" class="property-title-tooltip"><B>Content Condition To Read Slave Result Set</B><br/>Content Condition To Read Slave Result Set
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveProvisioner<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Slave Central Data Provisioner</B><br/>Result Set with Slave Data for Selection
+<td width="*" class="property-title-tooltip"><B>Slave Central Data Provisioner</B><br/>Slave Central Data Provisioner
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DSlaveRowCondition<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Row Condition to Read Slave Result Set</B><br/>Under which condition should be the slave result set read (based on contnet of header row key)
+<td width="*" class="property-title-tooltip"><B>Row Condition To Read Slave Result Set</B><br/>Row Condition To Read Slave Result Set
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -167,19 +145,37 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getCollectMultipleMatches [<a href="#FUNCTION_getCollectMultipleMatches">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">choice</td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCollectMultipleMatchesAsString [<a href="#FUNCTION_getCollectMultipleMatchesAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getMasterGeometry [<a href="#FUNCTION_getMasterGeometry">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">choice</td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getMasterGeometryAsString [<a href="#FUNCTION_getMasterGeometryAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getMasterProvisioner [<a href="#FUNCTION_getMasterProvisioner">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getReloadTrigger [<a href="#FUNCTION_getReloadTrigger">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">float</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -213,13 +209,13 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">reload [<a href="#FUNCTION_reload">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="240px" class="function-short-name">setCollectMultipleMatches [<a href="#FUNCTION_setCollectMultipleMatches">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">collectMultipleMatches</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setCollectMultipleMatches [<a href="#FUNCTION_setCollectMultipleMatches">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">setCollectMultipleMatchesByString [<a href="#FUNCTION_setCollectMultipleMatchesByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">collectMultipleMatches</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -231,8 +227,20 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMasterGeometryByString [<a href="#FUNCTION_setMasterGeometryByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">masterGeometry</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMasterProvisioner [<a href="#FUNCTION_setMasterProvisioner">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">masterProvisioner</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setReloadTrigger [<a href="#FUNCTION_setReloadTrigger">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">reloadTrigger</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -278,7 +286,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>DReloadTrigger<br/>[float]</B></td>
-<td width="*" class="property-title-tooltip"><B>Internal Property to Trigger the reload</B><br/>Internal Property to Trigger the reload
+<td width="*" class="property-title-tooltip"><B>Internal Property To Trigger The Reload</B><br/>Internal Property To Trigger The Reload
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -295,8 +303,8 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62579">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCollectMultipleMatches">choice<br/>getCollectMultipleMatches</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCollectMultipleMatches">org_scn_community_shared_Enumfield<br/>getCollectMultipleMatches</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -316,8 +324,50 @@ return&nbsp;this.DCollectMultipleMatches;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMasterGeometry">choice<br/>getMasterGeometry</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Geometry&nbsp;of&nbsp;the&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCollectMultipleMatchesAsString">String<br/>getCollectMultipleMatchesAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DCollectMultipleMatches;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMasterGeometry">org_scn_community_shared_Enumfield<br/>getMasterGeometry</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Geometry&nbsp;Of&nbsp;The&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DMasterGeometry;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getMasterGeometryAsString">String<br/>getMasterGeometryAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Geometry&nbsp;Of&nbsp;The&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -358,8 +408,29 @@ return&nbsp;this.DMasterProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getReloadTrigger">float<br/>getReloadTrigger</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Internal&nbsp;Property&nbsp;To&nbsp;Trigger&nbsp;The&nbsp;Reload&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DReloadTrigger;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveColumnCondition">String<br/>getSlaveColumnCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Condition&nbsp;To&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -380,7 +451,7 @@ return&nbsp;this.DSlaveColumnCondition;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveColumnIndex">int<br/>getSlaveColumnIndex</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Index&nbsp;for&nbsp;the&nbsp;Selection&nbsp;from&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;Index&nbsp;For&nbsp;The&nbsp;Selection&nbsp;From&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -401,7 +472,7 @@ return&nbsp;this.DSlaveColumnIndex;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveContentCondition">String<br/>getSlaveContentCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Content&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Content&nbsp;Condition&nbsp;To&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -443,7 +514,7 @@ return&nbsp;this.DSlaveProvisioner;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSlaveRowCondition">String<br/>getSlaveRowCondition</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Row&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Row&nbsp;Condition&nbsp;To&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -463,11 +534,16 @@ return&nbsp;this.DSlaveRowCondition;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_reload">void<br/>reload</td>
-<td valign="top" width="*" class="function-help">Reloads&nbsp;the&nbsp;Component&nbsp;(with&nbsp;re-rendering)<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCollectMultipleMatches">void<br/>setCollectMultipleMatches</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
-
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>collectMultipleMatches</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Collect Multiple Matches</td>
+</tr>
 
 </TABLE>
 
@@ -476,7 +552,7 @@ return&nbsp;this.DSlaveRowCondition;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.DReloadTrigger&nbsp;=&nbsp;this.DReloadTrigger&nbsp;+&nbsp;0.0001;
+this.DCollectMultipleMatches&nbsp;=&nbsp;collectMultipleMatches;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -484,15 +560,15 @@ this.DReloadTrigger&nbsp;=&nbsp;this.DReloadTrigger&nbsp;+&nbsp;0.0001;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCollectMultipleMatches">void<br/>setCollectMultipleMatches</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCollectMultipleMatchesByString">void<br/>setCollectMultipleMatchesByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Collect&nbsp;Multiple&nbsp;Matches&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>collectMultipleMatches</B></td>
-<td width="120px" class="parameter-type"><B>choice</B></td>
-<td width="*" class="parameter-help"> Procedure what should happen when multiple matches are available </td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Collect Multiple Matches</td>
 </tr>
 
 </TABLE>
@@ -511,14 +587,40 @@ this.DCollectMultipleMatches&nbsp;=&nbsp;collectMultipleMatches;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMasterGeometry">void<br/>setMasterGeometry</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Geometry&nbsp;of&nbsp;the&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Geometry&nbsp;Of&nbsp;The&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>masterGeometry</B></td>
-<td width="120px" class="parameter-type"><B>choice</B></td>
-<td width="*" class="parameter-help"> Geometry of the Master Result Set </td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Geometry Of The Master Result Set</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DMasterGeometry&nbsp;=&nbsp;masterGeometry;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMasterGeometryByString">void<br/>setMasterGeometryByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Geometry&nbsp;Of&nbsp;The&nbsp;Master&nbsp;Result&nbsp;Set&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>masterGeometry</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Geometry Of The Master Result Set</td>
 </tr>
 
 </TABLE>
@@ -544,7 +646,7 @@ this.DMasterGeometry&nbsp;=&nbsp;masterGeometry;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>masterProvisioner</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Result Set with Master Data </td>
+<td width="*" class="parameter-help">Master Central Data Provisioner</td>
 </tr>
 
 </TABLE>
@@ -562,15 +664,41 @@ this.DMasterProvisioner&nbsp;=&nbsp;masterProvisioner;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setReloadTrigger">void<br/>setReloadTrigger</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Internal&nbsp;Property&nbsp;To&nbsp;Trigger&nbsp;The&nbsp;Reload&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>reloadTrigger</B></td>
+<td width="120px" class="parameter-type"><B>float</B></td>
+<td width="*" class="parameter-help">Internal Property To Trigger The Reload</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DReloadTrigger&nbsp;=&nbsp;reloadTrigger;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveColumnCondition">void<br/>setSlaveColumnCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Condition&nbsp;To&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveColumnCondition</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on contnet of header column key) </td>
+<td width="*" class="parameter-help">Column Condition To Read Slave Result Set</td>
 </tr>
 
 </TABLE>
@@ -589,14 +717,14 @@ this.DSlaveColumnCondition&nbsp;=&nbsp;slaveColumnCondition;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveColumnIndex">void<br/>setSlaveColumnIndex</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Index&nbsp;for&nbsp;the&nbsp;Selection&nbsp;from&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;Index&nbsp;For&nbsp;The&nbsp;Selection&nbsp;From&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveColumnIndex</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Which column should be selected from the slave result set </td>
+<td width="*" class="parameter-help">Column Index For The Selection From Slave Result Set</td>
 </tr>
 
 </TABLE>
@@ -615,14 +743,14 @@ this.DSlaveColumnIndex&nbsp;=&nbsp;slaveColumnIndex;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveContentCondition">void<br/>setSlaveContentCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Content&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Content&nbsp;Condition&nbsp;To&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveContentCondition</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on content or value) </td>
+<td width="*" class="parameter-help">Content Condition To Read Slave Result Set</td>
 </tr>
 
 </TABLE>
@@ -648,7 +776,7 @@ this.DSlaveContentCondition&nbsp;=&nbsp;slaveContentCondition;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveProvisioner</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Result Set with Slave Data for Selection </td>
+<td width="*" class="parameter-help">Slave Central Data Provisioner</td>
 </tr>
 
 </TABLE>
@@ -667,14 +795,14 @@ this.DSlaveProvisioner&nbsp;=&nbsp;slaveProvisioner;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSlaveRowCondition">void<br/>setSlaveRowCondition</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Row&nbsp;Condition&nbsp;to&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Row&nbsp;Condition&nbsp;To&nbsp;Read&nbsp;Slave&nbsp;Result&nbsp;Set&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>slaveRowCondition</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Under which condition should be the slave result set read (based on contnet of header row key) </td>
+<td width="*" class="parameter-help">Row Condition To Read Slave Result Set</td>
 </tr>
 
 </TABLE>

@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/databound/table/examples.json");
 </script>
 
-<title>Data Table - SCN Design Studio Community</title>
+<title>Data Table 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	Table [ScnCommunityDataBound]
 	</div>
 	<div class="component-title">
-	Data Table
+	Data Table 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -50,7 +50,7 @@
 
 </td>
 <td width="60px" class="property-group">DataBinding</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@
 
 </td>
 <td width="60px" class="property-group">DataBinding</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@
 
 </td>
 <td width="60px" class="property-group">DataBinding</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -92,20 +92,38 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColumn1Selection [<a href="#FUNCTION_setColumn1Selection">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">selection</td>
+<td valign="top" width="240px" class="function-short-name">getColumn1 [<a href="#FUNCTION_getColumn1">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">ResultCellList</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getColumn2 [<a href="#FUNCTION_getColumn2">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">ResultCellList</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getColumn3 [<a href="#FUNCTION_getColumn3">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">ResultCellList</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setColumn1 [<a href="#FUNCTION_setColumn1">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">column1</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColumn2Selection [<a href="#FUNCTION_setColumn2Selection">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">selection</td>
+<td valign="top" width="240px" class="function-short-name">setColumn2 [<a href="#FUNCTION_setColumn2">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">column2</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setColumn3Selection [<a href="#FUNCTION_setColumn3Selection">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">selection</td>
+<td valign="top" width="240px" class="function-short-name">setColumn3 [<a href="#FUNCTION_setColumn3">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">column3</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -119,7 +137,16 @@
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>data<br/>[ResultCellList]</B></td>
+<td width="*" class="property-title-tooltip"><B>Column 1</B><br/>Column 1
+
+</td>
+<td width="60px" class="property-group">DataBinding</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -129,16 +156,11 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumn1Selection">void<br/>setColumn1Selection</td>
-<td valign="top" width="*" class="function-help">/Sets&nbsp;the&nbsp;data&nbsp;displayed&nbsp;in&nbsp;the&nbsp;first&nbsp;column.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColumn1">ResultCellList<br/>getColumn1</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;1&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>selection</B></td>
-<td width="120px" class="parameter-type"><B>ResultCellListSelection</B></td>
-<td width="*" class="parameter-help"> A selection specifying a single column (or row) of keyfigures from a data source </td>
-</tr>
+
 
 </TABLE>
 
@@ -147,7 +169,7 @@
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.column1&nbsp;=&nbsp;this.stringifySelection(selection);
+return&nbsp;this.column1;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -155,16 +177,11 @@ this.column1&nbsp;=&nbsp;this.stringifySelection(selection);
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumn2Selection">void<br/>setColumn2Selection</td>
-<td valign="top" width="*" class="function-help">/Sets&nbsp;the&nbsp;data&nbsp;displayed&nbsp;in&nbsp;the&nbsp;second&nbsp;column.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColumn2">ResultCellList<br/>getColumn2</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;2&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>selection</B></td>
-<td width="120px" class="parameter-type"><B>ResultCellListSelection</B></td>
-<td width="*" class="parameter-help"> A selection specifying a single column (or row) of keyfigures from a data source </td>
-</tr>
+
 
 </TABLE>
 
@@ -173,7 +190,7 @@ this.column1&nbsp;=&nbsp;this.stringifySelection(selection);
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.column2&nbsp;=&nbsp;this.stringifySelection(selection);
+return&nbsp;this.column2;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -181,15 +198,36 @@ this.column2&nbsp;=&nbsp;this.stringifySelection(selection);
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumn3Selection">void<br/>setColumn3Selection</td>
-<td valign="top" width="*" class="function-help">/Sets&nbsp;the&nbsp;data&nbsp;displayed&nbsp;in&nbsp;the&nbsp;third&nbsp;column.<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getColumn3">ResultCellList<br/>getColumn3</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Column&nbsp;3&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.column3;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumn1">void<br/>setColumn1</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;1&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>selection</B></td>
-<td width="120px" class="parameter-type"><B>ResultCellListSelection</B></td>
-<td width="*" class="parameter-help"> A selection specifying a single column (or row) of keyfigures from a data source </td>
+<td width="120px" class="parameter-name"><B>column1</B></td>
+<td width="120px" class="parameter-type"><B>ResultCellList</B></td>
+<td width="*" class="parameter-help">Column 1</td>
 </tr>
 
 </TABLE>
@@ -199,7 +237,59 @@ this.column2&nbsp;=&nbsp;this.stringifySelection(selection);
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.column3&nbsp;=&nbsp;this.stringifySelection(selection);
+this.column1&nbsp;=&nbsp;column1;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumn2">void<br/>setColumn2</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;2&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>column2</B></td>
+<td width="120px" class="parameter-type"><B>ResultCellList</B></td>
+<td width="*" class="parameter-help">Column 2</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.column2&nbsp;=&nbsp;column2;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setColumn3">void<br/>setColumn3</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Column&nbsp;3&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>column3</B></td>
+<td width="120px" class="parameter-type"><B>ResultCellList</B></td>
+<td width="*" class="parameter-help">Column 3</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.column3&nbsp;=&nbsp;column3;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

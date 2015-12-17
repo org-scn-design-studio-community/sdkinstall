@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/utils/postresponseparser/examples.json");
 </script>
 
-<title>Post Response Parser - SCN Design Studio Community</title>
+<title>Post Response Parser 2.0 - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	PostResponseParser [ScnCommunityUtils]
 	</div>
 	<div class="component-title">
-	Post Response Parser
+	Post Response Parser 2.0
 	</div>
 
 <div id="componentnav"></div>
@@ -56,7 +56,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -70,28 +70,17 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DCrossDomain<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Is this Request Cross-Domain</B><br/>Is this Request Cross-Domain
+<td width="*" class="property-title-tooltip"><B>Is This Request Cross-Domain</B><br/>Is This Request Cross-Domain
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DExpectedContentType<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Expected Content Type</B><br/>Expected Content Type
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">text</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">json</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">text</td>
@@ -99,7 +88,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DExpectedResponseStatus<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Response Status for Good Response</B><br/>Response Status for Good Response
+<td width="*" class="property-title-tooltip"><B>Response Status For Good Response</B><br/>Response Status For Good Response
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -108,32 +97,17 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DJsonp<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Do you want to use JSONP</B><br/>Do you want to use JSONP
+<td width="*" class="property-title-tooltip"><B>Do You Want To Use JSONP</B><br/>Do You Want To Use JSONP
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DRequestMethod<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Request Method (POST | GET | PUT)</B><br/>Request Method (POST | GET | PUT)
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">POST</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">GET</td>
-<td class="value-td">&nbsp;</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">PUT</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">POST</td>
@@ -142,18 +116,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <tr>
 <td width="120px" class="property-name-type"><B>DRequestType<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Request Type (JQuery | HTTP)</B><br/>Request Type (JQuery | HTTP)
-<table style="width: 100%; border-top: 1px solid #000;" class="table1">
-<tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
-<tr class="list-tr">
-<td class="value-td">JQuery</td>
-<td class="value-td">X</td>
-</tr>
-<tr class="list-tr">
-<td class="value-td">HTTPRequest</td>
-<td class="value-td">&nbsp;</td>
-</tr>
 
-</table>
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">JQuery</td>
@@ -161,7 +124,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DUrl<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Url To Send the Request</B><br/>Url To Send the Request
+<td width="*" class="property-title-tooltip"><B>Url To Send The Request</B><br/>Url To Send The Request
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -170,11 +133,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DWithCredentials<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Do you need with credentials</B><br/>Do you need with credentials
+<td width="*" class="property-title-tooltip"><B>Do You Need With Credentials</B><br/>Do You Need With Credentials
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">false</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -189,11 +152,11 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onResponse<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>Event for On Response</B><br/>Event for On Response
+<td width="*" class="property-title-tooltip"><B>Event For On Response</B><br/>Event For On Response
 
 </td>
 <td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -207,31 +170,19 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addHeader [<a href="#FUNCTION_addHeader">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key, value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addParameter [<a href="#FUNCTION_addParameter">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key, value</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addPayloadToHttp [<a href="#FUNCTION_addPayloadToHttp">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">data</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">cleanAllElements [<a href="#FUNCTION_cleanAllElements">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getBasicAuthorisation [<a href="#FUNCTION_getBasicAuthorisation">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getBasicAuthorisation [<a href="#FUNCTION_getBasicAuthorisation">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getCleanAll [<a href="#FUNCTION_getCleanAll">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -243,15 +194,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getCrossDomain [<a href="#FUNCTION_getCrossDomain">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getExpectedContentType [<a href="#FUNCTION_getExpectedContentType">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getExpectedContentType [<a href="#FUNCTION_getExpectedContentType">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getExpectedContentTypeAsString [<a href="#FUNCTION_getExpectedContentTypeAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">choice</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -261,9 +212,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getJsonp [<a href="#FUNCTION_getJsonp">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getHeaders [<a href="#FUNCTION_getHeaders">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">boolean</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getParameters [<a href="#FUNCTION_getParameters">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -281,25 +238,37 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getRequestMethod [<a href="#FUNCTION_getRequestMethod">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">choice</td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRequestMethodAsString [<a href="#FUNCTION_getRequestMethodAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getRequestType [<a href="#FUNCTION_getRequestType">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">choice</td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getReturnHeadersAsNameValueArray [<a href="#FUNCTION_getReturnHeadersAsNameValueArray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
-<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.NameValueArray</td>
+<td valign="top" width="240px" class="function-short-name">getRequestTypeAsString [<a href="#FUNCTION_getRequestTypeAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getReturnParametersAsNameValueArray [<a href="#FUNCTION_getReturnParametersAsNameValueArray">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">(maxMembers)</td>
-<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.NameValueArray</td>
+<td valign="top" width="240px" class="function-short-name">getReturnHeaders [<a href="#FUNCTION_getReturnHeaders">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getReturnParameters [<a href="#FUNCTION_getReturnParameters">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -315,27 +284,33 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTrigger [<a href="#FUNCTION_getTrigger">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getUrl [<a href="#FUNCTION_getUrl">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getWithCredentials [<a href="#FUNCTION_getWithCredentials">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">isCrossDomain [<a href="#FUNCTION_isCrossDomain">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeHeader [<a href="#FUNCTION_removeHeader">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">isJsonp [<a href="#FUNCTION_isJsonp">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">removeParameter [<a href="#FUNCTION_removeParameter">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
+<td valign="top" width="240px" class="function-short-name">isWithCredentials [<a href="#FUNCTION_isWithCredentials">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -363,6 +338,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setExpectedContentTypeByString [<a href="#FUNCTION_setExpectedContentTypeByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">expectedContentType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setExpectedResponseStatus [<a href="#FUNCTION_setExpectedResponseStatus">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">expectedResponseStatus</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -375,25 +356,25 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setPayload [<a href="#FUNCTION_setPayload">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">payload</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setRawParameters [<a href="#FUNCTION_setRawParameters">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">rawParameters</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setRequestMethod [<a href="#FUNCTION_setRequestMethod">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">requestMethod</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRequestMethodByString [<a href="#FUNCTION_setRequestMethodByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">requestMethod</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setRequestType [<a href="#FUNCTION_setRequestType">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">requestType</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRequestTypeByString [<a href="#FUNCTION_setRequestTypeByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">requestType</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -432,21 +413,21 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DHeaders<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>List of Headers (Name / Value)</B><br/>List of Headers (Name / Value)
+<td width="*" class="property-title-tooltip"><B>List Of Headers (Name / Value)</B><br/>List Of Headers (Name / Value)
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DParameters<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>List of Parameters (Name / Value)</B><br/>List of Parameters (Name / Value)
+<td width="*" class="property-title-tooltip"><B>List Of Parameters (Name / Value)</B><br/>List Of Parameters (Name / Value)
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -455,20 +436,20 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DPayload<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>HTTP reuqest payload</B><br/>HTTP reuqest payload
+<td width="*" class="property-title-tooltip"><B>HTTP Reuqest Payload</B><br/>HTTP Reuqest Payload
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DRawParameters<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Raw Parameters as String Content</B><br/>Raw Parameters as String Content
+<td width="*" class="property-title-tooltip"><B>Raw Parameters As String Content</B><br/>Raw Parameters As String Content
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -477,7 +458,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -486,16 +467,16 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DReturnResponse<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Return Response as String</B><br/>Return Response as String
+<td width="*" class="property-title-tooltip"><B>Return Response As String</B><br/>Return Response As String
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -504,16 +485,16 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default">200</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>DTrigger<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Just as Simple Triger</B><br/>Just as Simple Triger
+<td width="*" class="property-title-tooltip"><B>Just As Simple Triger</B><br/>Just As Simple Triger
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">&nbsp;</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -526,68 +507,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addHeader">void<br/>addHeader</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;value&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>POSTRESPONSEPARSER.addHeader(key&nbsp;[String],&nbsp;value&nbsp;[String]);<br>POSTRESPONSEPARSER.addHeader(key&nbsp;[String],&nbsp;value&nbsp;[String]);<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Header Name</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Header Value</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value:value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.DHeaders&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DHeaders&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DHeaders&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DHeaders&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DHeaders);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DHeaders&nbsp;=&nbsp;JSON.stringify(elementsJson);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addParameter">void<br/>addParameter</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;value&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>POSTRESPONSEPARSER.addParameter(key&nbsp;[String],&nbsp;value&nbsp;[String]);<br>POSTRESPONSEPARSER.addParameter(key&nbsp;[String],&nbsp;value&nbsp;[String]);<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Parameter Name</td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>value</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help">Parameter Value</td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value:value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.DParameters&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DParameters&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DParameters&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DParameters&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DParameters);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DParameters&nbsp;=&nbsp;JSON.stringify(elementsJson);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addPayloadToHttp">void<br/>addPayloadToHttp</td>
 <td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Adds&nbsp;payload&nbsp;to&nbsp;HTTP&nbsp;requests.&nbsp;Typically&nbsp;used&nbsp;with&nbsp;POST&nbsp;requests&nbsp;as&nbsp;GET<br/>uses&nbsp;the&nbsp;URL&nbsp;query&nbsp;string.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;JSON&nbsp;data&nbsp;to&nbsp;your&nbsp;POST&nbsp;request&nbsp;to&nbsp;be&nbsp;send&nbsp;to&nbsp;the&nbsp;server<br/><div class='html-code'>addPayloadToHttp("{"key":"value"}");<br></div></div><br/>
 
@@ -607,27 +526,6 @@ var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DPayload&nbsp;=&nbsp;data;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_cleanAllElements">void<br/>cleanAllElements</td>
-<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Parameters&nbsp;from&nbsp;the&nbsp;Array.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DCleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DParameters&nbsp;=&nbsp;JSON.stringify(elementsArray);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -656,6 +554,27 @@ return&nbsp;this.DBasicAuthorisation;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCleanAll">String<br/>getCleanAll</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Clean&nbsp;All&nbsp;Parameters&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DCleanAll;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getContentType">String<br/>getContentType</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
 
@@ -677,8 +596,8 @@ return&nbsp;this.DContentType;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCrossDomain">boolean<br/>getCrossDomain</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Is&nbsp;this&nbsp;Request&nbsp;Cross-Domain&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getExpectedContentType">org_scn_community_shared_Enumfield<br/>getExpectedContentType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -690,7 +609,7 @@ return&nbsp;this.DContentType;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DCrossDomain;
+return&nbsp;this.DExpectedContentType;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -698,8 +617,8 @@ return&nbsp;this.DCrossDomain;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getExpectedContentType">choice<br/>getExpectedContentType</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getExpectedContentTypeAsString">String<br/>getExpectedContentTypeAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -720,7 +639,7 @@ return&nbsp;this.DExpectedContentType;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getExpectedResponseStatus">int<br/>getExpectedResponseStatus</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Response&nbsp;Status&nbsp;for&nbsp;Good&nbsp;Response&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Response&nbsp;Status&nbsp;For&nbsp;Good&nbsp;Response&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -740,8 +659,8 @@ return&nbsp;this.DExpectedResponseStatus;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getJsonp">boolean<br/>getJsonp</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Do&nbsp;you&nbsp;want&nbsp;to&nbsp;use&nbsp;JSONP&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHeaders">String<br/>getHeaders</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;List&nbsp;Of&nbsp;Headers&nbsp;(Name&nbsp;/&nbsp;Value)&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -753,7 +672,28 @@ return&nbsp;this.DExpectedResponseStatus;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.DJsonp;
+return&nbsp;this.DHeaders;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getParameters">String<br/>getParameters</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;List&nbsp;Of&nbsp;Parameters&nbsp;(Name&nbsp;/&nbsp;Value)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DParameters;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -762,7 +702,7 @@ return&nbsp;this.DJsonp;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getPayload">String<br/>getPayload</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;HTTP&nbsp;reuqest&nbsp;payload&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;HTTP&nbsp;Reuqest&nbsp;Payload&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -783,7 +723,7 @@ return&nbsp;this.DPayload;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRawParameters">String<br/>getRawParameters</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Raw&nbsp;Parameters&nbsp;as&nbsp;String&nbsp;Content&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Raw&nbsp;Parameters&nbsp;As&nbsp;String&nbsp;Content&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -803,8 +743,8 @@ return&nbsp;this.DRawParameters;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRequestMethod">choice<br/>getRequestMethod</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRequestMethod">org_scn_community_shared_Enumfield<br/>getRequestMethod</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -824,8 +764,29 @@ return&nbsp;this.DRequestMethod;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRequestType">choice<br/>getRequestType</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRequestMethodAsString">String<br/>getRequestMethodAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DRequestMethod;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRequestType">org_scn_community_shared_Enumfield<br/>getRequestType</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -845,16 +806,11 @@ return&nbsp;this.DRequestType;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getReturnHeadersAsNameValueArray">org.scn.community.shared.NameValueArray<br/>getReturnHeadersAsNameValueArray</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;content&nbsp;of&nbsp;property&nbsp;Return&nbsp;Headers&nbsp;as&nbsp;loopable&nbsp;name/value&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;values:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;POSTRESPONSEPARSER.getReturnHeadersAsNameValueArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;entries<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(element.name,&nbsp;element.value);<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;k1;&nbsp;value:&nbsp;v1</li><li>key:&nbsp;k2;&nbsp;value:&nbsp;v2</li><li>key:&nbsp;k3;&nbsp;value:&nbsp;v3</li></ul></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRequestTypeAsString">String<br/>getRequestTypeAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>maxMembers</B></td>
-<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
-<td width="*" class="parameter-help">max members</td>
-</tr>
+
 
 </TABLE>
 
@@ -863,7 +819,7 @@ return&nbsp;this.DRequestType;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;s&nbsp;=&nbsp;this.DReturnHeaders;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s!=&quot;&quot;)&nbsp;a&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;tempA&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0&nbsp;||&nbsp;maxMembers&nbsp;&gt;&nbsp;a.length)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;a.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;a[i].name,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;:&nbsp;a[i].value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempA.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;tempA;
+return&nbsp;this.DRequestType;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -871,16 +827,11 @@ var&nbsp;s&nbsp;=&nbsp;this.DReturnHeaders;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getReturnParametersAsNameValueArray">org.scn.community.shared.NameValueArray<br/>getReturnParametersAsNameValueArray</td>
-<td valign="top" width="*" class="function-help">Returns&nbsp;the&nbsp;content&nbsp;of&nbsp;property&nbsp;Return&nbsp;Parameters&nbsp;as&nbsp;loopable&nbsp;name/value&nbsp;array.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;loop&nbsp;at&nbsp;values:<br/><div class='html-code'>var&nbsp;content&nbsp;=&nbsp;POSTRESPONSEPARSER.getReturnParametersAsNameValueArray();<br>//&nbsp;a&nbsp;loop&nbsp;for&nbsp;all&nbsp;entries<br>content.forEach(function(element,&nbsp;index)&nbsp;{<br>LISTBOX_1.addItem(element.name,&nbsp;element.value);<br>});<br/></div>This&nbsp;LISTBOX_1&nbsp;has&nbsp;now&nbsp;following&nbsp;values&nbsp;entries:<br><ul><li>key:&nbsp;k1;&nbsp;value:&nbsp;v1</li><li>key:&nbsp;k2;&nbsp;value:&nbsp;v2</li><li>key:&nbsp;k3;&nbsp;value:&nbsp;v3</li></ul></div><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getReturnHeaders">String<br/>getReturnHeaders</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Return&nbsp;Headers&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>maxMembers</B></td>
-<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
-<td width="*" class="parameter-help">max members</td>
-</tr>
+
 
 </TABLE>
 
@@ -889,7 +840,28 @@ var&nbsp;s&nbsp;=&nbsp;this.DReturnHeaders;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&n
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;s&nbsp;=&nbsp;this.DReturnParameters;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;[];&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(s!=&quot;&quot;)&nbsp;a&nbsp;=&nbsp;JSON.parse(s);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;tempA&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(maxMembers&nbsp;==&nbsp;undefined&nbsp;||&nbsp;maxMembers&nbsp;&lt;=&nbsp;0&nbsp;||&nbsp;maxMembers&nbsp;&gt;&nbsp;a.length)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxMembers&nbsp;=&nbsp;a.length;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;maxMembers;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;name&quot;:&nbsp;a[i].name,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value&quot;:&nbsp;a[i].value<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempA.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;tempA;
+return&nbsp;this.DReturnHeaders;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getReturnParameters">String<br/>getReturnParameters</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Return&nbsp;Parameters&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DReturnParameters;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -898,7 +870,7 @@ var&nbsp;s&nbsp;=&nbsp;this.DReturnParameters;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getReturnResponse">String<br/>getReturnResponse</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Return&nbsp;Response&nbsp;as&nbsp;String&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Return&nbsp;Response&nbsp;As&nbsp;String&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -939,8 +911,29 @@ return&nbsp;this.DReturnStatus;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTrigger">String<br/>getTrigger</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Just&nbsp;As&nbsp;Simple&nbsp;Triger&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DTrigger;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getUrl">String<br/>getUrl</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;To&nbsp;Send&nbsp;the&nbsp;Request&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Url&nbsp;To&nbsp;Send&nbsp;The&nbsp;Request&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -960,8 +953,50 @@ return&nbsp;this.DUrl;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getWithCredentials">boolean<br/>getWithCredentials</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Do&nbsp;you&nbsp;need&nbsp;with&nbsp;credentials&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isCrossDomain">boolean<br/>isCrossDomain</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Is&nbsp;This&nbsp;Request&nbsp;Cross-Domain&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DCrossDomain;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isJsonp">boolean<br/>isJsonp</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Do&nbsp;You&nbsp;Want&nbsp;To&nbsp;Use&nbsp;JSONP&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DJsonp;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isWithCredentials">boolean<br/>isWithCredentials</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Do&nbsp;You&nbsp;Need&nbsp;With&nbsp;Credentials&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -981,58 +1016,6 @@ return&nbsp;this.DWithCredentials;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeHeader">void<br/>removeHeader</td>
-<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>POSTRESPONSEPARSER.removeHeader(String&nbsp;key);<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if&nbsp;(this.DHeaders&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DHeaders&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DHeaders&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DHeaders&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DHeaders);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;remove&nbsp;all&nbsp;items&nbsp;with&nbsp;this&nbsp;parent<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;elementsJson.length&nbsp;-&nbsp;1;&nbsp;i&nbsp;&gt;=&nbsp;0;&nbsp;i--){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].parentKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DHeaders&nbsp;=&nbsp;JSON.stringify(elementsJson);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeParameter">void<br/>removeParameter</td>
-<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;key.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;remove&nbsp;root&nbsp;element<br/><div class='html-code'>POSTRESPONSEPARSER.removeParameter(String&nbsp;key);<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>key</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-if&nbsp;(this.DParameters&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DParameters&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DParameters&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.DParameters&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DParameters);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;remove&nbsp;all&nbsp;items&nbsp;with&nbsp;this&nbsp;parent<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;elementsJson.length&nbsp;-&nbsp;1;&nbsp;i&nbsp;&gt;=&nbsp;0;&nbsp;i--){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].parentKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DParameters&nbsp;=&nbsp;JSON.stringify(elementsJson);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setBasicAuthorisation">void<br/>setBasicAuthorisation</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Basic&nbsp;Authorization&nbsp;Content&nbsp;[Basic:&nbsp;GUID]&nbsp;Property<br/><br/>
 
@@ -1041,7 +1024,7 @@ if&nbsp;(this.DParameters&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DParameters&
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>basicAuthorisation</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Basic Authorization Content [Basic: GUID] </td>
+<td width="*" class="parameter-help">Basic Authorization Content [Basic: GUID]</td>
 </tr>
 
 </TABLE>
@@ -1067,7 +1050,7 @@ this.DBasicAuthorisation&nbsp;=&nbsp;basicAuthorisation;
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>contentType</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Content Type </td>
+<td width="*" class="parameter-help">Content Type</td>
 </tr>
 
 </TABLE>
@@ -1086,14 +1069,14 @@ this.DContentType&nbsp;=&nbsp;contentType;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCrossDomain">void<br/>setCrossDomain</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Is&nbsp;this&nbsp;Request&nbsp;Cross-Domain&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Is&nbsp;This&nbsp;Request&nbsp;Cross-Domain&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>crossDomain</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Is this Request Cross-Domain </td>
+<td width="*" class="parameter-help">Is This Request Cross-Domain</td>
 </tr>
 
 </TABLE>
@@ -1112,14 +1095,40 @@ this.DCrossDomain&nbsp;=&nbsp;crossDomain;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setExpectedContentType">void<br/>setExpectedContentType</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>expectedContentType</B></td>
-<td width="120px" class="parameter-type"><B>choice</B></td>
-<td width="*" class="parameter-help"> Expected Content Type </td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Expected Content Type</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DExpectedContentType&nbsp;=&nbsp;expectedContentType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setExpectedContentTypeByString">void<br/>setExpectedContentTypeByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Expected&nbsp;Content&nbsp;Type&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>expectedContentType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Expected Content Type</td>
 </tr>
 
 </TABLE>
@@ -1138,14 +1147,14 @@ this.DExpectedContentType&nbsp;=&nbsp;expectedContentType;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setExpectedResponseStatus">void<br/>setExpectedResponseStatus</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Response&nbsp;Status&nbsp;for&nbsp;Good&nbsp;Response&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Response&nbsp;Status&nbsp;For&nbsp;Good&nbsp;Response&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>expectedResponseStatus</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"> Response Status for Good Response </td>
+<td width="*" class="parameter-help">Response Status For Good Response</td>
 </tr>
 
 </TABLE>
@@ -1164,14 +1173,14 @@ this.DExpectedResponseStatus&nbsp;=&nbsp;expectedResponseStatus;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setJsonp">void<br/>setJsonp</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Do&nbsp;you&nbsp;want&nbsp;to&nbsp;use&nbsp;JSONP&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Do&nbsp;You&nbsp;Want&nbsp;To&nbsp;Use&nbsp;JSONP&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>jsonp</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Do you want to use JSONP </td>
+<td width="*" class="parameter-help">Do You Want To Use JSONP</td>
 </tr>
 
 </TABLE>
@@ -1189,67 +1198,41 @@ this.DJsonp&nbsp;=&nbsp;jsonp;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPayload">void<br/>setPayload</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;HTTP&nbsp;reuqest&nbsp;payload&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>payload</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> HTTP reuqest payload </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DPayload&nbsp;=&nbsp;payload;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRawParameters">void<br/>setRawParameters</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Raw&nbsp;Parameters&nbsp;as&nbsp;String&nbsp;Content&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>rawParameters</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Raw Parameters as String Content </td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.DRawParameters&nbsp;=&nbsp;rawParameters;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRequestMethod">void<br/>setRequestMethod</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>requestMethod</B></td>
-<td width="120px" class="parameter-type"><B>choice</B></td>
-<td width="*" class="parameter-help"> Request Method (POST | GET | PUT) </td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Request Method (POST | GET | PUT)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DRequestMethod&nbsp;=&nbsp;requestMethod;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRequestMethodByString">void<br/>setRequestMethodByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Method&nbsp;(POST&nbsp;|&nbsp;GET&nbsp;|&nbsp;PUT)&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>requestMethod</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Request Method (POST | GET | PUT)</td>
 </tr>
 
 </TABLE>
@@ -1268,14 +1251,40 @@ this.DRequestMethod&nbsp;=&nbsp;requestMethod;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRequestType">void<br/>setRequestType</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>requestType</B></td>
-<td width="120px" class="parameter-type"><B>choice</B></td>
-<td width="*" class="parameter-help"> Request Type (JQuery | HTTP) </td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Request Type (JQuery | HTTP)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DRequestType&nbsp;=&nbsp;requestType;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRequestTypeByString">void<br/>setRequestTypeByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Request&nbsp;Type&nbsp;(JQuery&nbsp;|&nbsp;HTTP)&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>requestType</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Request Type (JQuery | HTTP)</td>
 </tr>
 
 </TABLE>
@@ -1294,14 +1303,14 @@ this.DRequestType&nbsp;=&nbsp;requestType;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setUrl">void<br/>setUrl</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;To&nbsp;Send&nbsp;the&nbsp;Request&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;To&nbsp;Send&nbsp;The&nbsp;Request&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>url</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"> Url To Send the Request </td>
+<td width="*" class="parameter-help">Url To Send The Request</td>
 </tr>
 
 </TABLE>
@@ -1320,14 +1329,14 @@ this.DUrl&nbsp;=&nbsp;url;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setWithCredentials">void<br/>setWithCredentials</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Do&nbsp;you&nbsp;need&nbsp;with&nbsp;credentials&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Do&nbsp;You&nbsp;Need&nbsp;With&nbsp;Credentials&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>withCredentials</B></td>
 <td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"> Do you need with credentials </td>
+<td width="*" class="parameter-help">Do You Need With Credentials</td>
 </tr>
 
 </TABLE>
