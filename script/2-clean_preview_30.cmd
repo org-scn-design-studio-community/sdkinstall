@@ -1,6 +1,6 @@
 set current=%cd%
 
-cd ..\releases\20\preview\features\
+cd ..\releases\preview\features\
 del *.* /q
 
 cd ..\plugins\
