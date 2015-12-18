@@ -82,7 +82,7 @@ for (group in sdkComponentModel) {
 
 	// collect only non-prototypes
 	if(comp.id.indexOf("prototypes") == -1) {
-		requestChangeLogModel("../../../sdkhelp/web/components/" + comp.id + "/changes/changelog.json", comp.id.replace("/", "_"), comp.title, model);
+		requestChangeLogModel("../../../sdkhelp/web/20/components/" + comp.id + "/changes/changelog.json", comp.id.replace("/", "_"), comp.title, model);
 	}
     }
 }
@@ -100,7 +100,7 @@ itemFactory = function(sId, sModel) {
 
     if (dateAll == undefined) dateAll = realDate;
 
-    var link = "https://github.com/org-scn-design-studio-community/sdkhelp/tree/master/web/components/" + sItem.compId.replace("_", "/");
+    var link = "https://github.com/org-scn-design-studio-community/sdkhelp/tree/master/web/20/components/" + sItem.compId.replace("_", "/");
     var linkToRepo = new sap.ui.commons.Link({
         text: " -> open change log in sdhhelp repository",
         press: function() {
