@@ -354,6 +354,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/object",
+       title: "Object 2.0",
+       info: "Object",
+       icon: "basics/object.png",
+       activeIcon: "basics/object.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/paginator",
        title: "Paginator 2.0",
        info: "Paginator",

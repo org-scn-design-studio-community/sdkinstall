@@ -443,6 +443,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58152">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setDataSelection [<a href="#FUNCTION_setDataSelection">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">cellSelection</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setFooterCssClass [<a href="#FUNCTION_setFooterCssClass">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">footerCssClass</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -1157,6 +1163,32 @@ return&nbsp;this.valueSuffixText;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.valueText;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDataSelection">void<br/>setDataSelection</td>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>/Sets&nbsp;the&nbsp;data&nbsp;cell&nbsp;whose&nbsp;value&nbsp;is&nbsp;displayed.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>cellSelection</B></td>
+<td width="120px" class="parameter-type"><B>ResultCellSelection</B></td>
+<td width="*" class="parameter-help"> Data cell tha tcontains the value displayed </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.data&nbsp;=&nbsp;this.stringifySelection(cellSelection);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
