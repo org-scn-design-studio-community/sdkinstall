@@ -1,11 +1,6 @@
 set current=%cd%
 
-cd ..\releases\preview\
-ren preview.zip org.scn.community.sdk.package_preview.zip
-
-cd %current%
-
-cd ..\releases\stable\features\
+cd ..\releases\20\stable\features\
 del *.* /q
 
 cd ..\plugins\
@@ -18,10 +13,8 @@ del *.zip /q
 
 cd %current%
 
-copy ..\releases\preview\features\*.* ..\releases\stable\features\
-copy ..\releases\preview\plugins\*.* ..\releases\stable\plugins\
-copy ..\releases\preview\*.jar ..\releases\stable\
-copy ..\releases\preview\*.xml ..\releases\stable\
-
-ren ..\releases\preview\preview.zip ..\releases\preview\org.scn.community.sdk.package_preview.zip
-copy ..\releases\preview\org.scn.community.sdk.package_preview.zip ..\releases\stable\org.scn.community.sdk.package_stable.zip
+copy ..\releases\20\preview\features\*.* ..\releases\20\stable\features\
+copy ..\releases\20\preview\plugins\*.* ..\releases\20\stable\plugins\
+copy ..\releases\20\preview\*.jar ..\releases\20\stable\
+copy ..\releases\20\preview\*.xml ..\releases\20\stable\
+copy ..\releases\20\preview\org.scn.community.sdk.package_preview.zip ..\releases\20\stable\org.scn.community.sdk.package_stable.zip

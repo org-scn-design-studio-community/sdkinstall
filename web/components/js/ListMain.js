@@ -174,26 +174,14 @@
            key: "basics",
            title: "Basics"
        }, {
-           key: "databound",
-           title: "Data Bound"
-       }, {
-           key: "chartmaps",
-           title: "Charts & Maps"
-       }, {
-           key: "unified",
-           title: "UI5 Unified"
+           key: "visualizations",
+           title: "Visualizations"
        }, {
            key: "datasource",
            title: "Data Sources"
        }, {
-           key: "geovis",
-           title: "Geo Visualizations (Maps)"
-       }, {
            key: "utils",
            title: "Utilities (Non-UI)"
-       }, {
-           key: "prototypes",
-           title: "Prototypes"
        }, {
            key: "framework",
            title: "Framework"

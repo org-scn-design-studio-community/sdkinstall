@@ -21,15 +21,6 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/activityviewer",
-       title: "Activity Viewer 2.0",
-       info: "ActivityViewer",
-       icon: "basics/activityviewer.png",
-       activeIcon: "basics/activityviewer.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
        id: "basics/applicationheader",
        title: "Application Header 2.0",
        info: "ApplicationHeader",
@@ -40,7 +31,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/arrowedline",
-       title: "Arrowed Line",
+       title: "Arrowed Line 2.0",
        info: "ArrowedLine",
        icon: "basics/arrowedline.png",
        activeIcon: "basics/arrowedline.png",
@@ -49,7 +40,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/base64image",
-       title: "Base64 Image Encoder",
+       title: "Base64 Image Encoder 2.0",
        info: "Base64Image",
        icon: "basics/base64image.png",
        activeIcon: "basics/base64image.png",
@@ -148,7 +139,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/fioriappheader",
-       title: "Fiori App Header",
+       title: "Fiori App Header 2.0",
        info: "FioriAppHeader",
        icon: "basics/fioriappheader.png",
        activeIcon: "basics/fioriappheader.png",
@@ -157,7 +148,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/fioribar",
-       title: "Fiori Bar",
+       title: "Fiori Bar 2.0",
        info: "FioriBar",
        icon: "basics/fioribar.png",
        activeIcon: "basics/fioribar.png",
@@ -166,7 +157,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/fioributton",
-       title: "Fiori Button",
+       title: "Fiori Button 2.0",
        info: "FioriButton",
        icon: "basics/fioributton.png",
        activeIcon: "basics/fioributton.png",
@@ -174,29 +165,47 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/fioriinput",
+       title: "Fiori Input Field",
+       info: "FioriInput",
+       icon: "basics/fioriinput.png",
+       activeIcon: "basics/fioriinput.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/fiorisegmentedbutton",
+       title: "Fiori Segmented Button",
+       info: "FioriSegmentedButton",
+       icon: "basics/fiorisegmentedbutton.png",
+       activeIcon: "basics/fiorisegmentedbutton.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/fiorislider",
+       title: "Fiori Slider",
+       info: "FioriSlider",
+       icon: "basics/fiorislider.png",
+       activeIcon: "basics/fiorislider.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/fioriswitch",
+       title: "Fiori Switch",
+       info: "FioriSwitch",
+       icon: "basics/fioriswitch.png",
+       activeIcon: "basics/fioriswitch.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/fioritoolbar",
-       title: "Fiori Toolbar",
+       title: "Fiori Toolbar 2.0",
        info: "FioriToolbar",
        icon: "basics/fioritoolbar.png",
        activeIcon: "basics/fioritoolbar.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/fisheye",
-       title: "Fish Eye 2.0",
-       info: "FishEye",
-       icon: "basics/fisheye.png",
-       activeIcon: "basics/fisheye.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/gauge",
-       title: "Gauge (Speedometer) 2.0",
-       info: "Gauge",
-       icon: "basics/gauge.png",
-       activeIcon: "basics/gauge.png",
        number: " ",
        numberUnit: "basics"
    },
@@ -210,29 +219,11 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/kpiview",
-       title: "Kpi View 2.0",
-       info: "KpiView",
-       icon: "basics/kpiview.png",
-       activeIcon: "basics/kpiview.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
        id: "basics/launchpad",
-       title: "Launch Pad",
+       title: "Launch Pad 2.0",
        info: "LaunchPad",
        icon: "basics/launchpad.png",
        activeIcon: "basics/launchpad.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
-       id: "basics/leaderboard",
-       title: "Leader Board 2.0",
-       info: "LeaderBoard",
-       icon: "basics/leaderboard.png",
-       activeIcon: "basics/leaderboard.png",
        number: " ",
        numberUnit: "basics"
    },
@@ -283,7 +274,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/modalbrowser",
-       title: "Modal Browser",
+       title: "Modal Browser 0.X",
        info: "ModalBrowser",
        icon: "basics/modalbrowser.png",
        activeIcon: "basics/modalbrowser.png",
@@ -314,6 +305,15 @@ sdkComponentModel["basics"] = [
        info: "Notify",
        icon: "basics/notify.png",
        activeIcon: "basics/notify.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/object",
+       title: "Object 2.0",
+       info: "Object",
+       icon: "basics/object.png",
+       activeIcon: "basics/object.png",
        number: " ",
        numberUnit: "basics"
    },
@@ -479,320 +479,368 @@ sdkComponentModel["basics"] = [
        number: " ",
        numberUnit: "basics"
    },
-
-	];
-sdkComponentModel["databound"] = [
-   {
-       id: "databound/advanceddatatable",
-       title: "Advanced Data Table",
-       info: "AdvancedDataTable",
-       icon: "databound/advanceddatatable.png",
-       activeIcon: "databound/advanceddatatable.png",
-       number: " ",
-       numberUnit: "databound"
-   },
     {
-       id: "databound/table",
-       title: "Data Table",
-       info: "Table",
-       icon: "databound/table.png",
-       activeIcon: "databound/table.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/dropdown",
-       title: "Data Drop Down",
+       id: "basics/dropdown",
+       title: "Data Drop Down 2.0",
        info: "DropDown",
-       icon: "databound/dropdown.png",
-       activeIcon: "databound/dropdown.png",
+       icon: "basics/dropdown.png",
+       activeIcon: "basics/dropdown.png",
        number: " ",
-       numberUnit: "databound"
+       numberUnit: "basics"
    },
     {
-       id: "databound/facetfilter",
+       id: "basics/facetfilter",
        title: "Facet Filter 2.0",
        info: "FacetFilter",
-       icon: "databound/facetfilter.png",
-       activeIcon: "databound/facetfilter.png",
+       icon: "basics/facetfilter.png",
+       activeIcon: "basics/facetfilter.png",
        number: " ",
-       numberUnit: "databound"
+       numberUnit: "basics"
    },
     {
-       id: "databound/facetselector",
+       id: "basics/facetselector",
        title: "Facet Selector 2.0",
        info: "FacetSelector",
-       icon: "databound/facetselector.png",
-       activeIcon: "databound/facetselector.png",
+       icon: "basics/facetselector.png",
+       activeIcon: "basics/facetselector.png",
        number: " ",
-       numberUnit: "databound"
+       numberUnit: "basics"
    },
     {
-       id: "databound/jpd3hier",
-       title: "D3 Hierarchy",
-       info: "jpd3hier",
-       icon: "databound/jpd3hier.png",
-       activeIcon: "databound/jpd3hier.png",
+       id: "basics/fioribusydialog",
+       title: "Busy Dialog 2.0",
+       info: "FioriBusyDialog",
+       icon: "basics/fioribusydialog.png",
+       activeIcon: "basics/fioribusydialog.png",
        number: " ",
-       numberUnit: "databound"
+       numberUnit: "basics"
    },
     {
-       id: "databound/leaderboard",
-       title: "Data Leader Board 2.0",
-       info: "LeaderBoard",
-       icon: "databound/leaderboard.png",
-       activeIcon: "databound/leaderboard.png",
+       id: "basics/fiorilink",
+       title: "Fiori Link 2.0",
+       info: "FioriLink",
+       icon: "basics/fiorilink.png",
+       activeIcon: "basics/fiorilink.png",
        number: " ",
-       numberUnit: "databound"
+       numberUnit: "basics"
    },
     {
-       id: "databound/multicombobox",
-       title: "Multi ComboBox",
+       id: "basics/multicombobox",
+       title: "Multi ComboBox 0.0",
        info: "MultiComboBox",
-       icon: "databound/multicombobox.png",
-       activeIcon: "databound/multicombobox.png",
+       icon: "basics/multicombobox.png",
+       activeIcon: "basics/multicombobox.png",
        number: " ",
-       numberUnit: "databound"
+       numberUnit: "basics"
    },
     {
-       id: "databound/multileveldropdown",
-       title: "Hierarchical Menu",
+       id: "basics/multileveldropdown",
+       title: "Hierarchical Menu 1.0",
        info: "MultiLevelDropDown",
-       icon: "databound/multileveldropdown.png",
-       activeIcon: "databound/multileveldropdown.png",
+       icon: "basics/multileveldropdown.png",
+       activeIcon: "basics/multileveldropdown.png",
        number: " ",
-       numberUnit: "databound"
+       numberUnit: "basics"
    },
     {
-       id: "databound/pictogram",
-       title: "Pictogram",
-       info: "Pictogram",
-       icon: "databound/pictogram.png",
-       activeIcon: "databound/pictogram.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/progressbarset",
-       title: "Progress Bar Set",
-       info: "ProgressBarSet",
-       icon: "databound/progressbarset.png",
-       activeIcon: "databound/progressbarset.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/projector",
-       title: "Data Projector",
-       info: "Projector",
-       icon: "databound/projector.png",
-       activeIcon: "databound/projector.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/rangeslider",
-       title: "Data Range Slider",
-       info: "RangeSlider",
-       icon: "databound/rangeslider.png",
-       activeIcon: "databound/rangeslider.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/resultsetinfo",
-       title: "Result Set Information",
-       info: "ResultSetInfo",
-       icon: "databound/resultsetinfo.png",
-       activeIcon: "databound/resultsetinfo.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/resultsetmixer",
-       title: "Result Set Mixer",
-       info: "ResultSetMixer",
-       icon: "databound/resultsetmixer.png",
-       activeIcon: "databound/resultsetmixer.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/slider",
-       title: "Data Slider",
-       info: "Slider",
-       icon: "databound/slider.png",
-       activeIcon: "databound/slider.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/table2d",
-       title: "2D Crosstab",
-       info: "Table2D",
-       icon: "databound/table2d.png",
-       activeIcon: "databound/table2d.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/tagcloud",
-       title: "Tag Cloud",
-       info: "tagCloud",
-       icon: "databound/tagcloud.png",
-       activeIcon: "databound/tagcloud.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/topflop",
-       title: "Data Top Flop 2.0",
-       info: "TopFlop",
-       icon: "databound/topflop.png",
-       activeIcon: "databound/topflop.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-    {
-       id: "databound/ui5table",
-       title: "UI5 Table 2.0",
-       info: "UI5Table",
-       icon: "databound/ui5table.png",
-       activeIcon: "databound/ui5table.png",
-       number: " ",
-       numberUnit: "databound"
-   },
-
-                  ];
-sdkComponentModel["chartmaps"] = [
-   {
-       id: "chartmaps/bulletchart",
-       title: "Bullet Chart",
-       info: "BulletChart",
-       icon: "chartmaps/bulletchart.png",
-       activeIcon: "chartmaps/bulletchart.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-    {
-       id: "chartmaps/choropleth",
-       title: "Choropleth Map",
-       info: "Choropleth",
-       icon: "chartmaps/choropleth.png",
-       activeIcon: "chartmaps/choropleth.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-    {
-       id: "chartmaps/hexbin",
-       title: "Hexbin Chart",
-       info: "HexBin",
-       icon: "chartmaps/hexbin.png",
-       activeIcon: "chartmaps/hexbin.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-    {
-       id: "chartmaps/locationintel",
-       title: "Location Intelligence",
-       info: "LocationIntel",
-       icon: "chartmaps/locationintel.png",
-       activeIcon: "chartmaps/locationintel.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-    {
-       id: "chartmaps/marimekkochart",
-       title: "Marimekko Chart",
-       info: "MarimekkoChart",
-       icon: "chartmaps/marimekkochart.png",
-       activeIcon: "chartmaps/marimekkochart.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-    {
-       id: "chartmaps/nicechart",
-       title: "Nice Chart",
-       info: "NiceChart",
-       icon: "chartmaps/nicechart.png",
-       activeIcon: "chartmaps/nicechart.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-    {
-       id: "chartmaps/scatterplot",
-       title: "Scatter Plot Chart",
-       info: "ScatterPlot",
-       icon: "chartmaps/scatterplot.png",
-       activeIcon: "chartmaps/scatterplot.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-    {
-       id: "chartmaps/topflopchart",
-       title: "Data Top FLop Chart",
-       info: "TopFlopChart",
-       icon: "chartmaps/topflopchart.png",
-       activeIcon: "chartmaps/topflopchart.png",
-       number: " ",
-       numberUnit: "chartmaps"
-   },
-
-                  ];
-sdkComponentModel["unified"] = [
-   {
-       id: "unified/kpitile",
-       title: "Kpi Tile 2.0",
-       info: "KpiTile",
-       icon: "unified/kpitile.png",
-       activeIcon: "unified/kpitile.png",
-       number: " ",
-       numberUnit: "unified"
-   },
-    {
-       id: "unified/areamicrochart",
-       title: "Area Micro Chart 2.0",
-       info: "AreaMicroChart",
-       icon: "unified/areamicrochart.png",
-       activeIcon: "unified/areamicrochart.png",
-       number: " ",
-       numberUnit: "unified"
-   },
-    {
-       id: "unified/bulletmicrochart",
-       title: "Bullet Micro Chart 2.0",
-       info: "BulletMicroChart",
-       icon: "unified/bulletmicrochart.png",
-       activeIcon: "unified/bulletmicrochart.png",
-       number: " ",
-       numberUnit: "unified"
-   },
-    {
-       id: "unified/harveyballmicrochart",
-       title: "Harvey Ball Micro Chart2.0",
-       info: "HarveyBallMicroChart",
-       icon: "unified/harveyballmicrochart.png",
-       activeIcon: "unified/harveyballmicrochart.png",
-       number: " ",
-       numberUnit: "unified"
-   },
-    {
-       id: "unified/processflow",
-       title: "Process Flow 2.0",
-       info: "ProcessFlow",
-       icon: "unified/processflow.png",
-       activeIcon: "unified/processflow.png",
-       number: " ",
-       numberUnit: "unified"
-   },
-    {
-       id: "unified/radiobuttongroup",
+       id: "basics/radiobuttongroup",
        title: "Radio Button Group 2.0",
        info: "RadioButtonGroup",
-       icon: "unified/radiobuttongroup.png",
-       activeIcon: "unified/radiobuttongroup.png",
+       icon: "basics/radiobuttongroup.png",
+       activeIcon: "basics/radiobuttongroup.png",
        number: " ",
-       numberUnit: "unified"
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/rangeslider",
+       title: "Data Range Slider 2.0",
+       info: "RangeSlider",
+       icon: "basics/rangeslider.png",
+       activeIcon: "basics/rangeslider.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/resultsetmixer",
+       title: "Result Set Mixer 2.0",
+       info: "ResultSetMixer",
+       icon: "basics/resultsetmixer.png",
+       activeIcon: "basics/resultsetmixer.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "basics/slider",
+       title: "Data Slider 2.0",
+       info: "Slider",
+       icon: "basics/slider.png",
+       activeIcon: "basics/slider.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+
+	];
+sdkComponentModel["visualizations"] = [
+   {
+       id: "visualizations/activityviewer",
+       title: "Activity Viewer 2.0",
+       info: "ActivityViewer",
+       icon: "visualizations/activityviewer.png",
+       activeIcon: "visualizations/activityviewer.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/fisheye",
+       title: "Fish Eye 2.0",
+       info: "FishEye",
+       icon: "visualizations/fisheye.png",
+       activeIcon: "visualizations/fisheye.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/gauge",
+       title: "Gauge (Speedometer) 2.0",
+       info: "Gauge",
+       icon: "visualizations/gauge.png",
+       activeIcon: "visualizations/gauge.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/kpitile",
+       title: "Kpi Tile 2.0",
+       info: "KpiTile",
+       icon: "visualizations/kpitile.png",
+       activeIcon: "visualizations/kpitile.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/kpiview",
+       title: "Kpi View 2.0",
+       info: "KpiView",
+       icon: "visualizations/kpiview.png",
+       activeIcon: "visualizations/kpiview.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/leaderboard",
+       title: "Leader Board 2.0",
+       info: "LeaderBoard",
+       icon: "visualizations/leaderboard.png",
+       activeIcon: "visualizations/leaderboard.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/advanceddatatable",
+       title: "Advanced Data Table 2.0",
+       info: "AdvancedDataTable",
+       icon: "visualizations/advanceddatatable.png",
+       activeIcon: "visualizations/advanceddatatable.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/areamicrochart",
+       title: "Area Micro Chart 2.0",
+       info: "AreaMicroChart",
+       icon: "visualizations/areamicrochart.png",
+       activeIcon: "visualizations/areamicrochart.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/bulletchart",
+       title: "Bullet Chart 2.0",
+       info: "BulletChart",
+       icon: "visualizations/bulletchart.png",
+       activeIcon: "visualizations/bulletchart.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/bulletmicrochart",
+       title: "Bullet Micro Chart 2.0",
+       info: "BulletMicroChart",
+       icon: "visualizations/bulletmicrochart.png",
+       activeIcon: "visualizations/bulletmicrochart.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/choropleth",
+       title: "Choropleth Map 2.0",
+       info: "Choropleth",
+       icon: "visualizations/choropleth.png",
+       activeIcon: "visualizations/choropleth.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/harveyballmicrochart",
+       title: "Harvey Ball Micro Chart 2.0",
+       info: "HarveyBallMicroChart",
+       icon: "visualizations/harveyballmicrochart.png",
+       activeIcon: "visualizations/harveyballmicrochart.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/hexbin",
+       title: "Hexbin Chart 2.0",
+       info: "HexBin",
+       icon: "visualizations/hexbin.png",
+       activeIcon: "visualizations/hexbin.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/jpd3hier",
+       title: "D3 Hierarchy 2.0",
+       info: "jpd3hier",
+       icon: "visualizations/jpd3hier.png",
+       activeIcon: "visualizations/jpd3hier.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/leaderboard",
+       title: "Data Leader Board 2.0",
+       info: "LeaderBoard",
+       icon: "visualizations/leaderboard.png",
+       activeIcon: "visualizations/leaderboard.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/locationintel",
+       title: "Location Intelligence 2.0",
+       info: "LocationIntel",
+       icon: "visualizations/locationintel.png",
+       activeIcon: "visualizations/locationintel.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/marimekkochart",
+       title: "Marimekko Chart 2.0",
+       info: "MarimekkoChart",
+       icon: "visualizations/marimekkochart.png",
+       activeIcon: "visualizations/marimekkochart.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/nicechart",
+       title: "Nice Chart 2.0",
+       info: "NiceChart",
+       icon: "visualizations/nicechart.png",
+       activeIcon: "visualizations/nicechart.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/pictogram",
+       title: "Pictogram",
+       info: "Pictogram",
+       icon: "visualizations/pictogram.png",
+       activeIcon: "visualizations/pictogram.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/processflow",
+       title: "Process Flow 2.0",
+       info: "ProcessFlow",
+       icon: "visualizations/processflow.png",
+       activeIcon: "visualizations/processflow.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/progressbarset",
+       title: "Progress Bar Set 2.0",
+       info: "ProgressBarSet",
+       icon: "visualizations/progressbarset.png",
+       activeIcon: "visualizations/progressbarset.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/resultsetinfo",
+       title: "Result Set Information 2.0",
+       info: "ResultSetInfo",
+       icon: "visualizations/resultsetinfo.png",
+       activeIcon: "visualizations/resultsetinfo.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/scatterplot",
+       title: "Scatter Plot Chart 2.0",
+       info: "ScatterPlot",
+       icon: "visualizations/scatterplot.png",
+       activeIcon: "visualizations/scatterplot.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/table2d",
+       title: "2D Crosstab 2.0",
+       info: "Table2D",
+       icon: "visualizations/table2d.png",
+       activeIcon: "visualizations/table2d.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/table",
+       title: "Data Table 2.0",
+       info: "Table",
+       icon: "visualizations/table.png",
+       activeIcon: "visualizations/table.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/tagcloud",
+       title: "Tag Cloud 2.0",
+       info: "tagCloud",
+       icon: "visualizations/tagcloud.png",
+       activeIcon: "visualizations/tagcloud.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/topflopchart",
+       title: "Data Top Flop Chart 2.0",
+       info: "TopFlopChart",
+       icon: "visualizations/topflopchart.png",
+       activeIcon: "visualizations/topflopchart.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/topflop",
+       title: "Data Top Flop 2.0",
+       info: "TopFlop",
+       icon: "visualizations/topflop.png",
+       activeIcon: "visualizations/topflop.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/ui5table",
+       title: "UI5 Table 2.0",
+       info: "UI5Table",
+       icon: "visualizations/ui5table.png",
+       activeIcon: "visualizations/ui5table.png",
+       number: " ",
+       numberUnit: "visualizations"
    },
 
                   ];
@@ -841,7 +889,7 @@ sdkComponentModel["geovis"] = [
 sdkComponentModel["utils"] = [
    {
        id: "utils/array",
-       title: "Array Utility",
+       title: "Array Utility 0.X",
        info: "Array",
        icon: "utils/array.png",
        activeIcon: "utils/array.png",
@@ -850,7 +898,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/clientinformation",
-       title: "Client Information",
+       title: "Client Information 0.X",
        info: "ClientInformation",
        icon: "utils/clientinformation.png",
        activeIcon: "utils/clientinformation.png",
@@ -859,7 +907,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/collection",
-       title: "Collection Utility",
+       title: "Collection Utility 0.X",
        info: "Collection",
        icon: "utils/collection.png",
        activeIcon: "utils/collection.png",
@@ -868,7 +916,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/componentmanager",
-       title: "Component Manager",
+       title: "Component Manager 0.X",
        info: "ComponentManager",
        icon: "utils/componentmanager.png",
        activeIcon: "utils/componentmanager.png",
@@ -877,7 +925,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/customcsscollector",
-       title: "Custom Css Collector",
+       title: "Custom Css Collector 0.X",
        info: "CustomCssCollector",
        icon: "utils/customcsscollector.png",
        activeIcon: "utils/customcsscollector.png",
@@ -895,7 +943,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/debugger",
-       title: "Debugger Code Inspector",
+       title: "Debugger Code Inspector 0.X",
        info: "Debugger",
        icon: "utils/debugger.png",
        activeIcon: "utils/debugger.png",
@@ -904,7 +952,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/flowlayouter",
-       title: "Flow Layouter",
+       title: "Flow Layouter 0.X",
        info: "FlowLayouter",
        icon: "utils/flowlayouter.png",
        activeIcon: "utils/flowlayouter.png",
@@ -922,7 +970,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/math",
-       title: "Math Utility",
+       title: "Math Utility 0.X",
        info: "Math",
        icon: "utils/math.png",
        activeIcon: "utils/math.png",
@@ -931,7 +979,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/openurlinplace",
-       title: "Open Url Inplace",
+       title: "Open Url Inplace 0.X",
        info: "OpenUrlInplace",
        icon: "utils/openurlinplace.png",
        activeIcon: "utils/openurlinplace.png",
@@ -940,7 +988,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/openwindowpost",
-       title: "Open Window by Post",
+       title: "Open Window by Post 0.X",
        info: "OpenWindowPost",
        icon: "utils/openwindowpost.png",
        activeIcon: "utils/openwindowpost.png",
@@ -949,7 +997,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/pdfprint",
-       title: "PDF Print",
+       title: "PDF Print 2.0",
        info: "PdfPrint",
        icon: "utils/pdfprint.png",
        activeIcon: "utils/pdfprint.png",
@@ -958,7 +1006,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/postresponseparser",
-       title: "Post Response Parser",
+       title: "Post Response Parser 2.0",
        info: "PostResponseParser",
        icon: "utils/postresponseparser.png",
        activeIcon: "utils/postresponseparser.png",
@@ -967,7 +1015,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/realdate",
-       title: "Real Date",
+       title: "Real Date 0.X",
        info: "RealDate",
        icon: "utils/realdate.png",
        activeIcon: "utils/realdate.png",
@@ -976,7 +1024,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/simpledate",
-       title: "Simple Date",
+       title: "Simple Date 0.X",
        info: "SimpleDate",
        icon: "utils/simpledate.png",
        activeIcon: "utils/simpledate.png",
@@ -985,7 +1033,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/wspusher",
-       title: "WebSocket Implementation",
+       title: "WebSocket Implementation 0.X",
        info: "WSPusher",
        icon: "utils/wspusher.png",
        activeIcon: "utils/wspusher.png",

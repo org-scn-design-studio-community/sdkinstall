@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/utils/componentmanager/examples.json");
 </script>
 
-<title>Component Manager - SCN Design Studio Community</title>
+<title>Component Manager 0.X - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	ComponentManager [ScnCommunityUtils]
 	</div>
 	<div class="component-title">
-	Component Manager
+	Component Manager 0.X
 	</div>
 
 <div id="componentnav"></div>
@@ -497,6 +497,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61450">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnDataDecorator [<a href="#FUNCTION_returnAsScnDataDecorator">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.datasource.DataDecorator</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">returnAsScnDataSourceHelper [<a href="#FUNCTION_returnAsScnDataSourceHelper">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">org.scn.community.utils.DataSourceHelper</td>
@@ -581,9 +587,45 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61450">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriBusyDialog [<a href="#FUNCTION_returnAsScnFioriBusyDialog">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.FioriBusyDialog</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">returnAsScnFioriButton [<a href="#FUNCTION_returnAsScnFioriButton">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriButton</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriInput [<a href="#FUNCTION_returnAsScnFioriInput">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriInput</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriLink [<a href="#FUNCTION_returnAsScnFioriLink">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.FioriLink</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriSegmentedButton [<a href="#FUNCTION_returnAsScnFioriSegmentedButton">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriSegmentedButton</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriSlider [<a href="#FUNCTION_returnAsScnFioriSlider">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriSlider</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnFioriSwitch [<a href="#FUNCTION_returnAsScnFioriSwitch">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.FioriSwitch</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -761,6 +803,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61450">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">returnAsScnObject [<a href="#FUNCTION_returnAsScnObject">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">inputComponent</td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.basics.Object</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">returnAsScnOpenUrlInplace [<a href="#FUNCTION_returnAsScnOpenUrlInplace">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">org.scn.community.utils.OpenUrlInplace</td>
@@ -824,12 +872,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61450">Design
 <td valign="top" width="240px" class="function-short-name">returnAsScnProgressSet [<a href="#FUNCTION_returnAsScnProgressSet">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">inputComponent</td>
 <td valign="top" width="160px" class="function-short-return">org.scn.community.prototypes.ProgressSet</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">returnAsScnProjector [<a href="#FUNCTION_returnAsScnProjector">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">inputComponent</td>
-<td valign="top" width="160px" class="function-short-return">org.scn.community.databound.Projector</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -2428,7 +2470,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnAdvancedDataTable">org.scn.community.databound.AdvancedDataTable<br/>returnAsScnAdvancedDataTable</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Advanced&nbsp;Data&nbsp;Table&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Advanced&nbsp;Data&nbsp;Table&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2610,7 +2652,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnArray">org.scn.community.utils.Array<br/>returnAsScnArray</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Array&nbsp;Utility&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Array&nbsp;Utility&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2636,7 +2678,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnArrowedLine">org.scn.community.basics.ArrowedLine<br/>returnAsScnArrowedLine</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Arrowed&nbsp;Line&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Arrowed&nbsp;Line&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2688,7 +2730,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnBase64Image">org.scn.community.basics.Base64Image<br/>returnAsScnBase64Image</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Base64&nbsp;Image&nbsp;Encoder&nbsp;component<br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Base64&nbsp;Image&nbsp;Encoder&nbsp;2.0&nbsp;component<br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2740,7 +2782,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnBulletChart">org.scn.community.databound.BulletChart<br/>returnAsScnBulletChart</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Bullet&nbsp;Chart&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Bullet&nbsp;Chart&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2870,7 +2912,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnChoropleth">org.scn.community.databound.Choropleth<br/>returnAsScnChoropleth</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Choropleth&nbsp;Map&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Choropleth&nbsp;Map&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2896,7 +2938,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnClientInformation">org.scn.community.utils.ClientInformation<br/>returnAsScnClientInformation</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Client&nbsp;Information&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Client&nbsp;Information&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2922,7 +2964,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnCollection">org.scn.community.utils.Collection<br/>returnAsScnCollection</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Collection&nbsp;Utility&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Collection&nbsp;Utility&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -2974,7 +3016,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnComponentManager">org.scn.community.utils.ComponentManager<br/>returnAsScnComponentManager</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Component&nbsp;Manager&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Component&nbsp;Manager&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3000,7 +3042,33 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnCustomCssCollector">org.scn.community.utils.CustomCssCollector<br/>returnAsScnCustomCssCollector</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Custom&nbsp;Css&nbsp;Collector&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Custom&nbsp;Css&nbsp;Collector&nbsp;0.X&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnDataDecorator">org.scn.community.datasource.DataDecorator<br/>returnAsScnDataDecorator</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Decorator&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3104,7 +3172,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnDebugger">org.scn.community.utils.Debugger<br/>returnAsScnDebugger</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Debugger&nbsp;Code&nbsp;Inspector&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Debugger&nbsp;Code&nbsp;Inspector&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3156,7 +3224,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnDropDown">org.scn.community.databound.DropDown<br/>returnAsScnDropDown</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Drop&nbsp;Down&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Drop&nbsp;Down&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3338,7 +3406,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriAppHeader">org.scn.community.basics.FioriAppHeader<br/>returnAsScnFioriAppHeader</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;App&nbsp;Header&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;App&nbsp;Header&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3364,7 +3432,33 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriBar">org.scn.community.basics.FioriBar<br/>returnAsScnFioriBar</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Bar&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Bar&nbsp;2.0&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriBusyDialog">org.scn.community.databound.FioriBusyDialog<br/>returnAsScnFioriBusyDialog</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Busy&nbsp;Dialog&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3390,7 +3484,137 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriButton">org.scn.community.basics.FioriButton<br/>returnAsScnFioriButton</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Button&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Button&nbsp;2.0&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriInput">org.scn.community.basics.FioriInput<br/>returnAsScnFioriInput</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Input&nbsp;Field&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriLink">org.scn.community.databound.FioriLink<br/>returnAsScnFioriLink</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Link&nbsp;2.0&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriSegmentedButton">org.scn.community.basics.FioriSegmentedButton<br/>returnAsScnFioriSegmentedButton</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Segmented&nbsp;Button&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriSlider">org.scn.community.basics.FioriSlider<br/>returnAsScnFioriSlider</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Slider&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriSwitch">org.scn.community.basics.FioriSwitch<br/>returnAsScnFioriSwitch</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Switch&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3416,7 +3640,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFioriToolbar">org.scn.community.basics.FioriToolbar<br/>returnAsScnFioriToolbar</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Toolbar&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Fiori&nbsp;Toolbar&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3468,7 +3692,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnFlowLayouter">org.scn.community.utils.FlowLayouter<br/>returnAsScnFlowLayouter</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Flow&nbsp;Layouter&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Flow&nbsp;Layouter&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3520,7 +3744,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnHarveyBallMicroChart">org.scn.community.databound.HarveyBallMicroChart<br/>returnAsScnHarveyBallMicroChart</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Harvey&nbsp;Ball&nbsp;Micro&nbsp;Chart2.0&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Harvey&nbsp;Ball&nbsp;Micro&nbsp;Chart&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3546,7 +3770,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnHexBin">org.scn.community.databound.HexBin<br/>returnAsScnHexBin</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Hexbin&nbsp;Chart&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Hexbin&nbsp;Chart&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3676,7 +3900,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnLaunchPad">org.scn.community.basics.LaunchPad<br/>returnAsScnLaunchPad</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Launch&nbsp;Pad&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Launch&nbsp;Pad&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3806,7 +4030,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnLocationIntel">org.scn.community.databound.LocationIntel<br/>returnAsScnLocationIntel</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Location&nbsp;Intelligence&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Location&nbsp;Intelligence&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3884,7 +4108,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnMarimekkoChart">org.scn.community.databound.MarimekkoChart<br/>returnAsScnMarimekkoChart</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Marimekko&nbsp;Chart&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Marimekko&nbsp;Chart&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3910,7 +4134,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnMath">org.scn.community.utils.Math<br/>returnAsScnMath</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Math&nbsp;Utility&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Math&nbsp;Utility&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -3988,7 +4212,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnModalBrowser">org.scn.community.basics.ModalBrowser<br/>returnAsScnModalBrowser</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Modal&nbsp;Browser&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Modal&nbsp;Browser&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4014,7 +4238,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnMultiComboBox">org.scn.community.databound.MultiComboBox<br/>returnAsScnMultiComboBox</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Multi&nbsp;ComboBox&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Multi&nbsp;ComboBox&nbsp;0.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4040,7 +4264,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnMultiLevelDropDown">org.scn.community.databound.MultiLevelDropDown<br/>returnAsScnMultiLevelDropDown</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Hierarchical&nbsp;Menu&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Hierarchical&nbsp;Menu&nbsp;1.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4092,7 +4316,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnNiceChart">org.scn.community.databound.NiceChart<br/>returnAsScnNiceChart</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Nice&nbsp;Chart&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Nice&nbsp;Chart&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4169,8 +4393,34 @@ return&nbsp;inputComponent;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnObject">org.scn.community.basics.Object<br/>returnAsScnObject</td>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Object&nbsp;2.0&nbsp;component<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>inputComponent</B></td>
+<td width="120px" class="parameter-type"><B>Component</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;inputComponent;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnOpenUrlInplace">org.scn.community.utils.OpenUrlInplace<br/>returnAsScnOpenUrlInplace</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Open&nbsp;Url&nbsp;Inplace&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Open&nbsp;Url&nbsp;Inplace&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4196,7 +4446,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnOpenWindowPost">org.scn.community.utils.OpenWindowPost<br/>returnAsScnOpenWindowPost</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Open&nbsp;Window&nbsp;by&nbsp;Post&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Open&nbsp;Window&nbsp;by&nbsp;Post&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4274,7 +4524,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnPdfPrint">org.scn.community.utils.PdfPrint<br/>returnAsScnPdfPrint</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;PDF&nbsp;Print&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;PDF&nbsp;Print&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4326,7 +4576,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnPostResponseParser">org.scn.community.utils.PostResponseParser<br/>returnAsScnPostResponseParser</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Post&nbsp;Response&nbsp;Parser&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Post&nbsp;Response&nbsp;Parser&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4378,7 +4628,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnProgressBarSet">org.scn.community.databound.ProgressBarSet<br/>returnAsScnProgressBarSet</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Progress&nbsp;Bar&nbsp;Set&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Progress&nbsp;Bar&nbsp;Set&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4431,32 +4681,6 @@ return&nbsp;inputComponent;
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnProgressSet">org.scn.community.prototypes.ProgressSet<br/>returnAsScnProgressSet</td>
 <td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Progress&nbsp;Bar&nbsp;Set&nbsp;component<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>inputComponent</B></td>
-<td width="120px" class="parameter-type"><B>Component</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;inputComponent;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnProjector">org.scn.community.databound.Projector<br/>returnAsScnProjector</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Projector&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4586,7 +4810,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnRangeSlider">org.scn.community.databound.RangeSlider<br/>returnAsScnRangeSlider</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Range&nbsp;Slider&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Range&nbsp;Slider&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4664,7 +4888,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnRealDate">org.scn.community.utils.RealDate<br/>returnAsScnRealDate</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Real&nbsp;Date&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Real&nbsp;Date&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4690,7 +4914,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnResultSetInfo">org.scn.community.databound.ResultSetInfo<br/>returnAsScnResultSetInfo</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Result&nbsp;Set&nbsp;Information&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Result&nbsp;Set&nbsp;Information&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4716,7 +4940,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnResultSetMixer">org.scn.community.databound.ResultSetMixer<br/>returnAsScnResultSetMixer</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Result&nbsp;Set&nbsp;Mixer&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Result&nbsp;Set&nbsp;Mixer&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4820,7 +5044,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnScatterPlot">org.scn.community.databound.ScatterPlot<br/>returnAsScnScatterPlot</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Scatter&nbsp;Plot&nbsp;Chart&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Scatter&nbsp;Plot&nbsp;Chart&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4872,7 +5096,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnSimpleDate">org.scn.community.utils.SimpleDate<br/>returnAsScnSimpleDate</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Simple&nbsp;Date&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Simple&nbsp;Date&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4924,7 +5148,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnSlider">org.scn.community.databound.Slider<br/>returnAsScnSlider</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Slider&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Slider&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4950,7 +5174,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnTable">org.scn.community.databound.Table<br/>returnAsScnTable</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Table&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Table&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -4976,7 +5200,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnTable2D">org.scn.community.databound.Table2D<br/>returnAsScnTable2D</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;2D&nbsp;Crosstab&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;2D&nbsp;Crosstab&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -5106,7 +5330,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnTopFlopChart">org.scn.community.databound.TopFlopChart<br/>returnAsScnTopFlopChart</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Top&nbsp;FLop&nbsp;Chart&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Data&nbsp;Top&nbsp;Flop&nbsp;Chart&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -5262,7 +5486,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnWSPusher">org.scn.community.utils.WSPusher<br/>returnAsScnWSPusher</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;WebSocket&nbsp;Implementation&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;WebSocket&nbsp;Implementation&nbsp;0.X&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -5340,7 +5564,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScnjpd3hier">org.scn.community.databound.jpd3hier<br/>returnAsScnjpd3hier</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;D3&nbsp;Hierarchy&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;D3&nbsp;Hierarchy&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -5366,7 +5590,7 @@ return&nbsp;inputComponent;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_returnAsScntagCloud">org.scn.community.databound.tagCloud<br/>returnAsScntagCloud</td>
-<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Tag&nbsp;Cloud&nbsp;component<br/><br/>
+<td valign="top" width="*" class="function-help">Cast&nbsp;to&nbsp;Tag&nbsp;Cloud&nbsp;2.0&nbsp;component<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
