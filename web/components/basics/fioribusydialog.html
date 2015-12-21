@@ -46,11 +46,11 @@
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>cancelButtonText<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Cancel Button Text</B><br/>Cancel Button Text
+<td width="*" class="property-title-tooltip"><B>Close Button Text</B><br/>Close Button Text
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
+<td width="100px" class="property-default">Close</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>showCancelButton<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Show Cancel Button</B><br/>Show Cancel Button
+<td width="*" class="property-title-tooltip"><B>Show Close Button</B><br/>Show Close Button
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -125,42 +125,6 @@
 <td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
-<tr>
-<td width="120px" class="property-name-type"><B>useCustomIcon<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Use Manual 'Custom Icon'</B><br/>Use Manual 'Custom Icon'
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>useCustomIconHeight<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Use Manual 'Custom Icon Height'</B><br/>Use Manual 'Custom Icon Height'
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>useCustomIconRotationSpeed<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Use Manual 'Custom Icon Rotation Speed'</B><br/>Use Manual 'Custom Icon Rotation Speed'
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>useCustomIconWidth<br/>[boolean]</B></td>
-<td width="*" class="property-title-tooltip"><B>Use Manual 'Custom Icon Width'</B><br/>Use Manual 'Custom Icon Width'
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
-<td width="60px" class="property-visible">true</td>
-</tr>
 
 	</TABLE>
 
@@ -172,8 +136,8 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>onCloseed<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On Closeed</B><br/>On Closeed
+<td width="120px" class="property-name-type"><B>onClosed<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On Closed</B><br/>On Closed
 
 </td>
 <td width="60px" class="property-group">Events</td>
@@ -190,7 +154,19 @@
 	
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
-	
+	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">close [<a href="#FUNCTION_close">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">open [<a href="#FUNCTION_open">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+
 	</TABLE>
 
 	<br/>
@@ -201,12 +177,12 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
-<td width="120px" class="property-name-type"><B>closeedKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Closeed Key</B><br/>Closeed Key
+<td width="120px" class="property-name-type"><B>interactionInt<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>-technical-</B><br/>-technical-
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
+<td width="100px" class="property-default">0</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 
@@ -218,7 +194,49 @@
 	<br/>
 	
 	<TABLE width="100%" class="">
-	
+	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_close">void<br/>close</td>
+<td valign="top" width="*" class="function-help">Closes&nbsp;The&nbsp;Dilaog<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.interactionInt&nbsp;=&nbsp;this.interactionInt&nbsp;-&nbsp;1;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_open">void<br/>open</td>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Opens&nbsp;The&nbsp;Dilaog<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.interactionInt&nbsp;=&nbsp;this.interactionInt&nbsp;+&nbsp;1;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+
 	</TABLE>
 	<div style="height:20px!important"> THE END </div>
 	</div>

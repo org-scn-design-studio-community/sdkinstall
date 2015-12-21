@@ -525,15 +525,6 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/jpd3hier",
-       title: "D3 Hierarchy 2.0",
-       info: "jpd3hier",
-       icon: "basics/jpd3hier.png",
-       activeIcon: "basics/jpd3hier.png",
-       number: " ",
-       numberUnit: "basics"
-   },
-    {
        id: "basics/multicombobox",
        title: "Multi ComboBox 0.0",
        info: "MultiComboBox",
@@ -708,6 +699,15 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
+       id: "visualizations/jpd3hier",
+       title: "D3 Hierarchy 2.0",
+       info: "jpd3hier",
+       icon: "visualizations/jpd3hier.png",
+       activeIcon: "visualizations/jpd3hier.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
        id: "visualizations/leaderboard",
        title: "Data Leader Board 2.0",
        info: "LeaderBoard",
@@ -851,15 +851,6 @@ sdkComponentModel["datasource"] = [
        info: "BYOData",
        icon: "datasource/byodata.png",
        activeIcon: "datasource/byodata.png",
-       number: " ",
-       numberUnit: "datasource"
-   },
-    {
-       id: "datasource/datadecorator",
-       title: "Data Decorator",
-       info: "DataDecorator",
-       icon: "datasource/datadecorator.png",
-       activeIcon: "datasource/datadecorator.png",
        number: " ",
        numberUnit: "datasource"
    },
