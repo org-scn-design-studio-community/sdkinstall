@@ -709,10 +709,19 @@ sdkComponentModel["visualizations"] = [
    },
     {
        id: "visualizations/leaderboard",
-       title: "Data Leader Board 2.0",
+       title: "Data Leader Board",
        info: "LeaderBoard",
        icon: "visualizations/leaderboard.png",
        activeIcon: "visualizations/leaderboard.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
+       id: "visualizations/leafletmap",
+       title: "Leaflet Map",
+       info: "LeafletMap",
+       icon: "visualizations/leafletmap.png",
+       activeIcon: "visualizations/leafletmap.png",
        number: " ",
        numberUnit: "visualizations"
    },
@@ -817,7 +826,7 @@ sdkComponentModel["visualizations"] = [
    },
     {
        id: "visualizations/topflopchart",
-       title: "Data Top Flop Chart 2.0",
+       title: "Data Top Flop Chart",
        info: "TopFlopChart",
        icon: "visualizations/topflopchart.png",
        activeIcon: "visualizations/topflopchart.png",
@@ -826,7 +835,7 @@ sdkComponentModel["visualizations"] = [
    },
     {
        id: "visualizations/topflop",
-       title: "Data Top Flop 2.0",
+       title: "Data Top Flop",
        info: "TopFlop",
        icon: "visualizations/topflop.png",
        activeIcon: "visualizations/topflop.png",
