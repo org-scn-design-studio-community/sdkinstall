@@ -480,7 +480,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/dropdown",
+       id: "databound/dropdown",
        title: "Data Drop Down 2.0",
        info: "DropDown",
        icon: "basics/dropdown.png",
@@ -489,7 +489,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/facetfilter",
+       id: "databound/facetfilter",
        title: "Facet Filter 2.0",
        info: "FacetFilter",
        icon: "basics/facetfilter.png",
@@ -498,7 +498,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/facetselector",
+       id: "databound/facetselector",
        title: "Facet Selector 2.0",
        info: "FacetSelector",
        icon: "basics/facetselector.png",
@@ -507,7 +507,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/fioribusydialog",
+       id: "databound/fioribusydialog",
        title: "Busy Dialog 2.0",
        info: "FioriBusyDialog",
        icon: "basics/fioribusydialog.png",
@@ -516,7 +516,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/fiorilink",
+       id: "databound/fiorilink",
        title: "Fiori Link 2.0",
        info: "FioriLink",
        icon: "basics/fiorilink.png",
@@ -525,7 +525,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/multicombobox",
+       id: "databound/multicombobox",
        title: "Multi ComboBox 0.0",
        info: "MultiComboBox",
        icon: "basics/multicombobox.png",
@@ -534,7 +534,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/multileveldropdown",
+       id: "databound/multileveldropdown",
        title: "Hierarchical Menu 1.0",
        info: "MultiLevelDropDown",
        icon: "basics/multileveldropdown.png",
@@ -543,7 +543,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/radiobuttongroup",
+       id: "databound/radiobuttongroup",
        title: "Radio Button Group 2.0",
        info: "RadioButtonGroup",
        icon: "basics/radiobuttongroup.png",
@@ -552,7 +552,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/rangeslider",
+       id: "databound/rangeslider",
        title: "Data Range Slider 2.0",
        info: "RangeSlider",
        icon: "basics/rangeslider.png",
@@ -561,7 +561,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/resultsetmixer",
+       id: "databound/resultsetmixer",
        title: "Result Set Mixer 2.0",
        info: "ResultSetMixer",
        icon: "basics/resultsetmixer.png",
@@ -570,7 +570,7 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
-       id: "basics/slider",
+       id: "databound/slider",
        title: "Data Slider 2.0",
        info: "Slider",
        icon: "basics/slider.png",
@@ -582,7 +582,7 @@ sdkComponentModel["basics"] = [
 	];
 sdkComponentModel["visualizations"] = [
    {
-       id: "visualizations/activityviewer",
+       id: "basics/activityviewer",
        title: "Activity Viewer 2.0",
        info: "ActivityViewer",
        icon: "visualizations/activityviewer.png",
@@ -591,7 +591,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/fisheye",
+       id: "basics/fisheye",
        title: "Fish Eye 2.0",
        info: "FishEye",
        icon: "visualizations/fisheye.png",
@@ -600,7 +600,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/gauge",
+       id: "basics/gauge",
        title: "Gauge (Speedometer) 2.0",
        info: "Gauge",
        icon: "visualizations/gauge.png",
@@ -609,7 +609,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/kpitile",
+       id: "basics/kpitile",
        title: "Kpi Tile 2.0",
        info: "KpiTile",
        icon: "visualizations/kpitile.png",
@@ -618,7 +618,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/kpiview",
+       id: "basics/kpiview",
        title: "Kpi View 2.0",
        info: "KpiView",
        icon: "visualizations/kpiview.png",
@@ -627,7 +627,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/leaderboard",
+       id: "basics/leaderboard",
        title: "Leader Board 2.0",
        info: "LeaderBoard",
        icon: "visualizations/leaderboard.png",
@@ -636,7 +636,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/advanceddatatable",
+       id: "databound/advanceddatatable",
        title: "Advanced Data Table 2.0",
        info: "AdvancedDataTable",
        icon: "visualizations/advanceddatatable.png",
@@ -645,7 +645,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/areamicrochart",
+       id: "databound/areamicrochart",
        title: "Area Micro Chart 2.0",
        info: "AreaMicroChart",
        icon: "visualizations/areamicrochart.png",
@@ -654,7 +654,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/bulletchart",
+       id: "databound/bulletchart",
        title: "Bullet Chart 2.0",
        info: "BulletChart",
        icon: "visualizations/bulletchart.png",
@@ -663,7 +663,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/bulletmicrochart",
+       id: "databound/bulletmicrochart",
        title: "Bullet Micro Chart 2.0",
        info: "BulletMicroChart",
        icon: "visualizations/bulletmicrochart.png",
@@ -672,7 +672,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/choropleth",
+       id: "databound/choropleth",
        title: "Choropleth Map 2.0",
        info: "Choropleth",
        icon: "visualizations/choropleth.png",
@@ -681,7 +681,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/harveyballmicrochart",
+       id: "databound/harveyballmicrochart",
        title: "Harvey Ball Micro Chart 2.0",
        info: "HarveyBallMicroChart",
        icon: "visualizations/harveyballmicrochart.png",
@@ -690,7 +690,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/hexbin",
+       id: "databound/hexbin",
        title: "Hexbin Chart 2.0",
        info: "HexBin",
        icon: "visualizations/hexbin.png",
@@ -699,7 +699,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/jpd3hier",
+       id: "databound/jpd3hier",
        title: "D3 Hierarchy 2.0",
        info: "jpd3hier",
        icon: "visualizations/jpd3hier.png",
@@ -708,7 +708,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/leaderboard",
+       id: "databound/leaderboard",
        title: "Data Leader Board",
        info: "LeaderBoard",
        icon: "visualizations/leaderboard.png",
@@ -717,7 +717,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/leafletmap",
+       id: "databound/leafletmap",
        title: "Leaflet Map",
        info: "LeafletMap",
        icon: "visualizations/leafletmap.png",
@@ -726,7 +726,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/locationintel",
+       id: "databound/locationintel",
        title: "Location Intelligence 2.0",
        info: "LocationIntel",
        icon: "visualizations/locationintel.png",
@@ -735,7 +735,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/marimekkochart",
+       id: "databound/marimekkochart",
        title: "Marimekko Chart 2.0",
        info: "MarimekkoChart",
        icon: "visualizations/marimekkochart.png",
@@ -744,7 +744,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/nicechart",
+       id: "databound/nicechart",
        title: "Nice Chart 2.0",
        info: "NiceChart",
        icon: "visualizations/nicechart.png",
@@ -753,7 +753,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/pictogram",
+       id: "databound/pictogram",
        title: "Pictogram",
        info: "Pictogram",
        icon: "visualizations/pictogram.png",
@@ -762,7 +762,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/processflow",
+       id: "databound/processflow",
        title: "Process Flow 2.0",
        info: "ProcessFlow",
        icon: "visualizations/processflow.png",
@@ -771,7 +771,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/progressbarset",
+       id: "databound/progressbarset",
        title: "Progress Bar Set 2.0",
        info: "ProgressBarSet",
        icon: "visualizations/progressbarset.png",
@@ -780,7 +780,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/resultsetinfo",
+       id: "databound/resultsetinfo",
        title: "Result Set Information 2.0",
        info: "ResultSetInfo",
        icon: "visualizations/resultsetinfo.png",
@@ -789,7 +789,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/scatterplot",
+       id: "databound/scatterplot",
        title: "Scatter Plot Chart 2.0",
        info: "ScatterPlot",
        icon: "visualizations/scatterplot.png",
@@ -798,7 +798,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/table2d",
+       id: "databound/table2d",
        title: "2D Crosstab 2.0",
        info: "Table2D",
        icon: "visualizations/table2d.png",
@@ -807,7 +807,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/table",
+       id: "databound/table",
        title: "Data Table 2.0",
        info: "Table",
        icon: "visualizations/table.png",
@@ -816,7 +816,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/tagcloud",
+       id: "databound/tagcloud",
        title: "Tag Cloud 2.0",
        info: "tagCloud",
        icon: "visualizations/tagcloud.png",
@@ -825,7 +825,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/topflopchart",
+       id: "databound/topflopchart",
        title: "Data Top Flop Chart",
        info: "TopFlopChart",
        icon: "visualizations/topflopchart.png",
@@ -834,7 +834,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/topflop",
+       id: "databound/topflop",
        title: "Data Top Flop",
        info: "TopFlop",
        icon: "visualizations/topflop.png",
@@ -843,7 +843,7 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
-       id: "visualizations/ui5table",
+       id: "databound/ui5table",
        title: "UI5 Table 2.0",
        info: "UI5Table",
        icon: "visualizations/ui5table.png",
@@ -885,8 +885,8 @@ sdkComponentModel["datasource"] = [
 	];
 sdkComponentModel["geovis"] = [
    {
-       id: "geo/maps",
-       title: "Maps",
+       id: "geovis/maps",
+       title: "Maps [Obsolete - Do not use]",
        info: "Maps",
        icon: "geo/maps.png",
        activeIcon: "geo/maps.png",
@@ -1137,7 +1137,7 @@ sdkComponentModel["prototypes"] = [
 	];
 sdkComponentModel["framework"] = [
    {
-       id: "framework/changelog_basics_aps",
+       id: "shared\changelog/changelog_basics_aps",
        title: "Basics - Aps",
        info: "ChangeLog_basics_aps",
        icon: "framework/changelog_basics_aps.png",
@@ -1146,7 +1146,7 @@ sdkComponentModel["framework"] = [
        numberUnit: "framework"
    },
     {
-       id: "framework/changelog_basics_res_common",
+       id: "shared\changelog/changelog_basics_res_common",
        title: "Basics - Common (Res)",
        info: "ChangeLog_basics_res_common",
        icon: "framework/changelog_basics_res_common.png",
@@ -1155,7 +1155,7 @@ sdkComponentModel["framework"] = [
        numberUnit: "framework"
    },
     {
-       id: "framework/changelog_basics_res_require",
+       id: "shared\changelog/changelog_basics_res_require",
        title: "Basics - Require",
        info: "ChangeLog_basics_res_require",
        icon: "framework/changelog_basics_res_require.png",
@@ -1164,7 +1164,7 @@ sdkComponentModel["framework"] = [
        numberUnit: "framework"
    },
     {
-       id: "framework/changelog_databound_res",
+       id: "shared\changelog/changelog_databound_res",
        title: "Databound - Community Common",
        info: "ChangeLog_databound_res",
        icon: "framework/changelog_databound_res.png",
@@ -1173,7 +1173,7 @@ sdkComponentModel["framework"] = [
        numberUnit: "framework"
    },
     {
-       id: "framework/changelog_databound_common",
+       id: "shared\changelog/changelog_databound_common",
        title: "Databound - Common (Res)",
        info: "ChangeLog_databound_common",
        icon: "framework/changelog_databound_common.png",
