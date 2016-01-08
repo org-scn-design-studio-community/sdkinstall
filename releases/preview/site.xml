@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.scn.community.sdk.feature.datasource_2.0.0.201511162306.jar" id="org.scn.community.sdk.feature.datasource" version="2.0.0.201511162306">
+   <feature url="features/org.scn.community.sdk.feature.main_3.0.0.201601081047.jar" id="org.scn.community.sdk.feature.main" version="3.0.0.201601081047">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature>
-   <feature url="features/org.scn.community.sdk.feature.geovis_2.0.0.201511162306.jar" id="org.scn.community.sdk.feature.geovis" version="2.0.0.201511162306">
-      <category name="com.sap.ip.bi.zen.sdk"/>
-   </feature>
-   <feature url="features/org.scn.community.sdk.feature.main_2.0.0.201511162306.jar" id="org.scn.community.sdk.feature.main" version="2.0.0.201511162306">
-      <category name="com.sap.ip.bi.zen.sdk"/>
-   </feature>
-   <feature url="features/org.scn.community.sdk.feature.prototypes_2.0.0.201511162306.jar" id="org.scn.community.sdk.feature.prototypes" version="2.0.0.201511162306">
+   <feature url="features/org.scn.community.sdk.feature.prototypes_3.0.0.201601081047.jar" id="org.scn.community.sdk.feature.prototypes" version="3.0.0.201601081047">
       <category name="com.sap.ip.bi.zen.sdk"/>
    </feature>
    <category-def name="com.sap.ip.bi.zen.sdk" label="com.sap.ip.bi.zen.sdk"/>
