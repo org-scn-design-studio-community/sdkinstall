@@ -213,6 +213,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DSortMode<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Sort Mode</B><br/>Sort Mode
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">KeyValue</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DVisibleRowCount<br/>[int]</B></td>
 <td width="*" class="property-title-tooltip"><B>Visible Row Count</B><br/>Visible Row Count
 
@@ -470,6 +479,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSortMode [<a href="#FUNCTION_getSortMode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSortModeAsString [<a href="#FUNCTION_getSortModeAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getVisibleRowCount [<a href="#FUNCTION_getVisibleRowCount">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
@@ -718,6 +739,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62270">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setRuleSimpleFormats [<a href="#FUNCTION_setRuleSimpleFormats">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">keys, separator, simpleFormat</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSortMode [<a href="#FUNCTION_setSortMode">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">sortMode</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSortModeByString [<a href="#FUNCTION_setSortModeByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">sortMode</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -1584,6 +1617,48 @@ var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nb
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DSelection);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;jsonObject.value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSortMode">org_scn_community_shared_Enumfield<br/>getSortMode</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Sort&nbsp;Mode&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSortMode;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSortModeAsString">String<br/>getSortModeAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Sort&nbsp;Mode&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DSortMode;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -2731,6 +2806,58 @@ if&nbsp;(this.DFormattingContentCondition&nbsp;===&nbsp;undefined&nbsp;||&nbsp;t
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if&nbsp;(this.DFormattingContentCondition&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DFormattingContentCondition&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DFormattingContentCondition&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DFormattingContentCondition);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].simpleFormat&nbsp;=&nbsp;simpleFormat;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DFormattingContentCondition&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSortMode">void<br/>setSortMode</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Sort&nbsp;Mode&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>sortMode</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Sort Mode</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DSortMode&nbsp;=&nbsp;sortMode;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSortModeByString">void<br/>setSortModeByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Sort&nbsp;Mode&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>sortMode</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Sort Mode</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DSortMode&nbsp;=&nbsp;sortMode;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
