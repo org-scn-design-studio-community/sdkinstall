@@ -2,20 +2,41 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../../doc.css">
 <link rel="stylesheet" type="text/css" href="../../tables.css">
-<title>Fiori Toolbar - SCN Design Studio Community</title>
-</head>
-<body class="comp-body">
-<div class="comp-main">
+<script id="sap-ui-bootstrap" type="text/javascript" 
+      /*src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"*/
+      src="https://sapui5.hana.ondemand.com/sdk/resources/sap-ui-core.js"
+      data-sap-ui-theme="sap_bluecrystal" data-sap-ui-libs="sap.m,sap.ui.commons,sap.suite.ui.commons,sap.ui.ux3"></script>
 
-	<div class="component-name">
+<script type="text/javascript" src="../js/ComponentMain.js"></script>
+<script type="text/javascript" src="../js/PostResponseParser/PostResponseParser.js"></script>
+<script type="text/javascript" src="../js/TimeLine.js"></script>
+<script type="text/javascript" src="../js/ga.js"></script>
+
+<script> 
+	requestChangeLog("../../../../sdkhelp/web/components/basics/fioritoolbar/changes/changelog.json");
+	requestContent("Blog", "../../../../sdkhelp/web/components/basics/fioritoolbar/blogs.json");
+	requestContent("Example", "../../../../sdkhelp/web/components/basics/fioritoolbar/examples.json");
+</script>
+
+<title>Fiori Toolbar 2.0 - SCN Design Studio Community</title>
+</head>
+<body class="comp-body" style="height:100%">
+<div class="comp-main" style="height:100%">
+
+ 	<div class="component-name">
 	FioriToolbar [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Fiori Toolbar
+	Fiori Toolbar 2.0
 	</div>
 
-	
-
+<div id="componentnav"></div>
+	<div id="intro">This page is giving short introduction to the component with summary of the change status (green/yellow/red)<div id="introStatus" height="120px"></div><br></div>
+	<div id="blogs" hidden="true" height="100%">This page is listing community blogs on this component, follow <a href="http://scn.sap.com/community/businessobjects-design-studio/blog/2015/04/08/introducing-blog-list-for-community-components" target="_blank">this link</a> to learn more.<div id="BlogsList" height="100%"></div></div>
+	<div id="changelog" hidden="true" height="100%">This page is listing all changes which have been done on this component with corresponding test status (green: ok, red: not ok, yellow: untested), follow <a href="http://scn.sap.com/community/businessobjects-design-studio/blog/2015/04/07/introducing-change-log-for-community-components" target="_blank">this link</a> to learn more.<div id="changelogList" height="100%"></div></div>
+	<div id="examples" hidden="true" height="100%">This page is listing all example applications with this component, follow <a href="http://scn.sap.com/community/businessobjects-design-studio/blog/2015/04/08/introducing-blog-list-for-community-components" target="_blank">this link</a> to learn more.<div id="ExamplesList" height="100%"></div></div>
+	<div id="about" hidden="true">This page will bring more "about" details (generated)</div>
+	<div id="technical" hidden="true">
 	<br/>
 	<div class="component-properties">VISIBLE PROPERTIES</div>
 
@@ -25,7 +46,7 @@
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>design<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Design</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Design</B><br/>Design
 <table style="width: 100%; border-top: 1px solid #000;" class="table1">
 <tr class="values-table-th"><th>Posible Value</th><th>Default</th></tr>
 <tr class="list-tr">
@@ -47,8 +68,17 @@
 
 </table>
 </td>
-<td width="60px" class="property-group">&nbsp;</td>
+<td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Auto</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>enabled<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Enabled</B><br/>Enabled
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -63,10 +93,10 @@
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>onitemselect<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>On Item Select</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>On Item Select</B><br/>On Item Select
 
 </td>
-<td width="60px" class="property-group">&nbsp;</td>
+<td width="60px" class="property-group">Events</td>
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
@@ -84,6 +114,36 @@
 <td valign="top" width="240px" class="function-short-name">addHeaderButton [<a href="#FUNCTION_addHeaderButton">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">buttonKey, buttonTitle, (showTitle), (icon), (buttonType)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">addItem [<a href="#FUNCTION_addItem">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">buttonKey, itemKey, itemText, (itemIcon)</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getHeaderClicked [<a href="#FUNCTION_getHeaderClicked">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getHeaderKeyClicked [<a href="#FUNCTION_getHeaderKeyClicked">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getItemClicked [<a href="#FUNCTION_getItemClicked">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getItemKeyClicked [<a href="#FUNCTION_getItemKeyClicked">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -105,39 +165,9 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">addItem [<a href="#FUNCTION_addItem">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">buttonKey, itemKey, itemText, (itemIcon)</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">removeItem [<a href="#FUNCTION_removeItem">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">buttonKey, itemKey</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getItemClicked [<a href="#FUNCTION_getItemClicked">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getItemKeyClicked [<a href="#FUNCTION_getItemKeyClicked">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getHeaderClicked [<a href="#FUNCTION_getHeaderClicked">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getHeaderKeyClicked [<a href="#FUNCTION_getHeaderKeyClicked">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 
@@ -152,46 +182,46 @@
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
 <td width="120px" class="property-name-type"><B>itemConfig<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Item Config</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Item Config</B><br/>Item Config
 
 </td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>selectedItem<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Item</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
+<td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>selectedHeader<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Header of Item</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Selected Header of Item</B><br/>Selected Header of Item
 
 </td>
-<td width="60px" class="property-group">&nbsp;</td>
-<td width="100px" class="property-default">&nbsp;</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>selectedItemKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Item Key</B><br/>&nbsp;
-
-</td>
-<td width="60px" class="property-group">&nbsp;</td>
+<td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>selectedHeaderKey<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>Selected Header Key of Item</B><br/>&nbsp;
+<td width="*" class="property-title-tooltip"><B>Selected Header Key of Item</B><br/>Selected Header Key of Item
 
 </td>
-<td width="60px" class="property-group">&nbsp;</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedItem<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Item</B><br/>Selected Item
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selectedItemKey<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Selected Item Key</B><br/>Selected Item Key
+
+</td>
+<td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">&nbsp;</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
@@ -205,8 +235,7 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<A NAME="FUNCTION_addHeaderButton">
-<td valign="top" width="220px" class="function-return-name">void<br/>addHeaderButton</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addHeaderButton">void<br/>addHeaderButton</td>
 <td valign="top" width="*" class="function-help">Add&nbsp;a&nbsp;header&nbsp;button<br/><div class='html-example'">Add&nbsp;or&nbsp;update&nbsp;a&nbsp;header&nbsp;button&nbsp;by&nbsp;key&nbsp;'MENU'.<br/><div class='html-code'>FIORITOOLBAR_1.addHeaderButton("MENU","Menu",false,"sap-icon://menu2","Emphasized");<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -214,27 +243,27 @@
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>buttonKey</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Button Key</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>buttonTitle</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Button Title</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>showTitle</B></td>
 <td width="120px" class="parameter-type"><B>boolean [ optional ]</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help"> Show Title </td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>icon</B></td>
 <td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Icon</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>buttonType</B></td>
 <td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Button Type</td>
 </tr>
 
 </TABLE>
@@ -252,84 +281,7 @@ var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nb
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_removeAllButtons">
-<td valign="top" width="220px" class="function-return-name">void<br/>removeAllButtons</td>
-<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Button<br/><div class='html-example'">Remove&nbsp;all&nbsp;button<br/><div class='html-code'>FIORITOOLBAR_1.removeAllButtons();<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-itemConfig&nbsp;=&nbsp;JSON.stringify([]);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_removeAllItems">
-<td valign="top" width="220px" class="function-return-name">void<br/>removeAllItems</td>
-<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Items&nbsp;in&nbsp;a&nbsp;header&nbsp;button<br/><div class='html-example'">Remove&nbsp;all&nbsp;items&nbsp;in&nbsp;header&nbsp;button&nbsp;'MENU'<br/><div class='html-code'>FIORITOOLBAR_1.removeAllItems("Menu");<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>buttonKey</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].key&nbsp;==&nbsp;buttonKey)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1)&nbsp;o[matchIndex].items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;itemConfig&nbsp;=&nbsp;JSON.stringify(o);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_removeHeaderButton">
-<td valign="top" width="220px" class="function-return-name">void<br/>removeHeaderButton</td>
-<td valign="top" width="*" class="function-help">Remove&nbsp;a&nbsp;button<br/><div class='html-example'">Remove&nbsp;a&nbsp;header&nbsp;button&nbsp;with&nbsp;key&nbsp;'MENU'<br/><div class='html-code'>FIORITOOLBAR_1.removeHeaderButton("MENU");<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>buttonKey</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].key&nbsp;==&nbsp;buttonKey)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1)&nbsp;o.splice(matchIndex,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;itemConfig&nbsp;=&nbsp;JSON.stringify(o);
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_addItem">
-<td valign="top" width="220px" class="function-return-name">void<br/>addItem</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addItem">void<br/>addItem</td>
 <td valign="top" width="*" class="function-help">Add&nbsp;an&nbsp;item&nbsp;to&nbsp;a&nbsp;header&nbsp;button.&nbsp;&nbsp;Will&nbsp;add&nbsp;the&nbsp;header&nbsp;button&nbsp;if&nbsp;it&nbsp;does&nbsp;not&nbsp;yet&nbsp;exist.<br/><div class='html-example'">Add&nbsp;an&nbsp;item&nbsp;called&nbsp;'Help'&nbsp;to&nbsp;header&nbsp;button&nbsp;with&nbsp;key&nbsp;'MENU'&nbsp;with&nbsp;an&nbsp;icon&nbsp;sys-help-2<br/><div class='html-code'>FIORITOOLBAR_1.addItem("MENU",&nbsp;"help",&nbsp;"Help",&nbsp;"sap-icon://sys-help-2");<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
@@ -337,22 +289,22 @@ var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nb
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>buttonKey</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Button Key</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>itemKey</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Item Key</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>itemText</B></td>
 <td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Item Text</td>
 </tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>itemIcon</B></td>
 <td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
-<td width="*" class="parameter-help"></td>
+<td width="*" class="parameter-help">Item Icon</td>
 </tr>
 
 </TABLE>
@@ -370,84 +322,7 @@ var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nb
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_removeItem">
-<td valign="top" width="220px" class="function-return-name">void<br/>removeItem</td>
-<td valign="top" width="*" class="function-help">Removes&nbsp;an&nbsp;item&nbsp;from&nbsp;a&nbsp;header&nbsp;button.<br/><div class='html-example'">Remove&nbsp;an&nbsp;item&nbsp;with&nbsp;key&nbsp;'HELP'&nbsp;from&nbsp;header&nbsp;button&nbsp;with&nbsp;key&nbsp;'MENU'<br/><div class='html-code'>FIORITOOLBAR_1.removeItem("MENU",&nbsp;"HELP");<br></div></div><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>buttonKey</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>itemKey</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].key&nbsp;==&nbsp;buttonKey)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&nbsp;!=&nbsp;-1&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;o[matchIndex].items;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;items.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(items[i].key&nbsp;==&nbsp;itemKey)&nbsp;itemIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(itemIndex&gt;-1)&nbsp;items.splice(itemIndex,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;itemConfig&nbsp;=&nbsp;JSON.stringify(o);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_getItemClicked">
-<td valign="top" width="220px" class="function-return-name">String<br/>getItemClicked</td>
-<td valign="top" width="*" class="function-help">Get&nbsp;item&nbsp;clicked.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.selectedItem;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_getItemKeyClicked">
-<td valign="top" width="220px" class="function-return-name">String<br/>getItemKeyClicked</td>
-<td valign="top" width="*" class="function-help">Get&nbsp;item&nbsp;key&nbsp;clicked.<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.selectedItemKey;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<A NAME="FUNCTION_getHeaderClicked">
-<td valign="top" width="220px" class="function-return-name">String<br/>getHeaderClicked</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHeaderClicked">String<br/>getHeaderClicked</td>
 <td valign="top" width="*" class="function-help">Get&nbsp;header&nbsp;of&nbsp;and&nbsp;item&nbsp;clicked.<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -468,8 +343,7 @@ return&nbsp;this.selectedHeader;
 </td></tr>
 
 <tr class="function-table-tr">
-<A NAME="FUNCTION_getHeaderKeyClicked">
-<td valign="top" width="220px" class="function-return-name">String<br/>getHeaderKeyClicked</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHeaderKeyClicked">String<br/>getHeaderKeyClicked</td>
 <td valign="top" width="*" class="function-help">Get&nbsp;header&nbsp;key&nbsp;of&nbsp;and&nbsp;item&nbsp;clicked.<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -489,9 +363,159 @@ return&nbsp;this.selectedHeaderKey;
 &nbsp;
 </td></tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getItemClicked">String<br/>getItemClicked</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;item&nbsp;clicked.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selectedItem;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getItemKeyClicked">String<br/>getItemKeyClicked</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;item&nbsp;key&nbsp;clicked.<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selectedItemKey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllButtons">void<br/>removeAllButtons</td>
+<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Button<br/><div class='html-example'">Remove&nbsp;all&nbsp;button<br/><div class='html-code'>FIORITOOLBAR_1.removeAllButtons();<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+itemConfig&nbsp;=&nbsp;JSON.stringify([]);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeAllItems">void<br/>removeAllItems</td>
+<td valign="top" width="*" class="function-help">Remove&nbsp;All&nbsp;Items&nbsp;in&nbsp;a&nbsp;header&nbsp;button<br/><div class='html-example'">Remove&nbsp;all&nbsp;items&nbsp;in&nbsp;header&nbsp;button&nbsp;'MENU'<br/><div class='html-code'>FIORITOOLBAR_1.removeAllItems("Menu");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>buttonKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Button Key</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].key&nbsp;==&nbsp;buttonKey)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1)&nbsp;o[matchIndex].items&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;itemConfig&nbsp;=&nbsp;JSON.stringify(o);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeHeaderButton">void<br/>removeHeaderButton</td>
+<td valign="top" width="*" class="function-help">Remove&nbsp;a&nbsp;button<br/><div class='html-example'">Remove&nbsp;a&nbsp;header&nbsp;button&nbsp;with&nbsp;key&nbsp;'MENU'<br/><div class='html-code'>FIORITOOLBAR_1.removeHeaderButton("MENU");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>buttonKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Button Key</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].key&nbsp;==&nbsp;buttonKey)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&gt;-1)&nbsp;o.splice(matchIndex,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;itemConfig&nbsp;=&nbsp;JSON.stringify(o);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_removeItem">void<br/>removeItem</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;an&nbsp;item&nbsp;from&nbsp;a&nbsp;header&nbsp;button.<br/><div class='html-example'">Remove&nbsp;an&nbsp;item&nbsp;with&nbsp;key&nbsp;'HELP'&nbsp;from&nbsp;header&nbsp;button&nbsp;with&nbsp;key&nbsp;'MENU'<br/><div class='html-code'>FIORITOOLBAR_1.removeItem("MENU",&nbsp;"HELP");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>buttonKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Button Key</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>itemKey</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Item Key</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;o&nbsp;=&nbsp;eval(this.itemConfig);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].key&nbsp;==&nbsp;buttonKey)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex&nbsp;!=&nbsp;-1&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;items&nbsp;=&nbsp;o[matchIndex].items;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;items.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(items[i].key&nbsp;==&nbsp;itemKey)&nbsp;itemIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(itemIndex&gt;-1)&nbsp;items.splice(itemIndex,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;itemConfig&nbsp;=&nbsp;JSON.stringify(o);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
 
 	</TABLE>
-
+	<div style="height:20px!important"> THE END </div>
+	</div>
+	
+	<div style="height:60px!important"></div>
+	
 </div>
 </body>
 </html>
