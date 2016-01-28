@@ -942,6 +942,15 @@ sdkComponentModel["utils"] = [
        numberUnit: "utils"
    },
     {
+       id: "utils/pdfprint",
+       title: "PDF Print 2.0",
+       info: "PdfPrint",
+       icon: "utils/pdfprint.png",
+       activeIcon: "utils/pdfprint.png",
+       number: " ",
+       numberUnit: "utils"
+   },
+    {
        id: "utils/postresponseparser",
        title: "Post Response Parser 2.0",
        info: "PostResponseParser",
