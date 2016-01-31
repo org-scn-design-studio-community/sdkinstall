@@ -897,56 +897,11 @@ sdkComponentModel["geovis"] = [
 	];
 sdkComponentModel["utils"] = [
    {
-       id: "utils/array",
-       title: "Array Utility 0.X",
-       info: "Array",
-       icon: "utils/array.png",
-       activeIcon: "utils/array.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
        id: "utils/clientinformation",
        title: "Client Information 0.X",
        info: "ClientInformation",
        icon: "utils/clientinformation.png",
        activeIcon: "utils/clientinformation.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/collection",
-       title: "Collection Utility 0.X",
-       info: "Collection",
-       icon: "utils/collection.png",
-       activeIcon: "utils/collection.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/componentmanager",
-       title: "Component Manager 0.X",
-       info: "ComponentManager",
-       icon: "utils/componentmanager.png",
-       activeIcon: "utils/componentmanager.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/customcsscollector",
-       title: "Custom Css Collector 0.X",
-       info: "CustomCssCollector",
-       icon: "utils/customcsscollector.png",
-       activeIcon: "utils/customcsscollector.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/datasourcehelper",
-       title: "Data Source Helper 2.0",
-       info: "DataSourceHelper",
-       icon: "utils/datasourcehelper.png",
-       activeIcon: "utils/datasourcehelper.png",
        number: " ",
        numberUnit: "utils"
    },
@@ -965,24 +920,6 @@ sdkComponentModel["utils"] = [
        info: "FlowLayouter",
        icon: "utils/flowlayouter.png",
        activeIcon: "utils/flowlayouter.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/jsonobject",
-       title: "Json Object",
-       info: "JsonObject",
-       icon: "utils/jsonobject.png",
-       activeIcon: "utils/jsonobject.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/math",
-       title: "Math Utility 0.X",
-       info: "Math",
-       icon: "utils/math.png",
-       activeIcon: "utils/math.png",
        number: " ",
        numberUnit: "utils"
    },
@@ -1019,24 +956,6 @@ sdkComponentModel["utils"] = [
        info: "PostResponseParser",
        icon: "utils/postresponseparser.png",
        activeIcon: "utils/postresponseparser.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/realdate",
-       title: "Real Date 0.X",
-       info: "RealDate",
-       icon: "utils/realdate.png",
-       activeIcon: "utils/realdate.png",
-       number: " ",
-       numberUnit: "utils"
-   },
-    {
-       id: "utils/simpledate",
-       title: "Simple Date 0.X",
-       info: "SimpleDate",
-       icon: "utils/simpledate.png",
-       activeIcon: "utils/simpledate.png",
        number: " ",
        numberUnit: "utils"
    },
