@@ -18,7 +18,7 @@
 	requestContent("Example", "../../../../sdkhelp/web/components/basics/checkboxgroup/examples.json");
 </script>
 
-<title>Check Box Group 2.0 - SCN Design Studio Community</title>
+<title>Check Box Group - SCN Design Studio Community</title>
 </head>
 <body class="comp-body" style="height:100%">
 <div class="comp-main" style="height:100%">
@@ -27,7 +27,7 @@
 	CheckBoxGroup [ScnCommunityBasics]
 	</div>
 	<div class="component-title">
-	Check Box Group 2.0
+	Check Box Group
 	</div>
 
 <div id="componentnav"></div>
@@ -51,6 +51,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58363">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>checkboxWidth<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>Checkbox Width (Horizontal)</B><br/>Checkbox Width (Horizontal)
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">225</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>elements<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Elements</B><br/>Elements
 
@@ -75,6 +84,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58363">Design
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">Size_16px</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>selLayout<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Layout</B><br/>Layout
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">VerticalLayout</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -134,6 +152,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58363">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCheckboxWidth [<a href="#FUNCTION_getCheckboxWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getElementAtIndex [<a href="#FUNCTION_getElementAtIndex">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">index0based</td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -188,6 +212,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58363">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelLayout [<a href="#FUNCTION_getSelLayout">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelLayoutAsString [<a href="#FUNCTION_getSelLayoutAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">insertElement [<a href="#FUNCTION_insertElement">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">insertionIndex0based, key, text, url, selected</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -208,6 +244,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58363">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">removeElement [<a href="#FUNCTION_removeElement">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCheckboxWidth [<a href="#FUNCTION_setCheckboxWidth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">checkboxWidth</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -262,6 +304,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58363">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setPictureSizeByString [<a href="#FUNCTION_setPictureSizeByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">pictureSize</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelLayout [<a href="#FUNCTION_setSelLayout">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selLayout</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelLayoutByString [<a href="#FUNCTION_setSelLayoutByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">selLayout</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -382,6 +436,27 @@ if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;=
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.cleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsArray&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elements&nbsp;=&nbsp;JSON.stringify(elementsArray);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCheckboxWidth">int<br/>getCheckboxWidth</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Checkbox&nbsp;Width&nbsp;(Horizontal)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.checkboxWidth;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -598,6 +673,48 @@ return&nbsp;this.pictureSize;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelLayout">org_scn_community_shared_Enumfield<br/>getSelLayout</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Layout&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selLayout;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelLayoutAsString">String<br/>getSelLayoutAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Layout&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selLayout;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_insertElement">void<br/>insertElement</td>
 <td valign="top" width="*" class="function-help">Insert&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;index.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;insert&nbsp;a&nbsp;root&nbsp;element<br/><div class='html-code'>CHECKBOXGROUP.insertElement(index&nbsp;[int],&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String],&nbsp;selected&nbsp;[boolean]);<br></div></div><br/>
 
@@ -705,6 +822,32 @@ this.cleanAll&nbsp;=&nbsp;true;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elemen
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if&nbsp;(this.elements&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elements&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.elements&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elements);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;remove&nbsp;all&nbsp;items&nbsp;with&nbsp;this&nbsp;parent<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;elementsJson.length&nbsp;-&nbsp;1;&nbsp;i&nbsp;&gt;=&nbsp;0;&nbsp;i--){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].parentKey&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.splice(i,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elements&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCheckboxWidth">void<br/>setCheckboxWidth</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Checkbox&nbsp;Width&nbsp;(Horizontal)&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>checkboxWidth</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help">Checkbox Width (Horizontal)</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.checkboxWidth&nbsp;=&nbsp;checkboxWidth;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -979,6 +1122,58 @@ this.pictureSize&nbsp;=&nbsp;pictureSize;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.pictureSize&nbsp;=&nbsp;pictureSize;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelLayout">void<br/>setSelLayout</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Layout&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selLayout</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Layout</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.selLayout&nbsp;=&nbsp;selLayout;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelLayoutByString">void<br/>setSelLayoutByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Layout&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>selLayout</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Layout</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.selLayout&nbsp;=&nbsp;selLayout;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
