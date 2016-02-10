@@ -67,7 +67,7 @@ sdkComponentModel["basics"] = [
    },
     {
        id: "basics/checkboxgroup",
-       title: "Check Box Group 2.0",
+       title: "Check Box Group",
        info: "CheckBoxGroup",
        icon: "basics/checkboxgroup.png",
        activeIcon: "basics/checkboxgroup.png",
@@ -902,6 +902,15 @@ sdkComponentModel["utils"] = [
        info: "ClientInformation",
        icon: "utils/clientinformation.png",
        activeIcon: "utils/clientinformation.png",
+       number: " ",
+       numberUnit: "utils"
+   },
+    {
+       id: "utils/componentlayouter",
+       title: "Component Layouter",
+       info: "ComponentLayouter",
+       icon: "utils/componentlayouter.png",
+       activeIcon: "utils/componentlayouter.png",
        number: " ",
        numberUnit: "utils"
    },

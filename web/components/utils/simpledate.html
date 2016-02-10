@@ -83,6 +83,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57391">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCurrentTime [<a href="#FUNCTION_getCurrentTime">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getDay [<a href="#FUNCTION_getDay">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
@@ -286,6 +292,27 @@ var&nbsp;resultString&nbsp;=&nbsp;formatPattern;<br/>&nbsp;&nbsp;&nbsp;&nbsp;res
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;dayJson.w;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentTime">String<br/>getCurrentTime</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;d&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;timeString&nbsp;=&nbsp;d.getHours()+&quot;:&quot;+d.getMinutes()+&quot;:&quot;+d.getSeconds()+&quot;.&quot;+d.getMilliseconds();<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;timeString;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

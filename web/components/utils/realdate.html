@@ -89,6 +89,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57391">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCurrentTime [<a href="#FUNCTION_getCurrentTime">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getDay [<a href="#FUNCTION_getDay">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
@@ -323,6 +329,27 @@ this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.internal_initializeNow();<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.date.recalculate();<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.calendarWeek;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentTime">String<br/>getCurrentTime</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;d&nbsp;=&nbsp;new&nbsp;Date();<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;timeString&nbsp;=&nbsp;d.getHours()+&quot;:&quot;+d.getMinutes()+&quot;:&quot;+d.getSeconds()+&quot;.&quot;+d.getMilliseconds();<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;timeString;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -573,7 +600,7 @@ this.year&nbsp;=&nbsp;year;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.month&nbsp;=&nbsp;m
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.internalDate&nbsp;=&nbsp;internalDate;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;the&nbsp;most&nbsp;primitive&nbsp;way&nbsp;to&nbsp;get&nbsp;integers&nbsp;from&nbsp;the&nbsp;internal&nbsp;date&nbsp;string<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;year&nbsp;=&nbsp;parseInt(internalDate.substring(0,4));<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;monthString&nbsp;=&nbsp;internalDate.substring(4,6);<br/>&nbsp;&nbsp;&nbsp;&nbsp;monthString&nbsp;=&nbsp;monthString.replace(&quot;0&quot;,&nbsp;&quot;&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;month&nbsp;=&nbsp;parseInt(monthString);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dayString&nbsp;=&nbsp;internalDate.substring(6,8);<br/>&nbsp;&nbsp;&nbsp;&nbsp;dayString&nbsp;=&nbsp;dayString.replace(&quot;0&quot;,&nbsp;&quot;&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;day&nbsp;=&nbsp;parseInt(dayString);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.initialize(year,&nbsp;month,&nbsp;day);
+this.internalDate&nbsp;=&nbsp;internalDate;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;the&nbsp;most&nbsp;primitive&nbsp;way&nbsp;to&nbsp;get&nbsp;integers&nbsp;from&nbsp;the&nbsp;internal&nbsp;date&nbsp;string<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;year&nbsp;=&nbsp;parseInt(internalDate.substring(0,4));<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;monthString&nbsp;=&nbsp;internalDate.substring(4,6);<br/>&nbsp;&nbsp;&nbsp;&nbsp;monthString&nbsp;=&nbsp;monthString.replace(&quot;0&quot;,&nbsp;&quot;&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;month&nbsp;=&nbsp;parseInt(monthString);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dayString&nbsp;=&nbsp;internalDate.substring(6,8);<br/>&nbsp;&nbsp;&nbsp;&nbsp;dayString&nbsp;=&nbsp;dayString.replace(&quot;0&quot;,&nbsp;&quot;&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;day&nbsp;=&nbsp;parseInt(dayString);<br/>&nbsp;&nbsp;&nbsp;&nbsp;APPLICATION.createInfoMessage(&quot;Init:&nbsp;&quot;&nbsp;+&nbsp;year&nbsp;+&nbsp;&quot;,&quot;&nbsp;+&nbsp;month&nbsp;+&nbsp;&quot;,&nbsp;&quot;&nbsp;+&nbsp;day);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.initialize(year,&nbsp;month,&nbsp;day);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
