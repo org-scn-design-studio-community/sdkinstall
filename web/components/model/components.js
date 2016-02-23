@@ -672,6 +672,15 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
+       id: "databound/calendarviz",
+       title: "Calendar Visualization",
+       info: "CalendarViz",
+       icon: "visualizations/calendarviz.png",
+       activeIcon: "visualizations/calendarviz.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
        id: "databound/choropleth",
        title: "Choropleth Map 2.0",
        info: "Choropleth",

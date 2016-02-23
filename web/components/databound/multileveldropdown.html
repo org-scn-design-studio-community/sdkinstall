@@ -194,15 +194,21 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getHierMemberAsJsonString [<a href="#FUNCTION_getHierMemberAsJsonString">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getHierarchyMembers [<a href="#FUNCTION_getHierarchyMembers">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.HierarchyMemberArray</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getHierarchyMembersAsJsonString [<a href="#FUNCTION_getHierarchyMembersAsJsonString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getHierarchyMembers [<a href="#FUNCTION_getHierarchyMembers">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getHierarchyMembersSource [<a href="#FUNCTION_getHierarchyMembersSource">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">org.scn.community.shared.HierarchyMemberArray</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -243,12 +249,6 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getSingleRootNodeName [<a href="#FUNCTION_getSingleRootNodeName">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getSourceHierarchyMemebers [<a href="#FUNCTION_getSourceHierarchyMemebers">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -494,7 +494,28 @@ return&nbsp;this.selChar;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHierMemberAsJsonString">String<br/>getHierMemberAsJsonString</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHierarchyMembers">org.scn.community.shared.HierarchyMemberArray<br/>getHierarchyMembers</td>
+<td valign="top" width="*" class="function-help">Return&nbsp;an&nbsp;array&nbsp;with&nbsp;all&nbsp;the&nbsp;hierarchy&nbsp;members.&nbsp;Array&nbsp;support&nbsp;forEach()<br/>Elements&nbsp;are&nbsp;typed&nbsp;and&nbsp;you&nbsp;can&nbsp;access&nbsp;attributes&nbsp;like:<br/>-&nbsp;ID:&nbsp;integer,&nbsp;internal&nbsp;ID<br>-&nbsp;<strong>key</strong>:&nbsp;hierarchy&nbsp;node&nbsp;key.&nbsp;Can&nbsp;be&nbsp;used&nbsp;in&nbsp;a&nbsp;setFilter&nbsp;or&nbsp;setVariable&nbsp;method&nbsp;call<br>-&nbsp;<strong>text</strong>:&nbsp;text&nbsp;of&nbsp;the&nbsp;node.&nbsp;Format&nbsp;depends&nbsp;on&nbsp;the&nbsp;hierarchy&nbsp;display.<br>If&nbsp;text+key,&nbsp;text&nbsp;will&nbsp;contains&nbsp;"text|key".&nbsp;If&nbsp;just&nbsp;text,&nbsp;you'll&nbsp;get&nbsp;only&nbsp;the&nbsp;text.<br>-&nbsp;<strong>Level</strong>:&nbsp;Depth&nbsp;of&nbsp;the&nbsp;node/leaf,&nbsp;starts&nbsp;at&nbsp;0<br>-&nbsp;<strong>Type</strong>:&nbsp;infoobject&nbsp;type:&nbsp;HIERARCHY_NODE&nbsp;or&nbsp;technical&nbsp;name&nbsp;of&nbsp;the&nbsp;infoobject<br>-&nbsp;<strong>parentID</strong>:&nbsp;parent&nbsp;internal&nbsp;ID<br>-&nbsp;<strong>parentKey</strong>:&nbsp;Hierarchy&nbsp;node&nbsp;key,&nbsp;BW&nbsp;value.&nbsp;Can&nbsp;be&nbsp;used&nbsp;by&nbsp;setFilter&nbsp;etc.<br>-&nbsp;<strong>isLeaf</strong>:&nbsp;true&nbsp;or&nbsp;false<br>-&nbsp;<strong>nodeState</strong>:&nbsp;COLLAPSED&nbsp;/&nbsp;EXPANDED&nbsp;for&nbsp;nodes&nbsp;or&nbsp;leaf&nbsp;for&nbsp;leafs.<br><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;content&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;lifoParents&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;previousMember&nbsp;&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//nothing&nbsp;in&nbsp;the&nbsp;jsonString.<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.jsonDimensionHierMembers&nbsp;==&nbsp;&quot;&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;content;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//Parse&nbsp;the&nbsp;Json&nbsp;Array<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dimension&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;JSON.parse(this.jsonDimensionHierMembers);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;lastLevel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;dimension.members.length;&nbsp;i++&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;hierMember&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;member&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;dimension.members[i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('level'))<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.level&nbsp;=&nbsp;member.level;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.level&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;member.key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;member.text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('parent')&nbsp;&amp;&amp;&nbsp;i&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentKey&nbsp;&nbsp;&nbsp;=&nbsp;member.parent;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentID&nbsp;&nbsp;&nbsp;=&nbsp;content&nbsp;[i-1].ID;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentKey&nbsp;&nbsp;&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentID&nbsp;&nbsp;&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('type'))<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.type&nbsp;&nbsp;&nbsp;=&nbsp;member.type;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;&nbsp;&nbsp;hierMember.type&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;dimension.key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('nodeState'))<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.nodeState&nbsp;=&nbsp;member.nodeState;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;&nbsp;&nbsp;hierMember.nodeState&nbsp;=&nbsp;&quot;leaf&quot;;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.isLeaf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;!member.hasOwnProperty('nodeState');<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content.push(hierMember);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;content;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHierarchyMembersAsJsonString">String<br/>getHierarchyMembersAsJsonString</td>
 <td valign="top" width="*" class="function-help">Return&nbsp;all&nbsp;the&nbsp;hierarchy&nbsp;members&nbsp;as&nbsp;a&nbsp;JSON&nbsp;object.<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -515,8 +536,8 @@ return&nbsp;JSON.stringify(this.getHierarchyMembers());
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHierarchyMembers">org.scn.community.shared.HierarchyMemberArray<br/>getHierarchyMembers</td>
-<td valign="top" width="*" class="function-help">Return&nbsp;an&nbsp;array&nbsp;with&nbsp;all&nbsp;the&nbsp;hierarchy&nbsp;members.&nbsp;Array&nbsp;support&nbsp;forEach()<br/>Elements&nbsp;are&nbsp;typed&nbsp;and&nbsp;you&nbsp;can&nbsp;access&nbsp;attributes&nbsp;like:<br/>-&nbsp;ID:&nbsp;integer,&nbsp;internal&nbsp;ID<br>-&nbsp;<strong>key</strong>:&nbsp;hierarchy&nbsp;node&nbsp;key.&nbsp;Can&nbsp;be&nbsp;used&nbsp;in&nbsp;a&nbsp;setFilter&nbsp;or&nbsp;setVariable&nbsp;method&nbsp;call<br>-&nbsp;<strong>text</strong>:&nbsp;text&nbsp;of&nbsp;the&nbsp;node.&nbsp;Format&nbsp;depends&nbsp;on&nbsp;the&nbsp;hierarchy&nbsp;display.<br>If&nbsp;text+key,&nbsp;text&nbsp;will&nbsp;contains&nbsp;"text|key".&nbsp;If&nbsp;just&nbsp;text,&nbsp;you'll&nbsp;get&nbsp;only&nbsp;the&nbsp;text.<br>-&nbsp;<strong>Level</strong>:&nbsp;Depth&nbsp;of&nbsp;the&nbsp;node/leaf,&nbsp;starts&nbsp;at&nbsp;0<br>-&nbsp;<strong>Type</strong>:&nbsp;infoobject&nbsp;type:&nbsp;HIERARCHY_NODE&nbsp;or&nbsp;technical&nbsp;name&nbsp;of&nbsp;the&nbsp;infoobject<br>-&nbsp;<strong>parentID</strong>:&nbsp;parent&nbsp;internal&nbsp;ID<br>-&nbsp;<strong>parentKey</strong>:&nbsp;Hierarchy&nbsp;node&nbsp;key,&nbsp;BW&nbsp;value.&nbsp;Can&nbsp;be&nbsp;used&nbsp;by&nbsp;setFilter&nbsp;etc.<br>-&nbsp;<strong>isLeaf</strong>:&nbsp;true&nbsp;or&nbsp;false<br>-&nbsp;<strong>nodeState</strong>:&nbsp;COLLAPSED&nbsp;/&nbsp;EXPANDED&nbsp;for&nbsp;nodes&nbsp;or&nbsp;leaf&nbsp;for&nbsp;leafs.<br><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHierarchyMembersSource">String<br/>getHierarchyMembersSource</td>
+<td valign="top" width="*" class="function-help">/Return&nbsp;the&nbsp;hierarchy&nbsp;members&nbsp;in&nbsp;the&nbsp;native&nbsp;DS&nbsp;format&nbsp;(JSON)<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -528,7 +549,7 @@ return&nbsp;JSON.stringify(this.getHierarchyMembers());
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;content&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;lifoParents&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;previousMember&nbsp;&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//nothing&nbsp;in&nbsp;the&nbsp;jsonString.<br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.jsonDimensionHierMembers&nbsp;==&nbsp;&quot;&quot;)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;content;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//Parse&nbsp;the&nbsp;Json&nbsp;Array<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;dimension&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;JSON.parse(this.jsonDimensionHierMembers);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;lastLevel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;dimension.members.length;&nbsp;i++&nbsp;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;hierMember&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;{};<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;member&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;dimension.members[i];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('level'))<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.level&nbsp;=&nbsp;member.level;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.level&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;member.key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;member.text;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('parent')&nbsp;&amp;&amp;&nbsp;i&nbsp;&gt;&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentKey&nbsp;&nbsp;&nbsp;=&nbsp;member.parent;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentID&nbsp;&nbsp;&nbsp;=&nbsp;content&nbsp;[i-1].ID;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentKey&nbsp;&nbsp;&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.parentID&nbsp;&nbsp;&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('type'))<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.type&nbsp;&nbsp;&nbsp;=&nbsp;member.type;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;&nbsp;&nbsp;hierMember.type&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;dimension.key;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(member.hasOwnProperty('nodeState'))<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.nodeState&nbsp;=&nbsp;member.nodeState;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;&nbsp;&nbsp;hierMember.nodeState&nbsp;=&nbsp;&quot;leaf&quot;;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hierMember.isLeaf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;!member.hasOwnProperty('nodeState');<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content.push(hierMember);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;content;
+return&nbsp;this.jsonDimensionHierMembers;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -676,27 +697,6 @@ return&nbsp;this.SelectedElemText;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.singleRootNodeName;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSourceHierarchyMemebers">String<br/>getSourceHierarchyMemebers</td>
-<td valign="top" width="*" class="function-help">/Return&nbsp;the&nbsp;hierarchy&nbsp;members&nbsp;in&nbsp;the&nbsp;native&nbsp;DS&nbsp;format&nbsp;(JSON)<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-return&nbsp;this.jsonDimensionHierMembers;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
