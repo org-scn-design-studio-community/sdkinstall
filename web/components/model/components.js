@@ -273,6 +273,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/mockup",
+       title: "Rapid MockUp",
+       info: "MockUp",
+       icon: "basics/mockup.png",
+       activeIcon: "basics/mockup.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/modalbrowser",
        title: "Modal Browser 0.X",
        info: "ModalBrowser",
