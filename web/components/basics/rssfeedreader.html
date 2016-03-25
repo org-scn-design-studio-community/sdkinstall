@@ -52,6 +52,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>cssUrl<br/>[Url]</B></td>
+<td width="*" class="property-title-tooltip"><B>CSS URL</B><br/>CSS URL
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>feedUrl<br/>[Url]</B></td>
 <td width="*" class="property-title-tooltip"><B>RSS Feed URL</B><br/>RSS Feed URL
 
@@ -99,6 +108,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getCssUrl [<a href="#FUNCTION_getCssUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getFeedUrl [<a href="#FUNCTION_getFeedUrl">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -114,6 +129,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <td valign="top" width="240px" class="function-short-name">isUseBuildInXsl [<a href="#FUNCTION_isUseBuildInXsl">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setCssUrl [<a href="#FUNCTION_setCssUrl">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">cssUrl</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -154,6 +175,27 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCssUrl">String<br/>getCssUrl</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;CSS&nbsp;URL&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.cssUrl;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFeedUrl">String<br/>getFeedUrl</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;RSS&nbsp;Feed&nbsp;URL&nbsp;Property<br/><br/>
 
@@ -210,6 +252,32 @@ return&nbsp;this.xslUrl;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.useBuildInXsl;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setCssUrl">void<br/>setCssUrl</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;CSS&nbsp;URL&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>cssUrl</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">CSS URL</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.cssUrl&nbsp;=&nbsp;cssUrl;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
