@@ -78,6 +78,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62339">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>pageSplit<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Split on More Pages</B><br/>Split on More Pages
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>pdfMethod<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>PDF Export Type</B><br/>PDF Export Type
 
@@ -212,6 +221,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62339">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isPageSplit [<a href="#FUNCTION_isPageSplit">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">print [<a href="#FUNCTION_print">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -244,6 +259,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62339">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setOrientationByString [<a href="#FUNCTION_setOrientationByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">orientation</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setPageSplit [<a href="#FUNCTION_setPageSplit">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">pageSplit</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -597,6 +618,27 @@ return&nbsp;this.unit;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isPageSplit">boolean<br/>isPageSplit</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Split&nbsp;on&nbsp;More&nbsp;Pages&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.pageSplit;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_print">void<br/>print</td>
 <td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Trigger&nbsp;Execution&nbsp;of&nbsp;the&nbsp;given&nbsp;URL&nbsp;and&nbsp;parameter&nbsp;list<br/><br/>
 
@@ -741,6 +783,32 @@ this.orientation&nbsp;=&nbsp;orientation;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.orientation&nbsp;=&nbsp;orientation;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setPageSplit">void<br/>setPageSplit</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Split&nbsp;on&nbsp;More&nbsp;Pages&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>pageSplit</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Split on More Pages</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.pageSplit&nbsp;=&nbsp;pageSplit;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
