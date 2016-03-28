@@ -102,6 +102,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/donut",
+       title: "Donut",
+       info: "Donut",
+       icon: "basics/donut.png",
+       activeIcon: "basics/donut.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/dragdroparea",
        title: "Drag Drop Area 2.0",
        info: "DragDropArea",
