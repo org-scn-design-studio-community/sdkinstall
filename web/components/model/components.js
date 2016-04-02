@@ -1053,6 +1053,15 @@ sdkComponentModel["prototypes"] = [
        numberUnit: "prototypes"
    },
     {
+       id: "prototypes/googlecandle",
+       title: "Google Candle Chart (Prototype)",
+       info: "GoogleCandle",
+       icon: "prototypes/googlecandle.png",
+       activeIcon: "prototypes/googlecandle.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
        id: "prototypes/horizonchart",
        title: "Horizon Chart",
        info: "horizonChart",
