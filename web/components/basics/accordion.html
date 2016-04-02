@@ -144,7 +144,7 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addSection [<a href="#FUNCTION_addSection">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key, text, url</td>
+<td valign="top" width="*" class="function-short-name">key, text, url, (height)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -206,6 +206,12 @@
 <td valign="top" width="240px" class="function-short-name">getMemberDisplayAsString [<a href="#FUNCTION_getMemberDisplayAsString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSectionHeight [<a href="#FUNCTION_getSectionHeight">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">int</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -319,6 +325,18 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setMemberDisplayByString [<a href="#FUNCTION_setMemberDisplayByString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">memberDisplay</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSectionHeight [<a href="#FUNCTION_setSectionHeight">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, height</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSectionHeights [<a href="#FUNCTION_setSectionHeights">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator, height</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -450,7 +468,7 @@ var&nbsp;leaf&nbsp;=&nbsp;(parentKey&nbsp;!=&nbsp;&quot;ROOT&quot;);<br/>&nbsp;&
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addSection">void<br/>addSection</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>ACCORDION.addSection(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String]);<br>ACCORDION.addSection(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String]);<br></div></div><br/>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String],&nbsp;height&nbsp;[int].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>ACCORDION.addSection(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String],&nbsp;height&nbsp;[int]);<br>ACCORDION.addSection(key&nbsp;[String],&nbsp;text&nbsp;[String],&nbsp;url&nbsp;[String],&nbsp;height&nbsp;[int]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -469,6 +487,11 @@ var&nbsp;leaf&nbsp;=&nbsp;(parentKey&nbsp;!=&nbsp;&quot;ROOT&quot;);<br/>&nbsp;&
 <td width="120px" class="parameter-type"><B>String</B></td>
 <td width="*" class="parameter-help">Given Url</td>
 </tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>height</B></td>
+<td width="120px" class="parameter-type"><B>int [ optional ]</B></td>
+<td width="*" class="parameter-help">Section Height px (overwrites max)</td>
+</tr>
 
 </TABLE>
 
@@ -477,7 +500,7 @@ var&nbsp;leaf&nbsp;=&nbsp;(parentKey&nbsp;!=&nbsp;&quot;ROOT&quot;);<br/>&nbsp;&
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.addElement(&quot;ROOT&quot;,&nbsp;key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url);
+this.addElement(&quot;ROOT&quot;,&nbsp;key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -698,6 +721,32 @@ return&nbsp;this.memberDisplay;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.memberDisplay;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSectionHeight">int<br/>getSectionHeight</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Height&nbsp;for&nbsp;Section&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;undefined;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].height;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1197,6 +1246,73 @@ this.memberDisplay&nbsp;=&nbsp;memberDisplay;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.memberDisplay&nbsp;=&nbsp;memberDisplay;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSectionHeight">void<br/>setSectionHeight</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Height&nbsp;for&nbsp;Section&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>height</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].height&nbsp;=&nbsp;height;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSectionHeights">void<br/>setSectionHeights</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Height&nbsp;for&nbsp;Section&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>height</B></td>
+<td width="120px" class="parameter-type"><B>int</B></td>
+<td width="*" class="parameter-help"> Height </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.elementsContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.elementsContent&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.elementsContent);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].height&nbsp;=&nbsp;height;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.elementsContent&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
