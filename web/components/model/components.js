@@ -219,6 +219,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/floatbutton",
+       title: "Float Button",
+       info: "FloatButton",
+       icon: "basics/floatbutton.png",
+       activeIcon: "basics/floatbutton.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/imagecarousel",
        title: "Image Carousel 2.0",
        info: "ImageCarousel",
@@ -498,6 +507,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "databound/breadcrumbs",
+       title: "Bread Crumbs",
+       info: "Breadcrumbs",
+       icon: "basics/breadcrumbs.png",
+       activeIcon: "basics/breadcrumbs.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "databound/dropdown",
        title: "Data Drop Down 2.0",
        info: "DropDown",
@@ -561,6 +579,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "databound/planningcalendar",
+       title: "Planning Calendar",
+       info: "PlanningCalendar",
+       icon: "basics/planningcalendar.png",
+       activeIcon: "basics/planningcalendar.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "databound/radiobuttongroup",
        title: "Radio Button Group 2.0",
        info: "RadioButtonGroup",
@@ -584,6 +611,15 @@ sdkComponentModel["basics"] = [
        info: "ResultSetMixer",
        icon: "basics/resultsetmixer.png",
        activeIcon: "basics/resultsetmixer.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
+       id: "databound/sidenavigation",
+       title: "Side Navigation",
+       info: "SideNavigation",
+       icon: "basics/sidenavigation.png",
+       activeIcon: "basics/sidenavigation.png",
        number: " ",
        numberUnit: "basics"
    },
