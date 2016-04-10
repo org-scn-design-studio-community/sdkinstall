@@ -60,6 +60,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>expandNodes<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Expand Nodes</B><br/>Expand Nodes
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>nodesContent<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Nodes</B><br/>Nodes
 
@@ -179,6 +188,18 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isAllowExpanding [<a href="#FUNCTION_isAllowExpanding">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isExpandNodes [<a href="#FUNCTION_isExpandNodes">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">noNodeUpdate [<a href="#FUNCTION_noNodeUpdate">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -209,8 +230,20 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAllowExpanding [<a href="#FUNCTION_setAllowExpanding">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">allowExpanding</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setDefaultImage [<a href="#FUNCTION_setDefaultImage">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">defaultImage</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setExpandNodes [<a href="#FUNCTION_setExpandNodes">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">expandNodes</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -273,6 +306,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-58536">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>allowExpanding<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Allow Expanding Nodes</B><br/>Allow Expanding Nodes
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>cleanAll<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>Clean All Nodes</B><br/>Clean All Nodes
 
@@ -650,6 +692,48 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isAllowExpanding">boolean<br/>isAllowExpanding</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Allow&nbsp;Expanding&nbsp;Nodes&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.allowExpanding;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isExpandNodes">boolean<br/>isExpandNodes</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Expand&nbsp;Nodes&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.expandNodes;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_noNodeUpdate">void<br/>noNodeUpdate</td>
 <td valign="top" width="*" class="function-help">informs&nbsp;the&nbsp;UI&nbsp;that&nbsp;there&nbsp;is&nbsp;no&nbsp;note&nbsp;update&nbsp;(no&nbsp;children&nbsp;under&nbsp;given&nbsp;expanded&nbsp;key)<br/><br/>
 
@@ -765,6 +849,32 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAllowExpanding">void<br/>setAllowExpanding</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Allow&nbsp;Expanding&nbsp;Nodes&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>allowExpanding</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Allow Expanding Nodes</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.allowExpanding&nbsp;=&nbsp;allowExpanding;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDefaultImage">void<br/>setDefaultImage</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Url&nbsp;For&nbsp;Default&nbsp;Picture&nbsp;Property<br/><br/>
 
@@ -784,6 +894,32 @@ if&nbsp;(this.nodesContent&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.nodesConten
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.defaultImage&nbsp;=&nbsp;defaultImage;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setExpandNodes">void<br/>setExpandNodes</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Expand&nbsp;Nodes&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>expandNodes</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Expand Nodes</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.expandNodes&nbsp;=&nbsp;expandNodes;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
