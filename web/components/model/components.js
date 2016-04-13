@@ -961,7 +961,7 @@ sdkComponentModel["geovis"] = [
 sdkComponentModel["utils"] = [
    {
        id: "utils/clientinformation",
-       title: "Client Information 0.X",
+       title: "Client Information",
        info: "ClientInformation",
        icon: "utils/clientinformation.png",
        activeIcon: "utils/clientinformation.png",
@@ -1033,7 +1033,7 @@ sdkComponentModel["utils"] = [
    },
     {
        id: "utils/wspusher",
-       title: "WebSocket Implementation 0.X",
+       title: "WebSocket Implementation",
        info: "WSPusher",
        icon: "utils/wspusher.png",
        activeIcon: "utils/wspusher.png",
