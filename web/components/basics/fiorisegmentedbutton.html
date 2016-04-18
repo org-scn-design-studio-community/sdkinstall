@@ -97,6 +97,30 @@
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isEnabled [<a href="#FUNCTION_isEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEnabled [<a href="#FUNCTION_setEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">enable</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSelectedKey [<a href="#FUNCTION_setSelectedKey">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
 
 	</TABLE>
 
@@ -160,6 +184,100 @@
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;o&nbsp;=&nbsp;this.itemConfig&nbsp;||&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;matchIndex&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;sTitle&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(showTitle&nbsp;!=&nbsp;undefined)&nbsp;sTitle&nbsp;=&nbsp;showTitle;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;h;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;o.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(o[i].key&nbsp;==&nbsp;buttonKey)&nbsp;matchIndex&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(matchIndex==-1)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o.push({<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key&nbsp;:&nbsp;buttonKey,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;:&nbsp;buttonTitle,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;showTitle&nbsp;:&nbsp;sTitle,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;icon&nbsp;:&nbsp;icon<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;}else{&nbsp;&nbsp;//&nbsp;Don't&nbsp;overwrite&nbsp;items<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o[matchIndex].text&nbsp;=&nbsp;buttonTitle;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o[matchIndex].showTitle&nbsp;=&nbsp;sTitle;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o[matchIndex].icon&nbsp;=&nbsp;icon;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;itemConfig&nbsp;=&nbsp;o;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedKey">String<br/>getSelectedKey</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;selected&nbsp;key<br/><div class='html-example'">Retrieve&nbsp;key&nbsp;of&nbsp;clicked&nbsp;button&nbsp;item<br/><div class='html-code'>SEGMENTEDBUTTON_1.getSelectedKey();<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.selectedKey;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isEnabled">boolean<br/>isEnabled</td>
+<td valign="top" width="*" class="function-help">Is&nbsp;button&nbsp;enabled/disabled&nbsp;?<br/><div class='html-example'"><div class='html-code'>var&nbsp;enabled&nbsp;=&nbsp;SEGMENTEDBUTTON_1.isEnabled();<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.enabled;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEnabled">void<br/>setEnabled</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;button&nbsp;enabled/disabled<br/><div class='html-example'"><div class='html-code'>SEGMENTEDBUTTON_1.setEnabled(false);<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>enable</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.enabled&nbsp;=&nbsp;enable;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSelectedKey">String<br/>setSelectedKey</td>
+<td valign="top" width="*" class="function-help">Set&nbsp;selected&nbsp;key<br/><div class='html-example'">Set&nbsp;key&nbsp;of&nbsp;clicked&nbsp;button&nbsp;item<br/><div class='html-code'>SEGMENTEDBUTTON_1.setSelectedKey("some_key");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.selectedKey&nbsp;=&nbsp;key;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
