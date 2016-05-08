@@ -744,6 +744,15 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
+       id: "databound/custommap",
+       title: "Custom Map 0.0",
+       info: "CustomMap",
+       icon: "visualizations/custommap.png",
+       activeIcon: "visualizations/custommap.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
        id: "databound/harveyballmicrochart",
        title: "Harvey Ball Micro Chart 2.0",
        info: "HarveyBallMicroChart",
@@ -1103,6 +1112,15 @@ sdkComponentModel["prototypes"] = [
        info: "horizonChart",
        icon: "prototypes/horizonchart.png",
        activeIcon: "prototypes/horizonchart.png",
+       number: " ",
+       numberUnit: "prototypes"
+   },
+    {
+       id: "prototypes/mytilecontainer",
+       title: "(PROTOTYPE!) MyTileContainer",
+       info: "MyTileContainer",
+       icon: "prototypes/mytilecontainer.png",
+       activeIcon: "prototypes/mytilecontainer.png",
        number: " ",
        numberUnit: "prototypes"
    },

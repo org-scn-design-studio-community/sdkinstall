@@ -50,7 +50,7 @@
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">-65</td>
+<td width="100px" class="property-default">-40</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>elementTextXPos<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Text X Position for Element</B><br/>Text X Position for Element
+<td width="*" class="property-title-tooltip"><B>Text Y Position for Element</B><br/>Text Y Position for Element
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -100,7 +100,7 @@
 </tr>
 <tr>
 <td width="120px" class="property-name-type"><B>elementTextYPos<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>Text Y Position for Element</B><br/>Text Y Position for Element
+<td width="*" class="property-title-tooltip"><B>Text X Position for Element</B><br/>Text X Position for Element
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -114,6 +114,15 @@
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default">[{"parentKey":"ROOT","key":"STANDARD","leaf":false,"style":"bar"},{"parentKey":"ROOT","key":"FAILED" ... truncated</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>timeFormat<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Time Format in Time Axis</B><br/>Time Format in Time Axis
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">Days</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -296,6 +305,18 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTimeFormat [<a href="#FUNCTION_getTimeFormat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getTimeFormatAsString [<a href="#FUNCTION_getTimeFormatAsString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getXLegendAngle [<a href="#FUNCTION_getXLegendAngle">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
@@ -466,6 +487,18 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setStateStyles [<a href="#FUNCTION_setStateStyles">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">keys, separator, style</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTimeFormat [<a href="#FUNCTION_setTimeFormat">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">timeFormat</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setTimeFormatByString [<a href="#FUNCTION_setTimeFormatByString">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">timeFormat</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -1046,7 +1079,7 @@ return&nbsp;this.elementTextAngle;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getElementTextXPos">int<br/>getElementTextXPos</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Text&nbsp;X&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Text&nbsp;Y&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -1067,7 +1100,7 @@ return&nbsp;this.elementTextXPos;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getElementTextYPos">int<br/>getElementTextYPos</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Text&nbsp;Y&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Text&nbsp;X&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -1174,6 +1207,48 @@ if&nbsp;(this.states&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.states&nbsp;===&n
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.states);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JSON.stringify(jsonObject,&nbsp;null,&nbsp;4);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTimeFormat">org_scn_community_shared_Enumfield<br/>getTimeFormat</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Time&nbsp;Format&nbsp;in&nbsp;Time&nbsp;Axis&nbsp;Property&nbsp;as&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.timeFormat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getTimeFormatAsString">String<br/>getTimeFormatAsString</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Time&nbsp;Format&nbsp;in&nbsp;Time&nbsp;Axis&nbsp;Property&nbsp;as&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.timeFormat;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1967,14 +2042,14 @@ this.elementTextAngle&nbsp;=&nbsp;elementTextAngle;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setElementTextXPos">void<br/>setElementTextXPos</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Text&nbsp;X&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Text&nbsp;Y&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>elementTextXPos</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help">Text X Position for Element</td>
+<td width="*" class="parameter-help">Text Y Position for Element</td>
 </tr>
 
 </TABLE>
@@ -1993,14 +2068,14 @@ this.elementTextXPos&nbsp;=&nbsp;elementTextXPos;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setElementTextYPos">void<br/>setElementTextYPos</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Text&nbsp;Y&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Text&nbsp;X&nbsp;Position&nbsp;for&nbsp;Element&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
 <tr class="function-table-tr-content">
 <td width="120px" class="parameter-name"><B>elementTextYPos</B></td>
 <td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help">Text Y Position for Element</td>
+<td width="*" class="parameter-help">Text X Position for Element</td>
 </tr>
 
 </TABLE>
@@ -2078,6 +2153,58 @@ if&nbsp;(this.states&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.states&nbsp;===&n
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if&nbsp;(this.states&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.states&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.states&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.states);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].style&nbsp;=&nbsp;style;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.states&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTimeFormat">void<br/>setTimeFormat</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Time&nbsp;Format&nbsp;in&nbsp;Time&nbsp;Axis&nbsp;Property&nbsp;by&nbsp;Choice&nbsp;Option<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>timeFormat</B></td>
+<td width="120px" class="parameter-type"><B>org_scn_community_shared_Enumfield</B></td>
+<td width="*" class="parameter-help">Time Format in Time Axis</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.timeFormat&nbsp;=&nbsp;timeFormat;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTimeFormatByString">void<br/>setTimeFormatByString</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Time&nbsp;Format&nbsp;in&nbsp;Time&nbsp;Axis&nbsp;Property&nbsp;by&nbsp;String<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>timeFormat</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Time Format in Time Axis</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.timeFormat&nbsp;=&nbsp;timeFormat;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
