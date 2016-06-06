@@ -45,6 +45,15 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>activateOnMouseOverOut<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>0 - Activate onMouseOver/Out</B><br/>0 - Activate onMouseOver/Out
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>applyColors<br/>[boolean]</B></td>
 <td width="*" class="property-title-tooltip"><B>1 - Override Mapster Colors with</B><br/>1 - Override Mapster Colors with
 
@@ -90,39 +99,12 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>image<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>image<br/>[Url]</B></td>
 <td width="*" class="property-title-tooltip"><B>1 - Image url of Base 64</B><br/>1 - Image url of Base 64
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>map<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>2 - Associated map, same scaling as base image</B><br/>2 - Associated map, same scaling as base image
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>mapsterpropjson<br/>[String]</B></td>
-<td width="*" class="property-title-tooltip"><B>2 - Mapster properties</B><br/>2 - Mapster properties
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default"></td>
-<td width="60px" class="property-visible">true</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>resizeDuration<br/>[int]</B></td>
-<td width="*" class="property-title-tooltip"><B>1 - Resize Duration (ms)</B><br/>1 - Resize Duration (ms)
-
-</td>
-<td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">500</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -263,7 +245,19 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isActivateOnMouseOverOut [<a href="#FUNCTION_isActivateOnMouseOverOut">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">isApplyColors [<a href="#FUNCTION_isApplyColors">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isAutoResize [<a href="#FUNCTION_isAutoResize">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
 </tr>
@@ -275,8 +269,20 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setActivateOnMouseOverOut [<a href="#FUNCTION_setActivateOnMouseOverOut">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">activateOnMouseOverOut</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setApplyColors [<a href="#FUNCTION_setApplyColors">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">applyColors</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAutoResize [<a href="#FUNCTION_setAutoResize">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">autoResize</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -345,12 +351,48 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>autoResize<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>0 - Auto resize</B><br/>0 - Auto resize
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>hoveredZone<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B></B><br/>
 
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>map<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>2 - Associated map, same scaling as base image</B><br/>2 - Associated map, same scaling as base image
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>mapsterpropjson<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>2 - Mapster properties</B><br/>2 - Mapster properties
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>resizeDuration<br/>[int]</B></td>
+<td width="*" class="property-title-tooltip"><B>1 - Resize Duration (ms)</B><br/>1 - Resize Duration (ms)
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">500</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -561,6 +603,27 @@ return&nbsp;this.tooltipMode;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isActivateOnMouseOverOut">boolean<br/>isActivateOnMouseOverOut</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;0&nbsp;-&nbsp;Activate&nbsp;onMouseOver/Out&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.activateOnMouseOverOut;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isApplyColors">boolean<br/>isApplyColors</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;1&nbsp;-&nbsp;Override&nbsp;Mapster&nbsp;Colors&nbsp;with&nbsp;Property<br/><br/>
 
@@ -575,6 +638,27 @@ return&nbsp;this.tooltipMode;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.applyColors;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isAutoResize">boolean<br/>isAutoResize</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;0&nbsp;-&nbsp;Auto&nbsp;resize&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.autoResize;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -603,6 +687,32 @@ return&nbsp;this.staticDisplay;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setActivateOnMouseOverOut">void<br/>setActivateOnMouseOverOut</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;0&nbsp;-&nbsp;Activate&nbsp;onMouseOver/Out&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>activateOnMouseOverOut</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">0 - Activate onMouseOver/Out</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.activateOnMouseOverOut&nbsp;=&nbsp;activateOnMouseOverOut;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setApplyColors">void<br/>setApplyColors</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;1&nbsp;-&nbsp;Override&nbsp;Mapster&nbsp;Colors&nbsp;with&nbsp;Property<br/><br/>
 
@@ -622,6 +732,32 @@ return&nbsp;this.staticDisplay;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.applyColors&nbsp;=&nbsp;applyColors;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAutoResize">void<br/>setAutoResize</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;0&nbsp;-&nbsp;Auto&nbsp;resize&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>autoResize</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">0 - Auto resize</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.autoResize&nbsp;=&nbsp;autoResize;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
