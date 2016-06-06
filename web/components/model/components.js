@@ -632,6 +632,15 @@ sdkComponentModel["basics"] = [
        number: " ",
        numberUnit: "basics"
    },
+    {
+       id: "databound/tilecontainer",
+       title: "TileContainer 1.0",
+       info: "TileContainer",
+       icon: "basics/tilecontainer.png",
+       activeIcon: "basics/tilecontainer.png",
+       number: " ",
+       numberUnit: "basics"
+   },
 
 	];
 sdkComponentModel["visualizations"] = [
@@ -1112,15 +1121,6 @@ sdkComponentModel["prototypes"] = [
        info: "horizonChart",
        icon: "prototypes/horizonchart.png",
        activeIcon: "prototypes/horizonchart.png",
-       number: " ",
-       numberUnit: "prototypes"
-   },
-    {
-       id: "prototypes/mytilecontainer",
-       title: "(PROTOTYPE!) MyTileContainer",
-       info: "MyTileContainer",
-       icon: "prototypes/mytilecontainer.png",
-       activeIcon: "prototypes/mytilecontainer.png",
        number: " ",
        numberUnit: "prototypes"
    },
