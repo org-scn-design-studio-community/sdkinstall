@@ -350,6 +350,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getRawParameters [<a href="#FUNCTION_getRawParameters">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getRequestMethod [<a href="#FUNCTION_getRequestMethod">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">org_scn_community_shared_Enumfield</td>
@@ -568,6 +574,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-62537">Design
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setParameterValues [<a href="#FUNCTION_setParameterValues">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">keys, separator, value</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setRawParameters [<a href="#FUNCTION_setRawParameters">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">rawParameters</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -1267,6 +1279,27 @@ var&nbsp;jsonObject&nbsp;=&nbsp;JSON.parse(this.DParameters);<br/>&nbsp;&nbsp;&n
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DPayload;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getRawParameters">String<br/>getRawParameters</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Raw&nbsp;Parameters&nbsp;As&nbsp;String&nbsp;Content&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DRawParameters;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -2260,6 +2293,32 @@ if&nbsp;(this.DParameters&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DParameters&
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 if&nbsp;(this.DParameters&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.DParameters&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.DParameters&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.DParameters);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].value&nbsp;=&nbsp;value;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.DParameters&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setRawParameters">void<br/>setRawParameters</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Technical&nbsp;proprty&nbsp;for&nbsp;raw&nbsp;parameters&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>rawParameters</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> &nbsp; </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DRawParameters&nbsp;=&nbsp;rawParameters;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
