@@ -399,7 +399,7 @@
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">addAreaProperty [<a href="#FUNCTION_addAreaProperty">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key, fillColor, fillOpacity, strokeColor, strokeOpacity, strokeWidth</td>
+<td valign="top" width="*" class="function-short-name">key, fillColor, fillOpacity, strokeColor, strokeOpacity, strokeWidth, tooltip</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -458,6 +458,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getAreaPropertyTooltip [<a href="#FUNCTION_getAreaPropertyTooltip">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getAreaPropertysAsJSON [<a href="#FUNCTION_getAreaPropertysAsJSON">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -494,18 +500,6 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getFillColor [<a href="#FUNCTION_getFillColor">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getFillColor [<a href="#FUNCTION_getFillColor">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">String</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getHighlightFillColor [<a href="#FUNCTION_getHighlightFillColor">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -536,7 +530,7 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getHoveredArea [<a href="#FUNCTION_getHoveredArea">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">getHighlightedArea [<a href="#FUNCTION_getHighlightedArea">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -569,6 +563,12 @@
 <td valign="top" width="240px" class="function-short-name">getSelectedAreas [<a href="#FUNCTION_getSelectedAreas">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSelectedAreasAsArray [<a href="#FUNCTION_getSelectedAreasAsArray">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">Array</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -609,7 +609,7 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">insertAreaProperty [<a href="#FUNCTION_insertAreaProperty">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">insertionIndex0based, key, fillColor, fillOpacity, strokeColor, strokeOpacity, strokeWidth</td>
+<td valign="top" width="*" class="function-short-name">insertionIndex0based, key, fillColor, fillOpacity, strokeColor, strokeOpacity, strokeWidth, tooltip</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -776,6 +776,18 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAreaPropertyTooltip [<a href="#FUNCTION_setAreaPropertyTooltip">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">key, tooltip</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setAreaPropertyTooltips [<a href="#FUNCTION_setAreaPropertyTooltips">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">keys, separator, tooltip</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setAreaSelectable [<a href="#FUNCTION_setAreaSelectable">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">areaSelectable</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -850,12 +862,6 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setEnableSpecificPropSelected [<a href="#FUNCTION_setEnableSpecificPropSelected">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">enableSpecificPropSelected</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setFillColor [<a href="#FUNCTION_setFillColor">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">colorHexa, Target</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -962,12 +968,6 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setStroke [<a href="#FUNCTION_setStroke">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">colorHexa, strokeWidth, Target</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setTooltipMode [<a href="#FUNCTION_setTooltipMode">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">tooltipMode</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -975,7 +975,7 @@
 
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">updateAreaProperty [<a href="#FUNCTION_updateAreaProperty">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">key, fillColor, fillOpacity, strokeColor, strokeOpacity, strokeWidth</td>
+<td valign="top" width="*" class="function-short-name">key, fillColor, fillOpacity, strokeColor, strokeOpacity, strokeWidth, tooltip</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -999,7 +999,16 @@
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>hoveredArea<br/>[String]</B></td>
+<td width="120px" class="property-name-type"><B>dataExemple<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Exemple of data</B><br/>Exemple of data
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>highlightedArea<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B></B><br/>
 
 </td>
@@ -1054,7 +1063,7 @@
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_addAreaProperty">void<br/>addAreaProperty</td>
-<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>CUSTOMMAP.addAreaProperty(key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int]);<br>CUSTOMMAP.addAreaProperty(key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int]);<br></div></div><br/>
+<td valign="top" width="*" class="function-help">Adds&nbsp;a&nbsp;root&nbsp;element&nbsp;containing&nbsp;key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int],&nbsp;tooltip&nbsp;[String].<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;add&nbsp;2&nbsp;root&nbsp;elements<br/><div class='html-code'>CUSTOMMAP.addAreaProperty(key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int],&nbsp;tooltip&nbsp;[String]);<br>CUSTOMMAP.addAreaProperty(key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int],&nbsp;tooltip&nbsp;[String]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -1088,6 +1097,11 @@
 <td width="120px" class="parameter-type"><B>int</B></td>
 <td width="*" class="parameter-help">Stroke Width</td>
 </tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tooltip</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Tooltip</td>
+</tr>
 
 </TABLE>
 
@@ -1096,7 +1110,7 @@
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:fillColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillOpacity:fillOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeColor:strokeColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeOpacity:strokeOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWidth:strokeWidth<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(elementsJson);
+var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:fillColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillOpacity:fillOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeColor:strokeColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeOpacity:strokeOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWidth:strokeWidth,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tooltip:tooltip<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;alreadyFound&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alreadyFound&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;if(!alreadyFound)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1323,6 +1337,32 @@ if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaPrope
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAreaPropertyTooltip">String<br/>getAreaPropertyTooltip</td>
+<td valign="top" width="*" class="function-help">Returns&nbsp;value&nbsp;of&nbsp;Tooltip&nbsp;for&nbsp;AreaProperty&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;&quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;=&nbsp;elementsJson[i].tooltip;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;value;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getAreaPropertysAsJSON">String<br/>getAreaPropertysAsJSON</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;AreaPropertys&nbsp;As&nbsp;JSON&nbsp;String<br/><br/>
 
@@ -1449,48 +1489,6 @@ return&nbsp;this.dynamicColorPalette;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFillColor">String<br/>getFillColor</td>
-<td valign="top" width="*" class="function-help">Set&nbsp;fill&nbsp;color&nbsp;for&nbsp;the&nbsp;area<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-//get&nbsp;mapsterjson,&nbsp;set&nbsp;as&nbsp;json,&nbsp;return&nbsp;value
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getFillColor">String<br/>getFillColor</td>
-<td valign="top" width="*" class="function-help">Set&nbsp;fill&nbsp;color&nbsp;for&nbsp;the&nbsp;area<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-//get&nbsp;mapsterjson,&nbsp;set&nbsp;as&nbsp;json,&nbsp;return&nbsp;value
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHighlightFillColor">String<br/>getHighlightFillColor</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Fill&nbsp;Color&nbsp;Property<br/><br/>
 
@@ -1596,7 +1594,7 @@ return&nbsp;this.highlightStrokeWidth;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHoveredArea">String<br/>getHoveredArea</td>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getHighlightedArea">String<br/>getHighlightedArea</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
@@ -1609,7 +1607,7 @@ return&nbsp;this.highlightStrokeWidth;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.hoveredArea;
+return&nbsp;this.highlightedArea;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1715,6 +1713,27 @@ return&nbsp;this.resizeDuration;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.selectedAreas;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSelectedAreasAsArray">Array<br/>getSelectedAreasAsArray</td>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Get&nbsp;selected&nbsp;areas&nbsp;as&nbsp;an&nbsp;array<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.getSelectedAreas().split(&quot;,&quot;);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -1849,7 +1868,7 @@ return&nbsp;this.tooltipMode;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_insertAreaProperty">void<br/>insertAreaProperty</td>
-<td valign="top" width="*" class="function-help">Insert&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;index.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;insert&nbsp;a&nbsp;root&nbsp;element<br/><div class='html-code'>CUSTOMMAP.insertAreaProperty(index&nbsp;[int],&nbsp;key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int]);<br></div></div><br/>
+<td valign="top" width="*" class="function-help">Insert&nbsp;a&nbsp;root&nbsp;element&nbsp;by&nbsp;index.<br/><div class='html-example'">You&nbsp;want&nbsp;to&nbsp;insert&nbsp;a&nbsp;root&nbsp;element<br/><div class='html-code'>CUSTOMMAP.insertAreaProperty(index&nbsp;[int],&nbsp;key&nbsp;[String],&nbsp;fillColor&nbsp;[String],&nbsp;fillOpacity&nbsp;[float],&nbsp;strokeColor&nbsp;[String],&nbsp;strokeOpacity&nbsp;[float],&nbsp;strokeWidth&nbsp;[int],&nbsp;tooltip&nbsp;[String]);<br></div></div><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -1888,6 +1907,11 @@ return&nbsp;this.tooltipMode;
 <td width="120px" class="parameter-type"><B>int</B></td>
 <td width="*" class="parameter-help">Stroke Width</td>
 </tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tooltip</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Tooltip</td>
+</tr>
 
 </TABLE>
 
@@ -1896,7 +1920,7 @@ return&nbsp;this.tooltipMode;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newElementsJson&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:fillColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillOpacity:fillOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeColor:strokeColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeOpacity:strokeOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWidth:strokeWidth<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(i&nbsp;==&nbsp;insertionIndex0based)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(elementsJson[i]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(newElementsJson);
+if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newElementsJson&nbsp;=&nbsp;[];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:fillColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillOpacity:fillOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeColor:strokeColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeOpacity:strokeOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWidth:strokeWidth,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tooltip:tooltip<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(i&nbsp;==&nbsp;insertionIndex0based)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(itemDef);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newElementsJson.push(elementsJson[i]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(newElementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -2621,6 +2645,73 @@ if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaPrope
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAreaPropertyTooltip">void<br/>setAreaPropertyTooltip</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Tooltip&nbsp;for&nbsp;AreaProperty&nbsp;Key<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>key</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tooltip</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;key)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].tooltip&nbsp;=&nbsp;tooltip;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAreaPropertyTooltips">void<br/>setAreaPropertyTooltips</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;the&nbsp;Tooltip&nbsp;for&nbsp;AreaProperty&nbsp;keys<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>keys</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>separator</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tooltip</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"> Tooltip </td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;changeKeys&nbsp;=&nbsp;keys.split(separator);&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;change<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;changeKeys.length&nbsp;;&nbsp;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;changeKeys[j])&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i].tooltip&nbsp;=&nbsp;tooltip;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(elementsJson);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setAreaSelectable">void<br/>setAreaSelectable</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Area&nbsp;are&nbsp;selectable&nbsp;Property<br/><br/>
 
@@ -2952,37 +3043,6 @@ this.enableSpecificPropHighlight&nbsp;=&nbsp;enableSpecificPropHighlight;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.enableSpecificPropSelected&nbsp;=&nbsp;enableSpecificPropSelected;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setFillColor">void<br/>setFillColor</td>
-<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>Set&nbsp;fill&nbsp;color&nbsp;for&nbsp;the&nbsp;area<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>colorHexa</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>Target</B></td>
-<td width="120px" class="parameter-type"><B>Array</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-//get&nbsp;mapsterjson,&nbsp;set&nbsp;as&nbsp;json,&nbsp;change&nbsp;value,&nbsp;set&nbsp;mapsterJson
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -3432,42 +3492,6 @@ this.staticDisplay&nbsp;=&nbsp;staticDisplay;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setStroke">void<br/>setStroke</td>
-<td valign="top" width="*" class="function-help">Set&nbsp;stroke&nbsp;color<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>colorHexa</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>strokeWidth</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>Target</B></td>
-<td width="120px" class="parameter-type"><B>String</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-//get&nbsp;mapsterjson,&nbsp;set&nbsp;as&nbsp;json,&nbsp;change&nbsp;value,&nbsp;set&nbsp;mapsterJson
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setTooltipMode">void<br/>setTooltipMode</td>
 <td valign="top" width="*" class="function-help">Sets&nbsp;Tooltip&nbsp;override&nbsp;mode&nbsp;Property<br/><br/>
 
@@ -3529,6 +3553,11 @@ this.tooltipMode&nbsp;=&nbsp;tooltipMode;
 <td width="120px" class="parameter-type"><B>int</B></td>
 <td width="*" class="parameter-help">Stroke Width</td>
 </tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>tooltip</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Tooltip</td>
+</tr>
 
 </TABLE>
 
@@ -3537,7 +3566,7 @@ this.tooltipMode&nbsp;=&nbsp;tooltipMode;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:fillColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillOpacity:fillOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeColor:strokeColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeOpacity:strokeOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWidth:strokeWidth<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;elementKey)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i]&nbsp;=&nbsp;itemDef;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(elementsJson);
+if&nbsp;(this.areaProperties&nbsp;===&nbsp;undefined&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&quot;&nbsp;||&nbsp;this.areaProperties&nbsp;===&nbsp;&quot;&lt;delete&gt;&quot;){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;&quot;[]&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;itemDef&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leaf:true,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:key,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillColor:fillColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fillOpacity:fillOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeColor:strokeColor,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeOpacity:strokeOpacity,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWidth:strokeWidth,&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tooltip:tooltip<br/>&nbsp;&nbsp;&nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;elementsJson&nbsp;=&nbsp;JSON.parse(this.areaProperties);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;loop&nbsp;and&nbsp;find&nbsp;and&nbsp;update<br/>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;elementsJson.length&nbsp;;&nbsp;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(elementsJson[i].key&nbsp;==&nbsp;elementKey)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elementsJson[i]&nbsp;=&nbsp;itemDef;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;this.areaProperties&nbsp;=&nbsp;JSON.stringify(elementsJson);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
