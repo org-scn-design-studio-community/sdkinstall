@@ -136,6 +136,12 @@ Link to blog: <a target="_blank" href="https://scn.sap.com/community/businessobj
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setMappingTable [<a href="#FUNCTION_setMappingTable">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">obj</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
 
 	</TABLE>
 
@@ -147,6 +153,15 @@ Link to blog: <a target="_blank" href="https://scn.sap.com/community/businessobj
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>manualTable<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Manual Mapping Table</B><br/>Manual Mapping Table
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>replace<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>replace</B><br/>replace
 
@@ -200,6 +215,32 @@ return&nbsp;new&nbsp;Date().valueOf();
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.replace&nbsp;=&nbsp;calcTimestamp();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setMappingTable">void<br/>setMappingTable</td>
+<td valign="top" width="*" class="function-help"><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>obj</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.manualTable&nbsp;=&nbsp;obj;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
