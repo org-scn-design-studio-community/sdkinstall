@@ -753,6 +753,15 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
+       id: "databound/clipboard",
+       title: "Clipboard",
+       info: "Clipboard",
+       icon: "visualizations/clipboard.png",
+       activeIcon: "visualizations/clipboard.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
        id: "databound/custommap",
        title: "Custom Map 0.0",
        info: "CustomMap",
