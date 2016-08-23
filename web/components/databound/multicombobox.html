@@ -54,6 +54,15 @@
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
+<td width="120px" class="property-name-type"><B>DEnabled<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Enabled flag</B><br/>Enabled flag
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>DPropFileUrl<br/>[Url]</B></td>
 <td width="*" class="property-title-tooltip"><B>Path to translation/properties files</B><br/>Path to translation/properties files
 
@@ -174,6 +183,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getEnabled [<a href="#FUNCTION_getEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getSelectedKey [<a href="#FUNCTION_getSelectedKey">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -194,6 +209,12 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setDimension [<a href="#FUNCTION_setDimension">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">dimension</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setEnabled [<a href="#FUNCTION_setEnabled">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">enabled</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -281,7 +302,7 @@
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDimension">String<br/>getDimension</td>
-<td valign="top" width="*" class="function-help">gest&nbsp;the&nbsp;dimension<br/><br/>
+<td valign="top" width="*" class="function-help">gets&nbsp;the&nbsp;dimension<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -294,6 +315,27 @@
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.DDimension;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getEnabled">boolean<br/>getEnabled</td>
+<td valign="top" width="*" class="function-help">gest&nbsp;the&nbsp;dimension<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.DEnabled;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -383,6 +425,32 @@ return&nbsp;this.DSelectedText;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.DDimension&nbsp;=&nbsp;dimension;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setEnabled">void<br/>setEnabled</td>
+<td valign="top" width="*" class="function-help">sets&nbsp;the&nbsp;dimension<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>enabled</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.DEnabled&nbsp;=&nbsp;enabled;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
