@@ -149,6 +149,18 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">deleteRow [<a href="#FUNCTION_deleteRow">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimensions</td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">deleteRows [<a href="#FUNCTION_deleteRows">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">dimensions</td>
+<td valign="top" width="160px" class="function-short-return">int</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getDataString [<a href="#FUNCTION_getDataString">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
@@ -318,6 +330,58 @@ var&nbsp;d&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&n
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;dims&nbsp;=&nbsp;balanceDimension(dimensions);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;match&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;rows&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;while(match&gt;-1){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match&nbsp;=&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;i=0;i&lt;rows.length;i++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;row&nbsp;=&nbsp;rows[i].split(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;key&nbsp;=&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;j=0;j&lt;this.kfIndex;j++){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key.push(row[j]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;hash&nbsp;=&nbsp;key.join(&quot;,&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(hash==dims)&nbsp;match&nbsp;=&nbsp;i;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(match&gt;-1)&nbsp;rows.splice(match,1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;rows.join(&quot;\n&quot;);
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_deleteRow">boolean<br/>deleteRow</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;a&nbsp;Row&nbsp;by&nbsp;a&nbsp;given&nbsp;Dimension&nbsp;Key<br/>It&nbsp;is&nbsp;manipulating&nbsp;the&nbsp;data&nbsp;set&nbsp;from&nbsp;on&nbsp;line&nbsp;basis,&nbsp;the&nbsp;given&nbsp;dimensions&nbsp;must&nbsp;be&nbsp;noted&nbsp;top-down&nbsp;in&nbsp;the&nbsp;resultset<br/>It&nbsp;can&nbsp;be&nbsp;especially&nbsp;used&nbsp;if&nbsp;the&nbsp;result&nbsp;set&nbsp;is&nbsp;containing&nbsp;unique&nbsp;key&nbsp;in&nbsp;first&nbsp;dimension,&nbsp;but&nbsp;it&nbsp;can&nbsp;also&nbsp;be&nbsp;used&nbsp;w/o&nbsp;uniqueness&nbsp;-&nbsp;then&nbsp;the&nbsp;first&nbsp;row&nbsp;will&nbsp;be&nbsp;removed.<br/><div class='html-example'">Remove&nbsp;a&nbsp;row&nbsp;with&nbsp;given&nbsp;2&nbsp;Dimensions<br/><div class='html-code'>DS_1.removeRow("Grocery,Juice");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimensions</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Dimensions</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;rows&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;foundRow&nbsp;=&nbsp;false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;rowIndex&nbsp;in&nbsp;rows)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;row&nbsp;=&nbsp;rows[rowIndex];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(row.indexOf(dimensions&nbsp;+&nbsp;&quot;,&quot;)&nbsp;==&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rows.splice(rowIndex,&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foundRow&nbsp;=&nbsp;true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newRows&nbsp;=&nbsp;rows.join(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;newRows;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;foundRow;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_deleteRows">int<br/>deleteRows</td>
+<td valign="top" width="*" class="function-help">Removes&nbsp;multiple&nbsp;Rows&nbsp;by&nbsp;a&nbsp;given&nbsp;Dimension&nbsp;Keys<br/>It&nbsp;is&nbsp;manipulating&nbsp;the&nbsp;data&nbsp;set&nbsp;from&nbsp;on&nbsp;line&nbsp;basis,&nbsp;the&nbsp;given&nbsp;dimensions&nbsp;must&nbsp;be&nbsp;noted&nbsp;top-down&nbsp;in&nbsp;the&nbsp;resultset<br/><div class='html-example'">Remove&nbsp;a&nbsp;row&nbsp;with&nbsp;given&nbsp;1st&nbsp;dimension<br/><div class='html-code'>DS_1.removeRow("Grocery");<br></div></div><div class='html-example'">Remove&nbsp;a&nbsp;row&nbsp;with&nbsp;given&nbsp;1st&nbsp;and&nbsp;and&nbsp;dimensions<br/><div class='html-code'>DS_1.removeRow("Grocery,Big");<br></div></div><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>dimensions</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Dimensions</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;rows&nbsp;=&nbsp;this.data.split(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;foundRows&nbsp;=&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;rowIndex&nbsp;=&nbsp;rows.length-1;rowIndex&gt;=0;rowIndex--)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;row&nbsp;=&nbsp;rows[rowIndex];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(row.indexOf(dimensions&nbsp;+&nbsp;&quot;,&quot;)&nbsp;==&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rows.splice(rowIndex,&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foundRows++;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;newRows&nbsp;=&nbsp;rows.join(&quot;\n&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.data&nbsp;=&nbsp;newRows;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;foundRows;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
