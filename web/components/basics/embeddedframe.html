@@ -59,7 +59,16 @@
 
 </td>
 <td width="60px" class="property-group">Display</td>
-<td width="100px" class="property-default">true</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>sandbox<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Sandbox Attribute Values</B><br/>Sandbox Attribute Values
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default"></td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 <tr>
@@ -78,6 +87,15 @@
 </td>
 <td width="60px" class="property-group">Display</td>
 <td width="100px" class="property-default"></td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>usesandbox<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use Sandbox Attribute</B><br/>Use Sandbox Attribute
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">true</td>
 <td width="60px" class="property-visible">true</td>
 </tr>
 
@@ -113,6 +131,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getSandbox [<a href="#FUNCTION_getSandbox">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getSkipPort [<a href="#FUNCTION_getSkipPort">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">boolean</td>
@@ -137,6 +161,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">isUsesandbox [<a href="#FUNCTION_isUsesandbox">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">boolean</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setDomainRelaxLevel [<a href="#FUNCTION_setDomainRelaxLevel">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">level</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -155,6 +185,12 @@
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setSandbox [<a href="#FUNCTION_setSandbox">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">sandbox</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setSkipPort [<a href="#FUNCTION_setSkipPort">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">skip</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -169,6 +205,12 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setUrl [<a href="#FUNCTION_setUrl">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">url</td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">setUsesandbox [<a href="#FUNCTION_setUsesandbox">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">usesandbox</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -227,6 +269,27 @@ return&nbsp;this.domainrelaxlevel;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.domainrelaxlevel;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSandbox">String<br/>getSandbox</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Sandbox&nbsp;Attribute&nbsp;Values&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.sandbox;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -318,6 +381,27 @@ return&nbsp;this.skipport;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_isUsesandbox">boolean<br/>isUsesandbox</td>
+<td valign="top" width="*" class="function-help">Gets&nbsp;Use&nbsp;Sandbox&nbsp;Attribute&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.usesandbox;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDomainRelaxLevel">void<br/>setDomainRelaxLevel</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Domain&nbsp;Relaxation&nbsp;level&nbsp;Property<br/><br/>
 
@@ -396,6 +480,32 @@ this.explicitlySetDomain&nbsp;=&nbsp;explicitlySetDomain;
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSandbox">void<br/>setSandbox</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Sandbox&nbsp;Attribute&nbsp;Values&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>sandbox</B></td>
+<td width="120px" class="parameter-type"><B>String</B></td>
+<td width="*" class="parameter-help">Sandbox Attribute Values</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.sandbox&nbsp;=&nbsp;sandbox;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSkipPort">void<br/>setSkipPort</td>
 <td valign="top" width="*" class="function-help">Gets&nbsp;Domain&nbsp;Relaxation&nbsp;level&nbsp;Property<br/><br/>
 
@@ -467,6 +577,32 @@ this.skipport&nbsp;=&nbsp;skipport;
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.url&nbsp;=&nbsp;url;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setUsesandbox">void<br/>setUsesandbox</td>
+<td valign="top" width="*" class="function-help">Sets&nbsp;Use&nbsp;Sandbox&nbsp;Attribute&nbsp;Property<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>usesandbox</B></td>
+<td width="120px" class="parameter-type"><B>boolean</B></td>
+<td width="*" class="parameter-help">Use Sandbox Attribute</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.usesandbox&nbsp;=&nbsp;usesandbox;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
