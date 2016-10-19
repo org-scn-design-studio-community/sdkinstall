@@ -798,6 +798,15 @@ sdkComponentModel["visualizations"] = [
        numberUnit: "visualizations"
    },
     {
+       id: "databound/kpitile",
+       title: "Repeatable Kpi Tile 2.0",
+       info: "KpiTile",
+       icon: "visualizations/kpitile.png",
+       activeIcon: "visualizations/kpitile.png",
+       number: " ",
+       numberUnit: "visualizations"
+   },
+    {
        id: "databound/leaderboard",
        title: "Data Leader Board",
        info: "LeaderBoard",

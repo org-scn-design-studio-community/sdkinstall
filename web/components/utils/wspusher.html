@@ -51,6 +51,42 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>entries<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Protocol entries</B><br/>Protocol entries
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>fields<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>PCP fields</B><br/>PCP fields
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>protocol<br/>[Array]</B></td>
+<td width="*" class="property-title-tooltip"><B>WebSocket Protocol</B><br/>WebSocket Protocol
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>sappcp<br/>[boolean]</B></td>
+<td width="*" class="property-title-tooltip"><B>Use SAP PCP</B><br/>Use SAP PCP websocket implementation
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">false</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>server<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Server URL</B><br/>
 
@@ -70,6 +106,24 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>onChannelClosed<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On Push Channel Closed</B><br/>On Push Channel Closed
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>onChannelOpen<br/>[ScriptText]</B></td>
+<td width="*" class="property-title-tooltip"><B>On Push Channel Open</B><br/>On Push Channel Open
+
+</td>
+<td width="60px" class="property-group">Events</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">true</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>onPushErrorReceived<br/>[ScriptText]</B></td>
 <td width="*" class="property-title-tooltip"><B>On Push Error Message Received</B><br/>On Push Error Message Received
 
@@ -104,7 +158,19 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">close [<a href="#FUNCTION_close">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getLastPushMessage [<a href="#FUNCTION_getLastPushMessage">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLastPushMessagePcpFields [<a href="#FUNCTION_getLastPushMessagePcpFields">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
@@ -122,8 +188,14 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">send [<a href="#FUNCTION_send">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">open [<a href="#FUNCTION_open">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">send [<a href="#FUNCTION_send">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(pcpField)</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -150,8 +222,35 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
 	<tr>
+<td width="120px" class="property-name-type"><B>close<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Message close trigger</B><br/>
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
 <td width="120px" class="property-name-type"><B>msg<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Message for server</B><br/>
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>open<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Open WebSocket</B><br/>
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>pcpFields<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>PCP Fields from server</B><br/>
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -170,6 +269,15 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/community/businessobje
 <tr>
 <td width="120px" class="property-name-type"><B>send<br/>[String]</B></td>
 <td width="*" class="property-title-tooltip"><B>Message send trigger</B><br/>
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">&nbsp;</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+<tr>
+<td width="120px" class="property-name-type"><B>sendPcpFields<br/>[Array]</B></td>
+<td width="*" class="property-title-tooltip"><B>PCP Fields from client</B><br/>
 
 </td>
 <td width="60px" class="property-group">Display</td>
@@ -207,6 +315,27 @@ return&nbsp;new&nbsp;Date().valueOf();
 </td></tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_close">void<br/>close</td>
+<td valign="top" width="*" class="function-help">Close&nbsp;WebSocket<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.close&nbsp;=&nbsp;calcTimestamp();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLastPushMessage">String<br/>getLastPushMessage</td>
 <td valign="top" width="*" class="function-help">Get&nbsp;latest&nbsp;push&nbsp;message.&nbsp;Should&nbsp;be&nbsp;called&nbsp;from&nbsp;within&nbsp;event&nbsp;handler&nbsp;(onPushReceived,onPushErrorReceived)<br/><br/>
 
@@ -221,6 +350,27 @@ return&nbsp;new&nbsp;Date().valueOf();
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 return&nbsp;this.push;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLastPushMessagePcpFields">String<br/>getLastPushMessagePcpFields</td>
+<td valign="top" width="*" class="function-help">Get&nbsp;latest&nbsp;pcp&nbsp;message.&nbsp;Should&nbsp;be&nbsp;called&nbsp;from&nbsp;within&nbsp;event&nbsp;handler&nbsp;(onPushReceived,onPushErrorReceived)&nbsp;and&nbsp;with&nbsp;PCP&nbsp;active<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+return&nbsp;this.pcpFields;
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -270,8 +420,8 @@ return&nbsp;this.server;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_send">void<br/>send</td>
-<td valign="top" width="*" class="function-help">Send&nbsp;actual&nbsp;message&nbsp;to&nbsp;WebSocket&nbsp;compatible&nbsp;server.&nbsp;You&nbsp;need&nbsp;to&nbsp;setup&nbsp;the&nbsp;message&nbsp;with&nbsp;setMessage&nbsp;before!<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_open">void<br/>open</td>
+<td valign="top" width="*" class="function-help">Open&nbsp;WebSocket<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -283,7 +433,33 @@ return&nbsp;this.server;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.send&nbsp;=&nbsp;calcTimestamp();
+this.open=&nbsp;calcTimestamp();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_send">void<br/>send</td>
+<td valign="top" width="*" class="function-help">Send&nbsp;actual&nbsp;message&nbsp;to&nbsp;WebSocket&nbsp;compatible&nbsp;server.&nbsp;You&nbsp;need&nbsp;to&nbsp;setup&nbsp;the&nbsp;message&nbsp;with&nbsp;setMessage&nbsp;before!<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>pcpField</B></td>
+<td width="120px" class="parameter-type"><B>array [ optional ]</B></td>
+<td width="*" class="parameter-help"></td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;current&nbsp;=&nbsp;pcpField&nbsp;||&nbsp;[];<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.sendPcpFields&nbsp;=&nbsp;current;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.send&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
