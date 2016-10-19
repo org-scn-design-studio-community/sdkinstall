@@ -107,6 +107,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-57391">Design
 </tr>
 
 <tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">getLastDayOfMonth [<a href="#FUNCTION_getLastDayOfMonth">details</a>]</td>
+<td valign="top" width="*" class="function-short-name">(formatPattern), (month), (year)</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
+</tr>
+
+<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">getMonth [<a href="#FUNCTION_getMonth">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">int</td>
@@ -300,7 +306,7 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getCurrentTime">String<br/>getCurrentTime</td>
-<td valign="top" width="*" class="function-help"><br/>
+<td valign="top" width="*" class="function-help">Get&nbsp;current&nbsp;time&nbsp;(HH:MM:SS:SSS)<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -376,6 +382,42 @@ var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbs
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 var&nbsp;dayJson&nbsp;=&nbsp;JSON.parse(this.oneDay);<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;dayJson.t;
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getLastDayOfMonth">String<br/>getLastDayOfMonth</td>
+<td valign="top" width="*" class="function-help">Determine&nbsp;last&nbsp;day&nbsp;of&nbsp;a&nbsp;given&nbsp;month.&nbsp;You&nbsp;can&nbsp;either&nbsp;specify&nbsp;the&nbsp;month&nbsp;and&nbsp;optionally&nbsp;the&nbsp;year&nbsp;yourself<br/>or&nbsp;use&nbsp;the&nbsp;initialized&nbsp;date&nbsp;right&nbsp;away.&nbsp;To&nbsp;do&nbsp;that&nbsp;don't&nbsp;pass&nbsp;a&nbsp;month&nbsp;or&nbsp;a&nbsp;year.<br/><br/>
+
+<TABLE width="100%" class="table1">
+<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>formatPattern</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"> date format pattern (default YYYYMMDD) </td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>month</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"> target month(1-12)</td>
+</tr>
+<tr class="function-table-tr-content">
+<td width="120px" class="parameter-name"><B>year</B></td>
+<td width="120px" class="parameter-type"><B>String [ optional ]</B></td>
+<td width="*" class="parameter-help"> target year</td>
+</tr>
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+var&nbsp;lastDay&nbsp;=&nbsp;null;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(month){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(month.indexOf(&quot;0&quot;)&nbsp;==&nbsp;0)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;month&nbsp;=&nbsp;month.substring(1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;month&nbsp;=&nbsp;parseInt(month);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(year){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.initialize(parseInt(year),&nbsp;month,&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.initialize(this.getYear(),&nbsp;month,&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}else{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.initialize(this.getYear(),&nbsp;this.getMonth(),&nbsp;1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.rollMonths(1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.rollDays(-1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(formatPattern){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.format(formatPattern);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.format(&quot;YYYYMMDD&quot;);
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
