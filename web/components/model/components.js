@@ -165,6 +165,15 @@ sdkComponentModel["basics"] = [
        numberUnit: "basics"
    },
     {
+       id: "basics/fioributtonm",
+       title: "Fiori Button 2.0",
+       info: "FioriButtonM",
+       icon: "basics/fioributtonm.png",
+       activeIcon: "basics/fioributtonm.png",
+       number: " ",
+       numberUnit: "basics"
+   },
+    {
        id: "basics/fioributton",
        title: "Fiori Button 2.0",
        info: "FioriButton",
@@ -763,7 +772,7 @@ sdkComponentModel["visualizations"] = [
    },
     {
        id: "databound/custommap",
-       title: "Custom Map 0.0",
+       title: "Custom Map",
        info: "CustomMap",
        icon: "visualizations/custommap.png",
        activeIcon: "visualizations/custommap.png",

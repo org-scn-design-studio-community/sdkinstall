@@ -119,9 +119,9 @@
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">getDomainRelaxLevel [<a href="#FUNCTION_getDomainRelaxLevel">details</a>]</td>
+<td valign="top" width="240px" class="function-short-name">calcTimestamp [<a href="#FUNCTION_calcTimestamp">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">int</td>
+<td valign="top" width="160px" class="function-short-return">String</td>
 </tr>
 
 <tr class="function-table-tr">
@@ -167,12 +167,6 @@
 </tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setDomainRelaxLevel [<a href="#FUNCTION_setDomainRelaxLevel">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">level</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setDomainrelaxlevel [<a href="#FUNCTION_setDomainrelaxlevel">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">domainrelaxlevel</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
@@ -187,12 +181,6 @@
 <tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">setSandbox [<a href="#FUNCTION_setSandbox">details</a>]</td>
 <td valign="top" width="*" class="function-short-name">sandbox</td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">setSkipPort [<a href="#FUNCTION_setSkipPort">details</a>]</td>
-<td valign="top" width="*" class="function-short-name">skip</td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
@@ -214,6 +202,12 @@
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
 
+<tr class="function-table-tr">
+<td valign="top" width="240px" class="function-short-name">triggerReload [<a href="#FUNCTION_triggerReload">details</a>]</td>
+<td valign="top" width="*" class="function-short-name"></td>
+<td valign="top" width="160px" class="function-short-return">void</td>
+</tr>
+
 
 	</TABLE>
 
@@ -224,7 +218,16 @@
 		
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Description</th><th>Group</th><th>Default</th><th>Visible</th></tr>
-	
+	<tr>
+<td width="120px" class="property-name-type"><B>reload<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>Trigger Reload</B><br/>Trigger Reload
+
+</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">init</td>
+<td width="60px" class="property-visible">false</td>
+</tr>
+
 	</TABLE>
 
 	<br/>
@@ -234,8 +237,8 @@
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getDomainRelaxLevel">int<br/>getDomainRelaxLevel</td>
-<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>//&nbsp;here&nbsp;is&nbsp;the&nbsp;place&nbsp;for&nbsp;other&nbsp;custom&nbsp;functions<br/>Gets&nbsp;Domain&nbsp;Relaxation&nbsp;level&nbsp;Property<br/><br/>
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_calcTimestamp">String<br/>calcTimestamp</td>
+<td valign="top" width="*" class="function-help">@Visibility(private)<br/>Workaround&nbsp;for&nbsp;strange&nbsp;DesignStudio&nbsp;lifecycle&nbsp;handling&nbsp;when&nbsp;calling&nbsp;functions&nbsp;via&nbsp;scriptting&nbsp;triggers<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -247,7 +250,7 @@
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-return&nbsp;this.domainrelaxlevel;
+return&nbsp;&quot;&quot;+new&nbsp;Date().getTime();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -298,7 +301,7 @@ return&nbsp;this.sandbox;
 
 <tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_getSkipPort">boolean<br/>getSkipPort</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Domain&nbsp;Relaxation&nbsp;level&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">//&nbsp;Special&nbsp;get&nbsp;for&nbsp;BOOLEAN&nbsp;(copy&nbsp;of&nbsp;isSkipPort())<br/>Gets&nbsp;Skip&nbsp;Port&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 
@@ -402,34 +405,8 @@ return&nbsp;this.usesandbox;
 </td></tr>
 
 <tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDomainRelaxLevel">void<br/>setDomainRelaxLevel</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Domain&nbsp;Relaxation&nbsp;level&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>level</B></td>
-<td width="120px" class="parameter-type"><B>int</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.domainrelaxlevel&nbsp;=&nbsp;level;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setDomainrelaxlevel">void<br/>setDomainrelaxlevel</td>
-<td valign="top" width="*" class="function-help">Sets&nbsp;Domain&nbsp;Relax&nbsp;Level&nbsp;Property<br/><br/>
+<td valign="top" width="*" class="function-help">/START&nbsp;HERE&nbsp;PLACE&nbsp;FOR&nbsp;CUSTOM&nbsp;ZTL&nbsp;FUNCTIONS<br/>//&nbsp;here&nbsp;is&nbsp;the&nbsp;place&nbsp;for&nbsp;other&nbsp;custom&nbsp;functions<br/>//&nbsp;manual&nbsp;SETTERS<br/>Sets&nbsp;Domain&nbsp;Relax&nbsp;Level&nbsp;Property<br/><br/>
 
 <TABLE width="100%" class="table1">
 <tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
@@ -446,7 +423,7 @@ this.domainrelaxlevel&nbsp;=&nbsp;level;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.domainrelaxlevel&nbsp;=&nbsp;domainrelaxlevel;
+this.domainrelaxlevel&nbsp;=&nbsp;domainrelaxlevel;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.reload&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -472,7 +449,7 @@ this.domainrelaxlevel&nbsp;=&nbsp;domainrelaxlevel;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.explicitlySetDomain&nbsp;=&nbsp;explicitlySetDomain;
+this.explicitlySetDomain&nbsp;=&nbsp;explicitlySetDomain;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.reload&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -498,33 +475,7 @@ this.explicitlySetDomain&nbsp;=&nbsp;explicitlySetDomain;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.sandbox&nbsp;=&nbsp;sandbox;
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_setSkipPort">void<br/>setSkipPort</td>
-<td valign="top" width="*" class="function-help">Gets&nbsp;Domain&nbsp;Relaxation&nbsp;level&nbsp;Property<br/><br/>
-
-<TABLE width="100%" class="table1">
-<tr class="function-table-th"><th>Name</th><th>Type</th><th>Help</th></tr>
-<tr class="function-table-tr-content">
-<td width="120px" class="parameter-name"><B>skip</B></td>
-<td width="120px" class="parameter-type"><B>boolean</B></td>
-<td width="*" class="parameter-help"></td>
-</tr>
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.skipport&nbsp;=&nbsp;skip;
+this.sandbox&nbsp;=&nbsp;sandbox;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.reload&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -550,7 +501,7 @@ this.skipport&nbsp;=&nbsp;skip;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.skipport&nbsp;=&nbsp;skipport;
+this.skipport&nbsp;=&nbsp;skipport;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.reload&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -576,7 +527,7 @@ this.skipport&nbsp;=&nbsp;skipport;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.url&nbsp;=&nbsp;url;
+this.url&nbsp;=&nbsp;url;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.reload&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
@@ -602,7 +553,28 @@ this.url&nbsp;=&nbsp;url;
 <tr class="function-table-tr-content">
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
-this.usesandbox&nbsp;=&nbsp;usesandbox;
+this.usesandbox&nbsp;=&nbsp;usesandbox;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.reload&nbsp;=&nbsp;calcTimestamp();
+</td>
+</tr>
+<tr class="function-table-tr-empty"><td colspan="2">
+&nbsp;
+</td></tr>
+
+<tr class="function-table-tr">
+<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_triggerReload">void<br/>triggerReload</td>
+<td valign="top" width="*" class="function-help">Trigger&nbsp;reload&nbsp;of&nbsp;IFrame<br/><br/>
+
+<TABLE width="100%" class="table1">
+
+
+</TABLE>
+
+</td>
+</tr>
+<tr class="function-table-tr-content">
+<td class="function-table-tr-content-desc">Source Code</td>
+<td class="function-table-tr-content-code">
+this.reload&nbsp;=&nbsp;calcTimestamp();
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">

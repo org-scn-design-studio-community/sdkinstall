@@ -233,19 +233,7 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61427">Design
 	<TABLE width="100%" class="table1">
 	<tr class="component-table-th"><th>Name</th><th>Parameters</th><th>Return</th></tr>
 	<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">collapseHierarchyNode [<a href="#FUNCTION_collapseHierarchyNode">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="240px" class="function-short-name">collapseHierarchyNodes [<a href="#FUNCTION_collapseHierarchyNodes">details</a>]</td>
-<td valign="top" width="*" class="function-short-name"></td>
-<td valign="top" width="160px" class="function-short-return">void</td>
-</tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="240px" class="function-short-name">expandHierarchyNode [<a href="#FUNCTION_expandHierarchyNode">details</a>]</td>
 <td valign="top" width="*" class="function-short-name"></td>
 <td valign="top" width="160px" class="function-short-return">void</td>
 </tr>
@@ -366,21 +354,12 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61427">Design
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
-<td width="120px" class="property-name-type"><B>onHCollapseInv<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>onHCollapseInv</B><br/>onHCollapseInv
+<td width="120px" class="property-name-type"><B>overrideLocale<br/>[String]</B></td>
+<td width="*" class="property-title-tooltip"><B>overrideLocale - here you can define which locale should get used for formating of numbers</B><br/>overrideLocale - here you can define which locale should get used for formating of numbers
 
 </td>
-<td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">this.collapseHierarchyNodes();</td>
-<td width="60px" class="property-visible">false</td>
-</tr>
-<tr>
-<td width="120px" class="property-name-type"><B>onHExpandInv<br/>[ScriptText]</B></td>
-<td width="*" class="property-title-tooltip"><B>onHExpandInv</B><br/>onHExpandInv
-
-</td>
-<td width="60px" class="property-group">Events</td>
-<td width="100px" class="property-default">this.expandHierarchyNodes();</td>
+<td width="60px" class="property-group">Display</td>
+<td width="100px" class="property-default">default</td>
 <td width="60px" class="property-visible">false</td>
 </tr>
 <tr>
@@ -420,27 +399,6 @@ Link to blog: <a target="_blank" href="http://scn.sap.com/docs/DOC-61427">Design
 	
 	<TABLE width="100%" class="">
 	<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_collapseHierarchyNode">void<br/>collapseHierarchyNode</td>
-<td valign="top" width="*" class="function-help">/Collapse&nbsp;the&nbsp;hierarchy&nbsp;(used&nbsp;for&nbsp;DS&nbsp;1.4&nbsp;private&nbsp;functionality)&nbsp;-&nbsp;it&nbsp;seems&nbsp;that&nbsp;the&nbsp;private&nbsp;call&nbsp;does&nbsp;not&nbsp;work<br/>@Visibility(private)<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.getDataSource().collapseNode(this.getHierarchyDimensionKey(),&nbsp;this.getSelectedNodeKey());
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
 <td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_collapseHierarchyNodes">void<br/>collapseHierarchyNodes</td>
 <td valign="top" width="*" class="function-help">/Collapse&nbsp;the&nbsp;hierarchy<br/><br/>
 
@@ -455,27 +413,6 @@ this.getDataSource().collapseNode(this.getHierarchyDimensionKey(),&nbsp;this.get
 <td class="function-table-tr-content-desc">Source Code</td>
 <td class="function-table-tr-content-code">
 this.getDataSource().collapseNode(this.getHierarchyDimensionKey(),&nbsp;this.getSelectedNodeKey());
-</td>
-</tr>
-<tr class="function-table-tr-empty"><td colspan="2">
-&nbsp;
-</td></tr>
-
-<tr class="function-table-tr">
-<td valign="top" width="220px" class="function-return-name"><a name="FUNCTION_expandHierarchyNode">void<br/>expandHierarchyNode</td>
-<td valign="top" width="*" class="function-help">/Expand&nbsp;the&nbsp;hierarchy&nbsp;(used&nbsp;for&nbsp;DS&nbsp;1.4&nbsp;private&nbsp;functionality)&nbsp;-&nbsp;it&nbsp;seems&nbsp;that&nbsp;the&nbsp;private&nbsp;call&nbsp;does&nbsp;not&nbsp;work<br/>@Visibility(private)<br/><br/>
-
-<TABLE width="100%" class="table1">
-
-
-</TABLE>
-
-</td>
-</tr>
-<tr class="function-table-tr-content">
-<td class="function-table-tr-content-desc">Source Code</td>
-<td class="function-table-tr-content-code">
-this.getDataSource().expandNode(this.getHierarchyDimensionKey(),&nbsp;this.getSelectedNodeKey());
 </td>
 </tr>
 <tr class="function-table-tr-empty"><td colspan="2">
